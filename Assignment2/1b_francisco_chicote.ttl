@@ -1,0 +1,13 @@
+@prefix a2: <http://assigment2.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+a2:ClassRoom03 a2:contains a2:Sensor347, a2:Table322 .
+
+a2:Sensor347 a2:hasMeasurement a2:Measurement8432 .
+
+a2:Measurement8432 a2:hasTemperature "29" xsd:int ;
+                 a2:atTime "2022-09-12T12:01:12" xsd:dateTime .
+
+a2:Table322 a2:hasOwner a2:ETSIInformaticos .
+
+a2:ETSIInformaticos a2:hasName "ETSI Informaticos" .
