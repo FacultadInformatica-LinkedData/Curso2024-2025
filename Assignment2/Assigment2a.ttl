@@ -1,0 +1,86 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#Cesar Ruiz Deiros
+
+@prefix : <http://example.org#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema>
+
+# Clases
+:ClassRoom03 ontology:contains :Sensor347;
+            ontology:contains :Table322.
+
+:Sensor347 ontology:hasMesurement :Measurement8432.
+
+:Table322 ontology:hasOwner :ETSIInformaticos.
+
+:Measurement8432 ontology:hasTemperature "29"^^xsd:int;
+                    ontology:atTime "2022-09-12T12:01:12"^^xsd:dateTime.
+
+:ETSIInformaticos ontology:hasName "ETSI Informaticos".
