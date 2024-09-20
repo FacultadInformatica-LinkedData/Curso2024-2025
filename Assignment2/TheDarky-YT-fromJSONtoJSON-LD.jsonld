@@ -14,7 +14,7 @@
       "@type": "xsd:integer",
       "@value": 21
     },
-    "schema:alumniOf": {
+    "schema:almaMater": {
       "@type": "schema:EducationalOrganization",
       "schema:name": "Universidad Politécnica de Madrid"
     },
