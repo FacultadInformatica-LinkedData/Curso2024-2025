@@ -1,0 +1,52 @@
+{
+    "@context": {
+      "ex": "http://example.org/",
+      "schema": "http://schema.org/",
+      "xsd": "http://www.w3.org/2001/XMLSchema#"
+    },
+    "@type": "schema:Person",
+    "schema:name": "Dario",
+    "schema:homeLocation": {
+      "@type": "schema:Place",
+      "schema:name": "Getafe"
+    },
+    "schema:age": {
+      "@type": "xsd:integer",
+      "@value": 21
+    },
+    "schema:alumniOf": {
+      "@type": "schema:EducationalOrganization",
+      "schema:name": "Universidad Politécnica de Madrid"
+    },
+    "schema:parents": [
+      {
+        "@type": "schema:Person",
+        "schema:name": "Antonio Recio"
+      },
+      {
+        "@type": "schema:Person",
+        "schema:name": "Rocío Durcal"
+      }
+    ],
+    "ex:subjectsThisYear": [
+      {
+        "@type": "ex:Subject",
+        "ex:name": "Ingeniería del Software II",
+        "ex:teachers": ["Jose Antonio"],
+        "ex:description": "Estudio del ciclo de vida del software y patrones de diseño."
+      },
+      {
+        "@type": "ex:Subject",
+        "ex:name": "EPAC",
+        "ex:teachers": ["Hanane"],
+        "ex:description": "Inglés con fines profesionales."
+      },
+      {
+        "@type": "ex:Subject",
+        "ex:name": "Semantic Web, Linked Data and Knowledge Graphs",
+        "ex:teachers": ["Oscar, Raul"],
+        "ex:description": "La mejor clase de todas."
+      }
+    ]
+  }
+  
