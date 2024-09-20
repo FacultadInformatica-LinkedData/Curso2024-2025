@@ -1,0 +1,19 @@
+@prefix as2: <http://assignment2.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+as2:ClassRoom03
+    as2:contains as2:Sensor347 ;
+    as2:contains as2:Table322 .
+
+as2:Table322
+    as2:hasOwner as2:ETSIInformaticos .
+
+as2:Sensor347
+    as2:hasMeasurement as2:Measurement8432 .
+
+as2:Measurement8432
+    as2:hasTemperature 29 ;
+    as2:atTime "2022-09-12T12:01:12"^^xsd:dateTime .
+
+as2:ETSIInformaticos
+    as2:hasName "ETSI Informáticos" .
