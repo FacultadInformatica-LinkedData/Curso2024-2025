@@ -1,0 +1,17 @@
+@prefix ex: <http://example.org/> .
+
+ex:ClassRoom03
+    ex:contains ex:Sensor347, ex:Table322 .
+
+ex:Sensor347
+    ex:hasMeasurement ex:Measurement8432 .
+
+ex:Measurement8432
+    ex:hasTemperature "29" ;
+    ex:atTime "2022-09-12T12:01:12"^^xsd:dateTime .
+
+ex:Table322
+    ex:hasOwner ex:ETSInformaticos .
+
+ex:ETSInformaticos
+    ex:hasName "ETSI Informaticos" .
