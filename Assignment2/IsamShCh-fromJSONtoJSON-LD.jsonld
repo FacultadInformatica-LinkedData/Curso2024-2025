@@ -1,0 +1,71 @@
+{
+    "@context": {
+        "schema":  "http://schema.org/",
+        "name": "schema:name",
+        "universidad": "http://example.org/University",
+        "person": "http://example.org/person",
+        "home_town": "schema:homeLocation",
+        "age": "schema:age",
+        "alma_mater": "schema:alumniOf",
+        "parents": {
+            "@id": "schema:parent",
+            "@container": "@set"
+          },
+          "father": "schema:father",
+          "mother": "schema:mother",
+          "subjects_this_year": {
+            "@id": "schema:Course",
+            "@container": "@list"
+          },
+
+        "teachers": "schema:instructor",
+        "brief_description": "schema:description"
+    },
+    "@id": "person:Isam",
+    "@type": "schema:Person",
+    "name": "Isam, Saha Chaham",
+    "home_town": "Azlef",
+    "age": 21,
+
+    "alma_mater": {
+        "@id": "universidad:UPM",
+        "@type": "schema:CollegeOrUniversity",
+        "name": "Universida Politecnica de Madrid" 
+      },
+
+    "parents": [
+    {
+      "@type": "schema:Person",
+      "father": "Mohamed Saha",
+      "@id": "person:Mohamed"
+    },
+    {
+      "@type": "schema:Person",
+      "mother": "Farida",
+      "@id": "person:Farida"
+    }
+    ],
+
+
+    "subjects_this_year": [
+        {
+        "@type": "schema:Course",
+        "name": "Semantic Web, Linked Data and Knowledge Graphs",
+        "teachers": "Oscar Corcho",
+        "brief_description": "Fundamentos de la Web Semántica, datos enlazados y grafos de conocimiento."
+        },
+        {
+        "@type": "schema:Course",
+        "name": "Algoritmos de procesado y análisis de imagen. Aplicación a teledetección",
+        "teachers": "Angel Mario García Pedrero",
+        "brief_description": "Conocimientos básicos del procesado digital de imágenes aplicado a la teledetección."
+        },
+        {
+        "@type": "schema:Course",
+        "name": "EPAC Informáticos",
+        "teachers": "Hanane Benali Taouis",
+        "brief_description": "Desarrollo de habilidades de comunicación efectiva en entornos académicos y profesionales de la ingeniería informática."
+        }
+      ]
+
+}

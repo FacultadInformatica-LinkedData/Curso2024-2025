@@ -1,0 +1,41 @@
+{
+
+    "@context": {
+        "schema": "http://schema.org/",
+        "contains": "schema:contains",
+        "hasMeasurement": "schema:hasMeasurement",
+        "hasTemperature": "schema:hasTemperature",
+
+        "atTime": "schema:atTime",
+        "hasOwner": "schema:hasOwner",
+        "hasName": "schema:name"
+
+    },
+
+    "@id": "http://example.org/Class01",
+
+    "@type": "schema:Classroom",
+    "contains": [
+        {
+            "@id": "http://example.org/Sensor029",
+            "@type": "schema:Sensor",
+                "hasMeasurement": {
+                "@id": "http://example.org/Measurement8401",
+                "@type": "schema:Measurement",
+                "hasTemperature": 29,
+                "atTime": "2010-06-12T12:00:12"
+            }
+        },
+        {
+            "@id": "http://example.org/Computer101",
+            "@type": "schema:Computer",
+                "hasOwner": {
+                "@id": "http://example.org/User10A",
+                "@type": "schema:Person",
+                "hasName": "Pedro"
+            }
+        }
+    ]
+
+
+}
