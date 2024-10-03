@@ -1,0 +1,41 @@
+{
+  "@context": {
+    "name": "http://schema.org/name",
+    "hometown": "http://schema.org/addressLocality",
+    "age": "http://schema.org/age",
+    "almaMater": "http://schema.org/alumniOf",
+    "parents": "http://schema.org/parent",
+    "father": "http://schema.org/father",
+    "mother": "http://schema.org/mother",
+    "courses": "http://schema.org/course",
+    "courseName": "http://schema.org/name",
+    "teacher": "http://schema.org/teacher",
+    "description": "http://schema.org/description"
+  },
+  "@type": "Person",
+  "name": "Mario Villarín García",
+  "hometown": "Cadalso de los Vidrios",
+  "age": 24,
+  "almaMater": "Universidad Politécnica de Madrid",
+  "parents": {
+    "father": "Eleuterio Villarín",
+    "mother": "Juana García"
+  },
+  "courses": [
+    {
+      "courseName": "Inteligencia Artificial",
+      "teacher": "Vicente Martinez",
+      "description": "Introducción a los conceptos básicos de la inteligencia artificial y sus aplicaciones."
+    },
+    {
+      "courseName": "Sistemas Distribuidos",
+      "teacher": "Fernando Pérez",
+      "description": "Estudio de los sistemas distribuidos y las arquitecturas orientadas a microservicios."
+    },
+    {
+      "courseName": "Web Semantic and Linked Data",
+      "teacher": "Oscar Corcho",
+      "description": "Enseñar los fundamentos teóricos y prácticos para crear y publicar vocabularios y datos en la Web de datos enlazados y grafos de conocimientos."
+    }
+  ]
+}
