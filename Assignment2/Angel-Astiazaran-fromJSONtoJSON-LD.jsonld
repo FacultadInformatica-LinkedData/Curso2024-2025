@@ -1,0 +1,49 @@
+{
+    "@context" : {
+      "xsd" : "http://www.w3.org/2001/XMLSchema#",
+      "vocab" : "http://example.org/specialVocab/Assignment2b",
+      "fullname":"s:fullname",
+      "hometown" : "vocab:hometown",
+      "age" : "vocab:age",
+      "almaMater" : "vocab:almaMater",
+      "mothesrName" : "vocab:mothesrName",
+      "fathesrName" : "vocab:fathesrName",
+      "subject" : "http://example.org/subject",
+      "teachers" : "http://example.org/teachers",
+      "description" : "rdfs:comment"
+    },
+    "@id" : "http://example.org/specialVocab/Assignment2b/Angel-Astiazaran",
+    "@type" : "vocab:student",
+    "fullname" : "Angel Astiazaran Gafo",
+    "hometown" : "Las Rozas",
+    "age" : "22",
+    "almaMater" : "Universidad Politecnica de Madrid",
+    "mothersName" : "Virginia",
+    "fathersName" : "Gonzalo",
+    "subject" : [
+      {
+        "name" : "Linked Data",
+        "teachers" : [
+          {
+            "name" : "Oscar Corcho"
+          },
+          {
+            "name" : "Raul García Castro"
+          }
+        ],
+        "description" : "Data relationship with web and other types of web data"
+      },
+      {
+        "name" : "Pattern Recognition",
+        "teachers" : [
+          {
+            "name" : "Luis Bamuela"
+          },
+          {
+            "name" :  "Roberto Valle"
+          }
+        ],
+        "description" : "Design of algorithms that look for patterns or regularities in data"
+      }
+    ]
+  }
