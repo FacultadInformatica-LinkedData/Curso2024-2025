@@ -1,0 +1,18 @@
+@prefix oeg: <https://oeg.fi.upm.es/def/assignment2#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+oeg:ClassRoom03
+    oeg:contains oeg:Sensor347, oeg:Table322 .
+
+oeg:Sensor347
+    oeg:hasMeasurement oeg:Measurement8432 .
+
+oeg:Measurement8432
+    oeg:hasTemperature "29"^^xsd:integer ;
+    oeg:atTime "2022-09-12T12:01:12"^^xsd:dateTime .
+
+oeg:Table322
+    oeg:hasOwner oeg:ETSIInformaticos .
+
+oeg:ETSIInformaticos
+    oeg:hasName "ETSI Informáticos" .
