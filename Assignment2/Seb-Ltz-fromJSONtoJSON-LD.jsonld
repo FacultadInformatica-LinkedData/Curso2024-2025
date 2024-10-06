@@ -1,6 +1,7 @@
 {
   "@context": {
     "schema": "http://schema.org/",
+    "oeg": "https://oeg.fi.upm.es/def/assignment2#",
     "fullName": "schema:name",
     "hometown": {
       "@id": "schema:homeLocation",
@@ -8,9 +9,9 @@
     },
     "parents": "schema:parent",
     "alma-mater": "schema:alumniOf",
-    "subjects": "schema:hasCourse",
+    "subjects": "oeg:hasSubject",
     "name": "schema:name",
-    "teachers": "schema:teacher",
+    "teacher": "oeg:teacher",
     "description": "schema:description"
   },
   "@type": "schema:Person",
