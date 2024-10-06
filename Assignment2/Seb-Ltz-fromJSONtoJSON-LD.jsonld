@@ -1,0 +1,78 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "fullName": "schema:name",
+    "hometown": {
+      "@id": "schema:homeLocation",
+      "@type": "@id"
+    },
+    "parents": "schema:parent",
+    "alma-mater": "schema:alumniOf",
+    "subjects": "schema:hasCourse",
+    "name": "schema:name",
+    "teachers": "schema:teacher",
+    "description": "schema:description"
+  },
+  "@type": "schema:Person",
+  "fullName": "Sebastien Letzelter",
+  "hometown": {
+    "@type": "schema:Place",
+    "name": "Quesadilla del Sur"
+  },
+  "parents": [
+    {
+      "@type": "schema:Person",
+      "fullName": "Linka Datta"
+    },
+    {
+      "@type": "schema:Person",
+      "fullName": "Spar Kehl"
+    }
+  ],
+  "alma-mater": {
+    "@type": "schema:CollegeOrUniversity",
+    "name": "Technical University of Munich (TUM)"
+  },
+  "subjects": [
+    {
+      "@type": "schema:Course",
+      "name": "Web Semántica, Linked Data y Grafos de Conocimiento",
+      "description": "Web Semántica, Linked Data y Grafos de Conocimiento explores the principles of the Semantic Web, focusing on Linked Data technologies and Knowledge Graphs to enhance data interoperability and meaning on the web.",
+      "teachers": [
+        {
+          "@type": "schema:Person",
+          "fullName": "Oscar Corcho Garcia"
+        },
+        {
+          "@type": "schema:Person",
+          "fullName": "Raúl García Castro"
+        }
+      ]
+    },
+    {
+      "@type": "schema:Course",
+      "name": "Investigacion Operativa",
+      "description": "Focuses on mathematical modeling and optimization techniques to solve complex decision-making problems."
+    },
+    {
+      "@type": "schema:Course",
+      "name": "Aprendizaje Automático I",
+      "description": "Introduces the foundational algorithms and techniques of machine learning for building predictive models."
+    },
+    {
+      "@type": "schema:Course",
+      "name": "Intelligent Systems",
+      "description": "Explores the design and implementation of neural networks and other AI techniques for solving complex tasks."
+    },
+    {
+      "@type": "schema:Course",
+      "name": "Intelligent Data Analysis",
+      "description": "Teaches how to analyze and interpret data using R for intelligent decision-making and insights."
+    },
+    {
+      "@type": "schema:Course",
+      "name": "Desarrollo de Aplicaciones Móviles",
+      "description": "Focuses on the design and development of mobile applications for the Android platform"
+    }
+  ]
+}

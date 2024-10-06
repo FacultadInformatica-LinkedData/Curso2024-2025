@@ -1,0 +1,47 @@
+{
+  "@context": {
+    "oeg": "https://oeg.fi.upm.es/def/assignment2#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "oeg:Class01",
+      "oeg:contains": [
+        {
+          "@id": "oeg:Sensor029"
+        },
+        {
+          "@id": "oeg:Computer101"
+        }
+      ]
+    },
+    {
+      "@id": "oeg:Sensor029",
+      "@type": "oeg:Sensor",
+      "oeg:hasMeasurement": {
+        "@id": "oeg:Measurement8401"
+      }
+    },
+    {
+      "@id": "oeg:Measurement8401",
+      "@type": "oeg:Measurement",
+      "oeg:hasTemperature": 29,
+      "oeg:atTime": {
+        "@value": "2010-06-12T12:00:12",
+        "@type": "xsd:dateTime"
+      }
+    },
+    {
+      "@id": "oeg:Computer101",
+      "@type": "oeg:Computer",
+      "oeg:hasOwner": {
+        "@id": "oeg:User10A"
+      }
+    },
+    {
+      "@id": "oeg:User10A",
+      "@type": "oeg:User",
+      "oeg:hasName": "Pedro"
+    }
+  ]
+}
