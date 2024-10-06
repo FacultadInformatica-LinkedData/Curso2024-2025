@@ -52,7 +52,8 @@ for s, p, o in g:
 
 # TO DO
 g.add((ns.JaneSmithers, RDF.type, ns.Researcher))
-g.add((ns.JaneSmithers, RDFS.label, Literal("Jane Smithers")))
+g.add((ns.JaneSmithers, ns.name, Literal("Jane Smithers")))
+# g.add((ns.JaneSmithers, RDFS.label, Literal("Jane Smithers")))
 # Visualize the results
 for s, p, o in g:
   print(s,p,o)
@@ -70,22 +71,20 @@ g.add((ns.JaneSmithers, nsSchema.givenName, Literal("Jane")))
 """**TASK 6.5: Add UPM as the university where John Smith works. Use the "https://example.org/ namespace**"""
 
 # TO DO
-nsEx = Namespace("https://example.org")
-VCARD = Namespace("http://www.w3.org/2001/vcard-rdf/3.0#")
-g.add((ns.UPM, RDFS.type, ns.University))
-g.add((nsEx.JohnSmith, VCARD.FN, Literal('John Smith')))
-g.add((nsEx.JohnSmith, VCARD.work, ns.UPM))
-# g.add((ns.UPM, RDFS.subClassOf, ns.University))
+nsUPM = ns.UPM
+g.add((nsUPM, RDF.type, ns.Organization))
+g.add((nsUPM, ns.name, Literal("Universidad Politecnica de Madrid")))
+g.add((ns.JohnSmith, ns.worksFor, nsUPM))
 # Visualize the results
+
+for s, p, o in g:
+    print(s, p, o)
 
 """**Task 6.6: Add that John knows Jane using the FOAF vocabulary. Make sure the relationship exists.**"""
 
-janeSmithURI = g.value(subject=None, predicate=VCARD.FN, object=Literal("Jane Smith"))
-johnSmithURI = g.value(subject=None, predicate=VCARD.FN, object=Literal("John Smith"))
-
-knows = g.triples((janeSmithURI, FOAF.knows, janeSmithURI))
+g.add((ns.JohnSmith, FOAF.knows, ns.JaneSmithers))
 
 # TO DO
 # Visualize the results
-for s,p,o in g.triples((None, FOAF.knows, None)):
-  print(s,p,o)
+for s, p, o in g:
+    print(s, p, o)

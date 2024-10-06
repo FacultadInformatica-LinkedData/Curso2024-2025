@@ -25,57 +25,92 @@ g.parse(github_storage+"/rdf/example6.rdf", format="xml")
 """**TASK 7.1: List all subclasses of "LivingThing" with RDFLib and SPARQL**"""
 
 # TO DO
-LIVINGTHINGS = Namespace("https://www.wikidata.org/wiki/Q4043102") #LivingThing in Wikidata
-
-q1 = prepareQuery('''
-  SELECT 
-    ?SubClass
-  WHERE { 
-    ?SubClass a <https://www.wikidata.org/wiki/Q4043102?. 
+ns = Namespace("http://somewhere#")
+q1 = """
+  SELECT ?SubClass
+  WHERE {
+    ?SubClass rdfs:subClassOf ns:LivingThing .
   }
-  ''',
-  initNs = { "vcard": LIVINGTHINGS})
-
-# Visualize the results
+  """
+qres = g.query(q1, initNs={"rdfs": RDFS, "ns": ns})
 for r in g.query(q1):
- print(r)
+  print(r)
 
 """**TASK 7.2: List all individuals of "Person" with RDFLib and SPARQL (remember the subClasses)**
 
 """
 
 # TO DO
-LIVINGTHINGS = Namespace("https://www.wikidata.org/wiki/Q4043102") #LivingThing in Wikidata
 
-q2 = prepareQuery('''
-  SELECT 
-    ?Subject
-  WHERE { 
-    ?Subject vcard:FN ?FullName. 
+query = """
+  SELECT ?Ind
+  WHERE {
+    ?Ind a/rdfs:subClassOf* ns:Person .
   }
-  ''',
-  initNs = { "vcard": LIVINGTHINGS})
+  """
 
+qres = g.query(query, initNs={"rdfs": RDFS, "ns": ns})
 # Visualize the results
+for r in qres:
+  print(r)
 
 """**TASK 7.3: List all individuals of just "Person" or "Animal". You do not need to list the individuals of the subclasses of person (in SPARQL only)**
 
 """
 
 # TO DO
+query = """
+  SELECT ?Ind
+  WHERE {
+    ?Ind a ns:Person .
+    ?Ind a ns:Animal .
+  }
+  """
 # Visualize the results
+for r in g.query(query):
+  print(r)
+
 
 """**TASK 7.4:  List the name of the persons who know Rocky (in SPARQL only)**"""
 
 # TO DO
+query = """
+  SELECT ?name
+  WHERE {
+    ?person vcard:knows ns:Rocky .
+    ?person vcard:FN ?name .
+  }
+  """
 # Visualize the results
+for r in g.query(query):
+  print(r)
 
 """**Task 7.5: List the name of those animals who know at least another animal in the graph (in SPARQL only)**"""
 
 # TO DO
+query = """
+  SELECT ?animal
+  WHERE {
+    ?animal a ns:Animal .
+    ?animal vcard:knows ?otherAnimal .
+    ?otherAnimal a ns:Animal .
+  }
+  """
 # Visualize the results
+for r in g.query(query):
+  print(r)
 
 """**Task 7.6: List the age of all living things in descending order (in SPARQL only)**"""
 
 # TO DO
+query = """
+  SELECT ?age
+  WHERE {
+    ?livingThing a ns:LivingThing .
+    ?livingThing vcard:P569 ?age .
+  }
+  ORDER BY DESC(?age)
+  """
 # Visualize the results
+for r in g.query(query):
+  print(r)
