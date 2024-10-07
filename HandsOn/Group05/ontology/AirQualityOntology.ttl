@@ -1,0 +1,115 @@
+@prefix mod: <https://w3id.org/mod#> .
+@prefix ns: <http://webcam.linkeddata.Gijon.es.org/ontology/airquality#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sc: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sc:latitude a owl:DatatypeProperty ;
+    rdfs:label "latitude" ;
+    rdfs:domain ns:EstacionMedicion ;
+    rdfs:range xsd:Decimal .
+
+sc:longitude a owl:DatatypeProperty ;
+    rdfs:label "longitude" ;
+    rdfs:domain ns:EstacionMedicion ;
+    rdfs:range xsd:Decimal .
+
+ns: a owl:Ontology ;
+    mod:createdWith <https://chowlk.linkeddata.es/> .
+
+ns:tieneNumeroEstacion a owl:DatatypeProperty ;
+    rdfs:label "tiene numero estacion" ;
+    rdfs:domain ns:EstacionMedicion ;
+    rdfs:range xsd:Integer .
+
+ns:tieneTitulo a owl:DatatypeProperty ;
+    rdfs:label "tiene titulo" ;
+    rdfs:domain ns:EstacionMedicion ;
+    rdfs:range xsd:String .
+
+ns:tieneFecha a owl:DatatypeProperty ;
+    rdfs:label "tiene fecha" ;
+    rdfs:domain ns:Medicion ;
+    rdfs:range xsd:Date .
+
+ns:tienePeriodo a owl:DatatypeProperty ;
+    rdfs:label "tiene periodo" ;
+    rdfs:domain ns:Medicion ;
+    rdfs:range xsd:Integer .
+
+ns:tieneSO2 a owl:DatatypeProperty ;
+    rdfs:label "tiene SO2" ;
+    rdfs:domain ns:Medicion ;
+    rdfs:range xsd:Decimal .
+
+ns:tieneH2S a owl:DatatypeProperty ;
+    rdfs:label "tiene H2S" ;
+    rdfs:domain ns:Medicion ;
+    rdfs:range xsd:Decimal .
+
+ns:tieneNO a owl:DatatypeProperty ;
+    rdfs:label "tiene NO" ;
+    rdfs:domain ns:Medicion ;
+    rdfs:range xsd:Decimal .
+
+ns:tieneNO2 a owl:DatatypeProperty ;
+    rdfs:label "tiene NO2" ;
+    rdfs:domain ns:Medicion ;
+    rdfs:range xsd:Decimal .
+
+ns:tieneNOX a owl:DatatypeProperty ;
+    rdfs:label "tiene NOX" ;
+    rdfs:domain ns:Medicion ;
+    rdfs:range xsd:Decimal .
+
+ns:tieneO3 a owl:DatatypeProperty ;
+    rdfs:label "tiene O3" ;
+    rdfs:domain ns:Medicion ;
+    rdfs:range xsd:Decimal .
+
+ns:tieneDireccionViento a owl:DatatypeProperty ;
+    rdfs:label "tiene direccion viento" ;
+    rdfs:domain ns:Medicion ;
+    rdfs:range xsd:Integer .
+
+ns:tieneVelocidadViento a owl:DatatypeProperty ;
+    rdfs:label "tiene velocidad viento" ;
+    rdfs:domain ns:Medicion ;
+    rdfs:range xsd:Decimal .
+
+ns:tieneTemperatura a owl:DatatypeProperty ;
+    rdfs:label "tiene temperatura" ;
+    rdfs:domain ns:Medicion ;
+    rdfs:range xsd:Decimal .
+
+ns:tieneHumedadRelativa a owl:DatatypeProperty ;
+    rdfs:label "tiene humedad relativa" ;
+    rdfs:domain ns:Medicion ;
+    rdfs:range xsd:Integer .
+
+ns:tienePRB a owl:DatatypeProperty ;
+    rdfs:label "tiene PRB" ;
+    rdfs:domain ns:Medicion ;
+    rdfs:range xsd:Integer .
+
+ns:tieneRS a owl:DatatypeProperty ;
+    rdfs:label "tiene RS" ;
+    rdfs:domain ns:Medicion ;
+    rdfs:range xsd:Integer .
+
+ns:tieneLL a owl:DatatypeProperty ;
+    rdfs:label "tiene LL" ;
+    rdfs:domain ns:Medicion ;
+    rdfs:range xsd:Integer .
+
+ns:realizadaEn a owl:ObjectProperty ;
+    rdfs:label "realizada en" ;
+    rdfs:domain ns:Medicion ;
+    rdfs:range ns:EstacionMedicion .    
+    
+ns:EstacionMedicion a owl:Class ;
+    rdfs:label "Estacion de Medicion" .
+
+ns:Medicion a owl:Class ;
+    rdfs:label "Medicion" .
