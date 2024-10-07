@@ -4,8 +4,8 @@
 
 **The “analysis.html” file:**
 
-- [ ] Includes the potential license of the dataset to be generated
-- [ ] Includes the resource naming strategy
+- [X] Includes the potential license of the dataset to be generated
+- [X] Includes the resource naming strategy
 
 **The resource naming strategy:**
 
@@ -16,9 +16,9 @@
 
 **The ontology file:**
 
-- [ ] Uses the .ttl extension
-- [ ] Is serialized in the Turtle format
-- [ ] Follows the resource naming strategy
+- [x] Uses the .ttl extension
+- [x] Is serialized in the Turtle format
+- [x] Follows the resource naming strategy
 - [ ] Contains at least one class
 - [ ] Contains at least one object property (where the value of the property is a resource)
 - [ ] Contains at least one datatype property (where the value of the property is a string literal, usually typed)
@@ -31,4 +31,5 @@
 - [ ] Contains at least one class that will be used to link to other entities
 
 ## Comments on the self-assessment
-_(If required)_
+- Nuestro nombrado de datos puede resultar conflictivo debido a que pueden producirse colisiones con otros coches, los cuales los expendientes generados tienen el mismo ID, la unica solucion posible para evitar repeticiones, es incluir por nuestra parte un ID unico o verificar la existencia de un expediente para añadir una letra
+- .ttl creo que la doble relacion Accidente-Persona no es correcta pero es necesaria por el mismo hecho mencionado antes.

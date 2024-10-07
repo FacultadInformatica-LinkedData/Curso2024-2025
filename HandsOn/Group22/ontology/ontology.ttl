@@ -1,0 +1,99 @@
+@prefix : <http://base.acc.com/> .
+@prefix Acc: <http://www.owl-ontologies.com/Acc#> .
+@prefix acc: <http://www.owl-ontologies.com/acc#> .
+@prefix meteorologica: <http://www.owl-ontologies.com/meteorologica#> .
+@prefix mod: <https://w3id.org/mod#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+: a owl:Ontology ;
+    mod:createdWith <https://chowlk.linkeddata.es/> .
+
+Acc:esLesionada a owl:ObjectProperty ;
+    rdfs:label "es lesionada" ;
+    rdfs:domain acc:Persona ;
+    rdfs:range acc:Lesividad .
+
+acc:alchool a owl:DatatypeProperty ;
+    rdfs:label "alchool" .
+
+acc:codigo a owl:DatatypeProperty ;
+    rdfs:label "codigo" .
+
+acc:coord_x a owl:DatatypeProperty ;
+    rdfs:label "coord_x" .
+
+acc:coord_y a owl:DatatypeProperty ;
+    rdfs:label "coord_y" .
+
+acc:distrito a owl:DatatypeProperty ;
+    rdfs:label "distrito" .
+
+acc:drogas a owl:DatatypeProperty ;
+    rdfs:label "drogas" .
+
+acc:edad a owl:DatatypeProperty ;
+    rdfs:label "edad" .
+
+acc:esInvolucrado a owl:ObjectProperty ;
+    rdfs:label "es involucrado" ;
+    rdfs:domain acc:Accidente ;
+    rdfs:range acc:Vehiculo .
+
+acc:est_ a owl:DatatypeProperty ;
+    rdfs:label "est_" .
+
+acc:fecha a owl:DatatypeProperty ;
+    rdfs:label "fecha" .
+
+acc:haCausado a owl:ObjectProperty ;
+    rdfs:label "ha causado" ;
+    rdfs:domain acc:Persona ;
+    rdfs:range acc:Accidente .
+
+acc:haNombreDe a owl:ObjectProperty ;
+    rdfs:label "ha nombre de" ;
+    rdfs:domain acc:Vehiculo ;
+    rdfs:range acc:Persona .
+
+acc:haSufrido a owl:ObjectProperty ;
+    rdfs:label "ha sufrido" ;
+    rdfs:domain acc:Accidente ;
+    rdfs:range acc:Persona .
+
+acc:hora a owl:DatatypeProperty ;
+    rdfs:label "hora" .
+
+acc:lozalizacion a owl:DatatypeProperty ;
+    rdfs:label "lozalizacion" .
+
+acc:nExpediente a owl:DatatypeProperty ;
+    rdfs:label "n expediente" .
+
+acc:sexo a owl:DatatypeProperty ;
+    rdfs:label "sexo" .
+
+acc:tipoLesion a owl:DatatypeProperty ;
+    rdfs:label "tipo lesion" .
+
+acc:tipo_acc a owl:DatatypeProperty ;
+    rdfs:label "tipo_acc" .
+
+acc:tipo_vehic a owl:DatatypeProperty ;
+    rdfs:label "tipo_vehic" .
+
+meteorologica:str a owl:DatatypeProperty ;
+    rdfs:label "str" .
+
+acc:Lesividad a owl:Class ;
+    rdfs:label "Lesividad" .
+
+acc:Vehiculo a owl:Class ;
+    rdfs:label "Vehiculo" .
+
+acc:Accidente a owl:Class ;
+    rdfs:label "Accidente" .
+
+acc:Persona a owl:Class ;
+    rdfs:label "Persona" .
+
