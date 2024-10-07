@@ -1,0 +1,71 @@
+@prefix samur: <http://samur.linkeddata.madrid.es/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+# Ontology Metadata
+<http://samur.linkeddata.madrid.es/ontology>
+    a owl:Ontology ;
+    rdfs:label "SAMUR Activations Ontology" ;
+    rdfs:comment "An ontology to represent the emergency activations of SAMUR in Madrid." ;
+    owl:versionInfo "1.0" .
+
+# Classes
+samur:Activation a owl:Class ;
+    rdfs:label "Activation" ;
+    rdfs:comment "A SAMUR emergency activation, including details of date, time, district, and hospital." .
+
+samur:Location a owl:Class ;
+    rdfs:label "Location" ;
+    rdfs:comment "The geographical district in Madrid where the SAMUR activation occurred." .
+
+samur:Hospital a owl:Class ;
+    rdfs:label "Hospital" ;
+    rdfs:comment "The hospital where the patient was taken during the SAMUR emergency activation, if applicable." .
+
+samur:EmergencyType a owl:Class ;
+    rdfs:label "Emergency Type" ;
+    rdfs:comment "The type of emergency for which SAMUR was activated (e.g., heart attack, convulsions)." .
+
+# Properties
+samur:hasYear a owl:DatatypeProperty ;
+    rdfs:domain samur:Activation ;
+    rdfs:range xsd:gYear ;
+    rdfs:label "Year of Activation" ;
+    rdfs:comment "The year when the SAMUR activation occurred." .
+
+samur:hasMonth a owl:DatatypeProperty ;
+    rdfs:domain samur:Activation ;
+    rdfs:range xsd:gMonth ;
+    rdfs:label "Month of Activation" ;
+    rdfs:comment "The month when the SAMUR activation occurred." .
+
+samur:hasRequestTime a owl:DatatypeProperty ;
+    rdfs:domain samur:Activation ;
+    rdfs:range xsd:time ;
+    rdfs:label "Request Time" ;
+    rdfs:comment "The time when the SAMUR activation was requested." .
+
+samur:hasInterventionTime a owl:DatatypeProperty ;
+    rdfs:domain samur:Activation ;
+    rdfs:range xsd:time ;
+    rdfs:label "Intervention Time" ;
+    rdfs:comment "The time when the SAMUR intervention started." .
+
+samur:hasEmergencyType a owl:ObjectProperty ;
+    rdfs:domain samur:Activation ;
+    rdfs:range samur:EmergencyType ;
+    rdfs:label "Type of Emergency" ;
+    rdfs:comment "The type of emergency that SAMUR responded to." .
+
+samur:hasDistrict a owl:ObjectProperty ;
+    rdfs:domain samur:Activation ;
+    rdfs:range samur:Location ;
+    rdfs:label "District of Activation" ;
+    rdfs:comment "The district in Madrid where the emergency occurred." .
+
+samur:hasHospital a owl:ObjectProperty ;
+    rdfs:domain samur:Activation ;
+    rdfs:range samur:Hospital ;
+    rdfs:label "Hospital" ;
+    rdfs:comment "The hospital where the patient was taken during the emergency activation, if applicable." .

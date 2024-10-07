@@ -1,0 +1,166 @@
+@prefix base: <http://smartcity.linkeddata.es/accidents/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix mod: <https://w3id.org/mod#> .
+@prefix ns: <http://smartcity.linkeddata.es/accidents/ontology/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+dc:creator a owl:AnnotationProperty .
+
+dc:title a owl:AnnotationProperty .
+
+base: a owl:Ontology ;
+    dc:creator "Group01" ;
+    dc:title "Ontology" ;
+    owl:versionInfo "1.0" ;
+    mod:createdWith <https://chowlk.linkeddata.es/> .
+
+ns:accident_type a owl:DatatypeProperty ;
+    rdfs:label "accident_type" ;
+    rdfs:domain ns:Accident ;
+    rdfs:range xsd:String .
+
+ns:age_range a owl:DatatypeProperty ;
+    rdfs:label "age_range" ;
+    rdfs:domain ns:Person ;
+    rdfs:range xsd:Integer .
+
+ns:alcohol_positive a owl:DatatypeProperty ;
+    rdfs:label "alcohol_positive" ;
+    rdfs:domain ns:Person ;
+    rdfs:range xsd:String .
+
+ns:coordinate_x_utm a owl:DatatypeProperty ;
+    rdfs:label "coordinate_x_utm" ;
+    rdfs:domain ns:Location ;
+    rdfs:range xsd:Decimal .
+
+ns:coordinate_y_utm a owl:DatatypeProperty ;
+    rdfs:label "coordinate_y_utm" ;
+    rdfs:domain ns:Location ;
+    rdfs:range xsd:Decimal .
+
+ns:date a owl:DatatypeProperty ;
+    rdfs:label "date" ;
+    rdfs:domain ns:Date ;
+    rdfs:range xsd:Date .
+
+ns:district a owl:DatatypeProperty ;
+    rdfs:label "district" ;
+    rdfs:domain ns:Location ;
+    rdfs:range xsd:String .
+
+ns:district_code a owl:DatatypeProperty ;
+    rdfs:label "district_code" ;
+    rdfs:domain ns:Location ;
+    rdfs:range xsd:Integer .
+
+ns:drug_positive a owl:DatatypeProperty ;
+    rdfs:label "drug_positive" ;
+    rdfs:domain ns:Person ;
+    rdfs:range xsd:String .
+
+ns:file_number a owl:DatatypeProperty ;
+    rdfs:label "file_number" ;
+    rdfs:domain ns:Accident ;
+    rdfs:range xsd:Integer .
+
+ns:hasInjury a owl:ObjectProperty ;
+    rdfs:label "has injury" ;
+    rdfs:domain ns:Accident ;
+    rdfs:range ns:Injury .
+
+ns:hasLocation a owl:ObjectProperty ;
+    rdfs:label "has location" ;
+    rdfs:domain ns:Accident ;
+    rdfs:range ns:Location .
+
+ns:hasWeather a owl:ObjectProperty ;
+    rdfs:label "has weather" ;
+    rdfs:domain ns:Accident ;
+    rdfs:range ns:Weather .
+
+ns:inDate a owl:ObjectProperty ;
+    rdfs:label "in date" ;
+    rdfs:domain ns:Accident ;
+    rdfs:range ns:Date .
+
+ns:injury a owl:DatatypeProperty ;
+    rdfs:label "injury" ;
+    rdfs:domain ns:Injury ;
+    rdfs:range xsd:String .
+
+ns:injury_code a owl:DatatypeProperty ;
+    rdfs:label "injury_code" ;
+    rdfs:domain ns:Injury ;
+    rdfs:range xsd:Integer .
+
+ns:involvesPerson a owl:ObjectProperty ;
+    rdfs:label "involves person" ;
+    rdfs:domain ns:Accident ;
+    rdfs:range ns:Person .
+
+ns:involvesVehicle a owl:ObjectProperty ;
+    rdfs:label "involves vehicle" ;
+    rdfs:domain ns:Accident ;
+    rdfs:range ns:Vehicle .
+
+ns:location a owl:DatatypeProperty ;
+    rdfs:label "location" ;
+    rdfs:domain ns:Location ;
+    rdfs:range xsd:String .
+
+ns:number a owl:DatatypeProperty ;
+    rdfs:label "number" ;
+    rdfs:domain ns:Location ;
+    rdfs:range xsd:Integer .
+
+ns:person_type a owl:DatatypeProperty ;
+    rdfs:label "person_type" ;
+    rdfs:domain ns:Person ;
+    rdfs:range xsd:String .
+
+ns:sex a owl:DatatypeProperty ;
+    rdfs:label "sex" ;
+    rdfs:domain ns:Person ;
+    rdfs:range xsd:String .
+
+ns:time a owl:DatatypeProperty ;
+    rdfs:label "time" ;
+    rdfs:domain ns:Date ;
+    rdfs:range xsd:Time .
+
+ns:vehicle_type a owl:DatatypeProperty ;
+    rdfs:label "vehicle_type" ;
+    rdfs:domain ns:Vehicle ;
+    rdfs:range xsd:String .
+
+ns:weather_status a owl:DatatypeProperty ;
+    rdfs:label "weather_status" ;
+    rdfs:domain ns:Weather ;
+    rdfs:range xsd:String .
+
+owl:versionInfo a owl:AnnotationProperty .
+
+ns:Vehicle a owl:Class ;
+    rdfs:label "Vehicle" .
+
+ns:Weather a owl:Class ;
+    rdfs:label "Weather" .
+
+ns:Date a owl:Class ;
+    rdfs:label "Date" .
+
+ns:Injury a owl:Class ;
+    rdfs:label "Injury" .
+
+ns:Person a owl:Class ;
+    rdfs:label "Person" .
+
+ns:Location a owl:Class ;
+    rdfs:label "Location" .
+
+ns:Accident a owl:Class ;
+    rdfs:label "Accident" .
+

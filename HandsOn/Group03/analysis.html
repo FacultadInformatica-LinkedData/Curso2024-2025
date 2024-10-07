@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análisis del Dataset de Cámaras de Seguridad</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        h2 {
+            color: #2E86C1;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Análisis del Dataset de Cámaras de Seguridad en Barcelona</h1>
+
+    <h2>Esquema del Dataset</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Campo</th>
+                <th>Tipo de Datos</th>
+                <th>Descripción</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>ID Cámara</td>
+                <td>Entero (int)</td>
+                <td>Identificador único de la cámara</td>
+            </tr>
+            <tr>
+                <td>Código de la Cámara</td>
+                <td>Cadena de texto (string)</td>
+                <td>Código que indica el tipo de cámara (CIM, DOMO, CIF, ...)</td>
+            </tr>
+            <tr>
+                <td>Tipo de Cámara</td>
+                <td>Cadena de texto (string)</td>
+                <td>Tipo de cámara (móvil o fija)</td>
+            </tr>
+            <tr>
+                <td>Número de Cámara</td>
+                <td>Entero (int)</td>
+                <td>Número asignado a la cámara</td>
+            </tr>
+            <tr>
+                <td>Código de Distrito</td>
+                <td>Entero (int)</td>
+                <td>Código del distrito donde está ubicada la cámara</td>
+            </tr>
+            <tr>
+                <td>Nombre del Distrito</td>
+                <td>Cadena de texto (string)</td>
+                <td>Nombre del distrito</td>
+            </tr>
+            <tr>
+                <td>Código del Barrio</td>
+                <td>Entero (int)</td>
+                <td>Código del barrio donde está ubicada la cámara</td>
+            </tr>
+            <tr>
+                <td>Nombre del Barrio</td>
+                <td>Cadena de texto (string)</td>
+                <td>Nombre del barrio</td>
+            </tr>
+            <tr>
+                <td>Fecha de Alta</td>
+                <td>Fecha (date)</td>
+                <td>Fecha de instalación o activación de la cámara</td>
+            </tr>
+            <tr>
+                <td>Longitud</td>
+                <td>Flotante (decimal)</td>
+                <td>Coordenada geográfica de longitud (WGS84)</td>
+            </tr>
+            <tr>
+                <td>Latitud</td>
+                <td>Flotante (decimal)</td>
+                <td>Coordenada geográfica de latitud (WGS84)</td>
+            </tr>
+            <tr>
+                <td>X (ETRS89)</td>
+                <td>Entero (int)</td>
+                <td>Coordenada X en el sistema de referencia ETRS89</td>
+            </tr>
+            <tr>
+                <td>Y (ETRS89)</td>
+                <td>Entero (int)</td>
+                <td>Coordenada Y en el sistema de referencia ETRS89</td>
+            </tr>
+        </tbody>
+    </table>
+    <h1>Análisis de la Licencia del Dataset</h1>
+
+    <h2>Distribuidor y Titular de los Derechos</h2>
+    <p>
+        El dataset sobre las cámaras de seguridad de Barcelona ha sido publicado por <strong>el Ayuntamiento de Barcelona</strong>, y es el titular de los derechos de la información. 
+        El organismo público distribuye este dataset bajo la licencia <strong>Creative Commons Attribution 4.0 International (CC BY 4.0)</strong>.
+    </p>
+
+    <h2>Análisis de la Licencia CC BY 4.0</h2>
+    <p>
+        La licencia <strong>CC BY 4.0</strong> permite a los usuarios:
+    </p>
+    <ul>
+        <li><strong>Compartir</strong> — copiar y redistribuir el material en cualquier medio o formato para cualquier propósito, incluso comercialmente.</li>
+        <li><strong>Adaptar</strong> — mezclar, transformar y construir a partir del material para cualquier propósito, incluso comercialmente.</li>
+    </ul>
+    <p>
+        El licenciante no puede revocar estas libertades mientras se cumplan las condiciones de la licencia:
+    </p>
+    <ul>
+        <li><strong>Atribución</strong> — Debes dar el crédito adecuado, proporcionar un enlace a la licencia e indicar si se realizaron cambios. Puedes hacerlo de cualquier manera razonable, pero no de una forma que sugiera que el licenciante te respalda a ti o tu uso del material.</li>
+        <li><strong>Sin restricciones adicionales</strong> — No puedes aplicar términos legales ni medidas tecnológicas que restrinjan legalmente a otros de hacer cualquier cosa que la licencia permita.</li>
+    </ul>
+
+    
+
+    <h2>Licencia Propuesta para el Dataset Generado</h2>
+    <p>
+        Dado que el dataset original está bajo la licencia CC BY 4.0, el nuevo dataset generado también debería usar una licencia compatible para garantizar la misma libertad de uso y modificación, además de cumplir con la atribución necesaria.
+    </p>
+    <p>
+        La licencia propuesta para el dataset generado es también <strong>CC BY 4.0</strong>, ya que:
+    </p>
+    <ul>
+        <li>Permite a otros compartir y adaptar el dataset generado, incluso para usos comerciales.</li>
+        <li>Exige que se dé crédito al dataset original y al dataset generado.</li>
+        <li>No impone restricciones adicionales que limiten las libertades otorgadas por la licencia.</li>
+    </ul>
+
+    <p>
+        Para más detalles sobre la licencia <strong>CC BY 4.0</strong>, es posible consultar la documentación oficial en el siguiente enlace: 
+        <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">https://creativecommons.org/licenses/by/4.0/</a>
+    </p>
+    <h1>Definición de la Estrategia de Nombramiento de Recursos (Resource Naming Strategy)</h1>
+    <p>
+        Para la ontología y los datos que se generen a partir del dataset, se sigue una estrategia clara de nombramiento de recursos. A continuación, se definen los principios clave que se aplicarán para las URIs de los recursos.
+    </p>
+
+    <h2>1. Forma de las URIs (URI Form)</h2>
+    <p>
+        Las URIs se construirán de acuerdo al tipo de recurso, siguiendo estas dos convenciones:
+    </p>
+    <ul>
+        <li>Para los términos ontológicos (clases y propiedades), se utilizarán <strong>hash URIs</strong> con el formato <code>https://{dominio}/{path}/ontology/{NombreOntologia}#{nombreClase}</code> para clases o <code>https://{dominio}/{path}/ontology/{NombreOntologia}#{nombrePropiedad}</code> para las propiedades. Esto asegura que todos los términos dentro de una clase ontológica estén claramente definidos bajo un mismo espacio de nombres.</li>
+        <li>Para los individuos o instancias (entidades concretas), se utilizarán <strong>slash URIs</strong> con el formato <code>https://{dominio}/{path}/resource/{tipo-de-recurso}/{identificador}</code>, asegurando la identificación única de cada instancia específica.</li>
+    </ul>
+    
+
+    <h2>2. Negociación de Contenidos (Content Negotiation)</h2>
+    <p>
+        Se utilizará la <strong>negociación de contenido</strong> para que las URIs respondan a diferentes formatos de datos según las preferencias del cliente. Esto permitirá que las URIs devuelvan datos en formatos como:
+    </p>
+    <ul>
+        <li><strong>HTML</strong> (para visualización web)</li>
+        <li><strong>RDF/XML</strong> (para intercambio de datos en la web semántica)</li>
+        <li><strong>JSON-LD</strong> (para representar datos en formato JSON en un contexto Linked Data)</li>
+    </ul>
+
+    <h2>3. Dominio para las URIs</h2>
+    <p>
+         Un dominio sugerido podría ser <code>https://websemantica.net</code>, ya que estamos en un caso académico para la asignatura <em>Semantic Web, Linked Data and Knowledge Graphs</em>
+    </p>
+
+    <h2>4. Path Structure</h2>
+<p>
+    La <em>Path Structure</em> se diseñará para distinguir claramente entre los términos ontológicos y las instancias de la ontología tal y como se explicó en el punto 2.
+</p>
+<ul>
+    <li>
+        Para los <strong>términos ontológicos</strong>  (clases y propiedades)
+
+        <p>
+            Ejemplo de URI para la clase 'Camara':
+            <code>https://websemantica.net/Group03/ontology/CamarasBcn#Camara</code>
+            </p>
+            <p>
+            Ejemplo de URI para la propiedad de las cámaras 'hasFechaAlta':
+            <code>https://websemantica.net/Group03/ontology/CamarasBcn#hasFechaAlta</code>
+        </p>
+        </p>
+    </li>
+    <li>
+        Para las <strong>instancias individuales</strong> (como cámaras específicas, barrios, y distritos):
+        <p>
+            Ejemplo de URI para una cámara específica con ID '1234':
+            <code>https://websemantica.net/Group03/resource/Camara/1234</code></p>
+            <p>
+            Ejemplo de URI para una barrio específico con código '34':
+            <code>https://websemantica.net/Group03/resource/Barrio/34</code>
+        </p>
+        </p>
+    </li>
+</ul>
+
+
+    <h2>5. Patrones de Identificadores</h2>
+    <p>
+        Los identificadores en las URIs deben seguir los códigos ya presentes en el dataset.
+    </p>
+    
+
+</body>
+</html>
