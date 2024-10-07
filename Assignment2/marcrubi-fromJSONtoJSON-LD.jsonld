@@ -1,0 +1,62 @@
+{
+  "@context": {
+    "@vocab": "http://schema.org/",
+    "fullName": "name",
+    "hometown": {
+      "@id": "homeLocation",
+      "@type": "Place"
+    },
+    "almaMater": "alumniOf",
+    "parents": "parent",
+    "subjects": {
+      "@id": "memberOf",
+      "@container": "@set"
+    },
+    "name": "name",
+    "instructor": "instructor",
+    "description": "description"
+  },
+  "@type": "Person",
+  "fullName": "Marc Rubi Reus",
+  "hometown": {
+    "name": "Palma de Mallorca"
+  },
+  "almaMater": {
+    "@type": "EducationalOrganization",
+    "name": "Politecnica de Madrid"
+  },
+  "parents": [
+    {
+      "@type": "Person",
+      "name": "Miguel"
+    },
+    {
+      "@type": "Person",
+      "name": "Cristina"
+    }
+  ],
+  "memberOf": [
+    {
+      "@type": "Course",
+      "name": "Web Semántica, Linked Data y Grafos de Conocimientos",
+      "instructor": [
+        {
+          "@type": "Person",
+          "name": "Oscar Corcho Garcia"
+        }
+      ],
+      "description": "El objetivo de esta asignatura es proporcionar la base teórica y práctica..."
+    },
+    {
+      "@type": "Course",
+      "name": "Gestión de procesos de tecnologías de la información",
+      "instructor": [
+        {
+          "@type": "Person",
+          "name": "Edmundo Tovar"
+        }
+      ],
+      "description": "En esta asignatura se tratan los elementos de una organización, la gestión por procesos, y modelos de calidad..."
+    }
+  ]
+}
