@@ -1,0 +1,28 @@
+1. SELECT DISTINCT  ?p WHERE {?x a <http://dbpedia.org/ontology/Politician>. ?x ?p ?y
+} #LIMIT 100
+
+2. SELECT DISTINCT ?p 
+WHERE {
+  ?x a <http://dbpedia.org/ontology/Politician>. 
+  ?x ?p ?y.
+  FILTER (?p != rdf:type)
+} 
+#LIMIT 100
+
+3. SELECT DISTINCT ?p ?y 
+WHERE {
+  ?x a <http://dbpedia.org/ontology/Politician>. 
+  ?x ?p ?y.
+  FILTER (?p != rdf:type)
+} 
+#LIMIT 100
+
+4.???
+
+5.
+SELECT ?p (COUNT(DISTINCT ?y) AS ?valueCount)
+WHERE {
+  ?x a <http://dbpedia.org/ontology/Politician>. 
+  ?x ?p ?y.
+  FILTER (?p != rdf:type)
+} 
