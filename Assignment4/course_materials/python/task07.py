@@ -24,132 +24,36 @@ g.parse(github_storage+"/rdf/example6.rdf", format="xml")
 """**TASK 7.1: List all subclasses of "LivingThing" with RDFLib and SPARQL**"""
 
 # TO DO
-from rdflib.plugins.sparql import prepareQuery
-ns = Namespace("http://somewhere#")
-
-for s,p,o in g.triples((None, RDFS.subClassOf, ns.LivingThing)):
-  print(s)
-
-q1 = prepareQuery('''
-    SELECT 
-        ?Subclass 
-    WHERE {
-        ?Subclass rdfs:subClassOf ns:LivingThing.
-    }
-    ''',
-    initNs = {"ns": ns, "rdfs": RDFS}
-)
-
 # Visualize the results
-for r in g.query(q1):
-  print(r.Subclass)
+
+#for r in g.query(q1):
+#  print(r)
 
 """**TASK 7.2: List all individuals of "Person" with RDFLib and SPARQL (remember the subClasses)**
 
 """
 
 # TO DO
-for(s,p,o) in g.triples((None, RDF.subClassOf, ns.Person)):
-    for(s1,p1,o1) in g.triples((None, RDF.type, s)):
-        print(s1)
-  
-
-q2 = prepareQuery('''
-    SELECT 
-        ?Individual 
-    WHERE {
-        ?Individual rdf:type ?Subclass.
-        ?Subclass rdfs:subClassOf ns:Person.
-    }
-    ''',
-    initNs = {"ns": ns, "rdf": RDF, "rdfs": RDFS}
-)
-
 # Visualize the results
-for r in g.query(q2):
-  print(r.Individual)
 
 """**TASK 7.3: List all individuals of just "Person" or "Animal". You do not need to list the individuals of the subclasses of person (in SPARQL only)**
 
 """
 
 # TO DO
-q3 = prepareQuery('''
-    SELECT 
-        ?Individual ?property ?value
-    WHERE {
-        {
-        ?Individual rdf:type ns:Person.
-        ?Individual ?property ?value.
-        }
-        UNION
-        {
-        ?Individual rdf:type ns:Animal.
-        ?Individual ?property ?value.
-        }
-    }
-    ''',
-    initNs = {"ns": ns, "rdf": RDF}
-)
-
 # Visualize the results
-for r in g.query(q3):
-  print(r.Individual, r.property, r.value)
 
 """**TASK 7.4:  List the name of the persons who know Rocky (in SPARQL only)**"""
 
 # TO DO
-from rdflib import FOAF
-VCARD = Namespace("http://www.w3.org/2001/vcard-rdf/3.0#")
-q4 = prepareQuery('''
-    SELECT 
-        ?FullName 
-    WHERE {
-        ?Person rdf:type ns:Person.
-        ?Person foaf:knows ns:Rocky.
-        ?Person vcard:FN ?FullName.
-    }
-    ''',
-    initNs = {"ns": ns, "rdf": RDF, "foaf": FOAF, "vcard": VCARD}
-)
 # Visualize the results
-for r in g.query(q4):
-  print(r.FullName)
 
 """**Task 7.5: List the name of those animals who know at least another animal in the graph (in SPARQL only)**"""
 
 # TO DO
-q5 = prepareQuery('''
-    SELECT 
-        ?Name
-    WHERE {
-        ?Animal rdf:type ns:Animal.
-        ?Animal foaf:knows ?Animal2.
-        ?Animal2 rdf:type ns:Animal.
-        ?Animal vcard:FN ?Name.
-        FILTER (?Animal != ?Animal2)
-    }
-    ''',
-    initNs = {"ns": ns, "rdf": RDF, "foaf": FOAF, "vcard": VCARD}
-)
 # Visualize the results
-for r in g.query(q5):
-  print(r.Name)
 
 """**Task 7.6: List the age of all living things in descending order (in SPARQL only)**"""
 
 # TO DO
-q6 = prepareQuery('''
-    SELECT 
-        ?Age
-    WHERE {
-        ?LivingThing rdf:type ns:LivingThing.
-        ?LivingThing foaf:age ?Age.
-    }
-    ORDER BY DESC(?Age)
-    ''',
-    initNs = {"ns": ns, "rdf": RDF, "foaf": FOAF}
-)
 # Visualize the results
-for r in g.query(q6):
-  print(r.Age)
