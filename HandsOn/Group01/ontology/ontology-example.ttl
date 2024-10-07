@@ -1,0 +1,48 @@
+@prefix ns: <http://smartcity.linkeddata.es/accidents/ontology/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix accident: <http://smartcity.linkeddata.es/accident/>
+@prefix date: <http://smartcity.linkeddata.es/date/>
+@prefix location: <http://smartcity.linkeddata.es/location/>
+@prefix weather: <http://smartcity.linkeddata.es/weather/>
+@prefix vehicle: <http://smartcity.linkeddata.es/vehicle/>
+@prefix person: <http://smartcity.linkeddata.es/person/>
+@prefix injury: <http://smartcity.linkeddata.es/injury/>
+
+accident:Accident_2023S040280 a ns:Accident ;
+    ns:file_number "2023S040280"^^xsd:string ;
+    ns:accident_type "Colisión fronto-lateral"^^xsd:string ;
+    ns:inDate date:Date_2024-04-01 ;
+    ns:hasLocation location:Location_AVDA_NICETO_ALCALA_ZAMORA_AUTOV_M-11 ;
+    ns:hasWeather weather:Weather_LluviaDébil ;
+    ns:involvesVehicle vehicle:Vehicle_Motocicleta125cc ;
+    ns:involvesPerson person:Person_2023S040280 ;
+    ns:hasInjury injury:Injury_2 .
+
+date:Date_2024-04-01 a ns:Date ;
+    ns:date "2024-04-01"^^xsd:date ;
+    ns:time "14:09:00"^^xsd:time .
+
+location:Location_AVDA_NICETO_ALCALA_ZAMORA_AUTOV_M-11 a ns:Location ;
+    ns:location "AVDA. NICETO ALCALA ZAMORA / AUTOV. M-11"^^xsd:String ;
+    ns:number 3 ;
+    ns:district_code 16 ;
+    ns:district "HORTALEZA"^^xsd:String ;
+    ns:coordinate_x_utm 444913.056 ;
+    ns:coordinate_y_utm 4481427.179 .
+
+weather:Weather_LluviaDébil a ns:Weather ;
+    ns:weather_status "Lluvia débil"^^xsd:String .
+
+vehicle:Vehicle_Motocicleta125cc a ns:Vehicle ;
+    ns:vehicle_type "Motocicleta > 125cc"^^xsd:String .
+
+person:Person_2023S040280 a ns:Person ;
+    ns:person_type "Conductor"^^xsd:String ;
+    ns:age_range 55 ;
+    ns:sex "Hombre"^^xsd:String ;
+    ns:alcohol_positive "N"^^xsd:String ;
+    ns:drug_positive "NULL"^^xsd:String .
+
+injury:Injury_2 a ns:Injury ;
+    ns:injury_code 2 ;
+    ns:injury "Ingreso inferior o igual a 24 horas"^^xsd:String .
