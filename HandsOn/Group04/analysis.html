@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Abandoned Vehicles</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <h1>Abandoned Vehicles</h1>
+    <p>
+        <b>URIs:</b><br>We use http://abandoned-vehicles.com/ as domain and the entities will follow the same structure adding the name of the entity to the URI. For instance http://abandoned-vehicles.com/Distric
+    </p>
+    <p>
+        <b>LICENSE:</b><br>The dataset is provided under the Open Government Licence v3.0, with the UK government as the publisher and rightsholder. Any dataset derived from it should maintain attribution to the original source, and the OGL v3.0 would be a fitting choice for licensing the new dataset, as it ensures that the same openness and flexibility are carried forward. With this license we can copy, publish, distribute, adapt and exploit the information for commercial or not commercial intentions.
+    </p>
+    <p>
+        <b>DATA DESCRIPTION: </b><br>This dataset contains eleven different columns: the name of the district, the OND code, the region where the district is located, and seven columns with data from 2001 to 2008.<br>
+        Both the district and the OND code are unique for each row. After purging and cleaning the dataset, we successfully refined it down to a total of 316 records.
+        We can find 8 different regions, along with the corresponding number of rows belonging to each region:E Midlands 40, Eastern 48, London 33, North East 23, North West 43, S East 67,
+        S West 45, W Midlands34, Yorkshire/Humber 20. The numerical data in the last seven columns are integer values, representing the number of abandoned cars.
+    </p>
+    <p>
+        For each individual year the values will be in the following characteristics (blank spaces represent null values):<br>
+        &ensp;2001: range between 0 - 6800<br>
+        &ensp;2002: range between 0 - 8200<br>
+        &ensp;2003: range between 0 - 6000<br>
+        &ensp;2004: range between 0 - 4400<br>
+        &ensp;2005: range between 0 - 3200<br>
+        &ensp;2006: range between 0 - 6000<br>
+        &ensp;2007: range between 0 - 5300<br>
+        &ensp;2008: range between 0 - 1800<br>
+    </p>
+    <p>
+        <b>TABLE:</b><br>
+        This is the table that represents the information extracted from our dataset after the cleaning process:
+    </p>
+    <table>
+        <tr><th>District</th><th>ONS code</th><th>Region</th><th>2000-01</th><th>2001-02</th><th>2002-03</th><th>2003-04</th><th>2004-05</th><th>2005-06</th><th>2006-07</th><th>2007-08</th></tr>
+        <tr><td>Adur</td><td>45UB</td><td>S East</td><td>793</td><td>854</td><td></td><td>100</td><td>279</td><td>119</td><td>99</td><td>70</td></tr>
+        <tr><td>Allerdale</td><td>16UB</td><td>North West</td><td>76</td><td>87</td><td>83</td><td>90</td><td>78</td><td>104</td><td>39</td><td>65</td></tr>
+        <tr><td>Alnwick</td><td>35UB</td><td>North East</td><td>64</td><td>23</td><td>38</td><td>41</td><td>23</td><td>22</td><td>5</td><td>2</td></tr>
+        <tr><td>Amber Valley</td><td>17UB</td><td>E Midlands</td><td>147</td><td>243</td><td>231</td><td>103</td><td></td><td>45</td><td>27</td><td>21</td></tr>
+        <tr><td>Arun</td><td>45UC</td><td>S East</td><td>590</td><td></td><td>881</td><td>564</td><td>439</td><td>257</td><td>180</td><td>97</td></tr>
+        <tr><td>Ashford</td><td>29UB</td><td>S East</td><td>612</td><td>686</td><td>774</td><td>428</td><td>214</td><td>172</td><td>156</td><td>82</td></tr>
+        <tr><td>Aylesbury Vale</td><td>11UB</td><td>S East</td><td>507</td><td>876</td><td></td><td>556</td><td>206</td><td>220</td><td>87</td><td></td></tr>
+        <tr><td>Babergh</td><td>42UB</td><td>Eastern</td><td>391</td><td>718</td><td>648</td><td>496</td><td>349</td><td>251</td><td>87</td><td>46</td></tr>
+        <tr><td>Barking and Dagenham</td><td>00AB</td><td>London</td><td>2761</td><td></td><td>3201</td><td>2080</td><td>940</td><td>1767</td><td>1053</td><td>326</td></tr>
+        <tr><td>Barnet</td><td>00AC</td><td>London</td><td>3287</td><td>4431</td><td>3940</td><td>2697</td><td>2593</td><td>1266</td><td>425</td><td>255</td></tr>
+        <tr><td>Barnsley UA</td><td>00CC</td><td>Yorkshire/Humber</td><td>248</td><td>549</td><td>1275</td><td>1100</td><td></td><td>272</td><td>231</td><td>395</td></tr>
+        <tr><td>Barrow-in-Furness</td><td>16UC</td><td>North West</td><td>38</td><td>83</td><td></td><td></td><td>63</td><td>52</td><td>30</td><td>32</td></tr>
+        <tr><td>Basildon</td><td>22UB</td><td>Eastern</td><td>1529</td><td>1746</td><td>1781</td><td>1244</td><td>573</td><td>413</td><td>191</td><td>123</td></tr>
+        <tr><td>Basingstoke and Deane</td><td>24UB</td><td>S East</td><td>780</td><td>985</td><td></td><td>702</td><td>345</td><td>391</td><td>250</td><td>175</td></tr>
+        <tr><td>Bassetlaw</td><td>37UC</td><td>E Midlands</td><td>92</td><td>348</td><td>471</td><td>334</td><td>153</td><td>117</td><td>63</td><td>48</td></tr>
+        <tr><td>Bath and NE Somerset UA</td><td>00HA</td><td>S West</td><td>796</td><td>590</td><td>781</td><td>458</td><td>501</td><td>253</td><td>287</td><td>166</td></tr>
+        <tr><td>Bedford</td><td>09UD</td><td>Eastern</td><td>876</td><td>1455</td><td>1578</td><td>1191</td><td>654</td><td>531</td><td>252</td><td>137</td></tr>
+        <tr><td>Berwick-upon-Tweed</td><td>35UC</td><td>North East</td><td>14</td><td>32</td><td>53</td><td>41</td><td>27</td><td>16</td><td>11</td><td>9</td></tr>
+        <tr><td>Bexley</td><td>00AD</td><td>London</td><td>1356</td><td>1776</td><td>2391</td><td>910</td><td>781</td><td>1197</td><td>776</td><td>395</td></tr>
+        <tr><td>Birmingham UA</td><td>00CN</td><td>W Midlands</td><td>5466</td><td>5257</td><td></td><td>3231</td><td>2273</td><td>1920</td><td>1530</td><td>939</td></tr>
+        <tr><td>Blaby</td><td>31UB</td><td>E Midlands</td><td>113</td><td></td><td>191</td><td>130</td><td>85</td><td>34</td><td>2</td><td></td></tr>
+        <tr><td>Blackburn with Darwen UA</td><td>00EX</td><td>North West</td><td>184</td><td>231</td><td>276</td><td>249</td><td>493</td><td>325</td><td>205</td><td>127</td></tr>
+        <tr><td>Blackpool UA</td><td>00EY</td><td>North West</td><td>499</td><td>134</td><td>340</td><td>327</td><td>196</td><td>141</td><td>131</td><td>118</td></tr>
+        <tr><td>Blyth Valley</td><td>35UD</td><td>North East</td><td>167</td><td>130</td><td>214</td><td>104</td><td>129</td><td>102</td><td>46</td><td>26</td></tr>
+        <tr><td>Bolsover</td><td>17UC</td><td>E Midlands</td><td>249</td><td>208</td><td>108</td><td>102</td><td></td><td>31</td><td>15</td><td>13</td></tr>
+        <tr><td>Boston</td><td>32UB</td><td>E Midlands</td><td>65</td><td>284</td><td>259</td><td></td><td>232</td><td>74</td><td>34</td><td>61</td></tr>
+        <tr><td>Bournemouth UA</td><td>00HN</td><td>S West</td><td>878</td><td>1420</td><td>1612</td><td>1377</td><td></td><td>490</td><td>306</td><td>205</td></tr>
+        <tr><td>Bracknell Forest UA</td><td>00MA</td><td>S East</td><td>707</td><td>865</td><td>744</td><td>368</td><td>162</td><td>197</td><td></td><td>100</td></tr>
+        <tr><td>Bradford UA</td><td>00CX</td><td>Yorkshire/Humber</td><td>2600</td><td>1607</td><td>1825</td><td></td><td>1025</td><td>995</td><td>439</td><td>285</td></tr>
+        <tr><td>Braintree</td><td>22UC</td><td>Eastern</td><td>554</td><td>715</td><td>1010</td><td>427</td><td>276</td><td>263</td><td>239</td><td>64</td></tr>
+        <tr><td>Breckland</td><td>33UB</td><td>Eastern</td><td>238</td><td>307</td><td>354</td><td>401</td><td></td><td></td><td>169</td><td></td></tr>
+        <tr><td>Brent</td><td>00AE</td><td>London</td><td>3471</td><td>4115</td><td>4184</td><td>1775</td><td>1014</td><td>1036</td><td>712</td><td>426</td></tr>
+        <tr><td>Brentwood</td><td>22UD</td><td>Eastern</td><td>400</td><td>500</td><td></td><td>432</td><td></td><td>88</td><td>82</td><td>49</td></tr>
+        <tr><td>Bridgnorth</td><td>39UB</td><td>W Midlands</td><td>37</td><td>49</td><td>45</td><td>36</td><td>23</td><td>25</td><td>12</td><td>13</td></tr>
+        <tr><td>Brighton and Hove UA</td><td>00ML</td><td>S East</td><td>4000</td><td>2519</td><td>2260</td><td>1317</td><td></td><td>860</td><td>590</td><td>310</td></tr>
+        <tr><td>Broadland</td><td>33UC</td><td>Eastern</td><td>123</td><td>196</td><td>194</td><td>149</td><td></td><td></td><td>84</td><td></td></tr>
+        <tr><td>Bromley</td><td>00AF</td><td>London</td><td>3895</td><td>4215</td><td>3129</td><td>1086</td><td>581</td><td>677</td><td>607</td><td>365</td></tr>
+        <tr><td>Bromsgrove</td><td>47UB</td><td>W Midlands</td><td>119</td><td></td><td></td><td>400</td><td>151</td><td>239</td><td>127</td><td>51</td></tr>
+        <tr><td>Broxbourne</td><td>26UB</td><td>Eastern</td><td>1393</td><td>544</td><td>591</td><td>613</td><td></td><td>230</td><td>158</td><td>27</td></tr>
+        <tr><td>Broxtowe</td><td>37UD</td><td>E Midlands</td><td>171</td><td>437</td><td>713</td><td>366</td><td>177</td><td>144</td><td>90</td><td>33</td></tr>
+        <tr><td>Burnley</td><td>30UD</td><td>North West</td><td>147</td><td>105</td><td></td><td></td><td></td><td>431</td><td>294</td><td>208</td></tr>
+        <tr><td>Bury</td><td>00BM</td><td>North West</td><td>173</td><td></td><td>279</td><td>256</td><td>125</td><td>99</td><td>47</td><td>15</td></tr>
+        <tr><td>Calderdale UA</td><td>00CY</td><td>Yorkshire/Humber</td><td>441</td><td>802</td><td>658</td><td>361</td><td>308</td><td>229</td><td>66</td><td>166</td></tr>
+        <tr><td>Cambridge</td><td>12UB</td><td>Eastern</td><td>261</td><td></td><td>884</td><td>681</td><td></td><td>524</td><td>486</td><td>142</td></tr>
+        <tr><td>Camden</td><td>00AG</td><td>London</td><td>1629</td><td>1897</td><td>1676</td><td>1304</td><td>1069</td><td>819</td><td>539</td><td>306</td></tr>
+        <tr><td>Cannock Chase</td><td>41UB</td><td>W Midlands</td><td>30</td><td>50</td><td></td><td>38</td><td></td><td></td><td>83</td><td>75</td></tr>
+        <tr><td>Canterbury</td><td>29UC</td><td>S East</td><td>809</td><td>974</td><td>1052</td><td>627</td><td>305</td><td>225</td><td>164</td><td>77</td></tr>
+        <tr><td>Caradon</td><td>15UB</td><td>S West</td><td>108</td><td>317</td><td>338</td><td></td><td></td><td>150</td><td>50</td><td>19</td></tr>
+        <tr><td>Carlisle</td><td>16UD</td><td>North West</td><td>504</td><td>232</td><td>258</td><td>200</td><td>245</td><td></td><td>117</td><td>78</td></tr>
+        <tr><td>Carrick</td><td>15UC</td><td>S West</td><td>174</td><td>242</td><td>274</td><td></td><td>174</td><td>263</td><td>107</td><td>40</td></tr>
+        <tr><td>Castle Morpeth</td><td>35UE</td><td>North East</td><td>30</td><td>66</td><td>109</td><td>62</td><td>43</td><td>36</td><td>19</td><td>11</td></tr>
+        <tr><td>Castle Point</td><td>22UE</td><td>Eastern</td><td>450</td><td></td><td></td><td></td><td>136</td><td>171</td><td>62</td><td>29</td></tr>
+        <tr><td>Charnwood</td><td>31UC</td><td>E Midlands</td><td>153</td><td>256</td><td>275</td><td>139</td><td></td><td>10</td><td></td><td>48</td></tr>
+        <tr><td>Chelmsford</td><td>22UF</td><td>Eastern</td><td>800</td><td>700</td><td>650</td><td>334</td><td></td><td></td><td>79</td><td>34</td></tr>
+        <tr><td>Chester</td><td>13UB</td><td>North West</td><td>178</td><td>365</td><td></td><td>359</td><td>292</td><td>239</td><td>132</td><td>191</td></tr>
+        <tr><td>Chesterfield</td><td>17UD</td><td>E Midlands</td><td>45</td><td>134</td><td>149</td><td>86</td><td>49</td><td>35</td><td>15</td><td>14</td></tr>
+        <tr><td>Chester-le-Street</td><td>20UB</td><td>North East</td><td>18</td><td>18</td><td>90</td><td>195</td><td>202</td><td>48</td><td>28</td><td>17</td></tr>
+        <tr><td>Chichester</td><td>45UD</td><td>S East</td><td>600</td><td>1081</td><td>489</td><td>456</td><td>256</td><td>177</td><td>117</td><td>65</td></tr>
+        <tr><td>Chiltern</td><td>11UC</td><td>S East</td><td>195</td><td>325</td><td></td><td>317</td><td>110</td><td></td><td>52</td><td></td></tr>
+        <tr><td>Chorley</td><td>30UE</td><td>North West</td><td>300</td><td>274</td><td></td><td>213</td><td></td><td></td><td>61</td><td>8</td></tr>
+        <tr><td>Christchurch</td><td>19UC</td><td>S West</td><td>73</td><td>156</td><td>85</td><td>101</td><td>20</td><td>59</td><td>27</td><td>22</td></tr>
+        <tr><td>City of Bristol UA</td><td>00HB</td><td>S West</td><td>2590</td><td>1353</td><td>2862</td><td>3172</td><td>772</td><td>414</td><td>358</td><td>326</td></tr>
+        <tr><td>City of Kingston-upon-Hull UA</td><td>00FA</td><td>Yorkshire/Humber</td><td>717</td><td>1254</td><td>1338</td><td>2000</td><td>1575</td><td>1589</td><td>782</td><td>504</td></tr>
+        <tr><td>Colchester</td><td>22UG</td><td>Eastern</td><td>319</td><td>579</td><td>424</td><td></td><td></td><td>299</td><td>170</td><td>32</td></tr>
+        <tr><td>Congleton</td><td>13UC</td><td>North West</td><td>35</td><td>65</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>Copeland</td><td>16UE</td><td>North West</td><td>106</td><td>118</td><td></td><td>77</td><td>57</td><td>44</td><td>78</td><td>36</td></tr>
+        <tr><td>Corby</td><td>34UB</td><td>E Midlands</td><td>504</td><td>1200</td><td></td><td>612</td><td></td><td></td><td>127</td><td></td></tr>
+        <tr><td>Cotswold</td><td>23UC</td><td>S West</td><td>67</td><td>154</td><td>168</td><td>119</td><td>69</td><td>110</td><td>92</td><td>147</td></tr>
+        <tr><td>County of Herefordshire UA</td><td>00GA</td><td>W Midlands</td><td>368</td><td>336</td><td>324</td><td>225</td><td>301</td><td></td><td>75</td><td>46</td></tr>
+        <tr><td>Craven</td><td>36UB</td><td>Yorkshire/Humber</td><td>108</td><td>119</td><td></td><td>40</td><td>29</td><td>15</td><td>9</td><td>4</td></tr>
+        <tr><td>Crawley</td><td>45UE</td><td>S East</td><td>1145</td><td>1037</td><td></td><td>936</td><td></td><td>366</td><td>275</td><td>119</td></tr>
+        <tr><td>Crewe and Nantwich</td><td>13UD</td><td>North West</td><td>50</td><td></td><td>94</td><td>81</td><td></td><td>43</td><td>40</td><td>28</td></tr>
+        <tr><td>Croydon</td><td>00AH</td><td>London</td><td>2878</td><td>4376</td><td>4200</td><td>4000</td><td></td><td>2439</td><td>1309</td><td>985</td></tr>
+        <tr><td>Dacorum</td><td>26UC</td><td>Eastern</td><td>1150</td><td>1300</td><td></td><td>1202</td><td>514</td><td>459</td><td>221</td><td>100</td></tr>
+        <tr><td>Darlington UA</td><td>00EH</td><td>North East</td><td>98</td><td></td><td>430</td><td>465</td><td>297</td><td>275</td><td>143</td><td>42</td></tr>
+        <tr><td>Dartford</td><td>29UD</td><td>S East</td><td>483</td><td>706</td><td>598</td><td>269</td><td>121</td><td>81</td><td>89</td><td>152</td></tr>
+        <tr><td>Daventry</td><td>34UC</td><td>E Midlands</td><td>388</td><td>613</td><td>509</td><td>286</td><td></td><td>97</td><td>73</td><td></td></tr>
+        <tr><td>Derby UA</td><td>00FK</td><td>E Midlands</td><td>579</td><td>996</td><td>1176</td><td>935</td><td>635</td><td>281</td><td>219</td><td>114</td></tr>
+        <tr><td>Derbyshire Dales</td><td>17UF</td><td>E Midlands</td><td>40</td><td>73</td><td>61</td><td>46</td><td>25</td><td>18</td><td>20</td><td>8</td></tr>
+        <tr><td>Derwentside</td><td>20UD</td><td>North East</td><td>15</td><td>89</td><td>221</td><td>501</td><td>90</td><td>151</td><td>84</td><td>64</td></tr>
+        <tr><td>Doncaster UA</td><td>00CE</td><td>Yorkshire/Humber</td><td>410</td><td>1313</td><td>1363</td><td>1488</td><td>2275</td><td>960</td><td>678</td><td>463</td></tr>
+        <tr><td>Dover</td><td>29UE</td><td>S East</td><td>469</td><td>683</td><td>524</td><td>358</td><td>171</td><td>92</td><td>97</td><td></td></tr>
+        <tr><td>Dudley UA</td><td>00CR</td><td>W Midlands</td><td>234</td><td>272</td><td>800</td><td>676</td><td></td><td>451</td><td>299</td><td>162</td></tr>
+        <tr><td>Durham City</td><td>20UE</td><td>North East</td><td>39</td><td></td><td>150</td><td>175</td><td></td><td>168</td><td>42</td><td>19</td></tr>
+        <tr><td>Ealing</td><td>00AJ</td><td>London</td><td>3754</td><td>4916</td><td>3975</td><td>4352</td><td></td><td>5946</td><td>5245</td><td>395</td></tr>
+        <tr><td>Easington</td><td>20UF</td><td>North East</td><td>14</td><td>24</td><td>103</td><td>149</td><td></td><td>152</td><td>41</td><td>19</td></tr>
+        <tr><td>East Cambridgeshire</td><td>12UC</td><td>Eastern</td><td>330</td><td>277</td><td>263</td><td></td><td></td><td>258</td><td>350</td><td>140</td></tr>
+        <tr><td>East Devon</td><td>18UB</td><td>S West</td><td>288</td><td></td><td>423</td><td>329</td><td></td><td>171</td><td>107</td><td>49</td></tr>
+        <tr><td>East Dorset</td><td>19UD</td><td>S West</td><td>279</td><td>282</td><td>292</td><td>223</td><td>75</td><td>49</td><td>29</td><td>6</td></tr>
+        <tr><td>East Hampshire</td><td>24UC</td><td>S East</td><td>209</td><td>311</td><td></td><td>272</td><td>123</td><td>89</td><td>75</td><td>60</td></tr>
+        <tr><td>East Hertfordshire</td><td>26UD</td><td>Eastern</td><td>355</td><td>393</td><td></td><td>473</td><td>286</td><td>165</td><td>70</td><td>37</td></tr>
+        <tr><td>East Lindsey</td><td>32UC</td><td>E Midlands</td><td>226</td><td>359</td><td>424</td><td>438</td><td></td><td>122</td><td>69</td><td>0</td></tr>
+        <tr><td>East Northamptonshire</td><td>34UD</td><td>E Midlands</td><td>191</td><td>257</td><td>381</td><td>317</td><td>158</td><td>122</td><td>75</td><td></td></tr>
+        <tr><td>East Riding of Yorkshire UA</td><td>00FB</td><td>Yorkshire/Humber</td><td>227</td><td>316</td><td>488</td><td>432</td><td>370</td><td>350</td><td>337</td><td>286</td></tr>
+        <tr><td>East Staffordshire</td><td>41UC</td><td>W Midlands</td><td>164</td><td>240</td><td>347</td><td>277</td><td>181</td><td>141</td><td>99</td><td>50</td></tr>
+        <tr><td>Eastbourne</td><td>21UC</td><td>S East</td><td>631</td><td></td><td></td><td>555</td><td>301</td><td>262</td><td>184</td><td></td></tr>
+        <tr><td>Eastleigh</td><td>24UD</td><td>S East</td><td>200</td><td>225</td><td></td><td>169</td><td></td><td></td><td>48</td><td>21</td></tr>
+        <tr><td>Eden</td><td>16UF</td><td>North West</td><td>60</td><td>35</td><td></td><td>23</td><td>27</td><td>21</td><td>15</td><td>6</td></tr>
+        <tr><td>Enfield</td><td>00AK</td><td>London</td><td>4711</td><td>6347</td><td>4973</td><td>3318</td><td>2368</td><td></td><td>1434</td><td>1722</td></tr>
+        <tr><td>Epping Forest</td><td>22UH</td><td>Eastern</td><td>1838</td><td></td><td>838</td><td>619</td><td></td><td>145</td><td>85</td><td>58</td></tr>
+        <tr><td>Epsom and Ewell</td><td>43UC</td><td>S East</td><td>360</td><td>360</td><td></td><td>186</td><td>251</td><td>105</td><td>107</td><td>122</td></tr>
+        <tr><td>Erewash</td><td>17UG</td><td>E Midlands</td><td>270</td><td>324</td><td>304</td><td>149</td><td></td><td>82</td><td>48</td><td>52</td></tr>
+        <tr><td>Fareham</td><td>24UE</td><td>S East</td><td>136</td><td>238</td><td></td><td>141</td><td></td><td>77</td><td>67</td><td>24</td></tr>
+        <tr><td>Fenland</td><td>12UD</td><td>Eastern</td><td>176</td><td></td><td></td><td></td><td>142</td><td>203</td><td>29</td><td>20</td></tr>
+        <tr><td>Forest Heath</td><td>42UC</td><td>Eastern</td><td>145</td><td>680</td><td></td><td></td><td></td><td>198</td><td>193</td><td>55</td></tr>
+        <tr><td>Forest of Dean</td><td>23UD</td><td>S West</td><td>186</td><td>360</td><td></td><td>360</td><td>150</td><td>159</td><td>55</td><td>37</td></tr>
+        <tr><td>Fylde</td><td>30UF</td><td>North West</td><td>11</td><td>45</td><td></td><td>98</td><td></td><td>44</td><td>36</td><td>0</td></tr>
+        <tr><td>Gateshead UA</td><td>00CH</td><td>North East</td><td>149</td><td>143</td><td></td><td>110</td><td>83</td><td>52</td><td>54</td><td>59</td></tr>
+        <tr><td>Gloucester</td><td>23UE</td><td>S West</td><td>700</td><td>896</td><td>1200</td><td>685</td><td>1467</td><td>615</td><td>226</td><td>54</td></tr>
+        <tr><td>Gosport</td><td>24UF</td><td>S East</td><td>496</td><td>545</td><td>355</td><td>293</td><td>214</td><td>146</td><td>153</td><td>99</td></tr>
+        <tr><td>Gravesham</td><td>29UG</td><td>S East</td><td>884</td><td>942</td><td>1035</td><td>547</td><td>390</td><td>332</td><td>168</td><td>73</td></tr>
+        <tr><td>Great Yarmouth</td><td>33UD</td><td>Eastern</td><td>255</td><td>400</td><td></td><td>310</td><td>568</td><td>383</td><td>165</td><td></td></tr>
+        <tr><td>Greenwich</td><td>00AL</td><td>London</td><td>3120</td><td>4200</td><td>4429</td><td>2653</td><td>1879</td><td>1972</td><td>1665</td><td>556</td></tr>
+        <tr><td>Guildford</td><td>43UD</td><td>S East</td><td>724</td><td>934</td><td></td><td>785</td><td>279</td><td>169</td><td>125</td><td>54</td></tr>
+        <tr><td>Hackney</td><td>00AM</td><td>London</td><td>2700</td><td>4066</td><td>3609</td><td>1540</td><td></td><td>1531</td><td>1354</td><td>713</td></tr>
+        <tr><td>Halton UA</td><td>00ET</td><td>North West</td><td>180</td><td>189</td><td></td><td>201</td><td></td><td>451</td><td>301</td><td>204</td></tr>
+        <tr><td>Hambleton</td><td>36UC</td><td>Yorkshire/Humber</td><td>96</td><td>40</td><td></td><td>45</td><td>25</td><td>37</td><td>50</td><td>19</td></tr>
+        <tr><td>Hammersmith and Fulham</td><td>00AN</td><td>London</td><td>1430</td><td>1473</td><td>2188</td><td>1629</td><td>1296</td><td></td><td></td><td></td></tr>
+        <tr><td>Harborough</td><td>31UD</td><td>E Midlands</td><td>550</td><td>480</td><td>96</td><td>220</td><td></td><td></td><td>49</td><td></td></tr>
+        <tr><td>Haringey</td><td>00AP</td><td>London</td><td>6500</td><td>4560</td><td>5900</td><td>1950</td><td>1594</td><td>1143</td><td>829</td><td>564</td></tr>
+        <tr><td>Harlow</td><td>22UJ</td><td>Eastern</td><td>1240</td><td>1310</td><td>1431</td><td>1650</td><td>474</td><td>299</td><td>265</td><td>176</td></tr>
+        <tr><td>Harrogate</td><td>36UD</td><td>Yorkshire/Humber</td><td>143</td><td>262</td><td>355</td><td>355</td><td>126</td><td>127</td><td>43</td><td>137</td></tr>
+        <tr><td>Harrow</td><td>00AQ</td><td>London</td><td>1914</td><td>2249</td><td>2650</td><td>1919</td><td></td><td>1600</td><td>678</td><td>415</td></tr>
+        <tr><td>Hart</td><td>24UG</td><td>S East</td><td>256</td><td>648</td><td></td><td>155</td><td>120</td><td>90</td><td>48</td><td>18</td></tr>
+        <tr><td>Hartlepool UA</td><td>00EB</td><td>North East</td><td>55</td><td>87</td><td>230</td><td>455</td><td>293</td><td>511</td><td>222</td><td>145</td></tr>
+        <tr><td>Hastings</td><td>21UD</td><td>S East</td><td>1100</td><td>1148</td><td>1010</td><td>689</td><td></td><td></td><td>281</td><td></td></tr>
+        <tr><td>Havant</td><td>24UH</td><td>S East</td><td>897</td><td>900</td><td></td><td>301</td><td>174</td><td>262</td><td>192</td><td>134</td></tr>
+        <tr><td>Havering</td><td>00AR</td><td>London</td><td>1250</td><td>3126</td><td>2086</td><td>1584</td><td></td><td>791</td><td>386</td><td>273</td></tr>
+        <tr><td>Hertsmere</td><td>26UE</td><td>Eastern</td><td>534</td><td>650</td><td></td><td>478</td><td>121</td><td>123</td><td>18</td><td>38</td></tr>
+        <tr><td>High Peak</td><td>17UH</td><td>E Midlands</td><td>87</td><td>82</td><td>118</td><td>66</td><td>60</td><td>35</td><td>38</td><td>18</td></tr>
+        <tr><td>Hillingdon</td><td>00AS</td><td>London</td><td>2286</td><td>3128</td><td>3741</td><td>807</td><td>310</td><td>245</td><td>214</td><td>77</td></tr>
+        <tr><td>Hinckley and Bosworth</td><td>31UE</td><td>E Midlands</td><td>353</td><td>429</td><td>332</td><td>174</td><td>65</td><td>35</td><td></td><td></td></tr>
+        <tr><td>Horsham</td><td>45UF</td><td>S East</td><td>173</td><td>333</td><td>380</td><td></td><td>173</td><td>129</td><td>99</td><td></td></tr>
+        <tr><td>Hounslow</td><td>00AT</td><td>London</td><td>2247</td><td>3118</td><td>3125</td><td>2207</td><td>1448</td><td>436</td><td>421</td><td>360</td></tr>
+        <tr><td>Hyndburn</td><td>30UG</td><td>North West</td><td>85</td><td>128</td><td>148</td><td>102</td><td>85</td><td>92</td><td>55</td><td>44</td></tr>
+        <tr><td>Ipswich</td><td>42UD</td><td>Eastern</td><td>785</td><td>1327</td><td></td><td>1069</td><td>1510</td><td>615</td><td>268</td><td>140</td></tr>
+        <tr><td>Isles of Scilly</td><td>15UH</td><td>S West</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+        <tr><td>Islington</td><td>00AU</td><td>London</td><td>2619</td><td>3643</td><td>2748</td><td>1703</td><td>927</td><td>598</td><td>295</td><td>241</td></tr>
+        <tr><td>Kennet</td><td>46UB</td><td>S West</td><td>54</td><td>146</td><td></td><td>241</td><td>73</td><td>69</td><td>47</td><td>22</td></tr>
+        <tr><td>Kensington and Chelsea</td><td>00AW</td><td>London</td><td>195</td><td>232</td><td>265</td><td>209</td><td>138</td><td></td><td></td><td></td></tr>
+        <tr><td>Kerrier</td><td>15UD</td><td>S West</td><td>232</td><td>357</td><td>433</td><td>344</td><td>281</td><td>277</td><td>230</td><td>157</td></tr>
+        <tr><td>Kettering</td><td>34UE</td><td>E Midlands</td><td>350</td><td></td><td></td><td></td><td></td><td>186</td><td>100</td><td></td></tr>
+        <tr><td>King&apos;s Lynn and West Norfolk</td><td>33UE</td><td>Eastern</td><td>271</td><td>457</td><td>580</td><td></td><td></td><td></td><td>142</td><td></td></tr>
+        <tr><td>Kingston upon Thames</td><td>00AX</td><td>London</td><td>739</td><td>2159</td><td>3053</td><td>780</td><td></td><td>400</td><td>360</td><td>191</td></tr>
+        <tr><td>Kirklees UA</td><td>00CZ</td><td>Yorkshire/Humber</td><td>287</td><td>310</td><td>635</td><td>396</td><td>674</td><td>561</td><td>276</td><td>209</td></tr>
+        <tr><td>Knowsley</td><td>00BX</td><td>North West</td><td>92</td><td></td><td></td><td>400</td><td></td><td>100</td><td>51</td><td>21</td></tr>
+        <tr><td>Lambeth</td><td>00AY</td><td>London</td><td>3308</td><td>3775</td><td>3577</td><td>1669</td><td>484</td><td></td><td></td><td></td></tr>
+        <tr><td>Leeds UA</td><td>00DA</td><td>Yorkshire/Humber</td><td>877</td><td>1707</td><td>2190</td><td>1374</td><td></td><td>455</td><td>324</td><td>347</td></tr>
+        <tr><td>Leicester UA</td><td>00FN</td><td>E Midlands</td><td>1416</td><td>1434</td><td>1758</td><td>2834</td><td>967</td><td>429</td><td>292</td><td>166</td></tr>
+        <tr><td>Lewes</td><td>21UF</td><td>S East</td><td>470</td><td></td><td></td><td>1038</td><td>197</td><td>237</td><td>150</td><td></td></tr>
+        <tr><td>Lewisham</td><td>00AZ</td><td>London</td><td>5000</td><td>4671</td><td>3554</td><td>1996</td><td></td><td>1553</td><td>1082</td><td>664</td></tr>
+        <tr><td>Lichfield</td><td>41UD</td><td>W Midlands</td><td>271</td><td></td><td></td><td>122</td><td>50</td><td>53</td><td>56</td><td>43</td></tr>
+        <tr><td>Lincoln</td><td>32UD</td><td>E Midlands</td><td>136</td><td>227</td><td>304</td><td></td><td>84</td><td>76</td><td>54</td><td>46</td></tr>
+        <tr><td>Liverpool</td><td>00BY</td><td>North West</td><td>286</td><td></td><td></td><td>1327</td><td>902</td><td>1240</td><td>723</td><td>761</td></tr>
+        <tr><td>Luton UA</td><td>00KA</td><td>Eastern</td><td>2403</td><td>4876</td><td>5045</td><td>4043</td><td>2097</td><td>1361</td><td>891</td><td>497</td></tr>
+        <tr><td>Macclesfield</td><td>13UG</td><td>North West</td><td>114</td><td>141</td><td>238</td><td>198</td><td>83</td><td>83</td><td>49</td><td>24</td></tr>
+        <tr><td>Maidstone</td><td>29UH</td><td>S East</td><td>1015</td><td>1386</td><td>1647</td><td>475</td><td>184</td><td>115</td><td>84</td><td>47</td></tr>
+        <tr><td>Maldon</td><td>22UK</td><td>Eastern</td><td>657</td><td></td><td>253</td><td>181</td><td></td><td>92</td><td>42</td><td>25</td></tr>
+        <tr><td>Manchester</td><td>00BN</td><td>North West</td><td>890</td><td>1102</td><td>1026</td><td>1350</td><td>182</td><td>234</td><td>224</td><td>178</td></tr>
+        <tr><td>Mansfield</td><td>37UF</td><td>E Midlands</td><td>650</td><td>410</td><td>496</td><td></td><td></td><td>191</td><td>167</td><td>126</td></tr>
+        <tr><td>Medway UA</td><td>00LC</td><td>S East</td><td>1157</td><td>2512</td><td>2618</td><td></td><td>3154</td><td>2003</td><td>1093</td><td>579</td></tr>
+        <tr><td>Melton</td><td>31UG</td><td>E Midlands</td><td>30</td><td>20</td><td>51</td><td>41</td><td>121</td><td>24</td><td>6</td><td>0</td></tr>
+        <tr><td>Mendip</td><td>40UB</td><td>S West</td><td>250</td><td>396</td><td>622</td><td></td><td></td><td>111</td><td>57</td><td>56</td></tr>
+        <tr><td>Merton</td><td>00BA</td><td>London</td><td>1683</td><td>2140</td><td>2165</td><td>2256</td><td>3036</td><td>1869</td><td>1337</td><td>635</td></tr>
+        <tr><td>Mid Bedfordshire</td><td>09UC</td><td>Eastern</td><td>584</td><td>620</td><td>620</td><td>546</td><td>102</td><td>93</td><td>116</td><td>42</td></tr>
+        <tr><td>Mid Devon</td><td>18UD</td><td>S West</td><td>376</td><td>339</td><td></td><td>159</td><td></td><td>76</td><td>95</td><td>13</td></tr>
+        <tr><td>Mid Suffolk</td><td>42UE</td><td>Eastern</td><td>145</td><td>205</td><td>477</td><td>181</td><td>127</td><td>37</td><td>54</td><td>82</td></tr>
+        <tr><td>Mid Sussex</td><td>45UG</td><td>S East</td><td>347</td><td>370</td><td>498</td><td>377</td><td>164</td><td>315</td><td>104</td><td>69</td></tr>
+        <tr><td>Mole Valley</td><td>43UE</td><td>S East</td><td>621</td><td>497</td><td>523</td><td>312</td><td>715</td><td>259</td><td>112</td><td>26</td></tr>
+        <tr><td>New Forest</td><td>24UJ</td><td>S East</td><td>474</td><td>1246</td><td>1042</td><td>492</td><td>212</td><td>213</td><td>147</td><td>111</td></tr>
+        <tr><td>Newark and Sherwood</td><td>37UG</td><td>E Midlands</td><td>289</td><td>246</td><td></td><td>179</td><td>101</td><td>85</td><td>66</td><td>22</td></tr>
+        <tr><td>Newcastle-under-Lyme</td><td>41UE</td><td>W Midlands</td><td>150</td><td>150</td><td></td><td>121</td><td></td><td>72</td><td>41</td><td>72</td></tr>
+        <tr><td>Newham</td><td>00BB</td><td>London</td><td>6704</td><td>8117</td><td>3105</td><td>2601</td><td></td><td>2822</td><td>2161</td><td>1501</td></tr>
+        <tr><td>North Cornwall</td><td>15UE</td><td>S West</td><td>266</td><td></td><td></td><td>192</td><td></td><td>197</td><td>66</td><td>84</td></tr>
+        <tr><td>North Devon</td><td>18UE</td><td>S West</td><td>33</td><td>192</td><td>383</td><td>343</td><td></td><td></td><td>117</td><td>49</td></tr>
+        <tr><td>North Dorset</td><td>19UE</td><td>S West</td><td>60</td><td></td><td>135</td><td>138</td><td>100</td><td>111</td><td>39</td><td>33</td></tr>
+        <tr><td>North East Derbyshire</td><td>17UJ</td><td>E Midlands</td><td>70</td><td>84</td><td>114</td><td>84</td><td>52</td><td></td><td>29</td><td>26</td></tr>
+        <tr><td>North East Lincolnshire UA</td><td>00FC</td><td>Yorkshire/Humber</td><td>267</td><td>327</td><td>921</td><td>1210</td><td>580</td><td>688</td><td>257</td><td>114</td></tr>
+        <tr><td>North Hertfordshire</td><td>26UF</td><td>Eastern</td><td>332</td><td>587</td><td></td><td>493</td><td>612</td><td>116</td><td>57</td><td>35</td></tr>
+        <tr><td>North Kesteven</td><td>32UE</td><td>E Midlands</td><td>101</td><td>139</td><td>160</td><td>385</td><td>778</td><td>70</td><td>45</td><td></td></tr>
+        <tr><td>North Lincolnshire UA</td><td>00FD</td><td>Yorkshire/Humber</td><td>135</td><td>192</td><td>313</td><td>237</td><td>149</td><td>232</td><td>110</td><td>31</td></tr>
+        <tr><td>North Norfolk</td><td>33UF</td><td>Eastern</td><td>66</td><td>138</td><td>145</td><td>104</td><td></td><td></td><td>29</td><td>0</td></tr>
+        <tr><td>North Somerset UA</td><td>00HC</td><td>S West</td><td>570</td><td>884</td><td></td><td>323</td><td>308</td><td>258</td><td>159</td><td>107</td></tr>
+        <tr><td>North Tyneside UA</td><td>00CK</td><td>North East</td><td>451</td><td>168</td><td></td><td>181</td><td>319</td><td>301</td><td>226</td><td>155</td></tr>
+        <tr><td>North Warwickshire</td><td>44UB</td><td>W Midlands</td><td>133</td><td>150</td><td>255</td><td></td><td></td><td>24</td><td>21</td><td></td></tr>
+        <tr><td>North West Leicestershire</td><td>31UH</td><td>E Midlands</td><td>267</td><td>326</td><td>418</td><td>181</td><td>57</td><td>104</td><td></td><td></td></tr>
+        <tr><td>Northampton</td><td>34UF</td><td>E Midlands</td><td>1682</td><td>2061</td><td></td><td>1471</td><td></td><td></td><td>436</td><td></td></tr>
+        <tr><td>Norwich</td><td>33UG</td><td>Eastern</td><td>351</td><td>590</td><td></td><td>566</td><td></td><td></td><td>276</td><td></td></tr>
+        <tr><td>Nottingham UA</td><td>00FY</td><td>E Midlands</td><td>586</td><td>1066</td><td>2728</td><td>1226</td><td>2502</td><td></td><td>379</td><td>261</td></tr>
+        <tr><td>Nuneaton and Bedworth</td><td>44UC</td><td>W Midlands</td><td>183</td><td></td><td>502</td><td>333</td><td>192</td><td>101</td><td>81</td><td>53</td></tr>
+        <tr><td>Oadby and Wigston</td><td>31UJ</td><td>E Midlands</td><td>58</td><td></td><td>63</td><td></td><td>87</td><td>48</td><td>14</td><td></td></tr>
+        <tr><td>Oldham</td><td>00BP</td><td>North West</td><td>310</td><td></td><td>676</td><td>700</td><td></td><td></td><td>157</td><td></td></tr>
+        <tr><td>Oswestry</td><td>39UD</td><td>W Midlands</td><td>129</td><td>56</td><td>123</td><td></td><td>34</td><td>33</td><td>10</td><td>8</td></tr>
+        <tr><td>Oxford</td><td>38UC</td><td>S East</td><td>1455</td><td>1560</td><td>1534</td><td>2572</td><td>2083</td><td>1919</td><td>1081</td><td>339</td></tr>
+        <tr><td>Pendle</td><td>30UJ</td><td>North West</td><td>550</td><td>392</td><td>448</td><td>350</td><td>88</td><td>64</td><td>39</td><td>28</td></tr>
+        <tr><td>Plymouth UA</td><td>00HG</td><td>S West</td><td>1779</td><td>2040</td><td>3861</td><td>2218</td><td></td><td></td><td>535</td><td>294</td></tr>
+        <tr><td>Poole UA</td><td>00HP</td><td>S West</td><td>649</td><td>978</td><td></td><td>622</td><td>204</td><td>177</td><td>106</td><td>82</td></tr>
+        <tr><td>Portsmouth UA</td><td>00MR</td><td>S East</td><td>826</td><td></td><td>1133</td><td>818</td><td>659</td><td>734</td><td>493</td><td>289</td></tr>
+        <tr><td>Preston</td><td>30UK</td><td>North West</td><td>135</td><td>135</td><td>247</td><td>220</td><td></td><td>42</td><td>64</td><td></td></tr>
+        <tr><td>Purbeck</td><td>19UG</td><td>S West</td><td>89</td><td>194</td><td>185</td><td>156</td><td>34</td><td>45</td><td>22</td><td>16</td></tr>
+        <tr><td>Reading UA</td><td>00MC</td><td>S East</td><td>1090</td><td>1563</td><td>1498</td><td>1905</td><td>299</td><td>238</td><td>129</td><td>797</td></tr>
+        <tr><td>Redbridge</td><td>00BC</td><td>London</td><td>1562</td><td>2219</td><td>2005</td><td>1152</td><td></td><td>2526</td><td></td><td></td></tr>
+        <tr><td>Reigate and Banstead</td><td>43UF</td><td>S East</td><td>718</td><td>558</td><td></td><td>525</td><td>269</td><td>227</td><td>64</td><td>84</td></tr>
+        <tr><td>Restormel</td><td>15UG</td><td>S West</td><td>266</td><td>389</td><td></td><td>479</td><td>261</td><td>168</td><td>114</td><td>282</td></tr>
+        <tr><td>Ribble Valley</td><td>30UL</td><td>North West</td><td>16</td><td>35</td><td>41</td><td>35</td><td>20</td><td>12</td><td>14</td><td>4</td></tr>
+        <tr><td>Richmond upon Thames</td><td>00BD</td><td>London</td><td>1201</td><td>1201</td><td>970</td><td>757</td><td>494</td><td>306</td><td>246</td><td>20</td></tr>
+        <tr><td>Richmondshire</td><td>36UE</td><td>Yorkshire/Humber</td><td>9</td><td>33</td><td>85</td><td>70</td><td></td><td>41</td><td>41</td><td>7</td></tr>
+        <tr><td>Rossendale</td><td>30UM</td><td>North West</td><td>180</td><td>174</td><td>275</td><td>190</td><td>506</td><td>112</td><td>42</td><td>29</td></tr>
+        <tr><td>Rother</td><td>21UG</td><td>S East</td><td>336</td><td>288</td><td></td><td>280</td><td></td><td></td><td>97</td><td></td></tr>
+        <tr><td>Rotherham UA</td><td>00CF</td><td>Yorkshire/Humber</td><td>150</td><td>410</td><td>708</td><td>533</td><td>315</td><td>260</td><td>248</td><td>245</td></tr>
+        <tr><td>Runnymede</td><td>43UG</td><td>S East</td><td>609</td><td>659</td><td></td><td>363</td><td>144</td><td>207</td><td>168</td><td>91</td></tr>
+        <tr><td>Rushcliffe</td><td>37UJ</td><td>E Midlands</td><td>181</td><td>147</td><td>218</td><td>478</td><td>197</td><td>83</td><td>29</td><td>10</td></tr>
+        <tr><td>Rushmoor</td><td>24UL</td><td>S East</td><td>375</td><td>571</td><td>494</td><td>216</td><td>119</td><td>118</td><td>69</td><td>49</td></tr>
+        <tr><td>Rutland UA</td><td>00FP</td><td>E Midlands</td><td>100</td><td>40</td><td>62</td><td>60</td><td>28</td><td>39</td><td>32</td><td>25</td></tr>
+        <tr><td>Ryedale</td><td>36UF</td><td>Yorkshire/Humber</td><td>45</td><td>100</td><td>53</td><td>60</td><td>10</td><td>19</td><td>12</td><td>16</td></tr>
+        <tr><td>Salisbury</td><td>46UD</td><td>S West</td><td>354</td><td>400</td><td></td><td>295</td><td>114</td><td>90</td><td>70</td><td>80</td></tr>
+        <tr><td>Scarborough</td><td>36UG</td><td>Yorkshire/Humber</td><td>543</td><td>620</td><td>507</td><td></td><td></td><td>81</td><td>80</td><td>20</td></tr>
+        <tr><td>Sedgefield</td><td>20UG</td><td>North East</td><td>80</td><td>90</td><td>100</td><td>351</td><td>186</td><td>196</td><td>22</td><td>19</td></tr>
+        <tr><td>Sedgemoor</td><td>40UC</td><td>S West</td><td>377</td><td>619</td><td>897</td><td>552</td><td>244</td><td>141</td><td>134</td><td>52</td></tr>
+        <tr><td>Sefton</td><td>00CA</td><td>North West</td><td>128</td><td>194</td><td>202</td><td>176</td><td>42</td><td>141</td><td>88</td><td>19</td></tr>
+        <tr><td>Selby</td><td>36UH</td><td>Yorkshire/Humber</td><td>120</td><td></td><td>132</td><td>77</td><td>45</td><td>36</td><td>25</td><td>8</td></tr>
+        <tr><td>Sevenoaks</td><td>29UK</td><td>S East</td><td>498</td><td>532</td><td>1057</td><td>348</td><td>163</td><td>114</td><td>90</td><td></td></tr>
+        <tr><td>Sheffield UA</td><td>00CG</td><td>Yorkshire/Humber</td><td>100</td><td>1421</td><td>1110</td><td>847</td><td>547</td><td>401</td><td>261</td><td>99</td></tr>
+        <tr><td>Shepway</td><td>29UL</td><td>S East</td><td>733</td><td>859</td><td>815</td><td>575</td><td>179</td><td>144</td><td>147</td><td>57</td></tr>
+        <tr><td>Shrewsbury and Atcham</td><td>39UE</td><td>W Midlands</td><td>86</td><td>110</td><td>135</td><td>104</td><td>79</td><td>88</td><td>34</td><td>15</td></tr>
+        <tr><td>Slough UA</td><td>00MD</td><td>S East</td><td>669</td><td>1665</td><td></td><td>855</td><td></td><td>371</td><td>300</td><td>129</td></tr>
+        <tr><td>Solihull UA</td><td>00CT</td><td>W Midlands</td><td>275</td><td>341</td><td>571</td><td>374</td><td>1047</td><td></td><td>695</td><td>553</td></tr>
+        <tr><td>South Bedfordshire</td><td>09UE</td><td>Eastern</td><td>500</td><td>1800</td><td>1868</td><td>1500</td><td></td><td>442</td><td>156</td><td>81</td></tr>
+        <tr><td>South Cambridgeshire</td><td>12UG</td><td>Eastern</td><td>100</td><td>547</td><td>509</td><td>552</td><td>212</td><td>189</td><td>112</td><td>74</td></tr>
+        <tr><td>South Derbyshire</td><td>17UK</td><td>E Midlands</td><td>154</td><td>325</td><td>251</td><td>141</td><td>31</td><td>22</td><td>24</td><td>11</td></tr>
+        <tr><td>South Gloucestershire UA</td><td>00HD</td><td>S West</td><td>987</td><td>1185</td><td></td><td>854</td><td>706</td><td>391</td><td>252</td><td>268</td></tr>
+        <tr><td>South Hams</td><td>18UG</td><td>S West</td><td>300</td><td>235</td><td></td><td>282</td><td>136</td><td>86</td><td>60</td><td>38</td></tr>
+        <tr><td>South Kesteven</td><td>32UG</td><td>E Midlands</td><td>148</td><td>221</td><td>346</td><td>236</td><td></td><td>80</td><td>45</td><td></td></tr>
+        <tr><td>South Lakeland</td><td>16UG</td><td>North West</td><td>325</td><td>403</td><td></td><td>131</td><td>96</td><td>39</td><td>35</td><td>21</td></tr>
+        <tr><td>South Norfolk</td><td>33UH</td><td>Eastern</td><td>116</td><td>171</td><td>164</td><td>75</td><td>66</td><td>85</td><td>47</td><td>17</td></tr>
+        <tr><td>South Northamptonshire</td><td>34UG</td><td>E Midlands</td><td>140</td><td></td><td>232</td><td>155</td><td></td><td>72</td><td>31</td><td></td></tr>
+        <tr><td>South Oxfordshire</td><td>38UD</td><td>S East</td><td>418</td><td>441</td><td>602</td><td>489</td><td>251</td><td>199</td><td>81</td><td>80</td></tr>
+        <tr><td>South Ribble</td><td>30UN</td><td>North West</td><td>51</td><td>36</td><td></td><td></td><td>127</td><td>155</td><td>142</td><td>101</td></tr>
+        <tr><td>South Shropshire</td><td>39UF</td><td>W Midlands</td><td>7</td><td>13</td><td>24</td><td>20</td><td>20</td><td>11</td><td>33</td><td></td></tr>
+        <tr><td>South Somerset</td><td>40UD</td><td>S West</td><td>356</td><td>589</td><td>795</td><td>622</td><td></td><td>360</td><td>90</td><td>58</td></tr>
+        <tr><td>South Staffordshire</td><td>41UF</td><td>W Midlands</td><td>48</td><td>82</td><td>106</td><td>90</td><td>48</td><td>80</td><td>47</td><td>22</td></tr>
+        <tr><td>South Tyneside UA</td><td>00CL</td><td>North East</td><td>415</td><td>420</td><td>603</td><td>623</td><td></td><td>475</td><td>261</td><td>123</td></tr>
+        <tr><td>Southampton UA</td><td>00MS</td><td>S East</td><td>1132</td><td>5000</td><td>2071</td><td>2325</td><td>1465</td><td>1534</td><td>1381</td><td>520</td></tr>
+        <tr><td>Southend-on-Sea UA</td><td>00KF</td><td>Eastern</td><td>1132</td><td>2296</td><td>2089</td><td>1745</td><td>1036</td><td>1062</td><td>657</td><td>247</td></tr>
+        <tr><td>Southwark</td><td>00BE</td><td>London</td><td>1934</td><td>2848</td><td>2245</td><td>3375</td><td></td><td>670</td><td>775</td><td>349</td></tr>
+        <tr><td>Spelthorne</td><td>43UH</td><td>S East</td><td>596</td><td>669</td><td></td><td>723</td><td>673</td><td>252</td><td>164</td><td>113</td></tr>
+        <tr><td>St. Albans</td><td>26UG</td><td>Eastern</td><td>486</td><td>622</td><td>756</td><td>665</td><td>227</td><td>183</td><td>143</td><td>104</td></tr>
+        <tr><td>St. Edmundsbury</td><td>42UF</td><td>Eastern</td><td>760</td><td>854</td><td>817</td><td>104</td><td>522</td><td>542</td><td>234</td><td>138</td></tr>
+        <tr><td>St. Helens</td><td>00BZ</td><td>North West</td><td>47</td><td>48</td><td></td><td>55</td><td></td><td>40</td><td>10</td><td>7</td></tr>
+        <tr><td>Stafford</td><td>41UG</td><td>W Midlands</td><td>37</td><td>73</td><td>150</td><td>138</td><td></td><td>64</td><td>29</td><td>25</td></tr>
+        <tr><td>Staffordshire Moorlands</td><td>41UH</td><td>W Midlands</td><td>26</td><td>21</td><td>37</td><td>31</td><td>27</td><td>26</td><td>11</td><td>11</td></tr>
+        <tr><td>Stevenage</td><td>26UH</td><td>Eastern</td><td>598</td><td>1052</td><td>993</td><td>795</td><td></td><td>359</td><td>210</td><td>124</td></tr>
+        <tr><td>Stockport</td><td>00BS</td><td>North West</td><td>120</td><td></td><td></td><td>1167</td><td>322</td><td>274</td><td>131</td><td>63</td></tr>
+        <tr><td>Stockton-on-Tees UA</td><td>00EF</td><td>North East</td><td>39</td><td>64</td><td></td><td>128</td><td>328</td><td>78</td><td>240</td><td>57</td></tr>
+        <tr><td>Stoke-on-Trent UA</td><td>00GL</td><td>W Midlands</td><td>250</td><td>200</td><td></td><td>200</td><td></td><td>500</td><td>415</td><td>119</td></tr>
+        <tr><td>Stratford-on-Avon</td><td>44UE</td><td>W Midlands</td><td>43</td><td>73</td><td>115</td><td></td><td></td><td>15</td><td>9</td><td></td></tr>
+        <tr><td>Stroud</td><td>23UF</td><td>S West</td><td>51</td><td>257</td><td>450</td><td>350</td><td></td><td>320</td><td>209</td><td>237</td></tr>
+        <tr><td>Suffolk Coastal</td><td>42UG</td><td>Eastern</td><td>165</td><td>181</td><td>429</td><td>417</td><td>318</td><td>163</td><td>22</td><td>23</td></tr>
+        <tr><td>Sunderland UA</td><td>00CM</td><td>North East</td><td>197</td><td>186</td><td>422</td><td>237</td><td>201</td><td>139</td><td>60</td><td>31</td></tr>
+        <tr><td>Surrey Heath</td><td>43UJ</td><td>S East</td><td>226</td><td></td><td>312</td><td>107</td><td>102</td><td>84</td><td>19</td><td>10</td></tr>
+        <tr><td>Sutton</td><td>00BF</td><td>London</td><td>1651</td><td>2166</td><td>2055</td><td>860</td><td>474</td><td>1020</td><td>878</td><td>474</td></tr>
+        <tr><td>Swale</td><td>29UM</td><td>S East</td><td>738</td><td>976</td><td>882</td><td>530</td><td>260</td><td>252</td><td>114</td><td>58</td></tr>
+        <tr><td>Swindon UA</td><td>00HX</td><td>S West</td><td>440</td><td>1300</td><td>634</td><td>852</td><td>481</td><td>928</td><td>986</td><td>194</td></tr>
+        <tr><td>Tamworth</td><td>41UK</td><td>W Midlands</td><td>60</td><td></td><td>340</td><td>330</td><td>227</td><td>153</td><td>94</td><td>56</td></tr>
+        <tr><td>Tandridge</td><td>43UK</td><td>S East</td><td>500</td><td>586</td><td>641</td><td>394</td><td>210</td><td>185</td><td>156</td><td>48</td></tr>
+        <tr><td>Taunton Deane</td><td>40UE</td><td>S West</td><td>248</td><td>352</td><td>437</td><td>343</td><td>136</td><td>133</td><td>176</td><td>51</td></tr>
+        <tr><td>Teesdale</td><td>20UH</td><td>North East</td><td>17</td><td>30</td><td>28</td><td>50</td><td>12</td><td>26</td><td>7</td><td>1</td></tr>
+        <tr><td>Teignbridge</td><td>18UH</td><td>S West</td><td>741</td><td>1591</td><td>560</td><td>412</td><td>272</td><td>158</td><td>122</td><td>59</td></tr>
+        <tr><td>Telford and Wrekin UA</td><td>00GF</td><td>W Midlands</td><td>1332</td><td></td><td></td><td>520</td><td>223</td><td>225</td><td>200</td><td>165</td></tr>
+        <tr><td>Tendring</td><td>22UN</td><td>Eastern</td><td>835</td><td>1538</td><td>1542</td><td>974</td><td></td><td>279</td><td>196</td><td>85</td></tr>
+        <tr><td>Test Valley</td><td>24UN</td><td>S East</td><td>406</td><td>658</td><td>673</td><td>481</td><td>264</td><td>506</td><td>415</td><td>105</td></tr>
+        <tr><td>Tewkesbury</td><td>23UG</td><td>S West</td><td>115</td><td>150</td><td></td><td>140</td><td>360</td><td>63</td><td>81</td><td>47</td></tr>
+        <tr><td>Thanet</td><td>29UN</td><td>S East</td><td>950</td><td>1271</td><td>2327</td><td>1222</td><td>452</td><td>320</td><td>253</td><td>111</td></tr>
+        <tr><td>Three Rivers</td><td>26UJ</td><td>Eastern</td><td>351</td><td>802</td><td></td><td>1172</td><td></td><td>115</td><td>99</td><td>56</td></tr>
+        <tr><td>Tonbridge and Malling</td><td>29UP</td><td>S East</td><td>557</td><td>632</td><td>607</td><td>282</td><td>133</td><td>68</td><td>80</td><td>67</td></tr>
+        <tr><td>Torbay UA</td><td>00HH</td><td>S West</td><td>354</td><td>648</td><td></td><td>741</td><td>383</td><td></td><td>158</td><td>103</td></tr>
+        <tr><td>Torridge</td><td>18UK</td><td>S West</td><td>111</td><td></td><td>157</td><td></td><td>72</td><td>66</td><td>43</td><td>33</td></tr>
+        <tr><td>Trafford</td><td>00BU</td><td>North West</td><td>122</td><td></td><td></td><td>51</td><td></td><td></td><td>107</td><td>15</td></tr>
+        <tr><td>Tunbridge Wells</td><td>29UQ</td><td>S East</td><td>688</td><td>695</td><td>734</td><td>381</td><td>168</td><td>113</td><td>107</td><td>65</td></tr>
+        <tr><td>Tynedale</td><td>35UF</td><td>North East</td><td>29</td><td>28</td><td>30</td><td>19</td><td>46</td><td>25</td><td>15</td><td>9</td></tr>
+        <tr><td>Uttlesford</td><td>22UQ</td><td>Eastern</td><td>250</td><td>372</td><td>400</td><td>450</td><td></td><td></td><td>120</td><td>0</td></tr>
+        <tr><td>Vale of White Horse</td><td>38UE</td><td>S East</td><td>464</td><td>386</td><td>428</td><td>444</td><td>216</td><td>138</td><td>75</td><td>52</td></tr>
+        <tr><td>Vale Royal</td><td>13UH</td><td>North West</td><td>161</td><td></td><td>153</td><td>300</td><td>253</td><td>376</td><td>446</td><td>230</td></tr>
+        <tr><td>Wakefield UA</td><td>00DB</td><td>Yorkshire/Humber</td><td>22</td><td></td><td>901</td><td>825</td><td>262</td><td>321</td><td>160</td><td>42</td></tr>
+        <tr><td>Walsall UA</td><td>00CU</td><td>W Midlands</td><td>976</td><td></td><td>356</td><td></td><td></td><td>170</td><td>76</td><td>76</td></tr>
+        <tr><td>Waltham Forest</td><td>00BH</td><td>London</td><td>2716</td><td>3466</td><td>3351</td><td>2358</td><td>1333</td><td>2043</td><td>2265</td><td>1621</td></tr>
+        <tr><td>Wandsworth</td><td>00BJ</td><td>London</td><td>2571</td><td>2794</td><td>2753</td><td>2156</td><td>2096</td><td></td><td></td><td></td></tr>
+        <tr><td>Wansbeck</td><td>35UG</td><td>North East</td><td>73</td><td>165</td><td>301</td><td>154</td><td>122</td><td>70</td><td>41</td><td>23</td></tr>
+        <tr><td>Warrington UA</td><td>00EU</td><td>North West</td><td>39</td><td></td><td>122</td><td>89</td><td></td><td>62</td><td>38</td><td>31</td></tr>
+        <tr><td>Warwick</td><td>44UF</td><td>W Midlands</td><td>137</td><td>300</td><td>249</td><td>208</td><td></td><td>22</td><td>30</td><td></td></tr>
+        <tr><td>Watford</td><td>26UK</td><td>Eastern</td><td>822</td><td>777</td><td>878</td><td>643</td><td>238</td><td>105</td><td>115</td><td>74</td></tr>
+        <tr><td>Waveney</td><td>42UH</td><td>Eastern</td><td>115</td><td>339</td><td></td><td></td><td>218</td><td></td><td>299</td><td>56</td></tr>
+        <tr><td>Waverley</td><td>43UL</td><td>S East</td><td>343</td><td>382</td><td></td><td>262</td><td></td><td>92</td><td>67</td><td>45</td></tr>
+        <tr><td>Wealden</td><td>21UH</td><td>S East</td><td>483</td><td>637</td><td></td><td>366</td><td>282</td><td>211</td><td>151</td><td></td></tr>
+        <tr><td>Wear Valley</td><td>20UJ</td><td>North East</td><td>40</td><td></td><td>122</td><td>158</td><td></td><td>103</td><td>90</td><td>38</td></tr>
+        <tr><td>Wellingborough</td><td>34UH</td><td>E Midlands</td><td>290</td><td>750</td><td>876</td><td>633</td><td>217</td><td>271</td><td>101</td><td>0</td></tr>
+        <tr><td>Welwyn Hatfield</td><td>26UL</td><td>Eastern</td><td>1000</td><td>887</td><td></td><td>793</td><td>277</td><td>130</td><td>209</td><td>120</td></tr>
+        <tr><td>West Berkshire UA (Newbury)</td><td>00MB</td><td>S East</td><td>697</td><td>772</td><td>929</td><td>287</td><td></td><td>101</td><td>75</td><td>78</td></tr>
+        <tr><td>West Devon</td><td>18UL</td><td>S West</td><td>65</td><td>85</td><td>123</td><td>171</td><td></td><td>116</td><td>28</td><td>13</td></tr>
+        <tr><td>West Dorset</td><td>19UH</td><td>S West</td><td>232</td><td>528</td><td>438</td><td>468</td><td>303</td><td></td><td>56</td><td>30</td></tr>
+        <tr><td>West Lancashire</td><td>30UP</td><td>North West</td><td>132</td><td>94</td><td>207</td><td>150</td><td>149</td><td>185</td><td>48</td><td>33</td></tr>
+        <tr><td>West Oxfordshire</td><td>38UF</td><td>S East</td><td>290</td><td>346</td><td>511</td><td>207</td><td>185</td><td>151</td><td>88</td><td>31</td></tr>
+        <tr><td>West Somerset</td><td>40UF</td><td>S West</td><td>64</td><td>79</td><td>188</td><td>95</td><td>23</td><td>30</td><td>26</td><td>22</td></tr>
+        <tr><td>West Wiltshire</td><td>46UF</td><td>S West</td><td>113</td><td></td><td></td><td>149</td><td></td><td>43</td><td>76</td><td>138</td></tr>
+        <tr><td>Westminster</td><td>00BK</td><td>London</td><td>496</td><td>333</td><td>336</td><td>301</td><td>210</td><td>136</td><td>131</td><td>72</td></tr>
+        <tr><td>Weymouth and Portland</td><td>19UJ</td><td>S West</td><td>85</td><td>48</td><td>184</td><td>202</td><td>122</td><td>92</td><td>35</td><td>33</td></tr>
+        <tr><td>Winchester</td><td>24UP</td><td>S East</td><td>263</td><td>246</td><td></td><td>142</td><td>120</td><td>145</td><td>75</td><td>18</td></tr>
+        <tr><td>Windsor and Maidenhead UA</td><td>00ME</td><td>S East</td><td>488</td><td>490</td><td>458</td><td>266</td><td>190</td><td>76</td><td>40</td><td></td></tr>
+        <tr><td>Wirral</td><td>00CB</td><td>North West</td><td>835</td><td>955</td><td></td><td>540</td><td>961</td><td>253</td><td>182</td><td>80</td></tr>
+        <tr><td>Woking</td><td>43UM</td><td>S East</td><td>352</td><td>448</td><td></td><td>257</td><td>103</td><td>56</td><td>40</td><td>38</td></tr>
+        <tr><td>Wolverhampton UA</td><td>00CW</td><td>W Midlands</td><td>381</td><td>387</td><td>463</td><td>250</td><td>456</td><td>352</td><td>139</td><td>89</td></tr>
+        <tr><td>Worcester</td><td>47UE</td><td>W Midlands</td><td>316</td><td>464</td><td>414</td><td>682</td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>Worthing</td><td>45UH</td><td>S East</td><td>310</td><td></td><td>870</td><td>475</td><td>287</td><td>251</td><td>112</td><td>38</td></tr>
+        <tr><td>Wychavon</td><td>47UF</td><td>W Midlands</td><td>90</td><td></td><td>136</td><td>139</td><td></td><td>49</td><td>17</td><td>6</td></tr>
+        <tr><td>Wycombe</td><td>11UF</td><td>S East</td><td>1155</td><td>1169</td><td>1197</td><td>948</td><td></td><td></td><td>100</td><td></td></tr>
+        <tr><td>Wyre</td><td>30UQ</td><td>North West</td><td>70</td><td>73</td><td></td><td>104</td><td>46</td><td>11</td><td>24</td><td>7</td></tr>
+        </table>
+    </body>
+    </html>
+
