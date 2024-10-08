@@ -1,0 +1,18 @@
+@prefix ex: <http://assigment2.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# Class
+ex:ClassRoom03 ex:contains ex:Sensor347, ex:Table322 .
+
+# Sensor
+ex:Sensor347 ex:hasMeasurement ex:Measurement8432 .
+
+# Measurament
+ex:Measurement8432 ex:hasTemperature "29"^^xsd:integer ;
+                   ex:atTime "2022-09-12T12:01:12"^^xsd:dateTime .
+
+# Table
+ex:Table322 ex:hasOwner ex:ETSInformaticos .
+
+# Owner
+ex:ETSInformaticos ex:hasName "ETSI Informáticos" .
