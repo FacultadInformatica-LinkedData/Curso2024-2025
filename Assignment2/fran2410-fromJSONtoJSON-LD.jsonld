@@ -1,0 +1,69 @@
+{
+    "@context": {
+        "schema": "http://schema.org/",
+        "name": "schema:name",
+        "city": "schema:homeLocation",
+        "age": "schema:age",
+        "university": "schema:memberOf",
+        "parents": "schema:parent",
+        "subjects": "schema:subjectOf",
+        "professor": "schema:instructor",
+        "description": "schema:description"
+    },
+    "@type": "schema:Person",
+    "name": "Francisco Chicote Martín",
+    "city": {
+        "@type": "schema:City",
+        "name": "Madrid"
+    },
+    "age": 23,
+    "university": {
+        "@type": "schema:CollegeOrUniversity",
+        "name": "UPM"
+    },
+    "parents": [
+        {
+            "@type": "schema:Person",
+            "name": "Paco"
+        },
+        {
+            "@type": "schema:Person",
+            "name": "Belén"
+        }
+    ],
+    "subjects": [
+        {
+            "@type": "schema:Course",
+            "name": "Procesadores de Lenguajes",
+            "professor": {
+                "@type": "schema:Person",
+                "name": "Juan Pedro Valente"
+            },
+            "description": "Diseno de un analizador lexico"
+        },
+        {
+            "@type": "schema:Course",
+            "name": "Sistemas Operativos",
+            "professor": {
+                "@type": "schema:Person",
+                "name": "María de los Santos PÉREZ HERNÁNDEZ"
+            },
+            "description": "Diseno de una minishell y su funcionamiento"
+        },
+        {
+            "@type": "schema:Course",
+            "name": "Semantic Web, Linked Data and Knowledge Graphs",
+            "professor": [
+                {
+                    "@type": "schema:Person",
+                    "name": "Oscar"
+                },
+                {
+                    "@type": "schema:Person",
+                    "name": "Raul"
+                }
+            ],
+            "description": "Creo que no hace falta explicarlo"
+        }
+    ]
+}
