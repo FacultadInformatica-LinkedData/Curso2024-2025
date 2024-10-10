@@ -1,0 +1,98 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gráfico de Reportes por Mes</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+        <h2>Introduction</h2>
+    <p>Dataset relacionado con las carreteras con mayor conduccion temeraria de la ciudad de Madrid <a href="https://datos.madrid.es/portal/site/egob/menuitem.c05c1f754a33a9fbe4b2e4b284f1a5a0/?vgnextoid=7c2843010d9c3610VgnVCM2000001f4a900aRCRD&amp;vgnextchannel=374512b9ace9f310VgnVCM100000171f5a0aRCRD&amp;vgnextfmt=default">Traffic Accident Dataset</a>
+    
+    The data will be organized by:
+    
+    <ul>
+        <li><strong>Mes</strong>: Mes del accidente.</li>
+        <li><strong>Localizacion</strong>: Carretera o Autopista del accidente.</li>
+        <li><strong>Distrito</strong>: Distrito de Madrid.</li>
+        <li><strong>Tipo de Accidente</strong>: Tipo de accidente, ya sea por otros vehiculos o obstaculos.</li>
+        <li><strong>Tipo de Vehiculo</strong>: Vehiculo involucrado.</li>
+        <li><strong>Drogas/Alcohol</strong>: Si el conductor habria tomado drogas o alcohol</li>
+    </ul>
+
+    </p>
+
+    
+    <h2>Top 10 Distritos con más accidentes</h2>
+    <ul>
+        <li>Puente de Vallecas: 2547 accidentes</li>
+        <li>Carabanchel: 2256 accidentes</li>
+        <li>Chamartín: 2250 accidentes</li>
+        <li>Salamanca: 2040 accidentes</li>
+        <li>Ciudad Lineal: 1889 accidentes</li>
+        <li>Centro: 1796 accidentes</li>
+        <li>Fuencarral-El Pardo: 1658 accidentes</li>
+        <li>Arganzuela: 1620 accidentes</li>
+        <li>Retiro: 1538 accidentes</li>
+        <li>Latina: 1530 accidentes</li>
+    </ul>
+    
+    <h2>Accidentes por tramos horarios</h2>
+    <ul>
+        <li>12:00-18:00: 11582 accidentes</li>
+        <li>18:00-00:00: 9779 accidentes</li>
+        <li>06:00-12:00: 7067 accidentes</li>
+        <li>00:00-06:00: 2931 accidentes</li>
+    </ul>
+        <h2>Accidentes por tramos mensuales</h2>
+    <div style="width: 25%;">
+        <canvas id="accidentChart"></canvas>
+    </div>
+    <h2>Namespace</h2>
+<p>Con la siguiente convencion de nombres si intentara seguir un patron unico para cada dato, pero es inevitable que un dato se pueda repetir ya que en nuestro caso existen coches que se chocan con otros coches lo cual puede resultar en claves repetidas, se dejara en comentarios posibles soluciones que se pueden tener en cuenta.</p>
+
+<pre><code>accidente_{expediente}_{mes}_{localizacion}_{distrito}</code></pre>
+<p>Where:</p>
+<ul>
+    <li><strong>expediente</strong>: Numero de expediente.</li>
+    <li><strong>mes</strong>: Numero del mes (e.g., 1=Enero).</li>
+    <li><strong>localizacion</strong>: Localizacion, en este caso carretera (e.g., AUTOV. M-30,CALL. PUERTO ALTO).</li>
+    <li><strong>Distrito</strong>: Nombre del distrito (e.g., Retiro, Carabanchel).</li>
+</ul>
+<p>Ejemplo</p>
+<pre><code>accidente_2024S000001_1_AUTOV. M-30_Retiro</code></pre>
+
+<h2>Licencia</h2>
+<li> <a href="https://datos.madrid.es/egob/catalogo/aviso-legal">datos.madrid.es</a> is an open portal for datasets, meaning it is open-licensed. Their license details can be found <a href="https://datos.madrid.es/egob/catalogo/aviso-legal">here</a>.</li>
+
+
+    <script>
+        const ctx = document.getElementById('accidentChart').getContext('2d');
+        const accidentChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto'],
+                datasets: [{
+                    label: 'Número de reportes',
+                    data: [3882, 3984, 4017, 4311, 4458, 4226, 3790, 2691],
+                    backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                    borderColor: 'rgba(54, 162, 235, 1)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                },
+                plugins: {
+                    legend: {
+                        display: false
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
