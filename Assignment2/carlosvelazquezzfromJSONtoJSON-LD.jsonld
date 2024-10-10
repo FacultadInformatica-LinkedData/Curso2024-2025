@@ -1,0 +1,65 @@
+{
+  "@context": {
+    "@vocab": "http://example.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "schema": "http://schema.org/",
+    "fullName": "schema:name",
+    "hometown": "schema:address",
+    "age": {
+      "@id": "schema:age",
+      "@type": "xsd:integer"
+    },
+    "almaMater": "schema:alumniOf",
+    "parents": {
+      "@id": "schema:parent",
+      "@container": "@set"
+    },
+    "subjects": {
+      "@id": "schema:Course",
+      "@container": "@list"
+    }
+  },
+  "@type": "schema:Person",
+  "fullName": "Carlos Velazquez",
+  "hometown": "Madrid",
+  "age": 20,
+  "almaMater": "Universidad Politecnica de Madrid",
+  "parents": [
+    {
+      "@type": "schema:Person",
+      "fullName": "Carlos Velazquez"
+    },
+    {
+      "@type": "schema:Person",
+      "fullName": "Maria Luisa Arranz"
+    }
+  ],
+  "subjects": [
+    {
+      "@type": "schema:Course",
+      "name": "Semantic Web",
+      "teachers": [
+        {
+          "@type": "schema:Person",
+          "fullName": "Oscar Corcho"
+        },
+        {
+          "@type": "schema:Person",
+          "fullName": "Raul Garcia Castro"
+        }
+      ],
+      "description": "Data Linking, Knowledge Graphs and more."
+    },
+    {
+      "@type": "schema:Course",
+      "name": "EPAC",
+      "teachers": [
+        {
+          "@type": "schema:Person",
+          "fullName": "Hanan Benali"
+        }
+      ],
+      "description": "I forgot the workbook."
+    }
+  ]
+}
