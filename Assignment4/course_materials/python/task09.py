@@ -20,3 +20,35 @@ g1.parse(github_storage+"resources/data03.rdf", format="xml")
 g2.parse(github_storage+"resources/data04.rdf", format="xml")
 
 """Busca individuos en los dos grafos y enlázalos mediante la propiedad OWL:sameAs, inserta estas coincidencias en g3. Consideramos dos individuos iguales si tienen el mismo apodo y nombre de familia. Ten en cuenta que las URI no tienen por qué ser iguales para un mismo individuo en los dos grafos."""
+
+# Creamos las namespaces que usaremos
+EX = Namespace("http://example.org/")
+FOAF = Namespace("http://xmlns.com/foaf/0.1/")
+
+# Definir OWL:sameAs
+sameAs = OWL.sameAs
+
+# Buscar individuos en los dos grafos
+for s1 in g1.subjects(RDF.type, FOAF.Person):  # Buscar personas en g1
+    # Obtener apodo y nombre de familia en g1
+    nickname1 = g1.value(s1, FOAF.nick)
+    family_name1 = g1.value(s1, FOAF.familyName)
+
+    for s2 in g2.subjects(RDF.type, FOAF.Person):  # Buscar personas en g2
+        # Obtener apodo y nombre de familia en g2
+        nickname2 = g2.value(s2, FOAF.nick)
+        family_name2 = g2.value(s2, FOAF.familyName)
+
+        # Comparar apodo y nombre de familia entre g1 y g2
+        if nickname1 and nickname2 and family_name1 and family_name2:
+            if str(nickname1) == str(nickname2) and str(family_name1) == str(family_name2):
+                # Si coinciden, enlazamos los individuos en g3 con OWL:sameAs
+                g3.add((s1, sameAs, s2))
+
+# Mostrar las triples del grafo g3
+print("Triples en g3 (propiedades sameAs):")
+for s, p, o in g3:
+    print(f"{s} {p} {o}")
+
+# Opcional: puedes guardar el grafo g3 en un archivo
+g3.serialize("linked_data.rdf", format="xml")
