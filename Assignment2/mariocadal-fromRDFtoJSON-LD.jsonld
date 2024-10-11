@@ -1,0 +1,45 @@
+{
+  "@context": {
+    "ex": "http://oeg.fi.upm.es/def/classroom#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "includes": { "@id": "ex:includes", "@type": "@id" },
+    "hasMeasurement": { "@id": "ex:hasMeasurement", "@type": "@id" },
+    "hasTemperature": { "@id": "ex:hasTemperature", "@type": "xsd:integer" },
+    "atTime": { "@id": "ex:atTime", "@type": "xsd:dateTime" },
+    "hasOwner": { "@id": "ex:hasOwner", "@type": "@id" },
+    "hasName": { "@id": "ex:hasName", "@type": "rdfs:Literal" }
+  },
+  "@graph": [
+    {
+      "@id": "ex:Class01",
+      "@type": "ex:ClassRoom",
+      "includes": [
+        "ex:Sensor029",
+        "ex:Computer101"
+      ]
+    },
+    {
+      "@id": "ex:Sensor029",
+      "@type": "ex:Sensor",
+      "hasMeasurement": "ex:Measurement8401"
+    },
+    {
+      "@id": "ex:Measurement8401",
+      "@type": "ex:Measurement",
+      "hasTemperature": 29,
+      "atTime": "2010-06-12T12:00:12"
+    },
+    {
+      "@id": "ex:Computer101",
+      "@type": "ex:Computer",
+      "hasOwner": "ex:User10A"
+    },
+    {
+      "@id": "ex:User10A",
+      "@type": "ex:Person",
+      "hasName": "Pedro"
+    }
+  ]
+}
