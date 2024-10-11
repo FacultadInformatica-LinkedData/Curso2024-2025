@@ -1,0 +1,46 @@
+@prefix apar: <https://smartcity.linkeddata.es/Group10/resource/Aparcamiento/> .
+@prefix bar: <https://smartcity.linkeddata.es/Group10/resource/Barrio/> .
+@prefix dis: <https://smartcity.linkeddata.es/Group10/resource/Distrito/> .
+@prefix via	: <https://smartcity.linkeddata.es/Group10/resource/Via/> .
+@prefix mod: <https://w3id.org/mod/> .
+@prefix Parking: <https://smartcity.linkeddata.es/Group10/ontology/parkingbicismadrid#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sc: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+apar:1 a Parking:Parking ;
+    Parking:Id 1 ;
+    Parking:desc_clasificacion "aparcabicicletas" ;
+    Parking:estado "Operativo ;
+    Parking:coord_gis_x 449732.02 ;
+    Parking:coord_gis_y	4479526.49 ;
+    Parking:sistema_coord "ETRS89" ;
+    Parking:latitud 4046489143 ;
+    Parking:longitud -359293482 ;
+    Parking:codigo_postal 28042 ;
+    Parking:direccion_aux "PORTAL" ;
+	Parking:ndp 31011498 ;
+	Parking:fecha_instalacion "2021-09-14 00:00:00.0"^^xsd:date ;
+	Parking:codigo_interno 1034222 ;
+	Parking:contrato_cod "MU21" ;
+	Parking:modelo "MU-51"
+    Parking:envia via:2 ;
+.
+
+via:2 a Parking:Via ;
+    Parking:num_via 2 ;
+    Parking:nom_via "BAHIA DE POLLENSA" ;
+    Parking:tipo_via "CALLE" ;
+	Parking:enbarrio bar:4
+.
+
+bar:4 a Parking:Barrio ;
+    Parking:cod_barrio 4 ;
+    Parking:barrio "CORRALEJOS" ;
+    Parking:endistrito dis:3 ;
+.
+
+dis:3 a Parking:Distrito ;
+    Parking:cod_distrito 3 ;
+    Parking:distrito "BARAJAS" ;

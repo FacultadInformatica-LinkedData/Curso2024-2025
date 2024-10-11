@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Requirements</title>
+</head>
+<body>
+    <h1>Application Requirements for Smart City Lighting System</h1>
+
+    <h2>Objective</h2>
+    <p>The goal of this application is to create a monitoring system for public lighting in Smart Cities, using the <em>Alumbrado Público</em> dataset. The system will allow users to view and analyze the status of streetlights and optimize energy consumption.</p>
+
+    <h2>Features</h2>
+    <ul>
+        <li><strong>Real-time Monitoring:</strong> The system will provide real-time updates on the status of each streetlight in the city.</li>
+        <li><strong>Energy Consumption Analysis:</strong> Users will be able to track energy usage by each streetlight and optimize consumption based on location and time of day.</li>
+        <li><strong>Geographical Mapping:</strong> The application will include a map interface that shows the location of each streetlight with color-coded indicators for their status.</li>
+    </ul>
+
+    <h2>User Interface Mock-ups</h2>
+    <p>The application will include the following user interfaces:</p>
+    <ul>
+        <li><strong>Dashboard:</strong> Overview of energy consumption and lighting statuses.</li>
+        <li><strong>Map View:</strong> Interactive map showing the location of streetlights with detailed information when clicked.</li>
+        <li><strong>Reports:</strong> Exportable reports on energy consumption, streetlight status, and maintenance needs.</li>
+    </ul>
+
+    <h2>Technical Requirements</h2>
+    <ul>
+        <li><strong>Backend:</strong> The backend will be built using Node.js and will consume the CSV dataset, converting it into RDF for semantic queries.</li>
+        <li><strong>Frontend:</strong> The frontend will be built using React and integrated with map services like Google Maps for displaying geospatial data.</li>
+        <li><strong>Database:</strong> The application will use a triple store (e.g., Apache Jena) for storing and querying RDF data.</li>
+    </ul>
+</body>
+</html>
