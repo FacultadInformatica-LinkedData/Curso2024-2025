@@ -1,48 +1,48 @@
-@prefix ns: <http://smartcity.linkeddata.es/accidents/ontology/> .
+@prefix ns: <http://smartcity.linkeddata.es/accidentes/ontologia/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix accident: <http://smartcity.linkeddata.es/accident/>
-@prefix date: <http://smartcity.linkeddata.es/date/>
-@prefix location: <http://smartcity.linkeddata.es/location/>
-@prefix weather: <http://smartcity.linkeddata.es/weather/>
-@prefix vehicle: <http://smartcity.linkeddata.es/vehicle/>
-@prefix person: <http://smartcity.linkeddata.es/person/>
-@prefix injury: <http://smartcity.linkeddata.es/injury/>
+@prefix accidente: <http://smartcity.linkeddata.es/accidente/>
+@prefix fecha: <http://smartcity.linkeddata.es/fecha/>
+@prefix localizacion: <http://smartcity.linkeddata.es/localizacion/>
+@prefix clima: <http://smartcity.linkeddata.es/clima/>
+@prefix vehiculo: <http://smartcity.linkeddata.es/vehiculo/>
+@prefix persona: <http://smartcity.linkeddata.es/persona/>
+@prefix lesividad: <http://smartcity.linkeddata.es/lesividad/>
 
-accident:Accident_2023S040280 a ns:Accident ;
-    ns:file_number "2023S040280"^^xsd:string ;
-    ns:accident_type "Colisión fronto-lateral"^^xsd:string ;
-    ns:inDate date:Date_2024-04-01 ;
-    ns:hasLocation location:Location_AVDA_NICETO_ALCALA_ZAMORA_AUTOV_M-11 ;
-    ns:hasWeather weather:Weather_LluviaDébil ;
-    ns:involvesVehicle vehicle:Vehicle_Motocicleta125cc ;
-    ns:involvesPerson person:Person_2023S040280 ;
-    ns:hasInjury injury:Injury_2 .
+accidente:Accidente_2023S040280 a ns:Accidente ;
+    ns:num_expediente "2023S040280"^^xsd:String ;
+    ns:tipo_accidente "Colisión fronto-lateral"^^xsd:String ;
+    ns:enFecha fecha:Fecha_2024-04-01 ;
+    ns:tieneLocalizacion Localizacion:Localizacion_AVDA_NICETO_ALCALA_ZAMORA_AUTOV_M-11 ;
+    ns:estado_meteorologico clima:Clima_LluviaDebil ;
+    ns:vehiculoInvolucrado vehiculo:Vehiculo_Motocicleta125cc ;
+    ns:personaInvolucrada persona:Persona_2023S040280 ;
+    ns:tieneLesion lesividad:Lesividad_2 .
 
-date:Date_2024-04-01 a ns:Date ;
-    ns:date "2024-04-01"^^xsd:date ;
-    ns:time "14:09:00"^^xsd:time .
+fecha:Fecha_2024-04-01 a ns:Fecha ;
+    ns:fecha 2024-04-01T14:09:00Z^^xsd:Date ;
 
-location:Location_AVDA_NICETO_ALCALA_ZAMORA_AUTOV_M-11 a ns:Location ;
-    ns:location "AVDA. NICETO ALCALA ZAMORA / AUTOV. M-11"^^xsd:String ;
-    ns:number 3 ;
-    ns:district_code 16 ;
-    ns:district "HORTALEZA"^^xsd:String ;
-    ns:coordinate_x_utm 444913.056 ;
-    ns:coordinate_y_utm 4481427.179 .
+localizacion:Localizacion_AVDA_NICETO_ALCALA_ZAMORA_AUTOV_M-11 a ns:Localizacion ;
+    ns:Localizacion "AVDA. NICETO ALCALA ZAMORA / AUTOV. M-11"^^xsd:String ;
+    ns:numero 3 ;
+    ns:cod_distrito 16 ;
+    ns:distrito "HORTALEZA"^^xsd:String ;
+    ns:coordenada_x_utm 444913.056 ;
+    ns:coordenada_y_utm 4481427.179 .
 
-weather:Weather_LluviaDébil a ns:Weather ;
-    ns:weather_status "Lluvia débil"^^xsd:String .
+clima:Clima_LluviaDebil a ns:Clima ;
+    ns:estado_meteorologico "Lluvia debil"^^xsd:String .
 
-vehicle:Vehicle_Motocicleta125cc a ns:Vehicle ;
-    ns:vehicle_type "Motocicleta > 125cc"^^xsd:String .
+vehiculo:Vehiculo_Motocicleta125cc a ns:Vehiculo ;
+    ns:tipo_vehiculo "Motocicleta > 125cc"^^xsd:String .
 
-person:Person_2023S040280 a ns:Person ;
-    ns:person_type "Conductor"^^xsd:String ;
-    ns:age_range 55 ;
-    ns:sex "Hombre"^^xsd:String ;
-    ns:alcohol_positive "N"^^xsd:String ;
-    ns:drug_positive "NULL"^^xsd:String .
+persona:Persona_2023S040280 a ns:Persona ;
+    ns:tipo_persona "Conductor"^^xsd:String ;
+    ns:min_edad 55 ;
+    ns:max_edad 59 ;
+    ns:sexo "Hombre"^^xsd:String ;
+    ns:positiva_alcohol false^^xsd:Boolean ;
+    ns:positiva_droga false^^xsd:Boolean .
 
-injury:Injury_2 a ns:Injury ;
-    ns:injury_code 2 ;
-    ns:injury "Ingreso inferior o igual a 24 horas"^^xsd:String .
+lesividad:Lesividad_2 a ns:Lesividad ;
+    ns:cod_lesividad 2 ;
+    ns:lesividad "Ingreso inferior o igual a 24 horas"^^xsd:String .
