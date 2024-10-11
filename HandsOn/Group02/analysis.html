@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dataset Analysis - SAMUR Activations</title>
+    <meta name="description" content="Analysis of SAMUR activations dataset for Linked Data generation, including licensing and resource naming strategy.">
+</head>
+<body>
+    <h1>Dataset Analysis - SAMUR Activations</h1>
+
+    <h2>1. Data Analysis</h2>
+    <table border="1" cellpadding="5" cellspacing="0">
+        <thead>
+            <tr>
+                <th>Column</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Año</strong></td>
+                <td>The year when the SAMUR activation occurred.</td>
+            </tr>
+            <tr>
+                <td><strong>Mes</strong></td>
+                <td>The month when the SAMUR activation occurred.</td>
+            </tr>
+            <tr>
+                <td><strong>Hora Solicitud</strong></td>
+                <td>The time when the SAMUR activation was requested.</td>
+            </tr>
+            <tr>
+                <td><strong>Hora Intervención</strong></td>
+                <td>The time when the SAMUR intervention started.</td>
+            </tr>
+            <tr>
+                <td><strong>Código</strong></td>
+                <td>The emergency type code or description of the incident attended (e.g., heart attack, convulsions).</td>
+            </tr>
+            <tr>
+                <td><strong>Distrito</strong></td>
+                <td>The district in Madrid where the emergency occurred.</td>
+            </tr>
+            <tr>
+                <td><strong>Hospital</strong></td>
+                <td>The hospital to which the patient was taken (if applicable). This column may be empty if no hospital intervention was required.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>Ranges and Quantities of Interest</h3>
+    <ul>
+        <li>Años: All data was gathered during 2023, so all values are this exact year.</li>
+        <li>Meses: Activations recorded for each month in 2023 (January to December).</li>
+        <li>Hora Solicitud: Time of request. Values are in format HH:MM:ss in 24H format.</li>
+        <li>Hora Intervención: Time of intervention, giving insights into the speed of response. Values are in format HH:MM:ss in 24H format.</li>
+        <li>Código: Types of emergencies handled by SAMUR (e.g., Infarto, Convulsión). There are 90 emergency codes used during this year.</li>
+        <li>Distrito: Covers 25 districts of Madrid where emergencies were recorded.</li>
+        <li>Hospital: Indicates whether the emergency led to hospitalization and which of the 19 recorded hospitals received the patient.</li>
+    </ul>
+
+    <h2>2. Licensing of the Data Source</h2>
+    <p>The dataset is published by the <a href="https://datos.madrid.es">Madrid City Council</a>, and the rightsholder is the same.</p>
+    <p>The dataset is available under an <a href="https://datos.madrid.es/portal/site/egob/menuitem.3efdb29b813ad8241e830cc2a8a409a0/?vgnextoid=108804d4aab90410VgnVCM100000171f5a0aRCRD&vgnextchannel=b4c412b9ace9f310VgnVCM100000171f5a0aRCRD&vgnextfmt=default">open license</a>, allowing for both commercial and non-commercial reuse.</p>
+    <p>For the generated dataset, we will use the same open license to ensure compliance and consistency.</p>
+
+    <h2>3. Resource Naming Strategy</h2>
+    <p><strong>Domain</strong>: http://smartcity.linkeddata.es/</p>
+    <p><strong>Path</strong>: emergency/</p>
+    <ul>
+        <li><strong>Ontology</strong>: ontology/
+            <ul>
+                <li>Class: Activations/[className]</li>
+                <li>Property: [ontologyName]/[propertyName]</li>
+            </ul>
+        </li>
+        <li><strong>Data</strong>: resource/
+            <ul>
+                <li>Individual: [className]/[identifier]</li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>
