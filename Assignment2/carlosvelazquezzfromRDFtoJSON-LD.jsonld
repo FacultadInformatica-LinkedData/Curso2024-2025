@@ -1,0 +1,47 @@
+{
+  "@context": {
+    "base": "http://example.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+{
+  "@context": {
+    "base": "http://example.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "includes": "base:includes",
+    "hasMeasurement": "base:hasMeasurement",
+    "hasTemperature": "base:hasTemperature",
+    "atTime": "base:atTime",
+    "hasOwner": "base:hasOwner",
+    "hasName": "base:hasName"
+  },
+  "@graph": [
+    {
+      "@id": "base:Class01",
+      "includes": [
+        {
+          "@id": "base:Sensor029",
+          "hasMeasurement": {
+            "@id": "base:Measurement8401",
+            "hasTemperature": {
+              "@type": "xsd:int",
+              "@value": 29
+            },
+            "atTime": {
+              "@value": "2010-06-12T12:00:12",
+              "@type": "xsd:dateTime"
+            }
+          }
+        },
+        {
+          "@id": "base:Computer101",
+          "hasOwner": {
+            "@id": "base:User10A",
+            "hasName": {
+              "@value": "Pedro",
+              "@type": "xsd:string"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
