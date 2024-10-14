@@ -1,0 +1,42 @@
+@prefix: <http://smartcity.linkeddata.es/arbolado/Ontology/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ns: <http://smartcity.linkeddata.es/arbolado/Ontology/OntologiaArbolado/> 
+
+# definicion de la ontologia
+:OntologiaArbolado rdf:type owl:Ontology .
+
+# definicion de las dos clases
+ns:Parque rdf:type owl:Class ;
+    rdfs:label "Parque" .
+
+ns:Arbol rdf:type owl:Class ;
+    rdfs:label "Arbol" .
+
+# definicion de las propiedades
+ns:estado rdf:type owl:DatatypeProperty ;
+    rdfs:domain ns:Arbol ;
+    rdfs:range xsd:string ;
+    rdfs:label "estado" .
+
+ns:nombre rdf:type owl:DatatypeProperty ;
+    rdfs:domain ns:Parque ;
+    rdfs:range xsd:string ;
+    rdfs:label "nombre" .
+
+ns:totalArboles rdf:type owl:DatatypeProperty ;
+    rdfs:domain ns:Parque ;
+    rdfs:range xsd:integer ;
+    rdfs:label "total de árboles" .
+
+ns:totalArbolesConTocones rdf:type owl:DatatypeProperty ;
+    rdfs:domain ns:Parque ;
+    rdfs:range xsd:integer ;
+    rdfs:label "total de árboles (con tocones)" .
+
+ns:perteneceA rdf:type owl:ObjectProperty ;
+    rdfs:domain ns:Arbol ;
+    rdfs:range ns:Parque ;
+    rdfs:label "pertenece a" .
