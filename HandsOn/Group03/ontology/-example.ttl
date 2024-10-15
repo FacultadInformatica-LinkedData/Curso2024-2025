@@ -1,0 +1,34 @@
+@prefix cam: <https://websemantica.net/Group03/resource/Camara/> .
+@prefix bar: <https://websemantica.net/Group03/resource/Barrio/> .
+@prefix dis: <https://websemantica.net/Group03/resource/Distrito/> .
+@prefix mod: <https://w3id.org/mod/> .
+@prefix ns: <https://websemantica.net/Group03/ontology/CamarasBcn#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sc: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cam:001 a ns:Camara ;
+    ns:tieneCodigoCamara "DOMO" ;
+    ns:tieneFechaAltaCamara "2023-10-26"^^xsd:date ;
+    ns:tieneIdCamara 1 ;
+    ns:tieneNumeroCamara 1234 ;
+    ns:tieneSoporteCamara "Poste" ;
+    ns:tieneTipoCamara "Fija" ;
+    ns:tieneX_ETRS89Camara 432100 ;
+    ns:tieneY_ETRS89Camara 4567000 ;
+    sc:latitude 41.385064 ;
+    sc:longitude 2.173403 ;
+    ns:enBarrio bar:12 ;
+.
+
+bar:12 a ns:Barrio ;
+    ns:tieneCodigoBarrio 12 ;
+    ns:tieneNombreBarrio "la Marina del Prat Vermell" ;
+    ns:enDistrito dis:3 ;
+.
+
+dis:3 a ns:Distrito ;
+    ns:tieneCodigoDistrito 3 ;
+    ns:tieneNombreDistrito "Sants-Montjuïc" ;
+.

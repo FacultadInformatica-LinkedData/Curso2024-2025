@@ -1,0 +1,31 @@
+@prefix base: <http://group08.org/hands-on/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix mod: <https://w3id.org/mod#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+base: a owl:Ontology ;
+    dc:creator "Alex Javier Pinduisaca Muñoz",
+        "Angel Astiazaran Gafo",
+        "Lucas Rodriguez Llera",
+        "Mario Villarín Garcia",
+        "Sebastián Revilla Rojas" ;
+    dc:title "Parking Slots" ;
+    owl:versionInfo "0.0.1" ;
+    mod:createdWith <https://chowlk.linkeddata.es/> .
+
+base:Address a owl:Class ;
+    rdfs:label "Address" .
+
+base:Parking a owl:Class ;
+    rdfs:label "Parking" .
+
+base:Vehicle a owl:Class ;
+    rdfs:label "Vehicle" .
+
+dc:creator a owl:AnnotationProperty .
+
+dc:title a owl:AnnotationProperty .
+
+owl:versionInfo a owl:AnnotationProperty .
+

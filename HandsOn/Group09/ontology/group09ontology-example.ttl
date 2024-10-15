@@ -1,0 +1,34 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ns: <http://smartcity.linkeddata.es/arbolado/Ontology/OntologiaArbolado/> .
+@prefix parques: <http://smartcity.linkeddata.es/arbolado/parques/> .
+@prefix arboles: <http://smartcity.linkeddata.es/arbolado/arboles/> .
+
+# ejemplos del parque del Retiro
+parques:retiro rdf:type ns:Parque ;
+    ns:nombre "Parque del Retiro"^^xsd:string ;
+    ns:totalArboles 16857 .
+
+# Ejemplos de arboles del parque del Retiro
+arboles:tree001 rdf:type ns:Arbol ;
+    ns:estado "Joven"^^xsd:string ;
+    ns:perteneceA parques:retiro .
+
+arboles:tree002 rdf:type ns:Arbol ;
+    ns:estado "Maduro"^^xsd:string ;
+    ns:perteneceA parques:retiro .
+
+arboles:tree003 rdf:type ns:Arbol ;
+    ns:estado "Viejo"^^xsd:string ;
+    ns:perteneceA parques:retiro .
+
+# ahora un ejemplo del Parque del Oeste 
+parques:parque_oeste rdf:type ns:Parque ;
+    ns:nombre "Parque del Oeste"^^xsd:string ;
+    ns:totalArbolesConTocones 7078 .
+
+arboles:tree004 rdf:type ns:Arbol ;
+    ns:estado "Recién plantado"^^xsd:string ;
+    ns:perteneceA parques:parque_oeste .

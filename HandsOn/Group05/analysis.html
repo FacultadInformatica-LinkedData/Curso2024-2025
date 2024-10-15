@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dataset Analysis - Air Quality Measurements</title>
+    <meta name="description" content="Simple analysis of Air Quality measurements dataset">
+</head>
+<body>
+    <h1>Dataset Analysis - Air Quality Measurements</h1>
+    
+    <h2>1. Data Analysis</h2>
+    <p>The dataset contains air quality measurements from stations in Gijón. It consists of two main entities:</p>
+    <ul>
+        <li><strong>Measurement Stations (EstacionMedicion)</strong>: Fixed locations where measurements are taken</li>
+        <li><strong>Measurements (Medicion)</strong>: Individual readings of various air quality parameters</li>
+    </ul>
+
+    <h3>Key Data Points</h3>
+    <table border="1" cellpadding="5" cellspacing="0">
+        <tr>
+            <th>Type</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>Location Data</td>
+            <td>ID_estacion, Nombre, Hora, latitud, longitud</td>
+        </tr>
+        <tr>
+            <td>Air Quality Parameters</td>
+            <td>SO2, H2S, NO, NO2, NOX, O3, PM10, PM25, BEN, TOL, MXIL</td>
+        </tr>
+        <tr>
+            <td>Weather Data</td>
+            <td>Wind direction, wind speed, temperature, humidity</td>
+        </tr>
+    </table>
+
+    <h2>2. Licensing</h2>
+    <p>The original dataset is published by the Gijón City Council and is available through the <a href="https://datos.gob.es/es/catalogo/l01330241-calidad-del-aire-estaciones-moviles-campana-portuarios">Spanish Open Data Portal</a>.</p>
+    <p>The data is released under a <a href="http://creativecommons.org/licenses/by/3.0/es">Creative Commons Attribution 3.0 Spain License</a>. This is an open license that permits both commercial and non-commercial use of the data, as long as appropriate credit is given.</p>
+    <p>To maintain consistency and ensure proper data usage, we will apply the same Creative Commons Attribution 3.0 ES license to our derived dataset and ontology. This approach ensures that users can freely use, modify, and share our work while respecting the original data's licensing terms.</p>
+
+    <h2>3. Resource Naming Strategy</h2>
+    <p><strong>Base URI</strong>: http://webcam.linkeddata.Gijon.es.org/</p>
+    
+    <h3>Naming Patterns</h3>
+    <ul>
+        <li>Stations: estacion_[number] (e.g., estacion_12)</li>
+        <li>Measurements: medicion_[station-number]_[period] (e.g., medicion_12_1)</li>
+    </ul>
+
+</body>
+</html>

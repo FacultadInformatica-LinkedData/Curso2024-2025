@@ -1,0 +1,18 @@
+@prefix : <http://example.org/city/lighting#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# Instance of a streetlight
+:streetlight1 a :Streetlight ;
+    :status "Functional" ;
+    :powerConsumption "150"^^xsd:decimal ;
+    :locatedAt :location1 ;
+    :hasType :LED .
+
+# Location instance
+:location1 a :Location ;
+    rdf:value "37.377222, -4.839722" .
+
+# Type of streetlight
+:LED a :Type ;
+    rdf:value "LED" .

@@ -1,0 +1,98 @@
+@prefix : <http://semanticweb.es/airquality/> .
+@prefix mod: <https://w3id.org/mod#> .
+@prefix ns: <http://semanticweb.es/airquality#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ns:codigoEstacion a owl:DatatypeProperty ;
+    rdfs:label "codigo estacion" ;
+    rdfs:domain ns:Estacion ;
+    rdfs:range xsd:String .
+
+ns:codigoMagnitud a owl:DatatypeProperty ;
+    rdfs:label "codigo magnitud" ;
+    rdfs:domain ns:Magnitud ;
+    rdfs:range xsd:String .
+
+ns:codigoMunicipio a owl:DatatypeProperty ;
+    rdfs:label "codigo municipio" ;
+    rdfs:domain ns:Municipio ;
+    rdfs:range xsd:String .
+
+ns:codigoProvincia a owl:DatatypeProperty ;
+    rdfs:label "codigo provincia" ;
+    rdfs:domain ns:Provincia ;
+    rdfs:range xsd:String .
+
+ns:codigoPuntoMuestreo a owl:DatatypeProperty ;
+    rdfs:label "codigo punto muestreo" ;
+    rdfs:domain ns:PuntoMuestreo ;
+    rdfs:range xsd:String .
+
+ns:tieneEstacion a owl:ObjectProperty ;
+    rdfs:label "tiene estacion" ;
+    rdfs:domain ns:Municipio ;
+    rdfs:range ns:Estacion .
+
+ns:tieneEstado a owl:DatatypeProperty ;
+    rdfs:label "tiene estado" ;
+    rdfs:domain ns:Medicion ;
+    rdfs:range xsd:String .
+
+ns:tieneFecha a owl:DatatypeProperty ;
+    rdfs:label "tiene fecha" ;
+    rdfs:domain ns:Medicion ;
+    rdfs:range xsd:Date .
+
+ns:tieneHora a owl:DatatypeProperty ;
+    rdfs:label "tiene hora" ;
+    rdfs:domain ns:Medicion ;
+    rdfs:range xsd:String .
+
+ns:tieneMagnitud a owl:ObjectProperty ;
+    rdfs:label "tiene magnitud" ;
+    rdfs:domain ns:Estacion ;
+    rdfs:range ns:Magnitud .
+
+ns:tieneMedicion a owl:ObjectProperty ;
+    rdfs:label "tiene medicion" ;
+    rdfs:domain ns:PuntoMuestreo ;
+    rdfs:range ns:Medicion .
+
+ns:tieneMunicipio a owl:ObjectProperty ;
+    rdfs:label "tiene municipio" ;
+    rdfs:domain ns:Provincia ;
+    rdfs:range ns:Municipio .
+
+ns:tienePuntoMuestreo a owl:ObjectProperty ;
+    rdfs:label "tiene punto muestreo" ;
+    rdfs:domain ns:Magnitud ;
+    rdfs:range ns:PuntoMuestreo .
+
+ns:tieneValor a owl:DatatypeProperty ;
+    rdfs:label "tiene valor" ;
+    rdfs:domain ns:Medicion ;
+    rdfs:range xsd:Decimal .
+
+: a owl:Ontology ;
+    mod:createdWith <https://chowlk.linkeddata.es/> .
+
+ns:Provincia a owl:Class ;
+    rdfs:label "Provincia" .
+
+ns:Estacion a owl:Class ;
+    rdfs:label "Estacion" .
+
+ns:Magnitud a owl:Class ;
+    rdfs:label "Magnitud" .
+
+ns:Municipio a owl:Class ;
+    rdfs:label "Municipio" .
+
+ns:PuntoMuestreo a owl:Class ;
+    rdfs:label "Punto Muestreo" .
+
+ns:Medicion a owl:Class ;
+    rdfs:label "Medicion" .
+

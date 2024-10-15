@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data and Licensing Analysis</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        h1 {
+            color: #2C3E50;
+        }
+        h2 {
+            color: #2980B9;
+        }
+        p {
+            margin-bottom: 1rem;
+        }
+        .section {
+            margin-bottom: 2rem;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 1.5rem;
+        }
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Data and Licensing Analysis</h1>
+    
+    <div class="section">
+        <h2>1. Dataset Analysis</h2>
+        <p>
+            El dataset tiene varias propiedas, como el ID, nombre del parking, su localización o número de plazas.
+            El rango y descripción de cada propiedad se detalla a continuación.
+        </p>
+
+        <h3>Data Overview</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Atributos</th>
+                    <th>Descripcion</th>
+                    <th>Rango</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>ID</td>
+                    <td>Número de identificación único para cada parking de bicis</td>
+                    <td>Desde el 65.239 hasta el 9.700.000</td>
+                </tr>
+                <tr>
+                    <td>DESC_CLASIFICACION</td>
+                    <td>PROBLEMA: Es un String que se repite para todos los casos "Aparcabicicletas"</td>
+                    <td>única posibilidad: "Aparcabicicletas"</td>
+                </tr>
+                <tr>
+                    <td>COD_BARRIO</td>
+                    <td>Código que identifica el barrio donde se encuentra el parking</td>
+                    <td>Desde 10 a 220</td>
+                </tr>
+                <tr>
+                    <td>BARRIO</td>
+                    <td>Nombre del barrio donde se encuentra el parking de bicis</td>
+                    <td>127 posibles String</td>
+                </tr>
+                <tr>
+                    <td>COD_DISTRITO</td>
+                    <td>Código que identifica el distrito donde se encuentra el parking</td>
+                    <td>De 1 a 22</td>
+                </tr>
+                <tr>
+                    <td>DISTRITO</td>
+                    <td>Nombre del distrito donde se encuentra el parking de bicis</td>
+                    <td>27 posibles String</td>
+                </tr>
+                <tr>
+                    <td>ESTADO</td>
+                    <td>Nos dice si el parking está operativo o no</td>
+                    <td>Dos posibilidades: OPERATIVO O NULO</td>
+                </tr>
+                <tr>
+                    <td>COORD_GIS_X</td>
+                    <td>Coordenado en el eje X de la geolocalización del parking</td>
+                    <td>Desde 431.000 hasta 452.000</td>
+                </tr>
+                <tr>
+                    <td>COORD_GIS_Y</td>
+                    <td>Coordenado en el eje X de la geolocalización del parking</td>
+                    <td>De 4.464.000 hasta 4.489.000</td>
+                </tr>
+                <tr>
+                    <td>SISTEMA_COORD</td>
+                    <td>Sistema de coordenadas que se utiliza para mostrar los valores de estas mismas</td>
+                    <td>Una posibilidad: "ETRS89"</td>
+                </tr>
+                <tr>
+                    <td>LATITUD</td>
+                    <td>Número que indica la latitud del parking</td>
+                    <td>De 0 a 41, concentrado mayoritariamente en el 40</td>
+                </tr>
+                <tr>
+                    <td>LONGITUD</td>
+                    <td>Número que indica la longitud del parking</td>
+                    <td>De -3.81 a 0.02, concentrado mayoritariamente en el -3</td>
+                </tr>
+                <tr>
+                    <td>TIPO_VIA</td>
+                    <td>Nos indica el tipo de vía donde se encuentra el parking de bicis</td>
+                    <td>25 posibilidades</td>
+                </tr>
+                <tr>
+                    <td>NOM_VIA</td>
+                    <td>String que nos indica el nombre de la vía donde está el parking</td>
+                    <td>61 posibilidades</td>
+                </tr>
+                <tr>
+                    <td>NUM_VIA</td>
+                    <td>Número de identificación de la vía donde se encuentra el parking</td>
+                    <td>De 0 a 630</td>
+                </tr>
+                <tr>
+                    <td>COD_POSTAL</td>
+                    <td>Código postal de la zona donde se encuentra el parking</td>
+                    <td>De 28001 a 28056</td>
+                </tr>
+                <tr>
+                    <td>DIRECCION_AUX</td>
+                    <td>Palabra o palabras clave que funcionan como auxiliar para encontrar el parking de bicis</td>
+                    <td>391 posibilidades</td>
+                </tr>
+                <tr>
+                    <td>NDP</td>
+                    <td>Número de identificación de la red donde se encuentra el parking</td>
+                    <td>De 11.000.000 a 32.000.000, concentrado mayoritariamente en 11.000.000, 20.000.000 y 31.000.000</td>
+                </tr>
+                <tr>
+                    <td>FECHA_INSTALACION</td>
+                    <td>Fecha en la que el parking de bicis ha sido inaugurado y disponible para uso</td>
+                    <td>Desde el Sun Dec 31 1899 23:45:16 GMT-0014 (hora estándar de Europa central) hasta el 
+                        Wed Oct 02 2024 02:00:00 GMT+0200 (hora de verano de Europa central)</td>
+                </tr>
+                <tr>
+                    <td>CODIGO_INTERNO</td>
+                    <td>Código interno de identificación para reconocer el parking de bicis, que puede ser un número o un String</td>
+                    <td>Rango númerico: 4000.000 a 4.100.000</td>
+                </tr>
+                <tr>
+                    <td>CONTRATO_COD</td>
+                    <td>Código de identificación del contrato</td>
+                    <td>Un valor posible: "MU-21"</td>
+                </tr>
+                <tr>
+                    <td>MODELO</td>
+                    <td>String que identifica el modelo del parking de bicis</td>
+                    <td>Un valor posible: "MU-51"</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="section">
+        <h2>2. Licensing Analysis</h2>
+        <p>Los datos de la licencia se pueden consultar en: https://datos.madrid.es/portal/site/egob/menuitem.3efdb29b813ad8241e830cc2a8a409a0/?vgnextoid=108804d4aab90410VgnVCM100000171f5a0aRCRD&vgnextchannel=b4c412b9ace9f310VgnVCM100000171f5a0aRCRD&vgnextfmt=default
+            donde se puede comprobar que el Ayuntamiento de Madrid es su editor y titular</p>
+
+        <h3>Editor del dataset y titular de los derechos</h3>
+        <p>Ayuntamiento de Madrid</p>
+
+        <h3>Detalles de la licencia</h3>
+        <p>"Permiten la reutilización de los documentos 
+            y datos sometidos a ellas para fines comerciales y no comerciales"</p>
+    </div>
+
+    <div class="section">
+        <h2>3. Resource Naming Strategy</h2>
+        
+        <h3>URI para los términos ontológicos</h3>
+        <p>Se usará la siguiente URI para las clases: https://smartcity.linkeddata.es/parkingbicismadrid/ontology/{ontologyName}#{nombreClase}</p>
+        <p>Se usará la siguiente URI para las propiedades: https://smartcity.linkeddata.es/parkingbicismadrid/ontology/{ontologyName}#{nombrePropiedad}</p>
+
+        <h3>URI para las entidades concretas</h3>
+        <p>Se usará la siguiente URI para las entidades: https://smartcity.linkeddata.es/parkingbicismadrid/resource/{className}/{id}</p>
+    </div>
+</body>
+</html>
