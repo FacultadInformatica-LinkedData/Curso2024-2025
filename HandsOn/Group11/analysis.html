@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dataset Analysis</title>
+    <meta name="description"
+        content="Dataset analysis, including quantities, value ranges and others. Together with the licensing analysis.">
+    <meta name="keywords"
+        content="dataset, smart city, public health, environment, air polution, transparency, open license, CSV, madrid, analysis.">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            max-width: 1000px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 8px;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f8f8f8;
+        }
+
+        code {
+            font-family: Consolas;
+            background-color: #f8f8f8;
+            padding: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Analysis</h1>
+    <h2>Dataset</h2>
+    <p>
+        For the analysis of the dataset we will display the different properties on a table, with their name, type,
+        value range and any additional notes.
+    </p>
+
+    <h3>horarios.csv</h3>
+    The dataset contains readings for each of the control stations, each line has a different magnitude and/or
+    control station that will have up to 24 different values, one for each hour of the day, depending on when this
+    file was downloaded from the source.
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Value Range</th>
+                <th>Notes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>PROVINCIA</td>
+                <td>Integer</td>
+                <td>28</td>
+                <td>Code of Madrid province.</td>
+            </tr>
+            <tr>
+                <td>MUNICIPIO</td>
+                <td>Integer</td>
+                <td>79</td>
+                <td>Code of Madrid municipality.</td>
+            </tr>
+            <tr>
+                <td>ESTACION</td>
+                <td>Integer</td>
+                <td>4-61</td>
+                <td>Control station code.</td>
+            </tr>
+            <tr>
+                <td>MAGNITUD</td>
+                <td>Integer</td>
+                <td>1-36</td>
+                <td>Represents specific reading identifier.</td>
+            </tr>
+            <tr>
+                <td>PUNTO_MUESTREO</td>
+                <td>String</td>
+                <td></td>
+                <td>Combination of station, magnitude, and technique. Unique.</td>
+            </tr>
+            <tr>
+                <td>ANO</td>
+                <td>Integer</td>
+                <td>2000-2024</td>
+                <td>Year of the data collection.</td>
+            </tr>
+            <tr>
+                <td>MES</td>
+                <td>Integer</td>
+                <td>1-12</td>
+                <td>Month of the data collection.</td>
+            </tr>
+            <tr>
+                <td>DIA</td>
+                <td>Integer</td>
+                <td>1-31</td>
+                <td>Day of the data collection.</td>
+            </tr>
+            <tr>
+                <td>H01, H02, ...</td>
+                <td>Float</td>
+                <td>Various</td>
+                <td>Hourly value. Nullable if reading failure.</td>
+            </tr>
+            <tr>
+                <td>V01, V02, ...</td>
+                <td>Character</td>
+                <td>V, N</td>
+                <td>Validation code (V = Valid, N = Not valid).</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>informacion_estaciones_red_calidad_aire.csv</h3>
+    The dataset contains information about each of the control stations, each line has a different control station with
+    information like its location, id, etc.
+    <code>CODIGO_CORTO</code> is the same as "horario.csv" <code>ESTACION</code>.
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Value Range</th>
+                <th>Notes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>CODIGO</td>
+                <td>Integer</td>
+                <td>28,079,004 — 28,079,061</td>
+                <td>Unique control station identifier.</td>
+            </tr>
+            <tr>
+                <td>CODIGO_CORTO</td>
+                <td>Integer</td>
+                <td>4-61</td>
+                <td>Short code representing the station.</td>
+            </tr>
+            <tr>
+                <td>ESTACION</td>
+                <td>String</td>
+                <td></td>
+                <td>Name of the station.</td>
+            </tr>
+            <tr>
+                <td>DIRECCION</td>
+                <td>String</td>
+                <td></td>
+                <td>Address of the station.</td>
+            </tr>
+            <tr>
+                <td>LONGITUD_ETRS89</td>
+                <td>String</td>
+                <td></td>
+                <td>Longitude.</td>
+            </tr>
+            <tr>
+                <td>LATITUD_ETRS89</td>
+                <td>String</td>
+                <td></td>
+                <td>Latitude.</td>
+            </tr>
+            <tr>
+                <td>ALTITUD</td>
+                <td>Integer</td>
+                <td>600-730</td>
+                <td>Altitude of the station location.</td>
+            </tr>
+            <tr>
+                <td>COD_TIPO</td>
+                <td>String</td>
+                <td>UT, UF, S</td>
+                <td>Type of station (Urbana Tráfico, Urbana Fondo, Suburbana).</td>
+            </tr>
+            <tr>
+                <td>NOM_TIPO</td>
+                <td>String</td>
+                <td></td>
+                <td>COD_TIPO in detail.</td>
+            </tr>
+            <tr>
+                <td>NO2, SO2, CO, PM10, PM2_5, O3, BTX</td>
+                <td>String</td>
+                <td>X or " "</td>
+                <td>Represents whether data is available (X).</td>
+            </tr>
+            <tr>
+                <td>COD_VIA</td>
+                <td>Integer</td>
+                <td>0-32,000,000</td>
+                <td>Unique code for street or avenue.</td>
+            </tr>
+            <tr>
+                <td>VIA_CLASE, VIA_PAR, VIA_NOMBRE</td>
+                <td>String</td>
+                <td></td>
+                <td>Address details.</td>
+            </tr>
+            <tr>
+                <td>Fecha alta</td>
+                <td>Date</td>
+                <td>01/05/1998 - 02/07/2010</td>
+                <td>Starting date of the station.</td>
+            </tr>
+            <tr>
+                <td>COORDENADA_X_ETRS89, COORDENADA_Y_ETRS89</td>
+                <td>Float</td>
+                <td>Various</td>
+                <td>Coordinates in ETRS89 system.</td>
+            </tr>
+            <tr>
+                <td>LONGITUD, LATITUD</td>
+                <td>Float</td>
+                <td>Various</td>
+                <td>Longitude and latitude.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>License Analysis</h3>
+    <ul>
+        <li><strong>Publisher:</strong> Ayuntamiento de Madrid (City Council of Madrid).</li>
+        <li><strong>Rightsholder:</strong> Ayuntamiento de Madrid.</li>
+        <li><strong>License:</strong> Non-exclusive, free-use authorization for commercial and non-commercial reuse.
+        </li>
+        <li><strong>Potential License:</strong> Similar to MIT.
+        </li>
+        <li><strong>Conditions:</strong>
+            <ul>
+                <li>Source attribution is required.</li>
+                <li>Metadata must not be altered.</li>
+                <li>No misleading endorsement.</li>
+                <li>Non-distortion of information.</li>
+                <li>No re-identification for anonymized data.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h3>Resource Naming Strategy</h3>
+    <ul>
+        <li><strong>Ontology:</strong> <code>http://aqd.semanticweb.es/ontology/</code></li>
+        <li><strong>Classes and Properties:</strong> <code>http://aqd.semanticweb.es/ontology/#Name</code></li>
+        <li><strong>Instances:</strong> <code>http://aqd.semanticweb.es/ontology/data/#ClassName/#InstanceID</code></li>
+    </ul>
+
+</body>
+
+</html>

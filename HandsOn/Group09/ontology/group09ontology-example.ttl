@@ -1,0 +1,45 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ns: <http://smartcity.linkeddata.es/concesiones_zonas_verdes/ontologia/> .
+@prefix denominaciones: <http://smartcity.linkeddata.es/concesiones_zonas_verdes/recursos/denominacion/> .
+@prefix concesiones: <http://smartcity.linkeddata.es/concesiones_zonas_verdes/recursos/concesion/> .
+@prefix distritos: <http://smartcity.linkeddata.es/concesiones_zonas_verdes/recursos/distrito/> .
+@prefix apartados: <http://smartcity.linkeddata.es/concesiones_zonas_verdes/recursos/apartado/> .
+
+# Ejemplo de concesión en el distrito de Retiro
+concesiones:concesion001 rdf:type ns:Concesion ;
+    ns:tieneDenominacion denominaciones:cafeteriaRetiro ;
+    ns:tieneNumArchivo "12345"^^xsd:string ;
+    ns:tieneDistrito distritos:retiro ;
+    ns:tieneSubepigrafe "Concesiones y Autorizaciones"^^xsd:string ;
+    ns:tieneApartado apartados:instalacionesRestauracion ;
+    ns:tieneSituacion "Retiro"^^xsd:string .
+
+# Ejemplo de concesión en el distrito de Salamanca
+concesiones:concesion002 rdf:type ns:Concesion ;
+    ns:tieneDenominacion denominaciones:heladosFelipeII ;
+    ns:tieneNumArchivo "12346"^^xsd:string ;
+    ns:tieneDistrito distritos:salamanca ;
+    ns:tieneSubepigrafe "Concesiones y Autorizaciones"^^xsd:string ;
+    ns:tieneApartado apartados:instalacionesRestauracion ;
+    ns:tieneSituacion "Salamanca - Cerca del Wizink Center"^^xsd:string .
+
+# Definición de distritos
+distritos:retiro rdf:type ns:Distrito ;
+    rdfs:label "Retiro"^^xsd:string .
+
+distritos:salamanca rdf:type ns:Distrito ;
+    rdfs:label "Salamanca"^^xsd:string .
+
+# Definición de denominaciones
+denominaciones:cafeteriaRetiro rdf:type ns:Denominacion ;
+    rdfs:label "Cafetería Parque del Retiro"^^xsd:string .
+
+denominaciones:heladosFelipeII rdf:type ns:Denominacion ;
+    rdfs:label "Puesto de Helados Plaza de Felipe II"^^xsd:string .
+
+# Definición de apartados
+apartados:instalacionesRestauracion rdf:type ns:Apartado ;
+    rdfs:label "Instalaciones de Restauración"^^xsd:string .
