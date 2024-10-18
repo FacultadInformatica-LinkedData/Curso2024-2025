@@ -8,20 +8,20 @@
 @prefix persona: <http://smartcity.linkeddata.es/persona/>
 @prefix lesividad: <http://smartcity.linkeddata.es/lesividad/>
 
-accidente:Accidente_2023S040280 a ns:Accidente ;
+accidente:2023S040280 a ns:Accidente ;
     ns:num_expediente "2023S040280"^^xsd:String ;
     ns:tipo_accidente "Colisión fronto-lateral"^^xsd:String ;
-    ns:enFecha fecha:Fecha_2024-04-01 ;
-    ns:tieneLocalizacion Localizacion:Localizacion_AVDA_NICETO_ALCALA_ZAMORA_AUTOV_M-11 ;
-    ns:estado_meteorologico clima:Clima_LluviaDebil ;
-    ns:vehiculoInvolucrado vehiculo:Vehiculo_Motocicleta125cc ;
-    ns:personaInvolucrada persona:Persona_2023S040280 ;
+    ns:enFecha fecha:2024-04-01 ;
+    ns:tieneLocalizacion Localizacion:AVDA_NICETO_ALCALA_ZAMORA_AUTOV_M-11 ;
+    ns:estado_meteorologico clima:LluviaDebil ;
+    ns:vehiculoInvolucrado vehiculo:Motocicleta125cc ;
+    ns:personaInvolucrada persona:2023S040280 ;
     ns:tieneLesion lesividad:Lesividad_2 .
 
-fecha:Fecha_2024-04-01 a ns:Fecha ;
+fecha:2024-04-01 a ns:Fecha ;
     ns:fecha 2024-04-01T14:09:00Z^^xsd:Date ;
 
-localizacion:Localizacion_AVDA_NICETO_ALCALA_ZAMORA_AUTOV_M-11 a ns:Localizacion ;
+localizacion:AVDA_NICETO_ALCALA_ZAMORA_AUTOV_M-11 a ns:Localizacion ;
     ns:Localizacion "AVDA. NICETO ALCALA ZAMORA / AUTOV. M-11"^^xsd:String ;
     ns:numero 3 ;
     ns:cod_distrito 16 ;
@@ -29,13 +29,13 @@ localizacion:Localizacion_AVDA_NICETO_ALCALA_ZAMORA_AUTOV_M-11 a ns:Localizacion
     ns:coordenada_x_utm 444913.056 ;
     ns:coordenada_y_utm 4481427.179 .
 
-clima:Clima_LluviaDebil a ns:Clima ;
+clima:LluviaDebil a ns:Clima ;
     ns:estado_meteorologico "Lluvia debil"^^xsd:String .
 
-vehiculo:Vehiculo_Motocicleta125cc a ns:Vehiculo ;
+vehiculo:Motocicleta125cc a ns:Vehiculo ;
     ns:tipo_vehiculo "Motocicleta > 125cc"^^xsd:String .
 
-persona:Persona_2023S040280 a ns:Persona ;
+persona:Conductor a ns:Persona ;
     ns:tipo_persona "Conductor"^^xsd:String ;
     ns:min_edad 55 ;
     ns:max_edad 59 ;
@@ -43,6 +43,6 @@ persona:Persona_2023S040280 a ns:Persona ;
     ns:positiva_alcohol false^^xsd:Boolean ;
     ns:positiva_droga false^^xsd:Boolean .
 
-lesividad:Lesividad_2 a ns:Lesividad ;
+lesividad:2 a ns:Lesividad ;
     ns:cod_lesividad 2 ;
     ns:lesividad "Ingreso inferior o igual a 24 horas"^^xsd:String .

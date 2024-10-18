@@ -31,6 +31,4 @@
 - [x] Contains at least one class that will be used to link to other entities
 
 ## Comments on the self-assessment
-We decided to give individual trees an Uri, even if the initial dataset doesn´t give information about individual trees (it gives information about
-number of trees and their condition). We decided to make this so the project would be more complex and interesting, as if we didn't do this, we would
-only have one class (Park).
+We decided to put all the labels in spanish. 

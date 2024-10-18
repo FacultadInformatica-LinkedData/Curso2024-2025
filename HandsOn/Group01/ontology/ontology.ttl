@@ -74,7 +74,7 @@ ns:min_edad a owl:DatatypeProperty ;
 ns:num_expediente a owl:DatatypeProperty ;
     rdfs:label "num_expediente" ;
     rdfs:domain ns:Accidente ;
-    rdfs:range xsd:Integer .
+    rdfs:range xsd:String .
 
 ns:numero a owl:DatatypeProperty ;
     rdfs:label "numero" ;
