@@ -1,0 +1,43 @@
+prefixes:
+  rr: http://www.w3.org/ns/r2rml#
+  foaf: http://xmlns.com/foaf/0.1/
+  xsd: http://www.w3.org/2001/XMLSchema#
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
+  rev: http://purl.org/stuff/rev#
+  schema: http://schema.org/
+  dct: http://purl.org/dc/terms/
+  rml: http://semweb.mmlab.be/ns/rml#
+  ql: http://semweb.mmlab.be/ns/ql#
+  rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+  samur: http://samur.linkeddata.madrid.es/ontology#
+
+mappings:
+  triplesmap1:
+    sources:
+      - [../csv/activaciones_samur_2023-updated.csv]
+    s: http://samur.linkeddata.madrid.es/activation/$(ID)
+    po:
+      - [a, samur:Activation]
+      - [samur:hasYear, $(Año), xsd:gYear]
+      - [samur:hasMonth, $(Mes), xsd:string]
+      - [samur:hasRequestTime, $(Hora Solicitud), xsd:time]
+      - [samur:hasInterventionTime, $(Hora Intervención), xsd:time]
+      - [samur:hasEmergencyType, $(Código), xsd:string]
+      - [samur:hasDistrict, http://samur.linkeddata.madrid.es/location/$(Distrito)~iri]
+      - [samur:hasHospital, http://samur.linkeddata.madrid.es/hospital/$(Hospital)~iri]
+
+  triplesmap2:
+    sources:
+      - [../csv/activaciones_samur_2023-updated.csv]
+    s: http://samur.linkeddata.madrid.es/location/$(Distrito)
+    po:
+      - [a, samur:Location]
+      - [samur:hasDistrictName, $(Distrito), xsd:string]
+
+  triplesmap3:
+    sources:
+      - [../csv/activaciones_samur_2023-updated.csv]
+    s: http://samur.linkeddata.madrid.es/hospital/$(Hospital)
+    po:
+      - [a, samur:Hospital]
+      - [samur:hasHospitalName, $(Hospital), xsd:string]

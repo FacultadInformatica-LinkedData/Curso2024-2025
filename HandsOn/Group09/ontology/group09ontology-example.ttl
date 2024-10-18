@@ -2,33 +2,44 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix ns: <http://smartcity.linkeddata.es/arbolado/Ontology/OntologiaArbolado/> .
-@prefix parques: <http://smartcity.linkeddata.es/arbolado/parques/> .
-@prefix arboles: <http://smartcity.linkeddata.es/arbolado/arboles/> .
+@prefix ns: <http://smartcity.linkeddata.es/concesiones_zonas_verdes/ontologia/> .
+@prefix denominaciones: <http://smartcity.linkeddata.es/concesiones_zonas_verdes/recursos/denominacion/> .
+@prefix concesiones: <http://smartcity.linkeddata.es/concesiones_zonas_verdes/recursos/concesion/> .
+@prefix distritos: <http://smartcity.linkeddata.es/concesiones_zonas_verdes/recursos/distrito/> .
+@prefix apartados: <http://smartcity.linkeddata.es/concesiones_zonas_verdes/recursos/apartado/> .
 
-# ejemplos del parque del Retiro
-parques:retiro rdf:type ns:Parque ;
-    ns:nombre "Parque del Retiro"^^xsd:string ;
-    ns:totalArboles 16857 .
+# Ejemplo de concesión en el distrito de Retiro
+concesiones:concesion001 rdf:type ns:Concesion ;
+    ns:tieneDenominacion denominaciones:cafeteriaRetiro ;
+    ns:tieneNumArchivo "12345"^^xsd:string ;
+    ns:tieneDistrito distritos:retiro ;
+    ns:tieneSubepigrafe "Concesiones y Autorizaciones"^^xsd:string ;
+    ns:tieneApartado apartados:instalacionesRestauracion ;
+    ns:tieneSituacion "Retiro"^^xsd:string .
 
-# Ejemplos de arboles del parque del Retiro
-arboles:tree001 rdf:type ns:Arbol ;
-    ns:estado "Joven"^^xsd:string ;
-    ns:perteneceA parques:retiro .
+# Ejemplo de concesión en el distrito de Salamanca
+concesiones:concesion002 rdf:type ns:Concesion ;
+    ns:tieneDenominacion denominaciones:heladosFelipeII ;
+    ns:tieneNumArchivo "12346"^^xsd:string ;
+    ns:tieneDistrito distritos:salamanca ;
+    ns:tieneSubepigrafe "Concesiones y Autorizaciones"^^xsd:string ;
+    ns:tieneApartado apartados:instalacionesRestauracion ;
+    ns:tieneSituacion "Salamanca - Cerca del Wizink Center"^^xsd:string .
 
-arboles:tree002 rdf:type ns:Arbol ;
-    ns:estado "Maduro"^^xsd:string ;
-    ns:perteneceA parques:retiro .
+# Definición de distritos
+distritos:retiro rdf:type ns:Distrito ;
+    rdfs:label "Retiro"^^xsd:string .
 
-arboles:tree003 rdf:type ns:Arbol ;
-    ns:estado "Viejo"^^xsd:string ;
-    ns:perteneceA parques:retiro .
+distritos:salamanca rdf:type ns:Distrito ;
+    rdfs:label "Salamanca"^^xsd:string .
 
-# ahora un ejemplo del Parque del Oeste 
-parques:parque_oeste rdf:type ns:Parque ;
-    ns:nombre "Parque del Oeste"^^xsd:string ;
-    ns:totalArbolesConTocones 7078 .
+# Definición de denominaciones
+denominaciones:cafeteriaRetiro rdf:type ns:Denominacion ;
+    rdfs:label "Cafetería Parque del Retiro"^^xsd:string .
 
-arboles:tree004 rdf:type ns:Arbol ;
-    ns:estado "Recién plantado"^^xsd:string ;
-    ns:perteneceA parques:parque_oeste .
+denominaciones:heladosFelipeII rdf:type ns:Denominacion ;
+    rdfs:label "Puesto de Helados Plaza de Felipe II"^^xsd:string .
+
+# Definición de apartados
+apartados:instalacionesRestauracion rdf:type ns:Apartado ;
+    rdfs:label "Instalaciones de Restauración"^^xsd:string .
