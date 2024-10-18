@@ -1,0 +1,15 @@
+@prefix ns1: <http://example.org#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ns1:ClassRoom03 ns1:contains ns1:Sensor347,
+        ns1:Table322 .
+
+ns1:ETSIInformaticos ns1:hasName ns1:ETSI_Informaticos .
+
+ns1:Measurement8432 ns1:atTime "2022-09-12T12:01:12"^^xsd:dateTime ;
+    ns1:hasTemperature 29 .
+
+ns1:Sensor347 ns1:hasMeasurement ns1:Measurement8432 .
+
+ns1:Table322 ns1:hasOwner ns1:ETSIInformaticos .
+
