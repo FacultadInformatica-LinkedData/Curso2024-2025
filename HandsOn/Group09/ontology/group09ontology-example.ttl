@@ -11,18 +11,14 @@
 # Ejemplo de concesión en el distrito de Retiro
 concesiones:concesion001 rdf:type ns:Concesion ;
     ns:tieneDenominacion denominaciones:cafeteriaRetiro ;
-    ns:tieneNumArchivo "12345"^^xsd:string ;
     ns:tieneDistrito distritos:retiro ;
-    ns:tieneSubepigrafe "Concesiones y Autorizaciones"^^xsd:string ;
     ns:tieneApartado apartados:instalacionesRestauracion ;
     ns:tieneSituacion "Retiro"^^xsd:string .
 
 # Ejemplo de concesión en el distrito de Salamanca
 concesiones:concesion002 rdf:type ns:Concesion ;
     ns:tieneDenominacion denominaciones:heladosFelipeII ;
-    ns:tieneNumArchivo "12346"^^xsd:string ;
     ns:tieneDistrito distritos:salamanca ;
-    ns:tieneSubepigrafe "Concesiones y Autorizaciones"^^xsd:string ;
     ns:tieneApartado apartados:instalacionesRestauracion ;
     ns:tieneSituacion "Salamanca - Cerca del Wizink Center"^^xsd:string .
 
