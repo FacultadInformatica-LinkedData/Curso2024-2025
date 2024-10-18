@@ -35,6 +35,6 @@ les:14 a ns:Lesividad ;
     ns:tipoAsistencia "Sin asistencia sanitaria" ;
 .
 
-veh:1 a ns:Vehiculo ;
+veh:"Turismo" a ns:Vehiculo ;
     ns:tipoVehic "Turismo" ;
 .
