@@ -4,7 +4,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix samur: <http://samur.linkeddata.madrid.es/ontology#> .
 
-<#TriplesMap1> a rr:TriplesMap;
+<http://samur.linkeddata.madrid.es/TriplesMap1> a rr:TriplesMap;
   rml:logicalSource [
     rml:source "../csv/activaciones_samur_2023-updated.csv";  
     rml:referenceFormulation ql:CSV
@@ -70,7 +70,7 @@
     ]
   ].
 
-<#TriplesMap2> a rr:TriplesMap;
+<http://samur.linkeddata.madrid.es/TriplesMap2> a rr:TriplesMap;
   rml:logicalSource [
     rml:source "../csv/activaciones_samur_2023-updated.csv";
     rml:referenceFormulation ql:CSV
@@ -88,7 +88,7 @@
     ]
   ].
 
-<#TriplesMap3> a rr:TriplesMap;
+<http://samur.linkeddata.madrid.es/TriplesMap3> a rr:TriplesMap;
   rml:logicalSource [
     rml:source "../csv/activaciones_samur_2023-updated.csv";
     rml:referenceFormulation ql:CSV
