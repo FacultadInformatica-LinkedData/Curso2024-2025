@@ -1,0 +1,52 @@
+{
+    "@context": {
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "includes": {
+        "@id": "http://test.org/includes",
+        "@type": "@id"
+      },
+      "hasMeasurement": {
+        "@id": "http://test.org/hasMeasurement",
+        "@type": "@id"
+      },
+      "hasTemperature": {
+        "@id": "http://test.org/hasTemperature",
+        "@type": "xsd:integer"
+      },
+      "atTime": {
+        "@id": "http://test.org/atTime",
+        "@type": "xsd:dateTime"
+      },
+      "hasOwner": {
+        "@id": "http://test.org/hasOwner",
+        "@type": "@id"
+      },
+      "hasName": "http://test.org/hasName"
+    },
+    "@graph": [
+      {
+        "@id": "http://test.org/Class01",
+        "includes": [
+          "http://test.org/Sensor029",
+          "http://test.org/Computer101"
+        ]
+      },
+      {
+        "@id": "http://test.org/Sensor029",
+        "hasMeasurement": "http://test.org/Measurement8401"
+      },
+      {
+        "@id": "http://test.org/Measurement8401",
+        "hasTemperature": 29,
+        "atTime": "2010-06-12T12:00:12"
+      },
+      {
+        "@id": "http://test.org/Computer101",
+        "hasOwner": "http://test.org/User10A"
+      },
+      {
+        "@id": "http://test.org/User10A",
+        "hasName": "Pedro"
+      }
+    ]
+  }
