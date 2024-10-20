@@ -1,0 +1,35 @@
+PREFIX base:<http://smartcity.linkeddata.es/accidentes/ontologia/>
+
+
+# Obtenemos los 10 primeros accidentes
+
+SELECT ?accident
+WHERE {
+    ?accident a base:Accidente .
+}
+LIMIT 10
+
+
+
+# Obtenemos los 10 primeros accidentes que ocurrieron en el distrito con codigo 5
+
+SELECT ?accident ?location ?district_code
+WHERE {
+    ?accident a base:Accidente ;
+            base:tieneLocalizacion ?location .
+    ?location base:cod_distrito ?district_code .
+    FILTER(?district_code = 5)
+}
+LIMIT 10
+
+
+
+# Obtenemos los 10 primeros accidentes que fueron colisiones fronto-laterales
+
+SELECT ?accident ?type
+WHERE {
+    ?accident a base:Accidente ;
+            base:tipo_accidente ?type .
+    FILTER(?type = "Colisión fronto-lateral")
+}
+LIMIT 10

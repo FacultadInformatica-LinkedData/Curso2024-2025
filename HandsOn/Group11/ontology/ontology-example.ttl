@@ -1,0 +1,44 @@
+@prefix : <http://semanticweb.es/airquality/> .
+@prefix mod: <https://w3id.org/mod#> .
+@prefix ns: <http://semanticweb.es/airquality#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ns:Provincia_28 a ns:Provincia ;
+    rdfs:label "Madrid" ;
+    ns:codigoProvincia "28" .
+
+ns:Municipio_079 a ns:Municipio ;
+    rdfs:label "Madrid" ;
+    ns:codigoMunicipio "079" ;
+    ns:tieneProvincia ns:Madrid .
+
+ns:Estacion_4 a ns:Estacion ;
+    rdfs:label "Estación 4" ;
+    ns:codigoEstacion "4" ;
+    ns:tieneMunicipio ns:Madrid .
+
+ns:Magnitud_1 a ns:Magnitud ;
+    rdfs:label "Magnitud 1" ;
+    ns:codigoMagnitud "1" .
+
+ns:PuntoMuestreo_28079004_1_38 a ns:PuntoMuestreo ;
+    rdfs:label "Punto de Muestreo 28079004_1_38" ;
+    ns:codigoPuntoMuestreo "28079004_1_38" ;
+    ns:tieneEstacion ns:Estacion_4 ;
+    ns:tieneMagnitud ns:Magnitud_1 .
+
+ns:Medicion_2024_10_06_01 a ns:Medicion ;
+    ns:tieneFecha "2024-10-06"^^xsd:Date ;
+    ns:tieneHora "01"^^xsd:String ;
+    ns:tieneValor 2.0^^xsd:Decimal ;
+    ns:tieneEstado "V" ;
+    ns:tienePuntoMuestreo ns:PuntoMuestreo_28079004_1_38 .
+
+ns:Medicion_2024_10_06_02 a ns:Medicion ;
+    ns:tieneFecha "2024-10-06"^^xsd:Date ;
+    ns:tieneHora "02"^^xsd:String ;
+    ns:tieneValor 2.0^^xsd:Decimal ;
+    ns:tieneEstado "V" ;
+    ns:tienePuntoMuestreo ns:PuntoMuestreo_28079004_1_38 .

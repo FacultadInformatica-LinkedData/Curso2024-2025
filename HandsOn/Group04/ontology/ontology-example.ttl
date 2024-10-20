@@ -1,0 +1,46 @@
+@prefix : <http://abandoned-vehicles.com/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix mod: <https://w3id.org/mod#> .
+@prefix ns: <http://www.owl-ontologies.com/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+: a owl:Ontology ;
+    dc:creator "Alejandro Ortega Hernandez",
+        "Alejandro San Juan Sanchez",
+        "Cesar Ruiz Deiros",
+        "Luis Alonso Reillo",
+        "Marc Ramirez Sebastia" ;
+    dc:title "Template Ontology" ;
+    owl:versionInfo "0.0.1" ;
+    mod:createdWith <https://chowlk.linkeddata.es/> .
+
+dc:creator a owl:AnnotationProperty .
+
+dc:title a owl:AnnotationProperty .
+
+ns:Adur a owl:NamedIndividual ;
+    ns:abandonedCarsByYear ns:2001 ;
+    ns:hasONSCode "45UB"^^xsd:integer ;
+    ns:hasRegion ns:SEast .
+
+ns:abandonedCarsByYear a owl:ObjectProperty ;
+    rdfs:label "abandoned cars by year" .
+
+ns:amountOfAbandonedCars a owl:DatatypeProperty ;
+    rdfs:label "amount of abandoned cars" .
+
+ns:hasONSCode a owl:DatatypeProperty ;
+    rdfs:label "has o n s code" .
+
+ns:hasRegion a owl:ObjectProperty ;
+    rdfs:label "has region" .
+
+owl:versionInfo a owl:AnnotationProperty .
+
+ns:2001 a owl:NamedIndividual ;
+    ns:amountOfAbandonedCars 793 .
+
+ns:SEast a owl:NamedIndividual .
+

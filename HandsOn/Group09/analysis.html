@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Analysis and Licensing</title>
+</head>
+<body>
+    <h1>Data Set Analysis</h1>
+    <p>Information on the concessions registered on the assets of the Inventory of Public Areas and Green Zones, detailing type of concession, location and name of applicant.</p>
+    <ul>
+        <li><strong>Location:</strong> districts and particular areas of Madrid.</li>
+        <li><strong>Type of concession:</strong> Types such as lease, permit, etc.</li>
+        <li><strong>Identificator of the particular concession:</strong> numbers between 12000 and 16000.</li>
+        <li><strong>Identificator of the applicant:</strong> name of the commerce, association, public area, etc.</li>
+    </ul>
+
+    <h2>Licensing Analysis</h2>
+    <p>The dataset is provided by the <a href="https://datos.madrid.es/sites/v/index.jsp?vgnextoid=3700f63898aed510VgnVCM1000001d4a900aRCRD&vgnextchannel=374512b9ace9f310VgnVCM100000171f5a0aRCRD" target="_blank">Comunidad de Madrid</a> through its open data portal. The data is publicly available for use and likely adheres to open data licensing, such as Creative Commons CC BY 4.0, but the exact terms should be verified on the source website.</p>
+
+    <h2>Resource Naming Strategy</h2>
+    <p>The URI structure follows the best practices in Linked Data. We propose the following structure for naming resources:</p>
+    <ul>
+        <li><strong>Base URI:</strong> <a href="http://smartcity.linkeddata.es/concesiones_zonas_verdes/">http://smartcity.linkeddata.es/concesiones_zonas_verdes/</a></li>
+        <ul>
+            <li><strong>Ontology</strong>: http://smartcity.linkeddata.es/concesiones_zonas_verdes/ontologia/...
+                <ul>
+                    <li>Class: .../{class}</li>
+                    <li>Property: .../{property}</li>
+                </ul>
+            </li>
+            <li><strong>Data</strong>: http://smartcity.linkeddata.es/concesiones_zonas_verdes/recursos/...
+                <ul>
+                    <li>Resource: ...recursos/{class}/{id}</li>
+                </ul>
+            </li>
+        </ul>
+    </ul>
+    <p>For example:</p>
+    <ul>
+        <li><strong>Concession URI example:</strong> <a href="http://smartcity.linkeddata.es/concesiones_zonas_verdes/recursos/concesion/12000">http://smartcity.linkeddata.es/concesiones_zonas_verdes/concesion/12000</a></li>
+        <li><strong>District URI example:</strong> <a href="http://smartcity.linkeddata.es/concesiones_zonas_verdes/recursos/distrito/Retiro">http://smartcity.linkeddata.es/concesiones_zonas_verdes/distrito/Retiro</a></li>
+    </ul>
+    <p>This resource naming strategy ensures that every entity (concession, district, commerce, ...) has a unique identifier and is accessible following Linked Data principles.</p>
+</body>
+</html>

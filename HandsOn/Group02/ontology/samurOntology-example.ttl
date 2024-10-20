@@ -1,0 +1,28 @@
+@prefix samur: <http://samur.linkeddata.madrid.es/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ex: <http://samur.linkeddata.madrid.es/resources#> .
+
+# Sample Activation
+ex:activation1234 a samur:Activation ;
+    samur:hasYear "2024"^^xsd:gYear ;
+    samur:hasMonth "09"^^xsd:gMonth ;
+    samur:hasRequestTime "14:35:00"^^xsd:time ;
+    samur:hasInterventionTime "14:40:00"^^xsd:time ;
+    samur:hasDistrict ex:districtCenter ;
+    samur:hasHospital ex:hospitalLaPaz ;
+    samur:hasEmergencyType ex:emergencyCardiacArrest ;
+    rdfs:comment "Emergency activation for a cardiac arrest in the Center District of Madrid." .
+
+# Sample District
+ex:districtCenter a samur:Location ;
+    rdfs:label "Center District, Madrid" .
+
+# Sample Hospital
+ex:hospitalLaPaz a samur:Hospital ;
+    rdfs:label "Hospital La Paz, Madrid" .
+
+# Sample Emergency Type
+ex:emergencyCardiacArrest a samur:EmergencyType ;
+    rdfs:label "Cardiac Arrest" .
