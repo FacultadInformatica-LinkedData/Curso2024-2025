@@ -28,4 +28,4 @@
 - [x] Uses the correct datatype (e.g., values of 0-1 may be booleans and not integers, not every string made of numbers is a number)
 
 ## Comments on the self-assessment
-Hay un archivo CSV fuera de la carpeta a la que correspondería porque es sobre el que se ha hecho el yarrrml. Además, se ha añadido tambien el config.ini para el uso correcto de morph-kgc
+Hay un archivo CSV cuyo nombre no aparece en la carpeta, este CSV correspondería al que hay dentro de la carpeta csv el updated. Este comentario es importante porque es sobre el que se ha hecho el yarrrml, que inicialmente se llamaba así para que no hubiese confusiones con los nombres. Además, se ha añadido tambien el config.ini para el uso correcto de morph-kgc
