@@ -1,0 +1,40 @@
+@prefix acc: https://websemantica.net/Group22/resource/Accidente/ .
+@prefix veh: https://websemantica.net/Group22/resource/Vehiculo/ .
+@prefix inv: https://websemantica.net/Group22/resource/Involucrado/ .
+@prefix les: https://websemantica.net/Group22/resource/Lesividad/ .
+@prefix mod: https://w3id.org/mod/ .
+@prefix ns: https://websemantica.net/Group22/ontology/AccidentesMad .
+@prefix owl: http://www.w3.org/2002/07/owl .
+@prefix rdfs: http://www.w3.org/2000/01/rdf-schema .
+@prefix sc: https://schema.org/ .
+@prefix xsd: http://www.w3.org/2001/XMLSchema .
+
+acc:"2024S000001": a ns:Accidente ;
+    ns:nExpediente "2024S000001" ;
+    ns:fecha 2024-01-01T01:20:00Z^^xsd:date ;
+    ns:localizacion "AUTOV. M-30" ;
+    ns:numero "08NL00" ;
+    ns:codDistrito 3 ;
+    ns:distrito "RETIRO" ;
+    ns:tipoAcc "Colisión múltiple" ;
+    ns:estMeteorologica "Despejado" ;
+    ns:coordX 443926.583 ;
+    ns:coordY 4473998.426 ;
+.
+
+inv:"2024S000001_1" a ns:Involucrado ;
+    ns:identificador "2024S000001_1" ;
+    ns:sexo "Hombre" ;
+    ns:rangoEdad 29 ;
+    ns:drogas false ;
+    ns:alcohol false ;
+.
+
+les:14 a ns:Lesividad ;
+    ns:codigo 14 ;
+    ns:tipoAsistencia "Sin asistencia sanitaria" ;
+.
+
+veh:"Turismo" a ns:Vehiculo ;
+    ns:tipoVehic "Turismo" ;
+.
