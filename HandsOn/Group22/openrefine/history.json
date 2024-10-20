@@ -376,11 +376,6 @@
     "description": "Text transform on cells in column fecha using expression value.toDate()"
   },
   {
-    "op": "core/column-removal",
-    "columnName": "hora",
-    "description": "Remove column hora"
-  },
-  {
     "op": "core/text-transform",
     "engineConfig": {
       "facets": [],
@@ -470,5 +465,450 @@
     "repeat": false,
     "repeatCount": 10,
     "description": "Text transform on cells in column positiva_droga using expression grel:value==0"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "rango_edad",
+          "expression": "value",
+          "columnName": "rango_edad",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Menor de 5 años",
+                "l": "Menor de 5 años"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "rango_edad",
+    "expression": "value.replace(\"Menor de 5 años\",\"5\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column rango_edad using expression value.replace(\"Menor de 5 años\",\"5\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "rango_edad",
+          "expression": "value",
+          "columnName": "rango_edad",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "De 6 a 9 años",
+                "l": "De 6 a 9 años"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "rango_edad",
+    "expression": "value.replace(\"De 6 a 9 años\",\"10\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column rango_edad using expression value.replace(\"De 6 a 9 años\",\"10\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "rango_edad",
+          "expression": "value",
+          "columnName": "rango_edad",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "De 10 a 14 años",
+                "l": "De 10 a 14 años"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "rango_edad",
+    "expression": "value.replace(\"De 10 a 14 años\",\"15\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column rango_edad using expression value.replace(\"De 10 a 14 años\",\"15\")"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "rango_edad",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "De 15 a 17 años"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "17"
+      }
+    ],
+    "description": "Mass edit cells in column rango_edad"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "rango_edad",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "De 18 a 20 años"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "20"
+      }
+    ],
+    "description": "Mass edit cells in column rango_edad"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "rango_edad",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "De 21 a 24 años"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "24"
+      }
+    ],
+    "description": "Mass edit cells in column rango_edad"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "rango_edad",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "De 25 a 29 años"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "29"
+      }
+    ],
+    "description": "Mass edit cells in column rango_edad"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "rango_edad",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "De 30 a 34 años"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "34"
+      }
+    ],
+    "description": "Mass edit cells in column rango_edad"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "rango_edad",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "De 35 a 39 años"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "39"
+      }
+    ],
+    "description": "Mass edit cells in column rango_edad"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "rango_edad",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "De 40 a 44 años"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "44"
+      }
+    ],
+    "description": "Mass edit cells in column rango_edad"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "rango_edad",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "De 45 a 49 años"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "49"
+      }
+    ],
+    "description": "Mass edit cells in column rango_edad"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "rango_edad",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "De 50 a 54 años"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "54"
+      }
+    ],
+    "description": "Mass edit cells in column rango_edad"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "rango_edad",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "De 55 a 59 años"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "59"
+      }
+    ],
+    "description": "Mass edit cells in column rango_edad"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "rango_edad",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "De 60 a 64 años"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "64"
+      }
+    ],
+    "description": "Mass edit cells in column rango_edad"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "rango_edad",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "De 65 a 69 años"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "69"
+      }
+    ],
+    "description": "Mass edit cells in column rango_edad"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "rango_edad",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "De 70 a 74 años"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "74"
+      }
+    ],
+    "description": "Mass edit cells in column rango_edad"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "rango_edad",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Más de 74 años"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "100"
+      }
+    ],
+    "description": "Mass edit cells in column rango_edad"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "rango_edad",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Desconocido"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "-1"
+      }
+    ],
+    "description": "Mass edit cells in column rango_edad"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "rango_edad",
+          "expression": "value",
+          "columnName": "rango_edad",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "17",
+                "l": "17"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "rango_edad",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column rango_edad using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "rango_edad",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column rango_edad using expression value.toNumber()"
   }
 ]
