@@ -1,0 +1,11 @@
+{
+  "@context": {
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "dct": "http://purl.org/dc/terms/"
+  },
+  "@type": "foaf:Person",
+  "foaf:name": "Antonio Mendoza Carpintero",
+  "foaf:mbox": "mailto:antmend@example.org",
+  "dct:title": "Calidad del aire en Madrid"
+}
+

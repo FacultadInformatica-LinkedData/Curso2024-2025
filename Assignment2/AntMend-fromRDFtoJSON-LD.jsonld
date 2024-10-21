@@ -1,0 +1,58 @@
+{
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "dct": "http://purl.org/dc/terms/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "ex": "http://example.org/"
+  },
+  "@graph": [
+    {
+      "@id": "ex:AntonioMendoza",
+      "@type": "foaf:Person",
+      "foaf:name": "Antonio Mendoza Carpintero",
+      "foaf:mbox": "mailto:antmend@example.org",
+      "foaf:organization": "http://example.org/UPM",
+      "foaf:title": "Estudiante de Ciencias de la Computación"
+    },
+    {
+      "@id": "ex:CalidadDelAireMadrid",
+      "@type": "dct:Dataset",
+      "dct:title": "Calidad del Aire en la Ciudad de Madrid",
+      "dct:description": "Este conjunto de datos contiene información 
+sobre la calidad del aire en la ciudad de Madrid, con mediciones horarias 
+de contaminantes.",
+      "dct:creator": { "@id": "ex:AntonioMendoza" },
+      "dct:issued": "2024-10-20",
+      "dct:subject": { "@id": "ex:ContaminacionAire" },
+      "dct:spatial": "http://sws.geonames.org/3117735/",
+      "dct:language": "es"
+    },
+    {
+      "@id": "ex:ContaminacionAire",
+      "@type": "skos:Concept",
+      "skos:prefLabel": { "@value": "Contaminación del aire", "@language": 
+"es" },
+      "skos:altLabel": { "@value": "Polución atmosférica", "@language": 
+"es" },
+      "skos:definition": { "@value": "Concentración de sustancias nocivas 
+en el aire.", "@language": "es" },
+      "skos:broader": { "@id": "ex:MedioAmbiente" }
+    },
+    {
+      "@id": "http://sws.geonames.org/3117735/",
+      "@type": "dct:Location",
+      "rdfs:label": { "@value": "Madrid, España", "@language": "es" },
+      "dct:identifier": "3117735"
+    },
+    {
+      "@id": "ex:MedioAmbiente",
+      "@type": "skos:Concept",
+      "skos:prefLabel": { "@value": "Medio Ambiente", "@language": "es" },
+      "skos:definition": { "@value": "Término que se refiere a todo lo que 
+rodea y afecta a los seres vivos.", "@language": "es" }
+    }
+  ]
+}
+

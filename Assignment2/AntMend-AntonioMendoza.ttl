@@ -1,0 +1,50 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix ex: <http://example.org/> .
+
+# Definición de la persona que creó el dataset
+ex:AntonioMendoza
+    a foaf:Person ;
+    foaf:name "Antonio Mendoza Carpintero" ;
+    foaf:mbox <mailto:antmend@example.org> ;
+    foaf:organization <http://example.org/UPM> ;
+    foaf:title "Estudiante de Ciencias de la Computación" .
+
+# Definición del Dataset
+ex:CalidadDelAireMadrid
+    a dct:Dataset ;
+    dct:title "Calidad del Aire en la Ciudad de Madrid" ;
+    dct:description "Este conjunto de datos contiene información sobre la 
+calidad del aire en la ciudad de Madrid, con mediciones horarias de 
+contaminantes." ;
+    dct:creator ex:AntonioMendoza ;
+    dct:issued "2024-10-20"^^dct:W3CDTF ;
+    dct:subject ex:ContaminacionAire ;
+    dct:spatial <http://sws.geonames.org/3117735/> ;  # Madrid, España 
+(usando GeoNames)
+    dct:language "es" .
+
+# Definición del tema (Contaminación del Aire) con un esquema SKOS
+ex:ContaminacionAire
+    a skos:Concept ;
+    skos:prefLabel "Contaminación del aire"@es ;
+    skos:altLabel "Polución atmosférica"@es ;
+    skos:definition "Concentración de sustancias nocivas en el aire."@es ;
+    skos:broader ex:MedioAmbiente .
+
+# Relación del dataset con la ubicación de Madrid (GeoNames)
+<http://sws.geonames.org/3117735/>
+    a dct:Location ;
+    rdfs:label "Madrid, España"@es ;
+    dct:identifier "3117735" .
+
+# Categoría más amplia para Contaminación del Aire
+ex:MedioAmbiente
+    a skos:Concept ;
+    skos:prefLabel "Medio Ambiente"@es ;
+    skos:definition "Término que se refiere a todo lo que rodea y afecta a 
+los seres vivos."@es .
+
