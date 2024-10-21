@@ -1,0 +1,155 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix alumbrado: <http://alumbrado.linkeddata.madrid.es/ontology#> .
+@base <http://alumbrado.linkeddata.madrid.es/> .
+
+<#TriplesMap1> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "03_011_alumbrado_publico-updated.csv";  
+    rml:referenceFormulation ql:CSV
+  ];
+  rr:subjectMap [
+    rr:template "http://alumbrado.linkeddata.madrid.es/lighting/{Identificador}";
+    rr:class alumbrado:LightingPoint
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate alumbrado:hasClient;
+    rr:objectMap [
+      rr:template "http://alumbrado.linkeddata.madrid.es/client/{idClienteEprinsa}";
+      rr:termType rr:IRI
+    ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate alumbrado:hasDate;
+    rr:objectMap [
+      rml:reference "AñoMes";
+      rr:datatype xsd:string
+    ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate alumbrado:hasValueID;
+    rr:objectMap [
+      rml:reference "idValue";
+      rr:datatype xsd:string
+    ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate alumbrado:hasTotalLamps;
+    rr:objectMap [
+      rml:reference "NumLámparasTotal";
+      rr:datatype xsd:integer
+    ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate alumbrado:hasMercuryLamps;
+    rr:objectMap [
+      rml:reference "NumLámparasMercurio";
+      rr:datatype xsd:integer
+    ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate alumbrado:hasHalogenLamps;
+    rr:objectMap [
+      rml:reference "NumLámparasHalogenuros";
+      rr:datatype xsd:integer
+    ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate alumbrado:hasFluorescentLamps;
+    rr:objectMap [
+      rml:reference "NumLámparasFluorescentes";
+      rr:datatype xsd:integer
+    ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate alumbrado:hasSodiumLamps;
+    rr:objectMap [
+      rml:reference "NumLámparasSodio";
+      rr:datatype xsd:integer
+    ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate alumbrado:hasLEDLamps;
+    rr:objectMap [
+      rml:reference "NumLámparasLED";
+      rr:datatype xsd:integer
+    ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate alumbrado:hasOtherLamps;
+    rr:objectMap [
+      rml:reference "NumLámparasOtros";
+      rr:datatype xsd:integer
+    ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate alumbrado:hasLampType;
+    rr:objectMap [
+      rml:reference "Tipo";
+      rr:datatype xsd:string
+    ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate alumbrado:hasAddress;
+    rr:objectMap [
+      rml:reference "Dirección";
+      rr:datatype xsd:string
+    ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate alumbrado:hasDescription;
+    rr:objectMap [
+      rml:reference "Descripción";
+      rr:datatype xsd:string
+    ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate alumbrado:hasNextID;
+    rr:objectMap [
+      rml:reference "IdSiguiente";
+      rr:datatype xsd:string
+    ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate geo:location;
+    rr:objectMap [
+      rr:template "POINT({CoordenadaX} {CoordenadaY})";
+      rr:datatype geo:SpatialThing
+    ]
+  ].
+
+<#TriplesMap2> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "03_011_alumbrado_publico-updated.csv";
+    rml:referenceFormulation ql:CSV
+  ];
+  rr:subjectMap [
+    rr:template "http://alumbrado.linkeddata.madrid.es/client/{idClienteEprinsa}";
+    rr:class alumbrado:Client
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate alumbrado:hasClientID;
+    rr:objectMap [
+      rml:reference "idClienteEprinsa";
+      rr:datatype xsd:string
+    ]
+  ].

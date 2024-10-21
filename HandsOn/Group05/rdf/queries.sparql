@@ -1,0 +1,59 @@
+PREFIX ns1: <http://webcam.linkeddata.Gijon.es.org/ontology/airquality#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX schema: <https://schema.org/>
+
+
+# Query 1: Obtener las mediciones de un sensor específico (por ejemplo, de la estación 12):
+SELECT ?medicion
+WHERE {
+              ?medicion <http://www.w3.org/ns/sosa/madeBySensor> <http://webcam.linkeddata.Gijon.es.org/resource/estacion/12> .
+}LIMIT 100
+
+# Query 2: Listar todas las mediciones (sujetos):
+SELECT DISTINCT ?medicion
+WHERE {
+              ?medicion a <http://webcam.linkeddata.Gijon.es.org/ontology/airquality#Medicion> .
+} LIMIT 100
+
+# Query 3: Listar todas las mediciones con su cantidad
+SELECT ?medida ?date ?hora ?cantidad WHERE {
+  ?medida a ns1:Medicion ;
+              ns1:Fecha ?date ;
+              ns1:Hora ?hora ;
+              <http://www.w3.org/ns/sosa/hasFeatureOfInterest> ?cantidad .
+} LIMIT 100
+
+# Query 4: Listar las fechas de las mediciones:
+SELECT ?medicion ?fecha
+WHERE {
+              ?medicion <http://webcam.linkeddata.Gijon.es.org/ontology/airquality#Fecha> ?fecha .
+}LIMIT 100
+
+# Query 5: Recuperar mediciones para una fecha específica (e.g., 2023-11-16)
+SELECT ?medida ?hora ?cantidad WHERE {
+  ?medida a ns1:Medicion ;
+              ns1:Fecha "2023-11-16"^^xsd:date ;
+              ns1:Hora ?hora ;
+              <http://www.w3.org/ns/sosa/hasFeatureOfInterest> ?cantidad .
+} LIMIT 100
+
+# Query 6:Listar las horas de las mediciones:
+SELECT ?medicion ?hora
+WHERE {
+              ?medicion <http://webcam.linkeddata.Gijon.es.org/ontology/airquality#Hora> ?hora .
+}LIMIT 100
+
+# Query 7:Listar todas las estaciones involucradas en las mediciones:
+SELECT DISTINCT ?medicion ?sensor
+WHERE {
+              ?medicion <http://www.w3.org/ns/sosa/madeBySensor> ?sensor .
+}LIMIT 100
+
+# Query 8: Listar todas las mediciones con su cantidad
+SELECT ?medida ?date ?hora ?cantidad WHERE {
+  ?medida a ns1:Medicion ;
+              ns1:Fecha ?date ;
+              ns1:Hora ?hora ;
+              <http://www.w3.org/ns/sosa/hasFeatureOfInterest> ?cantidad .
+} LIMIT 100
+

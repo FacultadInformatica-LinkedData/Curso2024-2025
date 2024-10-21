@@ -1,0 +1,213 @@
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix ns: <http://webcam.linkeddata.Gijon.es.org/ontology/airquality#> .
+@prefix schema: <https://schema.org/> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ===========================
+# Mapping de EstacionMedicion
+# ===========================
+
+<#MappingEstacionMedicion>
+  rml:logicalSource [
+    rml:source "csv/air_quality-updated.csv" ;
+    rml:referenceFormulation ql:CSV
+  ];
+  rr:subjectMap [
+    rr:class ns:EstacionMedicion ;
+    rr:template "http://webcam.linkeddata.Gijon.es.org/resource/estacion/{ID_Estacion}" ;
+  ];
+  rr:predicateObjectMap [
+    rr:predicate schema:name ;
+    rr:objectMap [ rml:reference "Nombre" ; rr:datatype xsd:string ] ;
+  ];
+  rr:predicateObjectMap [
+    rr:predicate schema:latitude ;
+    rr:objectMap [ rml:reference "latitud" ; rr:datatype xsd:Decimal ] ;
+  ];
+  rr:predicateObjectMap [
+    rr:predicate schema:longitude ;
+    rr:objectMap [ rml:reference "longitud" ; rr:datatype xsd:Decimal ] ;
+  ].
+
+# ===========================
+# Mapping de Medicion de SO2
+# ===========================
+
+<#MappingMedicion_SO2>
+  rml:logicalSource [
+    rml:source "csv/air_quality-updated.csv" ;
+    rml:referenceFormulation ql:CSV
+  ];
+  rr:subjectMap [
+    rr:class ns:Medicion ;
+    rr:template "http://webcam.linkeddata.Gijon.es.org/resource/medicion/{Fecha}_{Hora}_SO2" ;
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ns:Fecha ;
+    rr:objectMap [ rml:reference "Fecha" ; rr:datatype xsd:date ] ;
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ns:Hora ;
+    rr:objectMap [ rml:reference "Hora" ; rr:datatype xsd:time ] ;
+  ];
+  rr:predicateObjectMap [
+    rr:predicate sosa:hasFeatureOfInterest ;
+    rr:objectMap [ rml:reference "SO2" ; rr:datatype xsd:Decimal ] ;
+  ];
+  rr:predicateObjectMap [
+    rr:predicate sosa:madeBySensor ;
+    rr:objectMap [ rr:parentTriplesMap <#MappingEstacionMedicion> ] ;
+  ].
+
+# ===========================
+# Mapping de Medicion de NO
+# ===========================
+
+<#MappingMedicion_NO>
+  rml:logicalSource [
+    rml:source "csv/air_quality-updated.csv" ;
+    rml:referenceFormulation ql:CSV
+  ];
+  rr:subjectMap [
+    rr:class ns:Medicion ;
+    rr:template "http://webcam.linkeddata.Gijon.es.org/resource/medicion/{Fecha}_{Hora}_NO" ;
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ns:Fecha ;
+    rr:objectMap [ rml:reference "Fecha" ; rr:datatype xsd:date ] ;
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ns:Hora ;
+    rr:objectMap [ rml:reference "Hora" ; rr:datatype xsd:time ] ;
+  ];
+  rr:predicateObjectMap [
+    rr:predicate sosa:hasFeatureOfInterest ;
+    rr:objectMap [ rml:reference "NO" ; rr:datatype xsd:Decimal ] ;
+  ];
+  rr:predicateObjectMap [
+    rr:predicate sosa:madeBySensor ;
+    rr:objectMap [ rr:parentTriplesMap <#MappingEstacionMedicion> ] ;
+  ].
+
+# ===========================
+# Mapping de Medicion de NOX
+# ===========================
+
+<#MappingMedicion_NOX>
+  rml:logicalSource [
+    rml:source "csv/air_quality-updated.csv" ;
+    rml:referenceFormulation ql:CSV
+  ];
+  rr:subjectMap [
+    rr:class ns:Medicion ;
+    rr:template "http://webcam.linkeddata.Gijon.es.org/resource/medicion/{Fecha}_{Hora}_NOX" ;
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ns:Fecha ;
+    rr:objectMap [ rml:reference "Fecha" ; rr:datatype xsd:date ] ;
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ns:Hora ;
+    rr:objectMap [ rml:reference "Hora" ; rr:datatype xsd:time ] ;
+  ];
+  rr:predicateObjectMap [
+    rr:predicate sosa:hasFeatureOfInterest ;
+    rr:objectMap [ rml:reference "NOX" ; rr:datatype xsd:Decimal ] ;
+  ];
+  rr:predicateObjectMap [
+    rr:predicate sosa:madeBySensor ;
+    rr:objectMap [ rr:parentTriplesMap <#MappingEstacionMedicion> ] ;
+  ].
+
+# ===========================
+# Mapping de Medicion de Direccion del Viento
+# ===========================
+
+<#MappingMedicion_DireccionViento>
+  rml:logicalSource [
+    rml:source "csv/air_quality-updated.csv" ;
+    rml:referenceFormulation ql:CSV
+  ];
+  rr:subjectMap [
+    rr:class ns:Medicion ;
+    rr:template "http://webcam.linkeddata.Gijon.es.org/resource/medicion/{Fecha}_{Hora}_DireccionViento" ;
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ns:Fecha ;
+    rr:objectMap [ rml:reference "Fecha" ; rr:datatype xsd:date ] ;
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ns:Hora ;
+    rr:objectMap [ rml:reference "Hora" ; rr:datatype xsd:time ] ;
+  ];
+  rr:predicateObjectMap [
+    rr:predicate sosa:hasFeatureOfInterest ;
+    rr:objectMap [ rml:reference "Direccion Viento" ; rr:datatype xsd:Decimal ] ;
+  ];
+  rr:predicateObjectMap [
+    rr:predicate sosa:madeBySensor ;
+    rr:objectMap [ rr:parentTriplesMap <#MappingEstacionMedicion> ] ;
+  ].
+
+# ===========================
+# Mapping de Medicion de Temperatura
+# ===========================
+
+<#MappingMedicion_Temperatura>
+  rml:logicalSource [
+    rml:source "csv/air_quality-updated.csv" ;
+    rml:referenceFormulation ql:CSV
+  ];
+  rr:subjectMap [
+    rr:class ns:Medicion ;
+    rr:template "http://webcam.linkeddata.Gijon.es.org/resource/medicion/{Fecha}_{Hora}_Temperatura" ;
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ns:Fecha ;
+    rr:objectMap [ rml:reference "Fecha" ; rr:datatype xsd:date ] ;
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ns:Hora ;
+    rr:objectMap [ rml:reference "Hora" ; rr:datatype xsd:time ] ;
+  ];
+  rr:predicateObjectMap [
+    rr:predicate sosa:hasFeatureOfInterest ;
+    rr:objectMap [ rml:reference "Temperatura" ; rr:datatype xsd:Decimal ] ;
+  ];
+  rr:predicateObjectMap [
+    rr:predicate sosa:madeBySensor ;
+    rr:objectMap [ rr:parentTriplesMap <#MappingEstacionMedicion> ] ;
+  ].
+
+# ===========================
+# Mapping de Medicion de Humedad Relativa (HR)
+# ===========================
+
+<#MappingMedicion_HR>
+  rml:logicalSource [
+    rml:source "csv/air_quality-updated.csv" ;
+    rml:referenceFormulation ql:CSV
+  ];
+  rr:subjectMap [
+    rr:class ns:Medicion ;
+    rr:template "http://webcam.linkeddata.Gijon.es.org/resource/medicion/{Fecha}_{Hora}_HR" ;
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ns:Fecha ;
+    rr:objectMap [ rml:reference "Fecha" ; rr:datatype xsd:date ] ;
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ns:Hora ;
+    rr:objectMap [ rml:reference "Hora" ; rr:datatype xsd:time ] ;
+  ];
+  rr:predicateObjectMap [
+    rr:predicate sosa:hasFeatureOfInterest ;
+    rr:objectMap [ rml:reference "HR" ; rr:datatype xsd:Decimal ] ;
+  ];
+  rr:predicateObjectMap [
+    rr:predicate sosa:madeBySensor ;
+    rr:objectMap [ rr:parentTriplesMap <#MappingEstacionMedicion> ] ;
+  ].

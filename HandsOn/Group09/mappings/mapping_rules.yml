@@ -1,0 +1,20 @@
+prefixes:
+  rr: http://www.w3.org/ns/r2rml#
+  rml: http://semweb.mmlab.be/ns/rml#
+  ql: http://semweb.mmlab.be/ns/ql#
+  xsd: http://www.w3.org/2001/XMLSchema#
+  wgs84_pos: http://www.w3.org/2003/01/geo/wgs84_pos#
+  ex: http://smartcity.linkeddata.es/concesiones_zonas_verdes/ontologia/
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
+
+mappings:
+  triplesmap1:
+    sources:
+      - [./csv/ConcesionesYAutorizaciones_2023-updated.csv~csv]
+    s: http://smartcity.linkeddata.es/concesiones_zonas_verdes/recursos/concesion/$(Número de archivo)
+    po:
+      - [a, ex:Concesion]
+      - [ex:tieneDistrito, $(Distrito)]
+      - [ex:tieneApartado, $(Apartado)]
+      - [ex:tieneDenominacion, $(Denominación)]
+      - [ex:tieneSituacion, $(Situación)]

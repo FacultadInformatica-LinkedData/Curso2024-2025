@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analysis</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            margin: 20px;
+            width: 80%;
+        }
+
+        th,
+        td {
+            border: 1px solid #000;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Analysis</h1>
+
+    <h2>Data Set Analyse.</h2>
+    <p> This dataset is about the traffic light's location on the area of Madrid.
+        It contains 56709 traffic lights distributed on Madrid.
+        The data set contains information such as elemet id, element type, element location and further information:
+    </p>
+    <table>
+        <thead>
+            <tr>
+                <th>Column name</th>
+                <th>Data type</th>
+                <th>Format</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+            <tr>
+                <td>tipo_elem</td>
+                <td>String</td>
+                <td>SEMAFORO x/xxx [type]</td>
+                <td>Type of traffic light, where x indicates number, type contains{PEATON, BICI, PEATON - BICI}.</td>
+            </tr>
+
+            <tr>
+                <td>distrito</td>
+                <td>Integer</td>
+                <td>x</td>
+                <td>District of the location of the traffic light, where x indicates number.</td>
+            </tr>
+
+            <tr>
+                <td>id</td>
+                <td>Integer</td>
+                <td>x</td>
+                <td>Unique id for the traffic light, where x indicates number</td>
+            </tr>
+
+            <tr>
+                <td>id_cruce</td>
+                <td>Integer</td>
+                <td>x</td>
+                <td>Non-unique id for the traffic light intersection, where x indicates number. Elements with same
+                    id_cruce means they are on the same intersection.</td>
+            </tr>
+
+            <tr>
+                <td>fecha_inst</td>
+                <td>Time</td>
+                <td>dd/mm/yyyy hh:mm</td>
+                <td>Instalation date in format day/month/year hour:minute</td>
+            </tr>
+
+            <tr>
+                <td>utm_x</td>
+                <td>String</td>
+                <td>x.x.x.x.x</td>
+                <td>X-coordinate for the Universal Transverse Mercator, where x indicates any number from 0 to 999.
+                </td>
+            </tr>
+
+            <tr>
+                <td>utm_y</td>
+                <td>String</td>
+                <td>x.x.x.x.x.x</td>
+                <td>Y-coordinate for the Universal Transverse Mercator, where x indicates any number from 0 to 999.
+                </td>
+            </tr>
+
+            <tr>
+                <td>longitud</td>
+                <td>String</td>
+                <td>x.x.x.x.x</td>
+                <td>Longitude for the Geographic Coordinate System, where x indicates any number from 0 to 999. </td>
+            </tr>
+
+            <tr>
+                <td>latitud</td>
+                <td>String</td>
+                <td>x.x.x.x.x.x</td>
+                <td>Latitude for the Geographic Coordinate System, where x indicates any number from 0 to 999. </td>
+            </tr>
+
+        </tbody>
+    </table>
+
+
+
+    <h2>Data Set Licensing.</h2>
+
+    <p> The licence of the dataset can be found in: 
+        <a
+        href="https://datos.madrid.es/portal/site/egob/menuitem.3efdb29b813ad8241e830cc2a8a409a0/?vgnextoid=108804d4aab90410VgnVCM100000171f5a0aRCRD&vgnextchannel=b4c412b9ace9f310VgnVCM100000171f5a0aRCRD&vgnextfmt=default">URL</a>
+    </p>
+
+    <p> 
+    <b>Publisher:</b> Ayuntamiento de Madrid 
+    </p>
+
+    <p>
+    <b>Rightsholder:</b> Ayuntamiento de Madrid
+    </p>
+
+    <p>
+    <b>General Conditions for Reuse:</b> <ul>
+        <li><b>1. </b> It is prohibited to distort the meaning of the information.</li>
+        <li><b>2. </b>The source of the documents being reused must be cited. This citation may be made as follows: "Source of data: Madrid City Council (or, as applicable, the administrative body, agency, or entity in question)."</li>
+        <li><b>3. </b>The date of the last update of the documents being reused must be mentioned, provided that it is included in the original document.</li>
+        <li><b>4. </b>It is not allowed to indicate, imply, or suggest that the Madrid City Council participates in, sponsors, or supports the reuse being carried out with the information.</li>
+        <li><b>5. </b>Metadata regarding the date of update and applicable reuse conditions must be preserved, not altered or removed, including, where applicable, in the document made available for reuse.</li>
+        <li><b>6. </b>In the case of anonymized information for the protection of personal data or other reasons, it is expressly prohibited to carry out re-identification of individuals based on this data and other possible data and information sources, past, present, or future.</li>
+    </ul>
+    </p>
+
+    <h2>Resource Naming Strategy</h2>
+    <p> 
+        <b>Domain:</b> <i>http://semanticweb.org/</i>
+    </p>
+
+    <p> 
+        <b>Path:</b> <i>http://semanticweb.org/traffic-lights/</i>
+    </p>
+
+    <p> 
+        <b>Ontology:</b> <i>http://www.semanticweb.org/traffic-lights/ontology/</i>
+    </p>
+
+    <p> 
+        <b>Class:</b> <i>http://www.semanticweb.org/traffic-lights/ontology/{class-name}</i> 
+    </p>
+
+    <p> 
+        <b>Property:</b> <i>http://www.semanticweb.org/traffic-lights/ontology/{property-name}</i> 
+    </p>
+
+
+
+</body>
+
+</html>
