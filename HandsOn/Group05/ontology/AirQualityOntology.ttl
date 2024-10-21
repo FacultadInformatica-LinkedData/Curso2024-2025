@@ -1,0 +1,109 @@
+@prefix mod: <https://w3id.org/mod#> .
+@prefix ns: <http://webcam.linkeddata.Gijon.es.org/ontology/airquality#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ns: a owl:Ontology ;
+    mod:createdWith <https://chowlk.linkeddata.es/> .
+
+### Clases de Medición
+
+ns:MedicionSO2 a owl:Class ;
+    rdfs:label "Medicion de SO2" ;
+    rdfs:subClassOf ns:Medicion .
+
+ns:MedicionNO a owl:Class ;
+    rdfs:label "Medicion de NO" ;
+    rdfs:subClassOf ns:Medicion .
+
+ns:MedicionNOX a owl:Class ;
+    rdfs:label "Medicion de NOX" ;
+    rdfs:subClassOf ns:Medicion .
+
+ns:MedicionDireccionViento a owl:Class ;
+    rdfs:label "Medicion de Direccion del Viento" ;
+    rdfs:subClassOf ns:Medicion .
+
+ns:MedicionTemperatura a owl:Class ;
+    rdfs:label "Medicion de Temperatura" ;
+    rdfs:subClassOf ns:Medicion .
+
+ns:MedicionHR a owl:Class ;
+    rdfs:label "Medicion de Humedad Relativa (HR)" ;
+    rdfs:subClassOf ns:Medicion .
+
+### Clases y Propiedades Generales
+
+ns:Medicion a owl:Class ;
+    rdfs:label "Medicion" .
+
+ns:EstacionMedicion a owl:Class ;
+    rdfs:label "Estacion Medicion" .
+
+### Propiedades de las Mediciones
+
+ns:FechaMedida a owl:ObjectProperty ;
+    rdfs:label "fecha medida" ;
+    rdfs:domain ns:Medicion ;
+    rdfs:range xsd:date .
+
+ns:HoraMedida a owl:ObjectProperty ;
+    rdfs:label "hora medida" ;
+    rdfs:domain ns:Medicion ;
+    rdfs:range xsd:time .
+
+ns:UnidadMedida a owl:ObjectProperty ;
+    rdfs:label "unidad medida" ;
+    rdfs:domain ns:Medicion ;
+    rdfs:range xsd:Decimal .
+
+schema:latitude a owl:ObjectProperty ;
+    rdfs:label "latitude" ;
+    rdfs:domain ns:EstacionMedicion ;
+    rdfs:range xsd:Decimal .
+
+schema:longitude a owl:ObjectProperty ;
+    rdfs:label "longitude" ;
+    rdfs:domain ns:EstacionMedicion ;
+    rdfs:range xsd:Decimal .
+
+schema:name a owl:ObjectProperty ;
+    rdfs:label "name" ;
+    rdfs:domain ns:EstacionMedicion ;
+    rdfs:range xsd:string .
+
+sosa:madeBySensor a owl:ObjectProperty ;
+    rdfs:label "hecho por sensor" ;
+    rdfs:domain ns:Medicion ;
+    rdfs:range ns:EstacionMedicion .
+
+### Feature of Interest (Características de interés)
+
+ns:SO2 a owl:Class ;
+    rdfs:label "SO2" .
+
+ns:NO a owl:Class ;
+    rdfs:label "NO" .
+
+ns:NOX a owl:Class ;
+    rdfs:label "NOX" .
+
+ns:DireccionViento a owl:Class ;
+    rdfs:label "Direccion del Viento" .
+
+ns:Temperatura a owl:Class ;
+    rdfs:label "Temperatura" .
+
+ns:HR a owl:Class ;
+    rdfs:label "Humedad Relativa (HR)" .
+
+### Relacionar mediciones con características de interés
+
+sosa:hasFeatureOfInterest a owl:ObjectProperty ;
+    rdfs:label "tiene caracteristica de interes" ;
+    rdfs:domain ns:Medicion ;
+    rdfs:range [ owl:oneOf (ns:SO2 ns:NO ns:NOX ns:DireccionViento ns:Temperatura ns:HR) ] .
+

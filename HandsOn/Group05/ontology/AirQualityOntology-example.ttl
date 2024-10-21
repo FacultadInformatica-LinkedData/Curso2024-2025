@@ -1,0 +1,36 @@
+@prefix mod: <https://w3id.org/mod#> .
+@prefix ns: <http://webcam.linkeddata.Gijon.es.org/ontology/airquality#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ns:AirQualityOntology a owl:Ontology ;
+    mod:createdWith <https://chowlk.linkeddata.es/> .
+
+ns:Estacion_12 a ns:EstacionMedicion ;
+    schema:name "Estación móvil zona Portuarios" ;
+    schema:latitude "43.55328"^^xsd:Decimal ;
+    schema:longitude "-5.702679"^^xsd:Decimal .
+
+ns:Medicion_01 a ns:MedicionSO2 ;
+    ns:FechaMedida "2023-10-21"^^xsd:date ;
+    ns:HoraMedida "01:00:00"^^xsd:time ;
+    ns:UnidadMedida "3"^^xsd:Decimal ;
+    sosa:madeBySensor ns:Estacion_12 ;
+    sosa:hasFeatureOfInterest ns:SO2 .
+
+ns:Medicion_02 a ns:MedicionTemperatura ;
+    ns:FechaMedida "2023-10-21"^^xsd:date ;
+    ns:HoraMedida "01:00:00"^^xsd:time ;
+    ns:UnidadMedida "12.8"^^xsd:Decimal ;
+    sosa:madeBySensor ns:Estacion_12 ;
+    sosa:hasFeatureOfInterest ns:Temperatura .
+
+ns:Medicion_03 a ns:MedicionHR ;
+    ns:FechaMedida "2023-10-21"^^xsd:date ;
+    ns:HoraMedida "01:00:00"^^xsd:time ;
+    ns:UnidadMedida "78"^^xsd:Decimal ;
+    sosa:madeBySensor ns:Estacion_12 ;
+    sosa:hasFeatureOfInterest ns:HR .

@@ -1,0 +1,30 @@
+# 1. Consultar todas las concesiones y sus denominaciones
+SELECT ?concesion ?denominacion WHERE {
+  ?concesion a <http://smartcity.linkeddata.es/concesiones_zonas_verdes/ontologia/Concesion> ;
+             <http://smartcity.linkeddata.es/concesiones_zonas_verdes/ontologia/tieneDenominacion> ?denominacion .
+}
+
+# 2. Consultar todas las concesiones y los distritos asociados
+SELECT ?concesion ?distrito WHERE {
+  ?concesion a <http://smartcity.linkeddata.es/concesiones_zonas_verdes/ontologia/Concesion> ;
+             <http://smartcity.linkeddata.es/concesiones_zonas_verdes/ontologia/tieneDistrito> ?distrito .
+}
+
+# 3. Consultar las concesiones en el distrito "CENTRO"
+SELECT ?concesion ?denominacion WHERE {
+  ?concesion a <http://smartcity.linkeddata.es/concesiones_zonas_verdes/ontologia/Concesion> ;
+             <http://smartcity.linkeddata.es/concesiones_zonas_verdes/ontologia/tieneDistrito> "CENTRO" ;
+             <http://smartcity.linkeddata.es/concesiones_zonas_verdes/ontologia/tieneDenominacion> ?denominacion .
+}
+
+# 4. Consultar el número de archivo asociado a cada concesión
+SELECT ?concesion ?numeroArchivo WHERE {
+  ?concesion a <http://smartcity.linkeddata.es/concesiones_zonas_verdes/ontologia/Concesion> ;
+             <http://smartcity.linkeddata.es/concesiones_zonas_verdes/ontologia/tieneNumeroArchivo> ?numeroArchivo .
+}
+
+# 5. Consultar las concesiones con su situación
+SELECT ?concesion ?situacion WHERE {
+  ?concesion a <http://smartcity.linkeddata.es/concesiones_zonas_verdes/ontologia/Concesion> ;
+             <http://smartcity.linkeddata.es/concesiones_zonas_verdes/ontologia/tieneSituacion> ?situacion .
+}

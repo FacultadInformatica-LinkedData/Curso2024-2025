@@ -1,0 +1,41 @@
+@prefix : <http://example.org/city/lighting#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:Streetlight a owl:Class ;
+    rdfs:label "Streetlight" ;
+    rdfs:comment "A public streetlight in the city." .
+
+:Location a owl:Class ;
+    rdfs:label "Location" ;
+    rdfs:comment "The geographic location of the streetlight." .
+
+:Type a owl:Class ;
+    rdfs:label "Type" ;
+    rdfs:comment "The type of the streetlight (e.g., LED, Sodium)." .
+
+:status a rdf:Property ;
+    rdfs:label "Status" ;
+    rdfs:domain :Streetlight ;
+    rdfs:range xsd:string ;
+    rdfs:comment "The current status of the streetlight (functional or needs maintenance)." .
+
+:powerConsumption a rdf:Property ;
+    rdfs:label "Power Consumption" ;
+    rdfs:domain :Streetlight ;
+    rdfs:range xsd:decimal ;
+    rdfs:comment "The power consumption of the streetlight in watts." .
+
+:locatedAt a rdf:Property ;
+    rdfs:label "Located At" ;
+    rdfs:domain :Streetlight ;
+    rdfs:range :Location ;
+    rdfs:comment "The geographic location of the streetlight." .
+
+:hasType a rdf:Property ;
+    rdfs:label "Has Type" ;
+    rdfs:domain :Streetlight ;
+    rdfs:range :Type ;
+    rdfs:comment "The type of streetlight (e.g., LED, Sodium)." .
