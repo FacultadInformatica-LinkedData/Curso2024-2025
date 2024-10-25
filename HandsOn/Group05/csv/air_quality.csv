@@ -1,4 +1,4 @@
-Estación,Título,latitud,longitud,Fecha,Periodo,SO2,H2S,NO,NO2,NOX,CO,O3,PM10,PM25,BEN,TOL,MXIL,Dirección Viento,Velocidad Viento,Temperatura,HR,PRB,RS,LL
+Estacion,Título,latitud,longitud,Fecha,Periodo,SO2,H2S,NO,NO2,NOX,CO,O3,PM10,PM25,BEN,TOL,MXIL,Direccion Viento,Velocidad Viento,Temperatura,HR,PRB,RS,LL
 "12","Estación móvil zona Portuarios","43.553280","-5.702679","2023-10-21","1","3","3","1","2","2","","72","","","","","","161","1.3400000333786","12.8000001907349","78","1000","42","0"
 "12","Estación móvil zona Portuarios","43.553280","-5.702679","2023-10-21","2","3","3","1","2","2","","72","","","","","","162","1.16999995708466","12.8000001907349","76","1001","41","0"
 "12","Estación móvil zona Portuarios","43.553280","-5.702679","2023-10-21","3","3","3","1","2","2","","73","","","","","","164","1.35000002384186","12.8999996185303","74","1001","41","0"

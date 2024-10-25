@@ -1,0 +1,140 @@
+# Queries related to air quality data
+
+1. # Obtener todas las estaciones y sus magnitudes
+   SELECT ?estacion ?magnitud
+   WHERE {
+       ?estacion <http://semanticweb.es/magnitud> ?magnitud.
+   }
+
+2. # Obtener las magnitudes promedio por estación
+   SELECT ?estacion (AVG(?magnitud) AS ?mediaMagnitud)
+   WHERE {
+       ?estacion <http://semanticweb.es/magnitud> ?magnitud.
+   }
+   GROUP BY ?estacion
+
+3. # Contar cuántas magnitudes tiene cada estación
+   SELECT ?estacion (COUNT(?magnitud) AS ?numMagnitudes)
+   WHERE {
+       ?estacion <http://semanticweb.es/magnitud> ?magnitud.
+   }
+   GROUP BY ?estacion
+
+4. # Obtener todas las estaciones que tienen una magnitud mayor a 10
+   SELECT ?estacion
+   WHERE {
+       ?estacion <http://semanticweb.es/magnitud> ?magnitud.
+       FILTER(?magnitud > 10)
+   }
+
+5. # Listar las estaciones que pertenecen al municipio "079"
+   SELECT ?estacion
+   WHERE {
+       ?estacion <http://semanticweb.es/municipio> "079".
+   }
+
+6. # Obtener la magnitud máxima registrada por cada estación
+   SELECT ?estacion (MAX(?magnitud) AS ?maxMagnitud)
+   WHERE {
+       ?estacion <http://semanticweb.es/magnitud> ?magnitud.
+   }
+   GROUP BY ?estacion
+
+7. # Obtener estaciones con magnitudes entre 5 y 10
+   SELECT ?estacion
+   WHERE {
+       ?estacion <http://semanticweb.es/magnitud> ?magnitud.
+       FILTER(?magnitud >= 5 && ?magnitud <= 10)
+   }
+
+8. # Obtener todas las estaciones con su respectivo municipio
+   SELECT ?estacion ?municipio
+   WHERE {
+       ?estacion <http://semanticweb.es/municipio> ?municipio.
+   }
+
+9. # Obtener las estaciones y la cantidad de magnitudes asociadas
+   SELECT ?estacion (COUNT(?magnitud) AS ?numMagnitudes)
+   WHERE {
+       ?estacion <http://semanticweb.es/magnitud> ?magnitud.
+   }
+   GROUP BY ?estacion
+
+10. # Listar las estaciones con magnitudes registradas más de una vez
+    SELECT ?estacion
+    WHERE {
+        ?estacion <http://semanticweb.es/magnitud> ?magnitud.
+    }
+    GROUP BY ?estacion
+    HAVING (COUNT(?magnitud) > 1)
+
+# Queries related to sampling points
+
+11. # Obtener todos los puntos de muestreo y las estaciones asociadas
+    SELECT ?puntoMuestreo ?estacion
+    WHERE {
+        ?estacion <http://semanticweb.es/tienePuntoDeMuestreo> ?puntoMuestreo.
+    }
+
+12. # Contar cuántas estaciones están asociadas a cada punto de muestreo
+    SELECT ?puntoMuestreo (COUNT(?estacion) AS ?numEstaciones)
+    WHERE {
+        ?estacion <http://semanticweb.es/tienePuntoDeMuestreo> ?puntoMuestreo.
+    }
+    GROUP BY ?puntoMuestreo
+
+13. # Encontrar todos los puntos de muestreo asociados a la estación "11"
+    SELECT ?puntoMuestreo
+    WHERE {
+        <http://semanticweb.es/airquality/estacion/11> <http://semanticweb.es/tienePuntoDeMuestreo> ?puntoMuestreo.
+    }
+
+14. # Listar todos los puntos de muestreo que pertenecen a la provincia "28"
+    SELECT DISTINCT ?puntoMuestreo
+    WHERE {
+        ?estacion <http://semanticweb.es/provincia> "28".
+        ?estacion <http://semanticweb.es/tienePuntoDeMuestreo> ?puntoMuestreo.
+    }
+
+15. # Obtener puntos de muestreo y su respectiva magnitud promedio
+    SELECT ?puntoMuestreo (AVG(?magnitud) AS ?mediaMagnitud)
+    WHERE {
+        ?estacion <http://semanticweb.es/tienePuntoDeMuestreo> ?puntoMuestreo.
+        ?estacion <http://semanticweb.es/magnitud> ?magnitud.
+    }
+    GROUP BY ?puntoMuestreo
+
+16. # Listar los puntos de muestreo que tienen más de una estación asociada
+    SELECT ?puntoMuestreo
+    WHERE {
+        ?estacion <http://semanticweb.es/tienePuntoDeMuestreo> ?puntoMuestreo.
+    }
+    GROUP BY ?puntoMuestreo
+    HAVING (COUNT(?estacion) > 1)
+
+17. # Encontrar todos los puntos de muestreo para una magnitud específica (por ejemplo, 12)
+    SELECT ?puntoMuestreo
+    WHERE {
+        ?estacion <http://semanticweb.es/magnitud> "12".
+        ?estacion <http://semanticweb.es/tienePuntoDeMuestreo> ?puntoMuestreo.
+    }
+
+18. # Obtener la lista de estaciones que comparten el mismo punto de muestreo
+    SELECT ?estacion
+    WHERE {
+        ?estacion <http://semanticweb.es/tienePuntoDeMuestreo> <http://semanticweb.es/airquality/puntoMuestreo/28079024_8_8>.
+    }
+
+19. # Contar cuántos puntos de muestreo están asociados a un municipio específico (por ejemplo, "079")
+    SELECT (COUNT(DISTINCT ?puntoMuestreo) AS ?numPuntosMuestreo)
+    WHERE {
+        ?estacion <http://semanticweb.es/municipio> "079".
+        ?estacion <http://semanticweb.es/tienePuntoDeMuestreo> ?puntoMuestreo.
+    }
+
+20. # Listar todos los puntos de muestreo y su correspondiente municipio
+    SELECT DISTINCT ?puntoMuestreo ?municipio
+    WHERE {
+        ?estacion <http://semanticweb.es/tienePuntoDeMuestreo> ?puntoMuestreo.
+        ?estacion <http://semanticweb.es/municipio> ?municipio.
+    }

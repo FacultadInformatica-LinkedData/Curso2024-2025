@@ -1,0 +1,52 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix mod: <https://w3id.org/mod#> .
+@prefix ns: <http://abandoned.cars.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ns: a owl:Ontology ;
+    dc:creator "Alejandro Ortega Hernandez",
+        "Alejandro San Juan Sanchez",
+        "Cesar Ruiz Deiros",
+        "Luis Alonso Reillo",
+        "Marc Ramirez Sebastia" ;
+    owl:versionInfo "0.0.1" ;
+    mod:createdWith <https://chowlk.linkeddata.es/> .
+
+ns:Adur_2000_01 a ns:Data,
+        owl:NamedIndividual ;
+    ns:hasAmount "753"^^xsd:Integer ;
+    ns:hasDistrict ns:Adur ;
+    ns:hasYear "2000"^^xsd:Integer .
+
+ns:hasAmount a owl:DatatypeProperty ;
+    rdfs:label "has amount" .
+
+ns:hasDistrict a owl:ObjectProperty ;
+    rdfs:label "has district" .
+
+ns:hasONSCode a owl:DatatypeProperty ;
+    rdfs:label "has o n s code" .
+
+ns:hasRegion a owl:DatatypeProperty ;
+    rdfs:label "has region" .
+
+ns:hasYear a owl:DatatypeProperty ;
+    rdfs:label "has year" .
+
+dc:creator a owl:AnnotationProperty .
+
+owl:versionInfo a owl:AnnotationProperty .
+
+ns:Adur a ns:District,
+        owl:NamedIndividual ;
+    ns:hasONSCode "45UB"^^xsd:string ;
+    ns:hasRegion "S East"^^xsd:string .
+
+ns:Data a owl:Class ;
+    rdfs:label "Data" .
+
+ns:District a owl:Class ;
+    rdfs:label "District" .
+
