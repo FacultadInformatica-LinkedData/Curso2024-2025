@@ -1,8 +1,102 @@
 [
   {
     "op": "core/column-removal",
-    "columnName": "CO",
-    "description": "Remove column CO"
+    "columnName": "H2S",
+    "description": "Remove column H2S"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "NO2",
+    "description": "Remove column NO2"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "O3",
+    "description": "Remove column O3"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "PM10",
+    "description": "Remove column PM10"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "PM25",
+    "description": "Remove column PM25"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "BEN",
+    "description": "Remove column BEN"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "TOL",
+    "description": "Remove column TOL"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "MXIL",
+    "description": "Remove column MXIL"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Velocidad Viento",
+    "description": "Remove column Velocidad Viento"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "PRB",
+    "description": "Remove column PRB"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "RS",
+    "description": "Remove column RS"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "LL",
+    "description": "Remove column LL"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ID_Estacion",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column ID_Estacion using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Nombre",
+    "expression": "value.toString()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Nombre using expression value.toString()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Nombre",
+    "expression": "value.toString()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Nombre using expression value.toString()"
   },
   {
     "op": "core/text-transform",
@@ -23,32 +117,6 @@
       "facets": [],
       "mode": "row-based"
     },
-    "columnName": "Estación",
-    "expression": "value.toNumber()",
-    "onError": "keep-original",
-    "repeat": false,
-    "repeatCount": 10,
-    "description": "Text transform on cells in column Estación using expression value.toNumber()"
-  },
-  {
-    "op": "core/text-transform",
-    "engineConfig": {
-      "facets": [],
-      "mode": "row-based"
-    },
-    "columnName": "Título",
-    "expression": "value.toString()",
-    "onError": "keep-original",
-    "repeat": false,
-    "repeatCount": 10,
-    "description": "Text transform on cells in column Título using expression value.toString()"
-  },
-  {
-    "op": "core/text-transform",
-    "engineConfig": {
-      "facets": [],
-      "mode": "row-based"
-    },
     "columnName": "longitud",
     "expression": "value.toNumber()",
     "onError": "keep-original",
@@ -62,25 +130,12 @@
       "facets": [],
       "mode": "row-based"
     },
-    "columnName": "Fecha",
-    "expression": "value.toDate()",
-    "onError": "keep-original",
-    "repeat": false,
-    "repeatCount": 10,
-    "description": "Text transform on cells in column Fecha using expression value.toDate()"
-  },
-  {
-    "op": "core/text-transform",
-    "engineConfig": {
-      "facets": [],
-      "mode": "row-based"
-    },
-    "columnName": "Periodo",
+    "columnName": "Hora",
     "expression": "value.toNumber()",
     "onError": "keep-original",
     "repeat": false,
     "repeatCount": 10,
-    "description": "Text transform on cells in column Periodo using expression value.toNumber()"
+    "description": "Text transform on cells in column Hora using expression value.toNumber()"
   },
   {
     "op": "core/text-transform",
@@ -101,64 +156,12 @@
       "facets": [],
       "mode": "row-based"
     },
-    "columnName": "H2S",
-    "expression": "value.toNumber()",
-    "onError": "keep-original",
-    "repeat": false,
-    "repeatCount": 10,
-    "description": "Text transform on cells in column H2S using expression value.toNumber()"
-  },
-  {
-    "op": "core/text-transform",
-    "engineConfig": {
-      "facets": [],
-      "mode": "row-based"
-    },
     "columnName": "NO",
     "expression": "value.toNumber()",
     "onError": "keep-original",
     "repeat": false,
     "repeatCount": 10,
     "description": "Text transform on cells in column NO using expression value.toNumber()"
-  },
-  {
-    "op": "core/text-transform",
-    "engineConfig": {
-      "facets": [],
-      "mode": "row-based"
-    },
-    "columnName": "NO2",
-    "expression": "value.toNumber()",
-    "onError": "keep-original",
-    "repeat": false,
-    "repeatCount": 10,
-    "description": "Text transform on cells in column NO2 using expression value.toNumber()"
-  },
-  {
-    "op": "core/text-transform",
-    "engineConfig": {
-      "facets": [],
-      "mode": "row-based"
-    },
-    "columnName": "NOX",
-    "expression": "value.toDate()",
-    "onError": "keep-original",
-    "repeat": false,
-    "repeatCount": 10,
-    "description": "Text transform on cells in column NOX using expression value.toDate()"
-  },
-  {
-    "op": "core/text-transform",
-    "engineConfig": {
-      "facets": [],
-      "mode": "row-based"
-    },
-    "columnName": "O3",
-    "expression": "value.toNumber()",
-    "onError": "keep-original",
-    "repeat": false,
-    "repeatCount": 10,
-    "description": "Text transform on cells in column O3 using expression value.toNumber()"
   },
   {
     "op": "core/text-transform",
@@ -179,90 +182,12 @@
       "facets": [],
       "mode": "row-based"
     },
-    "columnName": "PM10",
+    "columnName": "Direccion Viento",
     "expression": "value.toNumber()",
     "onError": "keep-original",
     "repeat": false,
     "repeatCount": 10,
-    "description": "Text transform on cells in column PM10 using expression value.toNumber()"
-  },
-  {
-    "op": "core/text-transform",
-    "engineConfig": {
-      "facets": [],
-      "mode": "row-based"
-    },
-    "columnName": "PM25",
-    "expression": "value.toNumber()",
-    "onError": "keep-original",
-    "repeat": false,
-    "repeatCount": 10,
-    "description": "Text transform on cells in column PM25 using expression value.toNumber()"
-  },
-  {
-    "op": "core/text-transform",
-    "engineConfig": {
-      "facets": [],
-      "mode": "row-based"
-    },
-    "columnName": "BEN",
-    "expression": "value.toNumber()",
-    "onError": "keep-original",
-    "repeat": false,
-    "repeatCount": 10,
-    "description": "Text transform on cells in column BEN using expression value.toNumber()"
-  },
-  {
-    "op": "core/text-transform",
-    "engineConfig": {
-      "facets": [],
-      "mode": "row-based"
-    },
-    "columnName": "TOL",
-    "expression": "value.toNumber()",
-    "onError": "keep-original",
-    "repeat": false,
-    "repeatCount": 10,
-    "description": "Text transform on cells in column TOL using expression value.toNumber()"
-  },
-  {
-    "op": "core/text-transform",
-    "engineConfig": {
-      "facets": [],
-      "mode": "row-based"
-    },
-    "columnName": "MXIL",
-    "expression": "value.toNumber()",
-    "onError": "keep-original",
-    "repeat": false,
-    "repeatCount": 10,
-    "description": "Text transform on cells in column MXIL using expression value.toNumber()"
-  },
-  {
-    "op": "core/text-transform",
-    "engineConfig": {
-      "facets": [],
-      "mode": "row-based"
-    },
-    "columnName": "Dirección Viento",
-    "expression": "value.toNumber()",
-    "onError": "keep-original",
-    "repeat": false,
-    "repeatCount": 10,
-    "description": "Text transform on cells in column Dirección Viento using expression value.toNumber()"
-  },
-  {
-    "op": "core/text-transform",
-    "engineConfig": {
-      "facets": [],
-      "mode": "row-based"
-    },
-    "columnName": "Velocidad Viento",
-    "expression": "value.toNumber()",
-    "onError": "keep-original",
-    "repeat": false,
-    "repeatCount": 10,
-    "description": "Text transform on cells in column Velocidad Viento using expression value.toNumber()"
+    "description": "Text transform on cells in column Direccion Viento using expression value.toNumber()"
   },
   {
     "op": "core/text-transform",
@@ -289,62 +214,5 @@
     "repeat": false,
     "repeatCount": 10,
     "description": "Text transform on cells in column HR using expression value.toNumber()"
-  },
-  {
-    "op": "core/text-transform",
-    "engineConfig": {
-      "facets": [],
-      "mode": "row-based"
-    },
-    "columnName": "PRB",
-    "expression": "value.toNumber()",
-    "onError": "keep-original",
-    "repeat": false,
-    "repeatCount": 10,
-    "description": "Text transform on cells in column PRB using expression value.toNumber()"
-  },
-  {
-    "op": "core/text-transform",
-    "engineConfig": {
-      "facets": [],
-      "mode": "row-based"
-    },
-    "columnName": "RS",
-    "expression": "value.toNumber()",
-    "onError": "keep-original",
-    "repeat": false,
-    "repeatCount": 10,
-    "description": "Text transform on cells in column RS using expression value.toNumber()"
-  },
-  {
-    "op": "core/text-transform",
-    "engineConfig": {
-      "facets": [],
-      "mode": "row-based"
-    },
-    "columnName": "LL",
-    "expression": "value.toNumber()",
-    "onError": "keep-original",
-    "repeat": false,
-    "repeatCount": 10,
-    "description": "Text transform on cells in column LL using expression value.toNumber()"
-  },
-  {
-    "op": "core/column-rename",
-    "oldColumnName": "Periodo",
-    "newColumnName": "Hora",
-    "description": "Rename column Periodo to Hora"
-  },
-  {
-    "op": "core/column-rename",
-    "oldColumnName": "Estación",
-    "newColumnName": "ID_Estación",
-    "description": "Rename column Estación to ID_Estación"
-  },
-  {
-    "op": "core/column-rename",
-    "oldColumnName": "Título",
-    "newColumnName": "Nombre",
-    "description": "Rename column Título to Nombre"
   }
 ]

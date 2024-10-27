@@ -1,48 +1,36 @@
+@prefix mod: <https://w3id.org/mod#> .
 @prefix ns: <http://webcam.linkeddata.Gijon.es.org/ontology/airquality#> .
-@prefix est: <http://webcam.linkeddata.Gijon.es.org/resource/EstacionMedicion#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix sc: <https://schema.org/> .
+@prefix schema: <https://schema.org/> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-est:estacion_12 a ns:EstacionMedicion ;
-    ns:tieneID_Estacion 12 ;
-    ns:tieneNombre "Estación móvil zona Portuarios" ;
-    sc:latitud 43.553280 ;
-    sc:longitud -5.702679 .
+ns:AirQualityOntology a owl:Ontology ;
+    mod:createdWith <https://chowlk.linkeddata.es/> .
 
-ns:medicion_12_1 a ns:Medicion ;
-    ns:realizadaEn ns:estacion_12 ;
-    ns:tieneFecha "2023-10-21"^^xsd:date ;
-    ns:tieneHora 1 ;
-    ns:tieneSO2 3.0 ;
-    ns:tieneH2S 3.0 ;
-    ns:tieneNO 1.0 ;
-    ns:tieneNO2 2.0 ;
-    ns:tieneNOX 2.0 ;
-    ns:tieneO3 72.0 ;
-    ns:tieneDireccionViento 161 ;
-    ns:tieneVelocidadViento 1.34 ;
-    ns:tieneTemperatura 12.8 ;
-    ns:tieneHR 78 ;
-    ns:tienePRB 1000 ;
-    ns:tieneRS 42 ;
-    ns:tieneLL 0 .
+ns:Estacion_12 a ns:EstacionMedicion ;
+    schema:name "Estación móvil zona Portuarios" ;
+    schema:latitude "43.55328"^^xsd:Decimal ;
+    schema:longitude "-5.702679"^^xsd:Decimal .
 
-ns:medicion_12_2 a ns:Medicion ;
-    ns:realizadaEn ns:estacion_12 ;
-    ns:tieneFecha "2023-10-21"^^xsd:date ;
-    ns:tieneHora 2 ;
-    ns:tieneSO2 3.0 ;
-    ns:tieneH2S 3.0 ;
-    ns:tieneNO 1.0 ;
-    ns:tieneNO2 2.0 ;
-    ns:tieneNOX 2.0 ;
-    ns:tieneO3 72.0 ;
-    ns:tieneDireccionViento 162 ;
-    ns:tieneVelocidadViento 1.17 ;
-    ns:tieneTemperatura 12.8 ;
-    ns:tieneHR 76 ;
-    ns:tienePRB 1001 ;
-    ns:tieneRS 41 ;
-    ns:tieneLL 0 .
+ns:Medicion_01 a ns:MedicionSO2 ;
+    ns:FechaMedida "2023-10-21"^^xsd:date ;
+    ns:HoraMedida "01:00:00"^^xsd:time ;
+    ns:UnidadMedida "3"^^xsd:Decimal ;
+    sosa:madeBySensor ns:Estacion_12 ;
+    sosa:hasFeatureOfInterest ns:SO2 .
+
+ns:Medicion_02 a ns:MedicionTemperatura ;
+    ns:FechaMedida "2023-10-21"^^xsd:date ;
+    ns:HoraMedida "01:00:00"^^xsd:time ;
+    ns:UnidadMedida "12.8"^^xsd:Decimal ;
+    sosa:madeBySensor ns:Estacion_12 ;
+    sosa:hasFeatureOfInterest ns:Temperatura .
+
+ns:Medicion_03 a ns:MedicionHR ;
+    ns:FechaMedida "2023-10-21"^^xsd:date ;
+    ns:HoraMedida "01:00:00"^^xsd:time ;
+    ns:UnidadMedida "78"^^xsd:Decimal ;
+    sosa:madeBySensor ns:Estacion_12 ;
+    sosa:hasFeatureOfInterest ns:HR .
