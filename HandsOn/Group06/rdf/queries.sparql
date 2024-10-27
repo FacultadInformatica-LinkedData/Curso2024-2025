@@ -1,0 +1,99 @@
+
+# 1. List all residues with their names, total quantities, and the districts they belong to
+PREFIX ex: <http://example.com/resource/>
+
+SELECT ?residuo ?nombre ?total ?distrito
+WHERE {
+  ?residuo ex:residuoNombre ?nombre ;
+           ex:totalResiduos ?total ;
+           ex:perteneceDistrito ?distrito .
+}
+
+# 2. Count the total number of residues
+PREFIX ex: <http://example.com/resource/>
+
+SELECT (COUNT(?residuo) AS ?totalResiduos)
+WHERE {
+  ?residuo ex:residuoNombre ?nombre .
+}
+
+# 3. Get all residues for a specific district (e.g., "Moncloa - Aravaca")
+PREFIX ex: <http://example.com/resource/>
+
+SELECT ?residuo ?nombre ?total
+WHERE {
+  ?residuo ex:residuoNombre ?nombre ;
+           ex:totalResiduos ?total ;
+           ex:perteneceDistrito "Moncloa - Aravaca" .
+}
+
+# 4. Get all residues generated in a specific year (e.g., 2024)
+PREFIX ex: <http://example.com/resource/>
+
+SELECT ?residuo ?nombre ?total ?anio
+WHERE {
+  ?residuo ex:residuoNombre ?nombre ;
+           ex:totalResiduos ?total ;
+           ex:anio "2024" .
+}
+
+# 5. Count the number of residues per year
+PREFIX ex: <http://example.com/resource/>
+
+SELECT ?anio (COUNT(?residuo) AS ?totalResiduos)
+WHERE {
+  ?residuo ex:residuoNombre ?nombre ;
+           ex:anio ?anio .
+}
+GROUP BY ?anio
+
+# 6. Get all residues generated in a specific month (e.g., "Enero")
+PREFIX ex: <http://example.com/resource/>
+
+SELECT ?residuo ?nombre ?total ?mes
+WHERE {
+  ?residuo ex:residuoNombre ?nombre ;
+           ex:totalResiduos ?total ;
+           ex:mes "Enero" .
+}
+
+# 7. Get the total amount of residues by district
+PREFIX ex: <http://example.com/resource/>
+
+SELECT ?distrito (SUM(?total) AS ?totalResiduos)
+WHERE {
+  ?residuo ex:totalResiduos ?total ;
+           ex:perteneceDistrito ?distrito .
+}
+GROUP BY ?distrito
+
+# 8. Find residues with a total amount greater than a specific value (e.g., 100)
+PREFIX ex: <http://example.com/resource/>
+
+SELECT ?residuo ?nombre ?total
+WHERE {
+  ?residuo ex:residuoNombre ?nombre ;
+           ex:totalResiduos ?total .
+  FILTER(?total > 100)
+}
+
+# 9. List residues by lot
+PREFIX ex: <http://example.com/resource/>
+
+SELECT ?residuo ?nombre ?total ?lote
+WHERE {
+  ?residuo ex:residuoNombre ?nombre ;
+           ex:totalResiduos ?total ;
+           ex:lote ?lote .
+}
+
+# 10. Get residues generated in a range of years (e.g., between 2022 and 2024)
+PREFIX ex: <http://example.com/resource/>
+
+SELECT ?residuo ?nombre ?total ?anio
+WHERE {
+  ?residuo ex:residuoNombre ?nombre ;
+           ex:totalResiduos ?total ;
+           ex:anio ?anio .
+  FILTER(?anio >= 2022 && ?anio <= 2024)
+}

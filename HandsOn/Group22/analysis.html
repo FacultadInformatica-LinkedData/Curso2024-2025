@@ -49,18 +49,35 @@
         <canvas id="accidentChart"></canvas>
     </div>
     <h2>Namespace</h2>
-<p>Con la siguiente convencion de nombres si intentara seguir un patron unico para cada dato, pero es inevitable que un dato se pueda repetir ya que en nuestro caso existen coches que se chocan con otros coches lo cual puede resultar en claves repetidas, se dejara en comentarios posibles soluciones que se pueden tener en cuenta.</p>
-
-<pre><code>accidente_{expediente}_{mes}_{localizacion}_{distrito}</code></pre>
-<p>Where:</p>
+<p>
+    El <em>Namespace</em> se diseñará para distinguir los términos ontológicos y las instancias de la ontología.
+</p>
 <ul>
-    <li><strong>expediente</strong>: Numero de expediente.</li>
-    <li><strong>mes</strong>: Numero del mes (e.g., 1=Enero).</li>
-    <li><strong>localizacion</strong>: Localizacion, en este caso carretera (e.g., AUTOV. M-30,CALL. PUERTO ALTO).</li>
-    <li><strong>Distrito</strong>: Nombre del distrito (e.g., Retiro, Carabanchel).</li>
+    <li>
+        Para los <strong>términos ontológicos</strong>  (clases y propiedades)
+
+        <p>
+            Ejemplo de URI para la clase 'Accidente':
+            <code>https://websemantica.net/Group22/ontology/AccidentesMad#Accidentes</code>
+            </p>
+            <p>
+            Ejemplo de URI para la propiedad de los accidentes 'tieneInvolucrados':
+            <code>https://websemantica.net/Group22/ontology/AccidentesMad#tieneInvolucrados</code>
+        </p>
+        </p>
+    </li>
+    <li>
+        Para las <strong>instancias individuales</strong> (como accidentes específicas, involucrados, y lesionados):
+        <p>
+            Ejemplo de URI para un accidente específica con ID '2024S000001':
+            <code>https://websemantica.net/Group22/resource/Accidente/2024S000001</code></p>
+            <p>
+            Ejemplo de URI para un involucrado específico con código '2024S000001_1':
+            <code>https://websemantica.net/Group22/resource/Involucrado/2024S000001_1</code>
+        </p>
+        </p>
+    </li>
 </ul>
-<p>Ejemplo</p>
-<pre><code>accidente_2024S000001_1_AUTOV. M-30_Retiro</code></pre>
 
 <h2>Licencia</h2>
 <li> <a href="https://datos.madrid.es/egob/catalogo/aviso-legal">datos.madrid.es</a> is an open portal for datasets, meaning it is open-licensed. Their license details can be found <a href="https://datos.madrid.es/egob/catalogo/aviso-legal">here</a>.</li>

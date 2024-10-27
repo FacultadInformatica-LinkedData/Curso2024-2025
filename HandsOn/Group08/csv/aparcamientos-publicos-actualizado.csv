@@ -1,4 +1,4 @@
-PK,NOMBRE,HORARIO,DESCRIPCION,NOMBRE CALLE,NUM,BARRIO,DISTRITO
+PK,NOMBRE,HORARIO,DESCRIPCION,NOMBRE_CALLE,NUM,BARRIO,DISTRITO
 11483771,Aparcamiento disuasorio Aviación Española,0:00-0:00,"Plazas:  para automóviles: 344 (de las cuales, 10 para coche eléctrico) para motocicletas: 25 para bicicletas: 10   Código del aparcamiento: 1024",CALLE FUENTE DE LIMA,5,LAS AGUILAS,LATINA
 10489514,Aparcamiento disuasorio Estadio Metropolitano Sur ES-02b,6:00-22:00,Plazas:  para automóviles: 3011 para motocicletas: 61,AVENIDA ARCENTALES,37,ROSAS,SAN BLAS-CANILLEJAS
 11413444,Aparcamiento disuasorio Fuente de la Mora,0:00-0:00,"Plazas:  para automóviles: 368 (de las cuales, 10 para coche eléctrico y 12 para coches adaptados PMR) para motocicletas: 35   Código del aparcamiento: 1626",AVENIDA MANOTERAS,1,VALDEFUENTES,HORTALEZA

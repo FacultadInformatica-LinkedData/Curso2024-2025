@@ -1,0 +1,94 @@
+
+PREFIX ns: <https://websemantica.net/Group03/ontology/CamarasBcn#>
+PREFIX sc: <https://schema.org/>
+
+#consulta que devuelve una lista de barrios junto con los distritos a los que pertenecen
+SELECT ?barrio ?nombreBarrio ?codigoBarrio ?distrito ?nombreDistrito ?codigoDistrito
+WHERE {
+    ?barrio a ns:Barrio ;
+            ns:tieneNombreBarrio ?nombreBarrio ;
+            ns:tieneCodigoBarrio ?codigoBarrio ;
+            ns:enDistrito ?distrito .
+
+    ?distrito a ns:Distrito ;
+              ns:tieneNombreDistrito ?nombreDistrito ;
+              ns:tieneCodigoDistrito ?codigoDistrito .
+}
+
+# Consulta para obtener todas las cámaras y sus coordenadas
+SELECT ?camara ?latitud ?longitud
+WHERE {
+    ?camara a ns:Camara ;
+            sc:latitud ?latitud ;
+            sc:longitud ?longitud .
+}
+
+# Consulta para obtener todas las cámaras en un barrio específico (10)
+SELECT ?camara ?tipoCamara ?latitud ?longitud
+WHERE {
+    ?camara a ns:Camara ;
+            ns:enBarrio ?barrio ;
+            ns:tieneTipoCamara ?tipoCamara ;
+            ns:tieneX_ETRS89Camara ?x ;
+            ns:tieneY_ETRS89Camara ?y ;
+            sc:latitud ?latitud ;
+            sc:longitud ?longitud .
+    
+    ?barrio ns:tieneCodigoBarrio 10 .
+}
+
+#  Consulta para obtener las cámaras con un tipo de soporte específico (Mástil)
+SELECT ?camara ?soporteCamara
+WHERE {
+    ?camara a ns:Camara ;
+            ns:tieneSoporteCamara ?soporteCamara .
+    FILTER(?soporteCamara = "Mastil")
+}
+
+#Consulta para contar cuántas cámaras hay en cada distrito
+SELECT ?distrito ?nombreDistrito (COUNT(?camara) AS ?numCamaras)
+WHERE {
+    ?camara a ns:Camara ;
+            ns:enBarrio ?barrio .
+
+    ?barrio ns:enDistrito ?distrito .
+    ?distrito ns:tieneNombreDistrito ?nombreDistrito .
+}
+GROUP BY ?distrito ?nombreDistrito
+
+
+# Consulta para cámaras con fecha de alta específica (2000-01-01)
+SELECT ?camara ?fechaAlta
+WHERE {
+    ?camara a ns:Camara ;
+            ns:tieneFechaAltaCamara ?fechaAlta .
+    FILTER(STRSTARTS(STR(?fechaAlta), "2000-01-01"))
+}
+
+#  Consulta para obtener todas las cámaras de un tipo específico(Càmera mòbil) y en un barrio concreto(el Raval)
+SELECT ?camara ?tipoCamara ?barrio ?nombreBarrio
+WHERE {
+    ?camara a ns:Camara ;
+            ns:tieneTipoCamara ?tipoCamara ;
+            ns:enBarrio ?barrio .
+    
+    ?barrio ns:tieneNombreBarrio ?nombreBarrio .
+    FILTER(?tipoCamara = "Càmera mòbil")
+    FILTER(?nombreBarrio = "el Raval")
+}
+
+#  Consulta para obtener todas las cámaras con un código específico(CIF) y en un distrito concreto(Sant Martí)
+SELECT ?camara ?codigoCamara ?barrio ?nombreBarrio ?distrito ?nombreDistrito
+WHERE {
+    ?camara a ns:Camara ;
+            ns:tieneCodigoCamara ?codigoCamara ;
+            ns:enBarrio ?barrio .
+    
+    ?barrio ns:tieneNombreBarrio ?nombreBarrio ;
+            ns:enDistrito ?distrito .
+    
+    ?distrito ns:tieneNombreDistrito ?nombreDistrito .
+    
+    FILTER(?codigoCamara = "CIF")
+    FILTER(?nombreDistrito = "Sant Martí")
+}

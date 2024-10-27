@@ -1,0 +1,499 @@
+@prefix ns1: <http://example.com/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.com/parking/10489514> ns1:barrio "ROSAS" ;
+    ns1:descripcion "Plazas:  para automóviles: 3011 para motocicletas: 61" ;
+    ns1:distrito "SAN BLAS-CANILLEJAS" ;
+    ns1:horario "6:00-22:00" ;
+    ns1:nombre "Aparcamiento disuasorio Estadio Metropolitano Sur ES-02b" ;
+    ns1:nombre_calle "AVENIDA ARCENTALES" ;
+    ns1:num 37 .
+
+<http://example.com/parking/10737574> ns1:barrio "MOSCARDO" ;
+    ns1:descripcion "Plazas: 36  Titularidad : Ayuntamiento de Madrid" ;
+    ns1:distrito "USERA" ;
+    ns1:horario "NaN"^^xsd:double ;
+    ns1:nombre "Aparcamiento público. Usera" ;
+    ns1:nombre_calle "CALLE AMPARO USERA" ;
+    ns1:num 46 .
+
+<http://example.com/parking/11413444> ns1:barrio "VALDEFUENTES" ;
+    ns1:descripcion "Plazas:  para automóviles: 368 (de las cuales, 10 para coche eléctrico y 12 para coches adaptados PMR) para motocicletas: 35   Código del aparcamiento: 1626" ;
+    ns1:distrito "HORTALEZA" ;
+    ns1:horario "0:00-0:00" ;
+    ns1:nombre "Aparcamiento disuasorio Fuente de la Mora" ;
+    ns1:nombre_calle "AVENIDA MANOTERAS" ;
+    ns1:num 1 .
+
+<http://example.com/parking/11413620> ns1:barrio "FUENTELARREINA" ;
+    ns1:descripcion "Plazas:  para automóviles: 402 (de las cuales, 10 para coche eléctrico y 12 para coches adaptados PMR) para motocicletas: 34   Código del aparcamiento: 828" ;
+    ns1:distrito "FUENCARRAL-EL PARDO" ;
+    ns1:horario "0:00-0:00" ;
+    ns1:nombre "Aparcamiento disuasorio Pitis" ;
+    ns1:nombre_calle "CALLE GLORIA FUERTES" .
+
+<http://example.com/parking/11483771> ns1:barrio "LAS AGUILAS" ;
+    ns1:descripcion "Plazas:  para automóviles: 344 (de las cuales, 10 para coche eléctrico) para motocicletas: 25 para bicicletas: 10   Código del aparcamiento: 1024" ;
+    ns1:distrito "LATINA" ;
+    ns1:horario "0:00-0:00" ;
+    ns1:nombre "Aparcamiento disuasorio Aviación Española" ;
+    ns1:nombre_calle "CALLE FUENTE DE LIMA" ;
+    ns1:num 5 .
+
+<http://example.com/parking/11544439> ns1:barrio "PALACIO" ;
+    ns1:descripcion "Plazas Totales: 320 plazas,  Plazas motos: 16." ;
+    ns1:distrito "CENTRO" ;
+    ns1:horario "NaN"^^xsd:double ;
+    ns1:nombre "Aparcamiento mixto. Plaza de Santo Domingo" ;
+    ns1:nombre_calle "PLAZA SANTO DOMINGO" .
+
+<http://example.com/parking/11544464> ns1:barrio "BUENAVISTA" ;
+    ns1:descripcion "Número de plazas: 224 plazas  Código del aparcamiento: 1114" ;
+    ns1:distrito "CARABANCHEL" ;
+    ns1:horario "NaN"^^xsd:double ;
+    ns1:nombre "Aparcamiento disuasorio Islazul" ;
+    ns1:nombre_calle "CALLE CALDERILLA" ;
+    ns1:num 1 .
+
+<http://example.com/parking/11544480> ns1:barrio "GOYA" ;
+    ns1:descripcion "Plazas: 121 públicas y 254 para residentes Abierto 24 horas  Titularidad: Ayuntamiento de Madrid" ;
+    ns1:distrito "SALAMANCA" ;
+    ns1:horario "NaN"^^xsd:double ;
+    ns1:nombre "Aparcamiento mixto. Alcántara" ;
+    ns1:nombre_calle "CALLE ALCANTARA" ;
+    ns1:num 26 .
+
+<http://example.com/parking/11750494> ns1:barrio "IMPERIAL" ;
+    ns1:descripcion "Plazas: 501  Actualmente Cerrado     Titularidad: Ayuntamiento de Madrid" ;
+    ns1:distrito "ARGANZUELA" ;
+    ns1:horario "NaN"^^xsd:double ;
+    ns1:nombre "Aparcamiento público. San Epifanio" ;
+    ns1:nombre_calle "CALLE SAN EPIFANIO" ;
+    ns1:num 9 .
+
+<http://example.com/parking/13449> ns1:barrio "UNIVERSIDAD" ;
+    ns1:descripcion "Plazas: 481 Abierto 24 horas Admite Tarjeta BonoRed  Titularidad: Ayuntamiento de Madrid" ;
+    ns1:distrito "CENTRO" ;
+    ns1:horario "NaN"^^xsd:double ;
+    ns1:nombre "Aparcamiento público. Luna - Tudescos" ;
+    ns1:nombre_calle "PLAZA SANTA MARIA SOLEDAD TORRES ACOSTA" ;
+    ns1:num 2 .
+
+<http://example.com/parking/13450> ns1:barrio "TRAFALGAR" ;
+    ns1:descripcion "Plazas: 397   Información sobre accesibilidad:   Disponde de escaleras adaptadas 1 ascensor en la salida a la Plaza de Olavide 1 aseo accesible en la 1&amp;ordf;  planta Plaza para minusválidos residentes: 8  Abierto 24 horas Admite Tarjeta BonoRed  Titularidad: Ayuntamiento de Madrid" ;
+    ns1:distrito "CHAMBERI" ;
+    ns1:horario "NaN"^^xsd:double ;
+    ns1:nombre "Aparcamiento público. Olavide" ;
+    ns1:nombre_calle "PLAZA OLAVIDE" ;
+    ns1:num 17 .
+
+<http://example.com/parking/13451> ns1:barrio "UNIVERSIDAD" ;
+    ns1:descripcion "Plazas: 361  Información sobre accesibilidad:   No tiene escaleras adaptadas 1 ascensor 1 aseo accesible en 2&amp;ordf;  planta Plaza para minusválidos residentes: 16   Abierto 24 horas   Admite Tarjeta BonoRed    Titularidad: Ayuntamiento de Madrid" ;
+    ns1:distrito "CENTRO" ;
+    ns1:horario "NaN"^^xsd:double ;
+    ns1:nombre "Aparcamiento público. Mostenses" ;
+    ns1:nombre_calle "CALLE GARCIA MOLINAS" ;
+    ns1:num 4 .
+
+<http://example.com/parking/13452> ns1:barrio "ALMAGRO" ;
+    ns1:descripcion "Plazas: 463  Informacion sobre accesibilidad:   1 escalera adaptada No tiene ascensor de salida a calle 1 aseo accesible Plazas para minusválidos residentes: 17  Abierto 24 horas  Titularidad : Ayuntamiento de Madrid   Gestión: Empresa Municipal de Transportes (EMT) (más información)" ;
+    ns1:distrito "CHAMBERI" ;
+    ns1:horario "NaN"^^xsd:double ;
+    ns1:nombre "Aparcamiento público. Almagro" ;
+    ns1:nombre_calle "CALLE ALMAGRO" ;
+    ns1:num 24 .
+
+<http://example.com/parking/13453> ns1:barrio "JUSTICIA" ;
+    ns1:descripcion "Plazas rotación: 169  Plazas motos: 2   Información sobre accesibilidad:   No tiene escaleras adaptadas No disponde de ascensor 1 aseo accesible Plaza para minusválidos residentes: 13   Abierto 24 horas       Titularidad: Ayuntamiento de Madrid  Gestión: Empresa Municipal de Transportes (EMT) (más información)" ;
+    ns1:distrito "CENTRO" ;
+    ns1:horario "NaN"^^xsd:double ;
+    ns1:nombre "Aparcamiento público. Villa de París" ;
+    ns1:nombre_calle "PLAZA VILLA DE PARIS" ;
+    ns1:num 1 .
+
+<http://example.com/parking/13454> ns1:barrio "RECOLETOS" ;
+    ns1:descripcion "Plazas: 611 Abierto 24 horas Admite Tarjeta BonoRed  Titularidad: Ayuntamiento de Madrid" ;
+    ns1:distrito "SALAMANCA" ;
+    ns1:horario "NaN"^^xsd:double ;
+    ns1:nombre "Aparcamiento público. Plaza de Colón" ;
+    ns1:nombre_calle "CALLE GOYA" ;
+    ns1:num 2 .
+
+<http://example.com/parking/13456> ns1:barrio "CORTES" ;
+    ns1:descripcion "Plazas: 325  Información sobre accesibilidad:   No tiene escaleras adaptadas 1 ascensor 1 aseo accesible en 1&amp;ordf; planta Plaza para minusválidos residentes: 6   Abierto 24 horas   Admite Tarjeta BonoRed   Titularidad: Ayuntamiento de Madrid" ;
+    ns1:distrito "CENTRO" ;
+    ns1:horario "NaN"^^xsd:double ;
+    ns1:nombre "Aparcamiento público. Santa Ana" ;
+    ns1:nombre_calle "PLAZA SANTA ANA" .
+
+<http://example.com/parking/13457> ns1:barrio "RECOLETOS" ;
+    ns1:descripcion "Plazas: 548 públicas y 395 para residentes Abierto 24 horas Admite Tarjeta BonoRed  Titularidad: Ayuntamiento de Madrid" ;
+    ns1:distrito "SALAMANCA" ;
+    ns1:horario "NaN"^^xsd:double ;
+    ns1:nombre "Aparcamiento mixto. Velázquez - Jorge Juan" ;
+    ns1:nombre_calle "CALLE VELAZQUEZ" ;
+    ns1:num 1 .
+
+<http://example.com/parking/13458> ns1:barrio "RECOLETOS" ;
+    ns1:descripcion "Plazas: 443 públicas y 230 para residentes Abierto 24 horas Admite Tarjeta BonoRed  Titularidad: Ayuntamiento de Madrid" ;
+    ns1:distrito "SALAMANCA" ;
+    ns1:horario "NaN"^^xsd:double ;
+    ns1:nombre "Aparcamiento mixto. Velázquez - Ayala" ;
+    ns1:nombre_calle "CALLE VELAZQUEZ" ;
+    ns1:num 47 .
+
+<http://example.com/parking/13459> ns1:barrio "CORTES" ;
+    ns1:descripcion "Plazas: 285 públicas y 110 para residentes.  Plazas motos: 7.  Información sobre accesibilidad:   No tiene escaleras adaptadas Ascensor con salida a la calle Jacinto benavente, s/n 1 aseo accesible Plaza para minusválidos residentes: 16  Abierto 24 horas  Titularidad:  Ayuntamiento de Madrid   Gestión: Empresa Municipal de Transportes (EMT) (más información)" ;
+    ns1:distrito "CENTRO" ;
+    ns1:horario "NaN"^^xsd:double ;
+    ns1:nombre "Aparcamiento mixto. Jacinto Benavente" ;
+    ns1:nombre_calle "PLAZA JACINTO BENAVENTE" ;
+    ns1:num 6 .
+
+<http://example.com/parking/13460> ns1:barrio "SOL" ;
+    ns1:descripcion "Plazas: 649 públicas rotacionales y 74 para residentes Abierto 24 horas Admite Tarjeta BonoRed   Titularidad: Ayuntamiento de Madrid" ;
+    ns1:distrito "CENTRO" ;
+    ns1:horario "NaN"^^xsd:double ;
+    ns1:nombre "Aparcamiento mixto. Sevilla" ;
+    ns1:nombre_calle "CALLE ALCALA" ;
+    ns1:num 15 .
+
+<http://example.com/parking/13462> ns1:barrio "TRAFALGAR" ;
+    ns1:descripcion "Plazas: 410 públicas y 111 para residentes  Información sobre accesibilidad:   No tiene escalera adaptada 1 ascensor con salida a la calle Fuencarral, 117 1 aseo accesible en la 1&amp;ordf; planta Plazas para minusválidos residentes: 7   Abierto 24 horas   Admite Tarjeta BonoRed   Titularidad: Ayuntamiento de Madrid" ;
+    ns1:distrito "CHAMBERI" ;
+    ns1:horario "NaN"^^xsd:double ;
+    ns1:nombre "Aparcamiento mixto. Fuencarral" ;
+    ns1:nombre_calle "CALLE FUENCARRAL" ;
+    ns1:num 121 .
+
+<http://example.com/parking/13463> ns1:barrio "PALACIO" ;
+    ns1:descripcion "Plazas: 800 (hasta 535 abonados) Abierto 24 horas    Titularidad: Ayuntamiento de Madrid  Gestión: Empresa Municipal de Transportes (EMT) (más información)" ;
+    ns1:distrito "CENTRO" ;
+    ns1:horario "NaN"^^xsd:double ;
+    ns1:nombre "Aparcamiento público. Plaza de España" ;
+    ns1:nombre_calle "PLAZA ESPAÑA" ;
+    ns1:num 1 .
+
+<http://example.com/parking/13464> ns1:barrio "RECOLETOS" ;
+    ns1:descripcion "Plazas: 1175 públicas rotacionales y 615 para residentes  Información sobre accesibilidad:   No tiene escaleras adaptadas Ascensor de salida a la plaza de Felipe II Aseo accesible (1&amp;ordf; planta) Plazas para minusválidos residentes:23   Abierto 24 horas   Admite tarjeta BonoRed   Titularidad: Ayuntamiento de Madrid" ;
+    ns1:distrito "SALAMANCA" ;
+    ns1:horario "NaN"^^xsd:double ;
+    ns1:nombre "Aparcamiento mixto. Felipe II" ;
+    ns1:nombre_calle "CALLE GOYA" ;
+    ns1:num 88 .
+
+<http://example.com/parking/13465> ns1:barrio "LOS JERONIMOS" ;
+    ns1:descripcion "Plazas:   146 Residenciales 130 Rotacionales    Abierto 24 horas    Titularidad:  Ayuntamiento de Madrid   Gestión: Empresa Municipal de Transportes (EMT) (más información)" ;
+    ns1:distrito "RETIRO" ;
+    ns1:horario "NaN"^^xsd:double ;
+    ns1:nombre "Aparcamiento mixto. Montalbán" ;
+    ns1:nombre_calle "CALLE MONTALBAN" ;
+    ns1:num 4 .
+
+<http://example.com/parking/13466> ns1:barrio "SOL" ;
+    ns1:descripcion "Plazas: 694  279 Residenciales 415 Rotacionales  Abierto 24 horas  Titularidad : Ayuntamiento de Madrid    Gálibo: 1'85 m" ;
+    ns1:distrito "CENTRO" ;
+    ns1:horario "NaN"^^xsd:double ;
+    ns1:nombre "Aparcamiento mixto. Plaza Mayor" ;
+    ns1:nombre_calle "PLAZA MAYOR" ;
+    ns1:num 1 .
+
+<http://example.com/parking/13467> ns1:barrio "CORTES" ;
+    ns1:descripcion "Plazas: 480 Abierto 24 horas Admite Tarjeta BonoRed  Titularidad: Ayuntamiento de Madrid" ;
+    ns1:distrito "CENTRO" ;
+    ns1:horario "NaN"^^xsd:double ;
+    ns1:nombre "Aparcamiento público. Las Cortes" ;
+    ns1:nombre_calle "PLAZA CORTES" ;
+    ns1:num 13 .
+
+<http://example.com/parking/13468> ns1:barrio "CASTELLANA" ;
+    ns1:descripcion "Plazas: 371 Abierto 24 horas Admite Tarjeta BonoRed  Titularidad: Ayuntamiento de Madrid" ;
+    ns1:distrito "SALAMANCA" ;
+    ns1:horario "NaN"^^xsd:double ;
+    ns1:nombre "Aparcamiento público. Velázquez - Juan Bravo" ;
+    ns1:nombre_calle "CALLE VELAZQUEZ" ;
+    ns1:num 88 .
+
+<http://example.com/parking/13469> ns1:barrio "ARGUELLES" ;
+    ns1:descripcion "Plazas: 482 Abierto 24 horas Admite Tarjeta BonoRed" ;
+    ns1:distrito "MONCLOA-ARAVACA" ;
+    ns1:horario "NaN"^^xsd:double ;
+    ns1:nombre "Aparcamiento público. Marqués de Urquijo" ;
+    ns1:nombre_calle "CALLE MARQUES DE URQUIJO" .
+
+<http://example.com/parking/13470> ns1:barrio "JUSTICIA" ;
+    ns1:descripcion "Plazas: 318 públicas y 298 para residentes Abierto 24 horas Admite Tarjeta BonoRed  Titularidad: Ayuntamiento de Madrid" ;
+    ns1:distrito "CENTRO" ;
+    ns1:horario "NaN"^^xsd:double ;
+    ns1:nombre "Aparcamiento mixto. Arquitecto Ribera" ;
+    ns1:nombre_calle "CALLE BARCELO" ;
+    ns1:num 2 .
+
+<http://example.com/parking/13472> ns1:barrio "SOL" ;
+    ns1:descripcion "Plazas: 450  Información sobre accesibilidad:   No tiene escaleras adaptadas 1 ascensor 1 aseo accesible en  1&amp;ordf;  planta Plaza para minusválidos residentes: 7   Abierto 24 horas   Admite Tarjeta BonoRed   Titularidad: Ayuntamiento de Madrid" ;
+    ns1:distrito "CENTRO" ;
+    ns1:horario "NaN"^^xsd:double ;
+    ns1:nombre "Aparcamiento público. Plaza del Carmen (cerrado)" ;
+    ns1:nombre_calle "PLAZA CARMEN" ;
+    ns1:num 10 .
+
+<http://example.com/parking/13473> ns1:barrio "SOL" ;
+    ns1:descripcion "Plazas: 400  Abierto 24 horas Admite Tarjeta BonoRed  Titularidad: Ayuntamiento de Madrid" ;
+    ns1:distrito "CENTRO" ;
+    ns1:horario "NaN"^^xsd:double ;
+    ns1:nombre "Aparcamiento público. Descalzas" ;
+    ns1:nombre_calle "PLAZA DESCALZAS" ;
+    ns1:num 3 .
+
+<http://example.com/parking/13474> ns1:barrio "JUSTICIA" ;
+    ns1:descripcion "Plazas: 170  Información sobre accesibilidad:   Si tiene escaleras adaptadas 1 ascensor 3 aseos accesibles (uno por planta): 8 Plaza para minusválidos residentes: 16  Abierto 24 horas Admite Tarjeta BonoRed  Titularidad: Ayuntamiento de Madrid" ;
+    ns1:distrito "CENTRO" ;
+    ns1:horario "NaN"^^xsd:double ;
+    ns1:nombre "Aparcamiento público. Plaza del Rey" ;
+    ns1:nombre_calle "PLAZA REY" ;
+    ns1:num 1 .
+
+<http://example.com/parking/13475> ns1:barrio "CUATRO CAMINOS" ;
+    ns1:descripcion "Plazas: 226 públicas y 402 para residentes Abierto 24 horas  Titularidad: Ayuntamiento de Madrid" ;
+    ns1:distrito "TETUAN" ;
+    ns1:horario "NaN"^^xsd:double ;
+    ns1:nombre "Aparcamiento mixto. Brasil" ;
+    ns1:nombre_calle "CALLE SAN GERMAN" ;
+    ns1:num 7 .
+
+<http://example.com/parking/13476> ns1:barrio "RECOLETOS" ;
+    ns1:descripcion "Plazas: 102 públicas y 289 para residentes  Información sobre accesibilidad:   No tiene escaleras adaptadas 1 ascensor en la salida al Paseo de Recoletos 1 aseo accesible Plaza para minusválidos residentes: 10   Abierto 24 horas   Titularidad : Ayuntamiento de Madrid   Gestión: Empresa Municipal de Transportes (EMT) (más información)" ;
+    ns1:distrito "SALAMANCA" ;
+    ns1:horario "NaN"^^xsd:double ;
+    ns1:nombre "Aparcamiento mixto. Recoletos" ;
+    ns1:nombre_calle "PASEO RECOLETOS" ;
+    ns1:num 4 .
+
+<http://example.com/parking/13477> ns1:barrio "CUATRO CAMINOS" ;
+    ns1:descripcion "Plazas: 146 públicas y 79 para residentes  El horario de apertura para la parte del aparcamiento rotacional es de lunes a viernes de 9:00h a 20:40h. Sábados de 9:00 a 14:30h.  Titularidad: Ayuntamiento de Madrid" ;
+    ns1:distrito "TETUAN" ;
+    ns1:horario "NaN"^^xsd:double ;
+    ns1:nombre "Aparcamiento mixto. Condesa de Gavia" ;
+    ns1:nombre_calle "PLAZA CONDESA DE GAVIA" ;
+    ns1:num 2 .
+
+<http://example.com/parking/13478> ns1:barrio "EMBAJADORES" ;
+    ns1:descripcion "Plazas: 240 Abierto 24 horas  Titularidad: Subdirección General de Patrimonio - Comunidad de Madrid  Teléfonos: Servicio de información de la Comunidad de Madrid:                    012                    91 580 42 60  (desde fuera de la Comunidad de Madrid)" ;
+    ns1:distrito "CENTRO" ;
+    ns1:horario "NaN"^^xsd:double ;
+    ns1:nombre "Aparcamiento público. Glorieta Puerta de Toledo" ;
+    ns1:nombre_calle "GLORIETA PUERTA DE TOLEDO" .
+
+<http://example.com/parking/13479> ns1:barrio "CASTILLEJOS" ;
+    ns1:descripcion "Plazas: 226 públicas y 43 para residentes  Información sobre accesibilidad:  No tiene escaleras adaptadas No disponde ascensor No disponde de aseos accesible Plazas para minusválidos residentes: 5    Abierto 24 horas   Titularidad: Ayuntamiento de Madrid" ;
+    ns1:distrito "TETUAN" ;
+    ns1:horario "NaN"^^xsd:double ;
+    ns1:nombre "Aparcamiento mixto. José Castán Tobeñas" ;
+    ns1:nombre_calle "CALLE POETA JOAN MARAGALL" ;
+    ns1:num 57 .
+
+<http://example.com/parking/13515> ns1:barrio "CASTILLEJOS" ;
+    ns1:descripcion "Plazas: 419 públicas y 713 residentes Abierto 24 horas  Titularidad: Ayuntamiento de Madrid" ;
+    ns1:distrito "TETUAN" ;
+    ns1:horario "NaN"^^xsd:double ;
+    ns1:nombre "Aparcamiento mixto. San Germán II (antes General Yagüe)" ;
+    ns1:nombre_calle "CALLE ORENSE" ;
+    ns1:num 48 .
+
+<http://example.com/parking/167692> ns1:barrio "GUINDALERA" ;
+    ns1:descripcion "Plazas: 222 públicas y 261 para residentes Abierto 24 horas  Titularidad: Ayuntamiento de Madrid" ;
+    ns1:distrito "SALAMANCA" ;
+    ns1:horario "NaN"^^xsd:double ;
+    ns1:nombre "Aparcamiento mixto. San Cayetano" ;
+    ns1:nombre_calle "PLAZA SAN CAYETANO" ;
+    ns1:num 1 .
+
+<http://example.com/parking/182188> ns1:barrio "SIMANCAS" ;
+    ns1:descripcion "Plazas: 168  públicas y 68 para residentes Abierto: 24 horas Admite Tarjeta BonoRed  Titularidad: Ayuntamiento de Madrid" ;
+    ns1:distrito "SAN BLAS-CANILLEJAS" ;
+    ns1:horario "NaN"^^xsd:double ;
+    ns1:nombre "Aparcamiento mixto. Miguel Yuste" ;
+    ns1:nombre_calle "CALLE MIGUEL YUSTE" ;
+    ns1:num 64 .
+
+<http://example.com/parking/183607> ns1:barrio "SAN PASCUAL" ;
+    ns1:descripcion "Plazas: 83 públicas y 91 para residentes  Información sobre accesibilidad:  No tiene escaleras adaptadas 1 ascensor en la salida a la Calle Verdaguer y garcía 1 aseo accesible en la planta -1 Plaza para minusválidos residentes: 4    Abierto 24 horas   Titularidad: Ayuntamiento de Madrid" ;
+    ns1:distrito "CIUDAD LINEAL" ;
+    ns1:horario "NaN"^^xsd:double ;
+    ns1:nombre "Aparcamiento mixto. Verdaguer y García" ;
+    ns1:nombre_calle "CALLE VERDAGUER Y GARCIA" ;
+    ns1:num 2 .
+
+<http://example.com/parking/183747> ns1:barrio "EMBAJADORES" ;
+    ns1:descripcion "Plazas: 135 públicas y 449 para residentes Abierto 24 horas  Titularidad: Ayuntamiento de Madrid" ;
+    ns1:distrito "CENTRO" ;
+    ns1:horario "NaN"^^xsd:double ;
+    ns1:nombre "Aparcamiento mixto. Casino de la Reina" ;
+    ns1:nombre_calle "CALLE CASINO" ;
+    ns1:num 3 .
+
+<http://example.com/parking/183748> ns1:barrio "PACIFICO" ;
+    ns1:descripcion "Plazas: 235 públicas y 253 para residentes Abierto 24 horas  Titularidad: Ayuntamiento de Madrid" ;
+    ns1:distrito "RETIRO" ;
+    ns1:horario "NaN"^^xsd:double ;
+    ns1:nombre "Aparcamiento mixto. Daoíz y Velarde" ;
+    ns1:nombre_calle "AVENIDA CIUDAD DE BARCELONA" ;
+    ns1:num 156 .
+
+<http://example.com/parking/19053> ns1:barrio "EMBAJADORES" ;
+    ns1:descripcion "Plazas: 131 públicas y 408 para residentes Abierto 24 horas  Titularidad: Ayuntamiento de Madrid" ;
+    ns1:distrito "CENTRO" ;
+    ns1:horario "NaN"^^xsd:double ;
+    ns1:nombre "Aparcamiento mixto. Sánchez Bustillo" ;
+    ns1:nombre_calle "CALLE SANCHEZ BUSTILLO" .
+
+<http://example.com/parking/24193> ns1:barrio "NUEVA ESPAÑA" ;
+    ns1:descripcion "Plazas: 209 públicas y 892 para residentes Abierto 24 horas  Titularidad: Ayuntamiento de Madrid" ;
+    ns1:distrito "CHAMARTIN" ;
+    ns1:horario "NaN"^^xsd:double ;
+    ns1:nombre "Aparcamiento mixto. República Dominicana" ;
+    ns1:nombre_calle "PLAZA REPUBLICA DOMINICANA" ;
+    ns1:num 6 .
+
+<http://example.com/parking/24809> ns1:barrio "ADELFAS" ;
+    ns1:descripcion "Plazas: 245 públicas y 350 para residentes Abierto 24 horas  Titularidad: Ayuntamiento de Madrid" ;
+    ns1:distrito "RETIRO" ;
+    ns1:horario "NaN"^^xsd:double ;
+    ns1:nombre "Aparcamiento mixto. Fernández Shaw" ;
+    ns1:nombre_calle "CALLE CARLOS Y GUILLERMO FERNANDEZ SHAW" ;
+    ns1:num 1 .
+
+<http://example.com/parking/33440> ns1:barrio "PALACIO" ;
+    ns1:descripcion "Plazas: 242 públicas rotacionales (30 plazas para autobuses) y 511 para residentes Abierto 24 horas Admite Tarjeta BonoRed Este PAR está adherido a la zona de APR  Titularidad: Ayuntamiento de Madrid" ;
+    ns1:distrito "CENTRO" ;
+    ns1:horario "NaN"^^xsd:double ;
+    ns1:nombre "Aparcamiento mixto. Plaza de Oriente" ;
+    ns1:nombre_calle "PLAZA ORIENTE" ;
+    ns1:num 9 .
+
+<http://example.com/parking/36269> ns1:barrio "MEDIA LEGUA" ;
+    ns1:descripcion "Plazas: 104 públicas y 550 para residentes Abierto 24 horas  Titularidad: Ayuntamiento de Madrid" ;
+    ns1:distrito "MORATALAZ" ;
+    ns1:horario "NaN"^^xsd:double ;
+    ns1:nombre "Aparcamiento mixto. Encuentro" ;
+    ns1:nombre_calle "PLAZA ENCUENTRO" ;
+    ns1:num 5 .
+
+<http://example.com/parking/36270> ns1:barrio "CUATRO CAMINOS" ;
+    ns1:descripcion "Plazas: 115 públicas y 380 residentes  Información sobre accesibilidad:  No tiene escaleras adptadas Ascensor de salida a la calle Hernai, 68 1 aseo accesible en 1&amp;ordf; planta Plazas para minusválidos residentes. 3    Abierto 24 horas   Titularidad: Ayuntamiento de Madrid" ;
+    ns1:distrito "TETUAN" ;
+    ns1:horario "NaN"^^xsd:double ;
+    ns1:nombre "Aparcamiento mixto. Hernani" ;
+    ns1:nombre_calle "CALLE HERNANI" ;
+    ns1:num 79 .
+
+<http://example.com/parking/36271> ns1:barrio "CUATRO CAMINOS" ;
+    ns1:descripcion "Plazas: 127 públicas y 379 para residentes Abierto 24 horas  Titularidad: Ayuntamiento de Madrid  Teléfono: 91 556 62 26" ;
+    ns1:distrito "TETUAN" ;
+    ns1:horario "De Lunes A Domingo Servicio Ininterrumpido" ;
+    ns1:nombre "Aparcamiento mixto. Presidente Carmona" ;
+    ns1:nombre_calle "AVENIDA GENERAL PERON" ;
+    ns1:num 21 .
+
+<http://example.com/parking/44724> ns1:barrio "LISTA" ;
+    ns1:descripcion "Plazas: 203 públicas y 421 para residentes Abierto 24 horas  Titularidad: Ayuntamiento de Madrid" ;
+    ns1:distrito "SALAMANCA" ;
+    ns1:horario "NaN"^^xsd:double ;
+    ns1:nombre "Aparcamiento mixto. Díaz Porlier" ;
+    ns1:nombre_calle "CALLE DIEGO DE LEON" ;
+    ns1:num 64 .
+
+<http://example.com/parking/52114> ns1:barrio "JUSTICIA" ;
+    ns1:descripcion "Plazas: 107 públicas y 261 para residentes.  Plazas motos: 6.  Información sobre accesibilidad:  No tiene escaleras adaptadas 1 ascensor con salida a la Plaza de Vazquez de Mella 1 aseo accesible Plaza para minusválidos residentes: 7    Abierto 24 horas   Titularidad: Ayuntamiento de Madrid  Gestión: Empresa Municipal de Transportes (EMT) (más información)  Teléfonos: Residentes - 91 522 50 29          Rotacional -  91 532 19 10" ;
+    ns1:distrito "CENTRO" ;
+    ns1:horario "NaN"^^xsd:double ;
+    ns1:nombre "Aparcamiento mixto. Pedro Zerolo 'antes denominado Vázquez de Mella'" ;
+    ns1:nombre_calle "PLAZA PEDRO ZEROLO" ;
+    ns1:num 1 .
+
+<http://example.com/parking/5517342> ns1:barrio "CUATRO CAMINOS" ;
+    ns1:descripcion "Plazas: 129 públicas y 663 para residentes  Información sobre accesibilidad:  1 escalera adaptada No dispone de ascensor 1 aseo accesible Plaza para minusválidos residentes: 5    Abierto 24 horas   Titularidad: Ayuntamiento de Madrid  Gestión: Empresa Municipal de Transportes (EMT) (más información)" ;
+    ns1:distrito "TETUAN" ;
+    ns1:horario "NaN"^^xsd:double ;
+    ns1:nombre "Aparcamiento mixto. Orense" ;
+    ns1:nombre_calle "AVENIDA BRASIL" ;
+    ns1:num 2 .
+
+<http://example.com/parking/5898885> ns1:barrio "PUERTA DEL ANGEL" ;
+    ns1:descripcion "Plazas: 428 públicas y 445 para residentes  Informacion sobre accesibilidad:  No tiene escalera adaptada Tiene ascensor de salida a Avenida de Portugal, s/n 1 aseo accesible (nivel-3) Plazas para minusválidos residentes: 20   Abierto 24 horas  Titularidad: Ayuntamiento de Madrid  Gestión: Empresa Municipal de Transportes (EMT) (más información)" ;
+    ns1:distrito "LATINA" ;
+    ns1:horario "6:00-22:00" ;
+    ns1:nombre "Aparcamiento mixto. Avenida de Portugal" ;
+    ns1:nombre_calle "AVENIDA PORTUGAL" ;
+    ns1:num 155 .
+
+<http://example.com/parking/59060> ns1:barrio "PROSPERIDAD" ;
+    ns1:descripcion "Información sobre accesibilidad:  Tiene escaleras adaptadas Ascensor de salida a la calle Avenida de América, 9 Tiene aseos accesibles Plazas para minusválidos    Plazas: 261 públicas y 395 para residentes  Abierto 24 horas   Titularidad: Ayuntamiento de Madrid" ;
+    ns1:distrito "CHAMARTIN" ;
+    ns1:horario "NaN"^^xsd:double ;
+    ns1:nombre "Aparcamiento mixto. Avenida de América (intercambiador)" ;
+    ns1:nombre_calle "AVENIDA AMERICA" ;
+    ns1:num 9 .
+
+<http://example.com/parking/6143690> ns1:barrio "CASTELLANA" ;
+    ns1:descripcion "Plazas: 356 públicas y 70 para residentes  Información sobre accesibilidad:   No tiene escaleras adaptadas 1 ascensor en la salida a la plaza del Marqués de Salamanca 1 aseo accesible en 2&amp;ordf;  planta Plaza para minusválidos residentes: 14   Abierto 24 horas   Titularidad: Ayuntamiento de Madrid" ;
+    ns1:distrito "SALAMANCA" ;
+    ns1:horario "NaN"^^xsd:double ;
+    ns1:nombre "Aparcamiento mixto. Marqués de Salamanca" ;
+    ns1:nombre_calle "PLAZA MARQUES DE SALAMANCA" .
+
+<http://example.com/parking/7393089> ns1:barrio "CIUDAD JARDIN" ;
+    ns1:descripcion "Plazas: 376 Abierto 24 horas Admite la Tarjeta Bono Red  Titularidad: Ayuntamiento de Madrid" ;
+    ns1:distrito "CHAMARTIN" ;
+    ns1:horario "NaN"^^xsd:double ;
+    ns1:nombre "Aparcamiento público. Auditorio Nacional de Música (Príncipe de Vergara)" ;
+    ns1:nombre_calle "CALLE CARTAGENA" ;
+    ns1:num 178 .
+
+<http://example.com/parking/7416748> ns1:barrio "CASTELLANA" ;
+    ns1:descripcion "Plazas: 307 públicas y 833 para residentes Abierto 24 horas  Titularidad: Ayuntamiento de Madrid" ;
+    ns1:distrito "SALAMANCA" ;
+    ns1:horario "NaN"^^xsd:double ;
+    ns1:nombre "Aparcamiento mixto. Serrano I" ;
+    ns1:nombre_calle "CALLE SERRANO" ;
+    ns1:num 84 .
+
+<http://example.com/parking/7417028> ns1:barrio "RECOLETOS" ;
+    ns1:descripcion "Plazas: 379 públicas y 804 para residentes Abierto 24 horas  Titularidad: Ayuntamiento de Madrid" ;
+    ns1:distrito "SALAMANCA" ;
+    ns1:horario "NaN"^^xsd:double ;
+    ns1:nombre "Aparcamiento mixto. Serrano II" ;
+    ns1:nombre_calle "CALLE SERRANO" ;
+    ns1:num 44 .
+
+<http://example.com/parking/7417052> ns1:barrio "RECOLETOS" ;
+    ns1:descripcion "Plazas: 261 públicas y 725 para residentes Abierto 24 horas  Titularidad: Ayuntamiento de Madrid" ;
+    ns1:distrito "SALAMANCA" ;
+    ns1:horario "NaN"^^xsd:double ;
+    ns1:nombre "Aparcamiento mixto. Serrano III" ;
+    ns1:nombre_calle "CALLE SERRANO" ;
+    ns1:num 2 .
+
+<http://example.com/parking/81736> ns1:barrio "ARAVACA" ;
+    ns1:descripcion "Plazas: 125 públicas y 125 para residentes  Información sobre accesibilidad:  No tiene escaleras adaptadas Ascensor de salida a la calle Pérez de Victoria 2 aseos accesibles (1&amp;ordf; planta) Plazas para minusválidos residentes: 3    Abierto 24 horas   Titularidad: Ayuntamiento de Madrid" ;
+    ns1:distrito "MONCLOA-ARAVACA" ;
+    ns1:horario "NaN"^^xsd:double ;
+    ns1:nombre "Aparcamiento mixto. Corona Boreal" ;
+    ns1:nombre_calle "CALLE PEREZ DE VICTORIA" ;
+    ns1:num 2 .
+
+<http://example.com/parking/81828> ns1:barrio "NIÑO JESUS" ;
+    ns1:descripcion "Plazas: 356 públicas y 345 para residentes Abierto 24 horas  Titularidad: Ayuntamiento de Madrid" ;
+    ns1:distrito "RETIRO" ;
+    ns1:horario "NaN"^^xsd:double ;
+    ns1:nombre "Aparcamiento mixto. Reyes Magos" ;
+    ns1:nombre_calle "PLAZA REYES MAGOS" .
+
+<http://example.com/parking/88141> ns1:barrio "CIUDAD JARDIN" ;
+    ns1:descripcion "Plazas: 147 Abierto 24 horas  Titularidad: Ayuntamiento de Madrid" ;
+    ns1:distrito "CHAMARTIN" ;
+    ns1:horario "NaN"^^xsd:double ;
+    ns1:nombre "Aparcamiento público. Museo de la Ciudad" ;
+    ns1:nombre_calle "CALLE PRINCIPE DE VERGARA" ;
+    ns1:num 134 .
+
