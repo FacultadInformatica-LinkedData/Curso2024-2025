@@ -1,85 +1,146 @@
 prefixes:
-  rr: http://www.w3.org/ns/r2rml#
   rml: http://semweb.mmlab.be/ns/rml#
+  rr: http://www.w3.org/ns/r2rml#
   ql: http://semweb.mmlab.be/ns/ql#
   ns: http://webcam.linkeddata.Gijon.es.org/ontology/airquality#
   schema: https://schema.org#
+  sosa: http://www.w3.org/ns/sosa#
   xsd: http://www.w3.org/2001/XMLSchema#
 
 mappings:
   estacionMedicion:
     sources:
       - [csv/air_quality-updated.csv~csv]
-    s: http://webcam.linkeddata.Gijon.es.org/resource/EstacionMedicion$(ID_Estacion)
+    s: http://webcam.linkeddata.Gijon.es.org/resource/estacion/$(ID_Estacion)
     po:
       - [a, ns:EstacionMedicion]
-      - [ns:ID_Estacion, $(ID_Estacion), xsd:Decimal]
-      - [ns:Nombre, $(Nombre), xsd:string]
-      - [schema:latitud, $(latitud), xsd:Decimal]
-      - [schema:longitud, $(longitud), xsd:Decimal]
+      - [ns:ID_Estacion, $(ID_Estacion), xsd:integer]
+      - [schema:name, $(Nombre), xsd:string]
+      - [schema:latitude, $(latitud), xsd:decimal]
+      - [schema:longitude, $(longitud), xsd:decimal]
 
   medicion_SO2:
     sources:
       - [csv/air_quality-updated.csv~csv]
-    s: http://webcam.linkeddata.Gijon.es.org/resource/medicion/$(FechaMedida)_$(HoraMedida)_SO2
+    s: http://webcam.linkeddata.Gijon.es.org/resource/medicion/$(Fecha)_$(Hora)_SO2
     po:
       - [a, ns:Medicion]
-      - [ns:FechaMedida, $(FechaMedida), xsd:date]
-      - [ns:HoraMedida, $(HoraMedida), xsd:time]
-      - [sosa:hasFeatureOfInterest, $(SO2), xsd:Decimal]
+      - [ns:FechaMedida, $(Fecha), xsd:date]
+      - [ns:HoraMedida, $(Hora), xsd:integer]
+      - [ns:Cantidad, $(SO2), xsd:decimal]
+      - [sosa:FeatureOfInterest, $(FeatureOfInterest_SO2)]
       - [sosa:madeBySensor, $(ID_Estacion), http://webcam.linkeddata.Gijon.es.org/resource/estacion/$(ID_Estacion)]
-aux
+
   medicion_NO:
     sources:
       - [csv/air_quality-updated.csv~csv]
-    s: http://webcam.linkeddata.Gijon.es.org/resource/medicion/$(FechaMedida)_$(HoraMedida)_NO
+    s: http://webcam.linkeddata.Gijon.es.org/resource/medicion/$(Fecha)_$(Hora)_NO
     po:
       - [a, ns:Medicion]
-      - [ns:FechaMedida, $(FechaMedida), xsd:date]
-      - [ns:HoraMedida, $(HoraMedida), xsd:time]
-      - [sosa:hasFeatureOfInterest, $(NO), xsd:Decimal]
+      - [ns:FechaMedida, $(Fecha), xsd:date]
+      - [ns:HoraMedida, $(Hora), xsd:integer]
+      - [ns:Cantidad, $(NO), xsd:decimal]
+      - [sosa:FeatureOfInterest, $(FeatureOfInterest_NO)]
       - [sosa:madeBySensor, $(ID_Estacion), http://webcam.linkeddata.Gijon.es.org/resource/estacion/$(ID_Estacion)]
 
   medicion_NOX:
     sources:
       - [csv/air_quality-updated.csv~csv]
-    s: http://webcam.linkeddata.Gijon.es.org/resource/medicion/$(FechaMedida)_$(HoraMedida)_NOX
+    s: http://webcam.linkeddata.Gijon.es.org/resource/medicion/$(Fecha)_$(Hora)_NOX
     po:
       - [a, ns:Medicion]
-      - [ns:FechaMedida, $(FechaMedida), xsd:date]
-      - [ns:HoraMedida, $(HoraMedida), xsd:time]
-      - [sosa:hasFeatureOfInterest, $(NOX), xsd:Decimal]
+      - [ns:FechaMedida, $(Fecha), xsd:date]
+      - [ns:HoraMedida, $(Hora), xsd:integer]
+      - [ns:Cantidad, $(NOX), xsd:decimal]
+      - [sosa:FeatureOfInterest, $(FeatureOfInterest_NOX)]
       - [sosa:madeBySensor, $(ID_Estacion), http://webcam.linkeddata.Gijon.es.org/resource/estacion/$(ID_Estacion)]
 
   medicion_DireccionViento:
     sources:
       - [csv/air_quality-updated.csv~csv]
-    s: http://webcam.linkeddata.Gijon.es.org/resource/medicion/$(FechaMedida)_$(HoraMedida)_DireccionViento
+    s: http://webcam.linkeddata.Gijon.es.org/resource/medicion/$(Fecha)_$(Hora)_DireccionViento
     po:
       - [a, ns:Medicion]
-      - [ns:FechaMedida, $(FechaMedida), xsd:date]
-      - [ns:HoraMedida, $(HoraMedida), xsd:time]
-      - [sosa:hasFeatureOfInterest, $(DireccionViento), xsd:Decimal]
+      - [ns:FechaMedida, $(Fecha), xsd:date]
+      - [ns:HoraMedida, $(Hora), xsd:integer]
+      - [ns:Cantidad, $(DireccionViento), xsd:decimal]
+      - [sosa:FeatureOfInterest, $(FeatureOfInterest_DireccionViento)]
       - [sosa:madeBySensor, $(ID_Estacion), http://webcam.linkeddata.Gijon.es.org/resource/estacion/$(ID_Estacion)]
 
   medicion_Temperatura:
     sources:
       - [csv/air_quality-updated.csv~csv]
-    s: http://webcam.linkeddata.Gijon.es.org/resource/medicion/$(FechaMedida)_$(HoraMedida)_Temperatura
+    s: http://webcam.linkeddata.Gijon.es.org/resource/medicion/$(Fecha)_$(Hora)_Temperatura
     po:
       - [a, ns:Medicion]
-      - [ns:FechaMedida, $(FechaMedida), xsd:date]
-      - [ns:HoraMedida, $(HoraMedida), xsd:time]
-      - [sosa:hasFeatureOfInterest, $(Temperatura), xsd:Decimal]
+      - [ns:FechaMedida, $(Fecha), xsd:date]
+      - [ns:HoraMedida, $(Hora), xsd:integer]
+      - [ns:Cantidad, $(Temperatura), xsd:decimal]
+      - [sosa:FeatureOfInterest, $(FeatureOfInterest_Temperatura)]
       - [sosa:madeBySensor, $(ID_Estacion), http://webcam.linkeddata.Gijon.es.org/resource/estacion/$(ID_Estacion)]
 
   medicion_HR:
     sources:
       - [csv/air_quality-updated.csv~csv]
-    s: http://webcam.linkeddata.Gijon.es.org/resource/medicion/$(FechaMedida)_$(HoraMedida)_HR
+    s: http://webcam.linkeddata.Gijon.es.org/resource/medicion/$(Fecha)_$(Hora)_HR
     po:
       - [a, ns:Medicion]
-      - [ns:FechaMedida, $(FechaMedida), xsd:date]
-      - [ns:HoraMedida, $(HoraMedida), xsd:time]
-      - [sosa:hasFeatureOfInterest, $(HR), xsd:Decimal]
+      - [ns:FechaMedida, $(Fecha), xsd:date]
+      - [ns:HoraMedida, $(Hora), xsd:integer]
+      - [ns:Cantidad, $(HR), xsd:decimal]
+      - [sosa:FeatureOfInterest, $(FeatureOfInterest_HR)]
       - [sosa:madeBySensor, $(ID_Estacion), http://webcam.linkeddata.Gijon.es.org/resource/estacion/$(ID_Estacion)]
+
+  featureOfInterest_SO2:
+    sources:
+      - [csv/air_quality-updated.csv~csv]
+    s: http://webcam.linkeddata.Gijon.es.org/resource/FeatureOfInterest/{FechaMedida}_{HoraMedida}_FOI_SO2
+    po:
+      - [a, sosa:FeatureOfInterest]
+      - [ns:UnidadMedida, "PPM", xsd:string]
+      - [owl:sameAs, <https://www.wikidata.org/wiki/Q5282>]
+
+  featureOfInterest_NO:
+    sources:
+      - [csv/air_quality-updated.csv~csv]
+    s: http://webcam.linkeddata.Gijon.es.org/resource/FeatureOfInterest/{FechaMedida}_{HoraMedida}_FOI_NO
+    po:
+      - [a, sosa:FeatureOfInterest]
+      - [ns:UnidadMedida, "PPM", xsd:string]
+      - [owl:sameAs, <https://www.wikidata.org/wiki/Q207843>]
+
+  featureOfInterest_NOX:
+    sources:
+      - [csv/air_quality-updated.csv~csv]
+    s: http://webcam.linkeddata.Gijon.es.org/resource/FeatureOfInterest/{FechaMedida}_{HoraMedida}_FOI_NOX
+    po:
+      - [a, sosa:FeatureOfInterest]
+      - [ns:UnidadMedida, "PPM", xsd:string]
+      - [owl:sameAs, <https://www.wikidata.org/wiki/Q424418>]
+
+  featureOfInterest_DireccionViento:
+    sources:
+      - [csv/air_quality-updated.csv~csv]
+    s: http://webcam.linkeddata.Gijon.es.org/resource/FeatureOfInterest/{FechaMedida}_{HoraMedida}_FOI_DireccionViento
+    po:
+      - [a, sosa:FeatureOfInterest]
+      - [ns:UnidadMedida, "º", xsd:string]
+      - [owl:sameAs, <https://www.wikidata.org/wiki/Q1057900>]
+
+  featureOfInterest_Temperatura:
+    sources:
+      - [csv/air_quality-updated.csv~csv]
+    s: http://webcam.linkeddata.Gijon.es.org/resource/FeatureOfInterest/{FechaMedida}_{HoraMedida}_FOI_Temperatura
+    po:
+      - [a, sosa:FeatureOfInterest]
+      - [ns:UnidadMedida, "ºC", xsd:string]
+      - [owl:sameAs, <https://www.wikidata.org/wiki/Q11466>]
+
+  featureOfInterest_HR:
+    sources:
+      - [csv/air_quality-updated.csv~csv]
+    s: http://webcam.linkeddata.Gijon.es.org/resource/FeatureOfInterest/{FechaMedida}_{HoraMedida}_FOI_HR
+    po:
+      - [a, sosa:FeatureOfInterest]
+      - [ns:UnidadMedida, "%", xsd:string]
+      - [owl:sameAs, <https://www.wikidata.org/wiki/Q180600>]

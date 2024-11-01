@@ -54,7 +54,7 @@ samur:hasInterventionTime a owl:DatatypeProperty ;
 
 samur:hasEmergencyType a owl:ObjectProperty ;
     rdfs:domain samur:Activation ;
-    rdfs:range samur:EmergencyType ;
+    rdfs:range xsd:string ;
     rdfs:label "Type of Emergency" ;
     rdfs:comment "The type of emergency that SAMUR responded to." .
 

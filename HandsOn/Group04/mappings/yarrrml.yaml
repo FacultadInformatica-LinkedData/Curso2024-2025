@@ -1,116 +1,117 @@
 prefixes:
   ex: "http://abandoned.cars.com/"
-  foaf: "http://xmlns.com/foaf/0.1/"
+  owl: "http://www.w3.org/2002/07/owl#"
 
 mappings:
   Data_2000_01:
     sources: 
-      - ['abandoned_cars.csv~csv']
+      - ['abandoned_cars_with_links.csv~csv']
     s: https://abandoned.cars.com/$(District)_2000_01
     iterator: $
     po:
-      - [a, ex:Data]
-      - [ex:hasYear, "2000"]
-      - [ex:hasAmount, "$(2000-01)"]
-      - p: ex:hasDistrict
+      - [a, ex:ontology/#Data]
+      - [ex:ontology/#hasYear, "2000"]
+      - [ex:ontology/#hasAmount, "$(2000-01)"]
+      - p: ex:ontology/#hasDistrict
         o:
           - mapping: District
           
   Data_2001_02:
     sources: 
-      - ['abandoned_cars.csv~csv']
+      - ['abandoned_cars_with_links.csv~csv']
     s: https://abandoned.cars.com/$(District)_2001_02
     iterator: $
     po:
-      - [a, ex:Data]
-      - [ex:hasYear, "2001"]
-      - [ex:hasAmount, "$(2001-02)"]
-      - p: ex:hasDistrict
+      - [a, ex:ontology/#Data]
+      - [ex:ontology/#hasYear, "2001"]
+      - [ex:ontology/#hasAmount, "$(2001-02)"]
+      - p: ex:ontology/#hasDistrict
         o:
           - mapping: District
           
   Data_2002_03:
     sources: 
-      - ['abandoned_cars.csv~csv']
+      - ['abandoned_cars_with_links.csv~csv']
     s: https://abandoned.cars.com/$(District)_2002_03
     iterator: $
     po:
-      - [a, ex:Data]
-      - [ex:hasYear, "2002"]
-      - [ex:hasAmount, "$(2002-03)"]
-      - p: ex:hasDistrict
+      - [a, ex:ontology/#Data]
+      - [ex:ontology/#hasYear, "2002"]
+      - [ex:ontology/#hasAmount, "$(2002-03)"]
+      - p: ex:ontology/#hasDistrict
         o:
           - mapping: District
           
   Data_2003_04:
     sources: 
-      - ['abandoned_cars.csv~csv']
+      - ['abandoned_cars_with_links.csv~csv']
     s: https://abandoned.cars.com/$(District)_2003_04
     iterator: $
     po:
-      - [a, ex:Data]
-      - [ex:hasYear, "2003"]
-      - [ex:hasAmount, "$(2003-04)"]
-      - p: ex:hasDistrict
+      - [a, ex:ontology/#Data]
+      - [ex:ontology/#hasYear, "2003"]
+      - [ex:ontology/#hasAmount, "$(2003-04)"]
+      - p: ex:ontology/#hasDistrict
         o:
           - mapping: District
           
   Data_2004_05:
     sources: 
-      - ['abandoned_cars.csv~csv']
+      - ['abandoned_cars_with_links.csv~csv']
     s: https://abandoned.cars.com/$(District)_2004_05
     iterator: $
     po:
-      - [a, ex:Data]
-      - [ex:hasYear, "2004"]
-      - [ex:hasAmount, "$(2004-05)"]
-      - p: ex:hasDistrict
+      - [a, ex:ontology/#Data]
+      - [ex:ontology/#hasYear, "2004"]
+      - [ex:ontology/#hasAmount, "$(2004-05)"]
+      - p: ex:ontology/#hasDistrict
         o:
           - mapping: District  
           
   Data_2005_06:
     sources: 
-      - ['abandoned_cars.csv~csv']
+      - ['abandoned_cars_with_links.csv~csv']
     s: https://abandoned.cars.com/$(District)_2005_06
     iterator: $
     po:
-      - [a, ex:Data]
-      - [ex:hasYear, "2005"]
-      - [ex:hasAmount, "$(2005-06)"]
-      - p: ex:hasDistrict
+      - [a, ex:ontology/#Data]
+      - [ex:ontology/#hasYear, "2005"]
+      - [ex:ontology/#hasAmount, "$(2005-06)"]
+      - p: ex:ontology/#hasDistrict
         o:
           - mapping: District           
   Data_2006_07:
     sources: 
-      - ['abandoned_cars.csv~csv']
+      - ['abandoned_cars_with_links.csv~csv']
     s: https://abandoned.cars.com/$(District)_2006_07
     iterator: $
     po:
-      - [a, ex:Data]
-      - [ex:hasYear, "2006"]
-      - [ex:hasAmount, "$(2006-07)"]
-      - p: ex:hasDistrict
+      - [a, ex:ontology/#Data]
+      - [ex:ontology/#hasYear, "2006"]
+      - [ex:ontology/#hasAmount, "$(2006-07)"]
+      - p: ex:ontology/#hasDistrict
         o:
           - mapping: District 
           
   Data_2007_08:
     sources: 
-      - ['abandoned_cars.csv~csv']
+      - ['abandoned_cars_with_links.csv~csv']
     s: https://abandoned.cars.com/$(District)_2007_08
     iterator: $
     po:
-      - [a, ex:Data]
-      - [ex:hasYear, "2007"]
-      - [ex:hasAmount, "$(2007-08)"]
-      - p: ex:hasDistrict
+      - [a, ex:ontology/#Data]
+      - [ex:ontology/#hasYear, "2007"]
+      - [ex:ontology/#hasAmount, "$(2007-08)"]
+      - p: ex:ontology/#hasDistrict
         o:
           - mapping: District           
   District:
     sources:
-      - ['abandoned_cars.csv~csv']
+      - ['abandoned_cars_with_links.csv~csv']
     s: https://abandoned.cars.com/districts/$(District)
     iterator: $
     po:
-      - [a, ex:District]
-      - [ex:hasONSCode, "$(ONS code)"]
-      - [ex:hasRegion, "$(Region)"]
+      - [a, ex:ontology/#District]
+      - [ex:ontology/#hasONSCode, "$(ONS code)"]
+      - [ex:ontology/#hasRegion, "$(Region)"]
+      - [owl:sameAs, "$(same_as_wikidata_district)~iri"]

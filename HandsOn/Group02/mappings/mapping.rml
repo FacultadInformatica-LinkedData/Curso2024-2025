@@ -26,7 +26,7 @@
     rr:predicate samur:hasMonth;
     rr:objectMap [
       rml:reference "Mes";
-      rr:datatype xsd:string
+      rr:datatype xsd:gMonth
     ]
   ];
 

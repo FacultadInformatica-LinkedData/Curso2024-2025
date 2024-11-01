@@ -1,0 +1,34 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: http://www.w3.org/2000/01/rdf-schema
+PREFIX ns: <http://linkeddata.es/group08/ontology/parking#>
+
+SELECT DISTINCT ?neighbourhood ?linkWikidata
+WHERE {
+    ?neighbourhood rdf:type ns:Neighbourhood .
+    ?neighbourhood owl:sameAs ?linkWikidata .
+}
+
+SELECT DISTINCT ?street ?linkWikidata
+WHERE {
+    ?street rdf:type ns:Street .
+    ?street owl:sameAs ?linkWikidata .
+}
+
+SELECT ?parking ?name ?vehicleType ?totalSlots
+WHERE {
+    ?parking rdf:type ns:Parking .
+    ?parking ns:hasNeighbourhood ?neighbourhood .
+    ?parking ns:hasName ?name .
+    ?parking ns:hasVehicleType ?vehicleType .
+    ?parking ns:hasTotalSlots ?totalSlots .
+    FILTER(?neighbourhood = "Recoletos")
+}
+
+SELECT ?parking ?name ?schedule
+WHERE {
+    ?parking rdf:type ns:Parking .
+    ?parking ns:hasSchedule ?schedule .
+    ?parking ns:hasName ?name .
+    FILTER(?schedule = "24 hour")
+}

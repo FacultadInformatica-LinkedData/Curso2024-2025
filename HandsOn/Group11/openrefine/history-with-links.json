@@ -1,0 +1,526 @@
+[
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "MUNICIPIO",
+    "expression": "grel:value",
+    "onError": "set-to-blank",
+    "newColumnName": "NUMERO_MUNICIPIO",
+    "columnInsertIndex": 5,
+    "description": "Create column NUMERO_MUNICIPIO at index 5 based on column MUNICIPIO using expression grel:value"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NUMERO_MUNICIPIO",
+    "expression": "join ([coalesce(cells['PROVINCIA'].value,''),coalesce(cells['MUNICIPIO'].value,'')],'')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column NUMERO_MUNICIPIO using expression join ([coalesce(cells['PROVINCIA'].value,''),coalesce(cells['MUNICIPIO'].value,'')],'')"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "NUMERO_MUNICIPIO",
+    "expression": "grel:value",
+    "onError": "set-to-blank",
+    "newColumnName": "NOMBRE_MUNICIPIO",
+    "columnInsertIndex": 6,
+    "description": "Create column NOMBRE_MUNICIPIO at index 6 based on column NUMERO_MUNICIPIO using expression grel:value"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NOMBRE_MUNICIPIO",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q2807",
+        "name": "Madrid"
+      },
+      "autoMatch": true,
+      "batchSize": 10,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column NOMBRE_MUNICIPIO to type Q2807"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NOMBRE_MUNICIPIO",
+    "similarValue": "28079",
+    "judgment": "matched",
+    "match": {
+      "id": "Q2807",
+      "name": "Madrid",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Madrid (Q2807) for cells containing \"28079\" in column NOMBRE_MUNICIPIO"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "NOMBRE_MUNICIPIO",
+    "expression": "grel:\"http://wikidata.org/entity/\"+cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "same_as_wikidata_madrid",
+    "columnInsertIndex": 7,
+    "description": "Create column same_as_wikidata_madrid at index 7 based on column NOMBRE_MUNICIPIO using expression grel:\"http://wikidata.org/entity/\"+cell.recon.match.id"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "ESTACION",
+    "expression": "grel:cell.cross('informacion estaciones red calidad aire csv', 'CODIGO_CORTO').cells['ESTACION'].value[0]",
+    "onError": "set-to-blank",
+    "newColumnName": "UBICACION",
+    "columnInsertIndex": 9,
+    "description": "Create column UBICACION at index 9 based on column ESTACION using expression grel:cell.cross('informacion estaciones red calidad aire csv', 'CODIGO_CORTO').cells['ESTACION'].value[0]"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "UBICACION",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q3032114",
+        "name": "district of Madrid"
+      },
+      "autoMatch": true,
+      "batchSize": 10,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column UBICACION to type Q3032114"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "UBICACION",
+    "similarValue": "Plaza de España",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1326261",
+      "name": "plaza de España",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item plaza de España (Q1326261) for cells containing \"Plaza de España\" in column UBICACION"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "UBICACION",
+    "similarValue": "Escuelas Aguirre",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5397501",
+      "name": "Escuelas Aguirre",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Escuelas Aguirre (Q5397501) for cells containing \"Escuelas Aguirre\" in column UBICACION"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "UBICACION",
+    "similarValue": "Tres Olivos",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5795544",
+      "name": "Tres Olivos",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Tres Olivos (Q5795544) for cells containing \"Tres Olivos\" in column UBICACION"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "UBICACION",
+    "similarValue": "Juan Carlos I",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1583169",
+      "name": "Juan Carlos I Park",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Juan Carlos I Park (Q1583169) for cells containing \"Juan Carlos I\" in column UBICACION"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "UBICACION",
+    "similarValue": "El Pardo",
+    "judgment": "matched",
+    "match": {
+      "id": "Q656196",
+      "name": "Fuencarral-El Pardo",
+      "types": [
+        "Q3032114"
+      ],
+      "score": 67
+    },
+    "shareNewTopics": false,
+    "description": "Match item Fuencarral-El Pardo (Q656196) for cells containing \"El Pardo\" in column UBICACION"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "UBICACION",
+    "similarValue": "Sanchinarro",
+    "judgment": "matched",
+    "match": {
+      "id": "Q3076623",
+      "name": "Sanchinarro",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Sanchinarro (Q3076623) for cells containing \"Sanchinarro\" in column UBICACION"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "UBICACION",
+    "similarValue": "Plaza Elíptica",
+    "judgment": "matched",
+    "match": {
+      "id": "Q16619985",
+      "name": "Plaza Elíptica",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Plaza Elíptica (Q16619985) for cells containing \"Plaza Elíptica\" in column UBICACION"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "UBICACION",
+    "similarValue": "Plaza Castilla",
+    "judgment": "matched",
+    "match": {
+      "id": "Q786291",
+      "name": "plaza de Castilla",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item plaza de Castilla (Q786291) for cells containing \"Plaza Castilla\" in column UBICACION"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "UBICACION",
+    "similarValue": "Ensanche de Vallecas",
+    "judgment": "matched",
+    "match": {
+      "id": "Q3847485",
+      "name": "Ensanche de Vallecas",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Ensanche de Vallecas (Q3847485) for cells containing \"Ensanche de Vallecas\" in column UBICACION"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "UBICACION",
+    "similarValue": "Parque del Retiro",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1131807",
+      "name": "El Retiro Park",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item El Retiro Park (Q1131807) for cells containing \"Parque del Retiro\" in column UBICACION"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "UBICACION",
+    "similarValue": "Cuatro Caminos",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5824684",
+      "name": "Cuatro Caminos",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Cuatro Caminos (Q5824684) for cells containing \"Cuatro Caminos\" in column UBICACION"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "UBICACION",
+    "similarValue": "Plaza del Carmen",
+    "judgment": "matched",
+    "match": {
+      "id": "Q6080406",
+      "name": "Plaza del Carmen",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Plaza del Carmen (Q6080406) for cells containing \"Plaza del Carmen\" in column UBICACION"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "UBICACION",
+    "similarValue": "Barrio del Pilar",
+    "judgment": "matched",
+    "match": {
+      "id": "Q3773964",
+      "name": "El Pilar",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item El Pilar (Q3773964) for cells containing \"Barrio del Pilar\" in column UBICACION"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "UBICACION",
+    "similarValue": "Barajas Pueblo",
+    "judgment": "matched",
+    "match": {
+      "id": "Q807230",
+      "name": "Barajas",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Barajas (Q807230) for cells containing \"Barajas Pueblo\" in column UBICACION"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "UBICACION",
+    "similarValue": "Méndez Álvaro",
+    "judgment": "matched",
+    "match": {
+      "id": "Q112043069",
+      "name": "Méndez Álvaro",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Méndez Álvaro (Q112043069) for cells containing \"Méndez Álvaro\" in column UBICACION"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "UBICACION",
+    "similarValue": "Casa de Campo",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1046524",
+      "name": "Casa de Campo Park",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Casa de Campo Park (Q1046524) for cells containing \"Casa de Campo\" in column UBICACION"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "UBICACION",
+    "similarValue": "Castellana",
+    "judgment": "matched",
+    "match": {
+      "id": "Q4781",
+      "name": "Castellana",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Castellana (Q4781) for cells containing \"Castellana\" in column UBICACION"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "UBICACION",
+    "similarValue": "Ramón y Cajal",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5847026",
+      "name": "Ramón y Cajal train station",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Ramón y Cajal train station (Q5847026) for cells containing \"Ramón y Cajal\" in column UBICACION"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "UBICACION",
+    "similarValue": "Arturo Soria",
+    "judgment": "matched",
+    "match": {
+      "id": "Q2481371",
+      "name": "Arturo Soria",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Arturo Soria (Q2481371) for cells containing \"Arturo Soria\" in column UBICACION"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "UBICACION",
+    "expression": "grel:\"http://wikidata.org/entity/\"+cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "same_as_wikidata_madrid_landmarks",
+    "columnInsertIndex": 10,
+    "description": "Create column same_as_wikidata_madrid_landmarks at index 10 based on column UBICACION using expression grel:\"http://wikidata.org/entity/\"+cell.recon.match.id"
+  }
+]

@@ -1,0 +1,69 @@
+#Este archivo ha sido llamado a traves de yarrrml-parser -i template5.yml -o template4.rml.ttl
+#Template4.rml.ttl es el archivo que se ha generado y que se ha utilizado con morph-kgc mediante python -m morph-kgc config.ini que contiene la congifuracion
+prefixes:
+  ex: "http://websemantica.net/Group22/ontology/"
+  xsd: "http://www.w3.org/2001/XMLSchema#"
+
+mappings:
+  accidente:
+    sources:
+      - ['2024-Accidentalidad-updated-3-csv.csv~csv']
+    s: ex:/Accidente/$(num_expediente)
+    po:
+      - [a, ex:Accidente]
+      - [ex:fecha, $(fecha)]
+      - [ex:localizacion, $(localizacion), xsd:string]
+      - [ex:numero, $(numero), xsd:string]
+      - [ex:codigoDistrito, $(cod_distrito), xsd:integer]
+      - [ex:distrito, ex:/Accidente/$(num_expediente)/$(distrito)~iri]
+      - [ex:same_as_wikidata_distrito, $(same_as_wikidata_distrito)~iri]
+      - [ex:tipoAccidente, $(tipo_accidente), xsd:string]
+      - [ex:estadoMeteorologico, $(estado_meteorológico), xsd:string]
+      - [ex:coordenadaX, $(coordenada_x_utm), xsd:decimal]
+      - [ex:coordenadaY, $(coordenada_y_utm), xsd:decimal]
+
+  involucrado:
+    sources:
+      - [2024-Accidentalidad-updated-3-csv.csv~csv]
+    s: ex:/Involucrado/$(num_expediente)/$(num_expediente_secuencial)
+    po:
+      - [a, ex:Persona]
+      - [ex:sexo, $(sexo), xsd:string]
+      - [ex:tipoPersona, $(tipo_persona), xsd:string]
+      - [ex:rangoEdad, $(rango_edad), xsd:integer]
+      - [ex:positivaAlcohol, $(positiva_alcohol), xsd:boolean]
+      - [ex:positivaDroga, $(positiva_droga), xsd:boolean]
+      - [ex:tieneAccidente, ex:/Accidente/$(num_expediente)~iri]
+      - [ex:tieneLesion, ex:/Lesividad/$(num_expediente)/$(num_expediente_secuencial)/$(lesividad)~iri]
+      - [ex:tieneVehiculo, ex:/Vehiculo/$(num_expediente)/$(num_expediente_secuencial)/$(tipo_vehiculo)~iri]
+      - p: ex:involucra
+        o:
+          mapping: accidente  # Relación entre Involucrado y Accidente
+
+  vehiculo:
+    sources:
+      - [2024-Accidentalidad-updated-3-csv.csv~csv]
+    s: ex:/Vehiculo/$(num_expediente)/$(num_expediente_secuencial)/$(tipo_vehiculo)
+    po:
+      - [a, ex:Vehiculo]
+      - [ex:tipoVehiculo, $(tipo_vehiculo), xsd:string]
+      - [ex:same_as_wikidata_tipo_vehiculo, $(same_as_wikidata_tipo_vehiculo)~iri]
+      - [ex:estaEnAccidente, ex:/Accidente/$(num_expediente)~iri]
+      - p: ex:vehiculoDe
+        o:
+          mapping: involucrado  # Relación entre Vehiculo e Involucrado
+      - p: ex:vehiculoEnAccidente
+        o:
+          mapping: accidente  # Relación entre Vehiculo y Accidente
+
+  lesividad:
+    sources:
+      - [2024-Accidentalidad-updated-3-csv.csv~csv]
+    s: ex:/Lesividad/$(num_expediente)/$(num_expediente_secuencial)/$(lesividad)
+    po:
+      - [a, ex:Lesividad]
+      - [ex:codigoLesividad, $(cod_lesividad), xsd:integer]
+      - [ex:lesividad, $(lesividad), xsd:string]
+      - p: ex:lesionDe
+        o:
+          mapping: involucrado  # Relación entre Lesividad e Involucrado

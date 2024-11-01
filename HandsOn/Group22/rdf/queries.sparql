@@ -47,8 +47,3 @@ SELECT ?accidente (COUNT(?vehiculo) AS ?numVehiculos) WHERE {
     ?vehiculo ont:estaEnAccidente ?accidente .
 }
 GROUP BY ?accidente
-
-
-
-
-

@@ -1,0 +1,724 @@
+[
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "distrito",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q3032114",
+        "name": "district of Madrid"
+      },
+      "autoMatch": true,
+      "batchSize": 10,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column distrito to type Q3032114"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "distrito",
+    "expression": "grel:\"http://wikidata.org/entity/\"+cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "same_as_wikidata_distrito",
+    "columnInsertIndex": 6,
+    "description": "Create column same_as_wikidata_distrito at index 6 based on column distrito using expression grel:\"http://wikidata.org/entity/\"+cell.recon.match.id"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "tipo_vehiculo: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "tipo_vehiculo",
+          "from": 13,
+          "to": 101,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "baseColumnName": "tipo_vehiculo",
+    "expression": "grel:value",
+    "onError": "set-to-blank",
+    "newColumnName": "same_as_wikidata_tipo_vehiculo",
+    "columnInsertIndex": 10,
+    "description": "Create column same_as_wikidata_tipo_vehiculo at index 10 based on column tipo_vehiculo using expression grel:value"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "same_as_wikidata_tipo_vehiculo",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Turismo"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "https://www.wikidata.org/wiki/Q4000614"
+      }
+    ],
+    "description": "Mass edit cells in column same_as_wikidata_tipo_vehiculo"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "same_as_wikidata_tipo_vehiculo",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Ambulancia SAMUR"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "https://www.wikidata.org/wiki/Q180481"
+      }
+    ],
+    "description": "Mass edit cells in column same_as_wikidata_tipo_vehiculo"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "same_as_wikidata_tipo_vehiculo",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Autobús"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "https://www.wikidata.org/wiki/Q5638"
+      }
+    ],
+    "description": "Mass edit cells in column same_as_wikidata_tipo_vehiculo"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "same_as_wikidata_tipo_vehiculo",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Autobús articulado"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "https://www.wikidata.org/wiki/Q5638"
+      }
+    ],
+    "description": "Mass edit cells in column same_as_wikidata_tipo_vehiculo"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "same_as_wikidata_tipo_vehiculo",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Autobus EMT"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "https://www.wikidata.org/wiki/Q5638"
+      }
+    ],
+    "description": "Mass edit cells in column same_as_wikidata_tipo_vehiculo"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "same_as_wikidata_tipo_vehiculo",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Autocaravana"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "https://www.wikidata.org/wiki/Q746448"
+      }
+    ],
+    "description": "Mass edit cells in column same_as_wikidata_tipo_vehiculo"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "same_as_wikidata_tipo_vehiculo",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Moto de tres ruedas > 125cc"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "https://www.wikidata.org/wiki/Q34493"
+      }
+    ],
+    "description": "Mass edit cells in column same_as_wikidata_tipo_vehiculo"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "same_as_wikidata_tipo_vehiculo",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Moto de tres ruedas hasta 125cc"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "https://www.wikidata.org/wiki/Q34493"
+      }
+    ],
+    "description": "Mass edit cells in column same_as_wikidata_tipo_vehiculo"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "same_as_wikidata_tipo_vehiculo",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Motocicleta > 125cc"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "https://www.wikidata.org/wiki/Q34493"
+      }
+    ],
+    "description": "Mass edit cells in column same_as_wikidata_tipo_vehiculo"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "same_as_wikidata_tipo_vehiculo",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Motocicleta hasta 125cc"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "https://www.wikidata.org/wiki/Q34493"
+      }
+    ],
+    "description": "Mass edit cells in column same_as_wikidata_tipo_vehiculo"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "same_as_wikidata_tipo_vehiculo",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Bicicleta"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "https://www.wikidata.org/wiki/Q11442"
+      }
+    ],
+    "description": "Mass edit cells in column same_as_wikidata_tipo_vehiculo"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "same_as_wikidata_tipo_vehiculo",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Bicicleta EPAC (pedaleo asistido)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "https://www.wikidata.org/wiki/Q11442"
+      }
+    ],
+    "description": "Mass edit cells in column same_as_wikidata_tipo_vehiculo"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "same_as_wikidata_tipo_vehiculo",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Maquinaria de obras"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "https://www.wikidata.org/wiki/Q102310586"
+      }
+    ],
+    "description": "Mass edit cells in column same_as_wikidata_tipo_vehiculo"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "same_as_wikidata_tipo_vehiculo",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Camión rígido"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "https://www.wikidata.org/wiki/Q43193"
+      }
+    ],
+    "description": "Mass edit cells in column same_as_wikidata_tipo_vehiculo"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "same_as_wikidata_tipo_vehiculo",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Ciclo"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "https://www.wikidata.org/wiki/Q11442"
+      }
+    ],
+    "description": "Mass edit cells in column same_as_wikidata_tipo_vehiculo"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "same_as_wikidata_tipo_vehiculo",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Ciclo de motor L1e-A"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "https://www.wikidata.org/wiki/Q11442"
+      }
+    ],
+    "description": "Mass edit cells in column same_as_wikidata_tipo_vehiculo"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "same_as_wikidata_tipo_vehiculo",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Ciclomotor"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "https://www.wikidata.org/wiki/Q201783"
+      }
+    ],
+    "description": "Mass edit cells in column same_as_wikidata_tipo_vehiculo"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "same_as_wikidata_tipo_vehiculo",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Ciclomotor de dos ruedas L1e-B"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "https://www.wikidata.org/wiki/Q201783"
+      }
+    ],
+    "description": "Mass edit cells in column same_as_wikidata_tipo_vehiculo"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "same_as_wikidata_tipo_vehiculo",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Cuadriciclo ligero"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "https://m.wikidata.org/wiki/Q123692388"
+      }
+    ],
+    "description": "Mass edit cells in column same_as_wikidata_tipo_vehiculo"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "same_as_wikidata_tipo_vehiculo",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Cuadriciclo no ligero"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "https://m.wikidata.org/wiki/Q123692388"
+      }
+    ],
+    "description": "Mass edit cells in column same_as_wikidata_tipo_vehiculo"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "same_as_wikidata_tipo_vehiculo",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "https://m.wikidata.org/wiki/Q123692388"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "https://www.wikidata.org/wiki/Q1250113"
+      }
+    ],
+    "description": "Mass edit cells in column same_as_wikidata_tipo_vehiculo"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "same_as_wikidata_tipo_vehiculo",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Furgoneta"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "https://www.wikidata.org/wiki/Q1754713"
+      }
+    ],
+    "description": "Mass edit cells in column same_as_wikidata_tipo_vehiculo"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "same_as_wikidata_tipo_vehiculo",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Sin Vehiculo"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "https://www.wikidata.org/wiki/Q221488"
+      }
+    ],
+    "description": "Mass edit cells in column same_as_wikidata_tipo_vehiculo"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "same_as_wikidata_tipo_vehiculo",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Tractocamión"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "https://www.wikidata.org/wiki/Q39495"
+      }
+    ],
+    "description": "Mass edit cells in column same_as_wikidata_tipo_vehiculo"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "same_as_wikidata_tipo_vehiculo",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Todo terreno"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "https://www.wikidata.org/wiki/Q946596"
+      }
+    ],
+    "description": "Mass edit cells in column same_as_wikidata_tipo_vehiculo"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "same_as_wikidata_tipo_vehiculo",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "VMU eléctrico"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "https://www.wikidata.org/wiki/Q23504115"
+      }
+    ],
+    "description": "Mass edit cells in column same_as_wikidata_tipo_vehiculo"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "same_as_wikidata_tipo_vehiculo",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Patinete no eléctrico"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "https://www.wikidata.org/wiki/Q23504115"
+      }
+    ],
+    "description": "Mass edit cells in column same_as_wikidata_tipo_vehiculo"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "same_as_wikidata_tipo_vehiculo",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Semiremolque"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "https://www.wikidata.org/wiki/Q216146"
+      }
+    ],
+    "description": "Mass edit cells in column same_as_wikidata_tipo_vehiculo"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "same_as_wikidata_tipo_vehiculo",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Remolque"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "https://www.wikidata.org/wiki/Q216146"
+      }
+    ],
+    "description": "Mass edit cells in column same_as_wikidata_tipo_vehiculo"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "same_as_wikidata_tipo_vehiculo",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Vehículo articulado"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "https://www.wikidata.org/wiki/Q1411533"
+      }
+    ],
+    "description": "Mass edit cells in column same_as_wikidata_tipo_vehiculo"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "same_as_wikidata_tipo_vehiculo",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Otros vehículos con motor"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "https://www.wikidata.org/wiki/Q42889"
+      }
+    ],
+    "description": "Mass edit cells in column same_as_wikidata_tipo_vehiculo"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "same_as_wikidata_tipo_vehiculo",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Otros vehículos sin motor"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "https://www.wikidata.org/wiki/Q42889"
+      }
+    ],
+    "description": "Mass edit cells in column same_as_wikidata_tipo_vehiculo"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "same_as_wikidata_tipo_vehiculo",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Sin especificar"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "NULL"
+      }
+    ],
+    "description": "Mass edit cells in column same_as_wikidata_tipo_vehiculo"
+  }
+]

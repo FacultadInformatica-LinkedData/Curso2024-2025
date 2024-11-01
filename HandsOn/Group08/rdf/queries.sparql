@@ -3,14 +3,62 @@ PREFIX rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns
 PREFIX rdfs: http://www.w3.org/2000/01/rdf-schema
 PREFIX parking: http://example.com/parking/
 
-#Resultado de la query: Madrid
-SELECT DISTINCT ?BARRIO
-    WHERE{
-        ?BARRIO rdf:type http://example.com/parking/barrio.
-    }
+#Consulta que devuelve una lista de barrios y los distritos correspondientes
+SELECT ?neighbourhood ?district
+WHERE {
+    ?parking a <http://example.com/parking/aparcamiento> ;
+             <http://example.com/parking/NEIGHBOURHOOD> ?neighbourhood ;
+             <http://example.com/parking/DISTRICT> ?district .
+}
 
-#Resultado de la query: La Moraleja
-SELECT DISTINCT ?NOMBRE_CALLE
-    WHERE{
-        ?NOMBRE_CALLE rdf:type http://example.com/parking/nombre_calle.
-    }
+
+#Consulta para obtener todas las calles y sus numeros
+SELECT ?street_name ?street_number
+WHERE {
+    ?parking a <http://example.com/parking/aparcamiento> ;
+             <http://example.com/parking/STREET_NAME> ?street_name ;
+             <http://example.com/parking/STRET_NUMBER> ?street_number .
+}
+
+
+#Consulta para obtener todos los aparcamientos en un barrio especifico (ejemplo: "Recoletos")
+SELECT ?parking ?name ?vehicle_type ?total_slots
+WHERE {
+    ?parking a <http://example.com/parking/aparcamiento> ;
+             <http://example.com/parking/NEIGHBOURHOOD> ?neighbourhood ;
+             <http://example.com/parking/NAME> ?name ;
+             <http://example.com/parking/VEHICLE_TYPE> ?vehicle_type ;
+             <http://example.com/parking/TOTAL_SLOTS> ?total_slots .
+    FILTER(?neighbourhood = "Recoletos")
+}
+
+
+#Consulta para contar cuantos aparcamientos hay en cada distrito
+SELECT ?district (COUNT(?parking) AS ?num_aparcamientos)
+WHERE {
+    ?parking a <http://example.com/parking/aparcamiento> ;
+             <http://example.com/parking/DISTRICT> ?district .
+}
+GROUP BY ?district
+
+
+#Consulta para obtener aparcamientos con un horario especifico (ejemplo: "24 hour")
+SELECT ?parking ?name ?schedule
+WHERE {
+    ?parking a <http://example.com/parking/aparcamiento> ;
+             <http://example.com/parking/SCHEDULE> ?schedule ;
+             <http://example.com/parking/NAME> ?name .
+    FILTER(?schedule = "24 hour")
+}
+
+
+#Consulta para obtener aparcamientos en un distrito especifico (ejemplo: "Centro")
+SELECT ?parking ?name ?neighbourhood ?vehicle_type
+WHERE {
+    ?parking a <http://example.com/parking/aparcamiento> ;
+             <http://example.com/parking/DISTRICT> ?district ;
+             <http://example.com/parking/NAME> ?name ;
+             <http://example.com/parking/NEIGHBOURHOOD> ?neighbourhood ;
+             <http://example.com/parking/VEHICLE_TYPE> ?vehicle_type .
+    FILTER(?district = "Centro")
+}

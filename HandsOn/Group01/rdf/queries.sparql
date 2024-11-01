@@ -13,20 +13,19 @@ LIMIT 10
 
 # Obtenemos los 10 primeros accidentes que ocurrieron en el distrito con codigo 5
 
-SELECT ?accident ?location ?district_code
+SELECT ?accident
 WHERE {
-    ?accident a base:Accidente ;
-            base:tieneLocalizacion ?location .
-    ?location base:cod_distrito ?district_code .
-    FILTER(?district_code = 5)
+    ?accident a <http://smartcity.linkeddata.es/accidentes/ontologia/Accidente> ;
+            <http://smartcity.linkeddata.es/accidentes/ontologia/estaEnDistrito> ?district .
+    ?district <http://smartcity.linkeddata.es/accidentes/ontologia/cod_distrito> ?cod_distrito .
+    FILTER(?cod_distrito = 5)
 }
 LIMIT 10
 
 
-
 # Obtenemos los 10 primeros accidentes que fueron colisiones fronto-laterales
 
-SELECT ?accident ?type
+SELECT ?accident
 WHERE {
     ?accident a base:Accidente ;
             base:tipo_accidente ?type .

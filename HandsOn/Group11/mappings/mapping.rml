@@ -17,6 +17,11 @@
     ] ;
 
     rr:predicateObjectMap [
+        rr:predicate vocab:sameAsCodigo ;
+        rml:reference "SAME_AS_CODIGO"
+    ] ;
+
+    rr:predicateObjectMap [
         rr:predicate vocab:provincia ;
         rr:objectMap [
             rml:reference "PROVINCIA"
@@ -37,8 +42,7 @@
         ]
     ] .
 
-    <#TriplesMap2>
-    a rr:TriplesMap ;
+<#TriplesMap2> a rr:TriplesMap ;
     rml:logicalSource [
         rml:source "horario.csv" ;
         rml:referenceFormulation ql:CSV
@@ -416,8 +420,7 @@
         ]
     ] . 
 
-    <#TriplesMap3>
-    a rr:TriplesMap ;
+<#TriplesMap3> a rr:TriplesMap ;
     rml:logicalSource [
         rml:source "horario.csv" ;
         rml:referenceFormulation ql:CSV

@@ -7,7 +7,7 @@
 # Sample Activation
 ex:activation1234 a samur:Activation ;
     samur:hasYear "2024"^^xsd:gYear ;
-    samur:hasMonth "09"^^xsd:gMonth ;
+    samur:hasMonth "--09"^^xsd:gMonth ;
     samur:hasRequestTime "14:35:00"^^xsd:time ;
     samur:hasInterventionTime "14:40:00"^^xsd:time ;
     samur:hasDistrict ex:districtCenter ;

@@ -2,12 +2,14 @@
 PREFIX samur: <http://samur.linkeddata.madrid.es/ontology#>
 PREFIX schema: <http://schema.org/>
 
-SELECT ?activation ?requestTime ?interventionTime ?district
+SELECT ?activation ?requestTime ?interventionTime ?districtName
 WHERE {
   ?activation a samur:Activation ;
               samur:hasRequestTime ?requestTime ;
               samur:hasInterventionTime ?interventionTime ;
               samur:hasDistrict ?district .
+  ?district a samur:Location ;
+            rdfs:label ?districtName .
 }
 
 # SPARQL Query 2: Retrieve Activations for a Specific District
@@ -18,7 +20,9 @@ WHERE {
   ?activation a samur:Activation ;
               samur:hasRequestTime ?requestTime ;
               samur:hasInterventionTime ?interventionTime ;
-              samur:hasDistrict <https://wikidata.org/entity/Q1763376> .
+              samur:hasDistrict ?district .
+  ?district a samur:Location ;
+            owl:sameAs <https://wikidata.org/entity/Q1763376> .
 }
 
 # SPARQL Query 3: Retrieve Activations by Emergency Type
@@ -36,18 +40,22 @@ WHERE {
 # SPARQL Query 4: Retrieve Hospitals Associated with Activations
 PREFIX samur: <http://samur.linkeddata.madrid.es/ontology#>
 
-SELECT ?activation ?hospital
+SELECT ?activation ?hospitalName
 WHERE {
   ?activation a samur:Activation ;
               samur:hasHospital ?hospital .
+  ?hospital a samur:Hospital ;
+            rdfs:label ?hospitalName .
 }
 
 # SPARQL Query 5: Count Activations by District
 PREFIX samur: <http://samur.linkeddata.madrid.es/ontology#>
 
-SELECT ?district (COUNT(?activation) AS ?activationCount)
+SELECT ?districtName (COUNT(?activation) AS ?activationCount)
 WHERE {
   ?activation a samur:Activation ;
               samur:hasDistrict ?district .
+  ?district a samur:Location ;
+            rdfs:label ?districtName .
 }
-GROUP BY ?district
+GROUP BY ?districtName

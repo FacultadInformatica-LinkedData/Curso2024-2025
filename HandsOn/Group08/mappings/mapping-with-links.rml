@@ -1,0 +1,102 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#>.
+@prefix rml: <http://semweb.mmlab.be/ns/rml#>.
+@prefix ql: <http://semweb.mmlab.be/ns/ql#>.
+@prefix vocab: <http://example.org#>.
+@base <http://example.com/ns#>.
+
+<#TriplesMapParkingSlots> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "ParkingSlotsUpdated-with-links.csv";
+    rml:referenceFormulation ql:CSV
+  ];
+
+  rr:subjectMap [
+    rr:template "http://example.com/parkingSlot/{ID}";
+    rr:class vocab:Parking
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:hasId;
+    rr:objectMap [
+      rml:reference "ID"
+    ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:hasName;
+    rr:objectMap [
+      rml:reference "NAME"
+    ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:hasSchedule;
+    rr:objectMap [
+      rml:reference "SCHEDULE"
+    ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:hasStreetName;
+    rr:objectMap [
+      rml:reference "STREET_NAME"
+    ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:sameAsWikidataStreet;
+    rr:objectMap [
+      rml:reference "same_as_wikidata_street_name"
+    ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:hasStreetNumber;
+    rr:objectMap [
+      rml:reference "STRET_NUMBER";
+      rr:datatype xsd:integer
+    ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:hasNeighbourhood;
+    rr:objectMap [
+      rml:reference "NEIGHBOURHOOD"
+    ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:sameAsWikidataNeighbourhood;
+    rr:objectMap [
+      rml:reference "same_as_wikidata_neighbourhood"
+    ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:hasDistrict;
+    rr:objectMap [
+      rml:reference "DISTRICT"
+    ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:sameAsWikidataDistrict;
+    rr:objectMap [
+      rml:reference "same_as_wikidata_district"
+    ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:hasVehicleType;
+    rr:objectMap [
+      rml:reference "VEHICLE_TYPE"
+    ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:hasNumberSlots;
+    rr:objectMap [
+      rml:reference "TOTAL_SLOTS";
+      rr:datatype xsd:integer
+    ]
+  ].

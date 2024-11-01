@@ -19,85 +19,52 @@ mappings:
     po:
       - [a, ns:Accidente]
       - [ns:num_expediente, $(num_expediente),xsd:string]
+      - [ns:fecha, $(fecha), xsd:date]
       - [ns:tipo_accidente, $(tipo_accidente),xsd:string]
-      - p: ns:tieneFecha
+      - [ns:localizacion, $(localizacion), xsd:string]
+      - [ns:coordenada_x_utm, $(coordenada_x_utm), xsd:decimal]
+      - [ns:coordenada_y_utm, $(coordenada_y_utm), xsd:decimal]
+      - [ns:numero, $(numero), xsd:string]
+      - [ns:estado_meteorologico, $(estado_meteorologico), xsd:string]
+      - p: ns:estaEnDistrito
         o:
-          mapping: fecha
-
-      - p: ns:tieneLocalizacion
-        o:
-          mapping: localizacion
-
-      - p: ns:estado_meteorologico
-        o:
-          mapping: clima
-
-      - p: ns:vehiculoInvolucrado
-        o:
-          mapping: vehiculo
-
+          mapping: distrito
       - p: ns:personaInvolucrada
         o:
           mapping: persona
 
-      - p: ns:tieneLesion
-        o:
-          mapping: lesividad
-    
-  fecha:
-    sources:
-      - [2024-Accidentalidad-updated.csv~csv]
-    s: http://smartcity.linkeddata.es/fecha/$(fecha)
-    po:
-      - [a, ns:Fecha]
-      - [ns:fecha, $(fecha), xsd:date]
-
-  localizacion:
-    sources:
-      - [2024-Accidentalidad-updated.csv~csv]
-    s: http://smartcity.linkeddata.es/localizacion/$(localizacion)
-    po:
-      - [a, ns:Localizacion]
-      - [ns:localizacion, $(localizacion), xsd:string]
-      - [ns:coordenada_x_utm, $(coordenada_x_utm), xsd:decimal]
-      - [ns:coordenada_y_utm, $(coordenada_y_utm), xsd:decimal]
-      - [ns:cod_distrito, $(cod_distrito), xsd:integer]
-      - [ns:distrito, $(distrito), xsd:string]
-      - [ns:numero, $(numero), xsd:string]
-
-  clima:
-    sources:
-      - [2024-Accidentalidad-updated.csv~csv]
-    s: http://smartcity.linkeddata.es/clima/$(estado_meteorologico)
-    po:
-      - [a, ns:Clima]
-      - [ns:estado_meteorologico, $(estado_meteorologico), xsd:string]
-
-  vehiculo:
-    sources:
-      - [2024-Accidentalidad-updated.csv~csv]
-    s: http://smartcity.linkeddata.es/vehiculo/$(tipo_vehiculo)
-    po:
-      - [a, ns:Vehiculo]
-      - [ns:tipo_vehiculo, $(tipo_vehiculo), xsd:string]
-
   persona:
     sources:
       - [2024-Accidentalidad-updated.csv~csv]
-    s: http://smartcity.linkeddata.es/persona/$(tipo_persona)
+    s: http://smartcity.linkeddata.es/persona/$(id_persona)
     po:
       - [a, ns:Persona]
+      - [ns:id_persona, $(id_persona), xsd:string]
       - [ns:min_edad, $(min_edad), xsd:integer]
       - [ns:max_edad, $(max_edad), xsd:integer]
       - [ns:sexo, $(sexo), xsd:string]
       - [ns:positiva_alcohol, $(positiva_alcohol), xsd:boolean]
       - [ns:positiva_droga, $(positiva_droga), xsd:boolean]
-      
+      - [ns:tipo_vehiculo, $(tipo_vehiculo), xsd:string]
+      - [ns:tipo_persona, $(tipo_persona), xsd:string]
+      - p: ns:tieneLesion
+        o:
+          mapping: lesividad
+          
   lesividad:
     sources:
       - [2024-Accidentalidad-updated.csv~csv]
     s: http://smartcity.linkeddata.es/lesividad/$(cod_lesividad)
     po:
       - [a, ns:Lesividad]
-      - [ns:ns:cod_lesividad, $(cod_lesividad), xsd:integer]
+      - [ns:cod_lesividad, $(cod_lesividad), xsd:integer]
       - [ns:lesividad, $(lesividad), xsd:string]
+
+  distrito:
+    sources:
+      - [2024-Accidentalidad-updated.csv~csv]
+    s: http://smartcity.linkeddata.es/distrito/$(cod_distrito)
+    po:
+      - [a, ns:Distrito]
+      - [ns:cod_distrito, $(cod_distrito), xsd:integer]
+      - [ns:distrito, $(distrito), xsd:string]

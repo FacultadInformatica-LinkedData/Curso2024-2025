@@ -790,5 +790,18 @@
     "newColumnName": "hospital_wikidata_id",
     "columnInsertIndex": 9,
     "description": "Create column hospital_wikidata_id at index 9 based on column Hospital using expression grel:\"https://wikidata.org/entity/\" + cell.recon.match.id"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Mes",
+    "expression": "grel:if(value == \"ENERO\", \"--01\", \nif(value == \"FEBRERO\", \"--02\", \nif(value == \"MARZO\", \"--03\", \nif(value == \"ABRIL\", \"--04\", \nif(value == \"MAYO\", \"--05\", \nif(value == \"JUNIO\", \"--06\", \nif(value == \"JULIO\", \"--07\", \nif(value == \"AGOSTO\", \"--08\", \nif(value == \"SEPTIEMBRE\", \"--09\", \nif(value == \"OCTUBRE\", \"--10\", \nif(value == \"NOVIEMBRE\", \"--11\", \nif(value == \"DICIEMBRE\", \"--12\", value))))))))))))",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Mes using expression grel:if(value == \"ENERO\", \"--01\", \nif(value == \"FEBRERO\", \"--02\", \nif(value == \"MARZO\", \"--03\", \nif(value == \"ABRIL\", \"--04\", \nif(value == \"MAYO\", \"--05\", \nif(value == \"JUNIO\", \"--06\", \nif(value == \"JULIO\", \"--07\", \nif(value == \"AGOSTO\", \"--08\", \nif(value == \"SEPTIEMBRE\", \"--09\", \nif(value == \"OCTUBRE\", \"--10\", \nif(value == \"NOVIEMBRE\", \"--11\", \nif(value == \"DICIEMBRE\", \"--12\", value))))))))))))"
   }
 ]

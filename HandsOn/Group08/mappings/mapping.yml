@@ -15,13 +15,14 @@ mappings:
   triplesmapParking:
     sources:
       - [aparcamientos-publicos-actualizado.csv~csv]
-    s: http://example.com/parking/$(PK)
+    s: http://example.com/parking/$(ID)
     po:
       - [a, vocab:Parking]
-      - [vocab:nombre,$(NOMBRE)]
-      - [vocab:horario,$(HORARIO)]
-      - [vocab:descripcion,$(DESCRIPCION)]
-      - [vocab:nombreCalle,$(NOMBRE CALLE)]
-      - [vocab:numero,$(NUM),xsd:decimal]
-      - [vocab:barrio,$(BARRIO)]
-      - [vocab:distrito,$(DISTRITO)]
+      - [vocab:hasName, $(NAME)]
+      - [vocab:hasSchedule, $(SCHEDULE)]
+      - [vocab:hasStreetName, $(STREET_NAME)]
+      - [vocab:hasStreetNumber, $(STREET_NUMBER), xsd:integer]
+      - [vocab:hasNeighbourhood, $(NEIGHBOURHOOD)]
+      - [vocab:hasDistrict, $(DISTRICT)]
+      - [vocab:hasVehicleType, $(VEHICLE_TYPE)]
+      - [vocab:hasNumberSlots, $(TOTAL_SLOTS), xsd:integer]
