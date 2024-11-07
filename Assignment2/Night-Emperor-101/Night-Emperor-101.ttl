@@ -1,0 +1,10 @@
+@prefix : <http://example.org/>.
+@prefix xml: <http://www.w3.org/2001/XMLSchema#>.
+
+:ETSIInformaticos  :hasName "ETSI Informáticos".
+:Table322 :hasOwner :ETSIInformaticos.
+:Measurement8432 :hasTemperature 29;
+ :atTime "2022-09-12T12:01:12"^^xml:dateTime.
+:Sensor347 :contains :Measurement8432.
+:ClassRoom03  :contains :Sensor347;
+ :contains :Table322.
