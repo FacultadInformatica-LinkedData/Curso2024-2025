@@ -1,17 +1,23 @@
-@prefix : <https://websemantica.net/Group22/ontology/> .
-@prefix Acc: <http://www.owl-ontologies.com/Acc#> .
-@prefix acc: <http://www.owl-ontologies.com/acc#> .
+@prefix acc: <https://websemantica.net/Group22/ontology/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix mod: <https://w3id.org/mod#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ca: http://vocab.ciudadesabiertas.es/def/transporte/trafico# .
+@prefix schema: http://schema.org/ .
 
-Acc:esLesionada a owl:ObjectProperty ;
+<https://websemantica.net/Group22/ontology/>
+    a owl:Ontology ;
+    rdfs:label "Localizaciones de accidentalidad Ontology" ;
+    owl:versionInfo "1.0" .
+
+acc:esLesionada a owl:ObjectProperty ;
     rdfs:label "es lesionada" ;
     rdfs:domain acc:Involucrado ;
     rdfs:range acc:Lesividad .
 
 acc:Accidente a owl:Class ;
+    rdfs:subClassOf ca:Incidencia ;
     rdfs:label "Accidente" .
 
 acc:aNombreDe a owl:ObjectProperty ;
@@ -122,6 +128,7 @@ acc:Lesividad a owl:Class ;
     rdfs:label "Lesividad" .
 
 acc:Involucrado a owl:Class ;
+    rdfs:subClassOf schema:Person ;
     rdfs:label "Involucrado" .
 
 acc:Vehiculo a owl:Class ;

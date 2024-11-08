@@ -7,12 +7,12 @@
 # Sample Activation
 ex:activation1234 a samur:Activation ;
     samur:hasYear "2024"^^xsd:gYear ;
-    samur:hasMonth "09"^^xsd:gMonth ;
+    samur:hasMonth "--09"^^xsd:gMonth ;
     samur:hasRequestTime "14:35:00"^^xsd:time ;
     samur:hasInterventionTime "14:40:00"^^xsd:time ;
     samur:hasDistrict ex:districtCenter ;
     samur:hasHospital ex:hospitalLaPaz ;
-    samur:hasEmergencyType ex:emergencyCardiacArrest ;
+    samur:hasEmergencyType "Cardiac Arrest" ;
     rdfs:comment "Emergency activation for a cardiac arrest in the Center District of Madrid." .
 
 # Sample District
@@ -22,7 +22,3 @@ ex:districtCenter a samur:Location ;
 # Sample Hospital
 ex:hospitalLaPaz a samur:Hospital ;
     rdfs:label "Hospital La Paz, Madrid" .
-
-# Sample Emergency Type
-ex:emergencyCardiacArrest a samur:EmergencyType ;
-    rdfs:label "Cardiac Arrest" .

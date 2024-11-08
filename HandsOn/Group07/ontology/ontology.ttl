@@ -39,3 +39,15 @@
     rdfs:domain :Streetlight ;
     rdfs:range :Type ;
     rdfs:comment "The type of streetlight (e.g., LED, Sodium)." .
+
+:latitude a rdf:Property ;
+    rdfs:label "Latitude" ;
+    rdfs:domain :Location ;
+    rdfs:range xsd:decimal ;
+    rdfs:comment "The latitude of the location." .
+
+:longitude a rdf:Property ;
+    rdfs:label "Longitude" ;
+    rdfs:domain :Location ;
+    rdfs:range xsd:decimal ;
+    rdfs:comment "The longitude of the location." .

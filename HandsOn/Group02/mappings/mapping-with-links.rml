@@ -5,7 +5,7 @@
 @prefix samur: <http://samur.linkeddata.madrid.es/ontology#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 
-<http://samur.linkeddata.madrid.es/TriplesMap1> a rr:TriplesMap;
+<http://samur.linkeddata.madrid.es/TriplesMapActivation> a rr:TriplesMap;
   rml:logicalSource [
     rml:source "../csv/activaciones_samur_2023-updated-with-links.csv";
     rml:referenceFormulation ql:CSV
@@ -27,7 +27,7 @@
     rr:predicate samur:hasMonth;
     rr:objectMap [
       rml:reference "Mes";
-      rr:datatype xsd:string
+      rr:datatype xsd:gMonth
     ]
   ];
 
@@ -87,46 +87,33 @@
     ]
   ].
 
-<http://samur.linkeddata.madrid.es/TriplesMap2> a rr:TriplesMap;
+<http://samur.linkeddata.madrid.es/TriplesMapLocation> a rr:TriplesMap;
   rml:logicalSource [
     rml:source "../csv/activaciones_samur_2023-updated-with-links.csv";
     rml:referenceFormulation ql:CSV
   ];
   rr:subjectMap [
-    rml:reference "district_wikidata_id";
-    rr:class samur:Location
-  ];
+        rr:template "http://samur.linkeddata.madrid.es/location/{Distrito}";
+        rr:class samur:Location;
+    ];
 
-  rr:predicateObjectMap [
-    rr:predicate samur:hasDistrictName;
-    rr:objectMap [
-      rml:reference "Distrito";
-      rr:datatype xsd:string
-    ]
-  ].
+    rr:predicateObjectMap [
+        rr:predicate rdf:type;
+        rr:object samur:Location;
+    ].
 
-<http://samur.linkeddata.madrid.es/TriplesMap3> a rr:TriplesMap;
+<http://samur.linkeddata.madrid.es/TriplesMapHospital> a rr:TriplesMap;
   rml:logicalSource [
     rml:source "../csv/activaciones_samur_2023-updated-with-links.csv";
     rml:referenceFormulation ql:CSV
   ];
+
   rr:subjectMap [
-    rml:reference "hospital_wikidata_id";
-    rr:class samur:Hospital
-  ];
+        rr:template "http://samur.linkeddata.madrid.es/hospital/{Hospital}";
+        rr:class samur:Hospital;
+    ];
 
-  rr:predicateObjectMap [
-    rr:predicate samur:hasHospitalName;
-    rr:objectMap [
-      rml:reference "Hospital";
-      rr:datatype xsd:string
-    ]
-  ];
-
-  rr:predicateObjectMap [
-    rr:predicate owl:sameAs;  # Añadimos owl:sameAs para vincular el hospital con Wikidata
-    rr:objectMap [
-      rml:reference "hospital_wikidata_id";
-      rr:termType rr:IRI
-    ]
-  ].
+    rr:predicateObjectMap [
+        rr:predicate rdf:type;
+        rr:object samur:Hospital;
+    ].

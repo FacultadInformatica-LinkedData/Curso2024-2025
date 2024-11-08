@@ -1,0 +1,67 @@
+PREFIX alumbrado: <http://alumbrado.linkeddata.madrid.es/ontology#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>
+
+# Consulta 1: Obtener todos los enlaces owl:sameAs con sus recursos de iluminación
+SELECT ?lightingPoint ?externalEntity
+WHERE {
+  ?lightingPoint a alumbrado:LightingPoint ;
+                 owl:sameAs ?externalEntity .
+}
+
+# Consulta 2: Recuperar entidades de iluminación y sus enlaces externos usando owl:sameAs
+SELECT ?lightingPoint ?address ?externalEntity
+WHERE {
+  ?lightingPoint a alumbrado:LightingPoint ;
+                 alumbrado:hasAddress ?address ;
+                 owl:sameAs ?externalEntity .
+}
+
+# Consulta 3: Listar todas las entidades de alumbrado con su ubicación y enlaces externos
+SELECT ?lightingPoint ?location ?externalEntity
+WHERE {
+  ?lightingPoint a alumbrado:LightingPoint ;
+                 geo:location ?location ;
+                 owl:sameAs ?externalEntity .
+}
+
+# Consulta 4: Obtener entidades de alumbrado que tienen relación con una entidad externa
+SELECT ?lightingPoint ?externalEntity
+WHERE {
+  ?lightingPoint a alumbrado:LightingPoint ;
+                 owl:sameAs ?externalEntity .
+  FILTER (BOUND(?externalEntity))
+}
+
+# Consulta 5: Consultar entidades alumbrado por dirección específica y recuperar el enlace externo
+SELECT ?lightingPoint ?externalEntity
+WHERE {
+  ?lightingPoint a alumbrado:LightingPoint ;
+                 alumbrado:hasAddress "Calle Francisco Pérez, 6" ;
+                 owl:sameAs ?externalEntity .
+}
+
+# Consulta 6: Obtener el número total de entidades alumbrado enlazadas con owl:sameAs
+SELECT (COUNT(?lightingPoint) AS ?totalEnlazadas)
+WHERE {
+  ?lightingPoint a alumbrado:LightingPoint ;
+                 owl:sameAs ?externalEntity .
+}
+
+# Consulta 7: Recuperar entidades alumbrado en ubicaciones con la palabra "Calle" y sus enlaces externos
+SELECT ?lightingPoint ?address ?externalEntity
+WHERE {
+  ?lightingPoint a alumbrado:LightingPoint ;
+                 alumbrado:hasAddress ?address ;
+                 owl:sameAs ?externalEntity .
+  FILTER CONTAINS(?address, "Calle")
+}
+
+# Consulta 8: Listar todas las entidades de alumbrado con más de un tipo de lámpara
+SELECT ?lightingPoint ?numLamps ?externalEntity
+WHERE {
+  ?lightingPoint a alumbrado:LightingPoint ;
+                 alumbrado:hasTotalLamps ?numLamps ;
+                 owl:sameAs ?externalEntity .
+  FILTER (?numLamps > 1)
+}

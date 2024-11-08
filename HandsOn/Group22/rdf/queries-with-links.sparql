@@ -1,0 +1,74 @@
+# PREFIJOS
+
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ont: <http://websemantica.net/Group22/ontology/>
+
+
+
+# Consultar todos los accidentes y sus codigos de distrito
+
+SELECT ?accidente ?codigoDistrito WHERE {
+  ?accidente ont:codigoDistrito ?codigoDistrito .
+} LIMIT 10
+
+
+# Contar el numero de accidentes por codigo de distrito
+
+SELECT ?codigoDistrito (COUNT(?accidente) AS ?numAccidentes) WHERE {
+  ?accidente ont:codigoDistrito ?codigoDistrito .
+}
+GROUP BY ?codigoDistrito
+ORDER BY ?codigoDistrito
+
+# Obtener el numero total de accidentes
+
+SELECT (COUNT(?accidente) AS ?totalAccidentes) WHERE {
+  ?accidente ont:codigoDistrito ?codigoDistrito .
+}
+
+# Obtener lesiones y su involucrado
+
+SELECT ?lesion ?involucrado WHERE {
+  ?lesion ont:lesionDe ?involucrado .
+}
+LIMIT 10
+
+# Obtener todos los vehiculos involucrados en accidentes
+
+SELECT ?vehiculo WHERE {
+    ?vehiculo ont:estaEnAccidente ?accidente .
+}
+
+# Contar cuantos vehiculos estan involucrados en cada accidente
+
+SELECT ?accidente (COUNT(?vehiculo) AS ?numVehiculos) WHERE {
+    ?vehiculo ont:estaEnAccidente ?accidente .
+}
+GROUP BY ?accidente
+
+# Contamos cuantos tipos de vehiculos distintos hay según el tipado de wikidata
+
+SELECT ?same_as_wikidata_tipo_vehiculo (COUNT(?same_as_wikidata_tipo_vehiculo) AS ?numVehiculos) WHERE {
+  ?vehiculo ont:same_as_wikidata_tipo_vehiculo ?same_as_wikidata_tipo_vehiculo .
+}
+GROUP BY ?same_as_wikidata_tipo_vehiculo
+ORDER BY DESC(?numVehiculos)
+
+# Añado la comparativa sin los datos de wikidata
+
+SELECT ?tipoVehiculo (COUNT(?vehiculo) AS ?numVehiculos)
+WHERE {
+  ?vehiculo ont:tipoVehiculo ?tipoVehiculo .
+}
+GROUP BY ?tipoVehiculo
+ORDER BY DESC(?numVehiculos)
+
+# Contamos cuantos accidentes ha habido en el distrito segun el tipado de wikidata
+
+SELECT ?same_as_wikidata_distrito (COUNT(?accidente) AS ?numAccidentes) WHERE {
+  ?accidente ont:same_as_wikidata_distrito ?same_as_wikidata_distrito .
+}
+GROUP BY ?same_as_wikidata_distrito
+ORDER BY DESC(?numAccidentes)

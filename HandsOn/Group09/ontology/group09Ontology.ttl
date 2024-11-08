@@ -2,7 +2,7 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix ns: <http://smartcity.linkeddata.es/concesiones_zonas_verdes/ontologia/>
+@prefix ns: <http://smartcity.linkeddata.es/concesiones_zonas_verdes/ontologia#> .
 
 # definicion de la ontologia
 <http://smartcity.linkeddata.es/concesiones_zonas_verdes/ontologia> rdf:type owl:Ontology .

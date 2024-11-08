@@ -19,7 +19,7 @@ mappings:
     po:
       - [a, samur:Activation]
       - [samur:hasYear, $(Año), xsd:gYear]
-      - [samur:hasMonth, $(Mes), xsd:string]
+      - [samur:hasMonth, $(Mes), xsd:gMonth]
       - [samur:hasRequestTime, $(Hora Solicitud), xsd:time]
       - [samur:hasInterventionTime, $(Hora Intervención), xsd:time]
       - [samur:hasEmergencyType, $(Código), xsd:string]

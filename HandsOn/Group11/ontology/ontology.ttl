@@ -30,6 +30,11 @@ ns:codigoPuntoMuestreo a owl:DatatypeProperty ;
     rdfs:domain ns:PuntoMuestreo ;
     rdfs:range xsd:String .
 
+ns:sameAsCodigo a owl:DatatypeProperty ;
+    rdfs:label "same as codigo" ;
+    rdfs:domain ns:PuntoMuestreo ;
+    rdfs:range xsd:String .
+
 ns:tieneEstacion a owl:ObjectProperty ;
     rdfs:label "tiene estacion" ;
     rdfs:domain ns:Municipio ;
