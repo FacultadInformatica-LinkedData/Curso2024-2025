@@ -1,0 +1,14 @@
+@prefix : <http://example.org#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:ClassRoom03 xsd:contains :Sensor347 .
+:ClassRoom03 xsd:contains :Table322 .
+
+:Sensor347 xsd:hasMeasurement :Measurement8432 .
+
+:Measurement8432 xsd:hasTemperature 29 ;
+                xsd:atTime "2022-09-12T12:01:12"^^xsd:dateTime .
+
+:Table322 xsd:hasOwner :ETSIInformaticos .
+
+:ETSIInformaticos xsd:hasName "ETSI Informáticos" .
