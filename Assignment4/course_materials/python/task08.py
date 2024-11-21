@@ -19,3 +19,58 @@ g1.parse(github_storage+"resources/data01.rdf", format="xml")
 g2.parse(github_storage+"resources/data02.rdf", format="xml")
 
 """Tarea: lista todos los elementos de la clase Person en el primer grafo (data01.rdf) y completa los campos (given name, family name y email) que puedan faltar con los datos del segundo grafo (data02.rdf). Puedes usar consultas SPARQL o iterar el grafo, o ambas cosas."""
+
+# Definir el namespace de FOAF
+foaf = Namespace("http://xmlns.com/foaf/0.1/")
+
+"""Listamos los elementos de la clase Person en el primer grafo (g1)"""
+
+# Consulta SPARQL para obtener todas las personas en el grafo g1
+query_persons = """
+    SELECT ?person ?givenName ?familyName ?email WHERE {
+        ?person rdf:type foaf:Person .
+        OPTIONAL { ?person foaf:givenName ?givenName }
+        OPTIONAL { ?person foaf:familyName ?familyName }
+        OPTIONAL { ?person foaf:mbox ?email }
+    }
+"""
+
+# Ejecutar la consulta SPARQL en g1
+results = g1.query(query_persons, initNs={'rdf': RDF, 'foaf': foaf})
+
+# Mostrar los resultados antes de completar
+for row in results:
+    print(f"Person: {row.person}, Given Name: {row.givenName}, Family Name: {row.familyName}, Email: {row.email}")
+
+"""Ahora recorreremos los resultados de la consulta y, para los campos que faltan buscaremos en g2 y los completaremos en g1 si es posible."""
+
+# Recorrer los resultados y completar los datos faltantes con los del grafo g2
+for row in results:
+    person = row.person
+    given_name = row.givenName
+    family_name = row.familyName
+    email = row.email
+
+    # Si falta el given name, buscar en g2
+    if not given_name:
+        for _, _, name in g2.triples((person, foaf.givenName, None)):
+            g1.add((person, foaf.givenName, name))
+            print(f"Added given name for {person}: {name}")
+
+    # Si falta el family name, buscar en g2
+    if not family_name:
+        for _, _, fname in g2.triples((person, foaf.familyName, None)):
+            g1.add((person, foaf.familyName, fname))
+            print(f"Added family name for {person}: {fname}")
+
+    # Si falta el email, buscar en g2
+    if not email:
+        for _, _, mail in g2.triples((person, foaf.mbox, None)):
+            g1.add((person, foaf.mbox, mail))
+            print(f"Added email for {person}: {mail}")
+
+"""Una vez tenemos todos los datos, guardamos el gráfico resultante en un archivo RDF"""
+
+# Guardar el grafo actualizado en un archivo RDF
+g1.serialize(destination='output_updated.rdf', format='xml')
+print("Datos completados y guardados en 'output_updated.rdf'.")

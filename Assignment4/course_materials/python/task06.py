@@ -32,6 +32,9 @@ for s, p, o in g:
 
 """
 
+# Crear una nueva clase llamada "University"
+g.add((ns.University, RDF.type, RDFS.Class))
+
 # TO DO
 # Visualize the results
 for s, p, o in g:
@@ -39,12 +42,16 @@ for s, p, o in g:
 
 """**TASK 6.2: Add "Researcher" as a subclass of "Person"**"""
 
+# Añadir "Researcher" como una subclase de "Person"
+g.add((ns.Researcher, RDFS.subClassOf, ns.Person))
 # TO DO
 # Visualize the results
+print("\nResultados después de añadir 'Researcher' como subclase de 'Person':")
 for s, p, o in g:
   print(s,p,o)
 
 """**TASK 6.3: Create a new individual of Researcher named "Jane Smithers"**"""
+g.add((ns.JaneSmithers, RDF.type, ns.Researcher))
 
 # TO DO
 # Visualize the results
@@ -52,16 +59,44 @@ for s, p, o in g:
   print(s,p,o)
 
 """**TASK 6.4: Add to the individual JaneSmithers the email address, fullName, given and family names. Use the https://schema.org vocabulary**"""
+from rdflib import Graph, Namespace, Literal
+from rdflib.namespace import RDF, RDFS
+ns = Namespace("http://somewhere#")
+schema = Namespace("https://schema.org/")
+g.add((ns.JaneSmithers, schema.email, Literal("jane.smithers@example.com")))
+g.add((ns.JaneSmithers, schema.familyName, Literal("Smithers")))
+g.add((ns.JaneSmithers, schema.givenName, Literal("Jane")))
+g.add((ns.JaneSmithers, schema.fullName, Literal("Jane Smithers")))
 
 # TO DO
 # Visualize the results
+for s, p, o in g:
+  print(s,p,o)
 
 """**TASK 6.5: Add UPM as the university where John Smith works. Use the "https://example.org/ namespace**"""
 
+from rdflib import Graph, Namespace, Literal
+from rdflib.namespace import RDF, RDFS
+
+ns = Namespace("http://somewhere#")
+ex = Namespace("https://example.org/")
+g.add((ex.UPM, RDF.type, ns.University))
+g.add((ns.JohnSmith, ex.worksAt, ex.UPM))
+
 # TO DO
 # Visualize the results
+for s, p, o in g:
+  print(s,p,o)
 
 """**Task 6.6: Add that Jown knows Jane using the FOAF vocabulary. Make sure the relationship exists.**"""
+from rdflib import Graph, Namespace, Literal
+from rdflib.namespace import RDF, RDFS
+from rdflib.namespace import FOAF
+
+ns = Namespace("http://somewhere#")
+g.add((ns.JohnSmith, FOAF.knows, ns.JaneSmithers))
 
 # TO DO
 # Visualize the results
+for s, p, o in g:
+  print(s,p,o)
