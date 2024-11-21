@@ -1,0 +1,111 @@
+{
+  "@context": {
+    "fullName": "http://schema.org/name",
+    "hometown": "http://schema.org/homeLocation",
+    "age": "http://schema.org/age",
+    "almaMater": "http://schema.org/alumniOf",
+    "parents": "http://schema.org/parent",
+    "subjects": {
+      "@id": "http://schema.org/Subject",
+      "@container": "@set"
+    },
+    "name": "http://schema.org/name",
+    "teachers": "http://schema.org/teacher",
+    "briefDescription": "http://schema.org/description"
+  },
+  "@type": "Person",
+  "fullName": "Andrei Iulian Grozescu",
+  "hometown": "Aranjuez",
+  "age": 29,
+  "almaMater": "UPM",
+  "parents": [
+    {
+      "@id": "http://example.org/Elisa",
+      "hasName": "Elisa"
+    },
+    {
+      "@id": "http://example.org/Iulian",
+      "hasName": "Iulian"
+    }
+  ],
+  "subjects": [
+    {
+      "@type": "Course",
+      "name": "PROBABILIDADES Y ESTADÍSTICA II",
+      "teachers": "-",
+      "briefDescription": "This course covers advanced probability theory and statistical methods, focusing on their application in various fields such as data analysis, decision making, and modeling uncertainty."
+    },
+    {
+      "@type": "Course",
+      "name": "GESTIÓN DE PROCESOS DE TECNOLOGÍAS DE LA INFORMACIÓN",
+      "teachers": "-",
+      "briefDescription": "This course explores IT process management techniques, including frameworks like ITIL, and focuses on aligning IT services with the needs of a business while improving efficiency."
+    },
+    {
+      "@type": "Course",
+      "name": "PROGRAMACIÓN DECLARATIVA: LÓGICA Y RESTRICCIONES",
+      "teachers": "-",
+      "briefDescription": "This subject introduces declarative programming paradigms, focusing on logic programming and constraint satisfaction problems, using languages like Prolog and CLP."
+    },
+    {
+      "@type": "Course",
+      "name": "INGENIERÍA DEL SOFTWARE II",
+      "teachers": "-",
+      "briefDescription": "A continuation of Software Engineering I, this course delves deeper into software development processes, methodologies, and practices for large-scale systems, with a focus on quality assurance and project management."
+    },
+    {
+      "@type": "Course",
+      "name": "ADMINISTRACIÓN DE SISTEMAS INFORMÁTICOS",
+      "teachers": "-",
+      "briefDescription": "This course covers system administration concepts, focusing on the management, configuration, and maintenance of information systems, with hands-on experience in operating systems, networks, and security."
+    },
+    {
+      "@type": "Course",
+      "name": "WEB SEMÁNTICA, LINKED DATA Y GRAFOS DE CONOCIMIENTOS",
+      "teachers": "-",
+      "briefDescription": "This course provides an introduction to Semantic Web technologies, linked data principles, and knowledge graphs, focusing on how they are used to enhance the interoperability and utility of web data."
+    },
+    {
+      "@type": "Course",
+      "name": "NANOTECNOLOGÍA",
+      "teachers": "-",
+      "briefDescription": "An introductory course on nanotechnology, exploring the fundamental concepts of nanoscience, nanomaterials, and their applications in fields like electronics, medicine, and materials science."
+    },
+    {
+      "@type": "Course",
+      "name": "COMPUTABILIDAD: FUNDAMENTOS Y APLICACIONES",
+      "teachers": "-",
+      "briefDescription": "This subject delves into the theoretical foundations of computability, exploring models like Turing machines and their applications in understanding the limits of what can be computed."
+    },
+    {
+      "@type": "Course",
+      "name": "APLICACIONES DE LA BIOMETRÍA DE LA VOZ",
+      "teachers": "-",
+      "briefDescription": "This course covers voice biometrics and its applications, focusing on technologies and algorithms used in voice recognition systems for security, authentication, and other practical uses."
+    },
+    {
+      "@type": "Course",
+      "name": "ARQUITECTURA DEL DATA WAREHOUSE",
+      "teachers": "-",
+      "briefDescription": "This course focuses on the architecture, design, and implementation of data warehouses, teaching students how to integrate, manage, and optimize large-scale data storage systems for decision support."
+    },
+    {
+      "@type": "Course",
+      "name": "MINERÍA DE DATOS",
+      "teachers": "-",
+      "briefDescription": "This course introduces data mining techniques and algorithms for extracting valuable patterns and knowledge from large datasets, focusing on real-world applications and tools."
+    },
+    {
+      "@type": "Course",
+      "name": "TEORÍA DE LA INFORMACIÓN Y LA CODIFICACIÓN",
+      "teachers": "-",
+      "briefDescription": "This course covers the principles of information theory, including entropy, data compression, and coding theory, with applications in communication systems and data transmission."
+    },
+    {
+      "@type": "Course",
+      "name": "INTELIGENCIA ARTIFICIAL Y CIENCIA ABIERTA EN INGENIERÍA DE SOFTWARE CIENTÍFICO",
+      "teachers": "-",
+      "briefDescription": "This course explores the integration of artificial intelligence techniques in scientific software engineering, emphasizing open science principles, reproducibility, and collaborative development."
+    }
+  ]
+}
