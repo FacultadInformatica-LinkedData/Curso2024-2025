@@ -1,0 +1,104 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/"
+    },
+    "@type": "Person",
+    "name": "Raquel Falero Dominguez",
+    "homeLocation": {
+        "@type": "Place",
+        "name": "Leganes"
+    },
+    "age": 23,
+    "alumniOf": {
+        "@type": "EducationalOrganization",
+        "name": "Universidad Politecnica de Madrid"
+    },
+    "parent": [
+        {
+            "@type": "Person",
+            "name": "Manuel"
+        },
+        {
+            "@type": "Person",
+            "name": "Silvia"
+        }
+    ],
+    "subjects": [
+        {
+            "@type": "Course",
+            "name": "GPTI",
+            "teacher": [
+                {
+                    "@type": "Person",
+                    "name": "Oscar"
+                },
+                {
+                    "@type": "Person",
+                    "name": "Edmundo"
+                },
+                {
+                    "@type": "Person",
+                    "name": "Ricardo"
+                }
+            ],
+            "description": "En esta asignatura se tratan los elementos de una organización, la gestión por procesos, y modelos de calidad aplicados a organizaciones de TI."
+        },
+        {
+            "@type": "Course",
+            "name": "Introducción a la Información y Computación Cuántica",
+            "teacher": [
+                {
+                    "@type": "Person",
+                    "name": "Vicente"
+                },
+                {
+                    "@type": "Person",
+                    "name": "Laura"
+                },
+                {
+                    "@type": "Person",
+                    "name": "Juan Pedro"
+                }
+            ],
+            "description": "El curso pretende dar una introducción al tema de la Información y Computación Cuántica desde un punto de vista de Ciencias de la Computación."
+        },
+        {
+            "@type": "Course",
+            "name": "Semantic Web, Linked Data and Knowledge Graphs",
+            "teacher": [
+                {
+                    "@type": "Person",
+                    "name": "Raul"
+                },
+                {
+                    "@type": "Person",
+                    "name": "Daniel"
+                },
+                {
+                    "@type": "Person",
+                    "name": "Oscar"
+                }
+            ],
+            "description": "El objetivo de esta asignatura es proporcionar la base teórica y práctica sobre los fundamentos metodológicos y tecnológicos implicados en la generación y publicación de vocabularios y datos en la Web de datos enlazados, así como en forma de grafos de conocimientos."
+        },
+        {
+            "@type": "Course",
+            "name": "Ingeniería del Software II",
+            "teacher": [
+                {
+                    "@type": "Person",
+                    "name": "Ana Maria"
+                },
+                {
+                    "@type": "Person",
+                    "name": "Tomas"
+                },
+                {
+                    "@type": "Person",
+                    "name": "Jose Antonio"
+                }
+            ],
+            "description": "La asignatura de Ingeniería del Software II se enfoca en aplicar los aspectos de gestión al desarrollo software. La asignatura se basa en el desarrollo de un proyecto software, donde los estudiantes deberán aplicar los aspectos aprendidos tanto en asignaturas previas del grado como en la propia asignatura."
+        }
+    ]
+}
