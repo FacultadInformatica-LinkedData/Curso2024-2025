@@ -1,0 +1,85 @@
+{
+    "@context": {
+      "@vocab": "http://schema.org/",
+      "fullName": "name",
+      "hometown": "address",
+      "almaMater": "alumniOf",
+      "parents": "parent",
+      "subjects": {
+        "@id": "Course",
+        "@container": "@set"
+      },
+      "name": "name",
+      "teachers": "teacher",
+      "description": "description"
+    },
+    "@type": "Person",
+    "fullName": "Juan Miguel Rodríguez Santos",
+    "hometown": {
+      "@type": "Place",
+      "name": "Móstoles"
+    },
+    "age": 20,
+    "almaMater": {
+      "@type": "EducationalOrganization",
+      "name": "Universidad Politécnica de Madrid"
+    },
+    "parents": [
+      {
+        "@type": "Person",
+        "name": "Julián"
+      },
+      {
+        "@type": "Person",
+        "name": "Alba"
+      }
+    ],
+    "subjects": [
+      {
+        "@type": "Course",
+        "name": "Semantic Web, Linked Data and Knowledge Graphs",
+        "teacher": [
+          {
+            "@type": "Person",
+            "name": "Oscar Corcho"
+          },
+          {
+            "@type": "Person",
+            "name": "Raúl García"
+          }
+        ],
+        "description": "The best subject"
+      },
+      {
+        "@type": "Course",
+        "name": "Gestión de Procesos de Tecnologías de la Información",
+        "teacher": [
+          {
+            "@type": "Person",
+            "name": "Edmundo Tovar"
+          },
+          {
+            "@type": "Person",
+            "name": "Profesor Colomo"
+          }
+        ],
+        "description": "Gestión de procesos y gobernanza en empresas"
+      },
+      {
+        "@type": "Course",
+        "name": "Administración de Sistemas",
+        "teacher": [
+          {
+            "@type": "Person",
+            "name": "Francisco Rosal"
+          },
+          {
+            "@type": "Person",
+            "name": "Fernando Costoya"
+          }
+        ],
+        "description": "Advanced Linux administration and scripting."
+      }
+    ]
+  }
+  
