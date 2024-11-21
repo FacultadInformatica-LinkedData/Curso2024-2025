@@ -1,0 +1,77 @@
+{
+    "@context": {
+      "fullName": "http://schema.org/name",
+      "hometown": "http://schema.org/home",
+      "age": "http://schema.org/age",
+      "almaMater": "http://schema.org/alumnOf",
+      "parents": "http://schema.org/parents",
+      "father": "http://schema.org/father",
+      "mother": "http://schema.org/mother",
+      "subjects": "http://schema.org/subjectsIStudy",
+      "name": "http://schema.org/subjectName",
+      "teachers": "http://schema.org/teacher",
+      "description": "http://schema.org/description"
+    },
+    "fullName": "Javier Vals López",
+    "hometown": "Madrid",
+    "age": 21,
+    "almaMater": "Universidad Politécnica de Madrid",
+    "parents": {
+      "father": "Enrique Vals",
+      "mother": "Rosa María López"
+    },
+    "subjects": [
+      {
+        "name": "Arquitectura del Data Warehouse",
+        "teachers": ["Santiago Eibe", "Raul Alonso"],
+        "description": "Presenta la problemática asociada con la implantación de un Data Warehouse y/o una infraestructura de Big Data"
+      },
+      {
+        "name": "Artificial Intelligence And Open Science In Research Software Engineering",
+        "teachers": ["Oscar Corcho"],
+        "description": "Aprender los fundamentos de la IA en la Ingeniería de Software Científico"
+      },
+      {
+        "name": "El arte de programar",
+        "teachers": ["Lars-ake Fredlund", "Julio Mariño"],
+        "description": "Se estudiaran los algoritmos en más detalle que en las asignaturas obligatorias del grado."
+      },
+      {
+        "name": "Mineria de datos",
+        "teachers": ["Esteban Garcia", "Maria Concepcion", "Pedro Maria Larrañaga"],
+        "description": "Aprender varios métodos de Minería de Datos desde el punto de vista práctico"
+      },
+      {
+        "name": "Programming Scalable Systems",
+        "teachers": ["Angel Herranza", "Lars-ake Fredlund", "Julio Mariño"],
+        "description": "Programar y entender el bacck-end de los sistemas"
+      },
+      {
+        "name": "Robótica y percepción computacional",
+        "teachers": ["Roberto Valle", "Nikolaus Guyon"],
+        "description": "Se verá una introducción a la robótica móvil y a la visión por computador"
+      },
+      {
+        "name": "Semantic Web, Linked Data and Knowledge Graphs",
+        "teachers": ["Raul Garcia", "Oscar Corcho"],
+        "description": "El objetivo de esta asignatura es proporcionar la base teórica y práctica sobre los fundamentos metodológicos y tecnológicos implicados en la generación y publicación de vocabularios y datos en la Web de datos enlazados"
+      },
+      {
+        "name": "Sistemas inteligentes",
+        "teachers": ["Javier Bajo", "Martin Molina"],
+        "description": "Se impartirán enseñanzas de temas avanzados como la minería de datos y textos, los sistemas multiagente, el procesamiento de imágenes, arquitecturas, técnicas y modelos de sistemas basados en el conocimiento"
+      },
+      {
+        "name": "Sistemas Operativos",
+        "teachers": ["Javier Rosales", "Pablo Toharia", "Fernando Perez"],
+        "description": "La comprensión de los conceptos básicos de los sistemas operativos y la familiarización con la interfaz de programación de los mismos"
+      },
+      {
+        "name": "Sistemas Orientados a Servicios",
+        "teachers": ["Marta Patiño", "Ainhoa Azqueta", "Sergio Paraiso"],
+        "description": "Presenta los principales conceptos y principios de diseño en que se basa el proceso de definición de software y sistemas basados en SOA"
+      }
+
+    ]
+  }
+  
