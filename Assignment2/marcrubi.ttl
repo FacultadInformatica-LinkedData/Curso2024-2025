@@ -1,0 +1,50 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix ex: <http://example.org/> .
+
+ex:WebSemantica2007
+  rdf:type bibo:Book ;
+  dc:title "Web Semántica España 2007" ;
+  dc:creator "Óscar Corcho" ;
+  dc:date "2007" ;
+  bibo:isbn "978-84-9732-612-4" ;
+  ex:physicalDimensions "24 cm" ;
+  ex:presentedAt ex:CEDI2007 ;
+  dc:language "es" .
+
+ex:CEDI2007
+  rdf:type ex:Conference ;
+  dc:title "II Congreso Español de Informática (CEDI)" ;
+  dc:date "2007-09-11"^^xsd:date ;
+  ex:location ex:Zaragoza .
+
+ex:Zaragoza
+  rdf:type ex:City ;
+  rdfs:label "Zaragoza" .
+
+ex:Madrid
+  rdf:type ex:City ;
+  rdfs:label "Madrid" .
+
+ex:TextosBilingue
+  rdf:type ex:Text ;
+  dc:language "es" ;
+  dc:language "en" .
+
+ex:Thomson
+  rdf:type ex:Publisher ;
+  rdfs:label "Thomson" .
+
+ex:Dimensiones
+  rdf:type rdf:Property ;
+  rdfs:label "Dimensiones físicas" ;
+  rdf:value "24 cm" .
+
+# Representación de la conferencia
+ex:CEDI2007
+  rdf:type ex:ConferenceEvent ;
+  ex:heldIn ex:Zaragoza ;
+  ex:date "2007-09-14"^^xsd:date ;
+  ex:partOf ex:WebSemantica2007 .
