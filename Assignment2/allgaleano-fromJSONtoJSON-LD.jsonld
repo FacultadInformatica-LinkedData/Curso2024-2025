@@ -1,0 +1,88 @@
+{
+  "@context": {
+    "@vocab": "http://schema.org/",
+    "fullName": "name",
+    "hometown": "address",
+    "almaMater": "alumniOf",
+    "parents": "parent",
+    "subjects": {
+      "@id": "Subject",
+      "@container": "@set"
+    },
+    "name": "name",
+    "teachers": "teacher",
+    "description": "description"
+  },
+  "@type": "Person",
+  "fullName": "Alberto Galeano Díaz",
+  "hometown": {
+    "@type": "Place",
+    "name": "Sevilla, España"
+  },
+  "age": 21,
+  "almaMater": {
+    "@type": "EducationalOrganization",
+    "name": "UPM (Universidad Politécnica de Madrid)"
+  },
+  "parents": [
+    {
+      "@type": "Person",
+      "name": "Jesús"
+    },
+    {
+      "@type": "Person",
+      "name": "María"
+    }
+  ],
+  "subjects": [
+    {
+      "@type": "Course",
+      "name": "ISII",
+      "teacher": [
+        {
+          "@type": "Person",
+          "name": "Jose A. Calvo-Manzano Villalón (coordinador)"
+        },
+        {
+          "@type": "Person",
+          "name": "Ana Maria Moreno Sanchez-Capuchino"
+        },
+        {
+          "@type": "Person",
+          "name": "Tomás San Feliu Gilabert"
+        }
+      ],
+      "description": "Curso dedicado al análisis de sistemas de información."
+    },
+    {
+      "@type": "Course",
+      "name": "Semantic Web, Linked Data and Knowledge Graphs",
+      "teacher": [
+        {
+          "@type": "Person",
+          "name": "Raul Garcia Castro"
+        },
+        {
+          "@type": "Person",
+          "name": "Oscar Corcho Garcia (Coordinador/a)"
+        }
+      ],
+      "description": "Exploración de tecnologías semánticas y su aplicación en la web."
+    },
+    {
+      "@type": "Course",
+      "name": "Fundamentos Cloud",
+      "teacher": [
+        {
+          "@type": "Person",
+          "name": "Sonia de Frutos"
+        },
+        {
+          "@type": "Person",
+          "name": "Adrián Mora"
+        }
+      ],
+      "description": "Introducción a los conceptos y servicios de computación en la nube."
+    }
+  ]
+}
