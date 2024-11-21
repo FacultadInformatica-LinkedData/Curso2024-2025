@@ -1,0 +1,67 @@
+{
+	"@context": "https://schema.org",
+	"@type": "Person",
+	"name": "Alejandro",
+	"homeLocation": {
+		"@type": "Place",
+		"name": "Madrid"
+	},
+	"age": 21,
+	"alumniOf": {
+		"@type": "CollegeOrUniversity",
+		"name": "Universidad Politécnica de Madrid",
+		"url": "https://upm.es"
+	},
+	"parents": [
+		{
+			"@type": "Person",
+			"name": "José"
+		},
+		{
+			"@type": "Person",
+			"name": "María"
+		}
+	],
+	"hasCourse": [
+		{
+			"@type": "Course",
+			"name": "Web Semántica",
+			"educationalLevel": "University",
+			"courseMode": "In-person",
+			"description": "Subject related to semantic web",
+			"provider": {
+				"@type": "EducationalOccupationalProgram",
+				"@id": "https://upm.es",
+				"name": "Universidad Politécnica de Madrid"
+			},
+			"courseInstructor": [
+				{
+					"@type": "Person",
+					"name": "Raúl"
+				},
+				{
+					"@type": "Person",
+					"name": "Óscar"
+				}
+			]
+		},
+		{
+			"@type": "Course",
+			"name": "Cisco CCNA",
+			"educationalLevel": "University",
+			"courseMode": "In-person",
+			"description": "Subject about networks",
+			"provider": {
+				"@type": "EducationalOccupationalProgram",
+				"@id": "https://upm.es",
+				"name": "Universidad Politécnica de Madrid"
+			},
+			"courseInstructor": [
+				{
+					"@type": "Person",
+					"name": "Sonia"
+				}
+			]
+		}
+	]
+}
