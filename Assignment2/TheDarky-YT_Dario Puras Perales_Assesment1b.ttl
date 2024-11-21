@@ -1,0 +1,29 @@
+@prefix ex: <http://example.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# Recurso que representa el aula 03, contiene un sensor y una mesa
+ex:ClassRoom03
+    ex:contains ex:Sensor347, ex:Table322 ;  # El aula contiene un sensor y una mesa
+    .
+
+# Recurso que representa el sensor 347, que está en el aula
+ex:Sensor347
+    ex:hasMeasurement ex:Measurement8432 ;  # El sensor hizo una medición, referenciada como Measurement8432
+    .
+
+# Mediciones capturadas por el sensor
+ex:Measurement8432
+    ex:hasTemperature 29 ;  # La temperatura registrada por el sensor fue de 29 grados (Celsius)
+    ex:atTime "2022-09-12T12:01:12"^^xsd:dateTime ;  # Fecha y hora exacta de la medición
+    .
+
+# Recurso que representa la mesa 322, también contenida en el aula
+ex:Table322
+    ex:hasOwner ex:ETSIInformaticos ;  # Esta mesa tiene un propietario, la ETSI de Informáticos
+    .
+
+# Información sobre el propietario de la mesa, ETSIInformáticos
+ex:ETSIInformaticos
+    ex:hasName "ETSI Informáticos" ;  # Nombre completo del propietario, en este caso es un departamento o grupo
+    .
+
