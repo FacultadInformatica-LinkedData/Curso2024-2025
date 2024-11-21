@@ -1,0 +1,82 @@
+{
+  "@context": {
+    "name": "http://schema.org/name",
+    "homeLocation": "http://schema.org/homeLocation",
+    "age": "http://schema.org/age",
+    "almaMater": {
+      "@id": "http://schema.org/alumniOf",
+      "@type": "@id"
+    },
+    "parents": {
+      "@id": "http://schema.org/parents",
+      "@container": "@set"
+    },
+    "subjects": "http://schema.org/Course",
+    "teachers": "http://schema.org/Person",
+    "description": "http://schema.org/description"
+  },
+  "@graph": [
+    {
+      "@type": "http://schema.org/Person",
+      "@id": "http://example.org/person/1",
+      "name": "Diego Mendaña Álvarez",
+      "homeLocation": "Ponferrada",
+      "age": 21,
+      "almaMater": {
+        "@id": "http://example.org/university/upm",
+        "@type": "http://schema.org/CollegeOrUniversity",
+        "name": "UPM"
+      },
+      "parents": [
+        {
+          "@type": "http://schema.org/Person",
+          "name": "Juan Carlos",
+          "roleName": "father"
+        },
+        {
+          "@type": "http://schema.org/Person",
+          "name": "María Carmen",
+          "roleName": "mother"
+        }
+      ],
+      "subjects": [
+        {
+          "@type": "http://schema.org/Course",
+          "name": "Web Semántica, Linked Data Y Grafos De Conocimientos",
+          "teachers": [
+            {
+              "@type": "http://schema.org/Person",
+              "@id": "http://example.org/teacher/OCorcho",
+              "name": "Oscar Corcho"
+            }
+          ],
+          "description": "fundamentos metodológicos y tecnológicos implicados en la generación y publicación de vocabularios y datos en la Web de datos enlazados"
+        },
+        {
+          "@type": "http://schema.org/Course",
+          "name": "GPTI",
+          "teachers": [
+            {
+              "@type": "http://schema.org/Person",
+              "@id": "http://example.org/teacher/EdmundoTovar",
+              "name": "Edmundo Tovar"
+            }
+          ],
+          "description": "En esta asignatura se tratan los elementos de una organización, la gestión por procesos, y modelos de calidad aplicados a organizaciones de TI"
+        },
+        {
+          "@type": "http://schema.org/Course",
+          "name": "Tecnologías de Red Cisco: CCNA",
+          "teachers": [
+            {
+              "@type": "http://schema.org/Person",
+              "@id": "http://example.org/teacher/MiguelJimenez",
+              "name": "Miguel Jimenez"
+            }
+          ],
+          "description": "Ampliación de redes de computadores"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+    "@context": {
+      "as2": "http://assignment2.org/",
+      "xsd": "http://www.w3.org/2001/XMLSchema#"
+    },
+    "@graph": [
+      {
+        "@id": "as2:Class01",
+        "as2:includes": [
+          {
+            "@id": "as2:Sensor029"
+          },
+          {
+            "@id": "as2:Computer101"
+          }
+        ]
+      },
+      {
+        "@id": "as2:Computer101",
+        "as2:hasOwner": {
+          "@id": "as2:User10A"
+        }
+      },
+      {
+        "@id": "as2:Sensor029",
+        "as2:hasMeasurement": {
+          "@id": "as2:Measurement8401"
+        }
+      },
+      {
+        "@id": "as2:Measurement8401",
+        "as2:hasTemperature": 29,
+        "as2:atTime": {
+          "@value": "2010-06-12T12:00:12",
+          "@type": "xsd:dateTime"
+        }
+      },
+      {
+        "@id": "as2:User10A",
+        "as2:hasName": "Pedro"
+      }
+    ]
+  }
+  
