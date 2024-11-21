@@ -1,0 +1,67 @@
+{
+    "@context": {
+      "name": "http://schema.org/name",
+      "hometown": "http://schema.org/hometown",
+      "age": "http://schema.org/age",
+      "almaMater": "http://schema.org/almaMater",
+      "parent": "http://schema.org/parent",
+      "subject": "http://schema.org/subject",
+      "teacher": "http://schema.org/teacher",
+      "description": "http://schema.org/description"
+    },
+    "@type": "Person",
+    "name": "Cesar Ruiz Deiros",
+    "hometown": "Alpedrete",
+    "age": 21,
+    "almaMater": "Universidad Politecnica de Madrid",
+    "parent": [
+      {
+        "name": "Angel Ruiz"
+      },
+      {
+        "name": "Montse Deiros"
+      }
+    ],
+    "subject": [
+      {
+        "name": "Semantic web, linked data and knowledge graph",
+        "teacher": [
+          {
+            "name": "Oscar"
+          },
+          {
+            "name": "Daniel"
+          }
+        ],
+        "description": "Introducction to linked data, knowledge graph and semantic web."
+      },
+      {
+        "name": "Administracion sistemas infomaticos",
+        "teacher": [
+          {
+            "name": "Francisco"
+          }
+        ],
+        "description": "Introducction to Azure."
+      },
+      {
+        "name":"GPTI",
+        "teacher": [
+            {
+                "name":"Ricardo"
+            }
+        ],
+        "description":"Gestion tecnologias de la informacion."
+      },
+      {
+        "name":"EPAC",
+        "teacher":[
+            {
+                "name":"Patricia"
+            }
+        ],
+        "description":"Ingles profesional y academico"
+      }
+    ]
+  }
+  
