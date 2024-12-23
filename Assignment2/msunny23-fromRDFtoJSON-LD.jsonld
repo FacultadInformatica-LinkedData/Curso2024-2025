@@ -1,0 +1,41 @@
+{
+    "@context": {
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "contains": "http://www.w3.org/2001/XMLSchema#contains",
+      "hasMeasurement": "http://www.w3.org/2001/XMLSchema#hasMeasurement",
+      "hasTemperature": "http://www.w3.org/2001/XMLSchema#hasTemperature",
+      "atTime": {
+        "@id": "http://www.w3.org/2001/XMLSchema#atTime",
+        "@type": "xsd:dateTime"
+      },
+      "hasOwner": "http://www.w3.org/2001/XMLSchema#hasOwner",
+      "hasName": "http://www.w3.org/2001/XMLSchema#hasName"
+    },
+    "@graph": [
+      {
+        "@id": "http://example.org#ClassRoom03",
+        "contains": [
+          { "@id": "http://example.org#Sensor347" },
+          { "@id": "http://example.org#Table322" }
+        ]
+      },
+      {
+        "@id": "http://example.org#Sensor347",
+        "hasMeasurement": { "@id": "http://example.org#Measurement8432" }
+      },
+      {
+        "@id": "http://example.org#Measurement8432",
+        "hasTemperature": 29,
+        "atTime": "2022-09-12T12:01:12"
+      },
+      {
+        "@id": "http://example.org#Table322",
+        "hasOwner": { "@id": "http://example.org#ETSIInformaticos" }
+      },
+      {
+        "@id": "http://example.org#ETSIInformaticos",
+        "hasName": "ETSI Informáticos"
+      }
+    ]
+  }
+  
