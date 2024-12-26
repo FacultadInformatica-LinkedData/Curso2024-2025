@@ -1,0 +1,167 @@
+{
+    "format": "tsv",
+    "separator": "\t",
+    "lineSeparator": "\n",
+    "encoding": "UTF-8",
+    "quoteAll": false,
+    "outputColumnHeaders": true,
+    "outputBlankRows": false,
+    "columns": [
+      {
+        "name": "ID",
+        "reconSettings": {
+          "output": "entity-name",
+          "blankUnmatchedCells": false,
+          "linkToEntityPages": true
+        },
+        "dateSettings": {
+          "format": "iso-8601",
+          "useLocalTimeZone": false,
+          "omitTime": false
+        }
+      },
+      {
+        "name": "NAME",
+        "reconSettings": {
+          "output": "entity-name",
+          "blankUnmatchedCells": false,
+          "linkToEntityPages": true
+        },
+        "dateSettings": {
+          "format": "iso-8601",
+          "useLocalTimeZone": false,
+          "omitTime": false
+        }
+      },
+      {
+        "name": "SCHEDULE",
+        "reconSettings": {
+          "output": "entity-name",
+          "blankUnmatchedCells": false,
+          "linkToEntityPages": true
+        },
+        "dateSettings": {
+          "format": "iso-8601",
+          "useLocalTimeZone": false,
+          "omitTime": false
+        }
+      },
+      {
+        "name": "STREET_NAME",
+        "reconSettings": {
+          "output": "entity-name",
+          "blankUnmatchedCells": false,
+          "linkToEntityPages": true
+        },
+        "dateSettings": {
+          "format": "iso-8601",
+          "useLocalTimeZone": false,
+          "omitTime": false
+        }
+      },
+      {
+        "name": "same_as_wikidata_street_name",
+        "reconSettings": {
+          "output": "entity-name",
+          "blankUnmatchedCells": false,
+          "linkToEntityPages": true
+        },
+        "dateSettings": {
+          "format": "iso-8601",
+          "useLocalTimeZone": false,
+          "omitTime": false
+        }
+      },
+      {
+        "name": "STRET_NUMBER",
+        "reconSettings": {
+          "output": "entity-name",
+          "blankUnmatchedCells": false,
+          "linkToEntityPages": true
+        },
+        "dateSettings": {
+          "format": "iso-8601",
+          "useLocalTimeZone": false,
+          "omitTime": false
+        }
+      },
+      {
+        "name": "NEIGHBOURHOOD",
+        "reconSettings": {
+          "output": "entity-name",
+          "blankUnmatchedCells": false,
+          "linkToEntityPages": true
+        },
+        "dateSettings": {
+          "format": "iso-8601",
+          "useLocalTimeZone": false,
+          "omitTime": false
+        }
+      },
+      {
+        "name": "same_as_wikidata_neighbourhood",
+        "reconSettings": {
+          "output": "entity-name",
+          "blankUnmatchedCells": false,
+          "linkToEntityPages": true
+        },
+        "dateSettings": {
+          "format": "iso-8601",
+          "useLocalTimeZone": false,
+          "omitTime": false
+        }
+      },
+      {
+        "name": "DISTRICT",
+        "reconSettings": {
+          "output": "entity-name",
+          "blankUnmatchedCells": false,
+          "linkToEntityPages": true
+        },
+        "dateSettings": {
+          "format": "iso-8601",
+          "useLocalTimeZone": false,
+          "omitTime": false
+        }
+      },
+      {
+        "name": "same_as_wikidata_district",
+        "reconSettings": {
+          "output": "entity-name",
+          "blankUnmatchedCells": false,
+          "linkToEntityPages": true
+        },
+        "dateSettings": {
+          "format": "iso-8601",
+          "useLocalTimeZone": false,
+          "omitTime": false
+        }
+      },
+      {
+        "name": "VEHICLE_TYPE",
+        "reconSettings": {
+          "output": "entity-name",
+          "blankUnmatchedCells": false,
+          "linkToEntityPages": true
+        },
+        "dateSettings": {
+          "format": "iso-8601",
+          "useLocalTimeZone": false,
+          "omitTime": false
+        }
+      },
+      {
+        "name": "TOTAL_SLOTS",
+        "reconSettings": {
+          "output": "entity-name",
+          "blankUnmatchedCells": false,
+          "linkToEntityPages": true
+        },
+        "dateSettings": {
+          "format": "iso-8601",
+          "useLocalTimeZone": false,
+          "omitTime": false
+        }
+      }
+    ]
+  }

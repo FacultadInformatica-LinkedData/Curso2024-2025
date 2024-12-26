@@ -1,0 +1,2041 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix sd: <http://www.w3.org/ns/sparql-service-description#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix ns: <https://websemantica.net/Group03/ontology/CamarasBcn#> .
+@prefix sc: <https://schema.org/> .
+
+ns:Barrio_1 rdf:type ns:Barrio ;
+	ns:enDistrito ns:Distrito_1 ;
+	ns:tieneCodigoBarrio "1"^^xsd:integer ;
+	ns:tieneNombreBarrio "el Raval" .
+
+ns:Barrio_10 rdf:type ns:Barrio ;
+	ns:enDistrito ns:Distrito_2 ;
+	ns:tieneCodigoBarrio "10"^^xsd:integer ;
+	ns:tieneNombreBarrio "Sant Antoni" .
+
+ns:Barrio_11 rdf:type ns:Barrio ;
+	ns:enDistrito ns:Distrito_3 ;
+	ns:tieneCodigoBarrio "11"^^xsd:integer ;
+	ns:tieneNombreBarrio "el Poble Sec" .
+
+ns:Barrio_13 rdf:type ns:Barrio ;
+	ns:enDistrito ns:Distrito_3 ;
+	ns:tieneCodigoBarrio "13"^^xsd:integer ;
+	ns:tieneNombreBarrio "la Marina de Port" .
+
+ns:Barrio_14 rdf:type ns:Barrio ;
+	ns:enDistrito ns:Distrito_3 ;
+	ns:tieneCodigoBarrio "14"^^xsd:integer ;
+	ns:tieneNombreBarrio "la Font de la Guatlla" .
+
+ns:Barrio_15 rdf:type ns:Barrio ;
+	ns:enDistrito ns:Distrito_3 ;
+	ns:tieneCodigoBarrio "15"^^xsd:integer ;
+	ns:tieneNombreBarrio "Hostafrancs" .
+
+ns:Barrio_16 rdf:type ns:Barrio ;
+	ns:enDistrito ns:Distrito_3 ;
+	ns:tieneCodigoBarrio "16"^^xsd:integer ;
+	ns:tieneNombreBarrio "la Bordeta" .
+
+ns:Barrio_18 rdf:type ns:Barrio ;
+	ns:enDistrito ns:Distrito_3 ;
+	ns:tieneCodigoBarrio "18"^^xsd:integer ;
+	ns:tieneNombreBarrio "Sants" .
+
+ns:Barrio_19 rdf:type ns:Barrio ;
+	ns:enDistrito ns:Distrito_4 ;
+	ns:tieneCodigoBarrio "19"^^xsd:integer ;
+	ns:tieneNombreBarrio "les Corts" .
+
+ns:Barrio_2 rdf:type ns:Barrio ;
+	ns:enDistrito ns:Distrito_1 ;
+	ns:tieneCodigoBarrio "2"^^xsd:integer ;
+	ns:tieneNombreBarrio "el Barri Gòtic" .
+
+ns:Barrio_20 rdf:type ns:Barrio ;
+	ns:enDistrito ns:Distrito_4 ;
+	ns:tieneCodigoBarrio "20"^^xsd:integer ;
+	ns:tieneNombreBarrio "la Maternitat i Sant Ramon" .
+
+ns:Barrio_21 rdf:type ns:Barrio ;
+	ns:enDistrito ns:Distrito_4 ;
+	ns:tieneCodigoBarrio "21"^^xsd:integer ;
+	ns:tieneNombreBarrio "Pedralbes" .
+
+ns:Barrio_23 rdf:type ns:Barrio ;
+	ns:enDistrito ns:Distrito_5 ;
+	ns:tieneCodigoBarrio "23"^^xsd:integer ;
+	ns:tieneNombreBarrio "Sarrià" .
+
+ns:Barrio_24 rdf:type ns:Barrio ;
+	ns:enDistrito ns:Distrito_5 ;
+	ns:tieneCodigoBarrio "24"^^xsd:integer ;
+	ns:tieneNombreBarrio "les Tres Torres" .
+
+ns:Barrio_25 rdf:type ns:Barrio ;
+	ns:enDistrito ns:Distrito_5 ;
+	ns:tieneCodigoBarrio "25"^^xsd:integer ;
+	ns:tieneNombreBarrio "Sant Gervasi-la Bonanova" .
+
+ns:Barrio_26 rdf:type ns:Barrio ;
+	ns:enDistrito ns:Distrito_5 ;
+	ns:tieneCodigoBarrio "26"^^xsd:integer ;
+	ns:tieneNombreBarrio "Sant Gervasi-Galvany" .
+
+ns:Barrio_27 rdf:type ns:Barrio ;
+	ns:enDistrito ns:Distrito_5 ;
+	ns:tieneCodigoBarrio "27"^^xsd:integer ;
+	ns:tieneNombreBarrio "el Putxet i el Farró" .
+
+ns:Barrio_3 rdf:type ns:Barrio ;
+	ns:enDistrito ns:Distrito_1 ;
+	ns:tieneCodigoBarrio "3"^^xsd:integer ;
+	ns:tieneNombreBarrio "la Barceloneta" .
+
+ns:Barrio_30 rdf:type ns:Barrio ;
+	ns:enDistrito ns:Distrito_6 ;
+	ns:tieneCodigoBarrio "30"^^xsd:integer ;
+	ns:tieneNombreBarrio "la Salut" .
+
+ns:Barrio_31 rdf:type ns:Barrio ;
+	ns:enDistrito ns:Distrito_6 ;
+	ns:tieneCodigoBarrio "31"^^xsd:integer ;
+	ns:tieneNombreBarrio "la Vila de Gràcia" .
+
+ns:Barrio_33 rdf:type ns:Barrio ;
+	ns:enDistrito ns:Distrito_7 ;
+	ns:tieneCodigoBarrio "33"^^xsd:integer ;
+	ns:tieneNombreBarrio "el Baix Guinardó" .
+
+ns:Barrio_35 rdf:type ns:Barrio ;
+	ns:enDistrito ns:Distrito_7 ;
+	ns:tieneCodigoBarrio "35"^^xsd:integer ;
+	ns:tieneNombreBarrio "el Guinardó" .
+
+ns:Barrio_36 rdf:type ns:Barrio ;
+	ns:enDistrito ns:Distrito_7 ;
+	ns:tieneCodigoBarrio "36"^^xsd:integer ;
+	ns:tieneNombreBarrio "la Font d'en Fargues" .
+
+ns:Barrio_43 rdf:type ns:Barrio ;
+	ns:enDistrito ns:Distrito_7 ;
+	ns:tieneCodigoBarrio "43"^^xsd:integer ;
+	ns:tieneNombreBarrio "Horta" .
+
+ns:Barrio_44 rdf:type ns:Barrio ;
+	ns:enDistrito ns:Distrito_8 ;
+	ns:tieneCodigoBarrio "44"^^xsd:integer ;
+	ns:tieneNombreBarrio "Vilapicina i la Torre Llobeta" .
+
+ns:Barrio_45 rdf:type ns:Barrio ;
+	ns:enDistrito ns:Distrito_8 ;
+	ns:tieneCodigoBarrio "45"^^xsd:integer ;
+	ns:tieneNombreBarrio "Porta" .
+
+ns:Barrio_48 rdf:type ns:Barrio ;
+	ns:enDistrito ns:Distrito_8 ;
+	ns:tieneCodigoBarrio "48"^^xsd:integer ;
+	ns:tieneNombreBarrio "la Guineueta" .
+
+ns:Barrio_5 rdf:type ns:Barrio ;
+	ns:enDistrito ns:Distrito_2 ;
+	ns:tieneCodigoBarrio "5"^^xsd:integer ;
+	ns:tieneNombreBarrio "el Fort Pienc" .
+
+ns:Barrio_52 rdf:type ns:Barrio ;
+	ns:enDistrito ns:Distrito_8 ;
+	ns:tieneCodigoBarrio "52"^^xsd:integer ;
+	ns:tieneNombreBarrio "la Prosperitat" .
+
+ns:Barrio_53 rdf:type ns:Barrio ;
+	ns:enDistrito ns:Distrito_8 ;
+	ns:tieneCodigoBarrio "53"^^xsd:integer ;
+	ns:tieneNombreBarrio "la Trinitat Nova" .
+
+ns:Barrio_59 rdf:type ns:Barrio ;
+	ns:enDistrito ns:Distrito_9 ;
+	ns:tieneCodigoBarrio "59"^^xsd:integer ;
+	ns:tieneNombreBarrio "el Bon Pastor" .
+
+ns:Barrio_6 rdf:type ns:Barrio ;
+	ns:enDistrito ns:Distrito_2 ;
+	ns:tieneCodigoBarrio "6"^^xsd:integer ;
+	ns:tieneNombreBarrio "la Sagrada Família" .
+
+ns:Barrio_60 rdf:type ns:Barrio ;
+	ns:enDistrito ns:Distrito_9 ;
+	ns:tieneCodigoBarrio "60"^^xsd:integer ;
+	ns:tieneNombreBarrio "Sant Andreu" .
+
+ns:Barrio_61 rdf:type ns:Barrio ;
+	ns:enDistrito ns:Distrito_9 ;
+	ns:tieneCodigoBarrio "61"^^xsd:integer ;
+	ns:tieneNombreBarrio "la Sagrera" .
+
+ns:Barrio_62 rdf:type ns:Barrio ;
+	ns:enDistrito ns:Distrito_9 ;
+	ns:tieneCodigoBarrio "62"^^xsd:integer ;
+	ns:tieneNombreBarrio "el Congrés i els Indians" .
+
+ns:Barrio_63 rdf:type ns:Barrio ;
+	ns:enDistrito ns:Distrito_9 ;
+	ns:tieneCodigoBarrio "63"^^xsd:integer ;
+	ns:tieneNombreBarrio "Navas" .
+
+ns:Barrio_65 rdf:type ns:Barrio ;
+	ns:enDistrito ns:Distrito_10 ;
+	ns:tieneCodigoBarrio "65"^^xsd:integer ;
+	ns:tieneNombreBarrio "el Clot" .
+
+ns:Barrio_66 rdf:type ns:Barrio ;
+	ns:enDistrito ns:Distrito_10 ;
+	ns:tieneCodigoBarrio "66"^^xsd:integer ;
+	ns:tieneNombreBarrio "el Parc i la Llacuna del Poblenou" .
+
+ns:Barrio_67 rdf:type ns:Barrio ;
+	ns:enDistrito ns:Distrito_10 ;
+	ns:tieneCodigoBarrio "67"^^xsd:integer ;
+	ns:tieneNombreBarrio "la Vila Olímpica del Poblenou" .
+
+ns:Barrio_68 rdf:type ns:Barrio ;
+	ns:enDistrito ns:Distrito_10 ;
+	ns:tieneCodigoBarrio "68"^^xsd:integer ;
+	ns:tieneNombreBarrio "el Poblenou" .
+
+ns:Barrio_69 rdf:type ns:Barrio ;
+	ns:enDistrito ns:Distrito_10 ;
+	ns:tieneCodigoBarrio "69"^^xsd:integer ;
+	ns:tieneNombreBarrio "Diagonal Mar i el Front Marítim del Poblenou" .
+
+ns:Barrio_7 rdf:type ns:Barrio ;
+	ns:enDistrito ns:Distrito_2 ;
+	ns:tieneCodigoBarrio "7"^^xsd:integer ;
+	ns:tieneNombreBarrio "la Dreta de l'Eixample" .
+
+ns:Barrio_70 rdf:type ns:Barrio ;
+	ns:enDistrito ns:Distrito_10 ;
+	ns:tieneCodigoBarrio "70"^^xsd:integer ;
+	ns:tieneNombreBarrio "el Besòs i el Maresme" .
+
+ns:Barrio_71 rdf:type ns:Barrio ;
+	ns:enDistrito ns:Distrito_10 ;
+	ns:tieneCodigoBarrio "71"^^xsd:integer ;
+	ns:tieneNombreBarrio "Provençals del Poblenou" .
+
+ns:Barrio_72 rdf:type ns:Barrio ;
+	ns:enDistrito ns:Distrito_10 ;
+	ns:tieneCodigoBarrio "72"^^xsd:integer ;
+	ns:tieneNombreBarrio "Sant Martí­ de Provençals" .
+
+ns:Barrio_8 rdf:type ns:Barrio ;
+	ns:enDistrito ns:Distrito_2 ;
+	ns:tieneCodigoBarrio "8"^^xsd:integer ;
+	ns:tieneNombreBarrio "l'Antiga Esquerra de l'Eixample" .
+
+ns:Barrio_9 rdf:type ns:Barrio ;
+	ns:enDistrito ns:Distrito_2 ;
+	ns:tieneCodigoBarrio "9"^^xsd:integer ;
+	ns:tieneNombreBarrio "la Nova Esquerra de l'Eixample" .
+
+ns:Camara_417378 rdf:type ns:Camara ;
+	sc:latitud "41.3563502"^^xsd:decimal ;
+	sc:longitud "2.1420347"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_13 ;
+	ns:tieneCodigoCamara "DOMO" ;
+	ns:tieneFechaAltaCamara "2000-01-01T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "417378"^^xsd:integer ;
+	ns:tieneNumeroCamara "7"^^xsd:integer ;
+	ns:tieneSoporteCamara "Mastil" ;
+	ns:tieneTipoCamara "Càmera mòbil" ;
+	ns:tieneX_ETRS89Camara "428233480"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4578671556"^^xsd:integer .
+
+ns:Camara_417385 rdf:type ns:Camara ;
+	sc:latitud "41.3698717"^^xsd:decimal ;
+	sc:longitud "2.1424359"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_14 ;
+	ns:tieneCodigoCamara "DOMO" ;
+	ns:tieneFechaAltaCamara "2003-05-22T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "417385"^^xsd:integer ;
+	ns:tieneNumeroCamara "111"^^xsd:integer ;
+	ns:tieneSoporteCamara "Mastil" ;
+	ns:tieneTipoCamara "Càmera mòbil" ;
+	ns:tieneX_ETRS89Camara "428281887"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4580172416"^^xsd:integer .
+
+ns:Camara_417387 rdf:type ns:Camara ;
+	sc:latitud "41.3750186"^^xsd:decimal ;
+	sc:longitud "2.149934"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_11 ;
+	ns:tieneCodigoCamara "CIM" ;
+	ns:tieneFechaAltaCamara "2000-01-01T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "417387"^^xsd:integer ;
+	ns:tieneNumeroCamara "40"^^xsd:integer ;
+	ns:tieneSoporteCamara "Mastil" ;
+	ns:tieneTipoCamara "Càmera mòbil" ;
+	ns:tieneX_ETRS89Camara "428914560"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4580737558"^^xsd:integer .
+
+ns:Camara_417388 rdf:type ns:Camara ;
+	sc:latitud "41.3750186"^^xsd:decimal ;
+	sc:longitud "2.149934"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_11 ;
+	ns:tieneCodigoCamara "CIF" ;
+	ns:tieneFechaAltaCamara "2000-01-01T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "417388"^^xsd:integer ;
+	ns:tieneNumeroCamara "41"^^xsd:integer ;
+	ns:tieneSoporteCamara "Mastil" ;
+	ns:tieneTipoCamara "Càmera fixa" ;
+	ns:tieneX_ETRS89Camara "428914560"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4580737558"^^xsd:integer .
+
+ns:Camara_417393 rdf:type ns:Camara ;
+	sc:latitud "41.3751213"^^xsd:decimal ;
+	sc:longitud "2.1565116"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_11 ;
+	ns:tieneCodigoCamara "DOMO" ;
+	ns:tieneFechaAltaCamara "2000-01-01T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "417393"^^xsd:integer ;
+	ns:tieneNumeroCamara "110"^^xsd:integer ;
+	ns:tieneSoporteCamara "Mastil" ;
+	ns:tieneTipoCamara "Càmera mòbil" ;
+	ns:tieneX_ETRS89Camara "429464719"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4580743626"^^xsd:integer .
+
+ns:Camara_417395 rdf:type ns:Camara ;
+	sc:latitud "41.3777635"^^xsd:decimal ;
+	sc:longitud "2.1529334"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_10 ;
+	ns:tieneCodigoCamara "CIM" ;
+	ns:tieneFechaAltaCamara "2000-01-01T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "417395"^^xsd:integer ;
+	ns:tieneNumeroCamara "87"^^xsd:integer ;
+	ns:tieneSoporteCamara "Mastil" ;
+	ns:tieneTipoCamara "Càmera mòbil" ;
+	ns:tieneX_ETRS89Camara "429168369"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4581039866"^^xsd:integer .
+
+ns:Camara_417400 rdf:type ns:Camara ;
+	sc:latitud "41.3798542"^^xsd:decimal ;
+	sc:longitud "2.1483874"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_9 ;
+	ns:tieneCodigoCamara "CIM" ;
+	ns:tieneFechaAltaCamara "2000-01-01T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "417400"^^xsd:integer ;
+	ns:tieneNumeroCamara "86"^^xsd:integer ;
+	ns:tieneSoporteCamara "Mastil" ;
+	ns:tieneTipoCamara "Càmera mòbil" ;
+	ns:tieneX_ETRS89Camara "428790508"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4581275691"^^xsd:integer .
+
+ns:Camara_417403 rdf:type ns:Camara ;
+	sc:latitud "41.382194"^^xsd:decimal ;
+	sc:longitud "2.1470847"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_9 ;
+	ns:tieneCodigoCamara "CIM" ;
+	ns:tieneFechaAltaCamara "2003-05-22T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "417403"^^xsd:integer ;
+	ns:tieneNumeroCamara "85"^^xsd:integer ;
+	ns:tieneSoporteCamara "Mastil" ;
+	ns:tieneTipoCamara "Càmera mòbil" ;
+	ns:tieneX_ETRS89Camara "428684133"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4581536520"^^xsd:integer .
+
+ns:Camara_417408 rdf:type ns:Camara ;
+	sc:latitud "41.3804385"^^xsd:decimal ;
+	sc:longitud "2.1428618"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_15 ;
+	ns:tieneCodigoCamara "CIM" ;
+	ns:tieneFechaAltaCamara "2000-01-01T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "417408"^^xsd:integer ;
+	ns:tieneNumeroCamara "81"^^xsd:integer ;
+	ns:tieneSoporteCamara "Mastil" ;
+	ns:tieneTipoCamara "Càmera mòbil" ;
+	ns:tieneX_ETRS89Camara "428329109"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4581345169"^^xsd:integer .
+
+ns:Camara_417410 rdf:type ns:Camara ;
+	sc:latitud "41.3804385"^^xsd:decimal ;
+	sc:longitud "2.1428618"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_15 ;
+	ns:tieneCodigoCamara "CIF" ;
+	ns:tieneFechaAltaCamara "2000-01-01T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "417410"^^xsd:integer ;
+	ns:tieneNumeroCamara "115"^^xsd:integer ;
+	ns:tieneSoporteCamara "Mastil" ;
+	ns:tieneTipoCamara "Càmera fixa" ;
+	ns:tieneX_ETRS89Camara "428329109"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4581345169"^^xsd:integer .
+
+ns:Camara_417424 rdf:type ns:Camara ;
+	sc:latitud "41.3926101"^^xsd:decimal ;
+	sc:longitud "2.1437436"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_26 ;
+	ns:tieneCodigoCamara "CIM" ;
+	ns:tieneFechaAltaCamara "2000-01-01T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "417424"^^xsd:integer ;
+	ns:tieneNumeroCamara "88"^^xsd:integer ;
+	ns:tieneSoporteCamara "Mastil" ;
+	ns:tieneTipoCamara "Càmera mòbil" ;
+	ns:tieneX_ETRS89Camara "428416192"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4582695658"^^xsd:integer .
+
+ns:Camara_417426 rdf:type ns:Camara ;
+	sc:latitud "41.3939567"^^xsd:decimal ;
+	sc:longitud "2.149535"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_8 ;
+	ns:tieneCodigoCamara "DOMO" ;
+	ns:tieneFechaAltaCamara "2000-01-01T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "417426"^^xsd:integer ;
+	ns:tieneNumeroCamara "93"^^xsd:integer ;
+	ns:tieneSoporteCamara "ColumnaAuxiliar" ;
+	ns:tieneTipoCamara "Càmera mòbil" ;
+	ns:tieneX_ETRS89Camara "428901834"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4582840405"^^xsd:integer .
+
+ns:Camara_417428 rdf:type ns:Camara ;
+	sc:latitud "41.3960092"^^xsd:decimal ;
+	sc:longitud "2.149585"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_26 ;
+	ns:tieneCodigoCamara "CIM" ;
+	ns:tieneFechaAltaCamara "2000-01-01T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "417428"^^xsd:integer ;
+	ns:tieneNumeroCamara "76"^^xsd:integer ;
+	ns:tieneSoporteCamara "Mastil" ;
+	ns:tieneTipoCamara "Càmera mòbil" ;
+	ns:tieneX_ETRS89Camara "428908252"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4583068222"^^xsd:integer .
+
+ns:Camara_417430 rdf:type ns:Camara ;
+	sc:latitud "41.4011861"^^xsd:decimal ;
+	sc:longitud "2.1473759"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_26 ;
+	ns:tieneCodigoCamara "CIF" ;
+	ns:tieneFechaAltaCamara "2000-01-01T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "417430"^^xsd:integer ;
+	ns:tieneNumeroCamara "119"^^xsd:integer ;
+	ns:tieneSoporteCamara "Mastil" ;
+	ns:tieneTipoCamara "Càmera fixa" ;
+	ns:tieneX_ETRS89Camara "428729224"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4583644732"^^xsd:integer .
+
+ns:Camara_417431 rdf:type ns:Camara ;
+	sc:latitud "41.4011861"^^xsd:decimal ;
+	sc:longitud "2.1473759"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_26 ;
+	ns:tieneCodigoCamara "CIM" ;
+	ns:tieneFechaAltaCamara "2000-01-01T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "417431"^^xsd:integer ;
+	ns:tieneNumeroCamara "39"^^xsd:integer ;
+	ns:tieneSoporteCamara "Mastil" ;
+	ns:tieneTipoCamara "Càmera mòbil" ;
+	ns:tieneX_ETRS89Camara "428729224"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4583644732"^^xsd:integer .
+
+ns:Camara_417433 rdf:type ns:Camara ;
+	sc:latitud "41.4045265"^^xsd:decimal ;
+	sc:longitud "2.140709"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_27 ;
+	ns:tieneCodigoCamara "DOMO" ;
+	ns:tieneFechaAltaCamara "2000-01-01T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "417433"^^xsd:integer ;
+	ns:tieneNumeroCamara "37"^^xsd:integer ;
+	ns:tieneSoporteCamara "Mastil" ;
+	ns:tieneTipoCamara "Càmera mòbil" ;
+	ns:tieneX_ETRS89Camara "428175611"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4584021145"^^xsd:integer .
+
+ns:Camara_417434 rdf:type ns:Camara ;
+	sc:latitud "41.4045265"^^xsd:decimal ;
+	sc:longitud "2.140709"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_27 ;
+	ns:tieneCodigoCamara "CIF" ;
+	ns:tieneFechaAltaCamara "2000-01-01T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "417434"^^xsd:integer ;
+	ns:tieneNumeroCamara "127"^^xsd:integer ;
+	ns:tieneSoporteCamara "Mastil" ;
+	ns:tieneTipoCamara "Càmera fixa" ;
+	ns:tieneX_ETRS89Camara "428175611"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4584021145"^^xsd:integer .
+
+ns:Camara_417437 rdf:type ns:Camara ;
+	sc:latitud "41.4027648"^^xsd:decimal ;
+	sc:longitud "2.1380909"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_25 ;
+	ns:tieneCodigoCamara "CIM" ;
+	ns:tieneFechaAltaCamara "2000-01-01T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "417437"^^xsd:integer ;
+	ns:tieneNumeroCamara "75"^^xsd:integer ;
+	ns:tieneSoporteCamara "Mastil" ;
+	ns:tieneTipoCamara "Càmera mòbil" ;
+	ns:tieneX_ETRS89Camara "427954827"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4583827699"^^xsd:integer .
+
+ns:Camara_417481 rdf:type ns:Camara ;
+	sc:latitud "41.3866562"^^xsd:decimal ;
+	sc:longitud "2.1577329"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_8 ;
+	ns:tieneCodigoCamara "CIM" ;
+	ns:tieneFechaAltaCamara "2000-01-01T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "417481"^^xsd:integer ;
+	ns:tieneNumeroCamara "94"^^xsd:integer ;
+	ns:tieneSoporteCamara "Mastil" ;
+	ns:tieneTipoCamara "Càmera mòbil" ;
+	ns:tieneX_ETRS89Camara "429579299"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4582023174"^^xsd:integer .
+
+ns:Camara_417484 rdf:type ns:Camara ;
+	sc:latitud "41.3872254"^^xsd:decimal ;
+	sc:longitud "2.1651992"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_7 ;
+	ns:tieneCodigoCamara "CIM" ;
+	ns:tieneFechaAltaCamara "1900-01-01T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "417484"^^xsd:integer ;
+	ns:tieneNumeroCamara "1"^^xsd:integer ;
+	ns:tieneSoporteCamara "Mastil" ;
+	ns:tieneTipoCamara "Càmera mòbil" ;
+	ns:tieneX_ETRS89Camara "430204160"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4582080361"^^xsd:integer .
+
+ns:Camara_417485 rdf:type ns:Camara ;
+	sc:latitud "41.3872254"^^xsd:decimal ;
+	sc:longitud "2.1651992"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_7 ;
+	ns:tieneCodigoCamara "CIF" ;
+	ns:tieneFechaAltaCamara "1900-01-01T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "417485"^^xsd:integer ;
+	ns:tieneNumeroCamara "129"^^xsd:integer ;
+	ns:tieneSoporteCamara "Mastil" ;
+	ns:tieneTipoCamara "Càmera fixa" ;
+	ns:tieneX_ETRS89Camara "430204160"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4582080361"^^xsd:integer .
+
+ns:Camara_417488 rdf:type ns:Camara ;
+	sc:latitud "41.3887123"^^xsd:decimal ;
+	sc:longitud "2.1723334"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_7 ;
+	ns:tieneCodigoCamara "DOMO" ;
+	ns:tieneFechaAltaCamara "2000-01-01T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "417488"^^xsd:integer ;
+	ns:tieneNumeroCamara "2"^^xsd:integer ;
+	ns:tieneSoporteCamara "Mastil" ;
+	ns:tieneTipoCamara "Càmera mòbil" ;
+	ns:tieneX_ETRS89Camara "430802217"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4582239721"^^xsd:integer .
+
+ns:Camara_417489 rdf:type ns:Camara ;
+	sc:latitud "41.3887123"^^xsd:decimal ;
+	sc:longitud "2.1723334"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_7 ;
+	ns:tieneCodigoCamara "CIF" ;
+	ns:tieneFechaAltaCamara "2000-01-01T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "417489"^^xsd:integer ;
+	ns:tieneNumeroCamara "122"^^xsd:integer ;
+	ns:tieneSoporteCamara "Mastil" ;
+	ns:tieneTipoCamara "Càmera fixa" ;
+	ns:tieneX_ETRS89Camara "430802217"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4582239721"^^xsd:integer .
+
+ns:Camara_417493 rdf:type ns:Camara ;
+	sc:latitud "41.392172"^^xsd:decimal ;
+	sc:longitud "2.1650661"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_7 ;
+	ns:tieneCodigoCamara "CIM" ;
+	ns:tieneFechaAltaCamara "2000-01-01T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "417493"^^xsd:integer ;
+	ns:tieneNumeroCamara "9"^^xsd:integer ;
+	ns:tieneSoporteCamara "Mastil" ;
+	ns:tieneTipoCamara "Càmera mòbil" ;
+	ns:tieneX_ETRS89Camara "430198319"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4582629625"^^xsd:integer .
+
+ns:Camara_417494 rdf:type ns:Camara ;
+	sc:latitud "41.392172"^^xsd:decimal ;
+	sc:longitud "2.1650661"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_7 ;
+	ns:tieneCodigoCamara "CIF" ;
+	ns:tieneFechaAltaCamara "2000-01-01T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "417494"^^xsd:integer ;
+	ns:tieneNumeroCamara "117"^^xsd:integer ;
+	ns:tieneSoporteCamara "Mastil" ;
+	ns:tieneTipoCamara "Càmera fixa" ;
+	ns:tieneX_ETRS89Camara "430198319"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4582629625"^^xsd:integer .
+
+ns:Camara_417496 rdf:type ns:Camara ;
+	sc:latitud "41.3941533"^^xsd:decimal ;
+	sc:longitud "2.1651427"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_7 ;
+	ns:tieneCodigoCamara "CIM" ;
+	ns:tieneFechaAltaCamara "2000-01-01T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "417496"^^xsd:integer ;
+	ns:tieneNumeroCamara "21"^^xsd:integer ;
+	ns:tieneSoporteCamara "Mastil" ;
+	ns:tieneTipoCamara "Càmera mòbil" ;
+	ns:tieneX_ETRS89Camara "430206849"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4582849531"^^xsd:integer .
+
+ns:Camara_417498 rdf:type ns:Camara ;
+	sc:latitud "41.3906773"^^xsd:decimal ;
+	sc:longitud "2.1604895"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_8 ;
+	ns:tieneCodigoCamara "CIM" ;
+	ns:tieneFechaAltaCamara "2000-01-01T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "417498"^^xsd:integer ;
+	ns:tieneNumeroCamara "97"^^xsd:integer ;
+	ns:tieneSoporteCamara "Mastil" ;
+	ns:tieneTipoCamara "Càmera mòbil" ;
+	ns:tieneX_ETRS89Camara "429814094"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4582467419"^^xsd:integer .
+
+ns:Camara_417502 rdf:type ns:Camara ;
+	sc:latitud "41.3900843"^^xsd:decimal ;
+	sc:longitud "2.1549783"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_8 ;
+	ns:tieneCodigoCamara "CIM" ;
+	ns:tieneFechaAltaCamara "2000-01-01T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "417502"^^xsd:integer ;
+	ns:tieneNumeroCamara "95"^^xsd:integer ;
+	ns:tieneSoporteCamara "Mastil" ;
+	ns:tieneTipoCamara "Càmera mòbil" ;
+	ns:tieneX_ETRS89Camara "429352701"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4582406023"^^xsd:integer .
+
+ns:Camara_417506 rdf:type ns:Camara ;
+	sc:latitud "41.3991627"^^xsd:decimal ;
+	sc:longitud "2.1694817"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_7 ;
+	ns:tieneCodigoCamara "CIM" ;
+	ns:tieneFechaAltaCamara "2000-01-01T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "417506"^^xsd:integer ;
+	ns:tieneNumeroCamara "4"^^xsd:integer ;
+	ns:tieneSoporteCamara "Mastil" ;
+	ns:tieneTipoCamara "Càmera mòbil" ;
+	ns:tieneX_ETRS89Camara "430574912"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4583402183"^^xsd:integer .
+
+ns:Camara_417589 rdf:type ns:Camara ;
+	sc:latitud "41.385474"^^xsd:decimal ;
+	sc:longitud "2.169763"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_7 ;
+	ns:tieneCodigoCamara "CIM" ;
+	ns:tieneFechaAltaCamara "2000-01-01T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "417589"^^xsd:integer ;
+	ns:tieneNumeroCamara "10"^^xsd:integer ;
+	ns:tieneSoporteCamara "Mastil" ;
+	ns:tieneTipoCamara "Càmera mòbil" ;
+	ns:tieneX_ETRS89Camara "430583868"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4581882316"^^xsd:integer .
+
+ns:Camara_417590 rdf:type ns:Camara ;
+	sc:latitud "41.385474"^^xsd:decimal ;
+	sc:longitud "2.169763"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_7 ;
+	ns:tieneCodigoCamara "CIF" ;
+	ns:tieneFechaAltaCamara "2000-01-01T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "417590"^^xsd:integer ;
+	ns:tieneNumeroCamara "130"^^xsd:integer ;
+	ns:tieneSoporteCamara "Mastil" ;
+	ns:tieneTipoCamara "Càmera fixa" ;
+	ns:tieneX_ETRS89Camara "430583868"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4581882316"^^xsd:integer .
+
+ns:Camara_417592 rdf:type ns:Camara ;
+	sc:latitud "41.386932"^^xsd:decimal ;
+	sc:longitud "2.1715516"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_7 ;
+	ns:tieneCodigoCamara "DOMO" ;
+	ns:tieneFechaAltaCamara "2000-01-01T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "417592"^^xsd:integer ;
+	ns:tieneNumeroCamara "83"^^xsd:integer ;
+	ns:tieneSoporteCamara "Mastil" ;
+	ns:tieneTipoCamara "Càmera mòbil" ;
+	ns:tieneX_ETRS89Camara "430734962"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4582042719"^^xsd:integer .
+
+ns:Camara_417594 rdf:type ns:Camara ;
+	sc:latitud "41.3992541"^^xsd:decimal ;
+	sc:longitud "2.1812866"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_5 ;
+	ns:tieneCodigoCamara "CIF" ;
+	ns:tieneFechaAltaCamara "2000-01-01T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "417594"^^xsd:integer ;
+	ns:tieneNumeroCamara "125"^^xsd:integer ;
+	ns:tieneSoporteCamara "Mastil" ;
+	ns:tieneTipoCamara "Càmera fixa" ;
+	ns:tieneX_ETRS89Camara "431561819"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4583402911"^^xsd:integer .
+
+ns:Camara_417596 rdf:type ns:Camara ;
+	sc:latitud "41.4017662"^^xsd:decimal ;
+	sc:longitud "2.1800651"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_5 ;
+	ns:tieneCodigoCamara "CIM" ;
+	ns:tieneFechaAltaCamara "2000-01-01T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "417596"^^xsd:integer ;
+	ns:tieneNumeroCamara "100"^^xsd:integer ;
+	ns:tieneSoporteCamara "Mastil" ;
+	ns:tieneTipoCamara "Càmera mòbil" ;
+	ns:tieneX_ETRS89Camara "431462349"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4583682855"^^xsd:integer .
+
+ns:Camara_417598 rdf:type ns:Camara ;
+	sc:latitud "41.4008618"^^xsd:decimal ;
+	sc:longitud "2.176561"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_6 ;
+	ns:tieneCodigoCamara "CIM" ;
+	ns:tieneFechaAltaCamara "2000-01-01T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "417598"^^xsd:integer ;
+	ns:tieneNumeroCamara "22"^^xsd:integer ;
+	ns:tieneSoporteCamara "Mastil" ;
+	ns:tieneTipoCamara "Càmera mòbil" ;
+	ns:tieneX_ETRS89Camara "431168493"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4583585220"^^xsd:integer .
+
+ns:Camara_417600 rdf:type ns:Camara ;
+	sc:latitud "41.403803"^^xsd:decimal ;
+	sc:longitud "2.1757245"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_6 ;
+	ns:tieneCodigoCamara "CIM" ;
+	ns:tieneFechaAltaCamara "2000-01-01T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "417600"^^xsd:integer ;
+	ns:tieneNumeroCamara "101"^^xsd:integer ;
+	ns:tieneSoporteCamara "Mastil" ;
+	ns:tieneTipoCamara "Càmera mòbil" ;
+	ns:tieneX_ETRS89Camara "431101666"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4583912340"^^xsd:integer .
+
+ns:Camara_417602 rdf:type ns:Camara ;
+	sc:latitud "41.4070899"^^xsd:decimal ;
+	sc:longitud "2.1846069"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_65 ;
+	ns:tieneCodigoCamara "CIM" ;
+	ns:tieneFechaAltaCamara "2000-01-01T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "417602"^^xsd:integer ;
+	ns:tieneNumeroCamara "104"^^xsd:integer ;
+	ns:tieneSoporteCamara "Mastil" ;
+	ns:tieneTipoCamara "Càmera mòbil" ;
+	ns:tieneX_ETRS89Camara "431847564"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4584270267"^^xsd:integer .
+
+ns:Camara_417604 rdf:type ns:Camara ;
+	sc:latitud "41.4040123"^^xsd:decimal ;
+	sc:longitud "2.1905668"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_66 ;
+	ns:tieneCodigoCamara "CIM" ;
+	ns:tieneFechaAltaCamara "2000-01-01T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "417604"^^xsd:integer ;
+	ns:tieneNumeroCamara "36"^^xsd:integer ;
+	ns:tieneSoporteCamara "Mastil" ;
+	ns:tieneTipoCamara "Càmera mòbil" ;
+	ns:tieneX_ETRS89Camara "432342515"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4583923914"^^xsd:integer .
+
+ns:Camara_417605 rdf:type ns:Camara ;
+	sc:latitud "41.4040123"^^xsd:decimal ;
+	sc:longitud "2.1905668"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_66 ;
+	ns:tieneCodigoCamara "CIF" ;
+	ns:tieneFechaAltaCamara "2000-01-01T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "417605"^^xsd:integer ;
+	ns:tieneNumeroCamara "131"^^xsd:integer ;
+	ns:tieneSoporteCamara "Mastil" ;
+	ns:tieneTipoCamara "Càmera fixa" ;
+	ns:tieneX_ETRS89Camara "432342515"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4583923914"^^xsd:integer .
+
+ns:Camara_417607 rdf:type ns:Camara ;
+	sc:latitud "41.4057292"^^xsd:decimal ;
+	sc:longitud "2.1927245"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_71 ;
+	ns:tieneCodigoCamara "CIM" ;
+	ns:tieneFechaAltaCamara "2000-01-01T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "417607"^^xsd:integer ;
+	ns:tieneNumeroCamara "35"^^xsd:integer ;
+	ns:tieneSoporteCamara "Mastil" ;
+	ns:tieneTipoCamara "Càmera mòbil" ;
+	ns:tieneX_ETRS89Camara "432524642"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4584112815"^^xsd:integer .
+
+ns:Camara_417609 rdf:type ns:Camara ;
+	sc:latitud "41.4103218"^^xsd:decimal ;
+	sc:longitud "2.1869301"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_65 ;
+	ns:tieneCodigoCamara "CIM" ;
+	ns:tieneFechaAltaCamara "2000-01-01T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "417609"^^xsd:integer ;
+	ns:tieneNumeroCamara "8"^^xsd:integer ;
+	ns:tieneSoporteCamara "Mastil" ;
+	ns:tieneTipoCamara "Càmera mòbil" ;
+	ns:tieneX_ETRS89Camara "432045113"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4584627186"^^xsd:integer .
+
+ns:Camara_417612 rdf:type ns:Camara ;
+	sc:latitud "41.4118516"^^xsd:decimal ;
+	sc:longitud "2.1981543"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_71 ;
+	ns:tieneCodigoCamara "CIF" ;
+	ns:tieneFechaAltaCamara "2000-01-01T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "417612"^^xsd:integer ;
+	ns:tieneNumeroCamara "121"^^xsd:integer ;
+	ns:tieneSoporteCamara "Mastil" ;
+	ns:tieneTipoCamara "Càmera fixa" ;
+	ns:tieneX_ETRS89Camara "432984787"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4584788315"^^xsd:integer .
+
+ns:Camara_417634 rdf:type ns:Camara ;
+	sc:latitud "41.3957397"^^xsd:decimal ;
+	sc:longitud "2.1883322"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_66 ;
+	ns:tieneCodigoCamara "CIM" ;
+	ns:tieneFechaAltaCamara "2000-01-01T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "417634"^^xsd:integer ;
+	ns:tieneNumeroCamara "102"^^xsd:integer ;
+	ns:tieneSoporteCamara "Mastil" ;
+	ns:tieneTipoCamara "Càmera mòbil" ;
+	ns:tieneX_ETRS89Camara "432147129"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4583007262"^^xsd:integer .
+
+ns:Camara_417636 rdf:type ns:Camara ;
+	sc:latitud "41.3984001"^^xsd:decimal ;
+	sc:longitud "2.1867002"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_66 ;
+	ns:tieneCodigoCamara "CIM" ;
+	ns:tieneFechaAltaCamara "2000-01-01T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "417636"^^xsd:integer ;
+	ns:tieneNumeroCamara "103"^^xsd:integer ;
+	ns:tieneSoporteCamara "Mastil" ;
+	ns:tieneTipoCamara "Càmera mòbil" ;
+	ns:tieneX_ETRS89Camara "432013459"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4583303848"^^xsd:integer .
+
+ns:Camara_417639 rdf:type ns:Camara ;
+	sc:latitud "41.3967578"^^xsd:decimal ;
+	sc:longitud "2.1593735"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_7 ;
+	ns:tieneCodigoCamara "CIM" ;
+	ns:tieneFechaAltaCamara "2000-01-01T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "417639"^^xsd:integer ;
+	ns:tieneNumeroCamara "98"^^xsd:integer ;
+	ns:tieneSoporteCamara "Mastil" ;
+	ns:tieneTipoCamara "Càmera mòbil" ;
+	ns:tieneX_ETRS89Camara "429727346"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4583143350"^^xsd:integer .
+
+ns:Camara_417652 rdf:type ns:Camara ;
+	sc:latitud "41.3883751"^^xsd:decimal ;
+	sc:longitud "2.1270623"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_19 ;
+	ns:tieneCodigoCamara "DOMO" ;
+	ns:tieneFechaAltaCamara "2000-01-01T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "417652"^^xsd:integer ;
+	ns:tieneNumeroCamara "80"^^xsd:integer ;
+	ns:tieneSoporteCamara "Mastil" ;
+	ns:tieneTipoCamara "Càmera mòbil" ;
+	ns:tieneX_ETRS89Camara "427016873"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4582239428"^^xsd:integer .
+
+ns:Camara_417653 rdf:type ns:Camara ;
+	sc:latitud "41.3883751"^^xsd:decimal ;
+	sc:longitud "2.1270623"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_19 ;
+	ns:tieneCodigoCamara "CIF" ;
+	ns:tieneFechaAltaCamara "2000-01-01T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "417653"^^xsd:integer ;
+	ns:tieneNumeroCamara "118"^^xsd:integer ;
+	ns:tieneSoporteCamara "Mastil" ;
+	ns:tieneTipoCamara "Càmera fixa" ;
+	ns:tieneX_ETRS89Camara "427016873"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4582239428"^^xsd:integer .
+
+ns:Camara_417656 rdf:type ns:Camara ;
+	sc:latitud "41.3872681"^^xsd:decimal ;
+	sc:longitud "2.1226797"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_21 ;
+	ns:tieneCodigoCamara "CIM" ;
+	ns:tieneFechaAltaCamara "2000-01-01T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "417656"^^xsd:integer ;
+	ns:tieneNumeroCamara "91"^^xsd:integer ;
+	ns:tieneSoporteCamara "Mastil" ;
+	ns:tieneTipoCamara "Càmera mòbil" ;
+	ns:tieneX_ETRS89Camara "426649208"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4582120246"^^xsd:integer .
+
+ns:Camara_417663 rdf:type ns:Camara ;
+	sc:latitud "41.3856419"^^xsd:decimal ;
+	sc:longitud "2.1427452"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_19 ;
+	ns:tieneCodigoCamara "CIM" ;
+	ns:tieneFechaAltaCamara "2000-01-01T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "417663"^^xsd:integer ;
+	ns:tieneNumeroCamara "15"^^xsd:integer ;
+	ns:tieneSoporteCamara "Mastil" ;
+	ns:tieneTipoCamara "Càmera mòbil" ;
+	ns:tieneX_ETRS89Camara "428325077"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4581922942"^^xsd:integer .
+
+ns:Camara_417665 rdf:type ns:Camara ;
+	sc:latitud "41.3955999"^^xsd:decimal ;
+	sc:longitud "2.1343813"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_24 ;
+	ns:tieneCodigoCamara "CIM" ;
+	ns:tieneFechaAltaCamara "2000-01-01T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "417665"^^xsd:integer ;
+	ns:tieneNumeroCamara "90"^^xsd:integer ;
+	ns:tieneSoporteCamara "Mastil" ;
+	ns:tieneTipoCamara "Càmera mòbil" ;
+	ns:tieneX_ETRS89Camara "427636800"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4583035388"^^xsd:integer .
+
+ns:Camara_417667 rdf:type ns:Camara ;
+	sc:latitud "41.3976705"^^xsd:decimal ;
+	sc:longitud "2.1326278"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_24 ;
+	ns:tieneCodigoCamara "CIM" ;
+	ns:tieneFechaAltaCamara "2000-01-01T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "417667"^^xsd:integer ;
+	ns:tieneNumeroCamara "13"^^xsd:integer ;
+	ns:tieneSoporteCamara "Mastil" ;
+	ns:tieneTipoCamara "Càmera mòbil" ;
+	ns:tieneX_ETRS89Camara "427492515"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4583266714"^^xsd:integer .
+
+ns:Camara_417669 rdf:type ns:Camara ;
+	sc:latitud "41.4007198"^^xsd:decimal ;
+	sc:longitud "2.1227973"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_23 ;
+	ns:tieneCodigoCamara "CIM" ;
+	ns:tieneFechaAltaCamara "2000-01-01T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "417669"^^xsd:integer ;
+	ns:tieneNumeroCamara "89"^^xsd:integer ;
+	ns:tieneSoporteCamara "Fanal" ;
+	ns:tieneTipoCamara "Càmera mòbil" ;
+	ns:tieneX_ETRS89Camara "426674164"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4583613545"^^xsd:integer .
+
+ns:Camara_417676 rdf:type ns:Camara ;
+	sc:latitud "41.4047462"^^xsd:decimal ;
+	sc:longitud "2.1299474"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_24 ;
+	ns:tieneCodigoCamara "CIM" ;
+	ns:tieneFechaAltaCamara "2000-01-01T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "417676"^^xsd:integer ;
+	ns:tieneNumeroCamara "46"^^xsd:integer ;
+	ns:tieneSoporteCamara "Mastil" ;
+	ns:tieneTipoCamara "Càmera mòbil" ;
+	ns:tieneX_ETRS89Camara "427276339"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4584054540"^^xsd:integer .
+
+ns:Camara_417799 rdf:type ns:Camara ;
+	sc:latitud "41.4428856"^^xsd:decimal ;
+	sc:longitud "2.186374"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_60 ;
+	ns:tieneCodigoCamara "CIF" ;
+	ns:tieneFechaAltaCamara "2000-01-01T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "417799"^^xsd:integer ;
+	ns:tieneNumeroCamara "124"^^xsd:integer ;
+	ns:tieneSoporteCamara "Mastil" ;
+	ns:tieneTipoCamara "Càmera fixa" ;
+	ns:tieneX_ETRS89Camara "432032602"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4588242896"^^xsd:integer .
+
+ns:Camara_417821 rdf:type ns:Camara ;
+	sc:latitud "41.3750186"^^xsd:decimal ;
+	sc:longitud "2.149934"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_11 ;
+	ns:tieneCodigoCamara "CIF" ;
+	ns:tieneFechaAltaCamara "2010-05-19T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "417821"^^xsd:integer ;
+	ns:tieneNumeroCamara "108"^^xsd:integer ;
+	ns:tieneSoporteCamara "Mastil" ;
+	ns:tieneTipoCamara "Càmera fixa" ;
+	ns:tieneX_ETRS89Camara "428914560"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4580737558"^^xsd:integer .
+
+ns:Camara_417824 rdf:type ns:Camara ;
+	sc:latitud "41.3806778"^^xsd:decimal ;
+	sc:longitud "2.1421106"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_18 ;
+	ns:tieneCodigoCamara "CIM" ;
+	ns:tieneFechaAltaCamara "2010-05-19T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "417824"^^xsd:integer ;
+	ns:tieneNumeroCamara "92"^^xsd:integer ;
+	ns:tieneSoporteCamara "Mastil" ;
+	ns:tieneTipoCamara "Càmera mòbil" ;
+	ns:tieneX_ETRS89Camara "428266554"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4581372320"^^xsd:integer .
+
+ns:Camara_417921 rdf:type ns:Camara ;
+	sc:latitud "41.3992541"^^xsd:decimal ;
+	sc:longitud "2.1812866"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_5 ;
+	ns:tieneCodigoCamara "DOMO" ;
+	ns:tieneFechaAltaCamara "2010-05-26T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "417921"^^xsd:integer ;
+	ns:tieneNumeroCamara "82"^^xsd:integer ;
+	ns:tieneSoporteCamara "Mastil" ;
+	ns:tieneTipoCamara "Càmera mòbil" ;
+	ns:tieneX_ETRS89Camara "431561819"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4583402911"^^xsd:integer .
+
+ns:Camara_417924 rdf:type ns:Camara ;
+	sc:latitud "41.3913404"^^xsd:decimal ;
+	sc:longitud "2.138626"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_19 ;
+	ns:tieneCodigoCamara "CIM" ;
+	ns:tieneFechaAltaCamara "2010-05-26T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "417924"^^xsd:integer ;
+	ns:tieneNumeroCamara "84"^^xsd:integer ;
+	ns:tieneSoporteCamara "Mastil" ;
+	ns:tieneTipoCamara "Càmera mòbil" ;
+	ns:tieneX_ETRS89Camara "427986950"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4582558968"^^xsd:integer .
+
+ns:Camara_434340 rdf:type ns:Camara ;
+	sc:latitud "41.364951"^^xsd:decimal ;
+	sc:longitud "2.1359159"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_16 ;
+	ns:tieneCodigoCamara "CIM" ;
+	ns:tieneFechaAltaCamara "2011-02-18T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "434340"^^xsd:integer ;
+	ns:tieneNumeroCamara "31"^^xsd:integer ;
+	ns:tieneSoporteCamara "Mastil" ;
+	ns:tieneTipoCamara "Càmera mòbil" ;
+	ns:tieneX_ETRS89Camara "427731172"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4579631544"^^xsd:integer .
+
+ns:Camara_434347 rdf:type ns:Camara ;
+	sc:latitud "41.3929651"^^xsd:decimal ;
+	sc:longitud "2.1893202"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_66 ;
+	ns:tieneCodigoCamara "CIF" ;
+	ns:tieneFechaAltaCamara "2011-02-18T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "434347"^^xsd:integer ;
+	ns:tieneNumeroCamara "126"^^xsd:integer ;
+	ns:tieneSoporteCamara "Mastil" ;
+	ns:tieneTipoCamara "Càmera fixa" ;
+	ns:tieneX_ETRS89Camara "432226842"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4582698436"^^xsd:integer .
+
+ns:Camara_434351 rdf:type ns:Camara ;
+	sc:latitud "41.3820162"^^xsd:decimal ;
+	sc:longitud "2.1862085"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_3 ;
+	ns:tieneCodigoCamara "CIF" ;
+	ns:tieneFechaAltaCamara "2011-02-18T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "434351"^^xsd:integer ;
+	ns:tieneNumeroCamara "128"^^xsd:integer ;
+	ns:tieneSoporteCamara "Mastil" ;
+	ns:tieneTipoCamara "Càmera fixa" ;
+	ns:tieneX_ETRS89Camara "431955281"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4581485310"^^xsd:integer .
+
+ns:Camara_434354 rdf:type ns:Camara ;
+	sc:latitud "41.3820162"^^xsd:decimal ;
+	sc:longitud "2.1862085"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_3 ;
+	ns:tieneCodigoCamara "CIM" ;
+	ns:tieneFechaAltaCamara "2011-02-18T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "434354"^^xsd:integer ;
+	ns:tieneNumeroCamara "27"^^xsd:integer ;
+	ns:tieneSoporteCamara "Mastil" ;
+	ns:tieneTipoCamara "Càmera mòbil" ;
+	ns:tieneX_ETRS89Camara "431955281"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4581485310"^^xsd:integer .
+
+ns:Camara_434371 rdf:type ns:Camara ;
+	sc:latitud "41.3744441"^^xsd:decimal ;
+	sc:longitud "2.1766211"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_1 ;
+	ns:tieneCodigoCamara "DOMO" ;
+	ns:tieneFechaAltaCamara "2011-02-18T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "434371"^^xsd:integer ;
+	ns:tieneNumeroCamara "25"^^xsd:integer ;
+	ns:tieneSoporteCamara "Mastil" ;
+	ns:tieneTipoCamara "Càmera mòbil" ;
+	ns:tieneX_ETRS89Camara "431145643"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4580652274"^^xsd:integer .
+
+ns:Camara_434389 rdf:type ns:Camara ;
+	sc:latitud "41.389921"^^xsd:decimal ;
+	sc:longitud "2.1481886"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_8 ;
+	ns:tieneCodigoCamara "DOMO" ;
+	ns:tieneFechaAltaCamara "2011-02-18T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "434389"^^xsd:integer ;
+	ns:tieneNumeroCamara "23"^^xsd:integer ;
+	ns:tieneSoporteCamara "Mastil" ;
+	ns:tieneTipoCamara "Càmera mòbil" ;
+	ns:tieneX_ETRS89Camara "428784868"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4582393436"^^xsd:integer .
+
+ns:Camara_435205 rdf:type ns:Camara ;
+	sc:latitud "41.3879686"^^xsd:decimal ;
+	sc:longitud "2.169817"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_7 ;
+	ns:tieneCodigoCamara "DOMO" ;
+	ns:tieneFechaAltaCamara "2011-03-04T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "435205"^^xsd:integer ;
+	ns:tieneNumeroCamara "54"^^xsd:integer ;
+	ns:tieneSoporteCamara "Mastil" ;
+	ns:tieneTipoCamara "Càmera mòbil" ;
+	ns:tieneX_ETRS89Camara "430591036"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4582159125"^^xsd:integer .
+
+ns:Camara_435220 rdf:type ns:Camara ;
+	sc:latitud "41.4237173"^^xsd:decimal ;
+	sc:longitud "2.1586924"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_36 ;
+	ns:tieneCodigoCamara "CIF" ;
+	ns:tieneFechaAltaCamara "2011-03-04T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "435220"^^xsd:integer ;
+	ns:tieneNumeroCamara "116"^^xsd:integer ;
+	ns:tieneSoporteCamara "Mastil" ;
+	ns:tieneTipoCamara "Càmera fixa" ;
+	ns:tieneX_ETRS89Camara "429699471"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4586136888"^^xsd:integer .
+
+ns:Camara_435228 rdf:type ns:Camara ;
+	sc:latitud "41.3748557"^^xsd:decimal ;
+	sc:longitud "2.168183"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_10 ;
+	ns:tieneCodigoCamara "CIM" ;
+	ns:tieneFechaAltaCamara "2011-03-04T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "435228"^^xsd:integer ;
+	ns:tieneNumeroCamara "60"^^xsd:integer ;
+	ns:tieneSoporteCamara "Mastil" ;
+	ns:tieneTipoCamara "Càmera mòbil" ;
+	ns:tieneX_ETRS89Camara "430440455"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4580704756"^^xsd:integer .
+
+ns:Camara_435230 rdf:type ns:Camara ;
+	sc:latitud "41.3976554"^^xsd:decimal ;
+	sc:longitud "2.1718949"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_7 ;
+	ns:tieneCodigoCamara "CIM" ;
+	ns:tieneFechaAltaCamara "2011-03-04T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "435230"^^xsd:integer ;
+	ns:tieneNumeroCamara "99"^^xsd:integer ;
+	ns:tieneSoporteCamara "Mastil" ;
+	ns:tieneTipoCamara "Càmera mòbil" ;
+	ns:tieneX_ETRS89Camara "430775038"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4583232962"^^xsd:integer .
+
+ns:Camara_435232 rdf:type ns:Camara ;
+	sc:latitud "41.3843892"^^xsd:decimal ;
+	sc:longitud "2.112287"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_20 ;
+	ns:tieneCodigoCamara "CIM" ;
+	ns:tieneFechaAltaCamara "2011-03-04T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "435232"^^xsd:integer ;
+	ns:tieneNumeroCamara "77"^^xsd:integer ;
+	ns:tieneSoporteCamara "Mastil" ;
+	ns:tieneTipoCamara "Càmera mòbil" ;
+	ns:tieneX_ETRS89Camara "425777020"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4581809451"^^xsd:integer .
+
+ns:Camara_435233 rdf:type ns:Camara ;
+	sc:latitud "41.3843892"^^xsd:decimal ;
+	sc:longitud "2.112287"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_20 ;
+	ns:tieneCodigoCamara "CIF" ;
+	ns:tieneFechaAltaCamara "2011-03-04T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "435233"^^xsd:integer ;
+	ns:tieneNumeroCamara "132"^^xsd:integer ;
+	ns:tieneSoporteCamara "Mastil" ;
+	ns:tieneTipoCamara "Càmera fixa" ;
+	ns:tieneX_ETRS89Camara "425777020"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4581809451"^^xsd:integer .
+
+ns:Camara_435235 rdf:type ns:Camara ;
+	sc:latitud "41.3821451"^^xsd:decimal ;
+	sc:longitud "2.1587288"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_10 ;
+	ns:tieneCodigoCamara "DOMO" ;
+	ns:tieneFechaAltaCamara "2011-03-04T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "435235"^^xsd:integer ;
+	ns:tieneNumeroCamara "53"^^xsd:integer ;
+	ns:tieneSoporteCamara "Mastil" ;
+	ns:tieneTipoCamara "Càmera mòbil" ;
+	ns:tieneX_ETRS89Camara "429657700"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4581521589"^^xsd:integer .
+
+ns:Camara_435237 rdf:type ns:Camara ;
+	sc:latitud "41.3859645"^^xsd:decimal ;
+	sc:longitud "2.1648967"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_7 ;
+	ns:tieneCodigoCamara "DOMO" ;
+	ns:tieneFechaAltaCamara "2011-03-04T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "435237"^^xsd:integer ;
+	ns:tieneNumeroCamara "55"^^xsd:integer ;
+	ns:tieneSoporteCamara "Mastil" ;
+	ns:tieneTipoCamara "Càmera mòbil" ;
+	ns:tieneX_ETRS89Camara "430177511"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4581940611"^^xsd:integer .
+
+ns:Camara_435378 rdf:type ns:Camara ;
+	sc:latitud "41.3914763"^^xsd:decimal ;
+	sc:longitud "2.1708523"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_7 ;
+	ns:tieneCodigoCamara "CIM" ;
+	ns:tieneFechaAltaCamara "2011-03-11T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "435378"^^xsd:integer ;
+	ns:tieneNumeroCamara "34"^^xsd:integer ;
+	ns:tieneSoporteCamara "Mastil" ;
+	ns:tieneTipoCamara "Càmera mòbil" ;
+	ns:tieneX_ETRS89Camara "430681316"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4582547768"^^xsd:integer .
+
+ns:Camara_435382 rdf:type ns:Camara ;
+	sc:latitud "41.4103218"^^xsd:decimal ;
+	sc:longitud "2.1869301"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_65 ;
+	ns:tieneCodigoCamara "CIF" ;
+	ns:tieneFechaAltaCamara "2011-03-11T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "435382"^^xsd:integer ;
+	ns:tieneNumeroCamara "18"^^xsd:integer ;
+	ns:tieneSoporteCamara "Mastil" ;
+	ns:tieneTipoCamara "Càmera fixa" ;
+	ns:tieneX_ETRS89Camara "432045113"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4584627186"^^xsd:integer .
+
+ns:Camara_435593 rdf:type ns:Camara ;
+	sc:latitud "41.4200237"^^xsd:decimal ;
+	sc:longitud "2.1870949"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_61 ;
+	ns:tieneCodigoCamara "CIF" ;
+	ns:tieneFechaAltaCamara "2011-03-22T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "435593"^^xsd:integer ;
+	ns:tieneNumeroCamara "120"^^xsd:integer ;
+	ns:tieneSoporteCamara "Mastil" ;
+	ns:tieneTipoCamara "Càmera fixa" ;
+	ns:tieneX_ETRS89Camara "432068996"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4585704220"^^xsd:integer .
+
+ns:Camara_464853 rdf:type ns:Camara ;
+	sc:latitud "41.3992534"^^xsd:decimal ;
+	sc:longitud "2.1340728"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_26 ;
+	ns:tieneCodigoCamara "DOMO" ;
+	ns:tieneFechaAltaCamara "2011-11-18T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "464853"^^xsd:integer ;
+	ns:tieneNumeroCamara "64"^^xsd:integer ;
+	ns:tieneSoporteCamara "Mastil" ;
+	ns:tieneTipoCamara "Càmera mòbil" ;
+	ns:tieneX_ETRS89Camara "427615072"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4583441216"^^xsd:integer .
+
+ns:Camara_465468 rdf:type ns:Camara ;
+	sc:latitud "41.364951"^^xsd:decimal ;
+	sc:longitud "2.1359159"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_16 ;
+	ns:tieneCodigoCamara "CIF" ;
+	ns:tieneFechaAltaCamara "2011-11-25T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "465468"^^xsd:integer ;
+	ns:tieneNumeroCamara "109"^^xsd:integer ;
+	ns:tieneSoporteCamara "Mastil" ;
+	ns:tieneTipoCamara "Càmera fixa" ;
+	ns:tieneX_ETRS89Camara "427731172"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4579631544"^^xsd:integer .
+
+ns:Camara_470579 rdf:type ns:Camara ;
+	sc:latitud "41.405384"^^xsd:decimal ;
+	sc:longitud "2.186937"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_65 ;
+	ns:tieneCodigoCamara "CIM" ;
+	ns:tieneFechaAltaCamara "2012-02-17T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "470579"^^xsd:integer ;
+	ns:tieneNumeroCamara "61"^^xsd:integer ;
+	ns:tieneSoporteCamara "Mastil" ;
+	ns:tieneTipoCamara "Càmera mòbil" ;
+	ns:tieneX_ETRS89Camara "432040540"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4584079061"^^xsd:integer .
+
+ns:Camara_470630 rdf:type ns:Camara ;
+	sc:latitud "41.3977189"^^xsd:decimal ;
+	sc:longitud "2.1279051"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_24 ;
+	ns:tieneCodigoCamara "DOMO" ;
+	ns:tieneFechaAltaCamara "2012-02-20T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "470630"^^xsd:integer ;
+	ns:tieneNumeroCamara "63"^^xsd:integer ;
+	ns:tieneSoporteCamara "Baculo" ;
+	ns:tieneTipoCamara "Càmera mòbil" ;
+	ns:tieneX_ETRS89Camara "427097770"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4583276031"^^xsd:integer .
+
+ns:Camara_478561 rdf:type ns:Camara ;
+	sc:latitud "41.381556"^^xsd:decimal ;
+	sc:longitud "2.1821647"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_2 ;
+	ns:tieneCodigoCamara "CIF" ;
+	ns:tieneFechaAltaCamara "2012-07-16T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "478561"^^xsd:integer ;
+	ns:tieneNumeroCamara "123"^^xsd:integer ;
+	ns:tieneSoporteCamara "Mastil" ;
+	ns:tieneTipoCamara "Càmera fixa" ;
+	ns:tieneX_ETRS89Camara "431616673"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4581437444"^^xsd:integer .
+
+ns:Camara_478562 rdf:type ns:Camara ;
+	sc:latitud "41.381556"^^xsd:decimal ;
+	sc:longitud "2.1821647"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_2 ;
+	ns:tieneCodigoCamara "CIM" ;
+	ns:tieneFechaAltaCamara "2012-07-16T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "478562"^^xsd:integer ;
+	ns:tieneNumeroCamara "19"^^xsd:integer ;
+	ns:tieneSoporteCamara "Mastil" ;
+	ns:tieneTipoCamara "Càmera mòbil" ;
+	ns:tieneX_ETRS89Camara "431616673"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4581437444"^^xsd:integer .
+
+ns:Camara_478564 rdf:type ns:Camara ;
+	sc:latitud "41.3823123"^^xsd:decimal ;
+	sc:longitud "2.1281717"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_20 ;
+	ns:tieneCodigoCamara "DOMO" ;
+	ns:tieneFechaAltaCamara "2012-07-16T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "478564"^^xsd:integer ;
+	ns:tieneNumeroCamara "62"^^xsd:integer ;
+	ns:tieneSoporteCamara "Mastil" ;
+	ns:tieneTipoCamara "Càmera mòbil" ;
+	ns:tieneX_ETRS89Camara "427102853"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4581565358"^^xsd:integer .
+
+ns:Camara_478566 rdf:type ns:Camara ;
+	sc:latitud "41.4119468"^^xsd:decimal ;
+	sc:longitud "2.2120934"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_69 ;
+	ns:tieneCodigoCamara "CIF" ;
+	ns:tieneFechaAltaCamara "2012-07-16T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "478566"^^xsd:integer ;
+	ns:tieneNumeroCamara "213"^^xsd:integer ;
+	ns:tieneSoporteCamara "Baculo" ;
+	ns:tieneTipoCamara "Càmera fixa" ;
+	ns:tieneX_ETRS89Camara "434149871"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4584788156"^^xsd:integer .
+
+ns:Camara_478568 rdf:type ns:Camara ;
+	sc:latitud "41.4116452"^^xsd:decimal ;
+	sc:longitud "2.2120939"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_69 ;
+	ns:tieneCodigoCamara "CIF" ;
+	ns:tieneFechaAltaCamara "2012-07-16T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "478568"^^xsd:integer ;
+	ns:tieneNumeroCamara "214"^^xsd:integer ;
+	ns:tieneSoporteCamara "Baculo" ;
+	ns:tieneTipoCamara "Càmera fixa" ;
+	ns:tieneX_ETRS89Camara "434149605"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4584754655"^^xsd:integer .
+
+ns:Camara_478573 rdf:type ns:Camara ;
+	sc:latitud "41.399703"^^xsd:decimal ;
+	sc:longitud "2.2007717"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_68 ;
+	ns:tieneCodigoCamara "CIF" ;
+	ns:tieneFechaAltaCamara "2012-07-16T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "478573"^^xsd:integer ;
+	ns:tieneNumeroCamara "216"^^xsd:integer ;
+	ns:tieneSoporteCamara "Baculo" ;
+	ns:tieneTipoCamara "Càmera fixa" ;
+	ns:tieneX_ETRS89Camara "433191098"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4583437529"^^xsd:integer .
+
+ns:Camara_478575 rdf:type ns:Camara ;
+	sc:latitud "41.3997172"^^xsd:decimal ;
+	sc:longitud "2.2004448"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_68 ;
+	ns:tieneCodigoCamara "CIF" ;
+	ns:tieneFechaAltaCamara "2012-07-16T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "478575"^^xsd:integer ;
+	ns:tieneNumeroCamara "217"^^xsd:integer ;
+	ns:tieneSoporteCamara "Baculo" ;
+	ns:tieneTipoCamara "Càmera fixa" ;
+	ns:tieneX_ETRS89Camara "433163782"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4583439341"^^xsd:integer .
+
+ns:Camara_478577 rdf:type ns:Camara ;
+	sc:latitud "41.40483"^^xsd:decimal ;
+	sc:longitud "2.2075511"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_68 ;
+	ns:tieneCodigoCamara "CIF" ;
+	ns:tieneFechaAltaCamara "2012-07-16T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "478577"^^xsd:integer ;
+	ns:tieneNumeroCamara "221"^^xsd:integer ;
+	ns:tieneSoporteCamara "Baculo" ;
+	ns:tieneTipoCamara "Càmera fixa" ;
+	ns:tieneX_ETRS89Camara "433763013"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4584001557"^^xsd:integer .
+
+ns:Camara_478579 rdf:type ns:Camara ;
+	sc:latitud "41.4048011"^^xsd:decimal ;
+	sc:longitud "2.2071475"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_68 ;
+	ns:tieneCodigoCamara "CIF" ;
+	ns:tieneFechaAltaCamara "2012-07-16T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "478579"^^xsd:integer ;
+	ns:tieneNumeroCamara "220"^^xsd:integer ;
+	ns:tieneSoporteCamara "Baculo" ;
+	ns:tieneTipoCamara "Càmera fixa" ;
+	ns:tieneX_ETRS89Camara "433729248"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4583998706"^^xsd:integer .
+
+ns:Camara_478581 rdf:type ns:Camara ;
+	sc:latitud "41.4065871"^^xsd:decimal ;
+	sc:longitud "2.2052513"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_69 ;
+	ns:tieneCodigoCamara "CIF" ;
+	ns:tieneFechaAltaCamara "2012-07-16T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "478581"^^xsd:integer ;
+	ns:tieneNumeroCamara "222"^^xsd:integer ;
+	ns:tieneSoporteCamara "Baculo" ;
+	ns:tieneTipoCamara "Càmera fixa" ;
+	ns:tieneX_ETRS89Camara "433572571"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4584198365"^^xsd:integer .
+
+ns:Camara_478583 rdf:type ns:Camara ;
+	sc:latitud "41.4076476"^^xsd:decimal ;
+	sc:longitud "2.210525"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_69 ;
+	ns:tieneCodigoCamara "CIF" ;
+	ns:tieneFechaAltaCamara "2012-07-16T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "478583"^^xsd:integer ;
+	ns:tieneNumeroCamara "223"^^xsd:integer ;
+	ns:tieneSoporteCamara "Baculo" ;
+	ns:tieneTipoCamara "Càmera fixa" ;
+	ns:tieneX_ETRS89Camara "434014439"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4584312047"^^xsd:integer .
+
+ns:Camara_478585 rdf:type ns:Camara ;
+	sc:latitud "41.4073321"^^xsd:decimal ;
+	sc:longitud "2.2105371"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_69 ;
+	ns:tieneCodigoCamara "CIF" ;
+	ns:tieneFechaAltaCamara "2012-07-16T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "478585"^^xsd:integer ;
+	ns:tieneNumeroCamara "224"^^xsd:integer ;
+	ns:tieneSoporteCamara "Baculo" ;
+	ns:tieneTipoCamara "Càmera fixa" ;
+	ns:tieneX_ETRS89Camara "434015130"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4584277021"^^xsd:integer .
+
+ns:Camara_478597 rdf:type ns:Camara ;
+	sc:latitud "41.4017079"^^xsd:decimal ;
+	sc:longitud "2.1917864"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_66 ;
+	ns:tieneCodigoCamara "CIF" ;
+	ns:tieneFechaAltaCamara "2012-07-16T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "478597"^^xsd:integer ;
+	ns:tieneNumeroCamara "226"^^xsd:integer ;
+	ns:tieneSoporteCamara "Baculo" ;
+	ns:tieneTipoCamara "Càmera fixa" ;
+	ns:tieneX_ETRS89Camara "432442068"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4583667110"^^xsd:integer .
+
+ns:Camara_478599 rdf:type ns:Camara ;
+	sc:latitud "41.4014247"^^xsd:decimal ;
+	sc:longitud "2.191768"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_66 ;
+	ns:tieneCodigoCamara "CIF" ;
+	ns:tieneFechaAltaCamara "2012-07-16T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "478599"^^xsd:integer ;
+	ns:tieneNumeroCamara "225"^^xsd:integer ;
+	ns:tieneSoporteCamara "Baculo" ;
+	ns:tieneTipoCamara "Càmera fixa" ;
+	ns:tieneX_ETRS89Camara "432440243"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4583635687"^^xsd:integer .
+
+ns:Camara_478601 rdf:type ns:Camara ;
+	sc:latitud "41.4093781"^^xsd:decimal ;
+	sc:longitud "2.2018642"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_71 ;
+	ns:tieneCodigoCamara "CIF" ;
+	ns:tieneFechaAltaCamara "2012-07-16T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "478601"^^xsd:integer ;
+	ns:tieneNumeroCamara "229"^^xsd:integer ;
+	ns:tieneSoporteCamara "Baculo" ;
+	ns:tieneTipoCamara "Càmera fixa" ;
+	ns:tieneX_ETRS89Camara "433292319"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4584510815"^^xsd:integer .
+
+ns:Camara_478603 rdf:type ns:Camara ;
+	sc:latitud "41.4091951"^^xsd:decimal ;
+	sc:longitud "2.2018291"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_71 ;
+	ns:tieneCodigoCamara "CIF" ;
+	ns:tieneFechaAltaCamara "2012-07-16T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "478603"^^xsd:integer ;
+	ns:tieneNumeroCamara "228"^^xsd:integer ;
+	ns:tieneSoporteCamara "Baculo" ;
+	ns:tieneTipoCamara "Càmera fixa" ;
+	ns:tieneX_ETRS89Camara "433289200"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4584490514"^^xsd:integer .
+
+ns:Camara_478605 rdf:type ns:Camara ;
+	sc:latitud "41.3958241"^^xsd:decimal ;
+	sc:longitud "2.1905088"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_66 ;
+	ns:tieneCodigoCamara "CIF" ;
+	ns:tieneFechaAltaCamara "2012-07-16T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "478605"^^xsd:integer ;
+	ns:tieneNumeroCamara "227"^^xsd:integer ;
+	ns:tieneSoporteCamara "Baculo" ;
+	ns:tieneTipoCamara "Càmera fixa" ;
+	ns:tieneX_ETRS89Camara "432329173"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4583014900"^^xsd:integer .
+
+ns:Camara_500987 rdf:type ns:Camara ;
+	sc:latitud "41.4094473"^^xsd:decimal ;
+	sc:longitud "2.1548299"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_30 ;
+	ns:tieneCodigoCamara "CIM" ;
+	ns:tieneFechaAltaCamara "2017-07-03T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "500987"^^xsd:integer ;
+	ns:tieneNumeroCamara "74"^^xsd:integer ;
+	ns:tieneSoporteCamara "Mastil" ;
+	ns:tieneTipoCamara "Càmera mòbil" ;
+	ns:tieneX_ETRS89Camara "429361262"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4584555869"^^xsd:integer .
+
+ns:Camara_507077 rdf:type ns:Camara ;
+	sc:latitud "41.4055976"^^xsd:decimal ;
+	sc:longitud "2.1450944"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_27 ;
+	ns:tieneCodigoCamara "CIM" ;
+	ns:tieneFechaAltaCamara "2019-04-05T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "507077"^^xsd:integer ;
+	ns:tieneNumeroCamara "52"^^xsd:integer ;
+	ns:tieneSoporteCamara "Mastil" ;
+	ns:tieneTipoCamara "Càmera mòbil" ;
+	ns:tieneX_ETRS89Camara "428543353"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4584136414"^^xsd:integer .
+
+ns:Camara_508361 rdf:type ns:Camara ;
+	sc:latitud "41.3867431"^^xsd:decimal ;
+	sc:longitud "2.1955258"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_3 ;
+	ns:tieneCodigoCamara "CIM" ;
+	ns:tieneFechaAltaCamara "2018-09-27T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "508361"^^xsd:integer ;
+	ns:tieneNumeroCamara "3"^^xsd:integer ;
+	ns:tieneSoporteCamara "Mastil" ;
+	ns:tieneTipoCamara "Càmera mòbil" ;
+	ns:tieneX_ETRS89Camara "432739226"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4582002825"^^xsd:integer .
+
+ns:Camara_508363 rdf:type ns:Camara ;
+	sc:latitud "41.4118516"^^xsd:decimal ;
+	sc:longitud "2.1981543"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_71 ;
+	ns:tieneCodigoCamara "CIM" ;
+	ns:tieneFechaAltaCamara "2019-01-03T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "508363"^^xsd:integer ;
+	ns:tieneNumeroCamara "5"^^xsd:integer ;
+	ns:tieneSoporteCamara "Mastil" ;
+	ns:tieneTipoCamara "Càmera mòbil" ;
+	ns:tieneX_ETRS89Camara "432984787"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4584788315"^^xsd:integer .
+
+ns:Camara_508365 rdf:type ns:Camara ;
+	sc:latitud "41.449099"^^xsd:decimal ;
+	sc:longitud "2.1886758"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_53 ;
+	ns:tieneCodigoCamara "CIM" ;
+	ns:tieneFechaAltaCamara "2018-12-05T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "508365"^^xsd:integer ;
+	ns:tieneNumeroCamara "6"^^xsd:integer ;
+	ns:tieneSoporteCamara "Mastil" ;
+	ns:tieneTipoCamara "Càmera mòbil" ;
+	ns:tieneX_ETRS89Camara "432231353"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4588930854"^^xsd:integer .
+
+ns:Camara_508366 rdf:type ns:Camara ;
+	sc:latitud "41.4200237"^^xsd:decimal ;
+	sc:longitud "2.1870949"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_61 ;
+	ns:tieneCodigoCamara "CIM" ;
+	ns:tieneFechaAltaCamara "2018-12-05T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "508366"^^xsd:integer ;
+	ns:tieneNumeroCamara "14"^^xsd:integer ;
+	ns:tieneSoporteCamara "Mastil" ;
+	ns:tieneTipoCamara "Càmera mòbil" ;
+	ns:tieneX_ETRS89Camara "432068996"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4585704220"^^xsd:integer .
+
+ns:Camara_508367 rdf:type ns:Camara ;
+	sc:latitud "41.4428856"^^xsd:decimal ;
+	sc:longitud "2.186374"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_60 ;
+	ns:tieneCodigoCamara "CIM" ;
+	ns:tieneFechaAltaCamara "2018-12-01T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "508367"^^xsd:integer ;
+	ns:tieneNumeroCamara "16"^^xsd:integer ;
+	ns:tieneSoporteCamara "Mastil" ;
+	ns:tieneTipoCamara "Càmera mòbil" ;
+	ns:tieneX_ETRS89Camara "432032602"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4588242896"^^xsd:integer .
+
+ns:Camara_508368 rdf:type ns:Camara ;
+	sc:latitud "41.4332284"^^xsd:decimal ;
+	sc:longitud "2.1528119"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_43 ;
+	ns:tieneCodigoCamara "CIM" ;
+	ns:tieneFechaAltaCamara "2018-10-25T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "508368"^^xsd:integer ;
+	ns:tieneNumeroCamara "17"^^xsd:integer ;
+	ns:tieneSoporteCamara "Mastil" ;
+	ns:tieneTipoCamara "Càmera mòbil" ;
+	ns:tieneX_ETRS89Camara "429218425"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4587197584"^^xsd:integer .
+
+ns:Camara_508369 rdf:type ns:Camara ;
+	sc:latitud "41.4125851"^^xsd:decimal ;
+	sc:longitud "2.1681839"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_33 ;
+	ns:tieneCodigoCamara "CIM" ;
+	ns:tieneFechaAltaCamara "2018-11-12T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "508369"^^xsd:integer ;
+	ns:tieneNumeroCamara "26"^^xsd:integer ;
+	ns:tieneSoporteCamara "Mastil" ;
+	ns:tieneTipoCamara "Càmera mòbil" ;
+	ns:tieneX_ETRS89Camara "430480736"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4584893373"^^xsd:integer .
+
+ns:Camara_508370 rdf:type ns:Camara ;
+	sc:latitud "41.3929651"^^xsd:decimal ;
+	sc:longitud "2.1893202"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_66 ;
+	ns:tieneCodigoCamara "CIM" ;
+	ns:tieneFechaAltaCamara "2018-11-12T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "508370"^^xsd:integer ;
+	ns:tieneNumeroCamara "28"^^xsd:integer ;
+	ns:tieneSoporteCamara "Mastil" ;
+	ns:tieneTipoCamara "Càmera mòbil" ;
+	ns:tieneX_ETRS89Camara "432226842"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4582698436"^^xsd:integer .
+
+ns:Camara_508371 rdf:type ns:Camara ;
+	sc:latitud "41.3919796"^^xsd:decimal ;
+	sc:longitud "2.1978921"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_67 ;
+	ns:tieneCodigoCamara "CIM" ;
+	ns:tieneFechaAltaCamara "2018-11-27T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "508371"^^xsd:integer ;
+	ns:tieneNumeroCamara "29"^^xsd:integer ;
+	ns:tieneSoporteCamara "Mastil" ;
+	ns:tieneTipoCamara "Càmera mòbil" ;
+	ns:tieneX_ETRS89Camara "432942445"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4582582320"^^xsd:integer .
+
+ns:Camara_508372 rdf:type ns:Camara ;
+	sc:latitud "41.4237173"^^xsd:decimal ;
+	sc:longitud "2.1586924"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_36 ;
+	ns:tieneCodigoCamara "CIM" ;
+	ns:tieneFechaAltaCamara "2018-11-05T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "508372"^^xsd:integer ;
+	ns:tieneNumeroCamara "30"^^xsd:integer ;
+	ns:tieneSoporteCamara "Mastil" ;
+	ns:tieneTipoCamara "Càmera mòbil" ;
+	ns:tieneX_ETRS89Camara "429699471"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4586136888"^^xsd:integer .
+
+ns:Camara_508373 rdf:type ns:Camara ;
+	sc:latitud "41.4202135"^^xsd:decimal ;
+	sc:longitud "2.180971"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_62 ;
+	ns:tieneCodigoCamara "CIM" ;
+	ns:tieneFechaAltaCamara "2018-07-31T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "508373"^^xsd:integer ;
+	ns:tieneNumeroCamara "32"^^xsd:integer ;
+	ns:tieneSoporteCamara "Mastil" ;
+	ns:tieneTipoCamara "Càmera mòbil" ;
+	ns:tieneX_ETRS89Camara "431557444"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4585730127"^^xsd:integer .
+
+ns:Camara_508374 rdf:type ns:Camara ;
+	sc:latitud "41.4303058"^^xsd:decimal ;
+	sc:longitud "2.182993"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_60 ;
+	ns:tieneCodigoCamara "CIM" ;
+	ns:tieneFechaAltaCamara "2019-01-01T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "508374"^^xsd:integer ;
+	ns:tieneNumeroCamara "33"^^xsd:integer ;
+	ns:tieneSoporteCamara "Mastil" ;
+	ns:tieneTipoCamara "Càmera mòbil" ;
+	ns:tieneX_ETRS89Camara "431736985"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4586848900"^^xsd:integer .
+
+ns:Camara_508375 rdf:type ns:Camara ;
+	sc:latitud "41.4065839"^^xsd:decimal ;
+	sc:longitud "2.1496664"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_27 ;
+	ns:tieneCodigoCamara "CIM" ;
+	ns:tieneFechaAltaCamara "2018-10-24T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "508375"^^xsd:integer ;
+	ns:tieneNumeroCamara "50"^^xsd:integer ;
+	ns:tieneSoporteCamara "Mastil" ;
+	ns:tieneTipoCamara "Càmera mòbil" ;
+	ns:tieneX_ETRS89Camara "428926573"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4584242156"^^xsd:integer .
+
+ns:Camara_508376 rdf:type ns:Camara ;
+	sc:latitud "41.4075133"^^xsd:decimal ;
+	sc:longitud "2.150036"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_31 ;
+	ns:tieneCodigoCamara "CIM" ;
+	ns:tieneFechaAltaCamara "2018-10-24T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "508376"^^xsd:integer ;
+	ns:tieneNumeroCamara "51"^^xsd:integer ;
+	ns:tieneSoporteCamara "Mastil" ;
+	ns:tieneTipoCamara "Càmera mòbil" ;
+	ns:tieneX_ETRS89Camara "428958485"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4584345020"^^xsd:integer .
+
+ns:Camara_508377 rdf:type ns:Camara ;
+	sc:latitud "41.3881619"^^xsd:decimal ;
+	sc:longitud "2.1936418"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_67 ;
+	ns:tieneCodigoCamara "CIM" ;
+	ns:tieneFechaAltaCamara "2018-11-28T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "508377"^^xsd:integer ;
+	ns:tieneNumeroCamara "73"^^xsd:integer ;
+	ns:tieneSoporteCamara "Mastil" ;
+	ns:tieneTipoCamara "Càmera mòbil" ;
+	ns:tieneX_ETRS89Camara "432583169"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4582161849"^^xsd:integer .
+
+ns:Camara_508378 rdf:type ns:Camara ;
+	sc:latitud "41.4391145"^^xsd:decimal ;
+	sc:longitud "2.2001997"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_59 ;
+	ns:tieneCodigoCamara "CIM" ;
+	ns:tieneFechaAltaCamara "2018-10-04T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "508378"^^xsd:integer ;
+	ns:tieneNumeroCamara "78"^^xsd:integer ;
+	ns:tieneSoporteCamara "Mastil" ;
+	ns:tieneTipoCamara "Càmera mòbil" ;
+	ns:tieneX_ETRS89Camara "433183693"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4587813424"^^xsd:integer .
+
+ns:Camara_508379 rdf:type ns:Camara ;
+	sc:latitud "41.4426121"^^xsd:decimal ;
+	sc:longitud "2.1968466"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_59 ;
+	ns:tieneCodigoCamara "CIM" ;
+	ns:tieneFechaAltaCamara "2018-10-05T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "508379"^^xsd:integer ;
+	ns:tieneNumeroCamara "79"^^xsd:integer ;
+	ns:tieneSoporteCamara "Mastil" ;
+	ns:tieneTipoCamara "Càmera mòbil" ;
+	ns:tieneX_ETRS89Camara "432907168"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4588204312"^^xsd:integer .
+
+ns:Camara_508380 rdf:type ns:Camara ;
+	sc:latitud "41.4158348"^^xsd:decimal ;
+	sc:longitud "2.1806179"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_35 ;
+	ns:tieneCodigoCamara "CIM" ;
+	ns:tieneFechaAltaCamara "2018-11-09T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "508380"^^xsd:integer ;
+	ns:tieneNumeroCamara "105"^^xsd:integer ;
+	ns:tieneSoporteCamara "Mastil" ;
+	ns:tieneTipoCamara "Càmera mòbil" ;
+	ns:tieneX_ETRS89Camara "431523331"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4585244290"^^xsd:integer .
+
+ns:Camara_508381 rdf:type ns:Camara ;
+	sc:latitud "41.4152366"^^xsd:decimal ;
+	sc:longitud "2.1870899"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_63 ;
+	ns:tieneCodigoCamara "CIM" ;
+	ns:tieneFechaAltaCamara "2018-11-07T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "508381"^^xsd:integer ;
+	ns:tieneNumeroCamara "106"^^xsd:integer ;
+	ns:tieneSoporteCamara "Mastil" ;
+	ns:tieneTipoCamara "Càmera mòbil" ;
+	ns:tieneX_ETRS89Camara "432063584"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4585172770"^^xsd:integer .
+
+ns:Camara_508382 rdf:type ns:Camara ;
+	sc:latitud "41.4144673"^^xsd:decimal ;
+	sc:longitud "2.194565"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_72 ;
+	ns:tieneCodigoCamara "CIM" ;
+	ns:tieneFechaAltaCamara "2018-11-08T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "508382"^^xsd:integer ;
+	ns:tieneNumeroCamara "107"^^xsd:integer ;
+	ns:tieneSoporteCamara "Mastil" ;
+	ns:tieneTipoCamara "Càmera mòbil" ;
+	ns:tieneX_ETRS89Camara "432687500"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4585081523"^^xsd:integer .
+
+ns:Camara_508383 rdf:type ns:Camara ;
+	sc:latitud "41.4069298"^^xsd:decimal ;
+	sc:longitud "2.2181713"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_69 ;
+	ns:tieneCodigoCamara "CIM" ;
+	ns:tieneFechaAltaCamara "2018-10-10T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "508383"^^xsd:integer ;
+	ns:tieneNumeroCamara "112"^^xsd:integer ;
+	ns:tieneSoporteCamara "Mastil" ;
+	ns:tieneTipoCamara "Càmera mòbil" ;
+	ns:tieneX_ETRS89Camara "434652814"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4584226579"^^xsd:integer .
+
+ns:Camara_508384 rdf:type ns:Camara ;
+	sc:latitud "41.409916"^^xsd:decimal ;
+	sc:longitud "2.2141656"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_69 ;
+	ns:tieneCodigoCamara "CIM" ;
+	ns:tieneFechaAltaCamara "2018-12-05T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "508384"^^xsd:integer ;
+	ns:tieneNumeroCamara "201"^^xsd:integer ;
+	ns:tieneSoporteCamara "Mastil" ;
+	ns:tieneTipoCamara "Càmera mòbil" ;
+	ns:tieneX_ETRS89Camara "434321006"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4584561190"^^xsd:integer .
+
+ns:Camara_508385 rdf:type ns:Camara ;
+	sc:latitud "41.4112777"^^xsd:decimal ;
+	sc:longitud "2.2195549"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_69 ;
+	ns:tieneCodigoCamara "CIM" ;
+	ns:tieneFechaAltaCamara "2018-10-11T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "508385"^^xsd:integer ;
+	ns:tieneNumeroCamara "202"^^xsd:integer ;
+	ns:tieneSoporteCamara "Fanal" ;
+	ns:tieneTipoCamara "Càmera mòbil" ;
+	ns:tieneX_ETRS89Camara "434772809"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4584708271"^^xsd:integer .
+
+ns:Camara_508386 rdf:type ns:Camara ;
+	sc:latitud "41.4143924"^^xsd:decimal ;
+	sc:longitud "2.2200512"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_70 ;
+	ns:tieneCodigoCamara "CIM" ;
+	ns:tieneFechaAltaCamara "2018-10-03T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "508386"^^xsd:integer ;
+	ns:tieneNumeroCamara "204"^^xsd:integer ;
+	ns:tieneSoporteCamara "Mastil" ;
+	ns:tieneTipoCamara "Càmera mòbil" ;
+	ns:tieneX_ETRS89Camara "434817395"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4585053708"^^xsd:integer .
+
+ns:Camara_508387 rdf:type ns:Camara ;
+	sc:latitud "41.4134768"^^xsd:decimal ;
+	sc:longitud "2.2211138"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_70 ;
+	ns:tieneCodigoCamara "CIM" ;
+	ns:tieneFechaAltaCamara "2018-11-08T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "508387"^^xsd:integer ;
+	ns:tieneNumeroCamara "205"^^xsd:integer ;
+	ns:tieneSoporteCamara "Mastil" ;
+	ns:tieneTipoCamara "Càmera mòbil" ;
+	ns:tieneX_ETRS89Camara "434905295"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4584951263"^^xsd:integer .
+
+ns:Camara_508388 rdf:type ns:Camara ;
+	sc:latitud "41.4226001"^^xsd:decimal ;
+	sc:longitud "2.1838106"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_61 ;
+	ns:tieneCodigoCamara "CIM" ;
+	ns:tieneFechaAltaCamara "2018-11-08T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "508388"^^xsd:integer ;
+	ns:tieneNumeroCamara "206"^^xsd:integer ;
+	ns:tieneSoporteCamara "Mastil" ;
+	ns:tieneTipoCamara "Càmera mòbil" ;
+	ns:tieneX_ETRS89Camara "431797230"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4585992845"^^xsd:integer .
+
+ns:Camara_508389 rdf:type ns:Camara ;
+	sc:latitud "41.4258219"^^xsd:decimal ;
+	sc:longitud "2.1863081"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_61 ;
+	ns:tieneCodigoCamara "CIM" ;
+	ns:tieneFechaAltaCamara "2018-10-17T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "508389"^^xsd:integer ;
+	ns:tieneNumeroCamara "207"^^xsd:integer ;
+	ns:tieneSoporteCamara "Mastil" ;
+	ns:tieneTipoCamara "Càmera mòbil" ;
+	ns:tieneX_ETRS89Camara "432009289"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4586348482"^^xsd:integer .
+
+ns:Camara_508390 rdf:type ns:Camara ;
+	sc:latitud "41.4385895"^^xsd:decimal ;
+	sc:longitud "2.1748789"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_48 ;
+	ns:tieneCodigoCamara "CIM" ;
+	ns:tieneFechaAltaCamara "2018-08-02T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "508390"^^xsd:integer ;
+	ns:tieneNumeroCamara "208"^^xsd:integer ;
+	ns:tieneSoporteCamara "Mastil" ;
+	ns:tieneTipoCamara "Càmera mòbil" ;
+	ns:tieneX_ETRS89Camara "431067790"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4587775007"^^xsd:integer .
+
+ns:Camara_508391 rdf:type ns:Camara ;
+	sc:latitud "41.4362584"^^xsd:decimal ;
+	sc:longitud "2.1842829"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_45 ;
+	ns:tieneCodigoCamara "CIM" ;
+	ns:tieneFechaAltaCamara "2018-08-02T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "508391"^^xsd:integer ;
+	ns:tieneNumeroCamara "209"^^xsd:integer ;
+	ns:tieneSoporteCamara "Mastil" ;
+	ns:tieneTipoCamara "Càmera mòbil" ;
+	ns:tieneX_ETRS89Camara "431850984"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4587508721"^^xsd:integer .
+
+ns:Camara_508392 rdf:type ns:Camara ;
+	sc:latitud "41.4389472"^^xsd:decimal ;
+	sc:longitud "2.1814048"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_52 ;
+	ns:tieneCodigoCamara "CIM" ;
+	ns:tieneFechaAltaCamara "2018-10-02T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "508392"^^xsd:integer ;
+	ns:tieneNumeroCamara "210"^^xsd:integer ;
+	ns:tieneSoporteCamara "Mastil" ;
+	ns:tieneTipoCamara "Càmera mòbil" ;
+	ns:tieneX_ETRS89Camara "431613351"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4587809532"^^xsd:integer .
+
+ns:Camara_508393 rdf:type ns:Camara ;
+	sc:latitud "41.4240691"^^xsd:decimal ;
+	sc:longitud "2.1775093"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_35 ;
+	ns:tieneCodigoCamara "CIM" ;
+	ns:tieneFechaAltaCamara "2018-11-02T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "508393"^^xsd:integer ;
+	ns:tieneNumeroCamara "211"^^xsd:integer ;
+	ns:tieneSoporteCamara "Mastil" ;
+	ns:tieneTipoCamara "Càmera mòbil" ;
+	ns:tieneX_ETRS89Camara "431272227"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4586160915"^^xsd:integer .
+
+ns:Camara_508394 rdf:type ns:Camara ;
+	sc:latitud "41.4303586"^^xsd:decimal ;
+	sc:longitud "2.1774782"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_44 ;
+	ns:tieneCodigoCamara "CIM" ;
+	ns:tieneFechaAltaCamara "2018-10-15T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "508394"^^xsd:integer ;
+	ns:tieneNumeroCamara "212"^^xsd:integer ;
+	ns:tieneSoporteCamara "Mastil" ;
+	ns:tieneTipoCamara "Càmera mòbil" ;
+	ns:tieneX_ETRS89Camara "431276255"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4586859117"^^xsd:integer .
+
+ns:Camara_511321 rdf:type ns:Camara ;
+	sc:latitud "41.4142129"^^xsd:decimal ;
+	sc:longitud "2.2087067"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_70 ;
+	ns:tieneCodigoCamara "CIF" ;
+	ns:tieneFechaAltaCamara "2019-12-16T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "511321"^^xsd:integer ;
+	ns:tieneNumeroCamara "215"^^xsd:integer ;
+	ns:tieneSoporteCamara "Baculo" ;
+	ns:tieneTipoCamara "Càmera fixa" ;
+	ns:tieneX_ETRS89Camara "433869116"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4585042344"^^xsd:integer .
+
+ns:Camara_511753 rdf:type ns:Camara ;
+	sc:latitud "41.3952377"^^xsd:decimal ;
+	sc:longitud "2.1546348"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_26 ;
+	ns:tieneCodigoCamara "DOMO" ;
+	ns:tieneFechaAltaCamara "2000-01-01T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "511753"^^xsd:integer ;
+	ns:tieneNumeroCamara "11"^^xsd:integer ;
+	ns:tieneSoporteCamara "Baculo" ;
+	ns:tieneTipoCamara "Càmera mòbil" ;
+	ns:tieneX_ETRS89Camara "429329561"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4582978460"^^xsd:integer .
+
+ns:Camara_513841 rdf:type ns:Camara ;
+	sc:latitud "41.3900629"^^xsd:decimal ;
+	sc:longitud "2.1574929"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_8 ;
+	ns:tieneCodigoCamara "DOMO" ;
+	ns:tieneFechaAltaCamara "2021-04-15T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "513841"^^xsd:integer ;
+	ns:tieneNumeroCamara "96"^^xsd:integer ;
+	ns:tieneSoporteCamara "Baculo" ;
+	ns:tieneTipoCamara "Càmera mòbil" ;
+	ns:tieneX_ETRS89Camara "429562910"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4582401610"^^xsd:integer .
+
+ns:Camara_516294 rdf:type ns:Camara ;
+	sc:latitud "41.3897835"^^xsd:decimal ;
+	sc:longitud "2.1575565"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_8 ;
+	ns:tieneCodigoCamara "DOMO" ;
+	ns:tieneFechaAltaCamara "2020-12-15T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "516294"^^xsd:integer ;
+	ns:tieneNumeroCamara "42"^^xsd:integer ;
+	ns:tieneSoporteCamara "Baculo" ;
+	ns:tieneTipoCamara "Càmera mòbil" ;
+	ns:tieneX_ETRS89Camara "429567932"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4582370570"^^xsd:integer .
+
+ns:Camara_520195 rdf:type ns:Camara ;
+	sc:latitud "41.3636878"^^xsd:decimal ;
+	sc:longitud "2.1362777"^^xsd:decimal ;
+	ns:enBarrio ns:Barrio_13 ;
+	ns:tieneCodigoCamara "CIM" ;
+	ns:tieneFechaAltaCamara "2022-12-27T00:00:00Z"^^xsd:date ;
+	ns:tieneIdCamara "520195"^^xsd:integer ;
+	ns:tieneNumeroCamara "38"^^xsd:integer ;
+	ns:tieneSoporteCamara "Baculo" ;
+	ns:tieneTipoCamara "Càmera mòbil" ;
+	ns:tieneX_ETRS89Camara "427760029"^^xsd:integer ;
+	ns:tieneY_ETRS89Camara "4579490945"^^xsd:integer .
+
+ns:Distrito_1 rdf:type ns:Distrito ;
+	ns:tieneCodigoDistrito "1"^^xsd:integer ;
+	ns:tieneNombreDistrito "Ciutat Vella" .
+
+ns:Distrito_10 rdf:type ns:Distrito ;
+	ns:tieneCodigoDistrito "10"^^xsd:integer ;
+	ns:tieneNombreDistrito "Sant Martí" .
+
+ns:Distrito_2 rdf:type ns:Distrito ;
+	ns:tieneCodigoDistrito "2"^^xsd:integer ;
+	ns:tieneNombreDistrito "Eixample" .
+
+ns:Distrito_3 rdf:type ns:Distrito ;
+	ns:tieneCodigoDistrito "3"^^xsd:integer ;
+	ns:tieneNombreDistrito "Sants-Montjuïc" .
+
+ns:Distrito_4 rdf:type ns:Distrito ;
+	ns:tieneCodigoDistrito "4"^^xsd:integer ;
+	ns:tieneNombreDistrito "Les Corts" .
+
+ns:Distrito_5 rdf:type ns:Distrito ;
+	ns:tieneCodigoDistrito "5"^^xsd:integer ;
+	ns:tieneNombreDistrito "Sarrià-Sant Gervasi" .
+
+ns:Distrito_6 rdf:type ns:Distrito ;
+	ns:tieneCodigoDistrito "6"^^xsd:integer ;
+	ns:tieneNombreDistrito "Gràcia" .
+
+ns:Distrito_7 rdf:type ns:Distrito ;
+	ns:tieneCodigoDistrito "7"^^xsd:integer ;
+	ns:tieneNombreDistrito "Horta-Guinardó" .
+
+ns:Distrito_8 rdf:type ns:Distrito ;
+	ns:tieneCodigoDistrito "8"^^xsd:integer ;
+	ns:tieneNombreDistrito "Nou Barris" .
+
+ns:Distrito_9 rdf:type ns:Distrito ;
+	ns:tieneCodigoDistrito "9"^^xsd:integer ;
+	ns:tieneNombreDistrito "Sant Andreu" .
+

@@ -1,0 +1,107 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix samur: <http://samur.linkeddata.madrid.es/ontology#> .
+
+<http://samur.linkeddata.madrid.es/TriplesMap1> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "../csv/activaciones_samur_2023-updated.csv";  
+    rml:referenceFormulation ql:CSV
+  ];
+  rr:subjectMap [
+    rr:template "http://samur.linkeddata.madrid.es/activation/{ID}";
+    rr:class samur:Activation
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate samur:hasYear;
+    rr:objectMap [
+      rml:reference "Año";
+      rr:datatype xsd:gYear
+    ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate samur:hasMonth;
+    rr:objectMap [
+      rml:reference "Mes";
+      rr:datatype xsd:gMonth
+    ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate samur:hasRequestTime;
+    rr:objectMap [
+      rml:reference "Hora Solicitud";
+      rr:datatype xsd:time
+    ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate samur:hasInterventionTime;
+    rr:objectMap [
+      rml:reference "Hora Intervención";
+      rr:datatype xsd:time
+    ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate samur:hasEmergencyType;
+    rr:objectMap [
+      rml:reference "Código";
+      rr:termType xsd:string
+    ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate samur:hasDistrict;
+    rr:objectMap [
+      rr:template "http://samur.linkeddata.madrid.es/location/{Distrito}";
+      rr:termType rr:IRI
+    ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate samur:hasHospital;
+    rr:objectMap [
+      rr:template "http://samur.linkeddata.madrid.es/hospital/{Hospital}";
+      rr:termType rr:IRI
+    ]
+  ].
+
+<http://samur.linkeddata.madrid.es/TriplesMap2> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "../csv/activaciones_samur_2023-updated.csv";
+    rml:referenceFormulation ql:CSV
+  ];
+  rr:subjectMap [
+    rr:template "http://samur.linkeddata.madrid.es/location/{Distrito}";
+    rr:class samur:Location
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate samur:hasDistrictName;
+    rr:objectMap [
+      rml:reference "Distrito";
+      rr:datatype xsd:string
+    ]
+  ].
+
+<http://samur.linkeddata.madrid.es/TriplesMap3> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "../csv/activaciones_samur_2023-updated.csv";
+    rml:referenceFormulation ql:CSV
+  ];
+  rr:subjectMap [
+    rr:template "http://samur.linkeddata.madrid.es/hospital/{Hospital}";
+    rr:class samur:Hospital
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate samur:hasHospitalName;
+    rr:objectMap [
+      rml:reference "Hospital";
+      rr:datatype xsd:string
+    ]
+  ].

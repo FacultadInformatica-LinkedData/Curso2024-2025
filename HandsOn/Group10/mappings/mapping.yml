@@ -1,0 +1,61 @@
+prefixes:
+  rr: "http://www.w3.org/ns/r2rml#"
+  rml: "http://semweb.mmlab.be/ns/rml#"
+  ql: "http://semweb.mmlab.be/ns/ql#"
+  Parking: "https://smartcity.linkeddata.es/Grupo10/ontology/parkingbicismadrid#"
+  apar: "https://smartcity.linkeddata.es/Group10/resource/Aparcamiento/"
+  via: "https://smartcity.linkeddata.es/Group10/resource/Via/"
+  bar: "https://smartcity.linkeddata.es/Group10/resource/Barrio/"
+  dis: "https://smartcity.linkeddata.es/Group10/resource/Distrito/"
+  xsd: "http://www.w3.org/2001/XMLSchema#"
+
+mappings:
+  TriplesMapParking:
+    sources:
+      - ['aparcabicis202410-updated.csv~csv']
+    s: "apar:{ID}"
+    po:
+      - [ a, "Parking:Parking" ]
+      - [ "Parking:ID", "{ID}"^^xsd:integer ]
+      - [ "Parking:desc_clasificacion", "{DESC_CLASIFICACION}"^^xsd:string ]
+      - [ "Parking:estado", "{ESTADO}"^^xsd:string ]
+      - [ "Parking:coord_gis_x", "{COORD_GIS_X}"^^xsd:double ]
+      - [ "Parking:coord_gis_y", "{COORD_GIS_Y}"^^xsd:double ]
+      - [ "Parking:sistema_coord", "{SISTEMA_COORD}"^^xsd:string ]
+      - [ "Parking:latitud", "{LATITUD}"^^xsd:double ]
+      - [ "Parking:longitud", "{LONGITUD}"^^xsd:double ]
+      - [ "Parking:codigo_postal", "{COD_POSTAL}"^^xsd:integer ]
+      - [ "Parking:direccion_aux", "{DIRECCION_AUX}"^^xsd:string ]
+      - [ "Parking:ndp", "{NDP}"^^xsd:integer ]
+      - [ "Parking:fecha_instalacion", "{FECHA_INSTALACION}"^^xsd:dateTime ]
+      - [ "Parking:codigo_interno", "{CODIGO_INTERNO}"^^xsd:integer ]
+      - [ "Parking:contrato_cod", "{CONTRATO_COD}"^^xsd:string ]
+      - [ "Parking:modelo", "{MODELO}"^^xsd:string ]
+      - [ "Parking:envia", "via:{ID}" ]
+  TriplesMapVia:
+    sources:
+      - ['aparcabicis202410-updated.csv~csv']
+    s: "via:{ID}"
+    po:
+      - [ a, "Parking:Via" ]
+      - [ "Parking:num_via", "{NUM_VIA}"^^xsd:string ]
+      - [ "Parking:nom_via", "{NOM_VIA}"^^xsd:string ]
+      - [ "Parking:tipo_via", "{TIPO_VIA}"^^xsd:string ]
+      - [ "Parking:enbarrio", "bar:{COD_BARRIO}" ]
+  TriplesMapBarrio:
+    sources:
+      - ['aparcabicis202410-updated.csv~csv']
+    s: "bar:{COD_BARRIO}"
+    po:
+      - [ a, "Parking:Barrio" ]
+      - [ "Parking:cod_barrio", "{COD_BARRIO}"^^xsd:integer ]
+      - [ "Parking:barrio", "{BARRIO}"^^xsd:string ]
+      - [ "Parking:endistrito", "dis:{COD_DISTRITO}" ]
+  TriplesMapDistrito:
+    sources:
+      - ['aparcabicis202410-updated.csv~csv']
+    s: "dis:{COD_DISTRITO}"
+    po:
+      - [ a, "Parking:Distrito" ]
+      - [ "Parking:cod_distrito", "{COD_DISTRITO}"^^xsd:integer ]
+      - [ "Parking:distrito", "{DISTRITO}"^^xsd:string ]

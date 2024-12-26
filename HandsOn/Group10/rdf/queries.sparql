@@ -1,0 +1,39 @@
+PREFIX apar: https://smartcity.linkeddata.es/Group10/resource/Aparcamiento/
+PREFIX bar: https://smartcity.linkeddata.es/Group10/resource/Barrio/
+PREFIX dis: https://smartcity.linkeddata.es/Group10/resource/Distrito/
+PREFIX via: https://smartcity.linkeddata.es/Group10/resource/Via/
+PREFIX Parking: https://smartcity.linkeddata.es/Grupo10/ontology/parkingbicismadrid
+PREFIX xsd: http://www.w3.org/2001/XMLSchema
+
+SELECT ?aparcamiento ?distritoNombre
+WHERE {
+  ?aparcamiento a Parking:Parking ;
+                Parking:envia ?via .
+  ?via Parking:enbarrio ?barrio .
+  ?barrio Parking:endistrito ?distrito .
+  ?distrito Parking:distrito ?distritoNombre .
+  FILTER (?distritoNombre = "BARAJAS")
+}
+
+
+SELECT (COUNT(?aparcamiento) AS ?totalAparcamientos)
+WHERE {
+  ?aparcamiento a Parking:Parking ;
+                Parking:codigo_postal 28042 .
+} 
+
+
+SELECT ?aparcamiento
+WHERE {
+  ?aparcamiento a Parking:Parking ;
+                Parking:modelo "MU-51"^^xsd:string .
+}
+
+
+SELECT ?barrioNombre ?distritoNombre
+WHERE {
+  ?barrio a Parking:Barrio ;
+          Parking:barrio ?barrioNombre ;
+          Parking:endistrito ?distrito .
+  ?distrito Parking:distrito ?distritoNombre .
+}

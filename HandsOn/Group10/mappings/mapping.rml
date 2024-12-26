@@ -1,0 +1,157 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix Parking: <https://smartcity.linkeddata.es/Grupo10/ontology/parkingbicismadrid#> .
+@prefix apar: <https://smartcity.linkeddata.es/Group10/resource/Aparcamiento/> .
+@prefix via: <https://smartcity.linkeddata.es/Group10/resource/Via/> .
+@prefix bar: <https://smartcity.linkeddata.es/Group10/resource/Barrio/> .
+@prefix dis: <https://smartcity.linkeddata.es/Group10/resource/Distrito/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<#TriplesMapParking>
+  a rr:TriplesMap ;
+  rml:logicalSource [
+    rml:source "aparcabicis202410-updated.csv" ;
+    rml:referenceFormulation ql:CSV ;
+  ] ;
+  rr:subjectMap [
+    rr:template "https://smartcity.linkeddata.es/Group10/resource/Aparcamiento/{ID}" ;
+    rr:class Parking:Parking ;
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate Parking:ID ;
+    rr:objectMap [ rml:reference "ID" ; rr:datatype xsd:integer ] ;
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate Parking:desc_clasificacion ;
+    rr:objectMap [ rml:reference "DESC_CLASIFICACION" ; rr:datatype xsd:string ] ;
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate Parking:estado ;
+    rr:objectMap [ rml:reference "ESTADO" ; rr:datatype xsd:string ] ;
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate Parking:coord_gis_x ;
+    rr:objectMap [ rml:reference "COORD_GIS_X" ; rr:datatype xsd:double ] ;
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate Parking:coord_gis_y ;
+    rr:objectMap [ rml:reference "COORD_GIS_Y" ; rr:datatype xsd:double ] ;
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate Parking:sistema_coord ;
+    rr:objectMap [ rml:reference "SISTEMA_COORD" ; rr:datatype xsd:string ] ;
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate Parking:latitud ;
+    rr:objectMap [ rml:reference "LATITUD" ; rr:datatype xsd:double ] ;
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate Parking:longitud ;
+    rr:objectMap [ rml:reference "LONGITUD" ; rr:datatype xsd:double ] ;
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate Parking:codigo_postal ;
+    rr:objectMap [ rml:reference "COD_POSTAL" ; rr:datatype xsd:integer ] ;
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate Parking:direccion_aux ;
+    rr:objectMap [ rml:reference "DIRECCION_AUX" ; rr:datatype xsd:string ] ;
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate Parking:ndp ;
+    rr:objectMap [ rml:reference "NDP" ; rr:datatype xsd:integer ] ;
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate Parking:fecha_instalacion ;
+    rr:objectMap [ rml:reference "FECHA_INSTALACION" ; rr:datatype xsd:dateTime ] ;
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate Parking:codigo_interno ;
+    rr:objectMap [ rml:reference "CODIGO_INTERNO" ; rr:datatype xsd:integer ] ;
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate Parking:contrato_cod ;
+    rr:objectMap [ rml:reference "CONTRATO_COD" ; rr:datatype xsd:string ] ;
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate Parking:modelo ;
+    rr:objectMap [ rml:reference "MODELO" ; rr:datatype xsd:string ] ;
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate Parking:envia ;
+    rr:objectMap [ rr:parentTriplesMap <#TriplesMapVia> ] ;
+  ] ;
+.
+
+<#TriplesMapVia>
+  a rr:TriplesMap ;
+  rml:logicalSource [
+    rml:source "aparcabicis202410-updated.csv" ;
+    rml:referenceFormulation ql:CSV ;
+  ] ;
+  rr:subjectMap [
+    rr:template "https://smartcity.linkeddata.es/Group10/resource/Via/{ID}" ;
+    rr:class Parking:Via ;
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate Parking:num_via ;
+    rr:objectMap [ rml:reference "NUM_VIA" ; rr:datatype xsd:string ] ;
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate Parking:nom_via ;
+    rr:objectMap [ rml:reference "NOM_VIA" ; rr:datatype xsd:string ] ;
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate Parking:tipo_via ;
+    rr:objectMap [ rml:reference "TIPO_VIA" ; rr:datatype xsd:string ] ;
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate Parking:enbarrio ;
+    rr:objectMap [ rr:parentTriplesMap <#TriplesMapBarrio> ] ;
+  ] ;
+.
+
+<#TriplesMapBarrio>
+  a rr:TriplesMap ;
+  rml:logicalSource [
+    rml:source "aparcabicis202410-updated.csv" ;
+    rml:referenceFormulation ql:CSV ;
+  ] ;
+  rr:subjectMap [
+    rr:template "https://smartcity.linkeddata.es/Group10/resource/Barrio/{COD_BARRIO}" ;
+    rr:class Parking:Barrio ;
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate Parking:cod_barrio ;
+    rr:objectMap [ rml:reference "COD_BARRIO" ; rr:datatype xsd:integer ] ;
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate Parking:barrio ;
+    rr:objectMap [ rml:reference "BARRIO" ; rr:datatype xsd:string ] ;
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate Parking:endistrito ;
+    rr:objectMap [ rr:parentTriplesMap <#TriplesMapDistrito> ] ;
+  ] ;
+.
+
+<#TriplesMapDistrito>
+  a rr:TriplesMap ;
+  rml:logicalSource [
+    rml:source "aparcabicis202410-updated.csv" ;
+    rml:referenceFormulation ql:CSV ;
+  ] ;
+  rr:subjectMap [
+    rr:template "https://smartcity.linkeddata.es/Group10/resource/Distrito/{COD_DISTRITO}" ;
+    rr:class Parking:Distrito ;
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate Parking:cod_distrito ;
+    rr:objectMap [ rml:reference "COD_DISTRITO" ; rr:datatype xsd:integer ] ;
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate Parking:distrito ;
+    rr:objectMap [ rml:reference "DISTRITO" ; rr:datatype xsd:string ] ;
+  ] ;
+.

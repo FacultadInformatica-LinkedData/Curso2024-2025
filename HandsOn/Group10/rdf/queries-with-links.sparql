@@ -1,0 +1,20 @@
+PREFIX apar: https://smartcity.linkeddata.es/Group10/resource/Aparcamiento/
+PREFIX bar: https://smartcity.linkeddata.es/Group10/resource/Barrio/
+PREFIX dis: https://smartcity.linkeddata.es/Group10/resource/Distrito/
+PREFIX via: https://smartcity.linkeddata.es/Group10/resource/Via/
+PREFIX Parking: https://smartcity.linkeddata.es/Grupo10/ontology/parkingbicismadrid
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX xsd: http://www.w3.org/2001/XMLSchema
+
+
+SELECT DISTINCT ?barrio ?URL
+WHERE{
+  ?barrio a Parking:Barrio .
+  ?barrio owl:sameAs ?URL .
+}
+
+SELECT DISTINCT ?distrito ?URL
+WHERE{
+  ?distrito a Parking:Distrito .
+  ?distrito owl:sameAs ?URL .
+}

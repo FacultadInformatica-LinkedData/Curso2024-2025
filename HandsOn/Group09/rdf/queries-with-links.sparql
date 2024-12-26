@@ -1,0 +1,39 @@
+# 1. Consultar todas las concesiones y sus denominaciones
+SELECT ?concesion ?denominacionLabel WHERE {
+  ?concesion a <http://smartcity.linkeddata.es/concesiones_zonas_verdes/ontologia/Concesion> ;
+              <http://smartcity.linkeddata.es/concesiones_zonas_verdes/ontologia/tieneDenominacion> ?denominacion .
+  ?denominacion <http://www.w3.org/2000/01/rdf-schema#label> ?denominacionLabel .
+}
+
+
+# 2. Consultar todas las concesiones y los distritos asociados
+SELECT ?concesion ?distritoLabel WHERE {
+  ?concesion a <http://smartcity.linkeddata.es/concesiones_zonas_verdes/ontologia/Concesion> ;
+              <http://smartcity.linkeddata.es/concesiones_zonas_verdes/ontologia/tieneDistrito> ?distrito .
+  ?distrito <http://www.w3.org/2000/01/rdf-schema#label> ?distritoLabel .
+}
+
+
+# 3. Consultar las concesiones en el distrito "CENTRO"
+SELECT ?concesion ?denominacionLabel WHERE {
+  ?concesion a <http://smartcity.linkeddata.es/concesiones_zonas_verdes/ontologia/Concesion> ;
+              <http://smartcity.linkeddata.es/concesiones_zonas_verdes/ontologia/tieneDistrito> <http://smartcity.linkeddata.es/concesiones_zonas_verdes/recursos/distrito/CENTRO> ;
+              <http://smartcity.linkeddata.es/concesiones_zonas_verdes/ontologia/tieneDenominacion> ?denominacion .
+  ?denominacion <http://www.w3.org/2000/01/rdf-schema#label> ?denominacionLabel .
+}
+
+
+
+# 4. Consultar las concesiones con su situación
+SELECT ?concesion ?situacion WHERE {
+  ?concesion a <http://smartcity.linkeddata.es/concesiones_zonas_verdes/ontologia/Concesion> ;
+             <http://smartcity.linkeddata.es/concesiones_zonas_verdes/ontologia/tieneSituacion> ?situacion .
+}
+
+# 5. Consulta que utiliza el enlace a Wikidata de cada distrito
+SELECT ?concesion ?distritoLabel ?wikidataLink WHERE {
+  ?concesion a <http://smartcity.linkeddata.es/concesiones_zonas_verdes/ontologia/Concesion> ;
+              <http://smartcity.linkeddata.es/concesiones_zonas_verdes/ontologia/tieneDistrito> ?distrito .
+  ?distrito <http://www.w3.org/2000/01/rdf-schema#label> ?distritoLabel ;
+            <http://www.w3.org/2002/07/owl#sameAs> ?wikidataLink .
+}

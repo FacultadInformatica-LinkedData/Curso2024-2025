@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>DataSet Requirements</title>
+    <meta
+      name="description"
+      content="Dataset requirements for the smart city domain, including data availability, licensing, and documentation."
+    />
+    <meta
+      name="keywords"
+      content="dataset, smart city, open license, CSV, documentation, real-world entities, Madrid"
+    />
+
+    <style type="text/css">
+      body {
+        margin: 0 auto;
+        max-width: 1000px;
+        line-height: 1.6;
+      }
+      table {
+        width: 100%;
+        text-align: center;
+      }
+      th, td {
+        border: 1px solid black;
+        padding: 0.5rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Analysis</h1>
+
+    <h2>Data Set Analysis</h2>
+    <table>
+      <tr>
+        <th>Column</th>
+        <th>Type</th>
+        <th>Comments / Range</th>
+        <th>Problems</th>
+      </tr>
+      <tr>
+        <td>num_expediente</td>
+        <td>String</td>
+        <td>Unique</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>fecha</td>
+        <td>Date</td>
+        <td>dd/mm/aaaa format</td>
+        <td></td>
+      </tr>
+      <tr>
+      <tr>
+        <td>hora</td>
+        <td>Time</td>
+        <td>hh:mm:ss format</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>localizacion</td>
+        <td>String</td>
+        <td>Not unique</td>
+        <td>Some values are not valid</td>
+      </tr>
+      <tr>
+        <td>numero</td>
+        <td>String</td>
+        <td>Not unique</td>
+        <td>Some non-numeric values</td>
+      </tr>
+      <tr>
+        <td>cod_distrito</td>
+        <td>Integer</td>
+        <td>1 - 22</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>distrito</td>
+        <td>String</td>
+        <td>Not unique</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>tipo_accidente</td>
+        <td>String</td>
+        <td>Not unique</td>
+        <td>Null values and unknown values</td>
+      </tr>
+      <tr>
+        <td>estado_meteorológico</td>
+        <td>String</td>
+        <td>Not unique</td>
+        <td>Null values and unknown values</td>
+      </tr>
+      <tr>
+        <td>tipo_vehiculo</td>
+        <td>String</td>
+        <td>Not unique</td>
+        <td>Null values and unknown values</td>
+      </tr>
+      <tr>
+        <td>tipo_persona</td>
+        <td>String</td>
+        <td>Not unique</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>rango_edad</td>
+        <td>String</td>
+        <td>Not unique</td>
+        <td>Unknown values</td>
+      </tr>
+      <tr>
+        <td>sexo</td>
+        <td>String</td>
+        <td>Not unique</td>
+        <td>Unknown values</td>
+      </tr>
+      <tr>
+        <td>cod_lesividad</td>
+        <td>Integer</td>
+        <td>1 - 14</td>
+        <td>Null values</td>
+      </tr>
+      <tr>
+        <td>lesividad</td>
+        <td>String</td>
+        <td>Not unique</td>
+        <td>Null values</td>
+      </tr>
+      <tr>
+        <td>coordenada_x_utm</td>
+        <td>Decimal</td>
+        <td>42000 - 455000</td>
+        <td>Null values</td>
+      </tr>
+      <tr>
+        <td>coordenada_y_utm</td>
+        <td>Decimal</td>
+        <td>444000 - 4492000</td>
+        <td>Null values</td>
+      </tr>
+      <tr>
+        <td>positiva_alcohol</td>
+        <td>String</td>
+        <td>Not unique</td>
+        <td>Null values</td>
+      </tr>
+      <tr>
+        <td>positiva_droga</td>
+        <td>String</td>
+        <td>Not unique</td>
+        <td></td>
+      </tr>
+    </table>
+
+    <h2>License Analysis</h2>
+    <p>
+        <b>Publisher and Rightsholder:</b> Ayuntamiento de Madrid.
+    </p>
+    <p>
+        The dataset from the Madrid City Council is available under a <a href="https://datos.madrid.es/portal/site/egob/menuitem.3efdb29b813ad8241e830cc2a8a409a0/?vgnextoid=108804d4aab90410VgnVCM100000171f5a0aRCRD&vgnextchannel=b4c412b9ace9f310VgnVCM100000171f5a0aRCRD&vgnextfmt=default"> 
+        LDA license (Licencia de Datos Abiertos)</a>, which allows us to do the following:
+        <ul>
+            <li>Download the data for free.</li>
+            <li>Share, modify, adapt, extract and combine the data.</li> 
+        </ul>
+
+        As long as the following conditions are met:
+        
+        <ol>
+            <li>The source must be clearly stated as "Ayuntamiento de Madrid". </li>
+            <li>It must not be implied or suggested that the Madrid City Council endorses or sponsors the reuse of the data. </li>
+            <li>Altering or misrepresenting the meaning of the information is prohibited. </li>
+            <li>Any metadata related to the update date or reuse conditions included in the documents must not be altered or removed. </li>
+        </ol>
+        
+        Additionally, the City Council grants a non-exclusive and free license to use the intellectual property rights needed for the reuse of the data, 
+        such as reproduction, distribution, and transformation of the information, in any format, worldwide, and for the maximum period allowed by law.
+        
+        The license we will be using is LDA.
+    </p>      
+
+    <h2>Resource Naming</h2>
+    <p>
+      <strong>Domain:</strong> http://smartcity.linkeddata.es/<br>
+      <strong>Path:</strong> http://smartcity.linkeddata.es/accidents/<br>
+      <strong>&emsp;Ontology:</strong> http://smartcity.linkeddata.es/accidents/ontology/<br>
+      <strong>&emsp;&emsp;Class:</strong> http://smartcity.linkeddata.es/accidents/ontology/[ontologyName]/[className]<br>
+      <strong>&emsp;&emsp;Property:</strong> http://smartcity.linkeddata.es/accidents/ontology/[ontologyName]/[propertyName]<br>
+      <strong>&emsp;Data:</strong> http://smartcity.linkeddata.es/accidents/resource/<br>
+      <strong>&emsp;&emsp;Individual:</strong> http://smartcity.linkeddata.es/accidents/resource/[className]/[identifier]<br>
+    </div>
+    
+  </body>
+</html>

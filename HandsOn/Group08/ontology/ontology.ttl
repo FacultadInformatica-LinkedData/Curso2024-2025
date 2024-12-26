@@ -1,0 +1,80 @@
+@prefix base: <http://group08.org/hands-on/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix mod: <https://w3id.org/mod#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+base: a owl:Ontology ;
+    dc:creator "Alex Javier Pinduisaca Muñoz",
+        "Angel Astiazaran Gafo",
+        "Lucas Rodriguez Llera",
+        "Mario Villarín Garcia",
+        "Sebastián Revilla Rojas" ;
+    dc:title "Parking Slots" ;
+    owl:versionInfo "0.0.1" ;
+    mod:createdWith <https://chowlk.linkeddata.es/> .
+
+# Classes
+
+base:Address a owl:Class ;
+    rdfs:label "Address" .
+
+base:Parking a owl:Class ;
+    rdfs:label "Parking" .
+
+base:Vehicle a owl:Class ;
+    rdfs:label "Vehicle" .
+
+  # Properties for Parking
+base:hasId a owl:DatatypeProperty ;
+    rdfs:domain base:Parking ;
+    rdfs:range xsd:Integer ;
+    rdfs:label "has ID" .
+
+base:hasName a owl:DatatypeProperty ;
+    rdfs:domain base:Parking ;
+    rdfs:range xsd:String ;
+    rdfs:label "has Name" .
+
+base:hasSchedule a owl:DatatypeProperty ;
+    rdfs:domain base:Parking ;
+    rdfs:range xsd:String ;
+    rdfs:label "has Schedule" .
+
+# Properties for Address
+base:hasDistrict a owl:DatatypeProperty ;
+    rdfs:domain base:Address ;
+    rdfs:range xsd:String ;
+    rdfs:label "has District" .
+
+base:hasNeighbourhood a owl:DatatypeProperty ;
+    rdfs:domain base:Address ;
+    rdfs:range xsd:String ;
+    rdfs:label "has Neighbourhood" .
+
+base:hasStreetNumber a owl:DatatypeProperty ;
+    rdfs:domain base:Address ;
+    rdfs:range xsd:Integer ;
+    rdfs:label "has Street Number" .
+
+base:hasStreet a owl:DatatypeProperty ;
+    rdfs:domain base:Address ;
+    rdfs:range xsd:String ;
+    rdfs:label "has Street" .
+
+# Properties for Vehicle
+base:hasVehicleType a owl:DatatypeProperty ;
+    rdfs:domain base:Vehicle ;
+    rdfs:range xsd:String ;
+    rdfs:label "has Vehicle Type" .
+
+base:hasNumberSlots a owl:DatatypeProperty ;
+    rdfs:domain base:Vehicle ;
+    rdfs:range xsd:Integer ;
+    rdfs:label "has Number of Slots" .
+
+# Annotations
+dc:creator a owl:AnnotationProperty .
+dc:title a owl:AnnotationProperty .
+owl:versionInfo a owl:AnnotationProperty .

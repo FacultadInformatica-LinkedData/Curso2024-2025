@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dataset Analysis - Air Quality Measurements</title>
+    <meta name="description" content="Simple analysis of Air Quality measurements dataset">
+</head>
+<body>
+    <h1>Analisis de un dataset de la calidad del aire</h1>
+    
+    <h2>1. Analisis de los datos</h2>
+    <p>Esta dataset contiene las medidas de la calidad del aire de las estaciones de Gijón. Consiste en dos entidades:</p>
+    <ul>
+        <li><strong>EstacionMedicion</strong>: Localizaciones donde se han obtenido dichas medidas</li>
+        <li><strong>Medicion</strong>: Lecturas individuales de distintas calidades del aire</li>
+    </ul>
+
+    <h3>Puntos clave</h3>
+    <table border="1" cellpadding="5" cellspacing="0">
+        <tr>
+            <th>Tipo</th>
+            <th>Descripción</th>
+        </tr>
+        <tr>
+            <td>Datos de la localización</td>
+            <td>ID_estacion, Nombre, Hora, latitud, longitud</td>
+        </tr>
+        <tr>
+            <td>Parametros de la calidad del aire</td>
+            <td>SO2, NO, NOX</td>
+        </tr>
+        <tr>
+            <td>Datos del tiempo</td>
+            <td>direccion del viento, temperatura, humedad</td>
+        </tr>
+    </table>
+
+    <h2>2. Licencia</h2>
+    <p>El conjunto de datos original es publicado por el Ayuntamiento de Gijón y está disponible a través del Portal de Datos Abiertos de España. <a href="https://datos.gob.es/es/catalogo/l01330241-calidad-del-aire-estaciones-moviles-campana-portuarios">Spanish Open Data Portal</a>.</p>
+    <p>Los datos se publican bajo <a href="http://creativecommons.org/licenses/by/3.0/es"> Creative Commons Attribution 3.0 Spain License</a>. una Licencia Creative Commons Reconocimiento 3.0 España. Esta es una licencia abierta que permite tanto el uso comercial como no comercial de los datos, siempre que se dé el crédito adecuado..</p>
+    <p>Para mantener la coherencia y asegurar el uso adecuado de los datos, aplicaremos la misma licencia Creative Commons Reconocimiento 3.0 ES a nuestro conjunto de datos derivado y ontología. Este enfoque garantiza que los usuarios puedan usar, modificar y compartir nuestro trabajo libremente, respetando los términos de la licencia de los datos originales.</p>
+
+    <h2>3. Resource Naming Strategy</h2>
+    <p><strong>URI base</strong>: http://webcam.linkeddata.Gijon.es.org/</p>
+    
+    <h3>Naming Patterns</h3>
+    <ul>
+        <li>Estaciones: estacion_[number] (e.g., estacion_12)</li>
+        <li>Medidas: medicion_[station-number]_[period] (e.g., medicion_12_1)</li>
+    </ul>
+
+</body>
+</html>

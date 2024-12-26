@@ -1,0 +1,27 @@
+@prefix park: <http://group08.org/hands-on/resource/Parking/>.
+@prefix addr: <http://group08.org/hands-on/resource/Address/>.
+@prefix veh: <http://group08.org/hands-on/resource/Vehicle/>.
+@prefix mod: <https://w3id.org/mod/> .
+@prefix base: <http://group08.org/hands-on/ParkingSlots#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sc: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+park:11483771 a base:Parking ;
+    base:hasId 11483771 ;
+    base:hasName "Aparcamiento disuasorio Aviación Española"^^xsd:String ;
+    base:hasSchedule "00:00 - 23:59"^^xsd:String ;
+    base:hasAddress base:11483771 ;
+    base:hasVehicle base:11483771 .
+
+addr:11483771 a base:Address ;
+    base:hasDistrict "LATINA"^^xsd:String ;
+    base:hasNeighbourhood "Las Aguilas"^^xsd:String ;
+    base:hasStreetNumber 5^^xsd:Integer ;
+    base:hasStreet "Fuente de Lima"^^xsd:String .
+
+veh:11483771 a base:Vehicle ;
+    base:hasVehicleType "Cars, motorbikes and bicycle"^^xsd:String ;
+    base:hasNumberSlots 379^^xsd:Integer .

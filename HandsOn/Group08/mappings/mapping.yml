@@ -1,0 +1,28 @@
+prefixes:
+  rr: http://www.w3.org/ns/r2rml#
+  foaf: http://xmlns.com/foaf/0.1/
+  xsd: http://www.w3.org/2001/XMLSchema#
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
+  rev: http://purl.org/stuff/rev#
+  schema: http://schema.org/
+  dct: http://purl.org/dc/terms/
+  rml: http://semweb.mmlab.be/ns/rml#
+  ql: http://semweb.mmlab.be/ns/ql#
+  rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+  vocab: http://example.org#
+
+mappings:
+  triplesmapParking:
+    sources:
+      - [aparcamientos-publicos-actualizado.csv~csv]
+    s: http://example.com/parking/$(ID)
+    po:
+      - [a, vocab:Parking]
+      - [vocab:hasName, $(NAME)]
+      - [vocab:hasSchedule, $(SCHEDULE)]
+      - [vocab:hasStreetName, $(STREET_NAME)]
+      - [vocab:hasStreetNumber, $(STREET_NUMBER), xsd:integer]
+      - [vocab:hasNeighbourhood, $(NEIGHBOURHOOD)]
+      - [vocab:hasDistrict, $(DISTRICT)]
+      - [vocab:hasVehicleType, $(VEHICLE_TYPE)]
+      - [vocab:hasNumberSlots, $(TOTAL_SLOTS), xsd:integer]

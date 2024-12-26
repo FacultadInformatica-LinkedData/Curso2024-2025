@@ -1,0 +1,21 @@
+@prefix dash:    <http://datashapes.org/dash#> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+@prefix graphql: <http://datashapes.org/graphql#> .
+@prefix ns:      <https://websemantica.net/Group03/ontology/CamarasBcn#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix ql:      <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml:     <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr:      <http://www.w3.org/ns/r2rml#> .
+@prefix sc:      <https://schema.org/> .
+@prefix sd:      <http://www.w3.org/ns/sparql-service-description#> .
+@prefix sh:      <http://www.w3.org/ns/shacl#> .
+@prefix shsh:    <http://www.w3.org/ns/shacl-shacl#> .
+@prefix swa:     <http://topbraid.org/swa#> .
+@prefix tosh:    <http://topbraid.org/tosh#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+
+[ rdf:type     sh:ValidationReport;
+  sh:conforms  true
+] .

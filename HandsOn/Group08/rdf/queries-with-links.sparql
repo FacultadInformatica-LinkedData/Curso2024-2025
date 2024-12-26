@@ -1,0 +1,34 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX ns1: <http://example.com/>
+
+# Consulta 1: Obtener barrios y enlaces a Wikidata
+SELECT DISTINCT ?neighbourhood ?linkWikidata
+WHERE {
+    ?parking ns1:neighbourhood ?neighbourhood ;
+             owl:sameAs ?linkWikidata .
+}
+
+# Consulta 2: Obtener calles y enlaces a Wikidata
+SELECT DISTINCT ?street ?linkWikidata
+WHERE {
+    ?parking ns1:street_name ?street ;
+             owl:sameAs ?linkWikidata .
+}
+
+# Consulta 3: Obtener información de los aparcamientos en el barrio "Recoletos"
+SELECT ?parking ?name ?vehicleType ?totalSlots
+WHERE {
+    ?parking ns1:neighbourhood "Recoletos" ;
+             ns1:name ?name ;
+             ns1:vehicle_type ?vehicleType ;
+             ns1:total_slots ?totalSlots .
+}
+
+# Consulta 4: Obtener aparcamientos con horario "24 hour"
+SELECT ?parking ?name ?schedule
+WHERE {
+    ?parking ns1:schedule ?schedule ;
+             ns1:name ?name .
+    FILTER(?schedule = "24 hour")
+}

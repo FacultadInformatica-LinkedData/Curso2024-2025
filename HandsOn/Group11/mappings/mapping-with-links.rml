@@ -1,0 +1,432 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix vocab: <http://semanticweb.es/airquality#> .
+@prefix wd: <http://wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<#TriplesMap1> a rr:TriplesMap ;
+    rml:logicalSource [
+        rml:source "horario-csv-updated-with-links.csv" ;
+        rml:referenceFormulation ql:CSV 
+    ] ;
+    rr:subjectMap [
+        rr:template "http://semanticweb.es/airquality/estacion/{ESTACION}" ;
+        rr:class vocab:Estacion 
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate vocab:codigoEstacion ;
+        rr:objectMap [
+            rml:reference "ESTACION" 
+        ]
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate vocab:codigoProvincia ;
+        rr:objectMap [
+            rml:reference "PROVINCIA" 
+        ]
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate vocab:codigoMunicipio ;
+        rr:objectMap [
+            rml:reference "MUNICIPIO" 
+        ]
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate vocab:numeroMunicipio ;
+        rr:objectMap [
+            rml:reference "NUMERO_MUNICIPIO" 
+        ]
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate vocab:codigoMagnitud ;
+        rr:objectMap [
+            rml:reference "MAGNITUD" 
+        ]
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate vocab:codigoUbicacion ;
+        rr:objectMap [
+            rml:reference "UBICACION" 
+        ]
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate vocab:same_as_wikidata_madrid_landmarks ;
+        rr:objectMap [
+            rml:reference "same_as_wikidata_madrid_landmarks" 
+        ]
+    ] .
+
+<#TriplesMap2> a rr:TriplesMap ;
+    rml:logicalSource [
+        rml:source "horario-csv-updated-with-links.csv" ;
+        rml:referenceFormulation ql:CSV
+    ] ;
+    rr:subjectMap [
+        rr:template "http://semanticweb.es/airquality/puntoMuestreo/{PUNTO_MUESTREO}" ;
+        rr:class vocab:PuntoMuestreo
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate vocab:codigoPuntoMuestreo ;
+        rr:objectMap [
+            rml:reference "PUNTO_MUESTREO" 
+        ]
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate vocab:tieneMedicion ;
+        rr:objectMap [
+            rr:parentTriplesMap <#TriplesMap3>
+        ]
+    ] .
+
+<#TriplesMap3> a rr:TriplesMap ;
+    rml:logicalSource [
+        rml:source "horario-csv-updated-with-links.csv" ;
+        rml:referenceFormulation ql:CSV
+    ] ;
+    rr:subjectMap [
+        rr:template "http://semanticweb.es/airquality/medicion/{PUNTO_MUESTREO}/{ANO}/{MES}/{DIA}" ;
+        rr:class vocab:Medicion
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate vocab:tieneAno ;
+        rr:objectMap [
+            rml:reference "ANO" 
+        ]
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate vocab:tieneMes ;
+        rr:objectMap [
+            rml:reference "MES" 
+        ]
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate vocab:tieneDia ;
+        rr:objectMap [
+            rml:reference "DIA" 
+        ]
+    ] ;
+
+    # Mapping for hourly values (H01 to H24)
+    rr:predicateObjectMap [
+        rr:predicate vocab:tieneValor ;
+        rr:objectMap [
+            rml:reference "H01" 
+        ]
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate vocab:tieneValor ;
+        rr:objectMap [
+            rml:reference "H02" 
+        ]
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate vocab:tieneValor ;
+        rr:objectMap [
+            rml:reference "H03" 
+        ]
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate vocab:tieneValor ;
+        rr:objectMap [
+            rml:reference "H04" 
+        ]
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate vocab:tieneValor ;
+        rr:objectMap [
+            rml:reference "H05" 
+        ]
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate vocab:tieneValor ;
+        rr:objectMap [
+            rml:reference "H06" 
+        ]
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate vocab:tieneValor ;
+        rr:objectMap [
+            rml:reference "H07" 
+        ]
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate vocab:tieneValor ;
+        rr:objectMap [
+            rml:reference "H08" 
+        ]
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate vocab:tieneValor ;
+        rr:objectMap [
+            rml:reference "H09" 
+        ]
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate vocab:tieneValor ;
+        rr:objectMap [
+            rml:reference "H10" 
+        ]
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate vocab:tieneValor ;
+        rr:objectMap [
+            rml:reference "H11" 
+        ]
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate vocab:tieneValor ;
+        rr:objectMap [
+            rml:reference "H12" 
+        ]
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate vocab:tieneValor ;
+        rr:objectMap [
+            rml:reference "H13" 
+        ]
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate vocab:tieneValor ;
+        rr:objectMap [
+            rml:reference "H14" 
+        ]
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate vocab:tieneValor ;
+        rr:objectMap [
+            rml:reference "H15" 
+        ]
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate vocab:tieneValor ;
+        rr:objectMap [
+            rml:reference "H16" 
+        ]
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate vocab:tieneValor ;
+        rr:objectMap [
+            rml:reference "H17" 
+        ]
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate vocab:tieneValor ;
+        rr:objectMap [
+            rml:reference "H18" 
+        ]
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate vocab:tieneValor ;
+        rr:objectMap [
+            rml:reference "H19" 
+        ]
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate vocab:tieneValor ;
+        rr:objectMap [
+            rml:reference "H20" 
+        ]
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate vocab:tieneValor ;
+        rr:objectMap [
+            rml:reference "H21" 
+        ]
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate vocab:tieneValor ;
+        rr:objectMap [
+            rml:reference "H22" 
+        ]
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate vocab:tieneValor ;
+        rr:objectMap [
+            rml:reference "H23" 
+        ]
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate vocab:tieneValor ;
+        rr:objectMap [
+            rml:reference "H24" 
+        ]
+    ] ;
+
+
+    # Mapping for variable states (V01 to V24)
+    rr:predicateObjectMap [
+        rr:predicate vocab:tieneEstado ;
+        rr:objectMap [
+            rml:reference "V01" 
+        ]
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate vocab:tieneEstado ;
+        rr:objectMap [
+            rml:reference "V02" 
+        ]
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate vocab:tieneEstado ;
+        rr:objectMap [
+            rml:reference "V03" 
+        ]
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate vocab:tieneEstado ;
+        rr:objectMap [
+            rml:reference "V04" 
+        ]
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate vocab:tieneEstado ;
+        rr:objectMap [
+            rml:reference "V05" 
+        ]
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate vocab:tieneEstado ;
+        rr:objectMap [
+            rml:reference "V06" 
+        ]
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate vocab:tieneEstado ;
+        rr:objectMap [
+            rml:reference "V07" 
+        ]
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate vocab:tieneEstado ;
+        rr:objectMap [
+            rml:reference "V08" 
+        ]
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate vocab:tieneEstado ;
+        rr:objectMap [
+            rml:reference "V09" 
+        ]
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate vocab:tieneEstado ;
+        rr:objectMap [
+            rml:reference "V10" 
+        ]
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate vocab:tieneEstado ;
+        rr:objectMap [
+            rml:reference "V11" 
+        ]
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate vocab:tieneEstado ;
+        rr:objectMap [
+            rml:reference "V12" 
+        ]
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate vocab:tieneEstado ;
+        rr:objectMap [
+            rml:reference "V13" 
+        ]
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate vocab:tieneEstado ;
+        rr:objectMap [
+            rml:reference "V14" 
+        ]
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate vocab:tieneEstado ;
+        rr:objectMap [
+            rml:reference "V15" 
+        ]
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate vocab:tieneEstado ;
+        rr:objectMap [
+            rml:reference "V16" 
+        ]
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate vocab:tieneEstado ;
+        rr:objectMap [
+            rml:reference "V17" 
+        ]
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate vocab:tieneEstado ;
+        rr:objectMap [
+            rml:reference "V18" 
+        ]
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate vocab:tieneEstado ;
+        rr:objectMap [
+            rml:reference "V19" 
+        ]
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate vocab:tieneEstado ;
+        rr:objectMap [
+            rml:reference "V20" 
+        ]
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate vocab:tieneEstado ;
+        rr:objectMap [
+            rml:reference "V21" 
+        ]
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate vocab:tieneEstado ;
+        rr:objectMap [
+            rml:reference "V22" 
+        ]
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate vocab:tieneEstado ;
+        rr:objectMap [
+            rml:reference "V23" 
+        ]
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate vocab:tieneEstado ;
+        rr:objectMap [
+            rml:reference "V24" 
+        ]
+    ] .
+
+<#TriplesMap4> a rr:TriplesMap ;
+    rml:logicalSource [
+        rml:source "horario-csv-updated-with-links.csv" ;
+        rml:referenceFormulation ql:CSV
+    ] ;
+    rr:subjectMap [
+        rr:template "http://semanticweb.es/airquality/municipio/{MUNICIPIO}" ;
+        rr:class vocab:Municipio
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate vocab:nombreMunicipio ;
+        rr:objectMap [
+            rml:reference "NOMBRE_MUNICIPIO" ;
+        ]
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate vocab:same_as_wikidata_madrid ;
+        rr:objectMap [
+            rml:reference "same_as_wikidata_madrid" ;
+        ]
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate vocab:tieneEstacion ;
+        rr:objectMap [
+            rr:template "http://semanticweb.es/airquality/estacion/{ESTACION}"
+        ]
+    ] .

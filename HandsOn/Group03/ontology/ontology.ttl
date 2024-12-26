@@ -1,0 +1,99 @@
+@prefix mod: <https://w3id.org/mod#> .
+@prefix ns: <https://websemantica.net/Group03/ontology/CamarasBcn#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sc: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sc:latitud a owl:DatatypeProperty ;
+    rdfs:label "latitud" ;
+    rdfs:domain ns:Camara ;
+    rdfs:range xsd:decimal .
+
+sc:longitud a owl:DatatypeProperty ;
+    rdfs:label "longitud" ;
+    rdfs:domain ns:Camara ;
+    rdfs:range xsd:decimal .
+
+ns: a owl:Ontology ;
+    mod:createdWith <https://chowlk.linkeddata.es/> .
+
+ns:enBarrio a owl:ObjectProperty ;
+    rdfs:label "en barrio" ;
+    rdfs:domain ns:Camara ;
+    rdfs:range ns:Barrio .
+
+ns:enDistrito a owl:ObjectProperty ;
+    rdfs:label "en distrito" ;
+    rdfs:domain ns:Barrio ;
+    rdfs:range ns:Distrito .
+
+ns:tieneCodigoBarrio a owl:DatatypeProperty ;
+    rdfs:label "tiene codigo barrio" ;
+    rdfs:domain ns:Barrio ;
+    rdfs:range xsd:integer .
+
+ns:tieneCodigoCamara a owl:DatatypeProperty ;
+    rdfs:label "tiene codigo camara" ;
+    rdfs:domain ns:Camara ;
+    rdfs:range xsd:string .
+
+ns:tieneCodigoDistrito a owl:DatatypeProperty ;
+    rdfs:label "tiene codigo distrito" ;
+    rdfs:domain ns:Distrito ;
+    rdfs:range xsd:integer .
+
+ns:tieneFechaAltaCamara a owl:DatatypeProperty ;
+    rdfs:label "tiene fecha alta camara" ;
+    rdfs:domain ns:Camara ;
+    rdfs:range xsd:date .
+
+ns:tieneIdCamara a owl:DatatypeProperty ;
+    rdfs:label "tiene id camara" ;
+    rdfs:domain ns:Camara ;
+    rdfs:range xsd:integer .
+
+ns:tieneNombreBarrio a owl:DatatypeProperty ;
+    rdfs:label "tiene nombre barrio" ;
+    rdfs:domain ns:Barrio ;
+    rdfs:range xsd:string .
+
+ns:tieneNombreDistrito a owl:DatatypeProperty ;
+    rdfs:label "tiene nombre distrito" ;
+    rdfs:domain ns:Distrito ;
+    rdfs:range xsd:string .
+
+ns:tieneNumeroCamara a owl:DatatypeProperty ;
+    rdfs:label "tiene numero camara" ;
+    rdfs:domain ns:Camara ;
+    rdfs:range xsd:integer .
+
+ns:tieneSoporteCamara a owl:DatatypeProperty ;
+    rdfs:label "tiene soporte camara" ;
+    rdfs:domain ns:Camara ;
+    rdfs:range xsd:string .
+
+ns:tieneTipoCamara a owl:DatatypeProperty ;
+    rdfs:label "tiene tipo camara" ;
+    rdfs:domain ns:Camara ;
+    rdfs:range xsd:string .
+
+ns:tieneX_ETRS89Camara a owl:DatatypeProperty ;
+    rdfs:label "tiene x_ e t r s89 camara" ;
+    rdfs:domain ns:Camara ;
+    rdfs:range xsd:integer .
+
+ns:tieneY_ETRS89Camara a owl:DatatypeProperty ;
+    rdfs:label "tiene y_ e t r s89 camara" ;
+    rdfs:domain ns:Camara ;
+    rdfs:range xsd:integer .
+
+ns:Distrito a owl:Class ;
+    rdfs:label "Distrito" .
+
+ns:Barrio a owl:Class ;
+    rdfs:label "Barrio" .
+
+ns:Camara a owl:Class ;
+    rdfs:label "Camara" .
+
