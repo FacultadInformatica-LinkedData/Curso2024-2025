@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Waste Dataset Analysis</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+          rel="stylesheet">
+</head>
+<body>
+<style>
+    p, div, h1, h2, h3, h4, li {
+        font-family: "Montserrat";
+    }
+
+    h2 {
+        margin-top: 2em;
+    }
+
+    body {
+        margin: 2rem min(20rem, 20vw);
+    }
+</style>
+<h1>Waste Dataset Analysis</h1>
+
+<h2>Dataset Description</h2>
+<p>This dataset contains information about waste collection in the city of Madrid during the first half of the year
+    2024.
+    Each record includes the type of waste, the district where it was collected, and the amount of waste collected
+    in tons. The data is organized by batch, month, and district.</p>
+<ul>
+    <li><strong>Year</strong>: Year of collection.</li>
+    <li><strong>Month</strong>: Month when the collection took place, until June (inclusive).</li>
+    <li><strong>Batch</strong>: Batch number for the collection.</li>
+    <li><strong>Waste</strong>: Type of waste collected (e.g., Organic, Packaging).</li>
+    <li><strong>District</strong>: District code (1 to 9, representing different areas of Madrid).</li>
+    <li><strong>District Name</strong>: Full name of the collection district.</li>
+    <li><strong>Total</strong>: Amount of waste collected in tons.</li>
+</ul>
+
+<h2>Data Analysis</h2>
+<p>The dataset contains detailed information on waste management in Madrid, focusing on different types of waste
+    and their collection by district. Examples of types of waste are "Horse bedding", "Commercial cardboard".
+    The amount of waste collected varies, with values expressed in tons, showing variations depending on the type
+    of waste and the district.</p>
+
+<h4>Monthly Waste Collection Trends</h4>
+<p>The chart below, Total Waste Collected per Month, illustrates the overall amount of waste collected each month across
+    all types and districts.</p>
+<canvas id="chart2"></canvas>
+
+<h4>Breakdown by Waste Type</h4>
+
+<p>In addition to the overall trend, the dataset allows us to analyze the total amount of waste collected per month
+    for each specific type of waste. The Total Amount of Waste per Month by Type chart provides a more detailed view,
+    showing the distribution of waste types over time.</p>
+
+<canvas id="chart1"></canvas>
+
+<h4>Breakdown by District</h4>
+<p>The following chart provides a detailed breakdown of the total waste collected across various districts.
+    Each district’s contribution to the overall waste management efforts is illustrated, highlighting the differences
+    in waste volumes collected.</p>
+
+<canvas id="chart3"></canvas>
+
+<h2>Resource Naming Strategy</h2>
+<p>The resource naming strategy is designed to ensure that each record in the dataset can be uniquely and clearly
+    identified.
+    It combines key attributes of the dataset to form a structured and consistent naming convention.</p>
+<p>The proposed naming convention follows this structure:</p>
+<pre><code>residuo_{year}_{month}_{waste-type}_{district-name}</code></pre>
+<p>Where:</p>
+<ul>
+    <li><strong>year</strong>: The year of the record (e.g., 2024).</li>
+    <li><strong>month</strong>: The month of the record (e.g., January).</li>
+    <li><strong>waste-type</strong>: The type of waste (e.g., Commercial cardboard, Horse bedding).</li>
+    <li><strong>district-name</strong>: The name of the district (e.g., Centro, Moncloa-Aravaca).</li>
+</ul>
+<p>Example for the first record in the dataset:</p>
+<pre><code>residuo_2024_january_horse-bedding_moncloa-aravaca</code></pre>
+
+<h2>License</h2>
+<p>The original dataset was extracted from public sources. It is recommended to use the
+    <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 (CC BY 4.0)</a> license
+    to ensure proper attribution of the dataset in derivative projects.</p>
+
+<script>
+    <!-- We used python here and then mapped the dataframe into a json format usable by chart.js -->
+    let chart1 = {
+        'labels': ['ENERO', 'FEBRERO', 'MARZO', 'ABRIL', 'MAYO', 'JUNIO'],
+        'datasets': [{
+            'label': 'ANIMALES MUERTOS',
+            'data': [8.88, 8.94, 12.1, 9.08, 8.3, 10.2]
+        }, {
+            'label': 'CAMA DE CABALLO',
+            'data': [162.485, 128.885, 126.085, 152.19, 125.54, 130.99]
+        }, {
+            'label': 'CARTON COMERCIAL',
+            'data': [1113.07, 1048.06, 1045.9, 1047.1, 1067.7, 1095.62]
+        }, {
+            'label': 'CLINICOS',
+            'data': [1500.76, 1458.98, 1435.52, 1476.0, 1457.54, 1410.8400000000001]
+        }, {'label': 'CONTENEDORES DE ROPA', 'data': [0.0, 0.54, 1.62, 0.36, 0.72, 0.18]}, {
+            'label': 'ENVASES',
+            'data': [11379.7, 10318.18, 10938.78, 10842.74, 11243.94, 11162.72]
+        }, {
+            'label': 'ORGANICA',
+            'data': [25291.64, 24055.170000000002, 25081.78, 26572.65, 27446.38, 26790.2]
+        }, {'label': 'PAPEL-CARTON', 'data': [7311.12, 6462.26, 6615.46, 6557.96, 6480.88, 6895.34]}, {
+            'label': 'PILAS',
+            'data': [8.787621437, 7.3345186589999996, 2.039469578, 7.946670005, 2.175279115, 2.214966959]
+        }, {
+            'label': 'PUNTOS LIMPIOS',
+            'data': [1111.76, 1167.16, 1071.86, 1208.64, 1085.3600000000001, 1233.38]
+        }, {
+            'label': 'RCD',
+            'data': [1762.235, 1556.27, 1499.98, 1702.03, 1641.9950000000001, 1564.735]
+        }, {
+            'label': 'RESTO',
+            'data': [46699.97, 43202.92, 42965.18, 45114.688, 43831.520000000004, 44028.084]
+        }, {'label': 'ROPA', 'data': [238.09, 199.115, 212.055, 260.025, 281.807, 295.975]}, {
+            'label': 'VIDRIO',
+            'data': [5837.4, 4929.54, 5132.06, 4992.38, 5087.16, 4899.44]
+        }, {'label': 'VIDRIO COMERCIAL', 'data': [242.9, 257.18, 264.0, 272.48, 285.92, 282.1]}]
+    }
+    let ctx1 = document.getElementById('chart1').getContext('2d');
+    new Chart(ctx1, {
+        type: 'bar',
+        data: chart1,
+        options: {
+            responsive: true,
+            scales: {
+                x: {title: {display: true, text: 'Month'}},
+                y: {title: {display: true, text: 'Total Waste (tons)'}}
+            },
+            plugins: {
+                title: {display: true, text: 'Total Amount of Waste per Month by Type'},
+                tooltip: {
+                    callbacks: {
+                        label: (tooltipItem) => `${(tooltipItem.dataset.label || '')}: ${tooltipItem.raw} Tons`
+                    }
+                }
+            }
+        }
+    });
+
+    let chart2 = {
+        'labels': ['ENERO', 'FEBRERO', 'MARZO', 'ABRIL', 'MAYO', 'JUNIO'],
+        'datasets': [{
+            'label': 'Total Waste',
+            'data': [102668.797621437, 94800.534518659, 96404.419469578, 100216.269670005, 100046.937279115, 99802.018966959]
+        }]
+    }
+    let ctx2 = document.getElementById('chart2').getContext('2d');
+    new Chart(ctx2, {
+        type: 'line',
+        data: chart2,
+        options: {
+            responsive: true,
+            scales: {
+                x: {title: {display: true, text: 'Month'}},
+                y: {title: {display: true, text: 'Total Waste (tons)'}}
+            },
+            plugins: {
+                title: {display: true, text: 'Total Waste Collected per Month'}
+            }
+        }
+    });
+
+    let chart3 = {
+        'labels': ['ARGANZUELA', 'BARAJAS', 'CARABANCHEL', 'CENTRO', 'CHAMARTIN', 'CHAMBERI', 'CIUDAD LINEAL', 'FUENCARRAL - EL PARDO', 'HORTALEZA', 'LATINA', 'MONCLOA - ARAVACA', 'MORATALAZ', 'PUENTE DE VALLECAS', 'RETIRO', 'SALAMANCA', 'SAN BLAS - CANILLEJAS', 'SIN DISTRITO', 'TETUAN', 'USERA', 'VICALVARO', 'VILLA DE VALLECAS', 'VILLAVERDE'],
+        'datasets': [{
+            'label': 'Total Waste (Tons)',
+            'data': [21507.829617246, 10923.540116525, 42002.657930109, 45650.222738829, 26160.324074264, 25223.838937224, 32339.609489849998, 42037.010089627, 29688.704860941, 35843.817246174, 28851.233680016, 13849.903679504001, 37482.580152194, 20103.479809266, 30374.884244841, 26645.451159475, 81.254, 27451.268885905, 21559.706196637, 18459.986504062, 30121.833779626, 27579.840333438],
+        }]
+    }
+
+    let ctx3 = document.getElementById('chart3').getContext('2d');
+    new Chart(ctx3, {
+        type: 'bar',
+        data: chart3,
+        options: {
+            responsive: true,
+            scales: {
+                x: {title: {display: true, text: 'District'}},
+                y: {title: {display: true, text: 'Total Waste (tons)'}}
+            },
+            plugins: {
+                title: {display: true, text: 'Total Waste Collected per District'}
+            }
+        }
+    });
+</script>
+</body>
+</html>
+

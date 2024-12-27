@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analysis of Dataset and Resource Naming Strategy</title>
+</head>
+<body>
+    <h1>Analysis of Dataset and Resource Naming Strategy</h1>
+
+    <h2>Dataset: Alumbrado Público - Belmez</h2>
+    <p>This dataset provides information about the public lighting system in the town of Belmez. The dataset contains the following columns:</p>
+    <ul>
+        <li>**ID**: Unique identifier for each streetlight.</li>
+        <li>**Location**: GPS coordinates for the streetlight.</li>
+        <li>**Type**: Type of light used (e.g., LED, sodium, etc.).</li>
+        <li>**Status**: Indicates whether the streetlight is functional or needs maintenance.</li>
+        <li>**Power Consumption**: The power usage of each streetlight in watts.</li>
+    </ul>
+
+    <h2>Data Analysis</h2>
+    <p>The dataset includes approximately 1,000 records, with power consumption values ranging from 50W to 200W. The data is structured in a tabular format and represents real-world entities, such as streetlights and their locations. This makes it easy to transform the data into RDF and link it with other city infrastructure datasets, such as traffic lights or public transportation systems.</p>
+
+    <h2>License Analysis</h2>
+    <p>The dataset is published <a href="https://datos.gob.es/es/catalogo/l01140095-alumbrado-publico">in datos.gob.es</a> under an <a href="http://creativecommons.org/licenses/by-nc/2.0/cc-by-sa-4.0">open license</a>, allowing its use for research and public projects. The license permits the transformation of the data into RDF and its publication on the web. The dataset is provided by the city council of Belmez, which holds the rights to the dataset.</p>
+
+    <h2>Resource Naming Strategy</h2>
+    <p>For the transformation into Linked Data, the following strategy for naming resources (URIs) has been defined:</p>
+    <ul>
+        <li>**URI Form**: The URIs will follow the structure <code>http://example.org/city/lighting/{id}</code>, where `{id}` represents the unique identifier for each streetlight.</li>
+        <li>**Content Negotiation**: Resources will be accessible through different formats (RDF/XML, Turtle, JSON-LD) based on the content negotiation header sent in the HTTP request.</li>
+        <li>**Domain**: The base domain for the resources will be <code>http://example.org</code>.</li>
+        <li>**Path**: The path will follow the pattern `/city/lighting/{id}`, with a specific ID for each streetlight.</li>
+    </ul>
+</body>
+</html>

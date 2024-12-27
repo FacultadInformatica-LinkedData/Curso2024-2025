@@ -1,0 +1,570 @@
+@prefix ns1: <http://example.com/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.com/parking/10489514> ns1:district "SAN BLAS-CANILLEJAS" ;
+    ns1:name "Aparcamiento disuasorio Estadio Metropolitano Sur ES-02b" ;
+    ns1:neighbourhood "ROSAS" ;
+    ns1:schedule "6:00-22:00" ;
+    ns1:street_name "AVENIDA ARCENTALES" ;
+    ns1:street_number 37 ;
+    ns1:total_slots 3072 ;
+    ns1:vehicle_type "CAR MOTORCYCLE BICYCLE" .
+
+<http://example.com/parking/10737574> ns1:district "USERA" ;
+    ns1:name "Aparcamiento público. Usera" ;
+    ns1:neighbourhood "MOSCARDO" ;
+    ns1:schedule "24 hour" ;
+    ns1:street_name "CALLE AMPARO USERA" ;
+    ns1:street_number 46 ;
+    ns1:total_slots 36 ;
+    ns1:vehicle_type "CAR" .
+
+<http://example.com/parking/11413444> ns1:district "HORTALEZA" ;
+    ns1:name "Aparcamiento disuasorio Fuente de la Mora" ;
+    ns1:neighbourhood "VALDEFUENTES" ;
+    ns1:schedule "24 hour" ;
+    ns1:street_name "AVENIDA MANOTERAS" ;
+    ns1:street_number 1 ;
+    ns1:total_slots 402 ;
+    ns1:vehicle_type "CAR MOTORCYCLE" .
+
+<http://example.com/parking/11413620> ns1:district "FUENCARRAL-EL PARDO" ;
+    ns1:name "Aparcamiento disuasorio Pitis" ;
+    ns1:neighbourhood "FUENTELARREINA" ;
+    ns1:schedule "24 hour" ;
+    ns1:street_name "CALLE GLORIA FUERTES" ;
+    ns1:street_number 5 ;
+    ns1:total_slots 436 ;
+    ns1:vehicle_type "CAR MOTORCYCLE" .
+
+<http://example.com/parking/11483771> ns1:district "LATINA" ;
+    ns1:name "Aparcamiento disuasorio Aviación Española" ;
+    ns1:neighbourhood "LAS AGUILAS" ;
+    ns1:schedule "24 hour" ;
+    ns1:street_name "CALLE FUENTE DE LIMA" ;
+    ns1:street_number 5 ;
+    ns1:total_slots 379 ;
+    ns1:vehicle_type "CAR MOTORCYCLE BICYCLE" .
+
+<http://example.com/parking/11544439> ns1:district "CENTRO" ;
+    ns1:name "Aparcamiento mixto. Plaza de Santo Domingo" ;
+    ns1:neighbourhood "PALACIO" ;
+    ns1:schedule "24 hour" ;
+    ns1:street_name "PLAZA SANTO DOMINGO" ;
+    ns1:street_number 0 ;
+    ns1:total_slots 336 ;
+    ns1:vehicle_type "CAR MOTORCYCLE" .
+
+<http://example.com/parking/11544464> ns1:district "CARABANCHEL" ;
+    ns1:name "Aparcamiento disuasorio Islazul" ;
+    ns1:neighbourhood "BUENAVISTA" ;
+    ns1:schedule "24 hour" ;
+    ns1:street_name "CALLE CALDERILLA" ;
+    ns1:street_number 1 ;
+    ns1:total_slots 224 ;
+    ns1:vehicle_type "CAR" .
+
+<http://example.com/parking/11544480> ns1:district "SALAMANCA" ;
+    ns1:name "Aparcamiento mixto. Alcántara" ;
+    ns1:neighbourhood "GOYA" ;
+    ns1:schedule "24 hour" ;
+    ns1:street_name "CALLE ALCANTARA" ;
+    ns1:street_number 26 ;
+    ns1:total_slots 121 ;
+    ns1:vehicle_type "CAR" .
+
+<http://example.com/parking/11750494> ns1:district "ARGANZUELA" ;
+    ns1:name "Aparcamiento público. San Epifanio" ;
+    ns1:neighbourhood "IMPERIAL" ;
+    ns1:schedule "24 hour" ;
+    ns1:street_name "CALLE SAN EPIFANIO" ;
+    ns1:street_number 9 ;
+    ns1:total_slots 501 ;
+    ns1:vehicle_type "CAR" .
+
+<http://example.com/parking/13449> ns1:district "CENTRO" ;
+    ns1:name "Aparcamiento público. Luna - Tudescos" ;
+    ns1:neighbourhood "UNIVERSIDAD" ;
+    ns1:schedule "24 hour" ;
+    ns1:street_name "PLAZA SANTA MARIA SOLEDAD TORRES ACOSTA" ;
+    ns1:street_number 2 ;
+    ns1:total_slots 481 ;
+    ns1:vehicle_type "CAR" .
+
+<http://example.com/parking/13450> ns1:district "CHAMBERI" ;
+    ns1:name "Aparcamiento público. Olavide" ;
+    ns1:neighbourhood "TRAFALGAR" ;
+    ns1:schedule "24 hour" ;
+    ns1:street_name "PLAZA OLAVIDE" ;
+    ns1:street_number 17 ;
+    ns1:total_slots 397 ;
+    ns1:vehicle_type "CAR" .
+
+<http://example.com/parking/13451> ns1:district "CENTRO" ;
+    ns1:name "Aparcamiento público. Mostenses" ;
+    ns1:neighbourhood "UNIVERSIDAD" ;
+    ns1:schedule "24 hour" ;
+    ns1:street_name "CALLE GARCIA MOLINAS" ;
+    ns1:street_number 4 ;
+    ns1:total_slots 361 ;
+    ns1:vehicle_type "CAR" .
+
+<http://example.com/parking/13452> ns1:district "CHAMBERI" ;
+    ns1:name "Aparcamiento público. Almagro" ;
+    ns1:neighbourhood "ALMAGRO" ;
+    ns1:schedule "24 hour" ;
+    ns1:street_name "CALLE ALMAGRO" ;
+    ns1:street_number 24 ;
+    ns1:total_slots 463 ;
+    ns1:vehicle_type "CAR" .
+
+<http://example.com/parking/13453> ns1:district "CENTRO" ;
+    ns1:name "Aparcamiento público. Villa de París" ;
+    ns1:neighbourhood "JUSTICIA" ;
+    ns1:schedule "24 hour" ;
+    ns1:street_name "PLAZA VILLA DE PARIS" ;
+    ns1:street_number 1 ;
+    ns1:total_slots 171 ;
+    ns1:vehicle_type "CAR MOTORCYCLE" .
+
+<http://example.com/parking/13454> ns1:district "SALAMANCA" ;
+    ns1:name "Aparcamiento público. Plaza de Colón" ;
+    ns1:neighbourhood "RECOLETOS" ;
+    ns1:schedule "24 hour" ;
+    ns1:street_name "CALLE GOYA" ;
+    ns1:street_number 2 ;
+    ns1:total_slots 611 ;
+    ns1:vehicle_type "CAR" .
+
+<http://example.com/parking/13456> ns1:district "CENTRO" ;
+    ns1:name "Aparcamiento público. Santa Ana" ;
+    ns1:neighbourhood "CORTES" ;
+    ns1:schedule "24 hour" ;
+    ns1:street_name "PLAZA SANTA ANA" ;
+    ns1:street_number 0 ;
+    ns1:total_slots 325 ;
+    ns1:vehicle_type "CAR" .
+
+<http://example.com/parking/13457> ns1:district "SALAMANCA" ;
+    ns1:name "Aparcamiento mixto. Velázquez - Jorge Juan" ;
+    ns1:neighbourhood "RECOLETOS" ;
+    ns1:schedule "24 hour" ;
+    ns1:street_name "CALLE VELAZQUEZ" ;
+    ns1:street_number 1 ;
+    ns1:total_slots 548 ;
+    ns1:vehicle_type "CAR" .
+
+<http://example.com/parking/13458> ns1:district "SALAMANCA" ;
+    ns1:name "Aparcamiento mixto. Velázquez - Ayala" ;
+    ns1:neighbourhood "RECOLETOS" ;
+    ns1:schedule "24 hour" ;
+    ns1:street_name "CALLE VELAZQUEZ" ;
+    ns1:street_number 47 ;
+    ns1:total_slots 443 ;
+    ns1:vehicle_type "CAR" .
+
+<http://example.com/parking/13459> ns1:district "CENTRO" ;
+    ns1:name "Aparcamiento mixto. Jacinto Benavente" ;
+    ns1:neighbourhood "CORTES" ;
+    ns1:schedule "24 hour" ;
+    ns1:street_name "PLAZA JACINTO BENAVENTE" ;
+    ns1:street_number 6 ;
+    ns1:total_slots 292 ;
+    ns1:vehicle_type "CAR MOTORCYCLE" .
+
+<http://example.com/parking/13460> ns1:district "CENTRO" ;
+    ns1:name "Aparcamiento mixto. Sevilla" ;
+    ns1:neighbourhood "SOL" ;
+    ns1:schedule "24 hour" ;
+    ns1:street_name "CALLE ALCALA" ;
+    ns1:street_number 15 ;
+    ns1:total_slots 649 ;
+    ns1:vehicle_type "CAR" .
+
+<http://example.com/parking/13462> ns1:district "CHAMBERI" ;
+    ns1:name "Aparcamiento mixto. Fuencarral" ;
+    ns1:neighbourhood "TRAFALGAR" ;
+    ns1:schedule "24 hour" ;
+    ns1:street_name "CALLE FUENCARRAL" ;
+    ns1:street_number 121 ;
+    ns1:total_slots 410 ;
+    ns1:vehicle_type "CAR" .
+
+<http://example.com/parking/13463> ns1:district "CENTRO" ;
+    ns1:name "Aparcamiento público. Plaza de España" ;
+    ns1:neighbourhood "PALACIO" ;
+    ns1:schedule "24 hour" ;
+    ns1:street_name "PLAZA ESPAÑA" ;
+    ns1:street_number 1 ;
+    ns1:total_slots 800 ;
+    ns1:vehicle_type "CAR" .
+
+<http://example.com/parking/13464> ns1:district "SALAMANCA" ;
+    ns1:name "Aparcamiento mixto. Felipe II" ;
+    ns1:neighbourhood "RECOLETOS" ;
+    ns1:schedule "24 hour" ;
+    ns1:street_name "CALLE GOYA" ;
+    ns1:street_number 88 ;
+    ns1:total_slots 1175 ;
+    ns1:vehicle_type "CAR" .
+
+<http://example.com/parking/13465> ns1:district "RETIRO" ;
+    ns1:name "Aparcamiento mixto. Montalbán" ;
+    ns1:neighbourhood "LOS JERONIMOS" ;
+    ns1:schedule "24 hour" ;
+    ns1:street_name "CALLE MONTALBAN" ;
+    ns1:street_number 4 ;
+    ns1:total_slots 146 ;
+    ns1:vehicle_type "CAR" .
+
+<http://example.com/parking/13466> ns1:district "CENTRO" ;
+    ns1:name "Aparcamiento mixto. Plaza Mayor" ;
+    ns1:neighbourhood "SOL" ;
+    ns1:schedule "24 hour" ;
+    ns1:street_name "PLAZA MAYOR" ;
+    ns1:street_number 1 ;
+    ns1:total_slots 694 ;
+    ns1:vehicle_type "CAR" .
+
+<http://example.com/parking/13467> ns1:district "CENTRO" ;
+    ns1:name "Aparcamiento público. Las Cortes" ;
+    ns1:neighbourhood "CORTES" ;
+    ns1:schedule "24 hour" ;
+    ns1:street_name "PLAZA CORTES" ;
+    ns1:street_number 13 ;
+    ns1:total_slots 480 ;
+    ns1:vehicle_type "CAR" .
+
+<http://example.com/parking/13468> ns1:district "SALAMANCA" ;
+    ns1:name "Aparcamiento público. Velázquez - Juan Bravo" ;
+    ns1:neighbourhood "CASTELLANA" ;
+    ns1:schedule "24 hour" ;
+    ns1:street_name "CALLE VELAZQUEZ" ;
+    ns1:street_number 88 ;
+    ns1:total_slots 371 ;
+    ns1:vehicle_type "CAR" .
+
+<http://example.com/parking/13469> ns1:district "MONCLOA-ARAVACA" ;
+    ns1:name "Aparcamiento público. Marqués de Urquijo" ;
+    ns1:neighbourhood "ARGUELLES" ;
+    ns1:schedule "24 hour" ;
+    ns1:street_name "CALLE MARQUES DE URQUIJO" ;
+    ns1:street_number 0 ;
+    ns1:total_slots 482 ;
+    ns1:vehicle_type "CAR" .
+
+<http://example.com/parking/13470> ns1:district "CENTRO" ;
+    ns1:name "Aparcamiento mixto. Arquitecto Ribera" ;
+    ns1:neighbourhood "JUSTICIA" ;
+    ns1:schedule "24 hour" ;
+    ns1:street_name "CALLE BARCELO" ;
+    ns1:street_number 2 ;
+    ns1:total_slots 318 ;
+    ns1:vehicle_type "CAR" .
+
+<http://example.com/parking/13472> ns1:district "CENTRO" ;
+    ns1:name "Aparcamiento público. Plaza del Carmen (cerrado)" ;
+    ns1:neighbourhood "SOL" ;
+    ns1:schedule "24 hour" ;
+    ns1:street_name "PLAZA CARMEN" ;
+    ns1:street_number 10 ;
+    ns1:total_slots 450 ;
+    ns1:vehicle_type "CAR" .
+
+<http://example.com/parking/13473> ns1:district "CENTRO" ;
+    ns1:name "Aparcamiento público. Descalzas" ;
+    ns1:neighbourhood "SOL" ;
+    ns1:schedule "24 hour" ;
+    ns1:street_name "PLAZA DESCALZAS" ;
+    ns1:street_number 3 ;
+    ns1:total_slots 400 ;
+    ns1:vehicle_type "CAR" .
+
+<http://example.com/parking/13474> ns1:district "CENTRO" ;
+    ns1:name "Aparcamiento público. Plaza del Rey" ;
+    ns1:neighbourhood "JUSTICIA" ;
+    ns1:schedule "24 hour" ;
+    ns1:street_name "PLAZA REY" ;
+    ns1:street_number 1 ;
+    ns1:total_slots 170 ;
+    ns1:vehicle_type "CAR" .
+
+<http://example.com/parking/13475> ns1:district "TETUAN" ;
+    ns1:name "Aparcamiento mixto. Brasil" ;
+    ns1:neighbourhood "CUATRO CAMINOS" ;
+    ns1:schedule "24 hour" ;
+    ns1:street_name "CALLE SAN GERMAN" ;
+    ns1:street_number 7 ;
+    ns1:total_slots 226 ;
+    ns1:vehicle_type "CAR" .
+
+<http://example.com/parking/13476> ns1:district "SALAMANCA" ;
+    ns1:name "Aparcamiento mixto. Recoletos" ;
+    ns1:neighbourhood "RECOLETOS" ;
+    ns1:schedule "24 hour" ;
+    ns1:street_name "PASEO RECOLETOS" ;
+    ns1:street_number 4 ;
+    ns1:total_slots 102 ;
+    ns1:vehicle_type "CAR" .
+
+<http://example.com/parking/13477> ns1:district "TETUAN" ;
+    ns1:name "Aparcamiento mixto. Condesa de Gavia" ;
+    ns1:neighbourhood "CUATRO CAMINOS" ;
+    ns1:schedule "9:00-20:40" ;
+    ns1:street_name "PLAZA CONDESA DE GAVIA" ;
+    ns1:street_number 2 ;
+    ns1:total_slots 146 ;
+    ns1:vehicle_type "CAR" .
+
+<http://example.com/parking/13478> ns1:district "CENTRO" ;
+    ns1:name "Aparcamiento público. Glorieta Puerta de Toledo" ;
+    ns1:neighbourhood "EMBAJADORES" ;
+    ns1:schedule "24 hour" ;
+    ns1:street_name "GLORIETA PUERTA DE TOLEDO" ;
+    ns1:street_number 0 ;
+    ns1:total_slots 240 ;
+    ns1:vehicle_type "CAR" .
+
+<http://example.com/parking/13479> ns1:district "TETUAN" ;
+    ns1:name "Aparcamiento mixto. José Castán Tobeñas" ;
+    ns1:neighbourhood "CASTILLEJOS" ;
+    ns1:schedule "24 hour" ;
+    ns1:street_name "CALLE POETA JOAN MARAGALL" ;
+    ns1:street_number 57 ;
+    ns1:total_slots 231 ;
+    ns1:vehicle_type "CAR" .
+
+<http://example.com/parking/13515> ns1:district "TETUAN" ;
+    ns1:name "Aparcamiento mixto. San Germán II (antes General Yagüe)" ;
+    ns1:neighbourhood "CASTILLEJOS" ;
+    ns1:schedule "24 hour" ;
+    ns1:street_name "CALLE ORENSE" ;
+    ns1:street_number 48 ;
+    ns1:total_slots 419 ;
+    ns1:vehicle_type "CAR" .
+
+<http://example.com/parking/167692> ns1:district "SALAMANCA" ;
+    ns1:name "Aparcamiento mixto. San Cayetano" ;
+    ns1:neighbourhood "GUINDALERA" ;
+    ns1:schedule "24 hour" ;
+    ns1:street_name "PLAZA SAN CAYETANO" ;
+    ns1:street_number 1 ;
+    ns1:total_slots 222 ;
+    ns1:vehicle_type "CAR" .
+
+<http://example.com/parking/182188> ns1:district "SAN BLAS-CANILLEJAS" ;
+    ns1:name "Aparcamiento mixto. Miguel Yuste" ;
+    ns1:neighbourhood "SIMANCAS" ;
+    ns1:schedule "24 hour" ;
+    ns1:street_name "CALLE MIGUEL YUSTE" ;
+    ns1:street_number 64 ;
+    ns1:total_slots 168 ;
+    ns1:vehicle_type "CAR" .
+
+<http://example.com/parking/183607> ns1:district "CIUDAD LINEAL" ;
+    ns1:name "Aparcamiento mixto. Verdaguer y García" ;
+    ns1:neighbourhood "SAN PASCUAL" ;
+    ns1:schedule "24 hour" ;
+    ns1:street_name "CALLE VERDAGUER Y GARCIA" ;
+    ns1:street_number 2 ;
+    ns1:total_slots 83 ;
+    ns1:vehicle_type "CAR" .
+
+<http://example.com/parking/183747> ns1:district "CENTRO" ;
+    ns1:name "Aparcamiento mixto. Casino de la Reina" ;
+    ns1:neighbourhood "EMBAJADORES" ;
+    ns1:schedule "24 hour" ;
+    ns1:street_name "CALLE CASINO" ;
+    ns1:street_number 3 ;
+    ns1:total_slots 135 ;
+    ns1:vehicle_type "CAR" .
+
+<http://example.com/parking/183748> ns1:district "RETIRO" ;
+    ns1:name "Aparcamiento mixto. Daoíz y Velarde" ;
+    ns1:neighbourhood "PACIFICO" ;
+    ns1:schedule "24 hour" ;
+    ns1:street_name "AVENIDA CIUDAD DE BARCELONA" ;
+    ns1:street_number 156 ;
+    ns1:total_slots 235 ;
+    ns1:vehicle_type "CAR" .
+
+<http://example.com/parking/19053> ns1:district "CENTRO" ;
+    ns1:name "Aparcamiento mixto. Sánchez Bustillo" ;
+    ns1:neighbourhood "EMBAJADORES" ;
+    ns1:schedule "24 hour" ;
+    ns1:street_name "CALLE SANCHEZ BUSTILLO" ;
+    ns1:street_number 0 ;
+    ns1:total_slots 131 ;
+    ns1:vehicle_type "CAR" .
+
+<http://example.com/parking/24193> ns1:district "CHAMARTIN" ;
+    ns1:name "Aparcamiento mixto. República Dominicana" ;
+    ns1:neighbourhood "NUEVA ESPAÑA" ;
+    ns1:schedule "24 hour" ;
+    ns1:street_name "PLAZA REPUBLICA DOMINICANA" ;
+    ns1:street_number 6 ;
+    ns1:total_slots 209 ;
+    ns1:vehicle_type "CAR" .
+
+<http://example.com/parking/24809> ns1:district "RETIRO" ;
+    ns1:name "Aparcamiento mixto. Fernández Shaw" ;
+    ns1:neighbourhood "ADELFAS" ;
+    ns1:schedule "24 hour" ;
+    ns1:street_name "CALLE CARLOS Y GUILLERMO FERNANDEZ SHAW" ;
+    ns1:street_number 1 ;
+    ns1:total_slots 245 ;
+    ns1:vehicle_type "CAR" .
+
+<http://example.com/parking/33440> ns1:district "CENTRO" ;
+    ns1:name "Aparcamiento mixto. Plaza de Oriente" ;
+    ns1:neighbourhood "PALACIO" ;
+    ns1:schedule "24 hour" ;
+    ns1:street_name "PLAZA ORIENTE" ;
+    ns1:street_number 9 ;
+    ns1:total_slots 242 ;
+    ns1:vehicle_type "CAR" .
+
+<http://example.com/parking/36269> ns1:district "MORATALAZ" ;
+    ns1:name "Aparcamiento mixto. Encuentro" ;
+    ns1:neighbourhood "MEDIA LEGUA" ;
+    ns1:schedule "24 hour" ;
+    ns1:street_name "PLAZA ENCUENTRO" ;
+    ns1:street_number 5 ;
+    ns1:total_slots 104 ;
+    ns1:vehicle_type "CAR" .
+
+<http://example.com/parking/36270> ns1:district "TETUAN" ;
+    ns1:name "Aparcamiento mixto. Hernani" ;
+    ns1:neighbourhood "CUATRO CAMINOS" ;
+    ns1:schedule "24 hour" ;
+    ns1:street_name "CALLE HERNANI" ;
+    ns1:street_number 79 ;
+    ns1:total_slots 115 ;
+    ns1:vehicle_type "CAR" .
+
+<http://example.com/parking/36271> ns1:district "TETUAN" ;
+    ns1:name "Aparcamiento mixto. Presidente Carmona" ;
+    ns1:neighbourhood "CUATRO CAMINOS" ;
+    ns1:schedule "24 hour" ;
+    ns1:street_name "AVENIDA GENERAL PERON" ;
+    ns1:street_number 21 ;
+    ns1:total_slots 127 ;
+    ns1:vehicle_type "CAR" .
+
+<http://example.com/parking/44724> ns1:district "SALAMANCA" ;
+    ns1:name "Aparcamiento mixto. Díaz Porlier" ;
+    ns1:neighbourhood "LISTA" ;
+    ns1:schedule "24 hour" ;
+    ns1:street_name "CALLE DIEGO DE LEON" ;
+    ns1:street_number 64 ;
+    ns1:total_slots 203 ;
+    ns1:vehicle_type "CAR" .
+
+<http://example.com/parking/52114> ns1:district "CENTRO" ;
+    ns1:name "Aparcamiento mixto. Pedro Zerolo 'antes denominado Vázquez de Mella'" ;
+    ns1:neighbourhood "JUSTICIA" ;
+    ns1:schedule "24 hour" ;
+    ns1:street_name "PLAZA PEDRO ZEROLO" ;
+    ns1:street_number 1 ;
+    ns1:total_slots 113 ;
+    ns1:vehicle_type "CAR" .
+
+<http://example.com/parking/5517342> ns1:district "TETUAN" ;
+    ns1:name "Aparcamiento mixto. Orense" ;
+    ns1:neighbourhood "CUATRO CAMINOS" ;
+    ns1:schedule "24 hour" ;
+    ns1:street_name "AVENIDA BRASIL" ;
+    ns1:street_number 2 ;
+    ns1:total_slots 129 ;
+    ns1:vehicle_type "CAR" .
+
+<http://example.com/parking/5898885> ns1:district "LATINA" ;
+    ns1:name "Aparcamiento mixto. Avenida de Portugal" ;
+    ns1:neighbourhood "PUERTA DEL ANGEL" ;
+    ns1:schedule "6:00-22:00" ;
+    ns1:street_name "AVENIDA PORTUGAL" ;
+    ns1:street_number 155 ;
+    ns1:total_slots 428 ;
+    ns1:vehicle_type "CAR" .
+
+<http://example.com/parking/59060> ns1:district "CHAMARTIN" ;
+    ns1:name "Aparcamiento mixto. Avenida de América (intercambiador)" ;
+    ns1:neighbourhood "PROSPERIDAD" ;
+    ns1:schedule "24 hour" ;
+    ns1:street_name "AVENIDA AMERICA" ;
+    ns1:street_number 9 ;
+    ns1:total_slots 291 ;
+    ns1:vehicle_type "CAR" .
+
+<http://example.com/parking/6143690> ns1:district "SALAMANCA" ;
+    ns1:name "Aparcamiento mixto. Marqués de Salamanca" ;
+    ns1:neighbourhood "CASTELLANA" ;
+    ns1:schedule "24 hour" ;
+    ns1:street_name "PLAZA MARQUES DE SALAMANCA" ;
+    ns1:street_number 0 ;
+    ns1:total_slots 356 ;
+    ns1:vehicle_type "CAR" .
+
+<http://example.com/parking/7393089> ns1:district "CHAMARTIN" ;
+    ns1:name "Aparcamiento público. Auditorio Nacional de Música (Príncipe de Vergara)" ;
+    ns1:neighbourhood "CIUDAD JARDIN" ;
+    ns1:schedule "24 hour" ;
+    ns1:street_name "CALLE CARTAGENA" ;
+    ns1:street_number 178 ;
+    ns1:total_slots 376 ;
+    ns1:vehicle_type "CAR" .
+
+<http://example.com/parking/7416748> ns1:district "SALAMANCA" ;
+    ns1:name "Aparcamiento mixto. Serrano I" ;
+    ns1:neighbourhood "CASTELLANA" ;
+    ns1:schedule "24 hour" ;
+    ns1:street_name "CALLE SERRANO" ;
+    ns1:street_number 84 ;
+    ns1:total_slots 307 ;
+    ns1:vehicle_type "CAR" .
+
+<http://example.com/parking/7417028> ns1:district "SALAMANCA" ;
+    ns1:name "Aparcamiento mixto. Serrano II" ;
+    ns1:neighbourhood "RECOLETOS" ;
+    ns1:schedule "24 hour" ;
+    ns1:street_name "CALLE SERRANO" ;
+    ns1:street_number 44 ;
+    ns1:total_slots 379 ;
+    ns1:vehicle_type "CAR" .
+
+<http://example.com/parking/7417052> ns1:district "SALAMANCA" ;
+    ns1:name "Aparcamiento mixto. Serrano III" ;
+    ns1:neighbourhood "RECOLETOS" ;
+    ns1:schedule "24 hour" ;
+    ns1:street_name "CALLE SERRANO" ;
+    ns1:street_number 2 ;
+    ns1:total_slots 261 ;
+    ns1:vehicle_type "CAR" .
+
+<http://example.com/parking/81736> ns1:district "MONCLOA-ARAVACA" ;
+    ns1:name "Aparcamiento mixto. Corona Boreal" ;
+    ns1:neighbourhood "ARAVACA" ;
+    ns1:schedule "24 hour" ;
+    ns1:street_name "CALLE PEREZ DE VICTORIA" ;
+    ns1:street_number 2 ;
+    ns1:total_slots 125 ;
+    ns1:vehicle_type "CAR" .
+
+<http://example.com/parking/81828> ns1:district "RETIRO" ;
+    ns1:name "Aparcamiento mixto. Reyes Magos" ;
+    ns1:neighbourhood "NIÑO JESUS" ;
+    ns1:schedule "24 hour" ;
+    ns1:street_name "PLAZA REYES MAGOS" ;
+    ns1:street_number 0 ;
+    ns1:total_slots 356 ;
+    ns1:vehicle_type "CAR" .
+
+<http://example.com/parking/88141> ns1:district "CHAMARTIN" ;
+    ns1:name "Aparcamiento público. Museo de la Ciudad" ;
+    ns1:neighbourhood "CIUDAD JARDIN" ;
+    ns1:schedule "24 hour" ;
+    ns1:street_name "CALLE PRINCIPE DE VERGARA" ;
+    ns1:street_number 134 ;
+    ns1:total_slots 147 ;
+    ns1:vehicle_type "CAR" .
+

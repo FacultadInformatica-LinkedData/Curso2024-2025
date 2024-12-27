@@ -1,0 +1,282 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix rml: <http://semweb.mmlab.be/ns/rml#>.
+@prefix ql: <http://semweb.mmlab.be/ns/ql#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix ns: <https://websemantica.net/Group03/ontology/CamarasBcn#>.
+@prefix sc: <https://schema.org/>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix d2rq: <http://www.wiwiss.fu-berlin.de/suhl/bizer/D2RQ/0.1#>.
+@prefix schema: <http://schema.org/>.
+@prefix formats: <http://www.w3.org/ns/formats/>.
+@prefix comp: <http://semweb.mmlab.be/ns/rml-compression#>.
+@prefix void: <http://rdfs.org/ns/void#>.
+@prefix fnml: <http://semweb.mmlab.be/ns/fnml#>.
+@prefix grel: <http://users.ugent.be/~bjdmeest/function/grel.ttl#>.
+@base <http://example.com/ns#>.
+
+
+<camaras_mapping_0> a rr:TriplesMap;
+
+	rml:logicalSource [
+		a rml:LogicalSource;
+		rml:source "Infraestructures-Inventari-CameresSeguretat-updated-with-links.csv";
+		rml:referenceFormulation ql:CSV
+	];
+	rr:subjectMap [
+		a rr:SubjectMap;
+		rr:template "https://websemantica.net/Group03/ontology/CamarasBcn#Camara_{Id_Cam_Seguretat}";
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [
+			a rr:PredicateMap;
+			rr:constant rdf:type;
+		];
+		rr:objectMap [
+			a rr:ObjectMap;
+			rr:constant ns:Camara;
+		];
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [
+			a rr:PredicateMap;
+			rr:constant ns:tieneIdCamara;
+		];
+		rr:objectMap [
+			a rr:ObjectMap;
+			rml:reference "Id_Cam_Seguretat";
+			rr:datatype xsd:integer
+		];
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [
+			a rr:PredicateMap;
+			rr:constant ns:tieneCodigoCamara;
+		];
+		rr:objectMap [
+			a rr:ObjectMap;
+			rml:reference "Codi_Cam_Seguretat";
+		];
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [
+			a rr:PredicateMap;
+			rr:constant ns:tieneTipoCamara;
+		];
+		rr:objectMap [
+			a rr:ObjectMap;
+			rml:reference "Tipus_Cam_Seguretat";
+		];
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [
+			a rr:PredicateMap;
+			rr:constant ns:tieneNumeroCamara;
+		];
+		rr:objectMap [
+			a rr:ObjectMap;
+			rml:reference "Num_Cam_Seguretat";
+			rr:datatype xsd:integer
+		];
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [
+			a rr:PredicateMap;
+			rr:constant ns:tieneSoporteCamara;
+		];
+		rr:objectMap [
+			a rr:ObjectMap;
+			rml:reference "Codi_Suport";
+		];
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [
+			a rr:PredicateMap;
+			rr:constant sc:latitud;
+		];
+		rr:objectMap [
+			a rr:ObjectMap;
+			rml:reference "Latitud";
+			rr:datatype xsd:decimal
+		];
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [
+			a rr:PredicateMap;
+			rr:constant sc:longitud;
+		];
+		rr:objectMap [
+			a rr:ObjectMap;
+			rml:reference "Longitud";
+			rr:datatype xsd:decimal
+		];
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [
+			a rr:PredicateMap;
+			rr:constant ns:tieneX_ETRS89Camara;
+		];
+		rr:objectMap [
+			a rr:ObjectMap;
+			rml:reference "X_ETRS89";
+			rr:datatype xsd:integer
+		];
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [
+			a rr:PredicateMap;
+			rr:constant ns:tieneY_ETRS89Camara;
+		];
+		rr:objectMap [
+			a rr:ObjectMap;
+			rml:reference "Y_ETRS89";
+			rr:datatype xsd:integer
+		];
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [
+			a rr:PredicateMap;
+			rr:constant ns:tieneFechaAltaCamara;
+		];
+		rr:objectMap [
+			a rr:ObjectMap;
+			rml:reference "Data_Alta";
+			rr:datatype xsd:date
+		];
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [
+			a rr:PredicateMap;
+			rr:constant ns:enBarrio;
+		];
+		rr:objectMap [
+			a rr:RefObjectMap;
+			rr:parentTriplesMap <barrios_mapping_0>;
+
+		]
+	].
+
+
+<barrios_mapping_0> a rr:TriplesMap;
+
+	rml:logicalSource [
+		a rml:LogicalSource;
+		rml:source "Infraestructures-Inventari-CameresSeguretat-updated-with-links.csv";
+		rml:referenceFormulation ql:CSV
+	];
+	rr:subjectMap [
+		a rr:SubjectMap;
+		rr:template "https://websemantica.net/Group03/ontology/CamarasBcn#Barrio_{Codi_Barri}";
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [
+			a rr:PredicateMap;
+			rr:constant rdf:type;
+		];
+		rr:objectMap [
+			a rr:ObjectMap;
+			rr:constant ns:Barrio;
+		];
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [
+			a rr:PredicateMap;
+			rr:constant ns:tieneCodigoBarrio;
+		];
+		rr:objectMap [
+			a rr:ObjectMap;
+			rml:reference "Codi_Barri";
+			rr:datatype xsd:integer
+		];
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [
+			a rr:PredicateMap;
+			rr:constant ns:tieneNombreBarrio;
+		];
+		rr:objectMap [
+			a rr:ObjectMap;
+			rml:reference "Nom_Barri";
+		];
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [
+			a rr:PredicateMap;
+			rr:constant owl:sameAs;
+		];
+		rr:objectMap [
+			a rr:ObjectMap;
+			rml:reference "same_as_wikidata_barrio";
+			rr:termType rr:IRI
+		];
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [
+			a rr:PredicateMap;
+			rr:constant ns:enDistrito;
+		];
+		rr:objectMap [
+			a rr:RefObjectMap;
+			rr:parentTriplesMap <distritos_mapping_0>;
+
+		]
+	].
+
+
+<distritos_mapping_0> a rr:TriplesMap;
+
+	rml:logicalSource [
+		a rml:LogicalSource;
+		rml:source "Infraestructures-Inventari-CameresSeguretat-updated-with-links.csv";
+		rml:referenceFormulation ql:CSV
+	];
+	rr:subjectMap [
+		a rr:SubjectMap;
+		rr:template "https://websemantica.net/Group03/ontology/CamarasBcn#Distrito_{Codi_Districte}";
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [
+			a rr:PredicateMap;
+			rr:constant rdf:type;
+		];
+		rr:objectMap [
+			a rr:ObjectMap;
+			rr:constant ns:Distrito;
+		];
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [
+			a rr:PredicateMap;
+			rr:constant ns:tieneCodigoDistrito;
+		];
+		rr:objectMap [
+			a rr:ObjectMap;
+			rml:reference "Codi_Districte";
+			rr:datatype xsd:integer
+		];
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [
+			a rr:PredicateMap;
+			rr:constant ns:tieneNombreDistrito;
+		];
+		rr:objectMap [
+			a rr:ObjectMap;
+			rml:reference "Nom_Districte";
+		];
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [
+			a rr:PredicateMap;
+			rr:constant owl:sameAs;
+		];
+		rr:objectMap [
+			a rr:ObjectMap;
+			rml:reference "same_as_wikidata_distrito";
+			rr:termType rr:IRI
+		];
+	].
+
+

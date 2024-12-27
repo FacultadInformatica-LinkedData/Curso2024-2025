@@ -1,0 +1,81 @@
+# Query 1: Retrieve Activation Data with District and Hospital Information
+PREFIX samur: <http://samur.linkeddata.madrid.es/ontology#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <http://schema.org/>
+
+SELECT ?activation ?label ?year ?month ?requestTime ?interventionTime ?districtLabel ?hospitalLabel ?emergencyType ?districtWikidataLink ?hospitalWikidataLink
+WHERE {
+  ?activation a samur:Activation ;
+              rdfs:label ?label ;  
+              samur:hasYear ?year ;
+              samur:hasMonth ?month ;
+              samur:hasRequestTime ?requestTime ;
+              samur:hasInterventionTime ?interventionTime ;
+              samur:hasEmergencyType ?emergencyType ;
+              samur:hasDistrict ?district ;
+              samur:hasHospital ?hospital .
+
+  OPTIONAL { ?district rdfs:label ?districtLabel }
+  OPTIONAL { ?hospital rdfs:label ?hospitalLabel }
+
+  OPTIONAL { ?district owl:sameAs ?districtWikidataLink }
+  OPTIONAL { ?hospital owl:sameAs ?hospitalWikidataLink }
+}
+ORDER BY DESC(?year) DESC(?month) DESC(?requestTime)
+LIMIT 300
+
+# Query 2: Retrieve Activations for a Specific Emergency Type
+PREFIX samur: <http://samur.linkeddata.madrid.es/ontology#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?activation ?label ?year ?month ?emergencyType
+WHERE {
+  ?activation a samur:Activation ;
+              rdfs:label ?label ;
+              samur:hasYear ?year ;
+              samur:hasMonth ?month ;
+              samur:hasEmergencyType ?emergencyType .
+  FILTER(?emergencyType = "Diabético")
+}
+ORDER BY DESC(?year) DESC(?month)
+
+# Query 3: Count Activations per District
+PREFIX samur: <http://samur.linkeddata.madrid.es/ontology#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?district (COUNT(?activation) AS ?activationCount)
+WHERE {
+  ?activation a samur:Activation ;
+              samur:hasDistrict ?district .
+}
+GROUP BY ?district
+ORDER BY DESC(?activationCount)
+
+# Query 4: Average Intervention Time by Year
+PREFIX samur: <http://samur.linkeddata.madrid.es/ontology#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?year (AVG(xsd:decimal(STR(?interventionTime))) AS ?avgInterventionTime)
+WHERE {
+  ?activation a samur:Activation ;
+              samur:hasYear ?year ;
+              samur:hasInterventionTime ?interventionTime .
+}
+GROUP BY ?year
+ORDER BY DESC(?year)
+
+# Query 5: List of Hospitals and their Corresponding Wikidata Links
+PREFIX samur: <http://samur.linkeddata.madrid.es/ontology#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?hospital ?hospitalLabel ?wikidataLink
+WHERE {
+  ?activation a samur:Activation ;
+              samur:hasHospital ?hospital .
+  OPTIONAL { ?hospital rdfs:label ?hospitalLabel }
+  OPTIONAL { ?hospital owl:sameAs ?wikidataLink }
+}
+GROUP BY ?hospital ?hospitalLabel ?wikidataLink
+ORDER BY ?hospitalLabel

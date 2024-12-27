@@ -1,0 +1,21 @@
+@prefix : <http://www.semanticweb.org/traffic-lights/ontology//> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+#################################################################
+#    Individual TL1
+#################################################################
+
+:TL1 rdf:type owl:NamedIndividual ,
+              :Traffic-lights ;
+     :distrito "11"^^xsd:int ;
+     :fecha_inst "2015-10-29T00:00:00"^^xsd:dateTime ;
+     :id "60154"^^xsd:int ;
+     :id_cruce "4759"^^xsd:int ;
+     :latitud "4.039.179.346.934.950" ;
+     :longitud "-371.544.397.449.586" ;
+     :tipo_elem "SEMAFORO 2/200 PEATON" ;
+     :utm_x "439.280.122.182.598" ;
+     :utm_y "4.471.489.604.963.970" .

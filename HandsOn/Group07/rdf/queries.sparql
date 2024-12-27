@@ -1,0 +1,55 @@
+PREFIX ex: <http://example.com/ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+# Query 1: Obtener todas las tripletas generadas
+SELECT ?subject ?predicate ?object
+WHERE {
+  ?subject ?predicate ?object .
+}
+LIMIT 100
+
+# Query 2: Verificar la clase "Alumbrado" generada a partir del CSV
+SELECT ?subject
+WHERE {
+  ?subject a ex:Alumbrado .
+}
+LIMIT 10
+
+# Query 3: Verificar los municipios relacionados con cada alumbrado
+SELECT ?alumbrado ?municipio
+WHERE {
+  ?alumbrado a ex:Alumbrado ;
+             ex:tieneMunicipio ?municipio .
+}
+LIMIT 10
+
+# Query 4: Verificar el consumo energético de cada alumbrado
+SELECT ?alumbrado ?consumo
+WHERE {
+  ?alumbrado a ex:Alumbrado ;
+             ex:tieneConsumo ?consumo .
+}
+LIMIT 10
+
+# Query 5: Verificar los tipos de alumbrado generados
+SELECT ?alumbrado ?tipo
+WHERE {
+  ?alumbrado a ex:Alumbrado ;
+             ex:tieneTipo ?tipo .
+}
+LIMIT 10
+
+# Query 6: Verificar el costo del alumbrado
+SELECT ?alumbrado ?coste
+WHERE {
+  ?alumbrado a ex:Alumbrado ;
+             ex:tieneCoste ?coste .
+}
+LIMIT 10
+
+# Query 7: Contar el total de tripletas generadas en el dataset
+SELECT (COUNT(*) AS ?totalTripletas)
+WHERE {
+  ?subject ?predicate ?object .
+}

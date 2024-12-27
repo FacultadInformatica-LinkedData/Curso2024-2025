@@ -1,0 +1,50 @@
+# 1. Retrieve All Residuo Instances with Linked Months on DBpedia
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT ?residuo ?residuoNombre ?wikidataMonth
+WHERE {
+    ?residuo a <http://example.com/resource/Residuo> ;
+              <http://example.com/resource/residuoNombre> ?residuoNombre ;
+              <http://example.com/resource/mes> ?month .
+    ?month owl:sameAs ?wikidataMonth .
+}
+
+
+# 2. List Residuo Instances Grouped by District, and Month from dbpedia
+PREFIX ex: <http://example.com/resource/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX dbr: <http://dbpedia.org/resource/>
+
+SELECT ?district ?wikidataMonth (COUNT(?residuo) AS ?residuoCount)
+WHERE {
+    ?residuo a ex:Residuo ;
+              ex:perteneceDistrito ?district ;
+              ex:mes ?month .
+    ?month owl:sameAs ?wikidataMonth .
+}
+GROUP BY ?district ?wikidataMonth
+ORDER BY ?district ?wikidataMonth
+
+
+# 3. Find Residuo Instances with Missing DBpedia Links for District (Should only return residues without a district)
+PREFIX ex: <http://example.com/resource/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+
+SELECT ?residuo ?district
+WHERE {
+    ?residuo a ex:Residuo ;
+              ex:perteneceDistrito ?district .
+    FILTER NOT EXISTS { ?district owl:sameAs ?wikidataDistrict }
+}
+
+
+# 4. Find Residuo Instances with Missing DBpedia Links for Month (Should return nothing)
+PREFIX ex: <http://example.com/resource/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+
+SELECT ?residuo ?mes
+WHERE {
+    ?residuo a ex:Residuo .
+    ?residuo ex:mes ?mes .
+    FILTER NOT EXISTS { ?mes owl:sameAs ?wikidataMonth }
+}

@@ -1,0 +1,63 @@
+PREFIX ns: <http://webcam.linkeddata.Gijon.es.org/ontology/airquality#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX schema: <https://schema.org/>
+PREFIX sosa: <http://www.w3.org/ns/sosa#> 
+
+# Query 1: Consulta para obtener todas las estaciones de medición con su nombre y coordenadas
+SELECT ?estacion ?nombre ?latitud ?longitud
+WHERE {
+  ?estacion a ns:EstacionMedicion ;
+            schema:name ?nombre ;
+            schema:latitude ?latitud ;
+            schema:longitude ?longitud .
+}
+
+# Query 2: Listar todas las mediciones (sujetos):
+SELECT DISTINCT ?medicion
+WHERE {
+              ?medicion a <http://webcam.linkeddata.Gijon.es.org/ontology/airquality#Medicion> .
+} LIMIT 100
+
+# Query 3: Consulta para obtener todas las mediciones realizadas en una fecha específica
+SELECT ?medicion ?tipo ?hora ?cantidad ?estacion
+WHERE {
+  ?medicion ns:FechaMedida "2023-10-25"^^xsd:date ;
+            ns:HoraMedida ?hora ;
+            ns:CantidadMedida ?cantidad ;
+            sosa:FeatureOfInterest ?tipo ;
+            sosa:madeBySensor ?estacion .
+}  LIMIT 100
+
+# Query 4: Consulta para obtener todas las mediciones con su tipo de FeatureOfInterest y la unidad de medida correspondiente
+SELECT ?medicion ?tipo ?unidadMedida ?cantidad
+WHERE {
+  ?medicion a ns:Medicion ;
+            ns:CantidadMedida ?cantidad ;
+            sosa:FeatureOfInterest ?tipo .
+  ?tipo ns:UnidadMedida ?unidadMedida .
+}  LIMIT 100
+
+# Query 5: Obtener el promedio de la humedad relativa (HR) de todas las horas del 2023-10-21:
+SELECT (AVG(?cantidad) AS ?promedioHR)
+WHERE {
+  ?medicion a ns:Medicion ;
+            ns:CantidadMedida ?cantidad ;
+            ns:FechaMedida "2023-10-21"^^xsd:date ;
+            sosa:FeatureOfInterest ?feature .
+  FILTER CONTAINS(STR(?feature), "HR")
+}
+
+#Query 6: Contar cuántas mediciones de dirección del viento (DireccionViento) se realizaron en el día 2023-10-21:
+SELECT (COUNT(?medicion) AS ?cantidadMediciones)
+WHERE {
+  ?medicion a ns:Medicion ;
+            ns:FechaMedida "2023-10-21"^^xsd:date ;
+            sosa:FeatureOfInterest ?feature .
+  FILTER CONTAINS(STR(?feature), "DireccionViento")
+}
+
+
+
+
+
+

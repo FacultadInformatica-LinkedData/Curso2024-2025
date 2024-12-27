@@ -1,0 +1,5113 @@
+@prefix ex: <http://example.org/ontology/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ex:Residuo_ANIMALES_MUERTOS_99 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "ANIMALES MUERTOS"@es ;
+    ex:esParteDe ex:Distrito_99 ;
+    ex:perteneceAlLote ex:Lote_3 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        8.88,
+        8.94,
+        9.08,
+        10.2,
+        12.1 .
+
+ex:Residuo_CAMA_DE_CABALLO_9 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "CAMA DE CABALLO"@es ;
+    ex:esParteDe ex:Distrito_9 ;
+    ex:perteneceAlLote ex:Lote_1 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        126.085,
+        128.885,
+        130.99,
+        152.19,
+        162.485 .
+
+ex:Residuo_CARTON_COMERCIAL_1 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "CARTON COMERCIAL"@es ;
+    ex:esParteDe ex:Distrito_1 ;
+    ex:perteneceAlLote ex:Lote_1 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        242.06,
+        245.6,
+        248.22,
+        256.5,
+        265.06 .
+
+ex:Residuo_CARTON_COMERCIAL_10 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "CARTON COMERCIAL"@es ;
+    ex:esParteDe ex:Distrito_10 ;
+    ex:perteneceAlLote ex:Lote_1 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        35.42,
+        36.56,
+        38.72,
+        39.32,
+        39.64 .
+
+ex:Residuo_CARTON_COMERCIAL_11 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "CARTON COMERCIAL"@es ;
+    ex:esParteDe ex:Distrito_11 ;
+    ex:perteneceAlLote ex:Lote_3 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        39.98,
+        40.18,
+        44.0,
+        45.68,
+        46.48 .
+
+ex:Residuo_CARTON_COMERCIAL_12 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "CARTON COMERCIAL"@es ;
+    ex:esParteDe ex:Distrito_12 ;
+    ex:perteneceAlLote ex:Lote_3 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        37.14,
+        38.98,
+        39.38,
+        41.72,
+        41.78 .
+
+ex:Residuo_CARTON_COMERCIAL_13 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "CARTON COMERCIAL"@es ;
+    ex:esParteDe ex:Distrito_13 ;
+    ex:perteneceAlLote ex:Lote_3 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        42.66,
+        43.42,
+        46.62,
+        47.82,
+        48.2 .
+
+ex:Residuo_CARTON_COMERCIAL_14 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "CARTON COMERCIAL"@es ;
+    ex:esParteDe ex:Distrito_14 ;
+    ex:perteneceAlLote ex:Lote_2 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        29.78,
+        31.16,
+        31.3,
+        32.24,
+        33.54 .
+
+ex:Residuo_CARTON_COMERCIAL_15 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "CARTON COMERCIAL"@es ;
+    ex:esParteDe ex:Distrito_15 ;
+    ex:perteneceAlLote ex:Lote_2 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        39.88,
+        44.26,
+        45.7,
+        48.06,
+        50.52 .
+
+ex:Residuo_CARTON_COMERCIAL_16 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "CARTON COMERCIAL"@es ;
+    ex:esParteDe ex:Distrito_16 ;
+    ex:perteneceAlLote ex:Lote_2 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        41.3,
+        49.28,
+        50.02,
+        51.4,
+        55.02 .
+
+ex:Residuo_CARTON_COMERCIAL_17 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "CARTON COMERCIAL"@es ;
+    ex:esParteDe ex:Distrito_17 ;
+    ex:perteneceAlLote ex:Lote_3 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        25.9,
+        26.36,
+        28.02,
+        29.56,
+        29.72 .
+
+ex:Residuo_CARTON_COMERCIAL_18 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "CARTON COMERCIAL"@es ;
+    ex:esParteDe ex:Distrito_18 ;
+    ex:perteneceAlLote ex:Lote_3 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        21.04,
+        22.62,
+        24.42,
+        24.96,
+        27.66 .
+
+ex:Residuo_CARTON_COMERCIAL_19 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "CARTON COMERCIAL"@es ;
+    ex:esParteDe ex:Distrito_19 ;
+    ex:perteneceAlLote ex:Lote_2 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        29.48,
+        30.64,
+        32.76,
+        33.14,
+        41.28 .
+
+ex:Residuo_CARTON_COMERCIAL_2 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "CARTON COMERCIAL"@es ;
+    ex:esParteDe ex:Distrito_2 ;
+    ex:perteneceAlLote ex:Lote_3 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        37.9,
+        43.78,
+        45.48,
+        46.52,
+        48.18 .
+
+ex:Residuo_CARTON_COMERCIAL_20 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "CARTON COMERCIAL"@es ;
+    ex:esParteDe ex:Distrito_20 ;
+    ex:perteneceAlLote ex:Lote_2 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        4.12,
+        15.48,
+        16.26 .
+
+ex:Residuo_CARTON_COMERCIAL_21 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "CARTON COMERCIAL"@es ;
+    ex:esParteDe ex:Distrito_21 ;
+    ex:perteneceAlLote ex:Lote_2 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        21.82,
+        23.14,
+        30.84,
+        34.98,
+        35.14 .
+
+ex:Residuo_CARTON_COMERCIAL_3 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "CARTON COMERCIAL"@es ;
+    ex:esParteDe ex:Distrito_3 ;
+    ex:perteneceAlLote ex:Lote_2 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        44.14,
+        47.34,
+        48.26,
+        50.38,
+        64.08 .
+
+ex:Residuo_CARTON_COMERCIAL_4 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "CARTON COMERCIAL"@es ;
+    ex:esParteDe ex:Distrito_4 ;
+    ex:perteneceAlLote ex:Lote_2 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        52.5,
+        64.12,
+        64.48,
+        74.0,
+        86.74 .
+
+ex:Residuo_CARTON_COMERCIAL_5 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "CARTON COMERCIAL"@es ;
+    ex:esParteDe ex:Distrito_5 ;
+    ex:perteneceAlLote ex:Lote_2 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        51.28,
+        57.62,
+        69.26,
+        78.3,
+        96.44 .
+
+ex:Residuo_CARTON_COMERCIAL_6 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "CARTON COMERCIAL"@es ;
+    ex:esParteDe ex:Distrito_6 ;
+    ex:perteneceAlLote ex:Lote_1 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        59.22,
+        63.0,
+        67.7,
+        70.82 .
+
+ex:Residuo_CARTON_COMERCIAL_7 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "CARTON COMERCIAL"@es ;
+    ex:esParteDe ex:Distrito_7 ;
+    ex:perteneceAlLote ex:Lote_1 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        93.16,
+        94.62,
+        98.02,
+        106.06,
+        110.28 .
+
+ex:Residuo_CARTON_COMERCIAL_8 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "CARTON COMERCIAL"@es ;
+    ex:esParteDe ex:Distrito_8 ;
+    ex:perteneceAlLote ex:Lote_1 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        29.0,
+        29.16,
+        29.24,
+        29.36,
+        30.72 .
+
+ex:Residuo_CLINICOS_1 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "CLINICOS"@es ;
+    ex:esParteDe ex:Distrito_1 ;
+    ex:perteneceAlLote ex:Lote_1 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        184.54,
+        185.72,
+        186.1,
+        189.3,
+        197.96 .
+
+ex:Residuo_CLINICOS_10 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "CLINICOS"@es ;
+    ex:esParteDe ex:Distrito_10 ;
+    ex:perteneceAlLote ex:Lote_1 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        28.96,
+        30.72,
+        31.6,
+        31.86,
+        37.98 .
+
+ex:Residuo_CLINICOS_12 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "CLINICOS"@es ;
+    ex:esParteDe ex:Distrito_12 ;
+    ex:perteneceAlLote ex:Lote_3 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        164.7,
+        165.5,
+        167.76,
+        173.44,
+        176.78 .
+
+ex:Residuo_CLINICOS_13 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "CLINICOS"@es ;
+    ex:esParteDe ex:Distrito_13 ;
+    ex:perteneceAlLote ex:Lote_3 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        36.34,
+        37.66,
+        37.78,
+        39.32 .
+
+ex:Residuo_CLINICOS_15 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "CLINICOS"@es ;
+    ex:esParteDe ex:Distrito_15 ;
+    ex:perteneceAlLote ex:Lote_2 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        131.6,
+        138.98,
+        139.42,
+        139.56,
+        140.78 .
+
+ex:Residuo_CLINICOS_3 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "CLINICOS"@es ;
+    ex:esParteDe ex:Distrito_3 ;
+    ex:perteneceAlLote ex:Lote_2 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        180.72,
+        182.3,
+        190.3,
+        190.96,
+        202.62 .
+
+ex:Residuo_CLINICOS_4 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "CLINICOS"@es ;
+    ex:esParteDe ex:Distrito_4 ;
+    ex:perteneceAlLote ex:Lote_2 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        122.82,
+        122.86,
+        124.08,
+        125.52,
+        130.88 .
+
+ex:Residuo_CLINICOS_6 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "CLINICOS"@es ;
+    ex:esParteDe ex:Distrito_6 ;
+    ex:perteneceAlLote ex:Lote_1 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        14.46,
+        14.58,
+        16.32,
+        17.02,
+        17.9 .
+
+ex:Residuo_CLINICOS_8 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "CLINICOS"@es ;
+    ex:esParteDe ex:Distrito_8 ;
+    ex:perteneceAlLote ex:Lote_1 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        313.12,
+        314.8,
+        317.38,
+        323.42,
+        331.92 .
+
+ex:Residuo_CLINICOS_9 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "CLINICOS"@es ;
+    ex:esParteDe ex:Distrito_9 ;
+    ex:perteneceAlLote ex:Lote_1 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        244.36,
+        249.8,
+        251.62,
+        252.78,
+        262.22 .
+
+ex:Residuo_CONTENEDORES_DE_ROPA_16 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "CONTENEDORES DE ROPA"@es ;
+    ex:esParteDe ex:Distrito_16 ;
+    ex:perteneceAlLote ex:Lote_2 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_March a ex:Residuo ;
+    ex:totalResiduos "0.54"^^xsd:decimal ;
+    ex:mes "March" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_April a ex:Residuo ;
+    ex:totalResiduos "."^^xsd:decimal ;
+    ex:mes "April" .
+
+    rdf:type ex:GeneralType ;
+
+ex:Residuo_CONTENEDORES_DE_ROPA_19 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "CONTENEDORES DE ROPA"@es ;
+    ex:esParteDe ex:Distrito_19 ;
+    ex:perteneceAlLote ex:Lote_2 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        0.36 .
+
+ex:Residuo_CONTENEDORES_DE_ROPA_20 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "CONTENEDORES DE ROPA"@es ;
+    ex:esParteDe ex:Distrito_20 ;
+    ex:perteneceAlLote ex:Lote_2 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_March a ex:Residuo ;
+    ex:totalResiduos "0.54"^^xsd:decimal ;
+    ex:mes "March" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_April a ex:Residuo ;
+    ex:totalResiduos "."^^xsd:decimal ;
+    ex:mes "April" .
+
+    rdf:type ex:GeneralType ;
+
+ex:Residuo_CONTENEDORES_DE_ROPA_8 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "CONTENEDORES DE ROPA"@es ;
+    ex:esParteDe ex:Distrito_8 ;
+    ex:perteneceAlLote ex:Lote_1 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        0.54 .
+
+ex:Residuo_CONTENEDORES_DE_ROPA_9 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "CONTENEDORES DE ROPA"@es ;
+    ex:esParteDe ex:Distrito_9 ;
+    ex:perteneceAlLote ex:Lote_1 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        0.36,
+        0.54 .
+
+ex:Residuo_ENVASES_1 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "ENVASES"@es ;
+    ex:esParteDe ex:Distrito_1 ;
+    ex:perteneceAlLote ex:Lote_1 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        311.48,
+        327.84,
+        333.4,
+        344.58,
+        346.76 .
+
+ex:Residuo_ENVASES_10 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "ENVASES"@es ;
+    ex:esParteDe ex:Distrito_10 ;
+    ex:perteneceAlLote ex:Lote_1 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        702.42,
+        707.72,
+        726.92,
+        728.6,
+        767.2 .
+
+ex:Residuo_ENVASES_11 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "ENVASES"@es ;
+    ex:esParteDe ex:Distrito_11 ;
+    ex:perteneceAlLote ex:Lote_3 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        988.98,
+        1025.2,
+        1073.86,
+        1081.38,
+        1119.64 .
+
+ex:Residuo_ENVASES_12 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "ENVASES"@es ;
+    ex:esParteDe ex:Distrito_12 ;
+    ex:perteneceAlLote ex:Lote_3 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        471.82,
+        476.02,
+        476.1,
+        489.18,
+        508.78 .
+
+ex:Residuo_ENVASES_13 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "ENVASES"@es ;
+    ex:esParteDe ex:Distrito_13 ;
+    ex:perteneceAlLote ex:Lote_3 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        859.7,
+        882.02,
+        892.86,
+        899.14,
+        932.8 .
+
+ex:Residuo_ENVASES_14 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "ENVASES"@es ;
+    ex:esParteDe ex:Distrito_14 ;
+    ex:perteneceAlLote ex:Lote_2 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        234.76,
+        247.94,
+        249.66,
+        253.74,
+        296.7 .
+
+ex:Residuo_ENVASES_15 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "ENVASES"@es ;
+    ex:esParteDe ex:Distrito_15 ;
+    ex:perteneceAlLote ex:Lote_2 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        724.72,
+        741.06,
+        744.02,
+        754.54,
+        791.58 .
+
+ex:Residuo_ENVASES_16 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "ENVASES"@es ;
+    ex:esParteDe ex:Distrito_16 ;
+    ex:perteneceAlLote ex:Lote_2 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        659.82,
+        661.06,
+        665.76,
+        683.58,
+        703.5 .
+
+ex:Residuo_ENVASES_17 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "ENVASES"@es ;
+    ex:esParteDe ex:Distrito_17 ;
+    ex:perteneceAlLote ex:Lote_3 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        408.52,
+        418.48,
+        439.22,
+        462.98,
+        466.86 .
+
+ex:Residuo_ENVASES_18 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "ENVASES"@es ;
+    ex:esParteDe ex:Distrito_18 ;
+    ex:perteneceAlLote ex:Lote_3 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        375.68,
+        384.22,
+        392.34,
+        403.02,
+        403.58 .
+
+ex:Residuo_ENVASES_19 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "ENVASES"@es ;
+    ex:esParteDe ex:Distrito_19 ;
+    ex:perteneceAlLote ex:Lote_2 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        304.92,
+        308.44,
+        310.5,
+        312.64,
+        333.32 .
+
+ex:Residuo_ENVASES_2 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "ENVASES"@es ;
+    ex:esParteDe ex:Distrito_2 ;
+    ex:perteneceAlLote ex:Lote_3 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        482.24,
+        483.22,
+        490.62,
+        506.62,
+        506.78 .
+
+ex:Residuo_ENVASES_20 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "ENVASES"@es ;
+    ex:esParteDe ex:Distrito_20 ;
+    ex:perteneceAlLote ex:Lote_2 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        532.3,
+        532.56,
+        540.84,
+        546.02,
+        550.26 .
+
+ex:Residuo_ENVASES_21 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "ENVASES"@es ;
+    ex:esParteDe ex:Distrito_21 ;
+    ex:perteneceAlLote ex:Lote_2 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        149.74,
+        158.72,
+        163.64,
+        174.16,
+        187.9 .
+
+ex:Residuo_ENVASES_3 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "ENVASES"@es ;
+    ex:esParteDe ex:Distrito_3 ;
+    ex:perteneceAlLote ex:Lote_2 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        336.54,
+        342.06,
+        347.84,
+        354.76,
+        367.94 .
+
+ex:Residuo_ENVASES_4 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "ENVASES"@es ;
+    ex:esParteDe ex:Distrito_4 ;
+    ex:perteneceAlLote ex:Lote_2 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        505.8,
+        527.82,
+        529.22,
+        534.98,
+        546.14 .
+
+ex:Residuo_ENVASES_5 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "ENVASES"@es ;
+    ex:esParteDe ex:Distrito_5 ;
+    ex:perteneceAlLote ex:Lote_2 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        470.78,
+        487.58,
+        497.14,
+        498.72,
+        504.26 .
+
+ex:Residuo_ENVASES_6 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "ENVASES"@es ;
+    ex:esParteDe ex:Distrito_6 ;
+    ex:perteneceAlLote ex:Lote_1 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        470.8,
+        481.18,
+        488.98,
+        496.54,
+        503.48 .
+
+ex:Residuo_ENVASES_7 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "ENVASES"@es ;
+    ex:esParteDe ex:Distrito_7 ;
+    ex:perteneceAlLote ex:Lote_1 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        504.04,
+        512.06,
+        517.88,
+        519.36,
+        530.84 .
+
+ex:Residuo_ENVASES_8 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "ENVASES"@es ;
+    ex:esParteDe ex:Distrito_8 ;
+    ex:perteneceAlLote ex:Lote_1 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        709.0,
+        722.02,
+        761.64,
+        761.92,
+        778.0 .
+
+ex:Residuo_ENVASES_9 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "ENVASES"@es ;
+    ex:esParteDe ex:Distrito_9 ;
+    ex:perteneceAlLote ex:Lote_1 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        451.64,
+        465.24,
+        473.4,
+        480.12,
+        482.74 .
+
+ex:Residuo_ORGANICA_1 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "ORGANICA"@es ;
+    ex:esParteDe ex:Distrito_1 ;
+    ex:perteneceAlLote ex:Lote_1 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        2048.62,
+        2241.28,
+        2250.26,
+        2258.92,
+        2360.06 .
+
+ex:Residuo_ORGANICA_10 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "ORGANICA"@es ;
+    ex:esParteDe ex:Distrito_10 ;
+    ex:perteneceAlLote ex:Lote_1 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        1404.52,
+        1480.38,
+        1554.68,
+        1574.0,
+        1583.08 .
+
+ex:Residuo_ORGANICA_11 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "ORGANICA"@es ;
+    ex:esParteDe ex:Distrito_11 ;
+    ex:perteneceAlLote ex:Lote_3 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        1556.72,
+        1601.86,
+        1653.94,
+        1807.36,
+        1898.3 .
+
+ex:Residuo_ORGANICA_12 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "ORGANICA"@es ;
+    ex:esParteDe ex:Distrito_12 ;
+    ex:perteneceAlLote ex:Lote_3 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        934.48,
+        943.7,
+        966.08,
+        1000.34,
+        1054.98 .
+
+ex:Residuo_ORGANICA_13 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "ORGANICA"@es ;
+    ex:esParteDe ex:Distrito_13 ;
+    ex:perteneceAlLote ex:Lote_3 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        1464.14,
+        1605.58,
+        1646.42,
+        1650.66,
+        1690.92 .
+
+ex:Residuo_ORGANICA_14 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "ORGANICA"@es ;
+    ex:esParteDe ex:Distrito_14 ;
+    ex:perteneceAlLote ex:Lote_2 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        321.48,
+        373.84,
+        386.88,
+        388.28,
+        390.82 .
+
+ex:Residuo_ORGANICA_15 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "ORGANICA"@es ;
+    ex:esParteDe ex:Distrito_15 ;
+    ex:perteneceAlLote ex:Lote_2 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        1098.8,
+        1105.8,
+        1187.6,
+        1235.42,
+        1256.38 .
+
+ex:Residuo_ORGANICA_16 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "ORGANICA"@es ;
+    ex:esParteDe ex:Distrito_16 ;
+    ex:perteneceAlLote ex:Lote_2 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        1171.5,
+        1175.5,
+        1276.82,
+        1310.78,
+        1317.56 .
+
+ex:Residuo_ORGANICA_17 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "ORGANICA"@es ;
+    ex:esParteDe ex:Distrito_17 ;
+    ex:perteneceAlLote ex:Lote_3 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        1184.14,
+        1188.34,
+        1201.28,
+        1225.06,
+        1237.24 .
+
+ex:Residuo_ORGANICA_18 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "ORGANICA"@es ;
+    ex:esParteDe ex:Distrito_18 ;
+    ex:perteneceAlLote ex:Lote_3 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        1754.14,
+        1823.04,
+        1874.76,
+        1888.34,
+        1914.7 .
+
+ex:Residuo_ORGANICA_19 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "ORGANICA"@es ;
+    ex:esParteDe ex:Distrito_19 ;
+    ex:perteneceAlLote ex:Lote_2 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        802.14,
+        833.68,
+        858.44,
+        869.14,
+        892.84 .
+
+ex:Residuo_ORGANICA_2 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "ORGANICA"@es ;
+    ex:esParteDe ex:Distrito_2 ;
+    ex:perteneceAlLote ex:Lote_3 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        740.42,
+        750.28,
+        775.96,
+        784.28,
+        832.62 .
+
+ex:Residuo_ORGANICA_20 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "ORGANICA"@es ;
+    ex:esParteDe ex:Distrito_20 ;
+    ex:perteneceAlLote ex:Lote_2 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        1017.12,
+        1025.42,
+        1044.72,
+        1048.6,
+        1078.74 .
+
+ex:Residuo_ORGANICA_21 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "ORGANICA"@es ;
+    ex:esParteDe ex:Distrito_21 ;
+    ex:perteneceAlLote ex:Lote_2 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        480.68,
+        499.8,
+        510.18,
+        519.28,
+        537.42 .
+
+ex:Residuo_ORGANICA_3 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "ORGANICA"@es ;
+    ex:esParteDe ex:Distrito_3 ;
+    ex:perteneceAlLote ex:Lote_2 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        923.38,
+        937.74,
+        948.5,
+        959.5,
+        973.28 .
+
+ex:Residuo_ORGANICA_4 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "ORGANICA"@es ;
+    ex:esParteDe ex:Distrito_4 ;
+    ex:perteneceAlLote ex:Lote_2 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        1563.14,
+        1585.06,
+        1612.26,
+        1628.75,
+        1700.22 .
+
+ex:Residuo_ORGANICA_5 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "ORGANICA"@es ;
+    ex:esParteDe ex:Distrito_5 ;
+    ex:perteneceAlLote ex:Lote_2 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        1277.74,
+        1323.16,
+        1374.64,
+        1376.86,
+        1390.02 .
+
+ex:Residuo_ORGANICA_6 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "ORGANICA"@es ;
+    ex:esParteDe ex:Distrito_6 ;
+    ex:perteneceAlLote ex:Lote_1 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        1078.58,
+        1090.46,
+        1105.2,
+        1110.36,
+        1173.78 .
+
+ex:Residuo_ORGANICA_7 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "ORGANICA"@es ;
+    ex:esParteDe ex:Distrito_7 ;
+    ex:perteneceAlLote ex:Lote_1 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        1134.4,
+        1164.26,
+        1184.8,
+        1189.52,
+        1222.0 .
+
+ex:Residuo_ORGANICA_8 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "ORGANICA"@es ;
+    ex:esParteDe ex:Distrito_8 ;
+    ex:perteneceAlLote ex:Lote_1 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        1594.4,
+        1721.68,
+        1779.5,
+        1818.28,
+        1872.32 .
+
+ex:Residuo_ORGANICA_9 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "ORGANICA"@es ;
+    ex:esParteDe ex:Distrito_9 ;
+    ex:perteneceAlLote ex:Lote_1 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        1114.46,
+        1169.16,
+        1278.06,
+        1299.44,
+        1320.94 .
+
+ex:Residuo_PAPEL-CARTON_1 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "PAPEL-CARTON"@es ;
+    ex:esParteDe ex:Distrito_1 ;
+    ex:perteneceAlLote ex:Lote_1 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        461.64,
+        491.52,
+        498.98,
+        502.54,
+        505.14 .
+
+ex:Residuo_PAPEL-CARTON_10 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "PAPEL-CARTON"@es ;
+    ex:esParteDe ex:Distrito_10 ;
+    ex:perteneceAlLote ex:Lote_1 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        328.48,
+        330.5,
+        343.88,
+        345.82,
+        387.08 .
+
+ex:Residuo_PAPEL-CARTON_11 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "PAPEL-CARTON"@es ;
+    ex:esParteDe ex:Distrito_11 ;
+    ex:perteneceAlLote ex:Lote_3 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        303.62,
+        306.82,
+        312.12,
+        339.28,
+        341.18 .
+
+ex:Residuo_PAPEL-CARTON_12 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "PAPEL-CARTON"@es ;
+    ex:esParteDe ex:Distrito_12 ;
+    ex:perteneceAlLote ex:Lote_3 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        182.84,
+        189.64,
+        191.94,
+        198.42,
+        208.54 .
+
+ex:Residuo_PAPEL-CARTON_13 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "PAPEL-CARTON"@es ;
+    ex:esParteDe ex:Distrito_13 ;
+    ex:perteneceAlLote ex:Lote_3 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        256.16,
+        262.7,
+        267.04,
+        277.9,
+        300.44 .
+
+ex:Residuo_PAPEL-CARTON_14 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "PAPEL-CARTON"@es ;
+    ex:esParteDe ex:Distrito_14 ;
+    ex:perteneceAlLote ex:Lote_2 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        218.3,
+        228.12,
+        237.08,
+        319.32,
+        367.5 .
+
+ex:Residuo_PAPEL-CARTON_15 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "PAPEL-CARTON"@es ;
+    ex:esParteDe ex:Distrito_15 ;
+    ex:perteneceAlLote ex:Lote_2 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        338.46,
+        346.12,
+        351.96,
+        352.48,
+        394.92 .
+
+ex:Residuo_PAPEL-CARTON_16 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "PAPEL-CARTON"@es ;
+    ex:esParteDe ex:Distrito_16 ;
+    ex:perteneceAlLote ex:Lote_2 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        405.82,
+        417.36,
+        425.56,
+        429.0,
+        471.86 .
+
+ex:Residuo_PAPEL-CARTON_17 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "PAPEL-CARTON"@es ;
+    ex:esParteDe ex:Distrito_17 ;
+    ex:perteneceAlLote ex:Lote_3 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        196.48,
+        196.62,
+        217.76,
+        218.84,
+        222.64 .
+
+ex:Residuo_PAPEL-CARTON_18 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "PAPEL-CARTON"@es ;
+    ex:esParteDe ex:Distrito_18 ;
+    ex:perteneceAlLote ex:Lote_3 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        170.68,
+        178.42,
+        185.9,
+        193.72,
+        200.1 .
+
+ex:Residuo_PAPEL-CARTON_19 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "PAPEL-CARTON"@es ;
+    ex:esParteDe ex:Distrito_19 ;
+    ex:perteneceAlLote ex:Lote_2 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        75.26,
+        76.32,
+        78.82,
+        88.34,
+        90.84 .
+
+ex:Residuo_PAPEL-CARTON_2 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "PAPEL-CARTON"@es ;
+    ex:esParteDe ex:Distrito_2 ;
+    ex:perteneceAlLote ex:Lote_3 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        356.2,
+        364.36,
+        365.6,
+        377.02,
+        393.02 .
+
+ex:Residuo_PAPEL-CARTON_20 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "PAPEL-CARTON"@es ;
+    ex:esParteDe ex:Distrito_20 ;
+    ex:perteneceAlLote ex:Lote_2 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        300.28,
+        319.66,
+        349.9,
+        394.1,
+        396.78 .
+
+ex:Residuo_PAPEL-CARTON_21 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "PAPEL-CARTON"@es ;
+    ex:esParteDe ex:Distrito_21 ;
+    ex:perteneceAlLote ex:Lote_2 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        92.6,
+        96.6,
+        105.16,
+        119.92,
+        124.98 .
+
+ex:Residuo_PAPEL-CARTON_3 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "PAPEL-CARTON"@es ;
+    ex:esParteDe ex:Distrito_3 ;
+    ex:perteneceAlLote ex:Lote_2 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        265.2,
+        269.6,
+        269.76,
+        292.02,
+        292.22 .
+
+ex:Residuo_PAPEL-CARTON_4 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "PAPEL-CARTON"@es ;
+    ex:esParteDe ex:Distrito_4 ;
+    ex:perteneceAlLote ex:Lote_2 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        496.82,
+        498.94,
+        547.7,
+        563.7,
+        663.06 .
+
+ex:Residuo_PAPEL-CARTON_5 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "PAPEL-CARTON"@es ;
+    ex:esParteDe ex:Distrito_5 ;
+    ex:perteneceAlLote ex:Lote_2 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        315.52,
+        325.7,
+        327.84,
+        330.9,
+        349.64 .
+
+ex:Residuo_PAPEL-CARTON_6 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "PAPEL-CARTON"@es ;
+    ex:esParteDe ex:Distrito_6 ;
+    ex:perteneceAlLote ex:Lote_1 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        392.48,
+        393.32,
+        396.66,
+        408.0,
+        422.58 .
+
+ex:Residuo_PAPEL-CARTON_7 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "PAPEL-CARTON"@es ;
+    ex:esParteDe ex:Distrito_7 ;
+    ex:perteneceAlLote ex:Lote_1 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        278.14,
+        288.98,
+        305.26,
+        320.12,
+        356.48 .
+
+ex:Residuo_PAPEL-CARTON_8 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "PAPEL-CARTON"@es ;
+    ex:esParteDe ex:Distrito_8 ;
+    ex:perteneceAlLote ex:Lote_1 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        645.36,
+        649.08,
+        657.46,
+        718.12,
+        740.12 .
+
+ex:Residuo_PAPEL-CARTON_9 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "PAPEL-CARTON"@es ;
+    ex:esParteDe ex:Distrito_9 ;
+    ex:perteneceAlLote ex:Lote_1 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        246.2,
+        284.58,
+        291.56,
+        295.6,
+        323.2 .
+
+ex:Residuo_PILAS_1 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "PILAS"@es ;
+    ex:esParteDe ex:Distrito_1 ;
+    ex:perteneceAlLote ex:Lote_1 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        0.107370299,
+        0.114028502,
+        0.11565786,
+        0.117361794,
+        0.118434692 .
+
+ex:Residuo_PILAS_10 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "PILAS"@es ;
+    ex:esParteDe ex:Distrito_10 ;
+    ex:perteneceAlLote ex:Lote_1 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        0.154087295,
+        0.159938038,
+        0.16211162,
+        0.163292836,
+        0.166735438 .
+
+ex:Residuo_PILAS_11 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "PILAS"@es ;
+    ex:esParteDe ex:Distrito_11 ;
+    ex:perteneceAlLote ex:Lote_3 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        0.151900319,
+        0.157690692,
+        0.160152302,
+        0.161408314,
+        0.164723416 .
+
+ex:Residuo_PILAS_12 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "PILAS"@es ;
+    ex:esParteDe ex:Distrito_12 ;
+    ex:perteneceAlLote ex:Lote_3 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        0.13117426,
+        0.136248075,
+        0.13831938,
+        0.139519627,
+        0.142122092 .
+
+ex:Residuo_PILAS_13 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "PILAS"@es ;
+    ex:esParteDe ex:Distrito_13 ;
+    ex:perteneceAlLote ex:Lote_3 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        0.080478438,
+        0.083365343,
+        0.084020762,
+        0.084158117,
+        0.086813483 .
+
+ex:Residuo_PILAS_14 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "PILAS"@es ;
+    ex:esParteDe ex:Distrito_14 ;
+    ex:perteneceAlLote ex:Lote_2 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        0.050903964,
+        0.05265839,
+        0.052945433,
+        0.052961268,
+        0.054727594 .
+
+ex:Residuo_PILAS_15 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "PILAS"@es ;
+    ex:esParteDe ex:Distrito_15 ;
+    ex:perteneceAlLote ex:Lote_2 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        0.090446135,
+        0.094221959,
+        0.09430539,
+        0.09518265,
+        0.097373757 .
+
+ex:Residuo_PILAS_16 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "PILAS"@es ;
+    ex:esParteDe ex:Distrito_16 ;
+    ex:perteneceAlLote ex:Lote_2 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        0.176653443,
+        0.185081267,
+        0.190922397,
+        0.193810992,
+        0.195614417 .
+
+ex:Residuo_PILAS_17 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "PILAS"@es ;
+    ex:esParteDe ex:Distrito_17 ;
+    ex:perteneceAlLote ex:Lote_3 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        0.073363766,
+        0.078368649,
+        0.078485525,
+        0.079925549,
+        0.085591704 .
+
+ex:Residuo_PILAS_18 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "PILAS"@es ;
+    ex:esParteDe ex:Distrito_18 ;
+    ex:perteneceAlLote ex:Lote_3 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        0.040255575,
+        0.04215339,
+        0.04314148,
+        0.043910672,
+        0.044017846 .
+
+ex:Residuo_PILAS_19 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "PILAS"@es ;
+    ex:esParteDe ex:Distrito_19 ;
+    ex:perteneceAlLote ex:Lote_2 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        0.075557672,
+        0.079195015,
+        0.081581103,
+        0.082659809,
+        0.083683463 .
+
+ex:Residuo_PILAS_2 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "PILAS"@es ;
+    ex:esParteDe ex:Distrito_2 ;
+    ex:perteneceAlLote ex:Lote_3 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        0.085442805,
+        0.091088288,
+        0.092564665,
+        0.093038437,
+        0.093106637 .
+
+ex:Residuo_PILAS_20 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "PILAS"@es ;
+    ex:esParteDe ex:Distrito_20 ;
+    ex:perteneceAlLote ex:Lote_2 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        0.080563726,
+        0.08610975,
+        0.087390768,
+        0.088477958,
+        0.089800353 .
+
+ex:Residuo_PILAS_21 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "PILAS"@es ;
+    ex:esParteDe ex:Distrito_21 ;
+    ex:perteneceAlLote ex:Lote_2 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        0.083068867,
+        0.086694407,
+        0.088659206,
+        0.09022759,
+        0.090419836 .
+
+ex:Residuo_PILAS_3 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "PILAS"@es ;
+    ex:esParteDe ex:Distrito_3 ;
+    ex:perteneceAlLote ex:Lote_2 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        0.03831446,
+        0.040263253,
+        0.040783745,
+        0.041437253,
+        0.041645136 .
+
+ex:Residuo_PILAS_4 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "PILAS"@es ;
+    ex:esParteDe ex:Distrito_4 ;
+    ex:perteneceAlLote ex:Lote_2 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        0.09330021,
+        0.101486297,
+        0.101855787,
+        0.102171421,
+        0.104665369 .
+
+ex:Residuo_PILAS_5 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "PILAS"@es ;
+    ex:esParteDe ex:Distrito_5 ;
+    ex:perteneceAlLote ex:Lote_2 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        0.103696223,
+        0.107653111,
+        0.109245882,
+        0.110095551,
+        0.112343939 .
+
+ex:Residuo_PILAS_6 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "PILAS"@es ;
+    ex:esParteDe ex:Distrito_6 ;
+    ex:perteneceAlLote ex:Lote_1 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        0.126339939,
+        0.132731692,
+        0.137540997,
+        0.138914807,
+        0.141718209 .
+
+ex:Residuo_PILAS_7 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "PILAS"@es ;
+    ex:esParteDe ex:Distrito_7 ;
+    ex:perteneceAlLote ex:Lote_1 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        0.083538329,
+        0.088698231,
+        0.088809695,
+        0.090254524,
+        0.090315906 .
+
+ex:Residuo_PILAS_8 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "PILAS"@es ;
+    ex:esParteDe ex:Distrito_8 ;
+    ex:perteneceAlLote ex:Lote_1 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        0.131152253,
+        0.137083935,
+        0.140775043,
+        0.143273592,
+        0.143701374 .
+
+ex:Residuo_PILAS_9 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "PILAS"@es ;
+    ex:esParteDe ex:Distrito_9 ;
+    ex:perteneceAlLote ex:Lote_1 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        0.0818616,
+        0.087970649,
+        0.088167713,
+        0.089410429,
+        0.090323979 .
+
+ex:Residuo_PILAS_99 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "PILAS"@es ;
+    ex:esParteDe ex:Distrito_99 ;
+    ex:perteneceAlLote ex:Lote_3 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        5.724,
+        6.641 .
+
+ex:Residuo_PUNTOS_LIMPIOS_10 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "PUNTOS LIMPIOS"@es ;
+    ex:esParteDe ex:Distrito_10 ;
+    ex:perteneceAlLote ex:Lote_1 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        98.78,
+        103.58,
+        123.42,
+        127.98,
+        165.38 .
+
+ex:Residuo_PUNTOS_LIMPIOS_11 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "PUNTOS LIMPIOS"@es ;
+    ex:esParteDe ex:Distrito_11 ;
+    ex:perteneceAlLote ex:Lote_3 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        44.62,
+        44.66,
+        47.08,
+        60.32,
+        62.78 .
+
+ex:Residuo_PUNTOS_LIMPIOS_12 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "PUNTOS LIMPIOS"@es ;
+    ex:esParteDe ex:Distrito_12 ;
+    ex:perteneceAlLote ex:Lote_3 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        38.02,
+        41.02,
+        47.4,
+        47.82,
+        50.46 .
+
+ex:Residuo_PUNTOS_LIMPIOS_13 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "PUNTOS LIMPIOS"@es ;
+    ex:esParteDe ex:Distrito_13 ;
+    ex:perteneceAlLote ex:Lote_3 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        41.28,
+        42.02,
+        42.36,
+        42.84,
+        53.02 .
+
+ex:Residuo_PUNTOS_LIMPIOS_14 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "PUNTOS LIMPIOS"@es ;
+    ex:esParteDe ex:Distrito_14 ;
+    ex:perteneceAlLote ex:Lote_2 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        54.74,
+        55.68,
+        65.12,
+        70.12,
+        70.8 .
+
+ex:Residuo_PUNTOS_LIMPIOS_15 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "PUNTOS LIMPIOS"@es ;
+    ex:esParteDe ex:Distrito_15 ;
+    ex:perteneceAlLote ex:Lote_2 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        67.86,
+        73.2,
+        75.7,
+        77.18,
+        115.16 .
+
+ex:Residuo_PUNTOS_LIMPIOS_16 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "PUNTOS LIMPIOS"@es ;
+    ex:esParteDe ex:Distrito_16 ;
+    ex:perteneceAlLote ex:Lote_2 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        73.04,
+        73.92,
+        82.02,
+        86.36,
+        86.46 .
+
+ex:Residuo_PUNTOS_LIMPIOS_17 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "PUNTOS LIMPIOS"@es ;
+    ex:esParteDe ex:Distrito_17 ;
+    ex:perteneceAlLote ex:Lote_3 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        45.16,
+        55.32,
+        56.58,
+        58.36,
+        73.6 .
+
+ex:Residuo_PUNTOS_LIMPIOS_18 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "PUNTOS LIMPIOS"@es ;
+    ex:esParteDe ex:Distrito_18 ;
+    ex:perteneceAlLote ex:Lote_3 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        80.0,
+        86.64,
+        90.7,
+        94.92,
+        98.36 .
+
+ex:Residuo_PUNTOS_LIMPIOS_19 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "PUNTOS LIMPIOS"@es ;
+    ex:esParteDe ex:Distrito_19 ;
+    ex:perteneceAlLote ex:Lote_2 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        32.62,
+        34.14,
+        34.74,
+        40.36,
+        41.88 .
+
+ex:Residuo_PUNTOS_LIMPIOS_2 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "PUNTOS LIMPIOS"@es ;
+    ex:esParteDe ex:Distrito_2 ;
+    ex:perteneceAlLote ex:Lote_3 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        61.2,
+        66.3,
+        67.12,
+        72.06,
+        75.1 .
+
+ex:Residuo_PUNTOS_LIMPIOS_20 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "PUNTOS LIMPIOS"@es ;
+    ex:esParteDe ex:Distrito_20 ;
+    ex:perteneceAlLote ex:Lote_2 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        61.64,
+        68.5,
+        76.48,
+        76.68,
+        81.4 .
+
+ex:Residuo_PUNTOS_LIMPIOS_21 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "PUNTOS LIMPIOS"@es ;
+    ex:esParteDe ex:Distrito_21 ;
+    ex:perteneceAlLote ex:Lote_2 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        37.18,
+        39.94,
+        43.24,
+        48.82,
+        63.88 .
+
+ex:Residuo_PUNTOS_LIMPIOS_3 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "PUNTOS LIMPIOS"@es ;
+    ex:esParteDe ex:Distrito_3 ;
+    ex:perteneceAlLote ex:Lote_2 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        2.0,
+        2.2,
+        2.5,
+        3.24,
+        3.34 .
+
+ex:Residuo_PUNTOS_LIMPIOS_5 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "PUNTOS LIMPIOS"@es ;
+    ex:esParteDe ex:Distrito_5 ;
+    ex:perteneceAlLote ex:Lote_2 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        101.68,
+        108.68,
+        110.96,
+        114.8,
+        123.86 .
+
+ex:Residuo_PUNTOS_LIMPIOS_8 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "PUNTOS LIMPIOS"@es ;
+    ex:esParteDe ex:Distrito_8 ;
+    ex:perteneceAlLote ex:Lote_1 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        148.1,
+        149.46,
+        149.7,
+        154.74,
+        164.6 .
+
+ex:Residuo_PUNTOS_LIMPIOS_9 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "PUNTOS LIMPIOS"@es ;
+    ex:esParteDe ex:Distrito_9 ;
+    ex:perteneceAlLote ex:Lote_1 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        50.56,
+        51.78,
+        52.8,
+        54.94,
+        61.78 .
+
+ex:Residuo_RCD_1 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "RCD"@es ;
+    ex:esParteDe ex:Distrito_1 ;
+    ex:perteneceAlLote ex:Lote_1 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        132.47,
+        140.215,
+        155.33,
+        172.33,
+        176.72 .
+
+ex:Residuo_RCD_10 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "RCD"@es ;
+    ex:esParteDe ex:Distrito_10 ;
+    ex:perteneceAlLote ex:Lote_1 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        54.29,
+        55.725,
+        59.215,
+        61.935,
+        65.005 .
+
+ex:Residuo_RCD_11 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "RCD"@es ;
+    ex:esParteDe ex:Distrito_11 ;
+    ex:perteneceAlLote ex:Lote_3 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        46.99,
+        61.42,
+        78.43,
+        79.88,
+        93.77 .
+
+ex:Residuo_RCD_12 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "RCD"@es ;
+    ex:esParteDe ex:Distrito_12 ;
+    ex:perteneceAlLote ex:Lote_3 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        47.27,
+        68.34,
+        71.42,
+        75.42,
+        77.19 .
+
+ex:Residuo_RCD_13 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "RCD"@es ;
+    ex:esParteDe ex:Distrito_13 ;
+    ex:perteneceAlLote ex:Lote_3 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        40.23,
+        42.76,
+        43.67,
+        49.93,
+        64.57 .
+
+ex:Residuo_RCD_14 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "RCD"@es ;
+    ex:esParteDe ex:Distrito_14 ;
+    ex:perteneceAlLote ex:Lote_2 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        64.62,
+        68.52,
+        74.55,
+        80.24,
+        113.59 .
+
+ex:Residuo_RCD_15 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "RCD"@es ;
+    ex:esParteDe ex:Distrito_15 ;
+    ex:perteneceAlLote ex:Lote_2 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        96.32,
+        96.44,
+        114.04,
+        122.63,
+        132.07 .
+
+ex:Residuo_RCD_16 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "RCD"@es ;
+    ex:esParteDe ex:Distrito_16 ;
+    ex:perteneceAlLote ex:Lote_2 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        68.28,
+        89.44,
+        96.56,
+        110.41,
+        121.82 .
+
+ex:Residuo_RCD_17 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "RCD"@es ;
+    ex:esParteDe ex:Distrito_17 ;
+    ex:perteneceAlLote ex:Lote_3 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        66.21,
+        90.9,
+        93.36,
+        94.21,
+        124.66 .
+
+ex:Residuo_RCD_18 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "RCD"@es ;
+    ex:esParteDe ex:Distrito_18 ;
+    ex:perteneceAlLote ex:Lote_3 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        64.44,
+        71.98,
+        81.78,
+        81.85,
+        104.51 .
+
+ex:Residuo_RCD_19 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "RCD"@es ;
+    ex:esParteDe ex:Distrito_19 ;
+    ex:perteneceAlLote ex:Lote_2 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        67.96,
+        68.52,
+        72.8,
+        85.23,
+        135.6 .
+
+ex:Residuo_RCD_2 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "RCD"@es ;
+    ex:esParteDe ex:Distrito_2 ;
+    ex:perteneceAlLote ex:Lote_3 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        37.7,
+        37.85,
+        42.03,
+        46.23,
+        48.01 .
+
+ex:Residuo_RCD_20 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "RCD"@es ;
+    ex:esParteDe ex:Distrito_20 ;
+    ex:perteneceAlLote ex:Lote_2 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        73.78,
+        76.44,
+        77.4,
+        78.04,
+        115.41 .
+
+ex:Residuo_RCD_21 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "RCD"@es ;
+    ex:esParteDe ex:Distrito_21 ;
+    ex:perteneceAlLote ex:Lote_2 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        41.73,
+        48.26,
+        66.73,
+        69.2,
+        120.68 .
+
+ex:Residuo_RCD_3 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "RCD"@es ;
+    ex:esParteDe ex:Distrito_3 ;
+    ex:perteneceAlLote ex:Lote_2 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        24.48,
+        35.5,
+        39.07,
+        54.06,
+        62.84 .
+
+ex:Residuo_RCD_4 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "RCD"@es ;
+    ex:esParteDe ex:Distrito_4 ;
+    ex:perteneceAlLote ex:Lote_2 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        45.48,
+        45.69,
+        65.46,
+        79.99,
+        81.02 .
+
+ex:Residuo_RCD_5 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "RCD"@es ;
+    ex:esParteDe ex:Distrito_5 ;
+    ex:perteneceAlLote ex:Lote_2 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        125.32,
+        130.96,
+        132.01,
+        151.48,
+        202.95 .
+
+ex:Residuo_RCD_6 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "RCD"@es ;
+    ex:esParteDe ex:Distrito_6 ;
+    ex:perteneceAlLote ex:Lote_1 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        21.6,
+        27.935,
+        37.89,
+        48.915,
+        61.08 .
+
+ex:Residuo_RCD_7 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "RCD"@es ;
+    ex:esParteDe ex:Distrito_7 ;
+    ex:perteneceAlLote ex:Lote_1 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        50.76,
+        54.99,
+        61.9,
+        61.95,
+        75.23 .
+
+ex:Residuo_RCD_8 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "RCD"@es ;
+    ex:esParteDe ex:Distrito_8 ;
+    ex:perteneceAlLote ex:Lote_1 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        114.235,
+        117.645,
+        123.78,
+        135.675,
+        140.965 .
+
+ex:Residuo_RCD_9 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "RCD"@es ;
+    ex:esParteDe ex:Distrito_9 ;
+    ex:perteneceAlLote ex:Lote_1 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        70.385,
+        76.79,
+        82.23,
+        84.35,
+        85.265 .
+
+ex:Residuo_RESTO_1 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "RESTO"@es ;
+    ex:esParteDe ex:Distrito_1 ;
+    ex:perteneceAlLote ex:Lote_1 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        3170.48,
+        3249.86,
+        3269.58,
+        3284.46,
+        3337.24 .
+
+ex:Residuo_RESTO_10 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "RESTO"@es ;
+    ex:esParteDe ex:Distrito_10 ;
+    ex:perteneceAlLote ex:Lote_1 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        2836.0,
+        2843.4,
+        2892.76,
+        2941.76,
+        3101.58 .
+
+ex:Residuo_RESTO_11 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "RESTO"@es ;
+    ex:esParteDe ex:Distrito_11 ;
+    ex:perteneceAlLote ex:Lote_3 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        3501.88,
+        3570.74,
+        3590.38,
+        3719.288,
+        3816.8 .
+
+ex:Residuo_RESTO_12 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "RESTO"@es ;
+    ex:esParteDe ex:Distrito_12 ;
+    ex:perteneceAlLote ex:Lote_3 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        1409.84,
+        1442.8,
+        1446.74,
+        1484.58,
+        1493.2 .
+
+ex:Residuo_RESTO_13 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "RESTO"@es ;
+    ex:esParteDe ex:Distrito_13 ;
+    ex:perteneceAlLote ex:Lote_3 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        3061.02,
+        3090.84,
+        3133.16,
+        3178.38,
+        3448.98 .
+
+ex:Residuo_RESTO_14 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "RESTO"@es ;
+    ex:esParteDe ex:Distrito_14 ;
+    ex:perteneceAlLote ex:Lote_2 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        976.2,
+        1006.44,
+        1007.6,
+        1015.38,
+        1171.9 .
+
+ex:Residuo_RESTO_15 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "RESTO"@es ;
+    ex:esParteDe ex:Distrito_15 ;
+    ex:perteneceAlLote ex:Lote_2 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        2509.1,
+        2552.6,
+        2597.12,
+        2643.72,
+        2809.24 .
+
+ex:Residuo_RESTO_16 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "RESTO"@es ;
+    ex:esParteDe ex:Distrito_16 ;
+    ex:perteneceAlLote ex:Lote_2 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        2157.86,
+        2229.94,
+        2245.32,
+        2334.56,
+        2394.26 .
+
+ex:Residuo_RESTO_17 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "RESTO"@es ;
+    ex:esParteDe ex:Distrito_17 ;
+    ex:perteneceAlLote ex:Lote_3 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        2256.56,
+        2420.72,
+        2448.98,
+        2509.54,
+        2542.46 .
+
+ex:Residuo_RESTO_18 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "RESTO"@es ;
+    ex:esParteDe ex:Distrito_18 ;
+    ex:perteneceAlLote ex:Lote_3 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        2205.5,
+        2307.32,
+        2325.2,
+        2395.58,
+        2474.88 .
+
+ex:Residuo_RESTO_19 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "RESTO"@es ;
+    ex:esParteDe ex:Distrito_19 ;
+    ex:perteneceAlLote ex:Lote_2 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        1499.44,
+        1573.94,
+        1584.66,
+        1584.86,
+        1603.52 .
+
+ex:Residuo_RESTO_2 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "RESTO"@es ;
+    ex:esParteDe ex:Distrito_2 ;
+    ex:perteneceAlLote ex:Lote_3 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        1522.58,
+        1537.94,
+        1542.4,
+        1577.3,
+        1588.73 .
+
+ex:Residuo_RESTO_20 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "RESTO"@es ;
+    ex:esParteDe ex:Distrito_20 ;
+    ex:perteneceAlLote ex:Lote_2 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        2062.74,
+        2109.9,
+        2116.74,
+        2182.68,
+        2228.54 .
+
+ex:Residuo_RESTO_21 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "RESTO"@es ;
+    ex:esParteDe ex:Distrito_21 ;
+    ex:perteneceAlLote ex:Lote_2 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        771.94,
+        779.64,
+        781.2,
+        797.22,
+        850.42 .
+
+ex:Residuo_RESTO_3 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "RESTO"@es ;
+    ex:esParteDe ex:Distrito_3 ;
+    ex:perteneceAlLote ex:Lote_2 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        1168.44,
+        1185.32,
+        1198.08,
+        1248.1,
+        1253.62 .
+
+ex:Residuo_RESTO_4 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "RESTO"@es ;
+    ex:esParteDe ex:Distrito_4 ;
+    ex:perteneceAlLote ex:Lote_2 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        1585.36,
+        1585.98,
+        1636.68,
+        1669.44,
+        1676.56 .
+
+ex:Residuo_RESTO_5 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "RESTO"@es ;
+    ex:esParteDe ex:Distrito_5 ;
+    ex:perteneceAlLote ex:Lote_2 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        1613.74,
+        1665.54,
+        1681.66,
+        1694.5,
+        1763.08 .
+
+ex:Residuo_RESTO_6 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "RESTO"@es ;
+    ex:esParteDe ex:Distrito_6 ;
+    ex:perteneceAlLote ex:Lote_1 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        2143.86,
+        2165.68,
+        2195.64,
+        2234.12,
+        2254.18 .
+
+ex:Residuo_RESTO_7 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "RESTO"@es ;
+    ex:esParteDe ex:Distrito_7 ;
+    ex:perteneceAlLote ex:Lote_1 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        1643.66,
+        1689.14,
+        1695.92,
+        1701.62,
+        1718.48 .
+
+ex:Residuo_RESTO_8 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "RESTO"@es ;
+    ex:esParteDe ex:Distrito_8 ;
+    ex:perteneceAlLote ex:Lote_1 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        2884.76,
+        2909.02,
+        2932.8,
+        3127.36,
+        3206.3 .
+
+ex:Residuo_RESTO_9 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "RESTO"@es ;
+    ex:esParteDe ex:Distrito_9 ;
+    ex:perteneceAlLote ex:Lote_1 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        1977.3,
+        2062.7,
+        2065.52,
+        2087.24,
+        2097.96 .
+
+ex:Residuo_RESTO_99 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "RESTO"@es ;
+    ex:esParteDe ex:Distrito_99 ;
+    ex:perteneceAlLote ex:Lote_3 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_March a ex:Residuo ;
+    ex:totalResiduos "6.044"^^xsd:decimal ;
+    ex:mes "March" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_April a ex:Residuo ;
+    ex:totalResiduos "."^^xsd:decimal ;
+    ex:mes "April" .
+
+    rdf:type ex:GeneralType ;
+
+ex:Residuo_ROPA_1 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "ROPA"@es ;
+    ex:esParteDe ex:Distrito_1 ;
+    ex:perteneceAlLote ex:Lote_1 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        13.135,
+        17.27,
+        17.385,
+        18.825,
+        19.75 .
+
+ex:Residuo_ROPA_10 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "ROPA"@es ;
+    ex:esParteDe ex:Distrito_10 ;
+    ex:perteneceAlLote ex:Lote_1 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        24.375,
+        27.14,
+        27.885,
+        27.901,
+        29.755 .
+
+ex:Residuo_ROPA_11 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "ROPA"@es ;
+    ex:esParteDe ex:Distrito_11 ;
+    ex:perteneceAlLote ex:Lote_3 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        4.465,
+        7.845,
+        8.865,
+        10.176,
+        12.025 .
+
+ex:Residuo_ROPA_12 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "ROPA"@es ;
+    ex:esParteDe ex:Distrito_12 ;
+    ex:perteneceAlLote ex:Lote_3 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        9.66,
+        10.315,
+        12.44,
+        13.851,
+        16.39 .
+
+ex:Residuo_ROPA_13 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "ROPA"@es ;
+    ex:esParteDe ex:Distrito_13 ;
+    ex:perteneceAlLote ex:Lote_3 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        7.615,
+        8.843,
+        9.425,
+        10.105,
+        10.41 .
+
+ex:Residuo_ROPA_14 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "ROPA"@es ;
+    ex:esParteDe ex:Distrito_14 ;
+    ex:perteneceAlLote ex:Lote_2 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        5.2,
+        5.37,
+        6.23,
+        8.18,
+        8.38 .
+
+ex:Residuo_ROPA_15 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "ROPA"@es ;
+    ex:esParteDe ex:Distrito_15 ;
+    ex:perteneceAlLote ex:Lote_2 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        7.23,
+        9.53,
+        12.15,
+        13.1,
+        13.57 .
+
+ex:Residuo_ROPA_16 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "ROPA"@es ;
+    ex:esParteDe ex:Distrito_16 ;
+    ex:perteneceAlLote ex:Lote_2 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        7.5,
+        8.54,
+        9.11,
+        10.56,
+        12.16 .
+
+ex:Residuo_ROPA_17 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "ROPA"@es ;
+    ex:esParteDe ex:Distrito_17 ;
+    ex:perteneceAlLote ex:Lote_3 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        6.805,
+        7.605,
+        8.535,
+        9.085,
+        9.653 .
+
+ex:Residuo_ROPA_18 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "ROPA"@es ;
+    ex:esParteDe ex:Distrito_18 ;
+    ex:perteneceAlLote ex:Lote_3 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        8.785,
+        11.88,
+        12.325,
+        12.531,
+        15.64 .
+
+ex:Residuo_ROPA_19 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "ROPA"@es ;
+    ex:esParteDe ex:Distrito_19 ;
+    ex:perteneceAlLote ex:Lote_2 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        5.58,
+        5.73,
+        8.11,
+        8.31,
+        9.62 .
+
+ex:Residuo_ROPA_2 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "ROPA"@es ;
+    ex:esParteDe ex:Distrito_2 ;
+    ex:perteneceAlLote ex:Lote_3 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        11.166,
+        12.14,
+        13.305,
+        14.58,
+        20.41 .
+
+ex:Residuo_ROPA_20 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "ROPA"@es ;
+    ex:esParteDe ex:Distrito_20 ;
+    ex:perteneceAlLote ex:Lote_2 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        8.59,
+        9.0,
+        11.22,
+        11.37,
+        13.13 .
+
+ex:Residuo_ROPA_21 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "ROPA"@es ;
+    ex:esParteDe ex:Distrito_21 ;
+    ex:perteneceAlLote ex:Lote_2 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        5.27,
+        5.79,
+        6.14,
+        8.39,
+        8.44 .
+
+ex:Residuo_ROPA_3 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "ROPA"@es ;
+    ex:esParteDe ex:Distrito_3 ;
+    ex:perteneceAlLote ex:Lote_2 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        4.3,
+        6.22,
+        6.82,
+        8.23,
+        12.75 .
+
+ex:Residuo_ROPA_4 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "ROPA"@es ;
+    ex:esParteDe ex:Distrito_4 ;
+    ex:perteneceAlLote ex:Lote_2 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        9.0,
+        10.01,
+        12.61,
+        13.04,
+        16.69 .
+
+ex:Residuo_ROPA_5 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "ROPA"@es ;
+    ex:esParteDe ex:Distrito_5 ;
+    ex:perteneceAlLote ex:Lote_2 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        15.98,
+        16.6,
+        17.71,
+        17.9,
+        18.65 .
+
+ex:Residuo_ROPA_6 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "ROPA"@es ;
+    ex:esParteDe ex:Distrito_6 ;
+    ex:perteneceAlLote ex:Lote_1 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        10.225,
+        11.08,
+        11.395,
+        14.348,
+        14.36 .
+
+ex:Residuo_ROPA_7 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "ROPA"@es ;
+    ex:esParteDe ex:Distrito_7 ;
+    ex:perteneceAlLote ex:Lote_1 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        15.84,
+        19.695,
+        20.145,
+        21.661,
+        23.15 .
+
+ex:Residuo_ROPA_8 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "ROPA"@es ;
+    ex:esParteDe ex:Distrito_8 ;
+    ex:perteneceAlLote ex:Lote_1 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        13.97,
+        15.88,
+        17.9,
+        18.286,
+        19.965 .
+
+ex:Residuo_ROPA_9 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "ROPA"@es ;
+    ex:esParteDe ex:Distrito_9 ;
+    ex:perteneceAlLote ex:Lote_1 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        10.875,
+        11.205,
+        11.946,
+        13.1,
+        13.9 .
+
+ex:Residuo_VIDRIO_1 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "VIDRIO"@es ;
+    ex:esParteDe ex:Distrito_1 ;
+    ex:perteneceAlLote ex:Lote_1 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        619.24,
+        624.14,
+        659.36,
+        683.42,
+        691.22 .
+
+ex:Residuo_VIDRIO_10 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "VIDRIO"@es ;
+    ex:esParteDe ex:Distrito_10 ;
+    ex:perteneceAlLote ex:Lote_1 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        224.68,
+        226.82,
+        232.76,
+        256.34,
+        281.54 .
+
+ex:Residuo_VIDRIO_11 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "VIDRIO"@es ;
+    ex:esParteDe ex:Distrito_11 ;
+    ex:perteneceAlLote ex:Lote_3 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        184.32,
+        189.3,
+        211.52,
+        253.02,
+        269.18 .
+
+ex:Residuo_VIDRIO_12 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "VIDRIO"@es ;
+    ex:esParteDe ex:Distrito_12 ;
+    ex:perteneceAlLote ex:Lote_3 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        157.74,
+        184.06,
+        186.34,
+        206.6,
+        241.12 .
+
+ex:Residuo_VIDRIO_13 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "VIDRIO"@es ;
+    ex:esParteDe ex:Distrito_13 ;
+    ex:perteneceAlLote ex:Lote_3 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        164.52,
+        174.96,
+        185.26,
+        185.5,
+        228.62 .
+
+ex:Residuo_VIDRIO_14 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "VIDRIO"@es ;
+    ex:esParteDe ex:Distrito_14 ;
+    ex:perteneceAlLote ex:Lote_2 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        212.0,
+        223.64,
+        235.68,
+        254.92,
+        285.56 .
+
+ex:Residuo_VIDRIO_15 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "VIDRIO"@es ;
+    ex:esParteDe ex:Distrito_15 ;
+    ex:perteneceAlLote ex:Lote_2 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        149.06,
+        159.88,
+        165.12,
+        174.48,
+        194.5 .
+
+ex:Residuo_VIDRIO_16 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "VIDRIO"@es ;
+    ex:esParteDe ex:Distrito_16 ;
+    ex:perteneceAlLote ex:Lote_2 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        150.86,
+        156.64,
+        158.66,
+        160.78,
+        165.22 .
+
+ex:Residuo_VIDRIO_17 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "VIDRIO"@es ;
+    ex:esParteDe ex:Distrito_17 ;
+    ex:perteneceAlLote ex:Lote_3 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        179.1,
+        185.9,
+        186.18,
+        195.54,
+        210.22 .
+
+ex:Residuo_VIDRIO_18 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "VIDRIO"@es ;
+    ex:esParteDe ex:Distrito_18 ;
+    ex:perteneceAlLote ex:Lote_3 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        89.56,
+        98.92,
+        125.06,
+        172.76,
+        190.56 .
+
+ex:Residuo_VIDRIO_19 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "VIDRIO"@es ;
+    ex:esParteDe ex:Distrito_19 ;
+    ex:perteneceAlLote ex:Lote_2 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        121.18,
+        129.68,
+        151.06,
+        158.84,
+        164.02 .
+
+ex:Residuo_VIDRIO_2 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "VIDRIO"@es ;
+    ex:esParteDe ex:Distrito_2 ;
+    ex:perteneceAlLote ex:Lote_3 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        215.8,
+        238.86,
+        273.0,
+        285.0,
+        294.28 .
+
+ex:Residuo_VIDRIO_20 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "VIDRIO"@es ;
+    ex:esParteDe ex:Distrito_20 ;
+    ex:perteneceAlLote ex:Lote_2 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        189.22,
+        193.24,
+        203.46,
+        304.54,
+        356.12 .
+
+ex:Residuo_VIDRIO_21 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "VIDRIO"@es ;
+    ex:esParteDe ex:Distrito_21 ;
+    ex:perteneceAlLote ex:Lote_2 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        117.92,
+        118.9,
+        128.7,
+        129.18,
+        132.4 .
+
+ex:Residuo_VIDRIO_3 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "VIDRIO"@es ;
+    ex:esParteDe ex:Distrito_3 ;
+    ex:perteneceAlLote ex:Lote_2 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        142.9,
+        328.1,
+        400.38,
+        437.56,
+        445.22 .
+
+ex:Residuo_VIDRIO_4 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "VIDRIO"@es ;
+    ex:esParteDe ex:Distrito_4 ;
+    ex:perteneceAlLote ex:Lote_2 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        345.0,
+        356.24,
+        407.2,
+        424.08,
+        434.86 .
+
+ex:Residuo_VIDRIO_5 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "VIDRIO"@es ;
+    ex:esParteDe ex:Distrito_5 ;
+    ex:perteneceAlLote ex:Lote_2 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        186.66,
+        216.02,
+        222.92,
+        231.44,
+        233.0 .
+
+ex:Residuo_VIDRIO_6 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "VIDRIO"@es ;
+    ex:esParteDe ex:Distrito_6 ;
+    ex:perteneceAlLote ex:Lote_1 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        255.94,
+        274.52,
+        284.64,
+        306.04,
+        343.08 .
+
+ex:Residuo_VIDRIO_7 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "VIDRIO"@es ;
+    ex:esParteDe ex:Distrito_7 ;
+    ex:perteneceAlLote ex:Lote_1 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        337.42,
+        350.4,
+        355.3,
+        360.12,
+        434.96 .
+
+ex:Residuo_VIDRIO_8 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "VIDRIO"@es ;
+    ex:esParteDe ex:Distrito_8 ;
+    ex:perteneceAlLote ex:Lote_1 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        206.82,
+        218.82,
+        235.88,
+        254.8,
+        326.54 .
+
+ex:Residuo_VIDRIO_9 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "VIDRIO"@es ;
+    ex:esParteDe ex:Distrito_9 ;
+    ex:perteneceAlLote ex:Lote_1 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        242.68,
+        300.08,
+        323.08,
+        336.96,
+        354.42 .
+
+ex:Residuo_VIDRIO_COMERCIAL_1 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "VIDRIO COMERCIAL"@es ;
+    ex:esParteDe ex:Distrito_1 ;
+    ex:perteneceAlLote ex:Lote_1 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        114.92,
+        123.8,
+        127.14,
+        132.0,
+        134.56 .
+
+ex:Residuo_VIDRIO_COMERCIAL_4 a ex:Residuo ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "VIDRIO COMERCIAL"@es ;
+    ex:esParteDe ex:Distrito_4 ;
+    ex:perteneceAlLote ex:Lote_2 ;
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+                    ""^^xsd:decimal .
+        140.2,
+        140.48,
+        142.26,
+        151.36,
+        154.96 .
+
+ex:ResiduosOntologia a owl:Ontology ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "Ontología de Residuos 2024"@es .
+
+ex:esParteDe a owl:ObjectProperty ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "es parte de"@es ;
+    rdfs:range ex:Distrito .
+
+ex:perteneceAlLote a owl:ObjectProperty ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "pertenece al lote"@es ;
+    rdfs:range ex:Lote .
+
+ex:Residuo_January a ex:Residuo ;
+    ex:totalResiduos "ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "January" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_February a ex:Residuo ;
+    ex:totalResiduos ""ex:totalResiduos"^^xsd:decimal ;
+    ex:mes "February" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_March a ex:Residuo ;
+    ex:totalResiduos "a"^^xsd:decimal ;
+    ex:mes "March" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_April a ex:Residuo ;
+    ex:totalResiduos "owl:DatatypeProperty"^^xsd:decimal ;
+    ex:mes "April" .
+
+    rdf:type ex:GeneralType ;
+ex:Residuo_May a ex:Residuo ;
+    ex:totalResiduos "."^^xsd:decimal ;
+    ex:mes "May" .
+
+    rdf:type ex:GeneralType ;
+    rdfs:label "Total de residuos"@es ;
+    rdfs:range xsd:decimal .
+
+ex:Distrito_99 a ex:Distrito ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "SIN DISTRITO"@es .
+
+ex:Lote a owl:Class .
+
+ex:Distrito_7 a ex:Distrito ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "CHAMBERI"@es .
+
+ex:Distrito_11 a ex:Distrito ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "CARABANCHEL"@es .
+
+ex:Distrito_14 a ex:Distrito ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "MORATALAZ"@es .
+
+ex:Distrito_17 a ex:Distrito ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "VILLAVERDE"@es .
+
+ex:Distrito_18 a ex:Distrito ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "VILLA DE VALLECAS"@es .
+
+ex:Distrito_2 a ex:Distrito ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "ARGANZUELA"@es .
+
+ex:Distrito_21 a ex:Distrito ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "BARAJAS"@es .
+
+ex:Distrito_5 a ex:Distrito ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "CHAMARTIN"@es .
+
+ex:Distrito_6 a ex:Distrito ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "TETUAN"@es .
+
+ex:Distrito_1 a ex:Distrito ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "CENTRO"@es .
+
+ex:Distrito_10 a ex:Distrito ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "LATINA"@es .
+
+ex:Distrito_12 a ex:Distrito ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "USERA"@es .
+
+ex:Distrito_13 a ex:Distrito ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "PUENTE DE VALLECAS"@es .
+
+ex:Distrito_15 a ex:Distrito ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "CIUDAD LINEAL"@es .
+
+ex:Distrito_16 a ex:Distrito ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "HORTALEZA"@es .
+
+ex:Distrito_19 a ex:Distrito ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "VICALVARO"@es .
+
+ex:Distrito_20 a ex:Distrito ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "SAN BLAS - CANILLEJAS"@es .
+
+ex:Distrito_3 a ex:Distrito ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "RETIRO"@es .
+
+ex:Distrito_4 a ex:Distrito ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "SALAMANCA"@es .
+
+ex:Distrito_8 a ex:Distrito ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "FUENCARRAL - EL PARDO"@es .
+
+ex:Distrito_9 a ex:Distrito ;
+    rdf:type ex:GeneralType ;
+    rdfs:label "MONCLOA - ARAVACA"@es .
+
+ex:Distrito a owl:Class .
+
+ex:Lote_1 a ex:Lote .
+
+ex:Lote_3 a ex:Lote .
+
+ex:Lote_2 a ex:Lote .
+
+ex:Residuo a owl:Class .
+

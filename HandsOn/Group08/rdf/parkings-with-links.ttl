@@ -1,0 +1,746 @@
+@prefix ns1: <http://example.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.com/parking/10489514> ns1:district "San Blas-Canillejas" ;
+    ns1:name "Aparcamiento disuasorio Estadio Metropolitano Sur ES-02b" ;
+    ns1:neighbourhood "Rosas" ;
+    ns1:schedule "6:00-22:00" ;
+    ns1:street_name "Avenida de Arcentales, Madrid" ;
+    ns1:street_number 37 ;
+    ns1:total_slots 3072 ;
+    ns1:vehicle_type "CAR MOTORCYCLE BICYCLE" ;
+    owl:sameAs <https://wikidata.org/entity/Q18880469>,
+        <https://wikidata.org/entity/Q2001937>,
+        <https://wikidata.org/entity/Q56155322> .
+
+<http://example.com/parking/10737574> ns1:district "Usera" ;
+    ns1:name "Aparcamiento público. Usera" ;
+    ns1:neighbourhood "Moscardó" ;
+    ns1:schedule "24 hour" ;
+    ns1:street_name "CALLE AMPARO USERA" ;
+    ns1:street_number 46 ;
+    ns1:total_slots 36 ;
+    ns1:vehicle_type "CAR" ;
+    owl:sameAs <https://wikidata.org/entity/Q11937679>,
+        <https://wikidata.org/entity/Q953368> .
+
+<http://example.com/parking/11413444> ns1:district "Hortaleza" ;
+    ns1:name "Aparcamiento disuasorio Fuente de la Mora" ;
+    ns1:neighbourhood "Valdefuentes" ;
+    ns1:schedule "24 hour" ;
+    ns1:street_name "Manoteras" ;
+    ns1:street_number 1 ;
+    ns1:total_slots 402 ;
+    ns1:vehicle_type "CAR MOTORCYCLE" ;
+    owl:sameAs <https://wikidata.org/entity/Q10388714>,
+        <https://wikidata.org/entity/Q1928529>,
+        <https://wikidata.org/entity/Q3844841> .
+
+<http://example.com/parking/11413620> ns1:district "Fuencarral-El Pardo" ;
+    ns1:name "Aparcamiento disuasorio Pitis" ;
+    ns1:neighbourhood "Fuentelarreina" ;
+    ns1:schedule "24 hour" ;
+    ns1:street_name "Gloria Fuertes" ;
+    ns1:street_number 5 ;
+    ns1:total_slots 436 ;
+    ns1:vehicle_type "CAR MOTORCYCLE" ;
+    owl:sameAs <https://wikidata.org/entity/Q10286156>,
+        <https://wikidata.org/entity/Q110747394>,
+        <https://wikidata.org/entity/Q656196> .
+
+<http://example.com/parking/11483771> ns1:district "Latina" ;
+    ns1:name "Aparcamiento disuasorio Aviación Española" ;
+    ns1:neighbourhood "Las Águilas" ;
+    ns1:schedule "24 hour" ;
+    ns1:street_name "CALLE FUENTE DE LIMA" ;
+    ns1:street_number 5 ;
+    ns1:total_slots 379 ;
+    ns1:vehicle_type "CAR MOTORCYCLE BICYCLE" ;
+    owl:sameAs <https://wikidata.org/entity/Q5971372>,
+        <https://wikidata.org/entity/Q794954> .
+
+<http://example.com/parking/11544439> ns1:district "Centro" ;
+    ns1:name "Aparcamiento mixto. Plaza de Santo Domingo" ;
+    ns1:neighbourhood "Palacio" ;
+    ns1:schedule "24 hour" ;
+    ns1:street_name "Plaza de Santo Domingo" ;
+    ns1:street_number 0 ;
+    ns1:total_slots 336 ;
+    ns1:vehicle_type "CAR MOTORCYCLE" ;
+    owl:sameAs <https://wikidata.org/entity/Q1763376>,
+        <https://wikidata.org/entity/Q2136510>,
+        <https://wikidata.org/entity/Q6080106> .
+
+<http://example.com/parking/11544464> ns1:district "Carabanchel" ;
+    ns1:name "Aparcamiento disuasorio Islazul" ;
+    ns1:neighbourhood "Buenavista" ;
+    ns1:schedule "24 hour" ;
+    ns1:street_name "CALLE CALDERILLA" ;
+    ns1:street_number 1 ;
+    ns1:total_slots 224 ;
+    ns1:vehicle_type "CAR" ;
+    owl:sameAs <https://wikidata.org/entity/Q1001991>,
+        <https://wikidata.org/entity/Q953929> .
+
+<http://example.com/parking/11544480> ns1:district "Salamanca" ;
+    ns1:name "Aparcamiento mixto. Alcántara" ;
+    ns1:neighbourhood "Goya" ;
+    ns1:schedule "24 hour" ;
+    ns1:street_name "Calle de Alcántara, Madrid" ;
+    ns1:street_number 26 ;
+    ns1:total_slots 121 ;
+    ns1:vehicle_type "CAR" ;
+    owl:sameAs <https://wikidata.org/entity/Q1773521>,
+        <https://wikidata.org/entity/Q28070781>,
+        <https://wikidata.org/entity/Q3814578> .
+
+<http://example.com/parking/11750494> ns1:district "Arganzuela" ;
+    ns1:name "Aparcamiento público. San Epifanio" ;
+    ns1:neighbourhood "Imperial" ;
+    ns1:schedule "24 hour" ;
+    ns1:street_name "calle de San Epifanio" ;
+    ns1:street_number 9 ;
+    ns1:total_slots 501 ;
+    ns1:vehicle_type "CAR" ;
+    owl:sameAs <https://wikidata.org/entity/Q118847930>,
+        <https://wikidata.org/entity/Q2000929>,
+        <https://wikidata.org/entity/Q3773740> .
+
+<http://example.com/parking/13449> ns1:district "Centro" ;
+    ns1:name "Aparcamiento público. Luna - Tudescos" ;
+    ns1:neighbourhood "Universidad" ;
+    ns1:schedule "24 hour" ;
+    ns1:street_name "Plaza de Santa María de Soledad Torres Acosta" ;
+    ns1:street_number 2 ;
+    ns1:total_slots 481 ;
+    ns1:vehicle_type "CAR" ;
+    owl:sameAs <https://wikidata.org/entity/Q10387767>,
+        <https://wikidata.org/entity/Q1763376>,
+        <https://wikidata.org/entity/Q6080095> .
+
+<http://example.com/parking/13450> ns1:district "Chamberí" ;
+    ns1:name "Aparcamiento público. Olavide" ;
+    ns1:neighbourhood "Trafalgar" ;
+    ns1:schedule "24 hour" ;
+    ns1:street_name "Plaza de Olavide" ;
+    ns1:street_number 17 ;
+    ns1:total_slots 397 ;
+    ns1:vehicle_type "CAR" ;
+    owl:sameAs <https://wikidata.org/entity/Q10384027>,
+        <https://wikidata.org/entity/Q1763370>,
+        <https://wikidata.org/entity/Q27947826> .
+
+<http://example.com/parking/13451> ns1:district "Centro" ;
+    ns1:name "Aparcamiento público. Mostenses" ;
+    ns1:neighbourhood "Universidad" ;
+    ns1:schedule "24 hour" ;
+    ns1:street_name "CALLE GARCIA MOLINAS" ;
+    ns1:street_number 4 ;
+    ns1:total_slots 361 ;
+    ns1:vehicle_type "CAR" ;
+    owl:sameAs <https://wikidata.org/entity/Q10387767>,
+        <https://wikidata.org/entity/Q1763376> .
+
+<http://example.com/parking/13452> ns1:district "Chamberí" ;
+    ns1:name "Aparcamiento público. Almagro" ;
+    ns1:neighbourhood "Almagro" ;
+    ns1:schedule "24 hour" ;
+    ns1:street_name "Calle de Almagro, Madrid" ;
+    ns1:street_number 24 ;
+    ns1:total_slots 463 ;
+    ns1:vehicle_type "CAR" ;
+    owl:sameAs <https://wikidata.org/entity/Q10954432>,
+        <https://wikidata.org/entity/Q1763370>,
+        <https://wikidata.org/entity/Q26844339> .
+
+<http://example.com/parking/13453> ns1:district "Centro" ;
+    ns1:name "Aparcamiento público. Villa de París" ;
+    ns1:neighbourhood "Justicia" ;
+    ns1:schedule "24 hour" ;
+    ns1:street_name "plaza de la Villa de París" ;
+    ns1:street_number 1 ;
+    ns1:total_slots 171 ;
+    ns1:vehicle_type "CAR MOTORCYCLE" ;
+    owl:sameAs <https://wikidata.org/entity/Q1763376>,
+        <https://wikidata.org/entity/Q1992319>,
+        <https://wikidata.org/entity/Q6080233> .
+
+<http://example.com/parking/13454> ns1:district "Salamanca" ;
+    ns1:name "Aparcamiento público. Plaza de Colón" ;
+    ns1:neighbourhood "Recoletos" ;
+    ns1:schedule "24 hour" ;
+    ns1:street_name "Calle de Goya" ;
+    ns1:street_number 2 ;
+    ns1:total_slots 611 ;
+    ns1:vehicle_type "CAR" ;
+    owl:sameAs <https://wikidata.org/entity/Q1773521>,
+        <https://wikidata.org/entity/Q28015873>,
+        <https://wikidata.org/entity/Q3814551> .
+
+<http://example.com/parking/13456> ns1:district "Centro" ;
+    ns1:name "Aparcamiento público. Santa Ana" ;
+    ns1:neighbourhood "Cortes" ;
+    ns1:schedule "24 hour" ;
+    ns1:street_name "Plaza de Santa Ana" ;
+    ns1:street_number 0 ;
+    ns1:total_slots 325 ;
+    ns1:vehicle_type "CAR" ;
+    owl:sameAs <https://wikidata.org/entity/Q1763376>,
+        <https://wikidata.org/entity/Q2535637>,
+        <https://wikidata.org/entity/Q740210> .
+
+<http://example.com/parking/13457> ns1:district "Salamanca" ;
+    ns1:name "Aparcamiento mixto. Velázquez - Jorge Juan" ;
+    ns1:neighbourhood "Recoletos" ;
+    ns1:schedule "24 hour" ;
+    ns1:street_name "calle de Velázquez" ;
+    ns1:street_number 1 ;
+    ns1:total_slots 548 ;
+    ns1:vehicle_type "CAR" ;
+    owl:sameAs <https://wikidata.org/entity/Q1773521>,
+        <https://wikidata.org/entity/Q20031523>,
+        <https://wikidata.org/entity/Q3814551> .
+
+<http://example.com/parking/13458> ns1:district "Salamanca" ;
+    ns1:name "Aparcamiento mixto. Velázquez - Ayala" ;
+    ns1:neighbourhood "Recoletos" ;
+    ns1:schedule "24 hour" ;
+    ns1:street_name "calle de Velázquez" ;
+    ns1:street_number 47 ;
+    ns1:total_slots 443 ;
+    ns1:vehicle_type "CAR" ;
+    owl:sameAs <https://wikidata.org/entity/Q1773521>,
+        <https://wikidata.org/entity/Q20031523>,
+        <https://wikidata.org/entity/Q3814551> .
+
+<http://example.com/parking/13459> ns1:district "Centro" ;
+    ns1:name "Aparcamiento mixto. Jacinto Benavente" ;
+    ns1:neighbourhood "Cortes" ;
+    ns1:schedule "24 hour" ;
+    ns1:street_name "Plaza de Jacinto Benavente" ;
+    ns1:street_number 6 ;
+    ns1:total_slots 292 ;
+    ns1:vehicle_type "CAR MOTORCYCLE" ;
+    owl:sameAs <https://wikidata.org/entity/Q1763376>,
+        <https://wikidata.org/entity/Q2535637>,
+        <https://wikidata.org/entity/Q6080004> .
+
+<http://example.com/parking/13460> ns1:district "Centro" ;
+    ns1:name "Aparcamiento mixto. Sevilla" ;
+    ns1:neighbourhood "Sol" ;
+    ns1:schedule "24 hour" ;
+    ns1:street_name "Alcalá Street" ;
+    ns1:street_number 15 ;
+    ns1:total_slots 649 ;
+    ns1:vehicle_type "CAR" ;
+    owl:sameAs <https://wikidata.org/entity/Q1763376>,
+        <https://wikidata.org/entity/Q2424746>,
+        <https://wikidata.org/entity/Q2465181> .
+
+<http://example.com/parking/13462> ns1:district "Chamberí" ;
+    ns1:name "Aparcamiento mixto. Fuencarral" ;
+    ns1:neighbourhood "Trafalgar" ;
+    ns1:schedule "24 hour" ;
+    ns1:street_name "calle de Fuencarral" ;
+    ns1:street_number 121 ;
+    ns1:total_slots 410 ;
+    ns1:vehicle_type "CAR" ;
+    owl:sameAs <https://wikidata.org/entity/Q10384027>,
+        <https://wikidata.org/entity/Q1763370>,
+        <https://wikidata.org/entity/Q5740840> .
+
+<http://example.com/parking/13463> ns1:district "Centro" ;
+    ns1:name "Aparcamiento público. Plaza de España" ;
+    ns1:neighbourhood "Palacio" ;
+    ns1:schedule "24 hour" ;
+    ns1:street_name "plaza de España" ;
+    ns1:street_number 1 ;
+    ns1:total_slots 800 ;
+    ns1:vehicle_type "CAR" ;
+    owl:sameAs <https://wikidata.org/entity/Q1326261>,
+        <https://wikidata.org/entity/Q1763376>,
+        <https://wikidata.org/entity/Q2136510> .
+
+<http://example.com/parking/13464> ns1:district "Salamanca" ;
+    ns1:name "Aparcamiento mixto. Felipe II" ;
+    ns1:neighbourhood "Recoletos" ;
+    ns1:schedule "24 hour" ;
+    ns1:street_name "Calle de Goya" ;
+    ns1:street_number 88 ;
+    ns1:total_slots 1175 ;
+    ns1:vehicle_type "CAR" ;
+    owl:sameAs <https://wikidata.org/entity/Q1773521>,
+        <https://wikidata.org/entity/Q28015873>,
+        <https://wikidata.org/entity/Q3814551> .
+
+<http://example.com/parking/13465> ns1:district "Retiro" ;
+    ns1:name "Aparcamiento mixto. Montalbán" ;
+    ns1:neighbourhood "Jerónimos" ;
+    ns1:schedule "24 hour" ;
+    ns1:street_name "Calle de Montalbán, Madrid" ;
+    ns1:street_number 4 ;
+    ns1:total_slots 146 ;
+    ns1:vehicle_type "CAR" ;
+    owl:sameAs <https://wikidata.org/entity/Q10306766>,
+        <https://wikidata.org/entity/Q2002296>,
+        <https://wikidata.org/entity/Q29903983> .
+
+<http://example.com/parking/13466> ns1:district "Centro" ;
+    ns1:name "Aparcamiento mixto. Plaza Mayor" ;
+    ns1:neighbourhood "Sol" ;
+    ns1:schedule "24 hour" ;
+    ns1:street_name "Main Square" ;
+    ns1:street_number 1 ;
+    ns1:total_slots 694 ;
+    ns1:vehicle_type "CAR" ;
+    owl:sameAs <https://wikidata.org/entity/Q1123493>,
+        <https://wikidata.org/entity/Q1763376>,
+        <https://wikidata.org/entity/Q2465181> .
+
+<http://example.com/parking/13467> ns1:district "Centro" ;
+    ns1:name "Aparcamiento público. Las Cortes" ;
+    ns1:neighbourhood "Cortes" ;
+    ns1:schedule "24 hour" ;
+    ns1:street_name "plaza de las Cortes" ;
+    ns1:street_number 13 ;
+    ns1:total_slots 480 ;
+    ns1:vehicle_type "CAR" ;
+    owl:sameAs <https://wikidata.org/entity/Q1763376>,
+        <https://wikidata.org/entity/Q2535637>,
+        <https://wikidata.org/entity/Q5482884> .
+
+<http://example.com/parking/13468> ns1:district "Salamanca" ;
+    ns1:name "Aparcamiento público. Velázquez - Juan Bravo" ;
+    ns1:neighbourhood "Castellana" ;
+    ns1:schedule "24 hour" ;
+    ns1:street_name "calle de Velázquez" ;
+    ns1:street_number 88 ;
+    ns1:total_slots 371 ;
+    ns1:vehicle_type "CAR" ;
+    owl:sameAs <https://wikidata.org/entity/Q1773521>,
+        <https://wikidata.org/entity/Q20031523>,
+        <https://wikidata.org/entity/Q4781> .
+
+<http://example.com/parking/13469> ns1:district "Moncloa-Aravaca" ;
+    ns1:name "Aparcamiento público. Marqués de Urquijo" ;
+    ns1:neighbourhood "Argüelles" ;
+    ns1:schedule "24 hour" ;
+    ns1:street_name "calle del Marqués de Urquijo" ;
+    ns1:street_number 0 ;
+    ns1:total_slots 482 ;
+    ns1:vehicle_type "CAR" ;
+    owl:sameAs <https://wikidata.org/entity/Q17421317>,
+        <https://wikidata.org/entity/Q2017682>,
+        <https://wikidata.org/entity/Q64874> .
+
+<http://example.com/parking/13470> ns1:district "Centro" ;
+    ns1:name "Aparcamiento mixto. Arquitecto Ribera" ;
+    ns1:neighbourhood "Justicia" ;
+    ns1:schedule "24 hour" ;
+    ns1:street_name "calle de Barceló" ;
+    ns1:street_number 2 ;
+    ns1:total_slots 318 ;
+    ns1:vehicle_type "CAR" ;
+    owl:sameAs <https://wikidata.org/entity/Q1763376>,
+        <https://wikidata.org/entity/Q1992319>,
+        <https://wikidata.org/entity/Q27051120> .
+
+<http://example.com/parking/13472> ns1:district "Centro" ;
+    ns1:name "Aparcamiento público. Plaza del Carmen (cerrado)" ;
+    ns1:neighbourhood "Sol" ;
+    ns1:schedule "24 hour" ;
+    ns1:street_name "Plaza del Carmen" ;
+    ns1:street_number 10 ;
+    ns1:total_slots 450 ;
+    ns1:vehicle_type "CAR" ;
+    owl:sameAs <https://wikidata.org/entity/Q113986952>,
+        <https://wikidata.org/entity/Q1763376>,
+        <https://wikidata.org/entity/Q2465181> .
+
+<http://example.com/parking/13473> ns1:district "Centro" ;
+    ns1:name "Aparcamiento público. Descalzas" ;
+    ns1:neighbourhood "Sol" ;
+    ns1:schedule "24 hour" ;
+    ns1:street_name "PLAZA DESCALZAS" ;
+    ns1:street_number 3 ;
+    ns1:total_slots 400 ;
+    ns1:vehicle_type "CAR" ;
+    owl:sameAs <https://wikidata.org/entity/Q1763376>,
+        <https://wikidata.org/entity/Q2465181> .
+
+<http://example.com/parking/13474> ns1:district "Centro" ;
+    ns1:name "Aparcamiento público. Plaza del Rey" ;
+    ns1:neighbourhood "Justicia" ;
+    ns1:schedule "24 hour" ;
+    ns1:street_name "Plaza del Rey" ;
+    ns1:street_number 1 ;
+    ns1:total_slots 170 ;
+    ns1:vehicle_type "CAR" ;
+    owl:sameAs <https://wikidata.org/entity/Q16620311>,
+        <https://wikidata.org/entity/Q1763376>,
+        <https://wikidata.org/entity/Q1992319> .
+
+<http://example.com/parking/13475> ns1:district "Tetuán" ;
+    ns1:name "Aparcamiento mixto. Brasil" ;
+    ns1:neighbourhood "Cuatro Caminos" ;
+    ns1:schedule "24 hour" ;
+    ns1:street_name "Calle de San Germán, Madrid" ;
+    ns1:street_number 7 ;
+    ns1:total_slots 226 ;
+    ns1:vehicle_type "CAR" ;
+    owl:sameAs <https://wikidata.org/entity/Q1773540>,
+        <https://wikidata.org/entity/Q26750807>,
+        <https://wikidata.org/entity/Q5824684> .
+
+<http://example.com/parking/13476> ns1:district "Salamanca" ;
+    ns1:name "Aparcamiento mixto. Recoletos" ;
+    ns1:neighbourhood "Recoletos" ;
+    ns1:schedule "24 hour" ;
+    ns1:street_name "Paseo de Recoletos" ;
+    ns1:street_number 4 ;
+    ns1:total_slots 102 ;
+    ns1:vehicle_type "CAR" ;
+    owl:sameAs <https://wikidata.org/entity/Q1773521>,
+        <https://wikidata.org/entity/Q2550870>,
+        <https://wikidata.org/entity/Q3814551> .
+
+<http://example.com/parking/13477> ns1:district "Tetuán" ;
+    ns1:name "Aparcamiento mixto. Condesa de Gavia" ;
+    ns1:neighbourhood "Cuatro Caminos" ;
+    ns1:schedule "9:00-20:40" ;
+    ns1:street_name "PLAZA CONDESA DE GAVIA" ;
+    ns1:street_number 2 ;
+    ns1:total_slots 146 ;
+    ns1:vehicle_type "CAR" ;
+    owl:sameAs <https://wikidata.org/entity/Q1773540>,
+        <https://wikidata.org/entity/Q5824684> .
+
+<http://example.com/parking/13478> ns1:district "Centro" ;
+    ns1:name "Aparcamiento público. Glorieta Puerta de Toledo" ;
+    ns1:neighbourhood "Embajadores" ;
+    ns1:schedule "24 hour" ;
+    ns1:street_name "Puerta de Toledo" ;
+    ns1:street_number 0 ;
+    ns1:total_slots 240 ;
+    ns1:vehicle_type "CAR" ;
+    owl:sameAs <https://wikidata.org/entity/Q1763376>,
+        <https://wikidata.org/entity/Q2056515>,
+        <https://wikidata.org/entity/Q2449844> .
+
+<http://example.com/parking/13479> ns1:district "Tetuán" ;
+    ns1:name "Aparcamiento mixto. José Castán Tobeñas" ;
+    ns1:neighbourhood "Castillejos" ;
+    ns1:schedule "24 hour" ;
+    ns1:street_name "Calle del Poeta Joan Maragall, Madrid" ;
+    ns1:street_number 57 ;
+    ns1:total_slots 231 ;
+    ns1:vehicle_type "CAR" ;
+    owl:sameAs <https://wikidata.org/entity/Q11913212>,
+        <https://wikidata.org/entity/Q1773540>,
+        <https://wikidata.org/entity/Q26810980> .
+
+<http://example.com/parking/13515> ns1:district "Tetuán" ;
+    ns1:name "Aparcamiento mixto. San Germán II (antes General Yagüe)" ;
+    ns1:neighbourhood "Castillejos" ;
+    ns1:schedule "24 hour" ;
+    ns1:street_name "Calle de Orense, Madrid" ;
+    ns1:street_number 48 ;
+    ns1:total_slots 419 ;
+    ns1:vehicle_type "CAR" ;
+    owl:sameAs <https://wikidata.org/entity/Q11913212>,
+        <https://wikidata.org/entity/Q1773540>,
+        <https://wikidata.org/entity/Q26761687> .
+
+<http://example.com/parking/167692> ns1:district "Salamanca" ;
+    ns1:name "Aparcamiento mixto. San Cayetano" ;
+    ns1:neighbourhood "La Guindalera" ;
+    ns1:schedule "24 hour" ;
+    ns1:street_name "PLAZA SAN CAYETANO" ;
+    ns1:street_number 1 ;
+    ns1:total_slots 222 ;
+    ns1:vehicle_type "CAR" ;
+    owl:sameAs <https://wikidata.org/entity/Q1773521>,
+        <https://wikidata.org/entity/Q3814559> .
+
+<http://example.com/parking/182188> ns1:district "San Blas-Canillejas" ;
+    ns1:name "Aparcamiento mixto. Miguel Yuste" ;
+    ns1:neighbourhood "Simancas" ;
+    ns1:schedule "24 hour" ;
+    ns1:street_name "CALLE MIGUEL YUSTE" ;
+    ns1:street_number 64 ;
+    ns1:total_slots 168 ;
+    ns1:vehicle_type "CAR" ;
+    owl:sameAs <https://wikidata.org/entity/Q10371626>,
+        <https://wikidata.org/entity/Q2001937> .
+
+<http://example.com/parking/183607> ns1:district "Ciudad Lineal" ;
+    ns1:name "Aparcamiento mixto. Verdaguer y García" ;
+    ns1:neighbourhood "San Pascual" ;
+    ns1:schedule "24 hour" ;
+    ns1:street_name "CALLE VERDAGUER Y GARCIA" ;
+    ns1:street_number 2 ;
+    ns1:total_slots 83 ;
+    ns1:vehicle_type "CAR" ;
+    owl:sameAs <https://wikidata.org/entity/Q165612>,
+        <https://wikidata.org/entity/Q1763694> .
+
+<http://example.com/parking/183747> ns1:district "Centro" ;
+    ns1:name "Aparcamiento mixto. Casino de la Reina" ;
+    ns1:neighbourhood "Embajadores" ;
+    ns1:schedule "24 hour" ;
+    ns1:street_name "Calle del Casino, Madrid" ;
+    ns1:street_number 3 ;
+    ns1:total_slots 135 ;
+    ns1:vehicle_type "CAR" ;
+    owl:sameAs <https://wikidata.org/entity/Q1763376>,
+        <https://wikidata.org/entity/Q2449844>,
+        <https://wikidata.org/entity/Q26248358> .
+
+<http://example.com/parking/183748> ns1:district "Retiro" ;
+    ns1:name "Aparcamiento mixto. Daoíz y Velarde" ;
+    ns1:neighbourhood "Pacífico" ;
+    ns1:schedule "24 hour" ;
+    ns1:street_name "Avenida de la Ciudad de Barcelona" ;
+    ns1:street_number 156 ;
+    ns1:total_slots 235 ;
+    ns1:vehicle_type "CAR" ;
+    owl:sameAs <https://wikidata.org/entity/Q2002296>,
+        <https://wikidata.org/entity/Q3773753>,
+        <https://wikidata.org/entity/Q5714227> .
+
+<http://example.com/parking/19053> ns1:district "Centro" ;
+    ns1:name "Aparcamiento mixto. Sánchez Bustillo" ;
+    ns1:neighbourhood "Embajadores" ;
+    ns1:schedule "24 hour" ;
+    ns1:street_name "CALLE SANCHEZ BUSTILLO" ;
+    ns1:street_number 0 ;
+    ns1:total_slots 131 ;
+    ns1:vehicle_type "CAR" ;
+    owl:sameAs <https://wikidata.org/entity/Q1763376>,
+        <https://wikidata.org/entity/Q2449844> .
+
+<http://example.com/parking/24193> ns1:district "Chamartín" ;
+    ns1:name "Aparcamiento mixto. República Dominicana" ;
+    ns1:neighbourhood "Nueva España" ;
+    ns1:schedule "24 hour" ;
+    ns1:street_name "PLAZA REPUBLICA DOMINICANA" ;
+    ns1:street_number 6 ;
+    ns1:total_slots 209 ;
+    ns1:vehicle_type "CAR" ;
+    owl:sameAs <https://wikidata.org/entity/Q10338128>,
+        <https://wikidata.org/entity/Q1766348> .
+
+<http://example.com/parking/24809> ns1:district "Retiro" ;
+    ns1:name "Aparcamiento mixto. Fernández Shaw" ;
+    ns1:neighbourhood "Adelfas" ;
+    ns1:schedule "24 hour" ;
+    ns1:street_name "CALLE CARLOS Y GUILLERMO FERNANDEZ SHAW" ;
+    ns1:street_number 1 ;
+    ns1:total_slots 245 ;
+    ns1:vehicle_type "CAR" ;
+    owl:sameAs <https://wikidata.org/entity/Q2002296>,
+        <https://wikidata.org/entity/Q3774001> .
+
+<http://example.com/parking/33440> ns1:district "Centro" ;
+    ns1:name "Aparcamiento mixto. Plaza de Oriente" ;
+    ns1:neighbourhood "Palacio" ;
+    ns1:schedule "24 hour" ;
+    ns1:street_name "Oriente square" ;
+    ns1:street_number 9 ;
+    ns1:total_slots 242 ;
+    ns1:vehicle_type "CAR" ;
+    owl:sameAs <https://wikidata.org/entity/Q1763376>,
+        <https://wikidata.org/entity/Q2136510>,
+        <https://wikidata.org/entity/Q2193218> .
+
+<http://example.com/parking/36269> ns1:district "Moratalaz" ;
+    ns1:name "Aparcamiento mixto. Encuentro" ;
+    ns1:neighbourhood "Media Legua" ;
+    ns1:schedule "24 hour" ;
+    ns1:street_name "El Encuentro" ;
+    ns1:street_number 5 ;
+    ns1:total_slots 104 ;
+    ns1:vehicle_type "CAR" ;
+    owl:sameAs <https://wikidata.org/entity/Q110746672>,
+        <https://wikidata.org/entity/Q2076109>,
+        <https://wikidata.org/entity/Q9031035> .
+
+<http://example.com/parking/36270> ns1:district "Tetuán" ;
+    ns1:name "Aparcamiento mixto. Hernani" ;
+    ns1:neighbourhood "Cuatro Caminos" ;
+    ns1:schedule "24 hour" ;
+    ns1:street_name "Calle de Hernani, Madrid" ;
+    ns1:street_number 79 ;
+    ns1:total_slots 115 ;
+    ns1:vehicle_type "CAR" ;
+    owl:sameAs <https://wikidata.org/entity/Q1773540>,
+        <https://wikidata.org/entity/Q26833571>,
+        <https://wikidata.org/entity/Q5824684> .
+
+<http://example.com/parking/36271> ns1:district "Tetuán" ;
+    ns1:name "Aparcamiento mixto. Presidente Carmona" ;
+    ns1:neighbourhood "Cuatro Caminos" ;
+    ns1:schedule "24 hour" ;
+    ns1:street_name "Avenida del General Perón" ;
+    ns1:street_number 21 ;
+    ns1:total_slots 127 ;
+    ns1:vehicle_type "CAR" ;
+    owl:sameAs <https://wikidata.org/entity/Q1773540>,
+        <https://wikidata.org/entity/Q26761632>,
+        <https://wikidata.org/entity/Q5824684> .
+
+<http://example.com/parking/44724> ns1:district "Salamanca" ;
+    ns1:name "Aparcamiento mixto. Díaz Porlier" ;
+    ns1:neighbourhood "Lista" ;
+    ns1:schedule "24 hour" ;
+    ns1:street_name "Calle de Diego de León, Madrid" ;
+    ns1:street_number 64 ;
+    ns1:total_slots 203 ;
+    ns1:vehicle_type "CAR" ;
+    owl:sameAs <https://wikidata.org/entity/Q1773521>,
+        <https://wikidata.org/entity/Q28059485>,
+        <https://wikidata.org/entity/Q4779> .
+
+<http://example.com/parking/52114> ns1:district "Centro" ;
+    ns1:name "Aparcamiento mixto. Pedro Zerolo 'antes denominado Vázquez de Mella'" ;
+    ns1:neighbourhood "Justicia" ;
+    ns1:schedule "24 hour" ;
+    ns1:street_name "plaza de Pedro Zerolo" ;
+    ns1:street_number 1 ;
+    ns1:total_slots 113 ;
+    ns1:vehicle_type "CAR" ;
+    owl:sameAs <https://wikidata.org/entity/Q1763376>,
+        <https://wikidata.org/entity/Q1992319>,
+        <https://wikidata.org/entity/Q6080146> .
+
+<http://example.com/parking/5517342> ns1:district "Tetuán" ;
+    ns1:name "Aparcamiento mixto. Orense" ;
+    ns1:neighbourhood "Cuatro Caminos" ;
+    ns1:schedule "24 hour" ;
+    ns1:street_name "avenida de Brasil" ;
+    ns1:street_number 2 ;
+    ns1:total_slots 129 ;
+    ns1:vehicle_type "CAR" ;
+    owl:sameAs <https://wikidata.org/entity/Q1773540>,
+        <https://wikidata.org/entity/Q27212874>,
+        <https://wikidata.org/entity/Q5824684> .
+
+<http://example.com/parking/5898885> ns1:district "Latina" ;
+    ns1:name "Aparcamiento mixto. Avenida de Portugal" ;
+    ns1:neighbourhood "Barrio de Puerta del Ángel" ;
+    ns1:schedule "6:00-22:00" ;
+    ns1:street_name "Avenida de Portugal" ;
+    ns1:street_number 155 ;
+    ns1:total_slots 428 ;
+    ns1:vehicle_type "CAR" ;
+    owl:sameAs <https://wikidata.org/entity/Q26736141>,
+        <https://wikidata.org/entity/Q31142>,
+        <https://wikidata.org/entity/Q794954> .
+
+<http://example.com/parking/59060> ns1:district "Chamartín" ;
+    ns1:name "Aparcamiento mixto. Avenida de América (intercambiador)" ;
+    ns1:neighbourhood "Prosperidad" ;
+    ns1:schedule "24 hour" ;
+    ns1:street_name "Avenida de América, Madrid" ;
+    ns1:street_number 9 ;
+    ns1:total_slots 291 ;
+    ns1:vehicle_type "CAR" ;
+    owl:sameAs <https://wikidata.org/entity/Q1766348>,
+        <https://wikidata.org/entity/Q4776>,
+        <https://wikidata.org/entity/Q5686040> .
+
+<http://example.com/parking/6143690> ns1:district "Salamanca" ;
+    ns1:name "Aparcamiento mixto. Marqués de Salamanca" ;
+    ns1:neighbourhood "Castellana" ;
+    ns1:schedule "24 hour" ;
+    ns1:street_name "Plaza del Marqués de Salamanca, Madrid" ;
+    ns1:street_number 0 ;
+    ns1:total_slots 356 ;
+    ns1:vehicle_type "CAR" ;
+    owl:sameAs <https://wikidata.org/entity/Q16620302>,
+        <https://wikidata.org/entity/Q1773521>,
+        <https://wikidata.org/entity/Q4781> .
+
+<http://example.com/parking/7393089> ns1:district "Chamartín" ;
+    ns1:name "Aparcamiento público. Auditorio Nacional de Música (Príncipe de Vergara)" ;
+    ns1:neighbourhood "Ciudad Jardín" ;
+    ns1:schedule "24 hour" ;
+    ns1:street_name "Calle de Cartagena, Madrid" ;
+    ns1:street_number 178 ;
+    ns1:total_slots 376 ;
+    ns1:vehicle_type "CAR" ;
+    owl:sameAs <https://wikidata.org/entity/Q1766348>,
+        <https://wikidata.org/entity/Q27038851>,
+        <https://wikidata.org/entity/Q3773744> .
+
+<http://example.com/parking/7416748> ns1:district "Salamanca" ;
+    ns1:name "Aparcamiento mixto. Serrano I" ;
+    ns1:neighbourhood "Castellana" ;
+    ns1:schedule "24 hour" ;
+    ns1:street_name "Serrano Street" ;
+    ns1:street_number 84 ;
+    ns1:total_slots 307 ;
+    ns1:vehicle_type "CAR" ;
+    owl:sameAs <https://wikidata.org/entity/Q1773521>,
+        <https://wikidata.org/entity/Q4781>,
+        <https://wikidata.org/entity/Q5740879> .
+
+<http://example.com/parking/7417028> ns1:district "Salamanca" ;
+    ns1:name "Aparcamiento mixto. Serrano II" ;
+    ns1:neighbourhood "Recoletos" ;
+    ns1:schedule "24 hour" ;
+    ns1:street_name "Serrano Street" ;
+    ns1:street_number 44 ;
+    ns1:total_slots 379 ;
+    ns1:vehicle_type "CAR" ;
+    owl:sameAs <https://wikidata.org/entity/Q1773521>,
+        <https://wikidata.org/entity/Q3814551>,
+        <https://wikidata.org/entity/Q5740879> .
+
+<http://example.com/parking/7417052> ns1:district "Salamanca" ;
+    ns1:name "Aparcamiento mixto. Serrano III" ;
+    ns1:neighbourhood "Recoletos" ;
+    ns1:schedule "24 hour" ;
+    ns1:street_name "Serrano Street" ;
+    ns1:street_number 2 ;
+    ns1:total_slots 261 ;
+    ns1:vehicle_type "CAR" ;
+    owl:sameAs <https://wikidata.org/entity/Q1773521>,
+        <https://wikidata.org/entity/Q3814551>,
+        <https://wikidata.org/entity/Q5740879> .
+
+<http://example.com/parking/81736> ns1:district "Moncloa-Aravaca" ;
+    ns1:name "Aparcamiento mixto. Corona Boreal" ;
+    ns1:neighbourhood "Aravaca" ;
+    ns1:schedule "24 hour" ;
+    ns1:street_name "CALLE PEREZ DE VICTORIA" ;
+    ns1:street_number 2 ;
+    ns1:total_slots 125 ;
+    ns1:vehicle_type "CAR" ;
+    owl:sameAs <https://wikidata.org/entity/Q2017682>,
+        <https://wikidata.org/entity/Q3314682> .
+
+<http://example.com/parking/81828> ns1:district "Retiro" ;
+    ns1:name "Aparcamiento mixto. Reyes Magos" ;
+    ns1:neighbourhood "Niño Jesús" ;
+    ns1:schedule "24 hour" ;
+    ns1:street_name "PLAZA REYES MAGOS" ;
+    ns1:street_number 0 ;
+    ns1:total_slots 356 ;
+    ns1:vehicle_type "CAR" ;
+    owl:sameAs <https://wikidata.org/entity/Q2002296>,
+        <https://wikidata.org/entity/Q3773746> .
+
+<http://example.com/parking/88141> ns1:district "Chamartín" ;
+    ns1:name "Aparcamiento público. Museo de la Ciudad" ;
+    ns1:neighbourhood "Ciudad Jardín" ;
+    ns1:schedule "24 hour" ;
+    ns1:street_name "calle del Príncipe de Vergara" ;
+    ns1:street_number 134 ;
+    ns1:total_slots 147 ;
+    ns1:vehicle_type "CAR" ;
+    owl:sameAs <https://wikidata.org/entity/Q1766348>,
+        <https://wikidata.org/entity/Q3773744>,
+        <https://wikidata.org/entity/Q5741020> .
+

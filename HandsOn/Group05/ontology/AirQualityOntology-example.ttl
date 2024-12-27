@@ -1,0 +1,43 @@
+@prefix mod: <https://w3id.org/mod#> .
+@prefix ns: <http://webcam.linkeddata.Gijon.es.org/ontology/airquality#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org#> .
+@prefix sosa: <http://www.w3.org/ns/sosa#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# Instancia de Estación de Medición
+ns:Estacion1 a ns:EstacionMedicion ;
+    schema:name "Estación Central" ;
+    schema:latitude 43.545 ;
+    schema:longitude -5.661 ;
+    ns:ID_Estacion 101 .
+
+# Instancia de Medición de SO2
+ns:MedicionSO2_1 a ns:MedicionSO2 ;
+    ns:FechaMedida "2024-10-25"^^xsd:date ;
+    ns:HoraMedida 10 ;
+    ns:CantidadMedida 0.005^^xsd:decimal ;
+    sosa:madeBySensor ns:Estacion1 ;
+    sosa:FeatureOfInterest ns:SO2 .
+
+# Instancia de Medición de NO
+ns:MedicionNO_1 a ns:MedicionNO ;
+    ns:FechaMedida "2024-10-25"^^xsd:date ;
+    ns:HoraMedida 10 ;
+    ns:CantidadMedida 0.01^^xsd:decimal ;
+    sosa:madeBySensor ns:Estacion1 ;
+    sosa:FeatureOfInterest ns:NO .
+
+# Instancia de Medición de Temperatura
+ns:MedicionTemperatura_1 a ns:MedicionTemperatura ;
+    ns:FechaMedida "2024-10-25"^^xsd:date ;
+    ns:HoraMedida 10 ;
+    ns:CantidadMedida 15.3^^xsd:decimal ;
+    sosa:madeBySensor ns:Estacion1 ;
+    sosa:FeatureOfInterest ns:Temperatura .
+    
+# Definición de la unidad de medida para cada tipo de FeatureOfInterest
+ns:SO2 ns:UnidadMedida "ppm" .
+ns:NO ns:UnidadMedida "ppm" .
+ns:Temperatura ns:UnidadMedida "°C" .
