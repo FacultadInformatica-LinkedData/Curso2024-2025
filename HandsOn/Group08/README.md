@@ -1,9 +1,22 @@
+# README.md
 # Group02
 
-## Authors
-### Name                        GitHub Username
-Angel Astiazarán Gafo         ;  Angel-Astiazaran
-Sebastian Revilla Rojas       ;  srevilla55
-Lucas Rodriguez Llera         ;  petsvankets
-Alex Javier Pinduisaca Muñoz  ;  piinduu
-Mario Villarin Garcia         ;  mariocadal
+## Member 1
+**Name:** Angel Astiazarán Gafo  
+**GitHub Username:**  Angel-Astiazaran
+
+## Member 2
+**Name:** Sebastian Revilla Rojas
+**GitHub Username:** srevilla55
+
+## Member 3
+**Name:** Lucas Rodriguez Llera
+**GitHub Username:** petsvankets
+
+## Member 4
+**Name:** Alex Javier Pinduisaca Muñoz
+**GitHub Username:**  piinduu
+
+## Member 5
+**Name:** Mario Villarin Garcia  
+**GitHub Username:** mariocadal

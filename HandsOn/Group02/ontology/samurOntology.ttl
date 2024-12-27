@@ -23,9 +23,6 @@ samur:Hospital a owl:Class ;
     rdfs:label "Hospital" ;
     rdfs:comment "The hospital where the patient was taken during the SAMUR emergency activation, if applicable." .
 
-samur:EmergencyType a owl:Class ;
-    rdfs:label "Emergency Type" ;
-    rdfs:comment "The type of emergency for which SAMUR was activated (e.g., heart attack, convulsions)." .
 
 # Properties
 samur:hasYear a owl:DatatypeProperty ;
@@ -54,7 +51,7 @@ samur:hasInterventionTime a owl:DatatypeProperty ;
 
 samur:hasEmergencyType a owl:ObjectProperty ;
     rdfs:domain samur:Activation ;
-    rdfs:range samur:EmergencyType ;
+    rdfs:range xsd:string ;
     rdfs:label "Type of Emergency" ;
     rdfs:comment "The type of emergency that SAMUR responded to." .
 

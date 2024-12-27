@@ -1,0 +1,107 @@
+@prefix Parking: <https://smartcity.linkeddata.es/Grupo10/ontology/parkingbicismadrid#> .
+@prefix barrio: <http://www.owl-ontologies.com/barrio#> .
+@prefix cod_barrio: <http://www.owl-ontologies.com/cod_barrio#> .
+@prefix cod_distrito: <http://www.owl-ontologies.com/cod_distrito#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix distrito: <http://www.owl-ontologies.com/distrito#> .
+@prefix mod: <https://w3id.org/mod#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+dc:creator a owl:AnnotationProperty .
+
+dc:title a owl:AnnotationProperty .
+
+owl:versionInfo a owl:AnnotationProperty .
+
+Parking: a owl:Ontology ;
+    dc:creator "Grupo10" ;
+    dc:title "Template Ontology" ;
+    owl:versionInfo "0.0.1" ;
+    mod:createdWith <https://chowlk.linkeddata.es/> .
+
+<https://smartcity.linkeddata.es/Grupo10/ontology/parkingbicismadrid#Parking> a owl:DatatypeProperty ;
+    rdfs:label "parking" ;
+    rdfs:range barrio:String,
+        cod_barrio:Integer,
+        cod_distrito:Integer,
+        distrito:String .
+
+Parking:Barrio a owl:Class ;
+    rdfs:label "Barrio" .
+
+Parking:Distrito a owl:Class ;
+    rdfs:label "Distrito" .
+
+Parking:ID a owl:DatatypeProperty ;
+    rdfs:label "i d" .
+
+Parking:Parking a owl:Class ;
+    rdfs:label "Parking" .
+
+Parking:Via a owl:Class ;
+    rdfs:label "Via" .
+
+Parking:codigo_interno a owl:DatatypeProperty ;
+    rdfs:label "codigo_interno" .
+
+Parking:codigo_postal a owl:DatatypeProperty ;
+    rdfs:label "codigo_postal" .
+
+Parking:contrato_cod a owl:DatatypeProperty ;
+    rdfs:label "contrato_cod" .
+
+Parking:coord_gis_x a owl:DatatypeProperty ;
+    rdfs:label "coord_gis_x" .
+
+Parking:coord_gis_y a owl:DatatypeProperty ;
+    rdfs:label "coord_gis_y" ;
+    rdfs:range xsd:Float .
+
+Parking:desc_clasificacion a owl:DatatypeProperty ;
+    rdfs:label "desc_clasificacion" .
+
+Parking:direccion_aux a owl:DatatypeProperty ;
+    rdfs:label "direccion_aux" .
+
+Parking:estado a owl:DatatypeProperty ;
+    rdfs:label "estado" ;
+    rdfs:range xsd:String .
+
+Parking:fecha_instalacion a owl:DatatypeProperty ;
+    rdfs:label "fecha_instalacion" .
+
+Parking:hasBarrio a owl:ObjectProperty ;
+    rdfs:label "has barrio" .
+
+Parking:hasDistrito a owl:ObjectProperty ;
+    rdfs:label "has distrito" .
+
+Parking:hasVia a owl:ObjectProperty ;
+    rdfs:label "has via" .
+
+Parking:latitud a owl:DatatypeProperty ;
+    rdfs:label "latitud" .
+
+Parking:longitud a owl:DatatypeProperty ;
+    rdfs:label "longitud" .
+
+Parking:modelo a owl:DatatypeProperty ;
+    rdfs:label "modelo" .
+
+Parking:ndp a owl:DatatypeProperty ;
+    rdfs:label "ndp" .
+
+Parking:nom_via a owl:DatatypeProperty ;
+    rdfs:label "nom_via" .
+
+Parking:num_via a owl:DatatypeProperty ;
+    rdfs:label "num_via" .
+
+Parking:sistema_coord a owl:DatatypeProperty ;
+    rdfs:label "sistema_coord" .
+
+Parking:tipo_via a owl:DatatypeProperty ;
+    rdfs:label "tipo_via" .
+

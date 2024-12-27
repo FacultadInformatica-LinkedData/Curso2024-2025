@@ -1,0 +1,37 @@
+PREFIX ns: <https://websemantica.net/Group03/ontology/CamarasBcn#>
+PREFIX sc: <https://schema.org/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+
+#Consulta que muestra el nombre del barrio y su enlace en wikidata
+SELECT ?barrio ?nombre ?wikidataLink
+WHERE {
+  ?barrio rdf:type ns:Barrio ;
+          owl:sameAs ?wikidataLink ;
+          ns:tieneNombreBarrio ?nombre .
+}
+
+
+#Consulta que muestra el nombre del distrito y su enlace en wikidata
+SELECT ?distrito ?nombre ?wikidataLink
+WHERE {
+  ?distrito rdf:type ns:Distrito ;
+            owl:sameAs ?wikidataLink ;
+            ns:tieneNombreDistrito ?nombre .
+}
+
+#Consulta que muestra los barrios sin enlace correspondiente en wikidata ( consulta para asegurarnos de que no hay ningún barrio sin enlazar).
+SELECT ?barrio ?nombreBarrio
+WHERE {
+  ?barrio rdf:type ns:Barrio ;
+          ns:tieneNombreBarrio ?nombreBarrio .
+  FILTER NOT EXISTS { ?barrio owl:sameAs ?wikidataLink }
+}
+
+
+#Consulta que muestra los distritos sin enlace correspondiente en wikidata ( consulta para asegurarnos de que no hay ningún distrito sin enlazar).
+SELECT ?distrito ?nombreDistrito
+WHERE {
+  ?distrito rdf:type ns:Distrito ;
+            ns:tieneNombreDistrito ?nombreDistrito .
+  FILTER NOT EXISTS { ?distrito owl:sameAs ?wikidataLink }
+}

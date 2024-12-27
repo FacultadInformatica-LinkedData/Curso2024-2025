@@ -1,0 +1,52 @@
+prefixes:
+  rr: http://www.w3.org/ns/r2rml#
+  foaf: http://xmlns.com/foaf/0.1/
+  xsd: http://www.w3.org/2001/XMLSchema#
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
+  rml: http://semweb.mmlab.be/ns/rml#
+  ql: http://semweb.mmlab.be/ns/ql#
+  rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+  ns: https://websemantica.net/Group03/ontology/CamarasBcn#
+  sc: https://schema.org/
+
+mappings:
+  camaras_mapping:
+    sources:
+      - [Infraestructures-Inventari-CameresSeguretat-updated.csv~csv]
+    s: ns:Camara_$(Id_Cam_Seguretat)
+    po:
+      - [a, ns:Camara]
+      - [ns:tieneIdCamara, $(Id_Cam_Seguretat), xsd:integer]
+      - [ns:tieneCodigoCamara, "$(Codi_Cam_Seguretat)"]
+      - [ns:tieneTipoCamara, "$(Tipus_Cam_Seguretat)"]
+      - [ns:tieneNumeroCamara, $(Num_Cam_Seguretat), xsd:integer]
+      - [ns:tieneSoporteCamara, "$(Codi_Suport)"]
+      - [sc:latitud, $(Latitud), xsd:decimal]
+      - [sc:longitud, $(Longitud), xsd:decimal]
+      - [ns:tieneX_ETRS89Camara, $(X_ETRS89), xsd:integer]
+      - [ns:tieneY_ETRS89Camara, $(Y_ETRS89), xsd:integer]
+      - [ns:tieneFechaAltaCamara, $(Data_Alta), xsd:date]
+      - p: ns:enBarrio
+        o:
+          mapping: barrios_mapping
+
+  barrios_mapping:
+    sources:
+      - [Infraestructures-Inventari-CameresSeguretat-updated.csv~csv]
+    s: ns:Barrio_$(Codi_Barri)
+    po:
+      - [a, ns:Barrio]
+      - [ns:tieneCodigoBarrio, $(Codi_Barri), xsd:integer]
+      - [ns:tieneNombreBarrio, "$(Nom_Barri)"]
+      - p: ns:enDistrito
+        o:
+          mapping: distritos_mapping
+
+  distritos_mapping:
+    sources:
+      - [Infraestructures-Inventari-CameresSeguretat-updated.csv~csv]
+    s: ns:Distrito_$(Codi_Districte)
+    po:
+      - [a, ns:Distrito]
+      - [ns:tieneCodigoDistrito, $(Codi_Districte), xsd:integer]
+      - [ns:tieneNombreDistrito, "$(Nom_Districte)"]

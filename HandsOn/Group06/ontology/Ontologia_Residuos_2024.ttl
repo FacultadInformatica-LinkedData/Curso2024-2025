@@ -16,14 +16,18 @@
 
 ###  http://example.org/ontology/esParteDe
 ex:esParteDe rdf:type owl:ObjectProperty ;
+             rdfs:domain ex:Residuo ;
              rdfs:range ex:Distrito ;
              rdfs:label "es parte de"@es .
 
 
+
 ###  http://example.org/ontology/perteneceAlLote
 ex:perteneceAlLote rdf:type owl:ObjectProperty ;
+                   rdfs:domain ex:Residuo ;
                    rdfs:range ex:Lote ;
                    rdfs:label "pertenece al lote"@es .
+
 
 
 #################################################################
@@ -32,8 +36,10 @@ ex:perteneceAlLote rdf:type owl:ObjectProperty ;
 
 ###  http://example.org/ontology/totalResiduos
 ex:totalResiduos rdf:type owl:DatatypeProperty ;
+                 rdfs:domain ex:Residuo ;
                  rdfs:range xsd:decimal ;
                  rdfs:label "Total de residuos"@es .
+
 
 
 #################################################################

@@ -1,0 +1,85 @@
+[
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Tipo",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q47154513",
+        "name": "structural class of chemical entities"
+      },
+      "autoMatch": true,
+      "batchSize": 10,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column Tipo to type Q47154513"
+  },
+  {
+    "op": "core/recon-match-best-candidates",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Tipo",
+    "description": "Match each cell to its best recon candidate in column Tipo"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "CoordenadaX",
+    "expression": "grel:\"30T \" + cells[\"CoordenadaX\"].value + \" \" + cells[\"CoordenadaY\"].value",
+    "onError": "set-to-blank",
+    "newColumnName": "UTM coordinates",
+    "columnInsertIndex": 17,
+    "description": "Create column UTM coordinates at index 17 based on column CoordenadaX using expression grel:\"30T \" + cells[\"CoordenadaX\"].value + \" \" + cells[\"CoordenadaY\"].value"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Tipo",
+    "similarValue": "LED",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1553201",
+      "name": "LED lamp",
+      "types": [
+        ""
+      ],
+      "score": 30
+    },
+    "shareNewTopics": false,
+    "description": "Match item LED lamp (Q1553201) for cells containing \"LED\" in column Tipo"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "same_as_wikidata_type_of_electronic",
+    "description": "Remove column same_as_wikidata_type_of_electronic"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "Tipo",
+    "expression": "grel:\"https://wikidata.org/entity/\"+cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "same_as_wikidata_type_of_electronic",
+    "columnInsertIndex": 12,
+    "description": "Create column same_as_wikidata_type_of_electronic at index 12 based on column Tipo using expression grel:\"https://wikidata.org/entity/\"+cell.recon.match.id"
+  }
+]

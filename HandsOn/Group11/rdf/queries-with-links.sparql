@@ -1,0 +1,74 @@
+PREFIX vocab: <http://semanticweb.es/airquality#>
+
+#Retrieve all ubicacion from Madrid and the corresponding landmarks in Wikidata
+SELECT DISTINCT ?ubicacion ?landmark
+WHERE {
+    ?estacion a vocab:Estacion ;
+    vocab:same_as_wikidata_madrid_landmarks ?landmark ;
+  	vocab:codigoUbicacion ?ubicacion .
+}
+
+
+# Get all sampling points.
+SELECT ?puntoMuestreo
+WHERE {
+    ?puntoMuestreo a vocab:PuntoMuestreo .
+}
+
+
+# Count the number of sampling points.
+SELECT (COUNT(?puntoMuestreo) AS ?totalPuntosMuestreo)
+WHERE {
+    ?puntoMuestreo a vocab:PuntoMuestreo .
+}
+
+
+# List all station codes.
+SELECT ?codigoEstacion
+WHERE {
+    ?estacion a vocab:Estacion .
+    ?estacion vocab:codigoEstacion ?codigoEstacion .
+}
+
+
+# Count the number of stations.
+SELECT (COUNT(?estacion) AS ?totalEstaciones)
+WHERE {
+    ?estacion a vocab:Estacion .
+}
+
+
+# Get information about a specific sampling point.
+SELECT ?puntoMuestreo
+WHERE {
+    ?puntoMuestreo a vocab:PuntoMuestreo .
+    FILTER(?puntoMuestreo = <http://semanticweb.es/airquality/puntoMuestreo/28079018_35_59>)
+}
+
+
+# List all sampling points by station.
+SELECT ?estacion ?puntoMuestreo
+WHERE {
+    ?estacion a vocab:Estacion .
+    ?puntoMuestreo a vocab:PuntoMuestreo .
+}
+
+
+# Get all stations with their code.
+SELECT ?estacion ?codigo
+WHERE {
+    ?estacion a vocab:Estacion .
+    ?estacion vocab:codigoEstacion ?codigo .
+}
+
+
+# Count how many sampling points are there for each station.
+SELECT ?estacion (COUNT(?puntoMuestreo) AS ?totalPuntos)
+WHERE {
+    ?estacion a vocab:Estacion .
+    ?puntoMuestreo a vocab:PuntoMuestreo .
+}
+GROUP BY ?estacion
+
+
+

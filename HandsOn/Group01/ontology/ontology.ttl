@@ -1,7 +1,7 @@
-@prefix base: <http://smartcity.linkeddata.es/accidents/> .
+@prefix base: <http://smartcity.linkeddata.es/accidentes/> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix mod: <https://w3id.org/mod#> .
-@prefix ns: <http://smartcity.linkeddata.es/accidents/ontology/> .
+@prefix ns: <http://smartcity.linkeddata.es/accidentes/ontologia/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -16,151 +16,132 @@ base: a owl:Ontology ;
     owl:versionInfo "1.0" ;
     mod:createdWith <https://chowlk.linkeddata.es/> .
 
-ns:accident_type a owl:DatatypeProperty ;
-    rdfs:label "accident_type" ;
-    rdfs:domain ns:Accident ;
-    rdfs:range xsd:String .
+ns:cod_distrito a owl:DatatypeProperty ;
+    rdfs:label "cod_distrito" ;
+    rdfs:domain ns:Distrito ;
+    rdfs:range xsd:integer .
 
-ns:age_range a owl:DatatypeProperty ;
-    rdfs:label "age_range" ;
-    rdfs:domain ns:Person ;
-    rdfs:range xsd:Integer .
+ns:cod_lesividad a owl:DatatypeProperty ;
+    rdfs:label "cod_lesividad" ;
+    rdfs:domain ns:Lesividad ;
+    rdfs:range xsd:integer .
 
-ns:alcohol_positive a owl:DatatypeProperty ;
-    rdfs:label "alcohol_positive" ;
-    rdfs:domain ns:Person ;
-    rdfs:range xsd:String .
+ns:coordenada_x_utm a owl:DatatypeProperty ;
+    rdfs:label "coordenada_x_utm" ;
+    rdfs:domain ns:Accidente ;
+    rdfs:range xsd:decimal .
 
-ns:coordinate_x_utm a owl:DatatypeProperty ;
-    rdfs:label "coordinate_x_utm" ;
-    rdfs:domain ns:Location ;
-    rdfs:range xsd:Decimal .
+ns:coordenada_y_utm a owl:DatatypeProperty ;
+    rdfs:label "coordenada_y_utm" ;
+    rdfs:domain ns:Accidente ;
+    rdfs:range xsd:decimal .
 
-ns:coordinate_y_utm a owl:DatatypeProperty ;
-    rdfs:label "coordinate_y_utm" ;
-    rdfs:domain ns:Location ;
-    rdfs:range xsd:Decimal .
+ns:distrito a owl:DatatypeProperty ;
+    rdfs:label "distrito" ;
+    rdfs:domain ns:Distrito ;
+    rdfs:range xsd:string .
 
-ns:date a owl:DatatypeProperty ;
-    rdfs:label "date" ;
-    rdfs:domain ns:Date ;
-    rdfs:range xsd:Date .
+ns:estaEnDistrito a owl:ObjectProperty ;
+    rdfs:label "esta en distrito" ;
+    rdfs:domain ns:Accidente ;
+    rdfs:range ns:Distrito .
 
-ns:district a owl:DatatypeProperty ;
-    rdfs:label "district" ;
-    rdfs:domain ns:Location ;
-    rdfs:range xsd:String .
+ns:estado_meteorologico a owl:DatatypeProperty ;
+    rdfs:label "estado_meteorologico" ;
+    rdfs:domain ns:Accidente ;
+    rdfs:range xsd:string .
 
-ns:district_code a owl:DatatypeProperty ;
-    rdfs:label "district_code" ;
-    rdfs:domain ns:Location ;
-    rdfs:range xsd:Integer .
+ns:fecha a owl:DatatypeProperty ;
+    rdfs:label "fecha" ;
+    rdfs:domain ns:Accidente ;
+    rdfs:range xsd:date .
 
-ns:drug_positive a owl:DatatypeProperty ;
-    rdfs:label "drug_positive" ;
-    rdfs:domain ns:Person ;
-    rdfs:range xsd:String .
+ns:id_persona a owl:DatatypeProperty ;
+    rdfs:label "id_persona" ;
+    rdfs:domain ns:Persona ;
+    rdfs:range xsd:string .
 
-ns:file_number a owl:DatatypeProperty ;
-    rdfs:label "file_number" ;
-    rdfs:domain ns:Accident ;
-    rdfs:range xsd:Integer .
+ns:lesividad a owl:DatatypeProperty ;
+    rdfs:label "lesividad" ;
+    rdfs:domain ns:Lesividad ;
+    rdfs:range xsd:string .
 
-ns:hasInjury a owl:ObjectProperty ;
-    rdfs:label "has injury" ;
-    rdfs:domain ns:Accident ;
-    rdfs:range ns:Injury .
+ns:localizacion a owl:DatatypeProperty ;
+    rdfs:label "localizacion" ;
+    rdfs:domain ns:Accidente ;
+    rdfs:range xsd:string .
 
-ns:hasLocation a owl:ObjectProperty ;
-    rdfs:label "has location" ;
-    rdfs:domain ns:Accident ;
-    rdfs:range ns:Location .
+ns:max_edad a owl:DatatypeProperty ;
+    rdfs:label "max_edad" ;
+    rdfs:domain ns:Persona ;
+    rdfs:range xsd:integer .
 
-ns:hasWeather a owl:ObjectProperty ;
-    rdfs:label "has weather" ;
-    rdfs:domain ns:Accident ;
-    rdfs:range ns:Weather .
+ns:min_edad a owl:DatatypeProperty ;
+    rdfs:label "min_edad" ;
+    rdfs:domain ns:Persona ;
+    rdfs:range xsd:integer .
 
-ns:inDate a owl:ObjectProperty ;
-    rdfs:label "in date" ;
-    rdfs:domain ns:Accident ;
-    rdfs:range ns:Date .
+ns:num_expediente a owl:DatatypeProperty ;
+    rdfs:label "num_expediente" ;
+    rdfs:domain ns:Accidente ;
+    rdfs:range xsd:string .
 
-ns:injury a owl:DatatypeProperty ;
-    rdfs:label "injury" ;
-    rdfs:domain ns:Injury ;
-    rdfs:range xsd:String .
+ns:numero a owl:DatatypeProperty ;
+    rdfs:label "numero" ;
+    rdfs:domain ns:Accidente ;
+    rdfs:range xsd:string .
 
-ns:injury_code a owl:DatatypeProperty ;
-    rdfs:label "injury_code" ;
-    rdfs:domain ns:Injury ;
-    rdfs:range xsd:Integer .
+ns:personaInvolucrada a owl:ObjectProperty ;
+    rdfs:label "persona involucrada" ;
+    rdfs:domain ns:Accidente ;
+    rdfs:range ns:Persona .
 
-ns:involvesPerson a owl:ObjectProperty ;
-    rdfs:label "involves person" ;
-    rdfs:domain ns:Accident ;
-    rdfs:range ns:Person .
+ns:positiva_alcohol a owl:DatatypeProperty ;
+    rdfs:label "positiva_alcohol" ;
+    rdfs:domain ns:Persona ;
+    rdfs:range xsd:boolean .
 
-ns:involvesVehicle a owl:ObjectProperty ;
-    rdfs:label "involves vehicle" ;
-    rdfs:domain ns:Accident ;
-    rdfs:range ns:Vehicle .
+ns:positiva_droga a owl:DatatypeProperty ;
+    rdfs:label "positiva_droga" ;
+    rdfs:domain ns:Persona ;
+    rdfs:range xsd:boolean .
 
-ns:location a owl:DatatypeProperty ;
-    rdfs:label "location" ;
-    rdfs:domain ns:Location ;
-    rdfs:range xsd:String .
+ns:sexo a owl:DatatypeProperty ;
+    rdfs:label "sexo" ;
+    rdfs:domain ns:Persona ;
+    rdfs:range xsd:string .
 
-ns:number a owl:DatatypeProperty ;
-    rdfs:label "number" ;
-    rdfs:domain ns:Location ;
-    rdfs:range xsd:Integer .
+ns:tieneLesion a owl:ObjectProperty ;
+    rdfs:label "tiene lesion" ;
+    rdfs:domain ns:Persona ;
+    rdfs:range ns:Lesividad .
 
-ns:person_type a owl:DatatypeProperty ;
-    rdfs:label "person_type" ;
-    rdfs:domain ns:Person ;
-    rdfs:range xsd:String .
+ns:tipo_accidente a owl:DatatypeProperty ;
+    rdfs:label "tipo_accidente" ;
+    rdfs:domain ns:Accidente ;
+    rdfs:range xsd:string .
 
-ns:sex a owl:DatatypeProperty ;
-    rdfs:label "sex" ;
-    rdfs:domain ns:Person ;
-    rdfs:range xsd:String .
+ns:tipo_persona a owl:DatatypeProperty ;
+    rdfs:label "tipo_persona" ;
+    rdfs:domain ns:Persona ;
+    rdfs:range xsd:string .
 
-ns:time a owl:DatatypeProperty ;
-    rdfs:label "time" ;
-    rdfs:domain ns:Date ;
-    rdfs:range xsd:Time .
-
-ns:vehicle_type a owl:DatatypeProperty ;
-    rdfs:label "vehicle_type" ;
-    rdfs:domain ns:Vehicle ;
-    rdfs:range xsd:String .
-
-ns:weather_status a owl:DatatypeProperty ;
-    rdfs:label "weather_status" ;
-    rdfs:domain ns:Weather ;
-    rdfs:range xsd:String .
+ns:tipo_vehiculo a owl:DatatypeProperty ;
+    rdfs:label "tipo_vehiculo" ;
+    rdfs:domain ns:Persona ;
+    rdfs:range xsd:string .
 
 owl:versionInfo a owl:AnnotationProperty .
 
-ns:Vehicle a owl:Class ;
-    rdfs:label "Vehicle" .
+ns:Distrito a owl:Class ;
+    rdfs:label "Distrito" .
 
-ns:Weather a owl:Class ;
-    rdfs:label "Weather" .
+ns:Lesividad a owl:Class ;
+    rdfs:label "Lesividad" .
 
-ns:Date a owl:Class ;
-    rdfs:label "Date" .
+ns:Accidente a owl:Class ;
+    rdfs:label "Accidente" .
 
-ns:Injury a owl:Class ;
-    rdfs:label "Injury" .
-
-ns:Person a owl:Class ;
-    rdfs:label "Person" .
-
-ns:Location a owl:Class ;
-    rdfs:label "Location" .
-
-ns:Accident a owl:Class ;
-    rdfs:label "Accident" .
+ns:Persona a owl:Class ;
+    rdfs:label "Persona" .
 
