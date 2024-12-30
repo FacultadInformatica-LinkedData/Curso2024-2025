@@ -1,0 +1,139 @@
+@prefix : <http://semanticweb.es/airquality/> .
+@prefix mod: <https://w3id.org/mod#> .
+@prefix ns: <http://semanticweb.es/airquality#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wd: <http://wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ns:codigoEstacion a owl:DatatypeProperty ;
+    rdfs:label "codigo estacion" ;
+    rdfs:domain ns:Estacion ;
+    rdfs:range xsd:integer .
+
+ns:codigoMagnitud a owl:DatatypeProperty ;
+    rdfs:label "codigo magnitud" ;
+    rdfs:domain ns:Magnitud ;
+    rdfs:range xsd:integer .
+
+ns:codigoMunicipio a owl:DatatypeProperty ;
+    rdfs:label "codigo municipio" ;
+    rdfs:domain ns:Municipio ;
+    rdfs:range xsd:integer .
+
+ns:codigoProvincia a owl:DatatypeProperty ;
+    rdfs:label "codigo provincia" ;
+    rdfs:domain ns:Provincia ;
+    rdfs:range xsd:integer .
+
+ns:codigoPuntoMuestreo a owl:DatatypeProperty ;
+    rdfs:label "codigo punto muestreo" ;
+    rdfs:domain ns:PuntoMuestreo ;
+    rdfs:range xsd:string .
+
+ns:nombreMunicipio a owl:DatatypeProperty ;
+    rdfs:label "nombre municipio" ;
+    rdfs:domain ns:Municipio ;
+    rdfs:range xsd:string .
+
+ns:nombreUbicacion a owl:DatatypeProperty ;
+    rdfs:label "nombre ubicacion" ;
+    rdfs:domain ns:Ubicacion ;
+    rdfs:range xsd:string .
+
+ns:tieneEstacion a owl:ObjectProperty ;
+    rdfs:label "tiene estacion" ;
+    rdfs:domain ns:Municipio ;
+    rdfs:range ns:Estacion .
+
+ns:tieneEstado a owl:DatatypeProperty ;
+    rdfs:label "tiene estado" ;
+    rdfs:domain ns:Medicion ;
+    rdfs:range xsd:string .
+
+ns:tieneFecha a owl:DatatypeProperty ;
+    rdfs:label "tiene fecha" ;
+    rdfs:domain ns:Medicion ;
+    rdfs:range xsd:date .
+
+ns:tieneHora a owl:DatatypeProperty ;
+    rdfs:label "tiene hora" ;
+    rdfs:domain ns:Medicion ;
+    rdfs:range xsd:integer .
+
+ns:tieneMagnitud a owl:ObjectProperty ;
+    rdfs:label "tiene magnitud" ;
+    rdfs:domain ns:Estacion ;
+    rdfs:range ns:Magnitud .
+
+ns:tieneMedicion a owl:ObjectProperty ;
+    rdfs:label "tiene medicion" ;
+    rdfs:domain ns:PuntoMuestreo ;
+    rdfs:range ns:Medicion .
+
+ns:tieneMunicipio a owl:ObjectProperty ;
+    rdfs:label "tiene municipio" ;
+    rdfs:domain ns:Provincia ;
+    rdfs:range ns:Municipio .
+
+ns:tienePuntoMuestreo a owl:ObjectProperty ;
+    rdfs:label "tiene punto muestreo" ;
+    rdfs:domain ns:Magnitud ;
+    rdfs:range ns:PuntoMuestreo .
+
+ns:tieneUbicacion a owl:ObjectProperty ;
+    rdfs:label "tiene ubicacion" ;
+    rdfs:domain ns:Estacion ;
+    rdfs:range ns:Ubicacion .
+
+ns:tieneValor a owl:DatatypeProperty ;
+    rdfs:label "tiene valor" ;
+    rdfs:domain ns:Medicion ;
+    rdfs:range xsd:decimal .
+
+ns:tieneAno a owl:DatatypeProperty ;
+    rdfs:label "tiene año" ;
+    rdfs:domain ns:Medicion ;
+    rdfs:range xsd:integer .
+
+ns:tieneMes a owl:DatatypeProperty ;
+    rdfs:label "tiene mes" ;
+    rdfs:domain ns:Medicion ;
+    rdfs:range xsd:integer .
+
+ns:tieneDia a owl:DatatypeProperty ;
+    rdfs:label "tiene dia" ;
+    rdfs:domain ns:Medicion ;
+    rdfs:range xsd:integer .
+
+wd:same_as_wikidata_madrid a owl:ObjectProperty ;
+    rdfs:label "same as wikidata madrid" ;
+    rdfs:domain ns:Municipio ;
+    rdfs:range owl:Thing .
+
+wd:same_as_wikidata_madrid_landmarks a owl:ObjectProperty ;
+    rdfs:label "same as wikidata madrid landmarks" ;
+    rdfs:domain ns:Ubicacion ;
+    rdfs:range owl:Thing .
+
+
+ns:Provincia a owl:Class ;
+    rdfs:label "Provincia" .
+
+ns:Magnitud a owl:Class ;
+    rdfs:label "Magnitud" .
+
+ns:PuntoMuestreo a owl:Class ;
+    rdfs:label "Punto Muestreo" .
+
+ns:Ubicacion a owl:Class ;
+    rdfs:label "Ubicacion" .
+
+ns:Estacion a owl:Class ;
+    rdfs:label "Estacion" .
+
+ns:Medicion a owl:Class ;
+    rdfs:label "Medicion" .
+
+ns:Municipio a owl:Class ;
+    rdfs:label "Municipio" .

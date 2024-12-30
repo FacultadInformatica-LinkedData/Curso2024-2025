@@ -1,0 +1,106 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ex: <http://smartcity.linkeddata.es/concesiones_zonas_verdes/ontologia/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+# TriplesMap 1: Concesion
+<http://smartcity.linkeddata.es/concesiones_zonas_verdes/mapeo/TriplesMap1> a rr:TriplesMap;
+    rml:logicalSource [
+        rml:source "./csv/ConcesionesYAutorizaciones-updated-with-links.csv";
+        rml:referenceFormulation ql:CSV 
+    ];
+    rr:subjectMap [
+        rr:template "http://smartcity.linkeddata.es/concesiones_zonas_verdes/recursos/concesion/{Número de archivo}";
+        rr:class ex:Concesion
+    ];
+    rr:predicateObjectMap [
+        rr:predicate ex:tieneDistrito;
+        rr:objectMap [
+            rr:template "http://smartcity.linkeddata.es/concesiones_zonas_verdes/recursos/distrito/{Distrito}"
+        ]
+    ];
+    rr:predicateObjectMap [
+        rr:predicate ex:tieneApartado;
+        rr:objectMap [
+            rr:template "http://smartcity.linkeddata.es/concesiones_zonas_verdes/recursos/apartado/{Apartado}"
+        ]
+    ];
+    rr:predicateObjectMap [
+        rr:predicate ex:tieneDenominacion;
+        rr:objectMap [
+            rr:template "http://smartcity.linkeddata.es/concesiones_zonas_verdes/recursos/denominacion/{Denominación}"
+        ]
+    ];
+    rr:predicateObjectMap [
+        rr:predicate ex:tieneSituacion;
+        rr:objectMap [
+            rml:reference "Situación";
+            rr:datatype xsd:string
+        ]
+    ].
+
+# TriplesMap 2: Distrito
+<http://smartcity.linkeddata.es/concesiones_zonas_verdes/mapeo/TriplesMap2> a rr:TriplesMap;
+    rml:logicalSource [
+        rml:source "./csv/ConcesionesYAutorizaciones-updated-with-links.csv";
+        rml:referenceFormulation ql:CSV 
+    ];
+    rr:subjectMap [
+        rr:template "http://smartcity.linkeddata.es/concesiones_zonas_verdes/recursos/distrito/{Distrito}";
+        rr:class ex:Distrito
+    ];
+    rr:predicateObjectMap [
+        rr:predicate rdfs:label;
+        rr:objectMap [
+            rml:reference "Distrito";
+            rr:datatype xsd:string
+        ]
+    ];
+    # Añadido: predicateObjectMap para enlazar con Wikidata
+    rr:predicateObjectMap [
+        rr:predicate <http://www.w3.org/2002/07/owl#sameAs>;
+        rr:objectMap [
+            rml:reference "same_as_wikidata_distrito";
+            rr:datatype xsd:anyURI
+        ]
+    ].
+
+
+# TriplesMap 3: Apartado
+<http://smartcity.linkeddata.es/concesiones_zonas_verdes/mapeo/TriplesMap3> a rr:TriplesMap;
+    rml:logicalSource [
+        rml:source "./csv/ConcesionesYAutorizaciones-updated-with-links.csv";
+        rml:referenceFormulation ql:CSV 
+    ];
+    rr:subjectMap [
+        rr:template "http://smartcity.linkeddata.es/concesiones_zonas_verdes/recursos/apartado/{Apartado}";
+        rr:class ex:Apartado
+    ];
+    rr:predicateObjectMap [
+        rr:predicate rdfs:label;
+        rr:objectMap [
+            rml:reference "Apartado";
+            rr:datatype xsd:string
+        ]
+    ].
+
+# TriplesMap 4: Denominacion
+<http://smartcity.linkeddata.es/concesiones_zonas_verdes/mapeo/TriplesMap4> a rr:TriplesMap;
+    rml:logicalSource [
+        rml:source "./csv/ConcesionesYAutorizaciones-updated-with-links.csv";
+        rml:referenceFormulation ql:CSV 
+    ];
+    rr:subjectMap [
+        rr:template "http://smartcity.linkeddata.es/concesiones_zonas_verdes/recursos/denominacion/{Denominación}";
+        rr:class ex:Denominacion
+    ];
+    rr:predicateObjectMap [
+        rr:predicate rdfs:label;
+        rr:objectMap [
+            rml:reference "Denominación";
+            rr:datatype xsd:string
+        ]
+    ].

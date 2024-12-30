@@ -1,0 +1,134 @@
+prefixes:
+  rr: http://www.w3.org/ns/r2rml#
+  rml: http://semweb.mmlab.be/ns/rml#
+  ql: http://www.w3.org/2001/XMLSchema#
+  vocab: http://semanticweb.es/
+  xsd: http://www.w3.org/2001/XMLSchema#
+
+mappings:
+  estacion:
+    sources:
+      - [horario.csv~csv]
+    s: http://semanticweb.es/airquality/estacion/$(ESTACION)
+    po:
+      - [a, vocab:Estacion]
+      - [vocab:provincia, $(PROVINCIA), xsd:string]
+      - [vocab:municipio, $(MUNICIPIO), xsd:string]
+      - [vocab:magnitud, $(MAGNITUD), xsd:string]
+
+  punto_muestreo:
+    sources:
+      - [horario.csv~csv]
+    s: http://semanticweb.es/airquality/puntoMuestreo/$(PUNTO_MUESTREO)
+    po:
+      - [a, vocab:PuntoMuestreo]
+      - [vocab:fecha, $(ANO), xsd:gYear]
+      - [vocab:fecha, $(MES), xsd:gMonth]
+      - [vocab:fecha, $(DIA), xsd:gDay]
+      
+      - p: vocab:valorPorHora
+        o: $(H01), xsd:decimal
+      - p: vocab:valorPorHora
+        o: $(H02), xsd:decimal
+      - p: vocab:valorPorHora
+        o: $(H03), xsd:decimal
+      - p: vocab:valorPorHora
+        o: $(H04), xsd:decimal
+      - p: vocab:valorPorHora
+        o: $(H05), xsd:decimal
+      - p: vocab:valorPorHora
+        o: $(H06), xsd:decimal
+      - p: vocab:valorPorHora
+        o: $(H07), xsd:decimal
+      - p: vocab:valorPorHora
+        o: $(H08), xsd:decimal
+      - p: vocab:valorPorHora
+        o: $(H09), xsd:decimal
+      - p: vocab:valorPorHora
+        o: $(H10), xsd:decimal
+      - p: vocab:valorPorHora
+        o: $(H11), xsd:decimal
+      - p: vocab:valorPorHora
+        o: $(H12), xsd:decimal
+      - p: vocab:valorPorHora
+        o: $(H13), xsd:decimal
+      - p: vocab:valorPorHora
+        o: $(H14), xsd:decimal
+      - p: vocab:valorPorHora
+        o: $(H15), xsd:decimal
+      - p: vocab:valorPorHora
+        o: $(H16), xsd:decimal
+      - p: vocab:valorPorHora
+        o: $(H17), xsd:decimal
+      - p: vocab:valorPorHora
+        o: $(H18), xsd:decimal
+      - p: vocab:valorPorHora
+        o: $(H19), xsd:decimal
+      - p: vocab:valorPorHora
+        o: $(H20), xsd:decimal
+      - p: vocab:valorPorHora
+        o: $(H21), xsd:decimal
+      - p: vocab:valorPorHora
+        o: $(H22), xsd:decimal
+      - p: vocab:valorPorHora
+        o: $(H23), xsd:decimal
+      - p: vocab:valorPorHora
+        o: $(H24), xsd:decimal
+
+      - p: vocab:validacion
+        o: $(V01), xsd:string
+      - p: vocab:validacion
+        o: $(V02), xsd:string
+      - p: vocab:validacion
+        o: $(V03), xsd:string
+      - p: vocab:validacion
+        o: $(V04), xsd:string
+      - p: vocab:validacion
+        o: $(V05), xsd:string
+      - p: vocab:validacion
+        o: $(V06), xsd:string
+      - p: vocab:validacion
+        o: $(V07), xsd:string
+      - p: vocab:validacion
+        o: $(V08), xsd:string
+      - p: vocab:validacion
+        o: $(V09), xsd:string
+      - p: vocab:validacion
+        o: $(V10), xsd:string
+      - p: vocab:validacion
+        o: $(V11), xsd:string
+      - p: vocab:validacion
+        o: $(V12), xsd:string
+      - p: vocab:validacion
+        o: $(V13), xsd:string
+      - p: vocab:validacion
+        o: $(V14), xsd:string
+      - p: vocab:validacion
+        o: $(V15), xsd:string
+      - p: vocab:validacion
+        o: $(V16), xsd:string
+      - p: vocab:validacion
+        o: $(V17), xsd:string
+      - p: vocab:validacion
+        o: $(V18), xsd:string
+      - p: vocab:validacion
+        o: $(V19), xsd:string
+      - p: vocab:validacion
+        o: $(V20), xsd:string
+      - p: vocab:validacion
+        o: $(V21), xsd:string
+      - p: vocab:validacion
+        o: $(V22), xsd:string
+      - p: vocab:validacion
+        o: $(V23), xsd:string
+      - p: vocab:validacion
+        o: $(V24), xsd:string
+
+  estacion_punto_muestreo:
+    sources:
+      - [horario.csv~csv]
+    s: http://semanticweb.es/airquality/estacion/$(ESTACION)
+    po:
+      - [a, vocab:Estacion]
+      - p: vocab:tienePuntoDeMuestreo
+        o: http://semanticweb.es/airquality/puntoMuestreo/$(PUNTO_MUESTREO)

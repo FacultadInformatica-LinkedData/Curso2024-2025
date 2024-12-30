@@ -1,0 +1,121 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ns: <https://websemantica.net/Group03/ontology/CamarasBcn#> .
+@prefix sc: <https://schema.org/> .
+
+# Forma para la clase Barrio
+ns:BarrioShape
+    a sh:NodeShape ;
+    sh:targetClass ns:Barrio ;                         # Aplica esta forma a todos los nodos de tipo Barrio
+    sh:property [
+        sh:path ns:tieneCodigoBarrio ;                 # La propiedad tieneCodigoBarrio
+        sh:datatype xsd:integer ;                      # Debe ser un número entero
+        sh:minCount 1 ;                                # Debe aparecer al menos una vez
+    ] ;
+    sh:property [
+        sh:path ns:tieneNombreBarrio ;                 # La propiedad tieneNombreBarrio
+        sh:datatype xsd:string ;                       # Debe ser una cadena de texto
+        sh:minCount 1 ;                                # Debe aparecer al menos una vez
+    ] ;
+    sh:property [
+        sh:path ns:enDistrito ;                        # La propiedad enDistrito
+        sh:node ns:DistritoShape ;                     # Debe referirse a un nodo que cumple con la forma Distrito
+        sh:minCount 1 ;                                # Debe aparecer al menos una vez
+    ] .
+
+# Forma para la clase Distrito
+ns:DistritoShape
+    a sh:NodeShape ;
+    sh:targetClass ns:Distrito ;                       # Aplica esta forma a todos los nodos de tipo Distrito
+    sh:property [
+        sh:path ns:tieneCodigoDistrito ;               # La propiedad tieneCodigoDistrito
+        sh:datatype xsd:integer ;                      # Debe ser un número entero
+        sh:minCount 1 ;                                # Debe aparecer al menos una vez
+    ] ;
+    sh:property [
+        sh:path ns:tieneNombreDistrito ;               # La propiedad tieneNombreDistrito
+        sh:datatype xsd:string ;                       # Debe ser una cadena de texto
+        sh:minCount 1 ;                                # Debe aparecer al menos una vez
+    ] .
+
+# Forma para la clase Camara
+ns:CamaraShape
+    a sh:NodeShape ;
+    sh:targetClass ns:Camara ;                         # Aplica esta forma a todos los nodos de tipo Camara
+    
+    # Propiedad: latitud
+    sh:property [
+        sh:path sc:latitud ;
+        sh:datatype xsd:decimal ;
+        sh:minCount 1 ;
+    ] ;
+    
+    # Propiedad: longitud
+    sh:property [
+        sh:path sc:longitud ;
+        sh:datatype xsd:decimal ;
+        sh:minCount 1 ;
+    ] ;
+    
+    # Propiedad: enBarrio (relación con la clase Barrio)
+    sh:property [
+        sh:path ns:enBarrio ;
+        sh:node ns:BarrioShape ;
+        sh:minCount 1 ;
+    ] ;
+    
+    # Propiedad: tieneCodigoCamara
+    sh:property [
+        sh:path ns:tieneCodigoCamara ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+    ] ;
+    
+    # Propiedad: tieneFechaAltaCamara
+    sh:property [
+        sh:path ns:tieneFechaAltaCamara ;
+        sh:datatype xsd:date ;
+        sh:minCount 1 ;
+    ] ;
+    
+    # Propiedad: tieneIdCamara
+    sh:property [
+        sh:path ns:tieneIdCamara ;
+        sh:datatype xsd:integer ;
+        sh:minCount 1 ;
+    ] ;
+    
+    # Propiedad: tieneNumeroCamara
+    sh:property [
+        sh:path ns:tieneNumeroCamara ;
+        sh:datatype xsd:integer ;
+        sh:minCount 1 ;
+    ] ;
+    
+    # Propiedad: tieneSoporteCamara
+    sh:property [
+        sh:path ns:tieneSoporteCamara ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+    ] ;
+    
+    # Propiedad: tieneTipoCamara
+    sh:property [
+        sh:path ns:tieneTipoCamara ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+    ] ;
+    
+    # Propiedad: tieneX_ETRS89Camara
+    sh:property [
+        sh:path ns:tieneX_ETRS89Camara ;
+        sh:datatype xsd:integer ;
+        sh:minCount 1 ;
+    ] ;
+    
+    # Propiedad: tieneY_ETRS89Camara
+    sh:property [
+        sh:path ns:tieneY_ETRS89Camara ;
+        sh:datatype xsd:integer ;
+        sh:minCount 1 ;
+    ] .

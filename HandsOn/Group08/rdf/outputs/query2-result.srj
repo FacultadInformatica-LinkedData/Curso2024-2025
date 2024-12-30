@@ -1,0 +1,2332 @@
+{
+  "head" : {
+    "vars" : [
+      "neighbourhood",
+      "linkWikidata"
+    ]
+  },
+  "results" : {
+    "bindings" : [
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "Rosas"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q18880469"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "Rosas"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q2001937"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "Rosas"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q56155322"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "ROSAS"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q18880469"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "ROSAS"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q2001937"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "ROSAS"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q56155322"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "Moscardó"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q11937679"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "Moscardó"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q953368"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "MOSCARDO"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q11937679"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "MOSCARDO"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q953368"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "Valdefuentes"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q10388714"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "Valdefuentes"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q1928529"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "Valdefuentes"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q3844841"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "VALDEFUENTES"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q10388714"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "VALDEFUENTES"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q1928529"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "VALDEFUENTES"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q3844841"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "Fuentelarreina"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q10286156"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "Fuentelarreina"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q110747394"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "Fuentelarreina"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q656196"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "FUENTELARREINA"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q10286156"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "FUENTELARREINA"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q110747394"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "FUENTELARREINA"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q656196"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "Las Águilas"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q5971372"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "Las Águilas"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q794954"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "LAS AGUILAS"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q5971372"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "LAS AGUILAS"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q794954"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "Palacio"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q1763376"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "Palacio"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q2136510"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "Palacio"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q6080106"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "PALACIO"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q1763376"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "PALACIO"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q2136510"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "PALACIO"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q6080106"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "Buenavista"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q1001991"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "Buenavista"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q953929"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "BUENAVISTA"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q1001991"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "BUENAVISTA"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q953929"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "Goya"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q1773521"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "Goya"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q28070781"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "Goya"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q3814578"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "GOYA"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q1773521"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "GOYA"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q28070781"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "GOYA"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q3814578"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "Imperial"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q118847930"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "Imperial"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q2000929"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "Imperial"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q3773740"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "IMPERIAL"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q118847930"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "IMPERIAL"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q2000929"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "IMPERIAL"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q3773740"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "Universidad"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q1763376"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "Universidad"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q10387767"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "Universidad"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q6080095"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "UNIVERSIDAD"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q1763376"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "UNIVERSIDAD"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q10387767"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "UNIVERSIDAD"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q6080095"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "Trafalgar"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q10384027"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "Trafalgar"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q1763370"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "Trafalgar"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q27947826"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "TRAFALGAR"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q10384027"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "TRAFALGAR"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q1763370"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "TRAFALGAR"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q27947826"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "Almagro"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q1763370"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "Almagro"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q10954432"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "Almagro"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q26844339"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "ALMAGRO"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q1763370"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "ALMAGRO"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q10954432"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "ALMAGRO"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q26844339"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "Justicia"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q1763376"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "Justicia"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q1992319"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "Justicia"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q6080233"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "JUSTICIA"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q1763376"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "JUSTICIA"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q1992319"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "JUSTICIA"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q6080233"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "Recoletos"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q1773521"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "Recoletos"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q28015873"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "Recoletos"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q3814551"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "RECOLETOS"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q1773521"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "RECOLETOS"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q28015873"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "RECOLETOS"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q3814551"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "Cortes"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q1763376"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "Cortes"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q2535637"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "Cortes"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q740210"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "CORTES"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q1763376"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "CORTES"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q2535637"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "CORTES"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q740210"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "Recoletos"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q20031523"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "RECOLETOS"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q20031523"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "Cortes"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q6080004"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "CORTES"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q6080004"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "Sol"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q1763376"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "Sol"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q2424746"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "Sol"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q2465181"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "SOL"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q1763376"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "SOL"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q2424746"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "SOL"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q2465181"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "Trafalgar"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q5740840"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "TRAFALGAR"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q5740840"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "Palacio"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q1326261"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "PALACIO"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q1326261"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "Jerónimos"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q10306766"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "Jerónimos"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q2002296"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "Jerónimos"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q29903983"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "LOS JERONIMOS"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q10306766"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "LOS JERONIMOS"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q2002296"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "LOS JERONIMOS"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q29903983"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "Sol"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q1123493"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "SOL"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q1123493"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "Cortes"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q5482884"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "CORTES"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q5482884"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "Castellana"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q1773521"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "Castellana"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q20031523"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "Castellana"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q4781"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "CASTELLANA"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q1773521"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "CASTELLANA"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q20031523"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "CASTELLANA"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q4781"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "Argüelles"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q17421317"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "Argüelles"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q2017682"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "Argüelles"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q64874"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "ARGUELLES"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q17421317"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "ARGUELLES"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q2017682"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "ARGUELLES"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q64874"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "Justicia"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q27051120"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "JUSTICIA"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q27051120"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "Sol"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q113986952"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "SOL"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q113986952"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "Justicia"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q16620311"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "JUSTICIA"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q16620311"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "Cuatro Caminos"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q1773540"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "Cuatro Caminos"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q26750807"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "Cuatro Caminos"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q5824684"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "CUATRO CAMINOS"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q1773540"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "CUATRO CAMINOS"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q26750807"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "CUATRO CAMINOS"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q5824684"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "Recoletos"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q2550870"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "RECOLETOS"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q2550870"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "Embajadores"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q1763376"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "Embajadores"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q2056515"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "Embajadores"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q2449844"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "EMBAJADORES"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q1763376"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "EMBAJADORES"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q2056515"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "EMBAJADORES"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q2449844"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "Castillejos"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q1773540"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "Castillejos"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q11913212"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "Castillejos"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q26810980"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "CASTILLEJOS"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q1773540"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "CASTILLEJOS"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q11913212"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "CASTILLEJOS"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q26810980"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "Castillejos"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q26761687"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "CASTILLEJOS"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q26761687"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "La Guindalera"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q1773521"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "La Guindalera"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q3814559"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "GUINDALERA"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q1773521"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "GUINDALERA"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q3814559"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "Simancas"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q2001937"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "Simancas"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q10371626"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "SIMANCAS"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q2001937"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "SIMANCAS"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q10371626"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "San Pascual"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q165612"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "San Pascual"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q1763694"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "SAN PASCUAL"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q165612"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "SAN PASCUAL"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q1763694"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "Embajadores"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q26248358"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "EMBAJADORES"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q26248358"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "Pacífico"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q2002296"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "Pacífico"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q3773753"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "Pacífico"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q5714227"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "PACIFICO"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q2002296"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "PACIFICO"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q3773753"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "PACIFICO"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q5714227"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "Nueva España"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q10338128"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "Nueva España"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q1766348"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "NUEVA ESPAÑA"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q10338128"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "NUEVA ESPAÑA"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q1766348"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "Adelfas"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q2002296"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "Adelfas"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q3774001"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "ADELFAS"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q2002296"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "ADELFAS"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q3774001"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "Palacio"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q2193218"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "PALACIO"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q2193218"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "Media Legua"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q110746672"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "Media Legua"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q2076109"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "Media Legua"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q9031035"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "MEDIA LEGUA"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q110746672"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "MEDIA LEGUA"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q2076109"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "MEDIA LEGUA"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q9031035"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "Cuatro Caminos"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q26833571"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "CUATRO CAMINOS"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q26833571"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "Cuatro Caminos"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q26761632"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "CUATRO CAMINOS"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q26761632"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "Lista"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q1773521"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "Lista"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q28059485"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "Lista"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q4779"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "LISTA"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q1773521"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "LISTA"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q28059485"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "LISTA"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q4779"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "Justicia"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q6080146"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "JUSTICIA"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q6080146"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "Cuatro Caminos"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q27212874"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "CUATRO CAMINOS"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q27212874"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "Barrio de Puerta del Ángel"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q794954"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "Barrio de Puerta del Ángel"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q26736141"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "Barrio de Puerta del Ángel"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q31142"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "PUERTA DEL ANGEL"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q794954"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "PUERTA DEL ANGEL"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q26736141"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "PUERTA DEL ANGEL"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q31142"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "Prosperidad"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q1766348"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "Prosperidad"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q4776"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "Prosperidad"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q5686040"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "PROSPERIDAD"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q1766348"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "PROSPERIDAD"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q4776"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "PROSPERIDAD"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q5686040"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "Castellana"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q16620302"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "CASTELLANA"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q16620302"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "Ciudad Jardín"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q1766348"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "Ciudad Jardín"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q27038851"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "Ciudad Jardín"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q3773744"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "CIUDAD JARDIN"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q1766348"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "CIUDAD JARDIN"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q27038851"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "CIUDAD JARDIN"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q3773744"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "Castellana"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q5740879"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "CASTELLANA"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q5740879"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "Recoletos"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q5740879"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "RECOLETOS"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q5740879"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "Aravaca"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q2017682"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "Aravaca"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q3314682"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "ARAVACA"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q2017682"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "ARAVACA"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q3314682"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "Niño Jesús"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q2002296"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "Niño Jesús"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q3773746"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "NIÑO JESUS"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q2002296"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "NIÑO JESUS"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q3773746"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "Ciudad Jardín"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q5741020"
+        }
+      },
+      {
+        "neighbourhood" : {
+          "type" : "literal",
+          "value" : "CIUDAD JARDIN"
+        },
+        "linkWikidata" : {
+          "type" : "uri",
+          "value" : "https://wikidata.org/entity/Q5741020"
+        }
+      }
+    ]
+  }
+}

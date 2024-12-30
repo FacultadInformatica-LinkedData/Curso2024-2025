@@ -1,0 +1,807 @@
+[
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Hora Solicitud",
+    "expression": "grel:if(length(value) == 7, \"0\" + value, value)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Hora Solicitud using expression grel:if(length(value) == 7, \"0\" + value, value)"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Hora Intervención",
+    "expression": "grel:if(length(value) == 7, \"0\" + value, value)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Hora Intervención using expression grel:if(length(value) == 7, \"0\" + value, value)"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Hora Solicitud",
+          "expression": "isBlank(value)",
+          "columnName": "Hora Solicitud",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": true,
+                "l": "true"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Hora Solicitud",
+          "expression": "isBlank(value)",
+          "columnName": "Hora Solicitud",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": false,
+                "l": "false"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "Hora Intervención",
+          "expression": "isBlank(value)",
+          "columnName": "Hora Intervención",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": true,
+                "l": "true"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Distrito",
+          "expression": "isBlank(value)",
+          "columnName": "Distrito",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": true,
+                "l": "true"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Código",
+          "expression": "isBlank(value)",
+          "columnName": "Código",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": true,
+                "l": "true"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "Año",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "2023"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": 2023
+      }
+    ],
+    "description": "Mass edit cells in column Año"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "baseColumnName": "Año",
+    "expression": "grel:\"ID-\" + cells[\"Mes\"].value[0] + cells[\"Hora Solicitud\"].value + \"-\" + rowIndex",
+    "onError": "set-to-blank",
+    "newColumnName": "ID",
+    "columnInsertIndex": 1,
+    "description": "Create column ID at index 1 based on column Año using expression grel:\"ID-\" + cells[\"Mes\"].value[0] + cells[\"Hora Solicitud\"].value + \"-\" + rowIndex"
+  },
+  {
+    "op": "core/column-move",
+    "columnName": "ID",
+    "index": 0,
+    "description": "Move column ID to position 0"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Distrito",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q3032114",
+        "name": "district of Madrid"
+      },
+      "autoMatch": true,
+      "batchSize": 10,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column Distrito to type Q3032114"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Distrito",
+    "similarValue": "FUENCARRAL",
+    "judgment": "matched",
+    "match": {
+      "id": "Q656196",
+      "name": "Fuencarral-El Pardo",
+      "types": [
+        "Q3032114"
+      ],
+      "score": 69
+    },
+    "shareNewTopics": false,
+    "description": "Match item Fuencarral-El Pardo (Q656196) for cells containing \"FUENCARRAL\" in column Distrito"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Distrito",
+    "similarValue": "VALLECAS PTE.",
+    "judgment": "matched",
+    "match": {
+      "id": "Q2003054",
+      "name": "Puente de Vallecas",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Puente de Vallecas (Q2003054) for cells containing \"VALLECAS PTE.\" in column Distrito"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "Distrito",
+    "expression": "grel:\"https://wikidata.org/entity/\" + cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "district_wikidata_id",
+    "columnInsertIndex": 7,
+    "description": "Create column district_wikidata_id at index 7 based on column Distrito using expression grel:\"https://wikidata.org/entity/\" + cell.recon.match.id"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Hospital",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q16917",
+        "name": "hospital"
+      },
+      "autoMatch": true,
+      "batchSize": 10,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column Hospital to type Q16917"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Hospital",
+    "similarValue": "La Paz\r",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5902951",
+      "name": "Hospital Universitario La Paz",
+      "types": [
+        "Q1059324",
+        "Q16917"
+      ],
+      "score": 38
+    },
+    "shareNewTopics": false,
+    "description": "Match item Hospital Universitario La Paz (Q5902951) for cells containing \"La Paz\r\" in column Hospital"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Hospital",
+    "similarValue": "Concepción (Fund. J. Díaz)\r",
+    "judgment": "matched",
+    "match": {
+      "id": "Q10946560",
+      "name": "Hospital Universitario Fundación Jiménez Díaz",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Hospital Universitario Fundación Jiménez Díaz (Q10946560) for cells containing \"Concepción (Fund. J. Díaz)\r\" in column Hospital"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Hospital",
+    "similarValue": "Doce de Octubre\r",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5902531",
+      "name": "Hospital Universitario 12 de Octubre",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Hospital Universitario 12 de Octubre (Q5902531) for cells containing \"Doce de Octubre\r\" in column Hospital"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Hospital: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Hospital",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Hospital",
+    "similarValue": "Clínico San Carlos\r",
+    "judgment": "matched",
+    "match": {
+      "id": "Q6673106",
+      "name": "Hospital Clínico San Carlos",
+      "types": [
+        "Q1059324",
+        "Q16917"
+      ],
+      "score": 82
+    },
+    "shareNewTopics": false,
+    "description": "Match item Hospital Clínico San Carlos (Q6673106) for cells containing \"Clínico San Carlos\r\" in column Hospital"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Hospital: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Hospital",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Hospital",
+    "similarValue": "Central de la Defensa\r",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5902561",
+      "name": "Gómez Ulla Military Hospital",
+      "types": [
+        "Q2387974",
+        "Q16917"
+      ],
+      "score": 68
+    },
+    "shareNewTopics": false,
+    "description": "Match item Gómez Ulla Military Hospital (Q5902561) for cells containing \"Central de la Defensa\r\" in column Hospital"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Hospital: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Hospital",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Hospital",
+    "similarValue": "La Princesa\r",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5903033",
+      "name": "Hospital Universitario de La Princesa",
+      "types": [
+        "Q1059324",
+        "Q16917"
+      ],
+      "score": 65
+    },
+    "shareNewTopics": false,
+    "description": "Match item Hospital Universitario de La Princesa (Q5903033) for cells containing \"La Princesa\r\" in column Hospital"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Hospital: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Hospital",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Hospital",
+    "similarValue": "Gregorio Marañón\r",
+    "judgment": "matched",
+    "match": {
+      "id": "Q30253672",
+      "name": "Hospital General Universitario Gregorio Marañón",
+      "types": [
+        "Q4287745",
+        "Q16917"
+      ],
+      "score": 52
+    },
+    "shareNewTopics": false,
+    "description": "Match item Hospital General Universitario Gregorio Marañón (Q30253672) for cells containing \"Gregorio Marañón\r\" in column Hospital"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Hospital: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Hospital",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Hospital",
+    "similarValue": "INFANTA LEONOR\r",
+    "judgment": "matched",
+    "match": {
+      "id": "Q30280177",
+      "name": "Hospital Universitario Infanta Leonor",
+      "types": [
+        "Q4287745",
+        "Q16917"
+      ],
+      "score": 72
+    },
+    "shareNewTopics": false,
+    "description": "Match item Hospital Universitario Infanta Leonor (Q30280177) for cells containing \"INFANTA LEONOR\r\" in column Hospital"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Hospital: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Hospital",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Hospital",
+    "similarValue": "Ramón y Cajal\r",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5902966",
+      "name": "Hospital Universitario Ramón y Cajal",
+      "types": [
+        "Q1059324",
+        "Q16917"
+      ],
+      "score": 74
+    },
+    "shareNewTopics": false,
+    "description": "Match item Hospital Universitario Ramón y Cajal (Q5902966) for cells containing \"Ramón y Cajal\r\" in column Hospital"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Hospital: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Hospital",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Hospital",
+    "similarValue": "Niño Jesús (Infantil)\r",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5902707",
+      "name": "Hospital del Niño Jesús",
+      "types": [
+        "Q1059324",
+        "Q4989906",
+        "Q16917"
+      ],
+      "score": 67
+    },
+    "shareNewTopics": false,
+    "description": "Match item Hospital del Niño Jesús (Q5902707) for cells containing \"Niño Jesús (Infantil)\r\" in column Hospital"
+  },
+  {
+    "op": "core/recon-clear-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Hospital: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Hospital",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Hospital",
+    "similarValue": "Centros Municipales (Asist. y  Albergues)\r",
+    "description": "Clear recon data for cells containing \"Centros Municipales (Asist. y  Albergues)\r\" in column Hospital"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Hospital: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Hospital",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "Hospital: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "Hospital",
+          "from": 32,
+          "to": 101,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": false,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Hospital",
+    "similarValue": "Getafe\r",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5903026",
+      "name": "Hospital Universitario de Getafe",
+      "types": [
+        "Q1059324",
+        "Q16917"
+      ],
+      "score": 32
+    },
+    "shareNewTopics": false,
+    "description": "Match item Hospital Universitario de Getafe (Q5903026) for cells containing \"Getafe\r\" in column Hospital"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Hospital: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Hospital",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "Hospital: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "Hospital",
+          "from": 32,
+          "to": 101,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": false,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Hospital",
+    "similarValue": "Doctor Rodriguez Lafora\r",
+    "judgment": "matched",
+    "match": {
+      "id": "Q87762021",
+      "name": "Hospital Dr. R. Lafora",
+      "types": [
+        "Q210999"
+      ],
+      "score": 56
+    },
+    "shareNewTopics": false,
+    "description": "Match item Hospital Dr. R. Lafora (Q87762021) for cells containing \"Doctor Rodriguez Lafora\r\" in column Hospital"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "Hospital",
+    "expression": "grel:\"https://wikidata.org/entity/\" + cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "hospital_wikidata_id",
+    "columnInsertIndex": 9,
+    "description": "Create column hospital_wikidata_id at index 9 based on column Hospital using expression grel:\"https://wikidata.org/entity/\" + cell.recon.match.id"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Mes",
+    "expression": "grel:if(value == \"ENERO\", \"--01\", \nif(value == \"FEBRERO\", \"--02\", \nif(value == \"MARZO\", \"--03\", \nif(value == \"ABRIL\", \"--04\", \nif(value == \"MAYO\", \"--05\", \nif(value == \"JUNIO\", \"--06\", \nif(value == \"JULIO\", \"--07\", \nif(value == \"AGOSTO\", \"--08\", \nif(value == \"SEPTIEMBRE\", \"--09\", \nif(value == \"OCTUBRE\", \"--10\", \nif(value == \"NOVIEMBRE\", \"--11\", \nif(value == \"DICIEMBRE\", \"--12\", value))))))))))))",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Mes using expression grel:if(value == \"ENERO\", \"--01\", \nif(value == \"FEBRERO\", \"--02\", \nif(value == \"MARZO\", \"--03\", \nif(value == \"ABRIL\", \"--04\", \nif(value == \"MAYO\", \"--05\", \nif(value == \"JUNIO\", \"--06\", \nif(value == \"JULIO\", \"--07\", \nif(value == \"AGOSTO\", \"--08\", \nif(value == \"SEPTIEMBRE\", \"--09\", \nif(value == \"OCTUBRE\", \"--10\", \nif(value == \"NOVIEMBRE\", \"--11\", \nif(value == \"DICIEMBRE\", \"--12\", value))))))))))))"
+  }
+]

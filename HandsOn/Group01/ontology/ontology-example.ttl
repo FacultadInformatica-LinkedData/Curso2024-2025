@@ -1,0 +1,37 @@
+@prefix ns: <http://smartcity.linkeddata.es/accidentes/ontologia/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix accidente: <http://smartcity.linkeddata.es/accidente/>
+@prefix distrito: <http://smartcity.linkeddata.es/distrito/>
+@prefix persona: <http://smartcity.linkeddata.es/persona/>
+@prefix lesividad: <http://smartcity.linkeddata.es/lesividad/>
+
+accidente:2023S040280 a ns:Accidente ;
+    ns:num_expediente "2023S040280"^^xsd:string ;
+    ns:tipo_accidente "Colisión fronto-lateral"^^xsd:string ;
+    ns:fecha 2024-04-01T14:09:00Z^^xsd:Date ;
+    ns:localizacion "AVDA. NICETO ALCALA ZAMORA / AUTOV. M-11"^^xsd:string ;
+    ns:numero 3 ;
+    ns:coordenada_x_utm 444913.056 ;
+    ns:coordenada_y_utm 4481427.179 ;
+    ns:estado_meteorologico "Lluvia debil"^^xsd:string .
+    ns:personaInvolucrada persona:C18S04028 ;
+    ns:estaEnDistrito distrito:16 ;
+
+persona:C18S04028 a ns:Persona ;
+    ns:id_persona "C18S04028"^^xsd:string ;
+    ns:tipo_persona "Conductor"^^xsd:string ;
+    ns:min_edad 55 ;
+    ns:max_edad 59 ;
+    ns:sexo "Hombre"^^xsd:string ;
+    ns:positiva_alcohol false^^xsd:boolean ;
+    ns:positiva_droga false^^xsd:boolean .
+    ns:tipo_vehiculo "Motocicleta > 125cc"^^xsd:string .
+    ns:tieneLesion lesividad:2 .
+
+lesividad:2 a ns:Lesividad ;
+    ns:cod_lesividad 2 ;
+    ns:lesividad "Ingreso inferior o igual a 24 horas"^^xsd:string .
+    
+distrito:2 a ns:Distrito ;
+    ns:cod_distrit 16 ;
+    ns:distrito "Hortaleza"^^xsd:string .

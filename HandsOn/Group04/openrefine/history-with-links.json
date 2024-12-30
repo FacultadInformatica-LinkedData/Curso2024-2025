@@ -1,0 +1,2427 @@
+[
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q1187580",
+        "name": "non-metropolitan district"
+      },
+      "autoMatch": true,
+      "batchSize": 10,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column District to type Q1187580"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District",
+    "similarValue": "Barking and Dagenham",
+    "judgment": "matched",
+    "match": {
+      "id": "Q205358",
+      "name": "London Borough of Barking and Dagenham",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item London Borough of Barking and Dagenham (Q205358) for cells containing \"Barking and Dagenham\" in column District"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District",
+    "similarValue": "Barnet",
+    "judgment": "matched",
+    "match": {
+      "id": "Q151048",
+      "name": "London Borough of Barnet",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item London Borough of Barnet (Q151048) for cells containing \"Barnet\" in column District"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District",
+    "similarValue": "Barnsley UA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1857382",
+      "name": "Barnsley",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Barnsley (Q1857382) for cells containing \"Barnsley UA\" in column District"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District",
+    "similarValue": "Bath and NE Somerset UA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q810793",
+      "name": "Bath and North East Somerset",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Bath and North East Somerset (Q810793) for cells containing \"Bath and NE Somerset UA\" in column District"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District",
+    "similarValue": "Bath and NE Somerset UA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q16966588",
+      "name": "Bath and North East Somerset Council",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Bath and North East Somerset Council (Q16966588) for cells containing \"Bath and NE Somerset UA\" in column District"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District",
+    "similarValue": "Bexley",
+    "judgment": "matched",
+    "match": {
+      "id": "Q207208",
+      "name": "London Borough of Bexley",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item London Borough of Bexley (Q207208) for cells containing \"Bexley\" in column District"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District",
+    "similarValue": "Birmingham UA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q20986424",
+      "name": "Birmingham",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Birmingham (Q20986424) for cells containing \"Birmingham UA\" in column District"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District",
+    "similarValue": "Blackburn with Darwen UA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q880782",
+      "name": "Blackburn with Darwen",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Blackburn with Darwen (Q880782) for cells containing \"Blackburn with Darwen UA\" in column District"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District",
+    "similarValue": "Blackpool UA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q20989106",
+      "name": "Blackpool",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Blackpool (Q20989106) for cells containing \"Blackpool UA\" in column District"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District",
+    "similarValue": "Bolton",
+    "judgment": "matched",
+    "match": {
+      "id": "Q184579",
+      "name": "Bolton",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Bolton (Q184579) for cells containing \"Bolton\" in column District"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District",
+    "similarValue": "Bournemouth UA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q20989094",
+      "name": "Bournemouth",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Bournemouth (Q20989094) for cells containing \"Bournemouth UA\" in column District"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District",
+    "similarValue": "Bracknell Forest UA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q16985082",
+      "name": "Bracknell Forest Council",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Bracknell Forest Council (Q16985082) for cells containing \"Bracknell Forest UA\" in column District"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District",
+    "similarValue": "Bradford UA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q896940",
+      "name": "Bradford-on-Avon",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Bradford-on-Avon (Q896940) for cells containing \"Bradford UA\" in column District"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District",
+    "similarValue": "Brent",
+    "judgment": "matched",
+    "match": {
+      "id": "Q427849",
+      "name": "Brentwood",
+      "types": [
+        "Q1187580",
+        "Q1006876"
+      ],
+      "score": 77
+    },
+    "shareNewTopics": false,
+    "description": "Match item Brentwood (Q427849) for cells containing \"Brent\" in column District"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District",
+    "similarValue": "Bury",
+    "judgment": "matched",
+    "match": {
+      "id": "Q47822",
+      "name": "Bury",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Bury (Q47822) for cells containing \"Bury\" in column District"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District",
+    "similarValue": "Brighton and Hove UA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1022488",
+      "name": "Brighton and Hove",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Brighton and Hove (Q1022488) for cells containing \"Brighton and Hove UA\" in column District"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District",
+    "similarValue": "Bromley",
+    "judgment": "matched",
+    "match": {
+      "id": "Q208201",
+      "name": "London Borough of Bromley",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item London Borough of Bromley (Q208201) for cells containing \"Bromley\" in column District"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District",
+    "similarValue": "Calderdale UA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1026448",
+      "name": "Calderdale",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Calderdale (Q1026448) for cells containing \"Calderdale UA\" in column District"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District",
+    "similarValue": "Camden",
+    "judgment": "matched",
+    "match": {
+      "id": "Q202088",
+      "name": "London Borough of Camden",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item London Borough of Camden (Q202088) for cells containing \"Camden\" in column District"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District",
+    "similarValue": "City of Bristol UA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q21693433",
+      "name": "City of Bristol",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item City of Bristol (Q21693433) for cells containing \"City of Bristol UA\" in column District"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District",
+    "similarValue": "City of Kingston-upon-Hull UA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q21885987",
+      "name": "City of Kingston upon Hull",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item City of Kingston upon Hull (Q21885987) for cells containing \"City of Kingston-upon-Hull UA\" in column District"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District",
+    "similarValue": "City of London",
+    "judgment": "matched",
+    "match": {
+      "id": "Q65043716",
+      "name": "City of London",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item City of London (Q65043716) for cells containing \"City of London\" in column District"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District",
+    "similarValue": "County of Herefordshire UA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q23129",
+      "name": "Herefordshire",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Herefordshire (Q23129) for cells containing \"County of Herefordshire UA\" in column District"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District",
+    "similarValue": "Coventry UA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q20986417",
+      "name": "Coventry",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Coventry (Q20986417) for cells containing \"Coventry UA\" in column District"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District",
+    "similarValue": "Croydon",
+    "judgment": "matched",
+    "match": {
+      "id": "Q26888",
+      "name": "London Borough of Croydon",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item London Borough of Croydon (Q26888) for cells containing \"Croydon\" in column District"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District",
+    "similarValue": "Darlington UA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q213181",
+      "name": "Darlington",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Darlington (Q213181) for cells containing \"Darlington UA\" in column District"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District",
+    "similarValue": "Derby UA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q21885980",
+      "name": "City of Derby",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item City of Derby (Q21885980) for cells containing \"Derby UA\" in column District"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District",
+    "similarValue": "Doncaster UA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q58900",
+      "name": "Doncaster",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Doncaster (Q58900) for cells containing \"Doncaster UA\" in column District"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District",
+    "similarValue": "Dudley UA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q213832",
+      "name": "Dudley",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Dudley (Q213832) for cells containing \"Dudley UA\" in column District"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District",
+    "similarValue": "Durham City",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1094098",
+      "name": "Durham",
+      "types": [
+        "Q1187580",
+        "Q19953632"
+      ],
+      "score": 88
+    },
+    "shareNewTopics": false,
+    "description": "Match item Durham (Q1094098) for cells containing \"Durham City\" in column District"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District",
+    "similarValue": "Ealing",
+    "judgment": "matched",
+    "match": {
+      "id": "Q207218",
+      "name": "London Borough of Ealing",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item London Borough of Ealing (Q207218) for cells containing \"Ealing\" in column District"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District",
+    "similarValue": "East Riding of Yorkshire UA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q16989282",
+      "name": "East Riding of Yorkshire Council",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item East Riding of Yorkshire Council (Q16989282) for cells containing \"East Riding of Yorkshire UA\" in column District"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District",
+    "similarValue": "Enfield",
+    "judgment": "matched",
+    "match": {
+      "id": "Q210531",
+      "name": "London Borough of Enfield",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item London Borough of Enfield (Q210531) for cells containing \"Enfield\" in column District"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District",
+    "similarValue": "Gateshead UA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q216372",
+      "name": "Gateshead",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Gateshead (Q216372) for cells containing \"Gateshead UA\" in column District"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District",
+    "similarValue": "Greenwich",
+    "judgment": "matched",
+    "match": {
+      "id": "Q179385",
+      "name": "Greenwich",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Greenwich (Q179385) for cells containing \"Greenwich\" in column District"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District",
+    "similarValue": "Hackney",
+    "judgment": "matched",
+    "match": {
+      "id": "Q205679",
+      "name": "London Borough of Hackney",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item London Borough of Hackney (Q205679) for cells containing \"Hackney\" in column District"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District",
+    "similarValue": "Halton UA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q376141",
+      "name": "Halton",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Halton (Q376141) for cells containing \"Halton UA\" in column District"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District",
+    "similarValue": "Hammersmith and Fulham",
+    "judgment": "matched",
+    "match": {
+      "id": "Q40478",
+      "name": "London Borough of Hammersmith and Fulham",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item London Borough of Hammersmith and Fulham (Q40478) for cells containing \"Hammersmith and Fulham\" in column District"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District",
+    "similarValue": "Haringey",
+    "judgment": "matched",
+    "match": {
+      "id": "Q213560",
+      "name": "London Borough of Haringey",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item London Borough of Haringey (Q213560) for cells containing \"Haringey\" in column District"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District",
+    "similarValue": "Harrow",
+    "judgment": "matched",
+    "match": {
+      "id": "Q210476",
+      "name": "London Borough of Harrow",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item London Borough of Harrow (Q210476) for cells containing \"Harrow\" in column District"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District",
+    "similarValue": "Hartlepool UA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q215752",
+      "name": "Hartlepool",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Hartlepool (Q215752) for cells containing \"Hartlepool UA\" in column District"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District",
+    "similarValue": "Havering",
+    "judgment": "matched",
+    "match": {
+      "id": "Q215038",
+      "name": "London Borough of Havering",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item London Borough of Havering (Q215038) for cells containing \"Havering\" in column District"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District",
+    "similarValue": "Hillingdon",
+    "judgment": "matched",
+    "match": {
+      "id": "Q205690",
+      "name": "London Borough of Hillingdon",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item London Borough of Hillingdon (Q205690) for cells containing \"Hillingdon\" in column District"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District",
+    "similarValue": "Hounslow",
+    "judgment": "matched",
+    "match": {
+      "id": "Q214162",
+      "name": "London Borough of Hounslow",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item London Borough of Hounslow (Q214162) for cells containing \"Hounslow\" in column District"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District",
+    "similarValue": "Isle of Wight UA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q9679",
+      "name": "Isle of Wight",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Isle of Wight (Q9679) for cells containing \"Isle of Wight UA\" in column District"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District",
+    "similarValue": "Islington",
+    "judgment": "matched",
+    "match": {
+      "id": "Q205817",
+      "name": "London Borough of Islington",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item London Borough of Islington (Q205817) for cells containing \"Islington\" in column District"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District",
+    "similarValue": "Kensington and Chelsea",
+    "judgment": "matched",
+    "match": {
+      "id": "Q188801",
+      "name": "Royal Borough of Kensington and Chelsea",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Royal Borough of Kensington and Chelsea (Q188801) for cells containing \"Kensington and Chelsea\" in column District"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District",
+    "similarValue": "Kingston upon Thames",
+    "judgment": "matched",
+    "match": {
+      "id": "Q32508",
+      "name": "Royal Borough of Kingston upon Thames",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Royal Borough of Kingston upon Thames (Q32508) for cells containing \"Kingston upon Thames\" in column District"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District",
+    "similarValue": "Kirklees UA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q918975",
+      "name": "Kirklees",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Kirklees (Q918975) for cells containing \"Kirklees UA\" in column District"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District",
+    "similarValue": "Knowsley",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1228523",
+      "name": "Knowsley",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Knowsley (Q1228523) for cells containing \"Knowsley\" in column District"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District",
+    "similarValue": "Lambeth",
+    "judgment": "matched",
+    "match": {
+      "id": "Q148349",
+      "name": "Lambeth",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Lambeth (Q148349) for cells containing \"Lambeth\" in column District"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District",
+    "similarValue": "Leeds UA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q39121",
+      "name": "Leeds",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Leeds (Q39121) for cells containing \"Leeds UA\" in column District"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District",
+    "similarValue": "Leicester UA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q83065",
+      "name": "Leicester",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Leicester (Q83065) for cells containing \"Leicester UA\" in column District"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District",
+    "similarValue": "Lewisham",
+    "judgment": "matched",
+    "match": {
+      "id": "Q215030",
+      "name": "London Borough of Lewisham",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item London Borough of Lewisham (Q215030) for cells containing \"Lewisham\" in column District"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District",
+    "similarValue": "Liverpool",
+    "judgment": "matched",
+    "match": {
+      "id": "Q24826",
+      "name": "Liverpool",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Liverpool (Q24826) for cells containing \"Liverpool\" in column District"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District",
+    "similarValue": "Luton UA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q21683239",
+      "name": "Luton",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Luton (Q21683239) for cells containing \"Luton UA\" in column District"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District",
+    "similarValue": "Malvern Hills",
+    "judgment": "matched",
+    "match": {
+      "id": "Q127688351",
+      "name": "Malvern Hills",
+      "types": [
+        "Q1187580"
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Malvern Hills (Q127688351) for cells containing \"Malvern Hills\" in column District"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District",
+    "similarValue": "Manchester",
+    "judgment": "matched",
+    "match": {
+      "id": "Q21525592",
+      "name": "Manchester",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Manchester (Q21525592) for cells containing \"Manchester\" in column District"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District",
+    "similarValue": "Medway UA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q797782",
+      "name": "Medway",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Medway (Q797782) for cells containing \"Medway UA\" in column District"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District",
+    "similarValue": "Merton",
+    "judgment": "matched",
+    "match": {
+      "id": "Q32504",
+      "name": "London Borough of Merton",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item London Borough of Merton (Q32504) for cells containing \"Merton\" in column District"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District",
+    "similarValue": "Middlesbrough UA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q171866",
+      "name": "Middlesbrough",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Middlesbrough (Q171866) for cells containing \"Middlesbrough UA\" in column District"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District",
+    "similarValue": "Milton Keynes UA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q204234",
+      "name": "Milton Keynes",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Milton Keynes (Q204234) for cells containing \"Milton Keynes UA\" in column District"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District",
+    "similarValue": "Newcastle upon Tyne UA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q21012735",
+      "name": "Newcastle upon Tyne",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Newcastle upon Tyne (Q21012735) for cells containing \"Newcastle upon Tyne UA\" in column District"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District",
+    "similarValue": "Newham",
+    "judgment": "matched",
+    "match": {
+      "id": "Q208139",
+      "name": "London Borough of Newham",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item London Borough of Newham (Q208139) for cells containing \"Newham\" in column District"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District",
+    "similarValue": "North East Lincolnshire UA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1342914",
+      "name": "North East Lincolnshire",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item North East Lincolnshire (Q1342914) for cells containing \"North East Lincolnshire UA\" in column District"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District",
+    "similarValue": "North Lincolnshire UA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q175945",
+      "name": "North Lincolnshire",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item North Lincolnshire (Q175945) for cells containing \"North Lincolnshire UA\" in column District"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District",
+    "similarValue": "North Somerset UA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q178196",
+      "name": "North Somerset",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item North Somerset (Q178196) for cells containing \"North Somerset UA\" in column District"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District",
+    "similarValue": "North Tyneside UA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1120443",
+      "name": "North Tyneside",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item North Tyneside (Q1120443) for cells containing \"North Tyneside UA\" in column District"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District",
+    "similarValue": "York UA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q42462",
+      "name": "York",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item York (Q42462) for cells containing \"York UA\" in column District"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District",
+    "similarValue": "Wolverhampton UA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q126269",
+      "name": "Wolverhampton",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Wolverhampton (Q126269) for cells containing \"Wolverhampton UA\" in column District"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District",
+    "similarValue": "Wokingham UA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1758432",
+      "name": "Wokingham",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Wokingham (Q1758432) for cells containing \"Wokingham UA\" in column District"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District",
+    "similarValue": "Wirral",
+    "judgment": "matched",
+    "match": {
+      "id": "Q11365639",
+      "name": "Wirral",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Wirral (Q11365639) for cells containing \"Wirral\" in column District"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District",
+    "similarValue": "Windsor and Maidenhead UA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1368496",
+      "name": "Windsor and Maidenhead",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Windsor and Maidenhead (Q1368496) for cells containing \"Windsor and Maidenhead UA\" in column District"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District",
+    "similarValue": "Wigan UA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q208143",
+      "name": "Wigan",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Wigan (Q208143) for cells containing \"Wigan UA\" in column District"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District",
+    "similarValue": "Westminster",
+    "judgment": "matched",
+    "match": {
+      "id": "Q179351",
+      "name": "City of Westminster",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item City of Westminster (Q179351) for cells containing \"Westminster\" in column District"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District",
+    "similarValue": "West Berkshire UA (Newbury)",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1473780",
+      "name": "West Berkshire",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item West Berkshire (Q1473780) for cells containing \"West Berkshire UA (Newbury)\" in column District"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District",
+    "similarValue": "Warrington UA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q894095",
+      "name": "Warrington",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Warrington (Q894095) for cells containing \"Warrington UA\" in column District"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District",
+    "similarValue": "Wandsworth",
+    "judgment": "matched",
+    "match": {
+      "id": "Q7967308",
+      "name": "Wandsworth Demons",
+      "types": [
+        ""
+      ],
+      "score": 37
+    },
+    "shareNewTopics": false,
+    "description": "Match item Wandsworth Demons (Q7967308) for cells containing \"Wandsworth\" in column District"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District",
+    "similarValue": "Waltham Forest",
+    "judgment": "matched",
+    "match": {
+      "id": "Q40608",
+      "name": "London Borough of Waltham Forest",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item London Borough of Waltham Forest (Q40608) for cells containing \"Waltham Forest\" in column District"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District",
+    "similarValue": "Walsall UA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q178356",
+      "name": "Walsall",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Walsall (Q178356) for cells containing \"Walsall UA\" in column District"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District",
+    "similarValue": "Wakefield UA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q216638",
+      "name": "Wakefield",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Wakefield (Q216638) for cells containing \"Wakefield UA\" in column District"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District",
+    "similarValue": "Trafford",
+    "judgment": "matched",
+    "match": {
+      "id": "Q915954",
+      "name": "Trafford",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Trafford (Q915954) for cells containing \"Trafford\" in column District"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District",
+    "similarValue": "Tower Hamlets",
+    "judgment": "matched",
+    "match": {
+      "id": "Q208152",
+      "name": "London Borough of Tower Hamlets",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item London Borough of Tower Hamlets (Q208152) for cells containing \"Tower Hamlets\" in column District"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District",
+    "similarValue": "Torbay UA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1136118",
+      "name": "Torbay",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Torbay (Q1136118) for cells containing \"Torbay UA\" in column District"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District",
+    "similarValue": "Thurrock UA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1549155",
+      "name": "Thurrock",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Thurrock (Q1549155) for cells containing \"Thurrock UA\" in column District"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District",
+    "similarValue": "Telford and Wrekin UA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1425298",
+      "name": "Telford and Wrekin",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Telford and Wrekin (Q1425298) for cells containing \"Telford and Wrekin UA\" in column District"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District",
+    "similarValue": "Tameside",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1423078",
+      "name": "Tameside",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Tameside (Q1423078) for cells containing \"Tameside\" in column District"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District",
+    "similarValue": "Swindon UA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q200942",
+      "name": "Swindon",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Swindon (Q200942) for cells containing \"Swindon UA\" in column District"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District",
+    "similarValue": "Sutton",
+    "judgment": "matched",
+    "match": {
+      "id": "Q320378",
+      "name": "London Borough of Sutton",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item London Borough of Sutton (Q320378) for cells containing \"Sutton\" in column District"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District",
+    "similarValue": "Nottingham UA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q21885994",
+      "name": "City of Nottingham",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item City of Nottingham (Q21885994) for cells containing \"Nottingham UA\" in column District"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District",
+    "similarValue": "Poole UA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q21683234",
+      "name": "Poole",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Poole (Q21683234) for cells containing \"Poole UA\" in column District"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District",
+    "similarValue": "Oldham",
+    "judgment": "matched",
+    "match": {
+      "id": "Q202628",
+      "name": "Oldham",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Oldham (Q202628) for cells containing \"Oldham\" in column District"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District",
+    "similarValue": "Peterborough UA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q12956645",
+      "name": "City of Peterborough",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item City of Peterborough (Q12956645) for cells containing \"Peterborough UA\" in column District"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District",
+    "similarValue": "Salford",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1142118",
+      "name": "Salford",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Salford (Q1142118) for cells containing \"Salford\" in column District"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District",
+    "similarValue": "Plymouth UA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q21674890",
+      "name": "City of Plymouth",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item City of Plymouth (Q21674890) for cells containing \"Plymouth UA\" in column District"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District",
+    "similarValue": "Stoke-on-Trent UA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q21891722",
+      "name": "City of Stoke-on-Trent",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item City of Stoke-on-Trent (Q21891722) for cells containing \"Stoke-on-Trent UA\" in column District"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District",
+    "similarValue": "Redbridge",
+    "judgment": "matched",
+    "match": {
+      "id": "Q3422834",
+      "name": "Redbridge",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Redbridge (Q3422834) for cells containing \"Redbridge\" in column District"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District",
+    "similarValue": "Rotherham UA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q217039",
+      "name": "Rotherham",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Rotherham (Q217039) for cells containing \"Rotherham UA\" in column District"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District",
+    "similarValue": "Portsmouth UA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q21683233",
+      "name": "City of Portsmouth",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item City of Portsmouth (Q21683233) for cells containing \"Portsmouth UA\" in column District"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District",
+    "similarValue": "South Buckinghamshire",
+    "judgment": "matched",
+    "match": {
+      "id": "Q65089619",
+      "name": "South Bucks District Council",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item South Bucks District Council (Q65089619) for cells containing \"South Buckinghamshire\" in column District"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District",
+    "similarValue": "Reading UA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q21496716",
+      "name": "Reading",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Reading (Q21496716) for cells containing \"Reading UA\" in column District"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District",
+    "similarValue": "Richmond upon Thames",
+    "judgment": "matched",
+    "match": {
+      "id": "Q32515",
+      "name": "London Borough of Richmond upon Thames",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item London Borough of Richmond upon Thames (Q32515) for cells containing \"Richmond upon Thames\" in column District"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District",
+    "similarValue": "Rochdale",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1892596",
+      "name": "Rochdale",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Rochdale (Q1892596) for cells containing \"Rochdale\" in column District"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District",
+    "similarValue": "Rutland UA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q23107",
+      "name": "Rutland",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Rutland (Q23107) for cells containing \"Rutland UA\" in column District"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District",
+    "similarValue": "Sandwell UA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q22290760",
+      "name": "Sandwell",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Sandwell (Q22290760) for cells containing \"Sandwell UA\" in column District"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District",
+    "similarValue": "South Gloucestershire UA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1369280",
+      "name": "South Gloucestershire",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item South Gloucestershire (Q1369280) for cells containing \"South Gloucestershire UA\" in column District"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District",
+    "similarValue": "Sheffield UA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q12956644",
+      "name": "Sheffield",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Sheffield (Q12956644) for cells containing \"Sheffield UA\" in column District"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District",
+    "similarValue": "Sunderland UA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1280897",
+      "name": "Sunderland",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Sunderland (Q1280897) for cells containing \"Sunderland UA\" in column District"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District",
+    "similarValue": "Sefton",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1546645",
+      "name": "Sefton",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Sefton (Q1546645) for cells containing \"Sefton\" in column District"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District",
+    "similarValue": "Slough UA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q21163036",
+      "name": "Slough",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Slough (Q21163036) for cells containing \"Slough UA\" in column District"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District",
+    "similarValue": "Redcar and Cleveland UA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1434448",
+      "name": "Redcar and Cleveland",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Redcar and Cleveland (Q1434448) for cells containing \"Redcar and Cleveland UA\" in column District"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District",
+    "similarValue": "Solihull UA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1925858",
+      "name": "Solihull",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Solihull (Q1925858) for cells containing \"Solihull UA\" in column District"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District",
+    "similarValue": "South Tyneside UA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1541228",
+      "name": "South Tyneside",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item South Tyneside (Q1541228) for cells containing \"South Tyneside UA\" in column District"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District",
+    "similarValue": "Southampton UA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q79848",
+      "name": "Southampton",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Southampton (Q79848) for cells containing \"Southampton UA\" in column District"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District",
+    "similarValue": "Southend-on-Sea UA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q203995",
+      "name": "Southend-on-Sea",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Southend-on-Sea (Q203995) for cells containing \"Southend-on-Sea UA\" in column District"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District",
+    "similarValue": "Southend-on-Sea UA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q203995",
+      "name": "Southend-on-Sea",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Southend-on-Sea (Q203995) for cells containing \"Southend-on-Sea UA\" in column District"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District",
+    "similarValue": "Stockton-on-Tees UA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q989418",
+      "name": "Stockton-on-Tees",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Stockton-on-Tees (Q989418) for cells containing \"Stockton-on-Tees UA\" in column District"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District",
+    "similarValue": "Stockport",
+    "judgment": "matched",
+    "match": {
+      "id": "Q18655",
+      "name": "Stockport",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Stockport (Q18655) for cells containing \"Stockport\" in column District"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District",
+    "similarValue": "Southwark",
+    "judgment": "matched",
+    "match": {
+      "id": "Q730706",
+      "name": "London Borough of Southwark",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item London Borough of Southwark (Q730706) for cells containing \"Southwark\" in column District"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District",
+    "similarValue": "St. Helens",
+    "judgment": "matched",
+    "match": {
+      "id": "Q179206",
+      "name": "St Helens",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item St Helens (Q179206) for cells containing \"St. Helens\" in column District"
+  }
+]

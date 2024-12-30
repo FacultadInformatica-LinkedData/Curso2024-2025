@@ -1,0 +1,15 @@
+PREFIX base:<http://smartcity.linkeddata.es/accidentes/ontologia/>
+PREFIX owl:<http://www.w3.org/2002/07/owl#>
+
+
+# Obtenemos los 10 primeros accidentes que ocurrieron en un distrito diferente y obtenemos la URL de wikidata del distrito
+
+SELECT distinct ?accident ?URL
+WHERE {
+    ?accident a base:Accidente ;
+            base:estaEnDistrito ?district .
+    ?district owl:sameAs ?URL
+}
+LIMIT 10
+
+
